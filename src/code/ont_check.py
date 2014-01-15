@@ -2,15 +2,12 @@
 
 import sys
 import warnings
-from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 
 
-def entity_check(SFID_list):
-    conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit", sys.argv[1], sys.argv[2], "org.gjt.mm.mysql.Driver")
-    cursor = conn.cursor()
+def entity_check(SFID_list, cursor):
     class owl_entity(): # v.simple object for storing attributes of class
         ont = ''
         base = ''

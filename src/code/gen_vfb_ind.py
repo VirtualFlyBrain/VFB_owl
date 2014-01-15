@@ -14,7 +14,8 @@ import obo_tools
 # Gobals - limited to brain objects, prefixes and DB handle(s)/cursors
 
 # Get DB connection & cursor: global
-conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit", sys.argv[1], sys.argv[2], "org.gjt.mm.mysql.Driver") 
+# conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit", sys.argv[1], sys.argv[2], "org.gjt.mm.mysql.Driver") 
+conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", sys.argv[1], sys.argv[2], "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 # For production use, this needs to be changed to use a path and port spec that works in conjunction with an ssh tunnel to master. 
 
 cursor = conn.cursor()
