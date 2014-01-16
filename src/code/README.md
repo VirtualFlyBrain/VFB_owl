@@ -1,8 +1,8 @@
 # To run these scripts
 
-Install the latest Jython 2.x: 
+Install [Jython 2.5](http://www.jython.org/downloads.html)
 
-Download [the latest Brain jar](), and a [JBDC mysql connection jar]() and make sure both of these are in $CLASSPATH
+Download [the latest Brain jar](https://github.com/loopasam), and a [JBDC mysql connection jar](http://dev.mysql.com/downloads/connector/j/) and make sure both of these are in $CLASSPATH
 
 
 To connect to the LMB DB you will need to request a key share and credentials from GJ.  
