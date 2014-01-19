@@ -51,8 +51,8 @@ def entity_check(SFID_list, cursor):
     
 
             
-test_list = ('FBbt_00003983', 'FBbt_00007482', 'FBbt_00003985')
-entity_check(test_list)
+				#test_list = ('FBbt_00003983', 'FBbt_00007482', 'FBbt_00003985')
+				#entity_check(test_list)
             
 
 
