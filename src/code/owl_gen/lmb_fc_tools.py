@@ -5,6 +5,11 @@ from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 import warnings
 
+def get_con(usr, pwd):
+	#	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	return conn
+
 def oe_check_db_and_add(sfid, typ, cursor, ont):
 	"""Takes, sfid, owl type, cursor and ontology as Brain object as args. Checks whether the sfid exists in the lmb owl_entity table, finds the appropriate base URI and then adds. Returns true if the entity is in the table, flase if not."""
 	cursor.execute("SELECT o.baseURI bu FROM ontology o JOIN owl_entity oe ON (oe.ontology=o.ontology_id) WHERE shortFormID = '%s'" % sfid)

@@ -9,6 +9,7 @@ from uk.ac.ebi.brain.core import Brain
 import obo_tools
 from lmb_fc_tools import oe_check_db_and_add
 from lmb_fc_tools import BrainName_mapping
+from lmb_fc_tools import get_con
 
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/vfb_ind.owl")
@@ -20,11 +21,6 @@ fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
 #fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") # local path for debugging.  Replace by URL above to make generic.
 
 # The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong doesn't throw an error!)
-
-def get_con(usr, pwd):
-	#	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
-	return conn
 
 def fc_ind_init(cursor, vfb_ind):
 	"""Makes individuals for all flycircuit neurons, adding basic metadata, default relationships and specific relationships for gender and Driver expression."""
