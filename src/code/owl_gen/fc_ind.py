@@ -1,6 +1,7 @@
 #!/usr/bin/env jython
 
 import sys
+sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.error import BrainException
@@ -15,14 +16,14 @@ obo_tools.addOboAnnotationProperties(vfb_ind)
 
 # Make fbbt brain object to use for checking existence and status of fbbt classes
 fbbt = Brain()
-#fbbt.learn("http://purl.obolibrary.org/fbbt/fbbt-simple.owl")
-fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") # local path for debugging.  Replace by URL above to make generic
+fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
+#fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") # local path for debugging.  Replace by URL above to make generic.
 
 # The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong doesn't throw an error!)
 
 def get_con(usr, pwd):
-	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	#	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 def fc_ind_init(cursor, vfb_ind):
@@ -132,10 +133,11 @@ def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
 
 def add_clusters(cursor, vfb_ind):
 
-    """ Declare cluster individuals """
+	""" Declare cluster individuals """
 
     # TODO: Add typing to clusters.
 
+	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
 	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'objectProperty', cursor, vfb_ind)
 
 	cursor.execute("SELECT DISTINCT vut.vfbid as cvid, c.cluster as cnum, evut.vfbid as evid, c.clusterv as cversion " \
@@ -147,8 +149,6 @@ def add_clusters(cursor, vfb_ind):
 				   "WHERE cg.clusterv_id = c.clusterv " \
 				   "AND vut.type = 'cluster' " \
 				   "AND c.clusterv = '3'")
-
-	# Note on IDs: At the time of writing this script, queries on individuals all work via OWLtools MS queries with labels. So, labels need to be stable for everything to keep working, but IDs do not.
 
 	dc = dict_cursor(cursor)
 	for d in dc:
