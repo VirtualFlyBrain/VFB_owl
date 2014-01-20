@@ -6,17 +6,17 @@ from uk.ac.ebi.brain.core import Brain
 import warnings
 
 def get_con(usr, pwd):
-	#	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 def oe_check_db_and_add(sfid, typ, cursor, ont):
 	"""Takes, sfid, owl type, cursor and ontology as Brain object as args. Checks whether the sfid exists in the lmb owl_entity table, finds the appropriate base URI and then adds. Returns true if the entity is in the table, flase if not."""
 	cursor.execute("SELECT o.baseURI bu FROM ontology o JOIN owl_entity oe ON (oe.ontology=o.ontology_id) WHERE shortFormID = '%s'" % sfid)
 	dc = dict_cursor(cursor)
-	baseURI = '' # As well as storing baseURI, serves as indicator
+	baseURI = '' # As well as storing baseURI, serves as indicator.  Hmmm - probably not a good idea.  
 	for d in dc:
-		baseURI = d['bu'] # uniqueness constraint on table means there can be only 1
+		baseURI = d['bu'] # uniqueness constraint on table means there can be only 1  
 	if baseURI:
 		if typ == 'class':
 			ont.addClass(baseURI+sfid)
@@ -34,7 +34,7 @@ def BrainName_mapping(cursor, ont):
         owl_class = d["shortFormID"]
         BN_dict[BN] = owl_class
         if not ont.knowsClass(owl_class): 
-            oe_check_db_and_add(owl_class, 'class', cursor, ont)
+            oe_check_db_and_add(owl_class, 'class', cursor, ont) # bit silly to check again when they come from the same DB!.
     return BN_dict
     
     
