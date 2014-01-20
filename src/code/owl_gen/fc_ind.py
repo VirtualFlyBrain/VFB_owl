@@ -11,6 +11,11 @@ from lmb_fc_tools import oe_check_db_and_add
 from lmb_fc_tools import BrainName_mapping
 from lmb_fc_tools import get_con
 
+""" Use:fc_ind.py usr pwd
+Where usr and pwd are connection credentials for LMB DB.
+This script generates a file of OWL individuals representing FlyCircuit neurons and their clusters using the information in the LMB VFB mysql DB.
+"""
+
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/vfb_ind.owl")
 obo_tools.addOboAnnotationProperties(vfb_ind)
@@ -167,7 +172,7 @@ def map_to_clusters(cursor, vfb_ind):
 				   "JOIN vfbid_uuid_type nvut ON (n.uuid=nvut.uuid) " \
 				   "JOIN cluster c ON (cg.cluster=c.cluster)" \
 				   "JOIN vfbid_uuid_type cvut ON (c.uuid=cvut.uuid)" \
-				   "WHERE c.clusterv = '3'")
+				   "WHERE c.clusterv = '3'") # Set clustering version here.
 
 	# Now add cluster assertions.  Note - these are declared in both directions as elk cannot cope with inverses.
 
@@ -188,4 +193,4 @@ map_to_clusters(conn.cursor(), vfb_ind)
 
 # Close connection and save output to file.
 conn.close()
-vfb_ind.save("../../owl/vfb_ind.owl") 
+vfb_ind.save(sys.argv[3])
