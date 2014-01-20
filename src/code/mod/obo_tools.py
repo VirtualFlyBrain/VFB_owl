@@ -43,5 +43,3 @@ def test_gen_id():
        print 'gen_id works!'
     else: 
        print 'gen_id fails test'
-
-test_gen_id()
