@@ -1,5 +1,6 @@
 #!/usr/bin/env jython
 
+import warnings
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from com.ziclix.python.sql import zxJDBC # DB connection
@@ -8,6 +9,7 @@ from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 import obo_tools
 from lmb_fc_tools import get_con
+from vfb_ind_tools import def_roller
 
 conn = get_con(sys.argv[1], sys.argv[2])
 
@@ -18,25 +20,21 @@ vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybra
 obo_tools.addOboAnnotationProperties(vfb_ind)
 
 
-def init_ind_by_source(cursor, vfb_ind, dataset):
-	class defn: # A simple class used to create objects to store definition components
-		source = '' # Source reference details
-		genus = '' # Genus term for defn
-		diffs = [] # list of differentia
-		source_spec_text = '' # source specific text
-	ind_def = {} # A dict for indexing defn objects by shortFormID
+def roll_ind_by_source(cursor, vfb_ind, dataset):
+	class simple_classExpression:
+		rel = ''
+		obj = ''
+	ind_id_type = {} # dict for storing lists of simple class expressions for typeing individuals,, indexed by sfid.
+		    
 
     # Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name as sname, s.pub_miniref AS miniref, s.pub_pmid AS pmid, s.dataset_spec_text FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE name = '%s'" % dataset)
+	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name as sname FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE name = '%s'" % dataset)
 
 	dc = dict_cursor(cursor)
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
-		idef = defn()
-		idef.source =  d['miniref'] + " (" + str(d['pmid']) + ")"
-		idef.source_spec_text = d['dataset_spec_text']
-		ind_def[d['iID']] = idef
+		ind_id_type[d['iID']] = []
 		
 
 	cursor.execute("SELECT i.shortFormID AS iID, oc.shortFormID AS claz, oc.label AS clazName, oeop.shortFormID AS rel, oeop.label AS relName, ontop.baseURI AS relBase, ontc.baseURI AS clazBase, s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
@@ -53,35 +51,31 @@ def init_ind_by_source(cursor, vfb_ind, dataset):
 	dc = dict_cursor(cursor)
 	genus_class = '';
 	for d in dc:
+		sce = simple_classExpression() # Make object to store simple class expression
 		if not vfb_ind.knowsClass(d['claz']):
 			vfb_ind.addClass(d['clazBase']+d['claz'])
-		if not (d['rel'] == '0'): # hack for SQL constraint- using OP sfid = 0 as no OP
+		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
 			if not vfb_ind.knowsObjectProperty(d['rel']):
 				vfb_ind.addObjectProperty(d['relBase']+d['rel'])
 			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['iID'])
-			if d['for_def']:
-				ind_def[d['iID']].diffs.append(d['relName'])
+			sce.rel = d['rel']
+			sce.obj = d['claz']
 		else:
 			vfb_ind.type(d['claz'], d['iID'])
+		ind_id_type[d['iID']].append(sce)
 
-	for iID, idef in ind_def.iteritems():
-		definition = def_roller(idef)
-		vfb_ind.annotation(iID, "IAO_0000115", definition) # Definition
+	for iID, types in ind_id_type.iteritems():
+		definition = def_roller(types, vfb_ind)
+		# Now get source info.  Doing this the slow way to avoid making interim datastructure
+		cursor.execute("SELECT i.shortFormID AS iID, s.name, s.pub_pmid, s.pub_miniref FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE i.shortFormID = '%s'" % iID)
+		source = ''
+		dc = dict_cursor(cursor)
+		for d in dc:
+			source = d['pub_miniref'] + " (PMID:" + str(d['pub_pmid']) + ")"
+		vfb_ind.annotation(iID, "IAO_0000115", definition + " " + source) # Definition
 	cursor.close()
 
 
-
-def def_roller(defn):
-	"""Takes a defn object as an argument"""
-	diff_string = ''
-	while defn.diffs:
-		diff_string += defn.diffs.pop()
-		if len(defn.diffs) >= 1:
-			diff_string += " and "		
-	definition = "An example of a " + defn.genus +" " + diff_string + " from " + defn.source + ". " + defn.source_spec_text
-	return definition
-
-
-init_ind_by_source(conn.cursor(), vfb_ind, 'Jenett2012')
+roll_ind_by_source(conn.cursor(), vfb_ind, 'Chiang2010')
 
 vfb_ind.save("test.owl")
