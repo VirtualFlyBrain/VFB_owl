@@ -8,12 +8,17 @@ from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 import lmb_fc_tools
 import re
+import warnings
 
 
 fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
-
 fb_feature = Brain(fbf_base, fbf)
+# declaration of tmp classes for transgenes
+fb_feature.addClass("F73F6684-1B7F-4464-9A3E-6DAB89827C03")
+fb_feature.label("F73F6684-1B7F-4464-9A3E-6DAB89827C03", "transposable_element_insertion_site")
+fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
+fb_feature.label("E3091C3F-964B-4C39-8AD3-067221C55442", "transgenic_transposon")
 
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
 fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", "flybase", "flybase", "org.postgresql.Driver")  # Need to set this to link to FB pg
@@ -44,13 +49,13 @@ fb_cursor.execute("SELECT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_ob
 
 fb_dc = dict_cursor(fb_cursor)
 for fb in fb_dc:
-	tmp = re.sub("<up\>", "[",fb['uc_name'])
-	uc_name = re.sub("<\/up>", "]", tmp)
-	print uc_name
- 	fb_feature.label(fb['fbid'], uc_name)
-	#	if not fb_feature.knowsClass(fb['ftype']):
-	#	fb_feature.addClass(fb['ftype'])
-	# fb_feature.subClassOf(fb['fbid'], fb['ftype'])
+	if not fb['obstat']:
+		warnings.warn(fb['fbid'] + "is obsolete !")
+	else:
+		tmp = re.sub("<up\>", "[",fb['uc_name'])
+		uc_name = re.sub("<\/up>", "]", tmp)
+		fb_feature.label(fb['fbid'], uc_name)
+		#		fb_feature.subClassOf(fb['fbid'], fb_feature.getLabel)
 
 vfb_cursor.close()
 vfb_ms_conn.close()
