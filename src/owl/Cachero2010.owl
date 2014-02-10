@@ -1,0 +1,615 @@
+Prefix: : <http://www.virtualflybrain.org/owl/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.virtualflybrain.org/owl/Cachero2010.owl>
+
+
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_xref>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
+
+    
+Datatype: xsd:string
+
+    
+Class: owl:Thing
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007683>
+
+    
+Individual: VFB_00020146
+
+    Annotations: 
+        rdfs:label "pIP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020147
+
+    Annotations: 
+        rdfs:label "pIP-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020148
+
+    Annotations: 
+        rdfs:label "pIP-c clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020149
+
+    Annotations: 
+        rdfs:label "pIP-d clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020142
+
+    Annotations: 
+        rdfs:label "aSP-l clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020143
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "aSP-m clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020144
+
+    Annotations: 
+        rdfs:label "Lo clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020145
+
+    Annotations: 
+        rdfs:label "M clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020150
+
+    Annotations: 
+        rdfs:label "pIP-e clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020152
+
+    Annotations: 
+        rdfs:label "pIP-g clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020151
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "pIP-f clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020159
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "pMP-d clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020157
+
+    Annotations: 
+        rdfs:label "pMP-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020158
+
+    Annotations: 
+        rdfs:label "pMP-c clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020155
+
+    Annotations: 
+        rdfs:label "pIP-j clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020119
+
+    Annotations: 
+        rdfs:label "aDT-f clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020156
+
+    Annotations: 
+        rdfs:label "pMP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020118
+
+    Annotations: 
+        rdfs:label "aDT-e clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020153
+
+    Annotations: 
+        rdfs:label "pIP-h clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020117
+
+    Annotations: 
+        rdfs:label "aDT-d clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020154
+
+    Annotations: 
+        rdfs:label "pIP-i clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020116
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "aDT-c clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020115
+
+    Annotations: 
+        rdfs:label "aDT-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020114
+
+    Annotations: 
+        rdfs:label "aDT-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020163
+
+    Annotations: 
+        rdfs:label "pSG-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020162
+
+    Annotations: 
+        rdfs:label "pMP-g clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020161
+
+    Annotations: 
+        rdfs:label "pMP-f clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020160
+
+    Annotations: 
+        rdfs:label "pMP-e clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020120
+
+    Annotations: 
+        rdfs:label "aDT-g clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020170
+
+    Annotations: 
+        rdfs:label "pSP-c clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020121
+
+    Annotations: 
+        rdfs:label "aDT-h clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020122
+
+    Annotations: 
+        rdfs:label "aIP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020123
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "aIP-b clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020124
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "aIP-c clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020125
+
+    Annotations: 
+        rdfs:label "aIP-d clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020126
+
+    Annotations: 
+        rdfs:label "aIP-e clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020127
+
+    Annotations: 
+        rdfs:label "aIP-f clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020128
+
+    Annotations: 
+        rdfs:label "aIP-g clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020129
+
+    Annotations: 
+        rdfs:label "aIP-h clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020167
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "pSG-e clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020166
+
+    Annotations: 
+        rdfs:label "pSG-d clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020165
+
+    Annotations: 
+        rdfs:label "pSG-c clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020164
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "pSG-b clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020169
+
+    Annotations: 
+        rdfs:label "pSP-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020130
+
+    Annotations: 
+        rdfs:label "aSG-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020168
+
+    Annotations: 
+        rdfs:label "pSP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020133
+
+    Annotations: 
+        rdfs:label "aSP-c clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020134
+
+    Annotations: 
+        rdfs:label "aSP-d clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020131
+
+    Annotations: 
+        rdfs:label "aSP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020132
+
+    Annotations: 
+        rdfs:label "aSP-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020137
+
+    Annotations: 
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string,
+        rdfs:label "aSP-g clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020138
+
+    Annotations: 
+        rdfs:label "aSP-h clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020135
+
+    Annotations: 
+        rdfs:label "aSP-e clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020136
+
+    Annotations: 
+        rdfs:label "aSP-f clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020139
+
+    Annotations: 
+        rdfs:label "aSP-i clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020141
+
+    Annotations: 
+        rdfs:label "aSP-k clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020140
+
+    Annotations: 
+        rdfs:label "aSP-j clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the . Cachero et al., 2010 (PMID:None)"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
