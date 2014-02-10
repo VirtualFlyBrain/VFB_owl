@@ -40,29 +40,31 @@ def update_class_labels_test(usr,pwd,file,fname):
 
 def oe_check_db_and_add(sfid, typ, cursor, ont):
 	"""Takes, sfid, owl type, cursor and ontology as Brain object as args. Checks whether the sfid exists in the lmb owl_entity table, finds the appropriate base URI and then adds to ont. Returns true if the entity is in the table, flase if not."""
-	cursor.execute("SELECT o.baseURI bu FROM ontology o JOIN owl_entity oe ON (oe.ontology=o.ontology_id) WHERE shortFormID = '%s'" % sfid)
+	if typ not in ['owl_class', 'owl_objectProperty']:
+		warnings.warn("Unknown owl type %s, please use owl_class or owl_objectProperty" % typ)
+	cursor.execute("SELECT o.baseURI bu FROM ontology o JOIN %s oe ON (oe.ontology_id=o.id) WHERE shortFormID = '%s'" % (typ,sfid))
 	dc = dict_cursor(cursor)
-	baseURI = '' # As well as storing baseURI, serves as indicator.  Hmmm - probably not a good idea.  
+	baseURI = '' # As well as storing baseURI, serves as indicator.  Hmmm - NOT a good idea.  Refactor!  
 	for d in dc:
 		baseURI = d['bu'] # uniqueness constraint on table means there can be only 1  
 	if baseURI:
-		if typ == 'class':
+		if typ == 'owl_class':
 			ont.addClass(baseURI+sfid)
-		elif typ == 'objectProperty':
+		elif typ == 'owl_objectProperty':
 			ont.addObjectProperty(baseURI+sfid)
 	else:
 		warnings.warn("Unknown " + typ  + " " + sfid)
     
 def BrainName_mapping(cursor, ont):
-    cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID FROM BrainName_to_owl b2o JOIN owl_entity oe ON (oe.id=b2o.owl_entity_id)")
+    cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID FROM BrainName_to_owl b2o JOIN owl_class oe ON (oe.id=b2o.owl_class_id)")
     BN_dict = {}
     dc = dict_cursor(cursor)
     for d in dc:
         BN = d["BrainName_abbv"]
         owl_class = d["shortFormID"]
         BN_dict[BN] = owl_class
-        if not ont.knowsClass(owl_class): 
-            oe_check_db_and_add(owl_class, 'class', cursor, ont) # bit silly to check again when they come from the same DB!.
+        if not ont.knowsClass(owl_class):
+            ont.addClass(owl_class) 
     return BN_dict
 
 def gen_ind_dict(cursor):

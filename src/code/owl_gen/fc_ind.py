@@ -2,14 +2,14 @@
 
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-import obo_tools
+from obo_tools import addOboAnnotationProperties
 from lmb_fc_tools import oe_check_db_and_add
 from lmb_fc_tools import BrainName_mapping
 from lmb_fc_tools import get_con
+from vfb_ind_tools import gen_ind_by_source
 
 """ Use:fc_ind.py usr pwd
 Where usr and pwd are connection credentials for LMB DB.
@@ -18,73 +18,32 @@ This script generates a file of OWL individuals representing FlyCircuit neurons 
 
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/vfb_ind.owl")
-obo_tools.addOboAnnotationProperties(vfb_ind)
 
-# Make fbbt brain object to use for checking existence and status of fbbt classes
-fbbt = Brain()
-fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
-#fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") # local path for debugging.  Replace by URL above to make generic.
-
-# The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong doesn't throw an error!)
-
-def fc_ind_init(cursor, vfb_ind):
-	"""Makes individuals for all flycircuit neurons, adding basic metadata, default relationships and specific relationships for gender and Driver expression."""
-	oe_check_db_and_add('BFO_0000050', 'objectProperty', cursor, vfb_ind)
-	oe_check_db_and_add('FBbt_00005106', 'class', cursor, vfb_ind)
-	oe_check_db_and_add('FBbt_00003624', 'class', cursor, vfb_ind)
-	oe_check_db_and_add('FBbt_00007004', 'class', cursor, vfb_ind)
-	oe_check_db_and_add('FBbt_00007011', 'class', cursor, vfb_ind)
-	oe_check_db_and_add('RO_0002292', 'objectProperty', cursor, vfb_ind) # expresses
-
-	cursor.execute("SELECT vut.vfbid as vid, n.name, n.Gender, n.gene_name, oe.shortFormID as DriverSFID, oe.label as Driver " \
-	"FROM neuron n " \
-	"JOIN vfbid_uuid_type vut ON (n.uuid=vut.uuid) " \
-	"JOIN flycircuit_driver_map fdm ON (n.Driver = fdm.fc_name) " \
-	"JOIN owl_entity oe ON (fdm.owl_entity_id=oe.id)")
-	dc = dict_cursor(cursor)
-	for d in dc:
-		vfb_ind.addNamedIndividual(d['vid'])
-		vfb_ind.label(d['vid'], d['name'])
-		vfb_ind.type('FBbt_00005106', d['vid'])  #  default typing as neuron
-		vfb_ind.type("BFO_0000050 some FBbt_00003624", d['vid'])  # default typing as part of some 'adult brain'
-		defn = "A neuron of an " # Begin rolling def.
-		if d['Gender'] == 'M':
-			vfb_ind.type("BFO_0000050 some FBbt_00007004", d['vid'])  # Part of some male organism
-			defn += "adult male brain "
-		if d['Gender'] == 'F':
-			vfb_ind.type("BFO_0000050 some FBbt_00007011", d['vid'])  # Part of some female organism
-			defn += "adult female brain "
-		vfb_ind.annotation(d['vid'], "hasExactSynonym", d['gene_name']) 	#  Add gene_name as exact synonym.  Note, shortFormID on splits on '#'
-		defn += " expressing " + d['Driver'] + "."
-		if not vfb_ind.knowsClass(d['DriverSFID']):
-			oe_check_db_and_add(d['DriverSFID'], 'class', cursor, vfb_ind)
-		vfb_ind.type("RO_0002292 some " + d['DriverSFID'], d['vid'])
-		vfb_ind.annotation(d['vid'], "IAO_0000115", defn) # Definition
-	cursor.close()
+# The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong produced incomplete output budoesn't throw an error!)
 
 def add_manual_ann(cursor, vfb_ind):
 	"""Function to add manual typing assertions to vfb individuals."""
 
-	cursor.execute("SELECT vut.vfbid as vid, relont.baseURI AS relBase, rel.ShortFormID as rel, objont.baseURI as clazBase, obj.shortFormID as claz " \
-	"FROM vfbid_uuid_type vut " \
-	"JOIN neuron n ON (vut.uuid = n.uuid) " \
+	cursor.execute("SELECT ind.shortFormID as vid, relont.baseURI AS relBase, rel.shortFormID as rel, objont.baseURI as clazBase, obj.shortFormID as claz " \
+	"FROM owl_individual ind " \
+	"JOIN neuron n ON (ind.uuid = n.uuid) " \
 	"JOIN annotation a ON (n.idid=a.neuron_idid) " \
 	"JOIN annotation_key_value akv ON (a.annotation_class = akv.annotation_class) " \
-	"JOIN annotation_to_owl ote ON (akv.id=ote.annotation_key_value_id) " \
-	"JOIN owl_entity obj ON (ote.class=obj.id) " \
-	"JOIN ontology objont ON (objont.ontology_id = obj.ontology) " \
-	"LEFT OUTER JOIN owl_entity rel ON (ote.objectProperty=rel.id) " \
-	"LEFT OUTER JOIN ontology relont ON (relont.ontology_id=rel.ontology) " \
+	"JOIN annotation_type ote ON (akv.id=ote.annotation_key_value_id) " \
+	"JOIN owl_class obj ON (ote.class=obj.id) " \
+	"JOIN ontology objont ON (objont.id = obj.ontology_id) " \
+	"LEFT OUTER JOIN owl_objectProperty rel ON (ote.objectProperty=rel.id) " \
+	"LEFT OUTER JOIN ontology relont ON (relont.id=rel.ontology_id) " \
 	"WHERE a.text=akv.annotation_text")
 
 	dc = dict_cursor(cursor)
 
-    # Could add additional check against fbbt here:
+    # Could add additional check against fbbt here: (Also potentially mod-able as follows same pattern as type assertions in type table)
 
 	for d in dc:
 		if not vfb_ind.knowsClass(d['claz']):
 			vfb_ind.addClass(d['clazBase']+d['claz'])
-		if d['rel']:
+		if not d['rel'] == '0':  # Intended as binary test. Became ugly hack to support combined unique key in mysql.
 			if not vfb_ind.knowsObjectProperty(d['rel']):
 				vfb_ind.addObjectProperty(d['relBase']+d['rel'])
 			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['vid'])
@@ -96,6 +55,8 @@ def add_manual_ann(cursor, vfb_ind):
 def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
 	"""Function to add assertions of overlap to BrainName domains.  Currently works with a simple cutoff, but there is scope to modify this to at least specify a proportion of voxel size of domain."""
 
+    # Hmmm - surely possible to do this in one query, rather than rolling dict...
+
 	# Roll lookup for BrainName shorthand:
 
 	BN_dict = BrainName_mapping(cursor, vfb_ind)  # Guess there's no harm in this being global, but could limit scope...
@@ -105,12 +66,12 @@ def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
 
 	# Adding typing based on domain overlap
 
-	oe_check_db_and_add("RO_0002131", 'objectProperty', cursor, vfb_ind)
+	oe_check_db_and_add("RO_0002131", 'owl_objectProperty', cursor, vfb_ind)
 
-	cursor.execute("SELECT vut.vfbid as vid, sj.* " \
+	cursor.execute("SELECT ind.shortFormID as vid, sj.* " \
 				   "FROM spatdist_jfrc sj " \
 				   "JOIN neuron n ON (sj.idid=n.idid) " \
-				   "JOIN vfbid_uuid_type vut ON (n.uuid=vut.uuid)")
+				   "JOIN owl_individual ind ON (n.uuid=ind.uuid)")
 
 	dc = dict_cursor(cursor)
 	for d in dc:
@@ -139,16 +100,16 @@ def add_clusters(cursor, vfb_ind):
     # TODO: Add typing to clusters.
 
 	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
-	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'objectProperty', cursor, vfb_ind)
+	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
 
-	cursor.execute("SELECT DISTINCT vut.vfbid as cvid, c.cluster as cnum, evut.vfbid as evid, c.clusterv as cversion " \
-				   "FROM vfbid_uuid_type vut " \
-				   "JOIN cluster c ON (vut.uuid=c.uuid) " \
+	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
+				   "FROM owl_individual ind " \
+				   "JOIN cluster c ON (ind.uuid=c.uuid) " \
 				   "JOIN clustering cg ON (cg.cluster=c.cluster) " \
 				   "JOIN neuron n ON (cg.exemplar_idid=n.idid) " \
-				   "JOIN vfbid_uuid_type evut ON (n.uuid=evut.uuid) " \
+				   "JOIN owl_individual eind ON (n.uuid=eind.uuid) " \
 				   "WHERE cg.clusterv_id = c.clusterv " \
-				   "AND vut.type = 'cluster' " \
+				   "AND ind.type_for_def  = 'cluster' " \
 				   "AND c.clusterv = '3'")
 
 	dc = dict_cursor(cursor)
@@ -163,15 +124,15 @@ def add_clusters(cursor, vfb_ind):
 def map_to_clusters(cursor, vfb_ind):
 	"""Maps fc individuals to clusters"""
 
-	oe_check_db_and_add("RO_0002351", 'objectProperty', cursor, vfb_ind) #  has_member
-	oe_check_db_and_add("RO_0002350", 'objectProperty', cursor, vfb_ind)  #  member_of
+	oe_check_db_and_add("RO_0002351", 'owl_objectProperty', cursor, vfb_ind) #  has_member
+	oe_check_db_and_add("RO_0002350", 'owl_objectProperty', cursor, vfb_ind)  #  member_of
 
-	cursor.execute("SELECT DISTINCT cvut.vfbid AS cvid, nvut.vfbid AS mvid " \
+	cursor.execute("SELECT DISTINCT cind.shortFormID AS cvid, nind.shortFormID AS mvid " \
 				   "FROM clustering cg " \
 				   "JOIN neuron n ON (cg.idid=n.idid) " \
-				   "JOIN vfbid_uuid_type nvut ON (n.uuid=nvut.uuid) " \
+				   "JOIN owl_individual nind ON (n.uuid=nind.uuid) " \
 				   "JOIN cluster c ON (cg.cluster=c.cluster)" \
-				   "JOIN vfbid_uuid_type cvut ON (c.uuid=cvut.uuid)" \
+				   "JOIN owl_individual cind ON (c.uuid=cind.uuid)" \
 				   "WHERE c.clusterv = '3'") # Set clustering version here.
 
 	# Now add cluster assertions.  Note - these are declared in both directions as elk cannot cope with inverses.
@@ -185,12 +146,21 @@ def map_to_clusters(cursor, vfb_ind):
 
 # Now run all the functions
 conn = get_con(sys.argv[1], sys.argv[2])
-fc_ind_init(conn.cursor(), vfb_ind)
+dataset = 'Chiang2010'
+vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/" + dataset + ".owl")
+addOboAnnotationProperties(vfb_ind)
+fbbt = Brain()
+fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") #
+gen_ind_by_source(conn.cursor(), vfb_ind, dataset)
 add_manual_ann(conn.cursor(), vfb_ind)
 add_BN_dom_overlap(conn.cursor(), vfb_ind, fbbt)
 add_clusters(conn.cursor(), vfb_ind)
 map_to_clusters(conn.cursor(), vfb_ind)
 
-# Close connection and save output to file.
+
+# Save output file and clean up
+
+vfb_ind.save("../../owl/flycircuit.owl")
 conn.close()
-vfb_ind.save(sys.argv[3])
+vfb_ind.sleep()
+fbbt.sleep()

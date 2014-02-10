@@ -3,7 +3,6 @@
 import warnings
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
@@ -11,16 +10,16 @@ import obo_tools
 from lmb_fc_tools import get_con
 from vfb_ind_tools import def_roller
 
-conn = get_con(sys.argv[1], sys.argv[2])
 
 # Plan: (i) declare individuals, adding name only (Note - don't have the checking fn yet for individuals!)
 #       (ii) Add typing statemnts and def (may requre rolling a datastruc for defs.
 
-vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/vfb_ind.owl")
-obo_tools.addOboAnnotationProperties(vfb_ind)
-
 
 def roll_ind_by_source(cursor, vfb_ind, dataset):
+	obo_tools.addOboAnnotationProperties(vfb_ind)
+	feature_ont = Brain()
+	feature_ont.learn("../../owl/fb_features.owl")  # FlyBase features ontology for lookging up feature names for rolling definitions.
+
 	class simple_classExpression:
 		rel = ''
 		obj = ''
@@ -61,11 +60,14 @@ def roll_ind_by_source(cursor, vfb_ind, dataset):
 			sce.rel = d['rel']
 			sce.obj = d['claz']
 		else:
+			sce.rel = ''
+			sce.obj = d['claz']
+
 			vfb_ind.type(d['claz'], d['iID'])
 		ind_id_type[d['iID']].append(sce)
 
 	for iID, types in ind_id_type.iteritems():
-		definition = def_roller(types, vfb_ind)
+		definition = def_roller(types, feature_ont)
 		# Now get source info.  Doing this the slow way to avoid making interim datastructure
 		cursor.execute("SELECT i.shortFormID AS iID, s.name, s.pub_pmid, s.pub_miniref FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE i.shortFormID = '%s'" % iID)
 		source = ''
@@ -75,7 +77,8 @@ def roll_ind_by_source(cursor, vfb_ind, dataset):
 		vfb_ind.annotation(iID, "IAO_0000115", definition + " " + source) # Definition
 	cursor.close()
 
-
-roll_ind_by_source(conn.cursor(), vfb_ind, 'Chiang2010')
-
-vfb_ind.save("test.owl")
+dataset = sys.argv[3]
+vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/" + dataset + ".owl")
+conn = get_con(sys.argv[1], sys.argv[2])
+roll_ind_by_source(conn.cursor(), vfb_ind, dataset)
+vfb_ind.save("../../owl/" + dataset + ".owl")
