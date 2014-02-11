@@ -67,7 +67,8 @@ def BrainName_mapping(cursor, ont):
             ont.addClass(owl_class) 
     return BN_dict
 
-def gen_ind_dict(cursor):
+def gen_ind_dict(conn):
+	cursor=conn.cursor()
 	"""Generates a name:id dict of all individuals"""
 	cursor.execute("SELECT shortFormID, label FROM owl_individual")
 	dc = dict_cursor(cursor)
@@ -75,6 +76,8 @@ def gen_ind_dict(cursor):
 	for d in dc:
 		id_name[d['shortFormID']] = d['label']
 	return id_name
+	cursor.close()
+
 
 def add_ind(conn, ID, name, typ, source, id_name):
 	cursor = conn.cursor()
@@ -88,7 +91,7 @@ def add_ind(conn, ID, name, typ, source, id_name):
 def make_ind_obsolete(conn, vfbid):
 	cursor = conn.cursor()
  	cursor.execute("UPDATE owl_individual SET is_obsolete IS TRUE WHERE shortFormID = '%s'" % vfbid)
-	conn.execute()
+	conn.commit()
 	cursor.close()
 
 def add_ind_test(conn):
@@ -103,27 +106,60 @@ def add_ind_test(conn):
  	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
 	conn.commit()
 	cursor.close()
+
+def type_exists(objectProperty, claz, conn):
+	cursor = conn.cursor()
+	cursor.execute("SELECT ot.id FROM owl_type ot JOIN owl_objectProperty op ON (op.id=ot.objectProperty) JOIN owl_class oc ON (oc.id = ot.class) WHERE oc.shortFormID = '%s' AND op.shortFormID = '%s'" % (claz, objectProperty))
+	dc = dict_cursor(cursor)
+	typ = ''
+	for d in dc:
+		typ = d['id']
+	cursor.close()	
+	return typ
+
+def add_type(objectProperty, claz, conn):
+	cursor = conn.cursor()
+	cursor.execute("INSERT INTO owl_type (object_property, class) SELECT id AS objectProperty (SELECT id FROM owl_class WHERE shortFormID = '%s') AS class FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
+	conn.commit()
+	cursor.close()
+   
+def add_ind_type(ind, objectProperty, claz, conn):
+	cursor = conn.cursor()
+	if not type_exists(objectProperty, claz, conn):
+		add_type(objectProperty, claz, conn)
+	typ = type_exists(objectProperty, claz, conn)
+	cursor.execute("INSERT INTO individual_type (individual_id, type_id) SELECT oi.id AS individual_id, '%s' as type_id FROM owl_individual oi WHERE oi.shortFormID = '%s'" % (typ, ind))
+	conn.commit()
+	cursor.close()
 	
+def add_akv_type(key, value, objectProperty, claz, conn):
+	if not type_exists(objectProperty, claz, conn):
+		add_type(objectProperty, claz, conn)
+	typ = type_exists(objectProperty, claz, conn)
+	cursor.execute("INSERT INTO akv_type (annotation_key_value_id, type_id) SELECT id AS annotation_key_value_id, '%s' AS type_id FROM annotation_key_value WHERE annotation_class = '%s' AND annotation_text = '%s'" % (typ, key, value))
+	conn.commit()
+	cursor.close()
 
-# def add_type_exp(cursor, objectProperty, claz):
-# 	"""Add type exp to VFB DB"""
-
-# def add_type_exp_by_label(cursor, objectProperty, claz):
-#     op_id = ''
-# 	cursor.execute("SELECT id from owl_entity where label = '%s' AND type = 'objectProperty'" % objectProperty)
-# 	dc = dict_cursor(cursor)
-# 	for d in dc:
-# 		op = d['id']
-# 	claz_id = ''
-# 	cursor.execute("SELECT id from owl_entity where label = '%s' AND type = 'class'" % objectProperty)
-# 	dc = dict_cursor(cursor)
-# 	for d in dc:
-# 		claz_id = d['id']
-        
-
-# def type_ind(cursor, objectProperty, claz):
-# 	"""Add type to individual in LMB FC DB"""
-    
+def add_ind_type_test(usr,pwd):
+	conn = get_con(usr,pwd)
+	cursor = conn.cursor()
+	id_name = gen_ind_dict(conn)
+	(vfbid, id_name, ID) = add_ind(conn, 16000, "add_ind_test", 'neuron', 'CostaJefferis', id_name)
+	add_ind_type(vfbid, 'BFO_0000050', 'FBbt_00003624', conn)
+	typ = type_exists('BFO_0000050', 'FBbt_00003624', conn)
+	if not typ: 
+		warnings.warn("Failed to create type statementent")
+	cursor.execute("SELECT type_id as tid, individual_id as iid FROM individual_type WHERE individual_id = '%s' AND type_id = '%s'" % (ID, typ))
+	dc = dict_cursor(cursor)
+	stat = 0
+	for d in dc:
+		stat = tid + iid
+	if not stat:
+		warnings.warn("Failed to type ind!")
+	cursor.execute("DELETE FROM individual_type WHERE individual_id = '%s'" % (ID))
+	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
+	conn.commit()
+	cursor.close()
 
 
 	
