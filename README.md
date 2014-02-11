@@ -2,7 +2,7 @@
 
 This repository is a home for the OWL files that are central to the VFB query system, and the scripts that generate these files.
 
-## Background & details
+## Background & summary
 
 The VFB query system relies on representation of data/knowledge in OWL.  Central to this a representation of Drosophila neuro-anatomy in the [Drosophila anatomy ontology](https://sourceforge.net/p/fbbtdv/wiki/Home/). The anatomical structures depicted in images displayed on VFB or represented as OWL individuals, which are classified (typed) using OWL class expressions referencing the anatomy ontology.  When this knowledge base of individuals is combined with the ontology, a reasoner can be used to classify and query for anatomical structure depicted in the images on VFB.
 
@@ -12,5 +12,11 @@ The LMB DB was originally developed for annotation and analysis of the FlyCircui
 
 As well as scripts for writing OWL, this repo also contains scripts for writing to the LMB DB as well as for checking for the validity of ontology terms in the DB when an ontology used by VFB is updated.
 
+
+ * [DB description](https://github.com/VirtualFlyBrain/VFB_owl/wiki/Individuals-DB)
+ * [Code - env setup](https://github.com/VirtualFlyBrain/VFB_owl/blob/master/src/code)
+ * [OWL generation code](https://github.com/VirtualFlyBrain/VFB_owl/tree/master/src/code/owl_gen)
+ * [Code for adding to DB](https://github.com/VirtualFlyBrain/VFB_owl/tree/master/src/code/mod/lmb_fc_tools.py)
+ * [Code for checking and updating OWL entities in DB](https://github.com/VirtualFlyBrain/VFB_owl/tree/master/src/code/entity_checks)
 
 
