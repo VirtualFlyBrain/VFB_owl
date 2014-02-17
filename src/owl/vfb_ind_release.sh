@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-export IND_FILES="--merge Cachero2010.owl --merge Ito2013.owl --merge Jenett2012.owl --merge Yu2013.owl --merge fb_features.owl --merge fc_ind.owl --merge flycircuit_direct_mappings.owl"
+# env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
+export IND_FILES="--merge Cachero2010.owl --merge Ito2013.owl --merge Jenett2012.owl --merge Yu2013.owl --merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl"
 export RELEASE="2014-01-29"
 
 # Merge ind files with specified release of fbbt
 echo ''
 echo "*** Merging ind files with $RELEASE version of fbbt ***"
-owltools http://purl.obolibrary.org/obo/fbbt/${RELEASE}/fbbt-non-classified.owl --merge fbbt_features.owl $IND_FILES -o fbbt_vfb_ind.owl
+owltools http://purl.obolibrary.org/obo/fbbt/${RELEASE}/fbbt-non-classified.owl --merge fb_features.owl $IND_FILES -o file://`pwd`/fbbt_vfb_ind.owl
 
 # assert inferences and strip out redundancy  # This 
 echo ''
