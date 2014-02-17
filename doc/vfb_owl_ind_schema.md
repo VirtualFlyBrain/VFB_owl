@@ -1,17 +1,20 @@
-## VFB schema for representing individual anatomical structures as OWL individuals
+## VFB schema for representing individual neurons as OWL individuals
 
 [Note - using labels in place of URIs for readability]
 
 	
     Individual: 'cluster A'
         has_exemplar: 'ind X'
+        
     Individual: 'ind X'
         Types:
      	    neuron
      	    part_of some 'adult brain'
+     	    part_of some 'male organism'
      	    overlaps some 'fan-shaped body'
      	    overlaps some nodulus
-            releases_neurotransmitter some dopamine
+            capable_of some 'dopamine secretion, neurotransmission'
+            expresses some 'p{123}'
         Facts:
             exemplar_of 'cluster A'  # can be inferred via inverse if using full DL reasoner
 
@@ -34,6 +37,17 @@
 
     Individual: 'lineage clone Z'
         Type: <some lineage clone>
+        expresses some 'p{xyz}fru[xyz]'
+        
+    Individual: 'GMR-ABC_134'
+    	Types: 
+    		expression pattern
+    		expresses some 'p{GMR-ABC}''
+    
+    Class: X expression pattern
+    
+    GCI: cell that expresses some X SubClassOf part_of some 'X expression pattern'
+    	
 
 
 For query purposes, the individuals file is combined with the full version of the Drosophila anatomy ontology and a file of direct assertions of neuron type.  The full version is necessary as there is some inference based on equivalent class assertions.
