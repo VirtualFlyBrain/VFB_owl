@@ -1,4 +1,4 @@
-#!/usr/bin/env jython
+#!/usr/bin/env jython -J-Xmx8000m
 
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
@@ -10,16 +10,15 @@ from lmb_fc_tools import oe_check_db_and_add
 from lmb_fc_tools import BrainName_mapping
 from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
+from vfb_ind_tools import load_ont
 
 """ Use:fc_ind.py usr pwd
 Where usr and pwd are connection credentials for LMB DB.
 This script generates a file of OWL individuals representing FlyCircuit neurons and their clusters using the information in the LMB VFB mysql DB.
 """
 
-# Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
-vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/vfb_ind.owl")
 
-# The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong produced incomplete output budoesn't throw an error!)
+# The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong produced incomplete output but doesn't throw an error!)
 
 def add_manual_ann(cursor, vfb_ind):
 	"""Function to add manual typing assertions to vfb individuals."""
@@ -101,6 +100,7 @@ def add_clusters(cursor, vfb_ind):
 
 	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
 	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
+	oe_check_db_and_add('VFB_10000005', 'owl_class', cursor, vfb_ind)
 
 	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
 				   "FROM owl_individual ind " \
@@ -116,6 +116,7 @@ def add_clusters(cursor, vfb_ind):
 	for d in dc:
 		if not vfb_ind.knowsClass(d["cvid"]):
 			vfb_ind.addNamedIndividual(d["cvid"])
+			vfb_ind.type('VFB_10000005', d["cvid"])
 			vfb_ind.label(d["cvid"], "cluster " + str(d["cversion"]) + "." + str(d["cnum"])) # Note ints returned by query need to be coerced into strings.
 			vfb_ind.objectPropertyAssertion(d["evid"], "c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0", d["cvid"]) # UUID for exemplar as a placeholder - awaiting addition to RO
 
@@ -131,9 +132,10 @@ def map_to_clusters(cursor, vfb_ind):
 				   "FROM clustering cg " \
 				   "JOIN neuron n ON (cg.idid=n.idid) " \
 				   "JOIN owl_individual nind ON (n.uuid=nind.uuid) " \
-				   "JOIN cluster c ON (cg.cluster=c.cluster)" \
-				   "JOIN owl_individual cind ON (c.uuid=cind.uuid)" \
-				   "WHERE c.clusterv = '3'") # Set clustering version here.
+				   "JOIN cluster c ON (cg.cluster=c.cluster) " \
+				   "JOIN owl_individual cind ON (c.uuid=cind.uuid) " \
+				   "WHERE c.clusterv = '3' " \
+				   "AND cg.clusterv_id = '3'") # It is essential to set clustering version twice ! (crappy schema...)
 
 	# Now add cluster assertions.  Note - these are declared in both directions as elk cannot cope with inverses.
 
@@ -144,23 +146,32 @@ def map_to_clusters(cursor, vfb_ind):
 
 	cursor.close()
 
-# Now run all the functions
+# Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
+
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = 'Chiang2010'
-vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/" + dataset + ".owl")
+# Setup ontologies
+vfb_ind = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/vfb/flycircuit_plus.owl")
 addOboAnnotationProperties(vfb_ind)
-fbbt = Brain()
-fbbt.learn("file:///repos/fbbtdv/fbbt/releases/fbbt-simple.owl") #
-gen_ind_by_source(conn.cursor(), vfb_ind, dataset)
+ont_dict = {}
+ont_dict['vfb_ind']=vfb_ind
+ont_dict['fbbt'] = load_ont("/repos/fbbtdv/fbbt/releases/fbbt-simple.owl")
+#ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
+ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
+#ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
+# Now run all the functions
+
+gen_ind_by_source(conn.cursor(), ont_dict, dataset)
 add_manual_ann(conn.cursor(), vfb_ind)
-add_BN_dom_overlap(conn.cursor(), vfb_ind, fbbt)
+add_BN_dom_overlap(conn.cursor(), vfb_ind, ont_dict['fbbt'])
 add_clusters(conn.cursor(), vfb_ind)
 map_to_clusters(conn.cursor(), vfb_ind)
 
 
 # Save output file and clean up
 
-vfb_ind.save("../../owl/flycircuit.owl")
+vfb_ind.save("../../owl/flycircuit_plus.owl")
 conn.close()
 vfb_ind.sleep()
-fbbt.sleep()
+ont_dict['fbbt'].sleep()
+ont_dict['fb_feature'].sleep()
