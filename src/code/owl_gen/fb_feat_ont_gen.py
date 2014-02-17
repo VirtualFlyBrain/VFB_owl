@@ -21,7 +21,7 @@ fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
 fb_feature.label("E3091C3F-964B-4C39-8AD3-067221C55442", "transgenic_transposon")
 
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
-fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", "flybase", "flybase", "org.postgresql.Driver")  # Need to set this to link to FB pg
+fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", "flybase", "flybase", "org.postgresql.Driver")  #conn to FB pg
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
@@ -30,7 +30,6 @@ vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc JOIN ontology o ON (
 flist = []
 dc = dict_cursor(vfb_cursor)
 for d in dc:
-	fb_feature.addClass(d['shortFormID'])
 	flist.append(d['shortFormID'])
 
 class_list_string = ''
@@ -49,13 +48,15 @@ fb_cursor.execute("SELECT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_ob
 
 fb_dc = dict_cursor(fb_cursor)
 for fb in fb_dc:
-	if not fb['obstat']:
-		warnings.warn(fb['fbid'] + "is obsolete !")
+	if fb['obstat']:
+		warnings.warn(fb['fbid'] +" " + fb['uc_name'] + " is obsolete !  Not adding to fb_feature.owl.") 
 	else:
+		if not fb_feature.knowsClass(fb['fbid']): # Only add class if not obsolete.
+			fb_feature.addClass(fb['fbid'])
 		tmp = re.sub("<up\>", "[",fb['uc_name'])
 		uc_name = re.sub("<\/up>", "]", tmp)
 		fb_feature.label(fb['fbid'], uc_name)
-		#		fb_feature.subClassOf(fb['fbid'], fb_feature.getLabel)
+		#		fb_feature.subClassOf(fb['fbid'], ??)
 
 vfb_cursor.close()
 vfb_ms_conn.close()
@@ -63,4 +64,4 @@ vfb_ms_conn.close()
 fb_cursor.close()
 fb_pg_conn.close()
 
-fb_feature.save("fb_features.owl") 
+fb_feature.save("../../owl/fb_features.owl") 
