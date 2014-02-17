@@ -56,15 +56,14 @@ def oe_check_db_and_add(sfid, typ, cursor, ont):
 		warnings.warn("Unknown " + typ  + " " + sfid)
     
 def BrainName_mapping(cursor, ont):
-    cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID FROM BrainName_to_owl b2o JOIN owl_class oe ON (oe.id=b2o.owl_class_id)")
+    cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID, o.baseURI FROM BrainName_to_owl b2o JOIN owl_class oe ON (oe.id=b2o.owl_class_id) JOIN ontology o ON (o.id=oe.ontology_id)")
     BN_dict = {}
     dc = dict_cursor(cursor)
     for d in dc:
         BN = d["BrainName_abbv"]
-        owl_class = d["shortFormID"]
-        BN_dict[BN] = owl_class
-        if not ont.knowsClass(owl_class):
-            ont.addClass(owl_class) 
+        BN_dict[BN] = d["shortFormID"]
+        if not ont.knowsClass(d["shortFormID"]):
+            ont.addClass(d['baseURI'] + d["shortFormID"]) 
     return BN_dict
 
 def gen_ind_dict(conn):
@@ -119,11 +118,12 @@ def type_exists(objectProperty, claz, conn):
 
 def add_type(objectProperty, claz, conn):
 	cursor = conn.cursor()
-	cursor.execute("INSERT INTO owl_type (object_property, class) SELECT id AS objectProperty (SELECT id FROM owl_class WHERE shortFormID = '%s') AS class FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
+	cursor.execute("INSERT INTO owl_type (objectProperty, class) SELECT id AS objectProperty, (SELECT id FROM owl_class AS class WHERE shortFormID = '%s') FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
 	conn.commit()
 	cursor.close()
    
 def add_ind_type(ind, objectProperty, claz, conn):
+	""" """
 	cursor = conn.cursor()
 	if not type_exists(objectProperty, claz, conn):
 		add_type(objectProperty, claz, conn)

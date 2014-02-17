@@ -8,10 +8,14 @@ from uk.ac.ebi.brain.core import Brain
 import obo_tools
 from lmb_fc_tools import get_con
 
-def gen_ind_by_source(cursor, vfb_ind, dataset):
-	feature_ont = Brain()
-	feature_ont.learn("../../owl/fb_features.owl")  # FlyBase features ontology for looking up feature names for rolling definitions.  Might be better to do this from the DB.  But that will depend on ensuring DB labels are up to date.
+def load_ont(url):
+	ont = Brain()
+	ont.learn(url)
+	return ont
 
+def gen_ind_by_source(cursor, ont_dict, dataset):
+	
+	vfb_ind = ont_dict['vfb_ind']
 	class simple_classExpression:
 		rel = ''
 		obj = ''
@@ -57,33 +61,40 @@ def gen_ind_by_source(cursor, vfb_ind, dataset):
 
 			vfb_ind.type(d['claz'], d['iID'])
 		ind_id_type[d['iID']].append(sce)
-
-	for iID, types in ind_id_type.iteritems():
-		definition = def_roller(types, feature_ont)
-		# Now get source info.  Doing this the slow way to avoid making interim datastructure
-		cursor.execute("SELECT i.shortFormID AS iID, s.name, s.pub_pmid, s.pub_miniref FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE i.shortFormID = '%s'" % iID)
-		source = ''
-		dc = dict_cursor(cursor)
-		for d in dc:
-			source = d['pub_miniref'] + " (PMID:" + str(d['pub_pmid']) + ")"
-		vfb_ind.annotation(iID, "IAO_0000115", definition + " " + source) # Definition
+		
+	# Get source infor for this dataset
+	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext FROM data_source s WHERE s.name = '%s'" % dataset)
+	dc = dict_cursor(cursor)
+	for d in dc:
+		 # iterate over individuals, rolling defs
+		for iID, types in ind_id_type.iteritems():
+			basic_def = def_roller(types, ont_dict)
+			full_def = "%s from %s (PMID:%s). %s" % (basic_def, d['pub_miniref'], str(d['pub_pmid']), d['dtext'])
+			vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
 	cursor.close()
-
-def def_roller(types, ont):
-	"""Take a list of simple owl class expression objects (soce) as an arg. Each soce has 2 attributes - a relation (rel) and an object (obj).  The value of each attribute is a shortFormID"""
-	genus = ''
+	#
+	
+def def_roller(types, ont_dict):  #
+	"""Takes 2 args. ARG1: a list of simple owl class expression objects (soce) as an arg. Each soce has 2 attributes - a relation (rel) and an object (obj).  The value of each attribute is a shortFormID.  ARG2: a dictionary of brain objects."""
+	feat_ont = ont_dict['fb_feature']
+	fbbt = ont_dict['fbbt']
+	genus = '' # Generic typing
+	spec_genus = '' # Specific typing for use in def.
 	po = ''
 	exp = ''
 	defn = ''
 	gender = ''
+	i = 0
 	for typ in types:
-		if not typ.rel: 
-			if typ.obj == 'FBbt_00005106': # neuron
+		if not typ.rel:
+			#if fbbt.isSuperClass('FBbt_00005106', typ.obj, 0) or (typ.obj == 'FBbt_00005106') : # neuron
+			if (typ.obj == 'FBbt_00005106') : # neuron
 				genus = 'neuron'
-			elif typ.obj == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6': # expression pattern
+			if typ.obj == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6': # expression pattern  - Should be changed to similar lookup to others.
 				genus = 'expression pattern'
-			elif typ.obj == 'FBbt_00007683': # neuroblast lineage clone
+			if fbbt.isSuperClass('FBbt_00007683', typ.obj, 0) or (typ.obj == 'FBbt_00007683') : # neuroblast lineage clone
 				genus = 'neuroblast lineage clone'
+				spec_genus = fbbt.getLabel(typ.obj)
 		if (typ.rel == 'BFO_0000050') & (typ.obj == 'FBbt_00003624'): # part of adult brain
 			po = 'adult brain'
 		if (typ.rel == 'BFO_0000050') & (typ.obj == 'FBbt_00007004'): # part male organism
@@ -91,8 +102,8 @@ def def_roller(types, ont):
 		if (typ.rel == 'BFO_0000050') & (typ.obj == 'FBbt_00007011'): # part female organism
 				gender = 'F'
 		if (typ.rel == 'RO_0002292'): # expresses  X
-			if ont.knowsClass(typ.obj):				
-				exp = ont.getLabel(typ.obj)
+			if feat_ont.knowsClass(typ.obj):				
+				exp = feat_ont.getLabel(typ.obj)
 			else: 
 				warnings.warn("%s is not a valid class in fb_features.owl. Not rolling def." % typ.obj)
 			continue
@@ -101,9 +112,9 @@ def def_roller(types, ont):
 	if gender == 'F':
 		po = 'adult female brain'
 	if genus == 'neuron':
-		defn = "A neuron expressing %s that is part of an %s." % (exp, po)
+		defn = "A %s expressing %s that is part of an %s" % (spec_genus, exp, po)
 	elif genus == 'expression pattern':
 		defn = "An %s expressing %s" % (po, exp)
 	elif genus == 'neuroblast lineage clone':
-		defn = "An example of an %s in the %s." % (genus, po)
+		defn = "An example of an %s in the %s" % (spec_genus, po)
 	return defn
