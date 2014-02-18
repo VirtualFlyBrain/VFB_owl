@@ -106,10 +106,10 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00110565>
 Class: <http://purl.obolibrary.org/obo/FBbt_00110393>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050152>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050253>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050253>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050152>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00110562>
@@ -205,10 +205,10 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050143>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050004>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050140>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050001>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050001>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050140>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050280>
@@ -217,19 +217,19 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050280>
 Class: <http://purl.obolibrary.org/obo/FBbt_00003624>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050202>
+Class: <http://purl.obolibrary.org/obo/FBbt_00110412>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00110412>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050202>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050087>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050081>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050205>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050205>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050081>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050084>
@@ -244,19 +244,19 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050137>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050134>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050277>
+Class: <http://purl.obolibrary.org/obo/FBbt_00110366>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00110366>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050277>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050274>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050131>
+Class: <http://purl.obolibrary.org/obo/FBbt_00110369>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00110369>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050131>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050271>
@@ -280,10 +280,10 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050098>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050199>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050119>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050196>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050196>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050119>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050194>
@@ -1278,8 +1278,8 @@ Individual: VFB_00020220
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00050140>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00050140>
     
     
 Individual: VFB_00020222

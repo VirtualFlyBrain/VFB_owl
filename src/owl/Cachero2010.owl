@@ -220,8 +220,8 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00110486>
 Individual: VFB_00020146
 
     Annotations: 
-        rdfs:label "pIP-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pIP-a clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110478>,
@@ -233,7 +233,7 @@ Individual: VFB_00020147
 
     Annotations: 
         rdfs:label "pIP-b clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-b lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-b lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110480>,
@@ -245,7 +245,7 @@ Individual: VFB_00020148
 
     Annotations: 
         rdfs:label "pIP-c clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -257,7 +257,7 @@ Individual: VFB_00020149
 
     Annotations: 
         rdfs:label "pIP-d clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110484>,
@@ -268,8 +268,8 @@ Individual: VFB_00020149
 Individual: VFB_00020142
 
     Annotations: 
-        rdfs:label "aSP-l clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-l lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-l lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aSP-l clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110470>,
@@ -280,7 +280,7 @@ Individual: VFB_00020142
 Individual: VFB_00020143
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-m lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-m lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSP-m clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -293,7 +293,7 @@ Individual: VFB_00020144
 
     Annotations: 
         rdfs:label "Lo clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless Lo lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless Lo lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -304,8 +304,8 @@ Individual: VFB_00020144
 Individual: VFB_00020145
 
     Annotations: 
-        rdfs:label "M clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an neuroblast lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -315,7 +315,7 @@ Individual: VFB_00020145
 Individual: VFB_00020150
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pIP-e clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -327,8 +327,8 @@ Individual: VFB_00020150
 Individual: VFB_00020152
 
     Annotations: 
-        rdfs:label "pIP-g clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pIP-g clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110490>,
@@ -339,7 +339,7 @@ Individual: VFB_00020152
 Individual: VFB_00020151
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pIP-f clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -351,7 +351,7 @@ Individual: VFB_00020151
 Individual: VFB_00020159
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pMP-d clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -364,7 +364,7 @@ Individual: VFB_00020157
 
     Annotations: 
         rdfs:label "pMP-b clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -376,7 +376,7 @@ Individual: VFB_00020158
 
     Annotations: 
         rdfs:label "pMP-c clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-c (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-c (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110502>,
@@ -387,8 +387,8 @@ Individual: VFB_00020158
 Individual: VFB_00020155
 
     Annotations: 
-        rdfs:label "pIP-j clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-j lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-j lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pIP-j clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110496>,
@@ -400,7 +400,7 @@ Individual: VFB_00020119
 
     Annotations: 
         rdfs:label "aDT-f clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110424>,
@@ -411,8 +411,8 @@ Individual: VFB_00020119
 Individual: VFB_00020156
 
     Annotations: 
-        rdfs:label "pMP-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pMP-a clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -424,7 +424,7 @@ Individual: VFB_00020118
 
     Annotations: 
         rdfs:label "aDT-e clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -435,7 +435,7 @@ Individual: VFB_00020118
 Individual: VFB_00020153
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-h (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-h (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pIP-h clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -447,7 +447,7 @@ Individual: VFB_00020153
 Individual: VFB_00020117
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-d (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-d (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aDT-d clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -459,7 +459,7 @@ Individual: VFB_00020117
 Individual: VFB_00020154
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-i lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-i lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pIP-i clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -471,7 +471,7 @@ Individual: VFB_00020154
 Individual: VFB_00020116
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aDT-c clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -483,7 +483,7 @@ Individual: VFB_00020116
 Individual: VFB_00020115
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aDT-b clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -495,8 +495,8 @@ Individual: VFB_00020115
 Individual: VFB_00020114
 
     Annotations: 
-        rdfs:label "aDT-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aDT-a clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -507,8 +507,8 @@ Individual: VFB_00020114
 Individual: VFB_00020163
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
-        rdfs:label "pSG-a clone of Cachero 2010"^^xsd:string
+        rdfs:label "pSG-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110512>,
@@ -519,8 +519,8 @@ Individual: VFB_00020163
 Individual: VFB_00020162
 
     Annotations: 
-        rdfs:label "pMP-g clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pMP-g clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -532,7 +532,7 @@ Individual: VFB_00020161
 
     Annotations: 
         rdfs:label "pMP-f clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-f (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-f (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110508>,
@@ -544,7 +544,7 @@ Individual: VFB_00020160
 
     Annotations: 
         rdfs:label "pMP-e clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110506>,
@@ -555,8 +555,8 @@ Individual: VFB_00020160
 Individual: VFB_00020120
 
     Annotations: 
-        rdfs:label "aDT-g clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-g lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aDT-g clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110426>,
@@ -567,8 +567,8 @@ Individual: VFB_00020120
 Individual: VFB_00020170
 
     Annotations: 
-        rdfs:label "pSP-c clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "pSP-c clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110526>,
@@ -579,8 +579,8 @@ Individual: VFB_00020170
 Individual: VFB_00020121
 
     Annotations: 
-        rdfs:label "aDT-h clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-h lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-h lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aDT-h clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110428>,
@@ -592,7 +592,7 @@ Individual: VFB_00020122
 
     Annotations: 
         rdfs:label "aIP-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110430>,
@@ -603,7 +603,7 @@ Individual: VFB_00020122
 Individual: VFB_00020123
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aIP-b clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -615,7 +615,7 @@ Individual: VFB_00020123
 Individual: VFB_00020124
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-c (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-c (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aIP-c clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -627,8 +627,8 @@ Individual: VFB_00020124
 Individual: VFB_00020125
 
     Annotations: 
-        rdfs:label "aIP-d clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-d (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-d (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aIP-d clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110436>,
@@ -639,7 +639,7 @@ Individual: VFB_00020125
 Individual: VFB_00020126
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-e (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aIP-e clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -651,8 +651,8 @@ Individual: VFB_00020126
 Individual: VFB_00020127
 
     Annotations: 
-        rdfs:label "aIP-f clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-f lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aIP-f clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -663,8 +663,8 @@ Individual: VFB_00020127
 Individual: VFB_00020128
 
     Annotations: 
-        rdfs:label "aIP-g clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-g (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-g (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aIP-g clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110442>,
@@ -676,7 +676,7 @@ Individual: VFB_00020129
 
     Annotations: 
         rdfs:label "aIP-h clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-h lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-h lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110444>,
@@ -687,7 +687,7 @@ Individual: VFB_00020129
 Individual: VFB_00020167
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-e lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-e lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pSG-e clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -700,7 +700,7 @@ Individual: VFB_00020166
 
     Annotations: 
         rdfs:label "pSG-d clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110518>,
@@ -711,7 +711,7 @@ Individual: VFB_00020166
 Individual: VFB_00020165
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pSG-c clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -723,7 +723,7 @@ Individual: VFB_00020165
 Individual: VFB_00020164
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-b lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-b lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "pSG-b clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -736,7 +736,7 @@ Individual: VFB_00020169
 
     Annotations: 
         rdfs:label "pSP-b clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110524>,
@@ -747,7 +747,7 @@ Individual: VFB_00020169
 Individual: VFB_00020130
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSG-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSG-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSG-a clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -760,7 +760,7 @@ Individual: VFB_00020168
 
     Annotations: 
         rdfs:label "pSP-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-a lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110522>,
@@ -772,7 +772,7 @@ Individual: VFB_00020133
 
     Annotations: 
         rdfs:label "aSP-c clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-c lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -783,7 +783,7 @@ Individual: VFB_00020133
 Individual: VFB_00020134
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-d lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSP-d clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -795,8 +795,8 @@ Individual: VFB_00020134
 Individual: VFB_00020131
 
     Annotations: 
-        rdfs:label "aSP-a clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-a (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
+        rdfs:label "aSP-a clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110448>,
@@ -807,8 +807,8 @@ Individual: VFB_00020131
 Individual: VFB_00020132
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
-        rdfs:label "aSP-b clone of Cachero 2010"^^xsd:string
+        rdfs:label "aSP-b clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-b (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
@@ -819,7 +819,7 @@ Individual: VFB_00020132
 Individual: VFB_00020137
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-g (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-g (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSP-g clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -831,7 +831,7 @@ Individual: VFB_00020137
 Individual: VFB_00020138
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-h (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-h (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSP-h clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -844,7 +844,7 @@ Individual: VFB_00020135
 
     Annotations: 
         rdfs:label "aSP-e clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-e lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-e lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110456>,
@@ -855,8 +855,8 @@ Individual: VFB_00020135
 Individual: VFB_00020136
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-f (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
-        rdfs:label "aSP-f clone of Cachero 2010"^^xsd:string
+        rdfs:label "aSP-f clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-f (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110458>,
@@ -868,7 +868,7 @@ Individual: VFB_00020139
 
     Annotations: 
         rdfs:label "aSP-i clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-i (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-i (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110464>,
@@ -879,7 +879,7 @@ Individual: VFB_00020139
 Individual: VFB_00020141
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-k (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-k (female) lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string,
         rdfs:label "aSP-k clone of Cachero 2010"^^xsd:string
     
     Types: 
@@ -892,7 +892,7 @@ Individual: VFB_00020140
 
     Annotations: 
         rdfs:label "aSP-j clone of Cachero 2010"^^xsd:string,
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-j lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-j lineage clone in the adult brain from Cachero et al., 2010 (PMID:None). "^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110466>,
