@@ -7,7 +7,7 @@ export RELEASE="2014-01-29"
 # Merge ind files with specified release of fbbt
 echo ''
 echo "*** Merging ind files with $RELEASE version of fbbt ***"
-owltools http://purl.obolibrary.org/obo/fbbt/${RELEASE}/fbbt-non-classified.owl --merge fb_features.owl $IND_FILES -o file://`pwd`/fbbt_vfb_ind.owl
+owltools http://purl.obolibrary.org/obo/fbbt/${RELEASE}/fbbt-non-classified.owl --merge fb_features.owl --merge vfb_ext.owl $IND_FILES -o file://`pwd`/fbbt_vfb_ind.owl
 
 # assert inferences and strip out redundancy  # This 
 echo ''
