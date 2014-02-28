@@ -7,6 +7,4 @@ From src/code/owl_gen/:
  *  generate any other dataset individuals:  ./vfb_ind_runner.py usr pwd dataset
   * where dataset = flycircuit.data_source.name
 
-Output files are hard coded.  Run from src/code/owl_gen/ for them to end up in src/owl/ .
-
-To avoid this, use vfb_ind_tools.gen_ind_by_source directly.
+Output file names and paths are hard coded.  Run from src/code/owl\_gen/ for them to end up in src/owl/. To avoid this, use vfb\_ind\_tools.gen\_ind\_by\_source directly.
