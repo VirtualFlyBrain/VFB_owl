@@ -7,26 +7,47 @@ import warnings
 vfb_ind = Brain()
 vfb_ind.learn("../../owl/fbbt_vfb_ind_pr_nr.owl")
 
-# Draft object-based unit test system. This should be populated from a spreadsheet.
+# Draft class for object-based unit test system.  This allows more info to be stored about queries and tests. Objects should be populated from a tsv.  Good potential for generating documentation straight from tsv or by using these objects...
+
 class Query:
-    query = ''
-    query_text = ''
-    i = False # Should it have instances?
-    s = True  # should it have subclasses?
+    """Class for testing queries against ontology + individuals files for VFB"""  #  Seems this is not right for multi-line doc....
+    """Attributes:"""
+    """    query - DL query with shortFormIDs"""
+    """    query_by_label - DL query with labels (for reference)"""
+    """    query_text - Dexcriptive text for web-page / doc."""
+    """    description -  # Why is this test being run?    query = '' # DL query with shortFormIDs"""
+    """    i = False # Should it have instances? - Default = False"""
+    """    s = True  # should it have subclasses? - Default = True"""
+    """Methods:"""
+    """    qtest - """    
+    query_by_label = '' # DL query with labels (for reference)
+    query_text = ''  # Dexcriptive text for web-page / doc.
+    description = ''  # Why is this test being run?
+    i = False # Should it have instances? - Default = False
+    s = True  # should it have subclasses? - Default = True
     def qtest(self, ont):
+        qstat = 1
+        """Method to run test queries on object.  Takes one arg - a Brain object."""
+        """Uses s, i boolean attributes to decide whether to run SubClassOf &/or Individuals queries respectively."""
+        """Warns if no results returned or prints number of results returned"""
+        """If any query returns no results, this method returns false, otherwise is returns true."""
         if self.i:
             instances = ont.getInstances(self.query, 0)
             if instances:
                 print qtext + " - Individuals: " + str( len(instances) )
             else:
                 warnings.warn(qtext + " has no instances!")
+                qstat = 0
         if self.s:
             if subclasses:
                 print qtext + " - subClasses: " + str( len(subclasses) )
-            else:
+            else:    
                 warnings.warn(qtext + " has no subclasses!")
-
-        
+                qstat = 0
+        return qstat
+                
+                # With object-based system, where should the details live?  Better to make a separate config table and have this script read it in.
+                # TODO - write tsv parser + procedural code to generate objects and run tests.
 
 # Unit tests using dict.
 
@@ -54,7 +75,7 @@ for Q, qtext in DL_QueriesByID.iteritems():
     else:
         warnings.warn(qtext + " has no subclasses!")
 
-
+        # Queries for individuals currently work on labels.  Unusually, the
 
 # roll name_id lookup
 
