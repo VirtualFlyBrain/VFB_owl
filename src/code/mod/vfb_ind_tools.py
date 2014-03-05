@@ -69,7 +69,9 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 		 # iterate over individuals, rolling defs
 		for iID, types in ind_id_type.iteritems():
 			basic_def = def_roller(types, ont_dict)
-			full_def = "%s from %s (PMID:%s). %s" % (basic_def, d['pub_miniref'], str(d['pub_pmid']), d['dtext'])
+			full_def = "%s from %s (PMID:%s). " % (basic_def, d['pub_miniref'], str(d['pub_pmid']))
+			if d['dtext']:
+				full_def += d['dtext']
 			vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
 	cursor.close()
 	#
@@ -87,8 +89,10 @@ def def_roller(types, ont_dict):  #
 	i = 0
 	for typ in types:
 		if not typ.rel:
-			#if fbbt.isSuperClass('FBbt_00005106', typ.obj, 0) or (typ.obj == 'FBbt_00005106') : # neuron
-			if (typ.obj == 'FBbt_00005106') : # neuron
+			if fbbt.isSuperClass('FBbt_00005106', typ.obj, 0):
+				genus = 'neuron'
+				spec_genus = fbbt.getLabel(typ.obj)
+			if (typ.obj == 'FBbt_00005106'): # neuron
 				genus = 'neuron'
 			if typ.obj == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6': # expression pattern  - Should be changed to similar lookup to others.
 				genus = 'expression pattern'
@@ -112,7 +116,10 @@ def def_roller(types, ont_dict):  #
 	if gender == 'F':
 		po = 'adult female brain'
 	if genus == 'neuron':
-		defn = "A %s expressing %s that is part of an %s" % (spec_genus, exp, po)
+		if spec_genus:
+			defn = "A %s expressing %s that is part of an %s" % (spec_genus, exp, po)
+		else:
+			defn = "A %s expressing %s that is part of an %s" % (genus, exp, po)
 	elif genus == 'expression pattern':
 		defn = "An %s expressing %s" % (po, exp)
 	elif genus == 'neuroblast lineage clone':
