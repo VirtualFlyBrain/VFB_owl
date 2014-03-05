@@ -15,6 +15,7 @@ fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
 fb_feature = Brain(fbf_base, fbf)
 # declaration of tmp classes for transgenes
+
 fb_feature.addClass("F73F6684-1B7F-4464-9A3E-6DAB89827C03")
 fb_feature.label("F73F6684-1B7F-4464-9A3E-6DAB89827C03", "transposable_element_insertion_site")
 fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
@@ -34,7 +35,7 @@ for d in dc:
 
 class_list_string = ''
 while flist:
-	claz = flist.pop()
+	claz = flist.pop()    
 	class_list_string += "'%s'" % claz
 	if len(flist) >= 1:
 		class_list_string += ", "
