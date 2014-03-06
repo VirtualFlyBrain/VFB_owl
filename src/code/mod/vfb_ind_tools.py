@@ -77,7 +77,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	#
 	
 def def_roller(types, ont_dict):  #
-	"""Takes 2 args. ARG1: a list of simple owl class expression objects (soce) as an arg. Each soce has 2 attributes - a relation (rel) and an object (obj).  The value of each attribute is a shortFormID.  ARG2: a dictionary of brain objects."""
+	"""Takes 2 args. ARG1: a list of simple owl class expression objects (soce) as an arg. Each source has 2 attributes - a relation (rel) and an object (obj).  The value of each attribute is a shortFormID.  ARG2: a dictionary of brain objects."""
 	feat_ont = ont_dict['fb_feature']
 	fbbt = ont_dict['fbbt']
 	genus = '' # Generic typing
@@ -94,8 +94,9 @@ def def_roller(types, ont_dict):  #
 				spec_genus = fbbt.getLabel(typ.obj)
 			if (typ.obj == 'FBbt_00005106'): # neuron
 				genus = 'neuron'
-			if typ.obj == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6': # expression pattern  - Should be changed to similar lookup to others.
+			if typ.obj == 'FBbt_00003624': # adult brain - hack for EP! change back once fixed on site!!!!!!!
 				genus = 'expression pattern'
+				po = 'adult brain'
 			if fbbt.isSuperClass('FBbt_00007683', typ.obj, 0) or (typ.obj == 'FBbt_00007683') : # neuroblast lineage clone
 				genus = 'neuroblast lineage clone'
 				spec_genus = fbbt.getLabel(typ.obj)
