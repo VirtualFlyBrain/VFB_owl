@@ -11,7 +11,7 @@ from vfb_ind_tools import load_ont
 
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = sys.argv[3]
-vfb_ind = Brain("http://www.virtualflybrain.org/owl/", "http://www.virtualflybrain.org/owl/" + dataset + ".owl")
+vfb_ind = Brain("http://www.virtualflybrain.org/", "http://purl.obolibrary.org/obo/fbbt/vfb/" + dataset + ".owl") # Should be set in DB?
 addOboAnnotationProperties(vfb_ind)
 
 ont_dict = {}
