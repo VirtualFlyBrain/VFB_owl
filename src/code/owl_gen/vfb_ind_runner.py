@@ -8,10 +8,19 @@ from uk.ac.ebi.brain.core import Brain
 from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
+from dict_cursor import dict_cursor
 
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = sys.argv[3]
-vfb_ind = Brain("http://www.virtualflybrain.org/", "http://purl.obolibrary.org/obo/fbbt/vfb/" + dataset + ".owl") # Should be set in DB?
+cusor = conn.cursor()
+cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
+dc = dict_cursor(cursor)
+baseURI = ''
+for d in dc:
+	baseURI = d['baseURI']
+
+vfb_ind = Brain(baseURI, baseURI + dataset + ".owl")
+
 addOboAnnotationProperties(vfb_ind)
 
 ont_dict = {}
