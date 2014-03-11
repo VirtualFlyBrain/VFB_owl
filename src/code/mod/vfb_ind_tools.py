@@ -94,9 +94,10 @@ def def_roller(types, ont_dict):  #
 				spec_genus = fbbt.getLabel(typ.obj)
 			if (typ.obj == 'FBbt_00005106'): # neuron
 				genus = 'neuron'
-			if typ.obj == 'FBbt_00003624': # adult brain - hack for EP! change back once fixed on site!!!!!!!
-				genus = 'expression pattern'
-				po = 'adult brain'
+				#			if typ.obj == 'FBbt_00003624': # adult brain - hack for EP! change back once fixed on site!!!!!!!
+				if (typ.obj == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6'):
+					genus = 'expression pattern' 
+					# po = 'adult brain' # hack for EP! change back once fixed on site!!!!!!!
 			if fbbt.isSuperClass('FBbt_00007683', typ.obj, 0) or (typ.obj == 'FBbt_00007683') : # neuroblast lineage clone
 				genus = 'neuroblast lineage clone'
 				spec_genus = fbbt.getLabel(typ.obj)
