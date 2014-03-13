@@ -710,34 +710,6 @@
             "domainSelected": "false"
         },
         "extId": [
-            "FBbt:00007099"
-        ],
-        "name": "antennal lobe glomerulus VA1 lateral compartment",
-        "nodeId": "47",
-        "nodeState": {
-            "open": "false",
-            "selected": "false"
-        }
-    },
-    {
-        "domainData": {
-            "domainSelected": "false"
-        },
-        "extId": [
-            "FBbt:00007100"
-        ],
-        "name": "antennal lobe glomerulus VA1 medial compartment",
-        "nodeId": "48",
-        "nodeState": {
-            "open": "false",
-            "selected": "false"
-        }
-    },
-    {
-        "domainData": {
-            "domainSelected": "false"
-        },
-        "extId": [
             "FBbt:00007363"
         ],
         "name": "antennal lobe glomerulus VA1v",
@@ -4464,6 +4436,42 @@
         ],
         "name": "vest",
         "nodeId": "272",
+        "nodeState": {
+            "open": "true",
+            "selected": "false"
+        }
+    },
+    {
+        "domainData": {
+            "domainSelected": "false"
+        },
+        "extId": [
+            "FBbt:00110028"
+        ],
+        "name": "antennal lobe glomerulus VM7d",
+        "nodeId": "273",
+        "nodeState": {
+            "open": "false",
+            "selected": "false"
+        }
+    },
+    {
+        "domainData": {
+            "domainCentre": [],
+            "domainColour": [
+                0,
+                255,
+                255,
+                127
+            ],
+            "domainId": "",
+            "domainSelected": "false"
+        },
+        "extId": [
+            "FBbt:00110639"
+        ],
+        "name": "adult subesophageal zone",
+        "nodeId": "274",
         "nodeState": {
             "open": "true",
             "selected": "false"
