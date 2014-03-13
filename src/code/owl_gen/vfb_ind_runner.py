@@ -12,12 +12,13 @@ from dict_cursor import dict_cursor
 
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = sys.argv[3]
-cusor = conn.cursor()
+cursor = conn.cursor()
 cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
 dc = dict_cursor(cursor)
 baseURI = ''
 for d in dc:
 	baseURI = d['baseURI']
+cursor.close()
 
 vfb_ind = Brain(baseURI, baseURI + dataset + ".owl")
 
