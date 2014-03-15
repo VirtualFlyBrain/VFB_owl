@@ -152,6 +152,14 @@ def map_to_clusters(cursor, vfb_ind):
 
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = 'Chiang2010'
+cursor = conn.cursor()
+cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
+dc = dict_cursor(cursor)
+baseURI = ''
+for d in dc:
+	baseURI = d['baseURI']
+cursor.close()
+vfb_ind = Brain(baseURI, baseURI + 'flycircuit_plus.owl')
 # Setup ontologies
 vfb_ind = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/vfb/flycircuit_plus.owl")
 addOboAnnotationProperties(vfb_ind)
