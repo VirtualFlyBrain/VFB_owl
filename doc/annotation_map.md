@@ -1,5 +1,5 @@
 | a.annotation_type | a.text | op_label | op_id | class_label | class_id |
- + + + + + + + +
+|---|---|---|---|---|---|
 | ALGlomerulus | DA1+DL3 | None | None | None | None |
 | ALGlomerulus | DL1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL1 | FBbt_00003968 |
 | ALGlomerulus | VM4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM2 | FBbt_00003947 |
