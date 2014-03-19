@@ -16,7 +16,7 @@ def update_class_labels(ont_name, ont, conn): # With a method to query ont name 
 	"""Updates class labels in DB (connection via conn), using corresponding labels in ontology (brain object ont) applied to ontology corresponding to specified using file_name."""
 	cursor1 = conn.cursor()
 	cursor2 = conn.cursor()
-	cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc JOIN ontology o ON (oc.ontology_id=o.id) WHERE file_name = '%s'" % ont_name)
+	cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc JOIN ontology o ON (oc.ontology_id=o.id) WHERE short_name = '%s'" % ont_name)
 	dc = dict_cursor(cursor1)
 	for d in dc:
 		if ont.knowsClass(d['shortFormID']):
@@ -27,7 +27,7 @@ def update_class_labels(ont_name, ont, conn): # With a method to query ont name 
 				cursor2.execute(update)
 				#print cursor2.warnings
 		else:
-			warn.warnings("Unknown class " +  d['shortFormID'])
+			warnings.warn("Unknown class: %s not in %s."  %  (d['shortFormID'], ont_name) )
 	conn.commit() # without this - no updates actually get actioned!
 	cursor1.close()
 	cursor2.close()
