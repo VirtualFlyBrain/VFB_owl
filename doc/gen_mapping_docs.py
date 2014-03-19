@@ -19,7 +19,7 @@ cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op
 dc = dict_cursor(cursor)
 
 FH = open("annotation_map.md", 'w')
-FH.write("| a.annotation_type | a.text | op_label | op_id | class_label | class_id |\n + + + + + + + +\n")
+FH.write("| a.annotation_type | a.text | op_label | op_id | class_label | class_id |\n|---|---|---|---|---|---|\n")
 
 for d in dc:
     FH.write("| %s | %s | %s | %s | %s | %s |\n" % (d['annotation_class'], d['annotation_text'], d['op_label'], d['op_id'], d['class_label'], d['class_id']))
