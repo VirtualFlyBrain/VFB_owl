@@ -74,7 +74,8 @@ CREATE TABLE `owl_individual` (
   UNIQUE KEY `vfbid` (`shortFormID`),
   UNIQUE KEY `vfbid_UNIQUE` (`shortFormID`),
   UNIQUE KEY `vfbid_2` (`shortFormID`),
-  KEY `source` (`source_id`)
+  KEY `source` (`source_id`),
+  CONSTRAINT `fksource` FOREIGN KEY (`source_id`) REFERENCES `data_source` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=24412 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -110,8 +111,8 @@ CREATE TABLE `individual_type` (
   `type_id` int(11) NOT NULL,
   `for_text_def` binary(1) DEFAULT '0',
   PRIMARY KEY (`id`),
+  UNIQUE KEY `typ_ind_uk` (`individual_id`,`type_id`),
   KEY `type_id` (`type_id`),
-  KEY `itfk` (`individual_id`),
   CONSTRAINT `itfk` FOREIGN KEY (`individual_id`) REFERENCES `owl_individual` (`id`),
   CONSTRAINT `individual_type_ibfk_1` FOREIGN KEY (`type_id`) REFERENCES `owl_type` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=240623 DEFAULT CHARSET=latin1;
@@ -224,4 +225,4 @@ CREATE TABLE `annotation_key_value` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-04-20 17:15:30
+-- Dump completed on 2014-04-20 22:57:03

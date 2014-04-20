@@ -1,0 +1,77 @@
+#+STARTUP: indent    
+#+SEQ_TODO: TODO STARTED WAITING DELEGATED APPT | DONE DEFERRED CANCELLED    
+#+STARTUP: odd
+#+STARTUP: hidestars
+
+* Ontology
+*** Add missing terms 
+*** Object Properties
+**** TODO exemplar of
+Needs RO ID - using
+*** classes
+**** TODO expression pattern
+IN CARO?
+**** TODO cluster
+**** Sample?
+  
+* Sketch of depiction schema
+X depicts Y iff:
+X is an image in which Y is visible, separate from its surroundings.
+X is an image in which some signal, seperable from background, represents X. 
+
+Both push the definition towards defining a second relation - visible, or represents...
+The second is specific to data images (I think)
+
+*Just because an image depicts and X that has_part some Y, doesn't mean to say the image depicts Y.* We actually need 2 triples:
+
+Individual:adult brain i1
+. Types: 
+.   sample
+.   adult brain
+. Facts:
+.  has_part neuron Y
+
+Individual: neuron Y
+Type: DL1 adPN
+
+Individual: Image Z
+. Type: Image
+. Facts:
+.  depicts adult brain i1
+.  depicts neuron Y
+
+Query: image that depcits some ((sample and 'adult brain') that has_part some DL1 adPN) and depicts some DL1 adPN  # Strictly, from the logic, the two mentions of DL1 adPN may not be the same, but the convention of one sample per image reduces this issue somewhat.
+
+Expression pattern of X
+The mereological sum of all cells expressing X
+
+(cell and expresses some X) subClassOf part_of some 'expression pattern of X'
+
+depicts expression pattern of X
+depicts part_of expression pattern of X
+
+
+* DB
+*** DONE Move names over from neuron table?
+Note - redundancy should be documented somewhere!
+*** DONE Add names to constructs in DB
+
+* code
+*** STARTED Finish code for making ontology of consructs
+Finished apart from classification
+*** STARTED Write code for updating class names in DB from ontology
+DONE? check
+*** DONE Update fc_ind code to use new schema & integrate with new generic code.
+*** Roll image individuals.
+Current recipes:
+http://flybrain.mrc-lmb.cam.ac.uk/vfb/fc/clusterv/3/Cha-F-100277/thumb_0.333.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/FlyCircuit/Thumbs/ChaMARCM-F001324_seg001.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/KeiIto2013/Thumbs/ALad1_01.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Tzumin2013/Thumbs/ALad1_02.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Fruitless2013/Thumbs/aDT-d_F.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Braintrap/Thumbs/FBti0143523.png
+http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Janelia2012/Thumbs/GMR_41F01_AE_01_06-fA01b.png
+
+Note old dataset names!
+
+

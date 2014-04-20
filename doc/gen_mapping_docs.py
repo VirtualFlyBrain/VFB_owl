@@ -30,12 +30,13 @@ FH.close()
 
 cursor.execute("SELECT BrainName_abbv, oc.label as class_label, oc.shortFormID as class_id " \
 "FROM BrainName_to_owl B2O " \
-"JOIN owl_class oc ON B2O.owl_class_id = oc.id")
+"JOIN owl_class oc ON B2O.owl_class_id = oc.id " \
+"ORDER BY BrainName_abbv")
 
 
 FH = open("BrainName_map.md", 'w')
 
-FH.write("| BrainName_abbv | class_label | class_id |")
+FH.write("| BrainName_abbv | class_label | class_id |\n|---|---|---|")
 
 dc = dict_cursor(cursor)
 for d in dc:

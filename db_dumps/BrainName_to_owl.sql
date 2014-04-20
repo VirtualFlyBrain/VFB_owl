@@ -26,8 +26,11 @@ CREATE TABLE `BrainName_to_owl` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `BrainName_abbv` varchar(12) NOT NULL,
   `owl_class_id` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=68 DEFAULT CHARSET=latin1;
+  `stack_index` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `claz` (`owl_class_id`),
+  CONSTRAINT `claz` FOREIGN KEY (`owl_class_id`) REFERENCES `owl_class` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=132 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +39,7 @@ CREATE TABLE `BrainName_to_owl` (
 
 LOCK TABLES `BrainName_to_owl` WRITE;
 /*!40000 ALTER TABLE `BrainName_to_owl` DISABLE KEYS */;
-INSERT INTO `BrainName_to_owl` VALUES (1,'MB_R',47),(2,'CRE_L',48),(3,'SPS_R',49),(4,'PVLP_L',50),(5,'MB_L',47),(6,'IVLP_R',51),(7,'PLP_R',52),(8,'AME_L',53),(9,'ICL_R',54),(10,'LH_L',55),(11,'LO_L',56),(12,'SOG',57),(13,'EPA_R',58),(14,'PAN_L',59),(15,'AL_R',60),(16,'AVLP_R',61),(17,'LB_L',62),(18,'SPS_L',49),(19,'SLP_L',63),(20,'GOR_L',64),(21,'ATL_L',65),(22,'OTU_L',66),(23,'GA_L',67),(24,'WED_L',68),(25,'VES_L',69),(26,'IB_L',70),(27,'NO',71),(28,'AVLP_L',61),(29,'LH_R',55),(30,'IPS_R',72),(31,'PAN_R',59),(32,'PB',73),(33,'IPS_L',72),(34,'ME_L',74),(35,'VES_R',69),(36,'LB_R',62),(37,'SIP_L',75),(38,'FLA',76),(39,'PVLP_R',50),(40,'LAL_R',77),(41,'SMP_R',78),(42,'FB',79),(43,'SMP_L',78),(44,'SAD',80),(45,'IB_R',70),(46,'SIP_R',75),(47,'EPA_L',58),(48,'GA_R',67),(49,'WED_R',68),(50,'AME_R',53),(51,'ATL_R',65),(52,'ME_R',74),(53,'LO_R',56),(54,'LOP_L',81),(55,'EB',82),(56,'SCL_L',83),(57,'OTU_R',66),(58,'CRE_R',48),(59,'IVLP_L',51),(60,'AL_L',60),(61,'LAL_L',77),(62,'PRW',84),(63,'PLP_L',52),(64,'SLP_R',63),(65,'SCL_R',83),(66,'GOR_R',64),(67,'ICL_L',54);
+INSERT INTO `BrainName_to_owl` VALUES (68,'AME_R',53,2),(69,'LO_R',56,3),(70,'NO',71,4),(71,'BU_R',62,5),(72,'PB',73,6),(73,'LAL_R',77,8),(74,'SAD',80,9),(75,'CAN_R',68,10),(76,'AMMC_R',59,11),(77,'ICL_R',54,12),(78,'VES_R',69,13),(79,'IB_R',70,14),(80,'ATL_R',65,15),(81,'CRE_R',48,16),(82,'FLA_R',76,20),(83,'LOP_R',81,22),(84,'EB',82,23),(85,'AL_R',4851,24),(86,'ME_R',74,25),(87,'FB',79,26),(88,'SLP_R',63,27),(89,'SIP_R',75,28),(90,'SMP_R',78,29),(91,'AVLP_R',61,30),(92,'PVLP_R',50,31),(93,'IVLP_R',51,32),(94,'PLP_R',52,33),(95,'AOTU_R',66,34),(96,'GOR_R',64,35),(97,'SPS_R',49,37),(98,'IPS_R',72,38),(99,'SCL_R',83,39),(100,'EPA_R',58,40),(101,'PRW',84,50),(102,'GA_R',67,51),(103,'AME_L',53,52),(104,'LO_L',56,53),(105,'BU_L',62,54),(106,'LAL_L',77,56),(107,'CAN_L',68,57),(108,'AMMC_L',59,58),(109,'ICL_L',54,59),(110,'VES_L',69,60),(111,'IB_L',70,61),(112,'ATL_L',65,62),(113,'CRE_L',48,63),(114,'FLA_L',76,67),(115,'LOP_L',81,69),(116,'AL_L',4851,70),(117,'ME_L',74,71),(118,'SLP_L',63,72),(119,'SIP_L',75,73),(120,'SMP_L',78,74),(121,'AVLP_L',61,75),(122,'PVLP_L',50,76),(123,'IVLP_L',51,77),(124,'PLP_L',52,78),(125,'AOTU_L',66,79),(126,'GOR_L',64,80),(127,'SPS_L',49,82),(128,'IPS_L',72,83),(129,'SCL_L',83,84),(130,'EPA_L',58,85),(131,'GA_L',67,86);
 /*!40000 ALTER TABLE `BrainName_to_owl` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-02-17 19:10:19
+-- Dump completed on 2014-04-20 23:09:49
