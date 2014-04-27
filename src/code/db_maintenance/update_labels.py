@@ -1,11 +1,13 @@
 #!/usr/bin/env jython
 
+import sys
+sys.path.append('../mod')
 
 from lmb_fc_tools import update_class_labels;
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from lmb_fc_tools import get_con
-import sys
+
 
 con = get_con(sys.argv[1], sys.argv[2])
 

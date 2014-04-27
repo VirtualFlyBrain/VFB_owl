@@ -1,16 +1,40 @@
 #!/usr/bin/env jython -J-Xmx8000m
 import json # Requires 2.7 !  Using beta1
-from uk.ac.ebi.brain.error import BrainException
-from uk.ac.ebi.brain.core import Brain
+#from uk.ac.ebi.brain.error import BrainException
+#from uk.ac.ebi.brain.core import Brain
 import json
 import re
 
 # DONE: Check relationship of tree node IDs to stack IDs.
 # There is no relationship.  treeContent.jso stores links the node and stack (label field) IDs.  As far as I can tell, arbitrary assignment of node IDs is possible. They  seem to be in order in the tree, but it seems very unlikely that this is important.
-
+ 
 # TODO - split out functions requiring Brain?
 
 """A set of functions for operating on the JSON files that define trees on VFB"""
+
+
+# Tree structure for ref. 
+     #     "node": {
+     #         "nodeId": "18"
+     #     }
+     # },
+     # {
+     #     "node": {
+     #         "children": [
+     #             {
+     #                 "node": {
+     #                     "nodeId": "20"
+     #                 }
+     #             },
+     #             {
+     #                 "node": {
+     #                     "nodeId": "21"
+     #                 }
+     #             }
+     #         ],
+     #         "nodeId": "19"
+     #     }
+     # },
 
 def load_json(path):
     json_file = open(path, "r")
@@ -40,13 +64,58 @@ def add_leaf(nodeId, tree, parent_nodeId):
 	for v in tree.values():
 		if (v['nodeId'] == parent_nodeId):
 			if 'children' in v:
-				v['children'].append({"node":{"nodeId": nodeId}})
+				v['children'].append({"node":{"nodeId": nodeId}}) # Append node to existing list of child nodes
 			else:
-				v['children'] = [{"node":{"nodeId": nodeId}}]
+				v['children'] = [{"node":{"nodeId": nodeId}}]  # Add new node as first child of spec parent
 		else:
 			if 'children' in v:
 				for subtree in v['children']:
 					add_leaf(nodeId, subtree, parent_nodeId) #is this sufficient exit condition?
+
+def find_and_return_subtree(nodeId, tree, subtree_out = '', address = []):
+	"""Returns a subtree starting from a specified node.  Should also return an address for that subtree that could be used to specify it for deletion. But so far this does not work."""
+	# The difficulty here is the snipping bit.  If I can get it to store an adress, then it will work with single inheritance.  Looks like this adress will need to be rolled as it goes.
+	if not subtree_out:
+		for k, v in tree.items():
+			if (v['nodeId'] == nodeId):
+				subtree_out = {}
+				subtree_out['node'] = v
+				address_out = address
+				break
+			#tree.pop(k)  #  Hmmmm - probably not be operating on tree passed at start of function.  Can store this = but then need full address to specify its deletion!
+			elif 'children' in v:
+				i = 0				
+				for subtree in v['children']:
+					address.append(i)
+					i += 1
+					(subtree_out, address) = find_and_return_subtree(nodeId, subtree, subtree_out, address) # pass the return value(s) back up the stack.
+	return (subtree_out, address)
+
+# In order to specify for deletion, need to store array indexes!
+	
+
+def append_branch(nodeId, tree, new_subtree):
+	for v in tree.values():
+		if (v['nodeId'] == nodeId):
+			if not 'children' in v:
+				v['children'] = []
+			print type(v['children'])
+			v['children'].append(new_subtree)  # Add new node as first child of spec parent
+			break
+		elif 'children' in v:
+			for subtree in v['children']:
+				append_branch(nodeId, subtree, new_subtree)
+
+                        
+def copy_node(nodeId, tree, new_parent_id_node):
+	address = ''
+	subtree = ''
+	(subtree, address) = find_and_return_subtree(nodeId, tree)
+	append_branch(new_parent_id_node, tree, subtree)
+
+	
+
+	
 
 def test_add_leaf():
 	treeStructure = load_json("../json/treeStructure.jso")
