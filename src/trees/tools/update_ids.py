@@ -26,8 +26,8 @@ JC = open("../json/JFRC_FBbt_correspondence.", "r")
 for l in JC:
 	l2 = l.rstrip()
 	clist = l2.split("\t")
-	oboid_domId[clist[3]]=clist[2]
-
+	if not re.search("_L$", clist[0]): 
+		oboid_domId[clist[3]]=clist[2]
 
 tc = load_json("../json/treeContent.jso")
 
@@ -44,7 +44,7 @@ for term in tc:
 			term["domainData"] = {"domainColour": [0,128,128,127],"domainId": oboid_domId[oboid],"domainSelected": "false"} # Setting default colour - will need to fix.
 	else:
 		if "domainId" in term["domainData"]:
-			del term["domainData"]["domainId"] # Remove old domain_id, if present.
+			term["domainData"]["domainId"] = '' # Remove old domain_id, if present.
 		owl_id = re.sub(':','_',oboid)
 		name = '';
 		if fbbt.knowsClass(owl_id):
@@ -62,7 +62,7 @@ update_names(new_tc, fbbt)
 
 fbbt.sleep()
 
-write_json(new_tc, "../json/treeContent_JFRC_BN_final.jso")
+write_json(new_tc, "../json/treeContent_JFRC_BN_final.jso")    
 
 
     
