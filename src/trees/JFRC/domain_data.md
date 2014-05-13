@@ -1,5 +1,5 @@
 |AME_R|accessory medulla|2|FBbt:00045003|
-|+|+|+|+|
+|---|---|---|---|
 |LO_R|lobula|3|FBbt:00003852|
 |NO|nodulus|4|FBbt:00003680|
 |BU_R|bulb|5|FBbt:00003682|

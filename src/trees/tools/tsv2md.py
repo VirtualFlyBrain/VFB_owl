@@ -14,7 +14,7 @@ for line in tsv_file:
 col_num = len(tsv[0].split("\t"))
 
 print (tsv2md(tsv.pop(0)))
-print "|" + ("+|" * col_num)
+print "|" + ("---|" * col_num)
 
 for line in tsv:
     print tsv2md(line)
