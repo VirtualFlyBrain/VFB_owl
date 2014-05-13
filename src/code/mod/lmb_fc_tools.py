@@ -5,23 +5,34 @@ from dict_cursor import dict_cursor  # Handy local module for turning JBDC curso
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from obo_tools import gen_id
+from owltools.graph import OWLGraphWrapper
+import re
 import warnings
 
 def get_con(usr, pwd):
 	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	# conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 def update_class_labels(ont_name, ont, conn): # With a method to query ont name from ont, should be able to limit to 2 args
 	"""Updates class labels in DB (connection via conn), using corresponding labels in ontology (brain object ont) applied to ontology corresponding to specified using file_name."""
+	# TODO - rewirte with OWLtools - including obsoletion test.
+
+	onto = ont.getOntology() # get ontology object for rolling graphWrapper
+	ogw = OWLGraphWrapper(onto) 
+
 	cursor1 = conn.cursor()
 	cursor2 = conn.cursor()
 	cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc JOIN ontology o ON (oc.ontology_id=o.id) WHERE short_name = '%s'" % ont_name)
 	dc = dict_cursor(cursor1)
 	for d in dc:
+		obo_id = re.sub('_', ':', d['shortFormID']) # surely there's a method that doesn't require this!
+		clazo = ogw.getOWLClassByIdentifier(obo_id)
+		new_label = ont.getLabel(d['shortFormID'])
 		if ont.knowsClass(d['shortFormID']):
-			new_label = ont.getLabel(d['shortFormID'])
-			if not new_label == d['label']:
+			if ogw.isObsolete(clazo):
+				warnings.warn("Obsolete class: %s in %s."  %  (d['shortFormID'], ont_name) )
+			elif not new_label == d['label']:
 				update = "UPDATE owl_class set label='%s' WHERE shortFormID = '%s'" % (new_label, d['shortFormID'])
 				#print update
 				cursor2.execute(update)
@@ -136,7 +147,8 @@ def add_akv_type(key, value, objectProperty, claz, conn):
 	if not type_exists(objectProperty, claz, conn):
 		add_type(objectProperty, claz, conn)
 	typ = type_exists(objectProperty, claz, conn)
-	cursor.execute("INSERT INTO akv_type (annotation_key_value_id, type_id) SELECT id AS annotation_key_value_id, '%s' AS type_id FROM annotation_key_value WHERE annotation_class = '%s' AND annotation_text = '%s'" % (typ, key, value))
+	cursor = conn.cursor()
+	cursor.execute("INSERT INTO annotation_type (annotation_key_value_id, owl_type_id) SELECT id AS annotation_key_value_id, '%s' AS type_id FROM annotation_key_value WHERE annotation_class = '%s' AND annotation_text = '%s'" % (typ, key, value))
 	conn.commit()
 	cursor.close()
 
