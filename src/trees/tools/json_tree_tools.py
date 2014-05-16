@@ -10,6 +10,8 @@ import re
  
 # TODO - split out functions requiring Brain?
 
+# Potential major refactoring - use object orientation to abstract out tree crawling from operations on/with tree content.  The challenge will be having a system for managing additional arguments to be passed on tail recursion.
+
 """A set of functions for operating on the JSON files that define trees on VFB"""
 
 
@@ -45,7 +47,7 @@ def load_json(path):
 def write_json(json_var, path):
 	"""Writes json_var to file (path) with a nicely serialised layout."""
 	json_file = open(path, "w")
-	json_file.write(json.dumps(json_var ,sort_keys=True, indent=4, separators=(',', ': ')))
+	json_file.write(json.dumps(json_var ,sort_keys=True, indent=4, separators=(',', ': '))) # Hmmm - sort keys here might prevent required ordering. - test.
 	json_file.close()
 
 def update_names(treeContent, fbbt):
@@ -113,9 +115,6 @@ def copy_node(nodeId, tree, new_parent_id_node):
 	(subtree, address) = find_and_return_subtree(nodeId, tree)
 	append_branch(new_parent_id_node, tree, subtree)
 
-	
-
-	
 
 def test_add_leaf():
 	treeStructure = load_json("../json/treeStructure.jso")
@@ -123,16 +122,118 @@ def test_add_leaf():
 	write_json(treeStructure, "treeStructure_add_leaf_test.json")
 
 # def add_treeContent():
-	
 
 def roll_readable_tree(id_name, tree, count=0):
 	for v in tree.values():
 		ID = v['nodeId']
-		print count * '..' + id_name[ID]
+		print count * '..' + ID + ' ' + id_name[ID]
 		if 'children' in v:
 			count += 1
 			for subtree in v['children']:
-				roll_readable_tree(id_name, subtree, count) #is this sufficient
+				roll_readable_tree(id_name, subtree, count)
+
+def get_nodeId_oboid(treeContent):
+	"""Rolls a dict of nodeId to oboID Given a treeContent json"""
+	nodeId_oboID = {}
+	for node in treeContent:
+		ID = node['nodeId']
+		oboID = node['extId'][0]
+		nodeId_oboID[ID]=oboID
+	return nodeId_oboID
+
+def get_nodeId_name(treeContent):
+	"""Rolls a dict of nodeId to oboID Given a treeContent json"""
+	nodeId_name = {}
+	for node in treeContent:
+		ID = node['nodeId']
+		nodeId_name[ID]=node['name']
+	return nodeId_name
+
+def roll_readable_tree_by_id(treeContent, treeStructure):
+	nid_oid = get_nodeId_oboid(treeContent)
+	roll_readable_tree(nid_oid, treeStructure)
+
+def roll_readable_tree_by_name(treeContent, treeStructure):
+	nodeId_name = get_nodeId_name(treeContent)
+	roll_readable_tree(nodeId_name, treeStructure)
+
+def treeStruc_order_rep(treeStructure, outfile):
+	"""Writes a list of nodeId\toboID to a file specified by outfile. The order of the list corresponds to the order of nodes in the tree"""
+	for v in treeStructure.values():
+		ID = v['nodeId']
+		outfile.write(ID + "\n")
+		if 'children' in v:
+			for subtree in v['children']:
+				treeStruc_order_rep(subtree, outfile)
+
+def update_node_IDs(treeContent, treeStructure):
+	""" Order the treeContent array by the order of nodes in treeStructure. This is needed because of the borderline insane javascript tree parser we run on VFB """
+	# Make tmp file with list of nodes in treeStructure order.
+	outfile = open("array.tmp", "w")
+	treeStruc_order_rep(treeStructure, outfile)
+	outfile.close()
+
+	# roll dict of tree nodeId to node from treeContent file
+	nodeId_treeContentNode = {}
+	for node in treeContent:
+		nodeId = node['nodeId']
+		nodeId_treeContentNode[nodeId] = node
+
+
+	treeOrderArray=open("array.tmp", "r")
+	new_tc = []
+	i = 0
+	old_nodeId_new_nodeId = {}
+	# Roll new treeContent file with nodes in same order as treeStructure, renumbered by array index.
+	for line in treeOrderArray:
+		nodeId = line.rstrip("\n")
+		new_node = nodeId_treeContentNode[nodeId]
+		new_node['nodeId'] = str(i)
+		old_nodeId_new_nodeId[nodeId] = str(i)
+		new_tc.append(new_node)
+		i += 1
+	# TODO -Add something here to delete tmp file.
+	update_ts_nodeIds(treeStructure, old_nodeId_new_nodeId)
+	return (new_tc)
+
+# def get_old2new_nodeId(treeOrderArray):
+#  	"""Takes array of node Ids in orde"""
+#  	i = 0
+#  	oldNodeId_new_Node_id = {}
+#  	for line in treeOrderArray:
+#  		nodeId=line.rstrip("\n")
+#  		oldNodeId_new_Node_id[i]=nodeId # do these need to be strings?
+#  		i += 1
+#  	return oldNodeId_new_Node_id
+
+def update_ts_nodeIds(treeStructure, oldNodeId_new_Node_id):
+ 	for v in treeStructure.values():
+ 		old_ID = v['nodeId']
+ 		v['nodeId'] = oldNodeId_new_Node_id[old_ID]
+ 		if 'children' in v:
+ 			for subtree in v['children']:
+ 				update_ts_nodeIds(subtree, oldNodeId_new_Node_id)
+
+# def update_node_ids(treeContent, treeStructure):
+#  	outfile = open("array.tmp", "w")
+#  	treeStruc_order_rep(treeStructure, outfile)
+#  	outfile.close()
+#  	treeOrderArray=open("array.tmp", "r")
+#  	oldNodeId_new_Node_id = get_old2new_nodeId(treeOrderArray)
+#  	update_ts_nodeIds(treeStructure, oldNodeId_new_Node_id)
+#  	update_tc_nodeIds(treeContent, oldNodeId_new_Node_id)
+#  	treeOrderArray.close()
+
+
+	
+	
+	
+	
+	
+		
+	
+	
+	
 
         
 
