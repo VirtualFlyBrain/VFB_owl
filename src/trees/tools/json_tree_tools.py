@@ -10,9 +10,9 @@ import re
  
 # TODO - split out functions requiring Brain?
 
-# Potential major refactoring - use object orientation to abstract out tree crawling from operations on/with tree content.  The challenge will be having a system for managing additional arguments to be passed on tail recursion.
+# Potential major refactoring - use object orientation to abstract out tree crawling from operations on/with tree content.  The challenge will be developing a system for managing (arbitrary numbers of) additional arguments to be passed on tail recursion.
 
-"""A set of functions for operating on the JSON files that define trees on VFB"""
+"""A set of functions for operating on the JSON files that define trees on VFB.  Note that - after every tree structure manipulation it is essential to re-serialise nodeId numbering and ordering in the treeStructure, treeContent file pair using the function update_node_IDs().  Without this, the javascript on VFB will barf on the files."""
 
 
 # Tree structure for ref. 
@@ -57,9 +57,25 @@ def update_names(treeContent, fbbt):
 		shortFormID = re.sub(':', '_', OBO_ID)
 		node['name'] = fbbt.getLabel(shortFormID)
 
+def update_centres(treeContent, domainId_centre):
+	"""Modified a treeContent JSON (1st arg) by substituting domain centres specified as a list in a dict (2nd arg) keyed on domainId"""
+	for node in treeContent:
+		if 'domainData' in node:
+			if 'domainId' in node['domainData']:
+				if node['domainData']['domainId']:
+					domId = node['domainData']['domainId']
+					node['domainData']['domainCentre']= domainId_centre[domId]
+
 def serialise_json_file(path):
 	json_var = load_json(path)
 	write_json(path)
+
+def blank_tree_node_no_dom():
+	return {u'extId': [], u'nodeId': u'', u'nodeState': {u'open': u'false', u'selected': u'false'}, u'domainData': {u'domainSelected': u'false'}, u'name': u''}
+
+def blank_tree_node_with_dom():
+	return {u'extId': [], u'nodeId': u'', u'nodeState': {u'open': u'false', u'selected': u'false', u'domainColour': [], u'domainCentre': [], u'domainId': u''}, u'domainData': {u'domainSelected': u'false'}, u'name': u''}
+	
 
 def add_leaf(nodeId, tree, parent_nodeId):
 	"""Adds a leaf node with specified nodeID (arg[0]) to a VFB  JSON treeStructure specified in arg[1] under parent with parent_nodeId specified in arg[2] """
@@ -73,6 +89,14 @@ def add_leaf(nodeId, tree, parent_nodeId):
 			if 'children' in v:
 				for subtree in v['children']:
 					add_leaf(nodeId, subtree, parent_nodeId) #is this sufficient exit condition?
+
+def add_leaf_by_name(treeContent, treeStructure, parent, child):
+	name_nodeId = {}
+	for node in treeContent:
+		ID = node['nodeId']
+		name = node['name']
+		name_nodeId[name]=ID
+	add_leaf(name_nodeId[child], treeStructure, name_nodeId[parent])
 
 def find_and_return_subtree(nodeId, tree, subtree_out = '', address = []):
 	"""Returns a subtree starting from a specified node.  Should also return an address for that subtree that could be used to specify it for deletion. But so far this does not work."""
@@ -110,6 +134,7 @@ def append_branch(nodeId, tree, new_subtree):
 
                         
 def copy_node(nodeId, tree, new_parent_id_node):
+	# Unfinished code
 	address = ''
 	subtree = ''
 	(subtree, address) = find_and_return_subtree(nodeId, tree)
