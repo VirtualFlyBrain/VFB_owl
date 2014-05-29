@@ -46,14 +46,34 @@ def nodeIdList(treeContent):
     return list
         
 def populate_node(node, row_dict):
-    if not node['extId']:
-        node['extId'].append(row_dict['oboId'])
+    """Takes a treeContent node as first arg and a dictionary for the correct row to populate it (making sure these match is the job of the code that calls this function."""
+    ### Strip any existing domain data
+#    if not node['extId']:                
+#        node['extId'].append(row_dict['oboId'])
+    ### Populate domain data from table.
     node['name'] = row_dict['name']
-    node['domainData']['domainId']=row_dict['domainId']
-    color = row_dict['domainColour'].split(",")
-    node['domainData']['domainColour'].extend(color)
-    centre = row_dict['domainCentre'].split(",")
-    node['domainData']['domainCentre'].extend(centre)
+    if row_dict['domainId']:
+        node['domainData']['domainId']=row_dict['domainId']
+    if row_dict['domainColour']:
+        color = row_dict['domainColour'].split(",")
+        color_float = []
+        for c in color:
+            color_float.append( float(c) )
+        node['domainData']['domainColour'] = color_float
+    if row_dict['domainCentre']:
+        centre = row_dict['domainCentre'].split(",")
+        centre_int = []
+        for c in centre:
+            centre_int.append( int(c) )
+        node['domainData']['domainCentre'] = centre_int
+
+def treeContent_remove_blanks(treeContent):
+    to_clean = ['domainId', 'domainColour', 'domainCentre']
+    for node in treeContent:
+        for k in to_clean:
+            if (k in node['domainData']):
+                if (not node['domainData'][k]):
+                    node['domainData'].pop(k)
 
 def update_tree_jsons_from_tab(tab, treeContent, treeStructure):
     # Starting point is:
@@ -71,6 +91,12 @@ def update_tree_jsons_from_tab(tab, treeContent, treeStructure):
 
     # Update existing nodes
     for node in treeContent:
+        # Strip potentially clashing domainData from all nodes
+        if 'domainId' in node['domainData']:
+            node['domainData'].pop('domainId')
+        if 'domainCentre' in node['domainData']:
+            node['domainData'].pop('domainCentre')
+        #  Update nodes for which new domainData is available
         if node['extId'][0] in toReplace:
             populate_node(node, oboId_column_cell[node['extId'][0]])
 
