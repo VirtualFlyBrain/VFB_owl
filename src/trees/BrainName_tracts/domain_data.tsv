@@ -1,32 +1,56 @@
-domainID	domainCentre	domainColour	abbv	oboId	name
-1	mALT	FBbt:00003985	medial antennal lobe tract
-2	AOT	FBbt:00100337	anterior optic tract
-3	POC	FBbt:00007427	posterior optic tract
-4	GC	FBbt:00007080	great commissure
-5	mlALT	FBbt:00003984	mediolateral antennal lobe tract
-6	lALT	FBbt:00003983	lateral antennal lobe tract
-7	aSLPF	FBbt:00100339	anterior superior lateral protocerebrum fascicle
-8	MBDL	FBbt:00003683	median bundle
-9	SFL	10	IFL	11	SFS	FBbt:00100349	superior fiber system
-12	IFS	FBbt:00100350	inferior fiber system
-13	IVLPC	FBbt:00100356	wedge commissure
-14	MEF	FBbt:00100342	medial equatorial fascicle
-15	LEF	FBbt:00100343	lateral equatorial fascicle
-16	vVLPF	FBbt:00100341	vertical ventrolateral protocerebral fascicle
-17	SEC_sAVLPC	FBbt:00100354	superior ellipsoid commissure
-18	LALC	FBbt:00007074	lateral accessory lobe commissure
-19	pCCF	FBbt:00100344	posterior cerebro-cervical fascicle
-20	mCCF	FBbt:00100345	medial cerebro-cervical fascicle
-21	aCCF	FBbt:00100346	anterior cerebro-cervical fascicle
-22	iALC	FBbt:00100352	inferior antennal lobe commissure
-23	PLF	FBbt:00007083	posterior lateral fascicle
-24	PYF	FBbt:00100338	pyriform fascicle
-25	tVLPF	FBbt:00100340	horizontal ventrolateral protocerebral fascicle
-26	TPT_tubercle_protocerebral_tract	27	lCCF	FBbt:00100347	lateral cerebro-cervical fascicle
-28	AST	FBbt:00007354	antenno-subesophageal tract
-29	sVESC	30	sPLPC	FBbt:00007077	superior posterior lateral protocerebrum commissure
-31	LDHT_lateral_dorsal_horizontal_tract	32	AOTUC	33	LHC_commissure_of_LHs	34	LVF_lateral_vertical_fascicle_lat_teth	35	tPLPF_transverse_PLP_fascicle	36	hVLPF	FBbt:00100340	horizontal ventrolateral protocerebral fascicle
-37	sAMMCC	38	pPLPC	FBbt:00100355	posterior posteriolateral protocerebral commissure
-39	IVLPF	40	PVF_posterior_vertical_fascicle_post_vert_tr	41	iSADC	42	sSADC	43	ADC_ant_dors_com	FBbt:00007072	anterior dorsal commissure
-44	MLC	46	sALC	FBbt:00100351	superior antennal lobe commissure
-47	MIF_medial_intracerebral_fascicle	48	pSMPF_smp_psl_teth	49	tMLF_transverse_ML_fasc	50	iEBC	51	VLP-ICLF	52	DHF_dors_hor_fasc	53	pSLPF_post_lat_teth	54	vMF_vertical_maxillary_fasc_SOG_max_teth	55	vLF_vertical_labial_fasc_SOG_lab_teth	
+domainID	domainCentre	domainColour	abbv	oboId	name	
+1			mALT	FBbt:00003985	medial antennal lobe tract	
+2			AOT	FBbt:00100337	anterior optic tract	
+3			POC	FBbt:00007427	posterior optic tract	
+4			GC	FBbt:00007080	great commissure	
+5			mlALT	FBbt:00003984	mediolateral antennal lobe tract	
+6			lALT	FBbt:00003983	lateral antennal lobe tract	
+7			aSLPF	FBbt:00100339	anterior superior lateral protocerebrum fascicle	
+8			MBDL	FBbt:00003683	median bundle	
+9			SFL			
+10			IFL			
+11			SFS	FBbt:00100349	superior fiber system	
+12			IFS	FBbt:00100350	inferior fiber system	
+13			IVLPC	FBbt:00100356	wedge commissure	
+14			MEF	FBbt:00100342	medial equatorial fascicle	
+15			LEF	FBbt:00100343	lateral equatorial fascicle	
+16			vVLPF	FBbt:00100341	vertical ventrolateral protocerebral fascicle	
+17			SEC_sAVLPC	FBbt:00100354	superior ellipsoid commissure	
+18			LALC	FBbt:00007074	lateral accessory lobe commissure	
+19			pCCF	FBbt:00100344	posterior cerebro-cervical fascicle	
+20			mCCF	FBbt:00100345	medial cerebro-cervical fascicle	
+21			aCCF	FBbt:00100346	anterior cerebro-cervical fascicle	
+22			iALC	FBbt:00100352	inferior antennal lobe commissure	
+23			PLF	FBbt:00007083	posterior lateral fascicle	
+24			PYF	FBbt:00100338	pyriform fascicle	
+25			tVLPF	FBbt:00100340	horizontal ventrolateral protocerebral fascicle	 ? t = ?
+26			TPT_tubercle_protocerebral_tract			?
+27			lCCF	FBbt:00100347	lateral cerebro-cervical fascicle	
+28			AST	FBbt:00007354	antenno-subesophageal tract	
+29			sVESC			?
+30			sPLPC	FBbt:00007077	superior posterior lateral protocerebrum commissure	
+31			LDHT_lateral_dorsal_horizontal_tract			?
+32			AOTUC			?
+33			LHC_commissure_of_LHs			?
+34			LVF_lateral_vertical_fascicle_lat_teth			?
+35			tPLPF_transverse_PLP_fascicle			?
+36			hVLPF	FBbt:00100340	horizontal ventrolateral protocerebral fascicle	
+37			sAMMCC			
+38			pPLPC	FBbt:00100355	posterior posteriolateral protocerebral commissure	
+39			IVLPF			?
+40			PVF_posterior_vertical_fascicle_post_vert_tr			
+41			iSADC			
+42			sSADC			
+43			ADC_ant_dors_com	FBbt:00007072	anterior dorsal commissure	
+44			MLC			
+46			sALC	FBbt:00100351	superior antennal lobe commissure	
+47			MIF_medial_intracerebral_fascicle			
+48			pSMPF_smp_psl_teth			
+49			tMLF_transverse_ML_fasc			
+50			iEBC			
+51			VLP-ICLF			
+52			DHF_dors_hor_fasc			
+53			pSLPF_post_lat_teth			
+54			vMF_vertical_maxillary_fasc_SOG_max_teth			
+55			vLF_vertical_labial_fasc_SOG_lab_teth			
+56						
