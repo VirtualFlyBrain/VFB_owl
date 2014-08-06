@@ -1,4 +1,4 @@
-# OWL individuals files and the shell script for building and merging them.
+## OWL individuals files + build script.
 
 datasets using generic build: Cachero2010', 'Ito2013', 'Jenett2012', 'Yu2013'  (listed in $DATASET).  
 OWL files are named for the dataset
