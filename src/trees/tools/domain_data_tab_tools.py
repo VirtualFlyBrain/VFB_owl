@@ -62,10 +62,10 @@ def populate_node(node, row_dict):
         node['domainData']['domainColour'] = color_float
     if row_dict['domainCentre']:
         centre = row_dict['domainCentre'].split(",")
-        centre_int = []
+        centre_float = []
         for c in centre:
-            centre_int.append( int(c) )
-        node['domainData']['domainCentre'] = centre_int
+            centre_float.append( float(c) )
+        node['domainData']['domainCentre'] = centre_float
 
 def treeContent_remove_blanks(treeContent):
     to_clean = ['domainId', 'domainColour', 'domainCentre']
