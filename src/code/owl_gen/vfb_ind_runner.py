@@ -21,8 +21,13 @@ for d in dc:
 cursor.close()
 
 vfb_ind = Brain(baseURI, baseURI + dataset + ".owl")
+vfb_image = Brain()  # Not specifying base as there seems to be a bug that overides full URL specified when adding individuals.  Not ideal!
 
 addOboAnnotationProperties(vfb_ind)
+addOboAnnotationProperties(vfb_image)
+vfb_image.addObjectProperty('http://xmlns.com/foaf/0.1/depicts')
+vfb_image.addClass('http://xmlns.com/foaf/0.1/image')
+
 
 ont_dict = {}
 ont_dict['fbbt'] = load_ont("/repos/fbbtdv/fbbt/releases/fbbt-simple.owl")
@@ -30,8 +35,10 @@ ont_dict['fbbt'] = load_ont("/repos/fbbtdv/fbbt/releases/fbbt-simple.owl")
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
 ont_dict['vfb_ind'] = vfb_ind
+ont_dict['vfb_image'] = vfb_image
 gen_ind_by_source(conn.cursor(), ont_dict, dataset)
 vfb_ind.save("../../owl/" + dataset + ".owl")
+vfb_image.save("../../owl/" + dataset + "_image.owl")
 conn.close()
 vfb_ind.sleep()
 ont_dict['fbbt'].sleep()
