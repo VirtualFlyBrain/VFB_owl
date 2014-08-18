@@ -16,9 +16,11 @@ def load_ont(url):
 def gen_ind_by_source(cursor, ont_dict, dataset):
 	
 	vfb_ind = ont_dict['vfb_ind']
+	
 	class simple_classExpression:
 		rel = ''
 		obj = ''
+		
 	ind_id_type = {} # dict for storing lists of simple class expressions for typing individuals, indexed by sfid.
 		    
 
@@ -58,9 +60,9 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 		else:
 			sce.rel = ''
 			sce.obj = d['claz']
-
 			vfb_ind.type(d['claz'], d['iID'])
 		ind_id_type[d['iID']].append(sce)
+
 		
 	# Get source infor for this dataset
 	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext FROM data_source s WHERE s.name = '%s'" % dataset)
@@ -73,9 +75,26 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 			if d['dtext']:
 				full_def += d['dtext']
 			vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
+			
+	# Roll image individuals.		
+	for iID in ind_id_type:
+		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
+	
 	cursor.close()
 	#
-	
+
+def roll_image_ind(ont, dataset, indLabel, indId):
+	# stub - perhaps best called from within gen_ind_by_source?
+	dataset_name_mappings = {'Jenett2012': 'Janelia2012', 'Cachero2010' : '', 'Chiang2010' : 'FlyCircuit', 'Yu2013': '', 'Ito2013' : '' }	
+	dataset_name = dataset_name_mappings[dataset]
+	baseURI = "http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/%s/Thumbs/" % dataset_name
+	vfbIndBase = "http://www.virtualflybrain.org/owl/" # Don't like having paths in here.  Needs to come from DB.
+	image_ind =  indLabel + ".png"
+	ont.addNamedIndividual(baseURI + image_ind)
+	ont.type('image', image_ind)
+	ont.addNamedIndividual(vfbIndBase + indId)
+	ont.objectPropertyAssertion(image_ind, 'depicts',  indId)
+			
 def def_roller(types, ont_dict):  #
 	"""Takes 2 args. ARG1: a list of simple owl class expression objects (soce) as an arg. Each source has 2 attributes - a relation (rel) and an object (obj).  The value of each attribute is a shortFormID.  ARG2: a dictionary of brain objects."""
 	feat_ont = ont_dict['fb_feature']
@@ -127,3 +146,14 @@ def def_roller(types, ont_dict):  #
 	elif genus == 'neuroblast lineage clone':
 		defn = "An example of an %s in the %s" % (spec_genus, po)
 	return defn
+
+
+	
+
+
+			
+		
+		
+		
+
+	
