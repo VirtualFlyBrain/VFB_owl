@@ -2,6 +2,8 @@
 import warnings
 import sys
 sys.path.append('../mod')
+sys.path.append('../../../lib/postgresql-9.3-1100.jdbc41.jar')
+sys.path.append('../../../lib/Brain-1.4.3.jar-with-dependencies.jar')
 from obo_tools import addOboAnnotationProperties
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
