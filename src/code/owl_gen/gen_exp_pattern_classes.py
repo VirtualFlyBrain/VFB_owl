@@ -2,16 +2,13 @@
 import warnings
 import sys
 sys.path.append('../mod')
-sys.path.append('../../../lib/postgresql-9.3-1100.jdbc41.jar')
-sys.path.append('../../../lib/Brain-1.4.3.jar-with-dependencies.jar')
 from obo_tools import addOboAnnotationProperties
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-from lmb_fc_tools import get_con
-from vfb_ind_tools import gen_ind_by_source
-from vfb_ind_tools import load_ont
 from dict_cursor import dict_cursor
 import uuid
+from com.ziclix.python.sql import zxJDBC # FOR DB connection
+
 
 
 
