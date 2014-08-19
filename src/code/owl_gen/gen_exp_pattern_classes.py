@@ -64,15 +64,15 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf, thumb_path):
             # if doesn't know classes referenced
         
         	if not expPat.knows(fbf_base + d['transgene_uniquename']):
-            		exPat.addClass(fbf_base + d['transgene_uniquename'])
-			exPat.addLabel(("%s expression pattern in the adult brain" % d['transgene_name'])
+            		expPat.addClass(fbf_base + d['transgene_uniquename'])
+			expPat.addLabel(("%s expression pattern in the adult brain" % d['transgene_name'])
             	
-            	exPat.equivalentClasses(id, ex_exp) # Hmmm - might get missed if ont already knows
+            	expPat.equivalentClasses(id, ec_exp) # Hmmm - might get missed if ont already knows
         	
-        	if not exPat.knows(fbbt_base + "FBbt_" + d['accession'])
-			exPat.addClass(fbbt_base + "FBbt_" + d['accession'])
+        	if not expPat.knows(fbbt_base + "FBbt_" + d['accession'])
+			expPat.addClass(fbbt_base + "FBbt_" + d['accession'])
 			
-		exPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
+		expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
         
         
         
