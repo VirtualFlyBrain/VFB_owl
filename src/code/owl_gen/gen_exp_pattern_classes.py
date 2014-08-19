@@ -24,45 +24,45 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 	
 	## Currently running by FBrf
 	cursor.execute("SELECT DISTINCT fbbt.cvterm_name AS anatomy, fbbt.db_name AS idp, "
-"fbbt.accession, teg.transgene_name, teg.transgene_uniquename " \
-"FROM vfbview_fbbt fbbt " \
-"JOIN expression_cvterm ec1 ON (fbbt.cvterm_id = ec1.cvterm_id) " \
-"JOIN expression_cvterm ec2 ON (ec2.expression_id = ec1.expression_id) " \
-"JOIN cvterm stage ON (stage.cvterm_id = ec2.cvterm_id) " \
-"JOIN feature_expression fe ON (ec1.expression_id = fe.expression_id) " \
-"JOIN pub ON (fe.pub_id = pub.pub_id) " \
-"JOIN vfbview_transgene_expressed_gp teg ON (teg.gp_feature_id = fe.feature_id) " \
-"-- WHERE teg.transgene_name = '' " \
-"AND pub.uniquename = '%s'" % FBrf) 
+	"fbbt.accession, teg.transgene_name, teg.transgene_uniquename " \
+	"FROM vfbview_fbbt fbbt " \
+	"JOIN expression_cvterm ec1 ON (fbbt.cvterm_id = ec1.cvterm_id) " \
+	"JOIN expression_cvterm ec2 ON (ec2.expression_id = ec1.expression_id) " \
+	"JOIN cvterm stage ON (stage.cvterm_id = ec2.cvterm_id) " \
+	"JOIN feature_expression fe ON (ec1.expression_id = fe.expression_id) " \
+	"JOIN pub ON (fe.pub_id = pub.pub_id) " \
+	"JOIN vfbview_transgene_expressed_gp teg ON (teg.gp_feature_id = fe.feature_id) " \
+	"-- WHERE teg.transgene_name = '' " \
+	"AND pub.uniquename = '%s'" % FBrf) 
 
-  fb_feat = ont_dict['fb_feat']  # URI pattern: http://flybase.org/reports/FBtp0062283
+	fb_feat = ont_dict['fb_feat']  # URI pattern: http://flybase.org/reports/FBtp0062283
 	fbbt = ont_dict['fbbt'] #
 	expPat = ont_dict['expPat']
 	
 	dc = dict_cursor(cursor)
 	for d in dc:
-    ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename']
-    # Expression pattern that expresses some X
-    if not expPat.equivalentClass(ec_exp):
-      id = str(uuid.uuid1())
-      expPat.addClass(id)
-      # if doesn't know classes referenced
+		ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename']
+		# Expression pattern that expresses some X
+		if not expPat.equivalentClass(ec_exp):
+			id = str(uuid.uuid1())
+			expPat.addClass(id)
+		# if doesn't know classes referenced
       
-      if not expPat.knows(fbf_base + d['transgene_uniquename']):
-        expPat.addClass(fbf_base + d['transgene_uniquename'])
-			  expPat.addLabel(("%s expression pattern in the adult brain" % d['transgene_name'])
+		if not expPat.knows(fbf_base + d['transgene_uniquename']):
+			expPat.addClass(fbf_base + d['transgene_uniquename'])
+			expPat.addLabel("%s expression pattern in the adult brain" % d['transgene_name'])
 			  
-        expPat.equivalentClasses(id, ec_exp) # Hmmm - might get missed if ont already knows
+			expPat.equivalentClasses(id, ec_exp) # Hmmm - might get missed if ont already knows
         	
-      if not expPat.knows(fbbt_base + "FBbt_" + d['accession']):
-			  expPat.addClass(fbbt_base + "FBbt_" + d['accession'])
+		if not expPat.knows(fbbt_base + "FBbt_" + d['accession']):
+			expPat.addClass(fbbt_base + "FBbt_" + d['accession'])
 			  
-      expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
+		expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
         
-  expPat.save("../../owl/expression_pattern_classes.owl")
-  fbbt.sleep()
-  fb_feat.sleep()
-  expPat.sleep()
+	expPat.save("../../owl/expression_pattern_classes.owl")
+	fbbt.sleep()
+	fb_feat.sleep()
+	expPat.sleep()
 
   
 # Connect to chado
@@ -79,14 +79,8 @@ fbbt.learn("http://purl.obolibrary.org/fbbt/fbbt-simple.owl")
 fb_feat = Brain()
 fb_feat.learn("http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect.  
 # If so, use python to grab file first.
-fbf_base = "http://flybase.org/reports/"
 
 ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expPat': expPat }
-
-# Setting up expression pattern dictionary:
-# ont_dict['fb_feature']
-# ont_dict['fbbt']
-# expPat not in dict...
 
 FBrf = 'FBrf0219498' # Janelia expression patterns
 
