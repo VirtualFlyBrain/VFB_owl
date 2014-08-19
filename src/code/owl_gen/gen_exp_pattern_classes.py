@@ -68,7 +68,7 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 
 # Requires Edinburgh server access
 
-conn = zxJDBC.connect("jdbc:bocian.inf.ed.ac.uk/flybase", sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase", sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
 cursor = conn.cursor()
 
 expPat = Brain("scratch", "http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/")
