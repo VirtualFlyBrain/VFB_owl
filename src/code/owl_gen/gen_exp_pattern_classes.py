@@ -12,12 +12,22 @@ from dict_cursor import dict_cursor
 import uuid
 
 
-expPat = Brain()
+expPat = Brain("scratch", "http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/")
 fbbt = Brain()
+fbbt.learn("http://purl.obolibrary.org/fbbt/fbbt-simple.owl") 
+
 fb_feat = Brain()
+fb_feat.learn("http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect.  
+# If so, use python to grab file first.
 fbf_base = "http://flybase.org/reports/"
 
-# Can't run this until have Edinburgh server access!!!!
+ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expat': expPat }
+
+# Setting up expression pattern dictionary:
+# ont_dict['fb_feature']
+# ont_dict['fbbt']
+# expPat not in dict...
+# Requires Edinburgh server access
 
 def expression_annotation_to_owl(cursor, ont_dict, FBrf, thumb_path):
 	## Aim: To add axioms to expression pattern individuals.
@@ -41,23 +51,25 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf, thumb_path):
 	"AND pub.uniquename = '%s'" % FBrf) 
 
 	feat_ont = ont_dict['fb_feature']  # URI pattern: http://flybase.org/reports/FBtp0062283
-	fbbt = ont_dict['fbbt'] # 
+	fbbt = ont_dict['fbbt'] #
+	expPat = ont_dict['expPat']
 	
 	dc = dict_cursor(cursor)
-    ec_stat = {}
 	for d in dc:
-        ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename']
+        	ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename']
 		# Expression pattern that expresses some X
 		if not expPat.equivalentClass(ec_exp):
-            id = str(uuid.uuid1())
-            exPat.addClass(id)
+            		id = str(uuid.uuid1())
+        	 	expPat.addClass(id)
             # if doesn't know classes referenced
         
-        if not expPat.knows(fbf_base + d['transgene_uniquename']):
-            exPat.addClass(fbf_base + d['transgene_uniquename'])
+        	if not expPat.knows(fbf_base + d['transgene_uniquename']):
+            		exPat.addClass(fbf_base + d['transgene_uniquename'])
 			exPat.addLabel(("%s expression pattern in the adult brain" % d['transgene_name'])
-            exPat.equivalentClasses(id, ex_exp) # Hmmm - might get missed if ont already knows
-        if not exPat.knows(fbbt_base + "FBbt_" + d['accession'])
+            	
+            	exPat.equivalentClasses(id, ex_exp) # Hmmm - might get missed if ont already knows
+        	
+        	if not exPat.knows(fbbt_base + "FBbt_" + d['accession'])
 			exPat.addClass(fbbt_base + "FBbt_" + d['accession'])
 			
 		exPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
