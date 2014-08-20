@@ -45,7 +45,7 @@ ind.learn(URL)
 
 # Iterate over all expression classes, finding individuals
 
-exp = eont.getSubClasses(, 0) # SC of expression pattern
+exp = eont.getSubClasses("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", 0) # SC of expression pattern
 
 for e in exp:
     members = cont.getIndividuals(e)
