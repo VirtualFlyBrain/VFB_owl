@@ -71,12 +71,12 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
 cursor = conn.cursor()
 
-expPat = Brain("http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/exp_pat.owl", "http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/")
+expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl", "http://purl.obolibrary.org/obo/fbbt/vfb/")
 fbbt = Brain()
-fbbt.learn("http://purl.obolibrary.org/fbbt/fbbt-simple.owl") 
+fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl") 
 
 fb_feat = Brain()
-fb_feat.learn("http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect.  
+fb_feat.learn("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect.  
 # If so, use python to grab file first.
 
 ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expPat': expPat }
