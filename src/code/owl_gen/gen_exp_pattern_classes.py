@@ -74,10 +74,11 @@ cursor = conn.cursor()
 def download2Brain(baseURL, filename):
    # Downloading directly avoids intermittent timeout problems experienced with direct downloading
    ont_file = open(filename, "w")
-   ont_download = urllib2.urlopen(baseURL + filename)
-   ont_file.write(ont_download.read())
+   ont_url_handle = urllib2.urlopen(baseURL + filename)
+   ont_download = ont_url_handle.read()
+   ont_file.write(ont_download)
    ont = Brain()
-   ont.learn(filename)
+   ont.learn("file://" + os.getcwd() + "/" + filename)
    return ont
 
 expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
