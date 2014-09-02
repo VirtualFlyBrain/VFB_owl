@@ -8,7 +8,7 @@ from uk.ac.ebi.brain.core import Brain
 from dict_cursor import dict_cursor
 import uuid
 from com.ziclix.python.sql import zxJDBC # FOR DB connection
-
+import urllib2
 
 
 
@@ -71,13 +71,18 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
 cursor = conn.cursor()
 
-expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
-fbbt = Brain()
-fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl") 
+def download2Brain(baseURL, filename):
+   # Downloading directly avoids intermittent timeout problems experienced with direct downloading
+   ont_file = open(filename, "w")
+   ont_download = urllib2.urlopen(baseURL + filename)
+   ont_file.write(ont_download.read())
+   ont = Brain()
+   ont.learn(filemane)
+   return ont
 
-fb_feat = Brain()
-fb_feat.learn("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect.  
-# If so, use python to grab file first.
+expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
+fbbt = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "fbbt-simple.owl")
+fb_feat = download2Brain("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect?
 
 ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expPat': expPat }
 
