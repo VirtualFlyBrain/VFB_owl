@@ -71,7 +71,7 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
 cursor = conn.cursor()
 
-expPat = Brain("scratch", "http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/")
+expPat = Brain("http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/exp_pat.owl", "http://purl.obolibrary.org/fbbt/obo/fbbt/vfb/")
 fbbt = Brain()
 fbbt.learn("http://purl.obolibrary.org/fbbt/fbbt-simple.owl") 
 
