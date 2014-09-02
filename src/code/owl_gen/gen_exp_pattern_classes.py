@@ -9,6 +9,7 @@ from dict_cursor import dict_cursor
 import uuid
 from com.ziclix.python.sql import zxJDBC # FOR DB connection
 import urllib2
+import os
 
 
 
