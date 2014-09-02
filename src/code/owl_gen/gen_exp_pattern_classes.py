@@ -84,7 +84,7 @@ def download2Brain(baseURL, filename):
 
 expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
 fbbt = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "fbbt-simple.owl")
-fb_feat = download2Brain("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")# May not work because of https redirect?
+fb_feat = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "vfb/fb_features.owl")# May not work because of https redirect?
 
 ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expPat': expPat }
 
