@@ -77,7 +77,7 @@ def download2Brain(baseURL, filename):
    ont_download = urllib2.urlopen(baseURL + filename)
    ont_file.write(ont_download.read())
    ont = Brain()
-   ont.learn(filemane)
+   ont.learn(filename)
    return ont
 
 expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
