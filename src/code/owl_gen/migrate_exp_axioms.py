@@ -1,5 +1,9 @@
+#!/usr/bin/env jython
+
 from uk.ac.ebi.brain.core import Brain
 from owltools.graph import OWLGraphWrapper
+import sys
+import time
 
 # Aim:
 
@@ -13,9 +17,8 @@ from owltools.graph import OWLGraphWrapper
 
 
 def migrate_axioms_to_ind(cogw, classId, ind, indId):
-    # Check that ind really is member of class
-    ###
-    owlClass = cogw.getOWLClassByIdentifier(classId) # Seems to want an OBO ID!
+    # Check that ind really is member of class 
+    owlClass = cogw.getOWLClassByIdentifier(classId) # Seems to want an OBO ID!  # Really need to get around this - ask Chris & Heiko
     edges = cogw.getOutgoingEdges(owlClass)
     for edge in edges:
         property_list = edge.getQuantifiedPropertyList()
@@ -33,23 +36,33 @@ def migrate_axioms_to_ind(cogw, classId, ind, indId):
     
 
 
-eont = Brain()
-eont.learn(URL)
+eont = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/vfb/expression_pattern_ind.owl")
+eont.learn(sys.argv[1]) # assuming class an individual files loaded separately.
+eont.learn(sys.argv[2]) # 
 eonto = eont.getOntology()
 eogw = OWLGraphWrapper(eonto)
 
 ## For inds
 
-ind = Brain()
-ind.learn(URL)
+#ind = Brain("http://purl.obolibrary.org/obo/vfb", "http://purl.obolibrary.org/obo/vfb/expression_pattern_ind.ow")
+
 
 # Iterate over all expression classes, finding individuals
 
 exp = eont.getSubClasses("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", 0) # SC of expression pattern
 
+# Double loop makes this very slow. Even more so with loop in function.
+
+start = time.time()
 for e in exp:
-    members = cont.getIndividuals(e)
+    print time.time() - start # for debugging speed.
+    start = time.time()
+    members = eont.getInstances(e, 0)
     for m in members:
-        migrate_axioms_to_in(eogw, e, ind, m)
+        migrate_axioms_to_ind(eogw, e, eont, m)
+
+eont.save("../../owl/expression_pattern_ind.owl")
+eont.sleep()
+
 
 
