@@ -10,21 +10,24 @@ vfb_ind.learn("../../owl/fbbt_vfb_ind_pr_nr.owl")
 # Draft class for object-based unit test system.  This allows more info to be stored about queries and tests. Objects should be populated from a tsv.  Good potential for generating documentation straight from tsv or by using these objects...
 
 class Query:
-    """Class for testing queries against ontology + individuals files for VFB"""  #  Seems this is not right for multi-line doc....
-    """Attributes:"""
-    """    query - DL query with shortFormIDs"""
-    """    query_by_label - DL query with labels (for reference)"""
-    """    query_text - Dexcriptive text for web-page / doc."""
-    """    description -  # Why is this test being run?    query = '' # DL query with shortFormIDs"""
-    """    i = False # Should it have instances? - Default = False"""
-    """    s = True  # should it have subclasses? - Default = True"""
-    """Methods:"""
-    """    qtest - """    
-    query_by_label = '' # DL query with labels (for reference)
-    query_text = ''  # Dexcriptive text for web-page / doc.
-    description = ''  # Why is this test being run?
-    i = False # Should it have instances? - Default = False
-    s = True  # should it have subclasses? - Default = True
+    """Class for testing queries against ontology + individuals files for VFB  #  Seems this is not right for multi-line doc....
+    Attributes:
+        query - DL query with shortFormIDs
+        query_by_label - DL query with labels (for reference)
+        query_text - Descriptive text for web-page / doc.
+        description -  # Why is this test being run?    query = '' # DL query with shortFormIDs
+        i = False # Should it have instances? - Default = False
+        s = True  # should it have subclasses? - Default = True
+    Methods:
+        qtest - 
+    """  
+    def __init__(self, query_labels, query_ids, query_text, description ,i, s):  
+        self.query_by_label = '' # DL query with labels (for reference)
+        self.query_text = ''  # Dexcriptive text for web-page / doc.
+        self.description = ''  # Why is this test being run?
+        self.i = False # Should it have instances? - Default = False
+        self.s = True  # should it have subclasses? - Default = True
+        
     def qtest(self, ont):
         qstat = 1
         """Method to run test queries on object.  Takes one arg - a Brain object."""
@@ -39,6 +42,7 @@ class Query:
                 warnings.warn(qtext + " has no instances!")
                 qstat = 0
         if self.s:
+            subclasses = ont.getSubClasses(self.query, 0)
             if subclasses:
                 print qtext + " - subClasses: " + str( len(subclasses) )
             else:    
