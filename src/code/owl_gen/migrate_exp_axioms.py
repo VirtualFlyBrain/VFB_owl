@@ -3,7 +3,8 @@
 from uk.ac.ebi.brain.core import Brain
 from owltools.graph import OWLGraphWrapper
 import sys
-import time
+#import time
+import re
 
 # Aim:
 
@@ -37,7 +38,7 @@ def migrate_axioms_to_ind(cogw, classId, ind, indId):
 
 
 eont = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/vfb/expression_pattern_ind.owl")
-eont.learn(sys.argv[1]) # assuming class an individual files loaded separately.
+eont.learn(sys.argv[1]) # assuming class & individual files loaded separately.
 eont.learn(sys.argv[2]) # 
 eonto = eont.getOntology()
 eogw = OWLGraphWrapper(eonto)
@@ -53,10 +54,10 @@ exp = eont.getSubClasses("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", 0) # SC of expr
 
 # Double loop makes this very slow. Even more so with loop in function.
 
-start = time.time()
+#start = time.time()
 for e in exp:
-    print time.time() - start # for debugging speed.
-    start = time.time()
+    #print time.time() - start # for debugging speed.
+    #start = time.time()
     members = eont.getInstances(e, 0)
     for m in members:
         migrate_axioms_to_ind(eogw, e, eont, m)
