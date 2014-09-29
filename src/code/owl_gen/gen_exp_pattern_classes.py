@@ -10,6 +10,8 @@ import uuid
 from com.ziclix.python.sql import zxJDBC # FOR DB connection
 import urllib2
 import os
+import time
+
 
 
 
@@ -32,32 +34,42 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 	"JOIN feature_expression fe ON (ec1.expression_id = fe.expression_id) " \
 	"JOIN pub ON (fe.pub_id = pub.pub_id) " \
 	"JOIN vfbview_transgene_expressed_gp teg ON (teg.gp_feature_id = fe.feature_id) " \
-	"-- WHERE teg.transgene_name = '' " \
-	"AND pub.uniquename = '%s'" % FBrf) 
+	"WHERE pub.uniquename = '%s'" % FBrf) 
 
 	fb_feat = ont_dict['fb_feat']  # URI pattern: http://flybase.org/reports/FBtp0062283
 	fbbt = ont_dict['fbbt'] #
 	expPat = ont_dict['expPat']
+	fbf_base = "http://flybase.org/reports/"
+	obo_base = "http://purl.obolibrary.org/obo/"
+	
 	
 	dc = dict_cursor(cursor)
+	ID = ''
+	start = time.time() # for debugging slowness
 	for d in dc:
-		ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename']
-		# Expression pattern that expresses some X
-		if not expPat.equivalentClass(ec_exp):
-			id = str(uuid.uuid1())
-			expPat.addClass(id)
-		# if doesn't know classes referenced
-      
-		if not expPat.knows(fbf_base + d['transgene_uniquename']):
+		# Add class declaration for transgene if not already declared
+		if not expPat.knowsClass(d['transgene_uniquename']):
 			expPat.addClass(fbf_base + d['transgene_uniquename'])
-			expPat.addLabel("%s expression pattern in the adult brain" % d['transgene_name'])
-			  
-			expPat.equivalentClasses(id, ec_exp) # Hmmm - might get missed if ont already knows
-        	
-		if not expPat.knows(fbbt_base + "FBbt_" + d['accession']):
-			expPat.addClass(fbbt_base + "FBbt_" + d['accession'])
-			  
-		expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
+		ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename'] # Expression pattern that expresses some X
+		# If class Equivalent to ex_exp does not exist, add it, name it, define it.
+		ec_list =  expPat.getEquivalentClasses(ec_exp)
+		if len(ec_list) > 1:
+			warnings.warn("Multiple equivalent classes for %s expression pattern. Should only be one!")
+		elif len(ec_list) == 1:
+			ID = ec_list[0]
+		else:
+			print "Time to populate class for expression pattern of %s: %s" % (d['transgene_name'],  time.time() - start) # for debugging slowness
+			start = time.time()
+			ID = str(uuid.uuid1())
+			expPat.addClass(ID)      
+			expPat.label(ID, "%s expression pattern in the adult brain" % d['transgene_name'])
+			expPat.equivalentClasses(id, ec_exp) 
+        # Add class declaration for anatomical structure, if not already declared.	
+		if not expPat.knowsClass("FBbt_" + d['accession']):
+			expPat.addClass(obo_base + "FBbt_" + d['accession'])
+		# Assert overlap of expression pattern to anatomical structure	  
+		if id:
+			expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
         
 	expPat.save("../../owl/expression_pattern_classes.owl")
 	fbbt.sleep()
@@ -82,9 +94,16 @@ def download2Brain(baseURL, filename):
    ont.learn("file://" + os.getcwd() + "/" + filename)
    return ont
 
-expPat = Brain("http://purl.obolibrary.org/obo/fbbt/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
-fbbt = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "fbbt-simple.owl")
-fb_feat = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "vfb/fb_features.owl")# May not work because of https redirect?
+expPat = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
+expPat.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6") #  sfid for expression pattern.
+expPat.addObjectProperty("http://purl.obolibrary.org/obo/RO_0002292")
+expPat.addObjectProperty("http://purl.obolibrary.org/obo/RO_0002131")
+# fbbt = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "fbbt-simple.owl")
+# fb_feat = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "vfb/fb_features.owl")# May not work because of https redirect?
+fbbt = Brain()
+# fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
+fb_feat = Brain()
+# fb_feat.learn("file://" + os.getcwd() + "/../../owl/fb_features.owl") # yuk!  At least pass path as arg!
 
 ont_dict = { 'fbbt': fbbt, 'fb_feat': fb_feat, 'expPat': expPat }
 
