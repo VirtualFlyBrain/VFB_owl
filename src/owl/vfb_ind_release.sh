@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-FBBT_RELEASE="2014-01-29"
 DATASETS=('Cachero2010', 'Ito2013', 'Jenett2012', 'Yu2013')
 
 DSSTRING=''
@@ -25,7 +24,7 @@ cd ../../owl
 # # Merge ind files with specified release of fbbt
 echo ''
 echo "*** Merging ind files with $RELEASE version of fbbt ***"
-owltools http://purl.obolibrary.org/obo/fbbt/${FBBT_RELEASE}/fbbt-non-classified.owl --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
+owltools $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
 
 # # assert inferences and strip out redundancy  # This 
 echo ''
