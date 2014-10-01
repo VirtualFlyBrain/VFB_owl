@@ -40,7 +40,7 @@ ont_dict['fbbt'] = load_ont("file://"+FBBT)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
 ont_dict['vfb_ind'] = vfb_ind
-ont_dict['vfb_image'] = vfb_image
+#ont_dict['vfb_image'] = vfb_image  # Commenting for now as problems rolling some image files 
 gen_ind_by_source(conn.cursor(), ont_dict, dataset)
 vfb_ind.save("../../owl/" + dataset + ".owl")
 vfb_image.save("../../owl/" + dataset + "_image.owl")

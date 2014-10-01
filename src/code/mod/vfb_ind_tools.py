@@ -77,8 +77,8 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 			vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
 			
 	# Roll image individuals.		
-	for iID in ind_id_type:
-		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
+#	for iID in ind_id_type:
+#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
 	
 	cursor.close()
 	#

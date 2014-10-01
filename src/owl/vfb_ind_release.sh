@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-DATASETS=('Cachero2010', 'Ito2013', 'Jenett2012', 'Yu2013')
+DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013')
 
 DSSTRING=''
 
@@ -9,7 +9,8 @@ cd ../code/owl_gen
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
 do
-    java -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $FBBT $var
+    echo $var
+    java -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $var $FBBT
     DSSTRING+="--merge ${var}.owl "
 done
 
@@ -18,7 +19,7 @@ java -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
 DSSTRING+="--merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl "
 
 cd ../../owl
-
+break
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
 
 # # Merge ind files with specified release of fbbt
