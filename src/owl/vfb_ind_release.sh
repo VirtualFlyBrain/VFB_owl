@@ -10,11 +10,11 @@ cd ../code/owl_gen
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
 do
-    java -cp '.:../../lib/*.jar' org.python.util.jython vfb_ind_runner.py $USR $PD $var
+    java -cp '.:../../lib/*' org.python.util.jython vfb_ind_runner.py $USR $PD $var
     DSSTRING+="--merge ${var}.owl "
 done
 
-./fc_ind.py $USR $PD
+java -cp '.:../../lib/*' org.python.util.jython fc_ind.py $USR $PD
 
 DSSTRING+="--merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl "
 
