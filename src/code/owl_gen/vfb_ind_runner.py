@@ -6,9 +6,11 @@ from obo_tools import addOboAnnotationProperties
 from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 #from lmb_fc_tools import get_con
+from com.ziclix.python.sql import zxJDBC # FOR DB connection
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from dict_cursor import dict_cursor
+
 
 """ARG1: db username; ARG2: db password, ARG3: dataset name; 
 ARG4: local path to version of fbbt used throughout.
