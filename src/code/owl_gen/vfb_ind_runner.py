@@ -30,7 +30,7 @@ vfb_image.addClass('http://xmlns.com/foaf/0.1/image')
 
 
 ont_dict = {}
-ont_dict['fbbt'] = load_ont("/repos/fbbtdv/fbbt/releases/fbbt-simple.owl")
+ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/fbbt-simple.owl")
 #ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
