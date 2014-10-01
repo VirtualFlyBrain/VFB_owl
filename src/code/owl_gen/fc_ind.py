@@ -12,7 +12,7 @@ from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 
-""" Use:fc_ind.py usr pwd
+""" Use:fc_ind.py usr pwd fbbt_path
 Where usr and pwd are connection credentials for LMB DB.
 This script generates a file of OWL individuals representing FlyCircuit neurons and their clusters using the information in the LMB VFB mysql DB.
 """
@@ -151,6 +151,7 @@ def map_to_clusters(cursor, vfb_ind):
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 
 conn = get_con(sys.argv[1], sys.argv[2])
+FBBT = sys.argv[3]
 dataset = 'Chiang2010'
 cursor = conn.cursor()
 cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
@@ -165,7 +166,7 @@ vfb_ind = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.o
 addOboAnnotationProperties(vfb_ind)
 ont_dict = {}
 ont_dict['vfb_ind']=vfb_ind
-ont_dict['fbbt'] = load_ont("/repos/fbbtdv/fbbt/releases/fbbt-simple.owl")
+ont_dict['fbbt'] = load_ont("file://"+FBBT)
 #ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
