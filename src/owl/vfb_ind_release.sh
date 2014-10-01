@@ -8,8 +8,9 @@ DSSTRING=''
 cd ../code/owl_gen
 
 for var in ${DATASETS[@]}
+# java -classpath lib/*.jar:. my.package.Program
 do
-    ./vfb_ind_runner.py $USR $PD $var
+    java -cp '.:../../lib/*.jar' org.python.util.jython vfb_ind_runner.py $USR $PD $var
     DSSTRING+="--merge ${var}.owl "
 done
 
