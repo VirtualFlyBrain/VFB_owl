@@ -19,7 +19,6 @@ java -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
 DSSTRING+="--merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl "
 
 cd ../../owl
-break
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
 
 # # Merge ind files with specified release of fbbt
