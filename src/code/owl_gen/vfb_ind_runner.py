@@ -10,8 +10,13 @@ from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from dict_cursor import dict_cursor
 
+"""ARG1: db username; ARG2: db password, ARG3: dataset name; 
+ARG4: local path to version of fbbt used throughout.
+"""
+
 conn = get_con(sys.argv[1], sys.argv[2])
 dataset = sys.argv[3]
+FBBT = sys.argv[4]
 cursor = conn.cursor()
 cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
 dc = dict_cursor(cursor)
@@ -30,7 +35,7 @@ vfb_image.addClass('http://xmlns.com/foaf/0.1/image')
 
 
 ont_dict = {}
-ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
+ont_dict['fbbt'] = load_ont("file://"+FBBT)
 #ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
