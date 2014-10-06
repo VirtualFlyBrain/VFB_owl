@@ -4,7 +4,6 @@ import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
-from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 import lmb_fc_tools
 import re
@@ -21,12 +20,18 @@ fb_feature.label("F73F6684-1B7F-4464-9A3E-6DAB89827C03", "transposable_element_i
 fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
 fb_feature.label("E3091C3F-964B-4C39-8AD3-067221C55442", "transgenic_transposon")
 
+fb_feature.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6")
+fb_feature.label("expression pattern")
+
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
-fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", "flybase", "flybase", "org.postgresql.Driver")  #conn to FB pg
+fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase",
+						 "flybase", "flybase", "org.postgresql.Driver")  #conn to FB pg
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
-vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc JOIN ontology o ON (oc.ontology_id=oc.ontology_id) WHERE o.URI = '%s'" % (fbf))
+vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " /
+				"JOIN ontology o ON (oc.ontology_id=oc.ontology_id)" /
+				" WHERE o.URI = '%s'" % (fbf))
 
 flist = []
 dc = dict_cursor(vfb_cursor)
