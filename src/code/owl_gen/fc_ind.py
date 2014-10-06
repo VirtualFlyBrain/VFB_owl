@@ -3,7 +3,7 @@
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
-from uk.ac.ebi.brain.error import BrainException
+# from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from obo_tools import addOboAnnotationProperties
 from lmb_fc_tools import oe_check_db_and_add
@@ -11,50 +11,57 @@ from lmb_fc_tools import BrainName_mapping
 from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
+from vfb_ind_tools import add_types_2_inds
 
 """ Use:fc_ind.py usr pwd fbbt_path
 Where usr and pwd are connection credentials for LMB DB.
-This script generates a file of OWL individuals representing FlyCircuit neurons and their clusters using the information in the LMB VFB mysql DB.
+This script generates a file of OWL individuals representing 
+FlyCircuit neurons and their clusters using the information 
+in the LMB VFB mysql DB.
 """
 
+# The rest of this code is split into functions purely for scoping, readability and documentation purposes. 
+# None of the functions return, but all modify the vfb_ind brain object. 
+# The init function needs to be run first as this declares 
+#individuals to which Type & Fact assertions are attached by the other functions.  
+#In each function, any owl entities hard coded into class expressions by the function 
+#are first declared and checked against the DB.  
+#A single cursor is used for each function and is used for this checking procedure, 
+#so it is critical that declarations precede the main query. 
+#(It is probably worth changing this to make code more robust, 
+#as getting the order wrong produced incomplete output but doesn't throw an error!)
 
-# The rest of this code is split into functions purely for scoping, readability and documentation purposes. None of the functions return, but all modify the vfb_ind brain object.  The init function needs to be run first as this declares individuals to which Type & Fact assertions are attached by the other functions.  In each function, any owl entities hard coded into class expressions by the function are first declared and checked against the DB.  A single cursor is used for each function and is used for this checking procedure, so it is critical that declarations precede the main query. (It is probably worth changing this to make code more robust, as getting the order wrong produced incomplete output but doesn't throw an error!)
+# TODO: refactoring needed to cope with changes to DB schema - specifically, use of type table for annotations
 
 def add_manual_ann(cursor, vfb_ind):
 	"""Function to add manual typing assertions to vfb individuals."""
-
-	cursor.execute("SELECT ind.shortFormID as vid, relont.baseURI AS relBase, rel.shortFormID as rel, objont.baseURI as clazBase, obj.shortFormID as claz " \
-	"FROM owl_individual ind " \
-	"JOIN neuron n ON (ind.uuid = n.uuid) " \
-	"JOIN annotation a ON (n.idid=a.neuron_idid) " \
-	"JOIN annotation_key_value akv ON (a.annotation_class = akv.annotation_class) " \
-	"JOIN annotation_type ote ON (akv.id=ote.annotation_key_value_id) " \
-	"JOIN owl_class obj ON (ote.class=obj.id) " \
-	"JOIN ontology objont ON (objont.id = obj.ontology_id) " \
-	"LEFT OUTER JOIN owl_objectProperty rel ON (ote.objectProperty=rel.id) " \
-	"LEFT OUTER JOIN ontology relont ON (relont.id=rel.ontology_id) " \
-	"WHERE a.text=akv.annotation_text")
+	
+	cursor.execute("SELECT ind.shortFormID as iID, " \
+				"objont.baseURI AS relBase, " \
+				"rel.shortFormID as rel, " \
+        		"objont.baseURI as clazBase, " \
+				"oc.shortFormID as claz " \
+        		"FROM owl_individual ind " \
+				"JOIN neuron n ON (ind.uuid = n.uuid) " \
+				"JOIN annotation a ON (n.idid=a.neuron_idid) " \
+				"JOIN annotation_key_value akv ON (a.annotation_class = akv.annotation_class) " \
+				"JOIN annotation_type ote ON (akv.id=ote.annotation_key_value_id) " \
+				"JOIN owl_type ot on (ote.owl_type_id=ot.id) " \
+				"JOIN owl_class oc ON (ot.class=oc.id) " \
+				"JOIN owl_objectProperty rel ON (ot.objectProperty=rel.id) " \
+				"JOIN ontology objont ON (objont.id = oc.ontology_id) " \
+				"JOIN ontology relont ON (relont.id = rel.ontology_id) " \
+				"WHERE a.text=akv.annotation_text " )
 
 	dc = dict_cursor(cursor)
-
-    # Could add additional check against fbbt here: (Also potentially mod-able as follows same pattern as type assertions in type table)
-
-	for d in dc:
-		if not vfb_ind.knowsClass(d['claz']):
-			vfb_ind.addClass(d['clazBase']+d['claz'])
-		if not d['rel'] == '0':  # Intended as binary test. Became ugly hack to support combined unique key in mysql.
-			if not vfb_ind.knowsObjectProperty(d['rel']):
-				vfb_ind.addObjectProperty(d['relBase']+d['rel'])
-			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['vid'])
-		else:
-		   vfb_ind.type(d['claz'], d['vid'])
-
+	add_types_2_inds(vfb_ind, dc)
+	# Could add additional check against fbbt here: 
 	cursor.close()
 
 def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
 	"""Function to add assertions of overlap to BrainName domains.  Currently works with a simple cutoff, but there is scope to modify this to at least specify a proportion of voxel size of domain."""
 
-    # Hmmm - surely possible to do this in one query, rather than rolling dict...
+	# Hmmm - surely possible to do this in one query, rather than rolling dict...
 
 	# Roll lookup for BrainName shorthand:
 
@@ -87,7 +94,7 @@ def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
 			if len(above_cutoff) >= 1:  # Equivalent for keys with iterable?
 				voxel_overlap_txt +=  "; "
 			else:
-				 voxel_overlap_txt += "."
+				voxel_overlap_txt += "."
 		vfb_ind.comment(d['vid'], voxel_overlap_txt)
 	cursor.close()
 
@@ -96,7 +103,7 @@ def add_clusters(cursor, vfb_ind):
 
 	""" Declare cluster individuals """
 
-    # TODO: Add typing to clusters.
+	# TODO: Add typing to clusters.
 
 	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
 	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
