@@ -21,7 +21,7 @@ fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
 fb_feature.label("E3091C3F-964B-4C39-8AD3-067221C55442", "transgenic_transposon")
 
 fb_feature.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6")
-fb_feature.label("expression pattern")
+fb_feature.label("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", "expression pattern")
 
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
 fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase",
@@ -29,8 +29,8 @@ fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase",
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
-vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " /
-				"JOIN ontology o ON (oc.ontology_id=oc.ontology_id)" /
+vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " \
+				"JOIN ontology o ON (oc.ontology_id=oc.ontology_id)" \
 				" WHERE o.URI = '%s'" % (fbf))
 
 flist = []
