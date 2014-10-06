@@ -1,4 +1,5 @@
 Prefix: : <http://flybase.org/reports/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
@@ -11,6 +12,9 @@ Ontology: <http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl>
 
 
 AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
 
     
 Datatype: xsd:string
@@ -40,22 +44,16 @@ Class: FBtp0062284
         rdfs:label "P{GMR70B12-GAL4}"^^xsd:string
     
     
-Class: FBtp0058123
-
-    Annotations: 
-        rdfs:label "P{GMR19B04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062287
 
     Annotations: 
         rdfs:label "P{GMR70C03-GAL4}"^^xsd:string
     
     
-Class: FBtp0058122
+Class: FBtp0058123
 
     Annotations: 
-        rdfs:label "P{GMR19B03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR19B04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062286
@@ -64,16 +62,22 @@ Class: FBtp0062286
         rdfs:label "P{GMR70C02-GAL4}"^^xsd:string
     
     
-Class: FBtp0058121
+Class: FBtp0058122
 
     Annotations: 
-        rdfs:label "P{GMR19B01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR19B03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062289
 
     Annotations: 
         rdfs:label "P{GMR70C05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058121
+
+    Annotations: 
+        rdfs:label "P{GMR19B01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060977
@@ -142,16 +146,16 @@ Class: FBtp0058114
         rdfs:label "P{GMR19A04-GAL4}"^^xsd:string
     
     
-Class: FBtp0058119
-
-    Annotations: 
-        rdfs:label "P{GMR19A11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057856
 
     Annotations: 
         rdfs:label "P{GMR16B04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058119
+
+    Annotations: 
+        rdfs:label "P{GMR19A11-GAL4}"^^xsd:string
     
     
 Class: FBtp0062290
@@ -166,10 +170,10 @@ Class: FBtp0062291
         rdfs:label "P{GMR70C07-GAL4}"^^xsd:string
     
     
-Class: FBtp0058118
+Class: FBtp0062292
 
     Annotations: 
-        rdfs:label "P{GMR19A08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR70C09-GAL4}"^^xsd:string
     
     
 Class: FBtp0057853
@@ -178,10 +182,10 @@ Class: FBtp0057853
         rdfs:label "P{GMR16B01-GAL4}"^^xsd:string
     
     
-Class: FBtp0062292
+Class: FBtp0058118
 
     Annotations: 
-        rdfs:label "P{GMR70C09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR19A08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062296
@@ -190,28 +194,28 @@ Class: FBtp0062296
         rdfs:label "P{GMR70D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0060031
-
-    Annotations: 
-        rdfs:label "P{GMR40E08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062295
 
     Annotations: 
         rdfs:label "P{GMR70C12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060034
+Class: FBtp0060031
 
     Annotations: 
-        rdfs:label "P{GMR40E11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR40E08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062294
 
     Annotations: 
         rdfs:label "P{GMR70C11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060034
+
+    Annotations: 
+        rdfs:label "P{GMR40E11-GAL4}"^^xsd:string
     
     
 Class: FBtp0062293
@@ -232,16 +236,16 @@ Class: FBtp0062298
         rdfs:label "P{GMR70D03-GAL4}"^^xsd:string
     
     
-Class: FBtp0058111
-
-    Annotations: 
-        rdfs:label "P{GMR18H11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062297
 
     Annotations: 
         rdfs:label "P{GMR70D02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058111
+
+    Annotations: 
+        rdfs:label "P{GMR18H11-GAL4}"^^xsd:string
     
     
 Class: FBtp0060039
@@ -358,16 +362,16 @@ Class: FBtp0060044
         rdfs:label "P{GMR40F09-GAL4}"^^xsd:string
     
     
-Class: FBtp0060048
-
-    Annotations: 
-        rdfs:label "P{GMR40G01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060950
 
     Annotations: 
         rdfs:label "P{GMR51B07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060048
+
+    Annotations: 
+        rdfs:label "P{GMR40G01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060046
@@ -412,16 +416,16 @@ Class: FBtp0057875
         rdfs:label "P{GMR16D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0057874
-
-    Annotations: 
-        rdfs:label "P{GMR16C12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058137
 
     Annotations: 
         rdfs:label "P{GMR19C08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057874
+
+    Annotations: 
+        rdfs:label "P{GMR16C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0058135
@@ -538,16 +542,16 @@ Class: FBtp0060947
         rdfs:label "P{GMR51B04-GAL4}"^^xsd:string
     
     
-Class: FBtp0058128
-
-    Annotations: 
-        rdfs:label "P{GMR19B09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057887
 
     Annotations: 
         rdfs:label "P{GMR16E01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058128
+
+    Annotations: 
+        rdfs:label "P{GMR19B09-GAL4}"^^xsd:string
     
     
 Class: FBtp0057889
@@ -778,16 +782,16 @@ Class: FBtp0060997
         rdfs:label "P{GMR51G03-GAL4}"^^xsd:string
     
     
-Class: FBtp0060084
-
-    Annotations: 
-        rdfs:label "P{GMR41B03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058188
 
     Annotations: 
         rdfs:label "P{GMR19H04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060084
+
+    Annotations: 
+        rdfs:label "P{GMR41B03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060085
@@ -820,28 +824,28 @@ Class: FBtp0060991
         rdfs:label "P{GMR51F08-GAL4}"^^xsd:string
     
     
-Class: FBtp0060086
-
-    Annotations: 
-        rdfs:label "P{GMR41B05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058182
 
     Annotations: 
         rdfs:label "P{GMR19G10-GAL4}"^^xsd:string
     
     
-Class: FBtp0060087
+Class: FBtp0060086
 
     Annotations: 
-        rdfs:label "P{GMR41B06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41B05-GAL4}"^^xsd:string
     
     
 Class: FBtp0058183
 
     Annotations: 
         rdfs:label "P{GMR19G11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060087
+
+    Annotations: 
+        rdfs:label "P{GMR41B06-GAL4}"^^xsd:string
     
     
 Class: FBtp0057832
@@ -904,22 +908,16 @@ Class: FBtp0060094
         rdfs:label "P{GMR41C03-GAL4}"^^xsd:string
     
     
-Class: FBtp0060095
-
-    Annotations: 
-        rdfs:label "P{GMR41C04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058177
 
     Annotations: 
         rdfs:label "P{GMR19G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0060096
+Class: FBtp0060095
 
     Annotations: 
-        rdfs:label "P{GMR41C05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41C04-GAL4}"^^xsd:string
     
     
 Class: FBtp0058178
@@ -928,10 +926,10 @@ Class: FBtp0058178
         rdfs:label "P{GMR19G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060097
+Class: FBtp0060096
 
     Annotations: 
-        rdfs:label "P{GMR41C06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41C05-GAL4}"^^xsd:string
     
     
 Class: FBtp0058171
@@ -940,10 +938,10 @@ Class: FBtp0058171
         rdfs:label "P{GMR19F11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060098
+Class: FBtp0060097
 
     Annotations: 
-        rdfs:label "P{GMR41C07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41C06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058172
@@ -952,10 +950,10 @@ Class: FBtp0058172
         rdfs:label "P{GMR19F12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060099
+Class: FBtp0060098
 
     Annotations: 
-        rdfs:label "P{GMR41C08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41C07-GAL4}"^^xsd:string
     
     
 Class: FBtp0058173
@@ -964,16 +962,22 @@ Class: FBtp0058173
         rdfs:label "P{GMR19G01-GAL4}"^^xsd:string
     
     
-Class: FBtp0058174
+Class: FBtp0060099
 
     Annotations: 
-        rdfs:label "P{GMR19G02-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41C08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060980
 
     Annotations: 
         rdfs:label "P{GMR51E08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058174
+
+    Annotations: 
+        rdfs:label "P{GMR19G02-GAL4}"^^xsd:string
     
     
 Class: FBtp0058168
@@ -1312,16 +1316,16 @@ Class: FBtp0061174
         rdfs:label "P{GMR53G02-GAL4}"^^xsd:string
     
     
-Class: FBtp0059674
-
-    Annotations: 
-        rdfs:label "P{GMR36E07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061171
 
     Annotations: 
         rdfs:label "P{GMR53F11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059674
+
+    Annotations: 
+        rdfs:label "P{GMR36E07-GAL4}"^^xsd:string
     
     
 Class: FBtp0061172
@@ -1390,16 +1394,16 @@ Class: FBtp0064251
         rdfs:label "P{GMR94G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0059655
-
-    Annotations: 
-        rdfs:label "P{GMR36C10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061190
 
     Annotations: 
         rdfs:label "P{GMR53H08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059655
+
+    Annotations: 
+        rdfs:label "P{GMR36C10-GAL4}"^^xsd:string
     
     
 Class: FBtp0064259
@@ -1492,16 +1496,16 @@ Class: FBtp0063381
         rdfs:label "P{GMR83F04-GAL4}"^^xsd:string
     
     
-Class: FBtp0064262
-
-    Annotations: 
-        rdfs:label "P{GMR94H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059607
 
     Annotations: 
         rdfs:label "P{GMR35F07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064262
+
+    Annotations: 
+        rdfs:label "P{GMR94H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0064265
@@ -1660,16 +1664,16 @@ Class: FBtp0060921
         rdfs:label "P{GMR50G09-GAL4}"^^xsd:string
     
     
-Class: FBtp0014830
-
-    Annotations: 
-        rdfs:label "P{Cha-GAL4.7.4}"^^xsd:string
-    
-    
 Class: FBtp0061128
 
     Annotations: 
         rdfs:label "P{GMR53C02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0014830
+
+    Annotations: 
+        rdfs:label "P{Cha-GAL4.7.4}"^^xsd:string
     
     
 Class: FBtp0060920
@@ -1798,10 +1802,10 @@ Class: FBtp0064287
         rdfs:label "P{GMR95C08-GAL4}"^^xsd:string
     
     
-Class: FBtp0064292
+Class: FBtp0061138
 
     Annotations: 
-        rdfs:label "P{GMR95D03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR53C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0060002
@@ -1810,10 +1814,10 @@ Class: FBtp0060002
         rdfs:label "P{GMR40B12-GAL4}"^^xsd:string
     
     
-Class: FBtp0061138
+Class: FBtp0064292
 
     Annotations: 
-        rdfs:label "P{GMR53C12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR95D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060003
@@ -1828,12 +1832,6 @@ Class: FBtp0061137
         rdfs:label "P{GMR53C11-GAL4}"^^xsd:string
     
     
-Class: FBtp0064294
-
-    Annotations: 
-        rdfs:label "P{GMR95D06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060004
 
     Annotations: 
@@ -1846,10 +1844,22 @@ Class: FBtp0061136
         rdfs:label "P{GMR53C10-GAL4}"^^xsd:string
     
     
+Class: FBtp0064294
+
+    Annotations: 
+        rdfs:label "P{GMR95D06-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0064290
 
     Annotations: 
         rdfs:label "P{GMR95D01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061139
+
+    Annotations: 
+        rdfs:label "P{GMR53D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060009
@@ -1862,12 +1872,6 @@ Class: FBtp0060911
 
     Annotations: 
         rdfs:label "P{GMR50F11-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0061139
-
-    Annotations: 
-        rdfs:label "P{GMR53D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0061130
@@ -2026,16 +2030,16 @@ Class: FBtp0061143
         rdfs:label "P{GMR53D05-GAL4}"^^xsd:string
     
     
-Class: FBtp0060012
-
-    Annotations: 
-        rdfs:label "P{GMR40C10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061142
 
     Annotations: 
         rdfs:label "P{GMR53D04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060012
+
+    Annotations: 
+        rdfs:label "P{GMR40C10-GAL4}"^^xsd:string
     
     
 Class: FBtp0061145
@@ -2266,16 +2270,16 @@ Class: FBtp0061196
         rdfs:label "P{GMR54A02-GAL4}"^^xsd:string
     
     
-Class: FBtp0059573
-
-    Annotations: 
-        rdfs:label "P{GMR35B10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061195
 
     Annotations: 
         rdfs:label "P{GMR54A01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059573
+
+    Annotations: 
+        rdfs:label "P{GMR35B10-GAL4}"^^xsd:string
     
     
 Class: FBtp0061198
@@ -2314,16 +2318,16 @@ Class: FBtp0063325
         rdfs:label "P{GMR83A01-GAL4}"^^xsd:string
     
     
-Class: FBtp0061999
-
-    Annotations: 
-        rdfs:label "P{GMR65C12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063324
 
     Annotations: 
         rdfs:label "P{GMR82H12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061999
+
+    Annotations: 
+        rdfs:label "P{GMR65C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0061998
@@ -2344,16 +2348,16 @@ Class: FBtp0063329
         rdfs:label "P{GMR83A06-GAL4}"^^xsd:string
     
     
-Class: FBtp0061995
-
-    Annotations: 
-        rdfs:label "P{GMR65C08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063328
 
     Annotations: 
         rdfs:label "P{GMR83A05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061995
+
+    Annotations: 
+        rdfs:label "P{GMR65C08-GAL4}"^^xsd:string
     
     
 Class: FBtp0061994
@@ -2386,16 +2390,16 @@ Class: FBtp0063321
         rdfs:label "P{GMR82H09-GAL4}"^^xsd:string
     
     
-Class: FBtp0059584
-
-    Annotations: 
-        rdfs:label "P{GMR35C10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063320
 
     Annotations: 
         rdfs:label "P{GMR82H08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059584
+
+    Annotations: 
+        rdfs:label "P{GMR35C10-GAL4}"^^xsd:string
     
     
 Class: FBtp0063323
@@ -2488,28 +2492,28 @@ Class: FBtp0063311
         rdfs:label "P{GMR82G11-GAL4}"^^xsd:string
     
     
-Class: FBtp0059594
-
-    Annotations: 
-        rdfs:label "P{GMR35D10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063310
 
     Annotations: 
         rdfs:label "P{GMR82G10-GAL4}"^^xsd:string
     
     
-Class: FBtp0064207
+Class: FBtp0059594
 
     Annotations: 
-        rdfs:label "P{GMR94B08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR35D10-GAL4}"^^xsd:string
     
     
 Class: FBtp0059589
 
     Annotations: 
         rdfs:label "P{GMR35D03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064207
+
+    Annotations: 
+        rdfs:label "P{GMR94B08-GAL4}"^^xsd:string
     
     
 Class: FBtp0064204
@@ -2842,16 +2846,16 @@ Class: FBtp0062275
         rdfs:label "P{GMR70B03-GAL4}"^^xsd:string
     
     
-Class: FBtp0058211
-
-    Annotations: 
-        rdfs:label "P{GMR20B05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062276
 
     Annotations: 
         rdfs:label "P{GMR70B04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058211
+
+    Annotations: 
+        rdfs:label "P{GMR20B05-GAL4}"^^xsd:string
     
     
 Class: FBtp0058213
@@ -2926,22 +2930,16 @@ Class: FBtp0062266
         rdfs:label "P{GMR70A06-GAL4}"^^xsd:string
     
     
-Class: FBtp0058220
-
-    Annotations: 
-        rdfs:label "P{GMR20C03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062267
 
     Annotations: 
         rdfs:label "P{GMR70A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0058221
+Class: FBtp0058220
 
     Annotations: 
-        rdfs:label "P{GMR20C04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR20C03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062264
@@ -2950,16 +2948,22 @@ Class: FBtp0062264
         rdfs:label "P{GMR70A04-GAL4}"^^xsd:string
     
     
-Class: FBtp0058222
+Class: FBtp0058221
 
     Annotations: 
-        rdfs:label "P{GMR20C05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR20C04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062265
 
     Annotations: 
         rdfs:label "P{GMR70A05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058222
+
+    Annotations: 
+        rdfs:label "P{GMR20C05-GAL4}"^^xsd:string
     
     
 Class: FBtp0060169
@@ -2986,16 +2990,16 @@ Class: FBtp0058266
         rdfs:label "P{GMR20G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060161
-
-    Annotations: 
-        rdfs:label "P{GMR42A06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058265
 
     Annotations: 
         rdfs:label "P{GMR20G05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060161
+
+    Annotations: 
+        rdfs:label "P{GMR42A06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058264
@@ -3010,16 +3014,16 @@ Class: FBtp0058263
         rdfs:label "P{GMR20G03-GAL4}"^^xsd:string
     
     
-Class: FBtp0060166
-
-    Annotations: 
-        rdfs:label "P{GMR42B02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058262
 
     Annotations: 
         rdfs:label "P{GMR20G02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060166
+
+    Annotations: 
+        rdfs:label "P{GMR42B02-GAL4}"^^xsd:string
     
     
 Class: FBtp0058261
@@ -3028,16 +3032,16 @@ Class: FBtp0058261
         rdfs:label "P{GMR20G01-GAL4}"^^xsd:string
     
     
-Class: FBtp0060164
-
-    Annotations: 
-        rdfs:label "P{GMR42A09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058260
 
     Annotations: 
         rdfs:label "P{GMR20F11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060164
+
+    Annotations: 
+        rdfs:label "P{GMR42A09-GAL4}"^^xsd:string
     
     
 Class: FBtp0061210
@@ -3064,16 +3068,16 @@ Class: FBtp0057753
         rdfs:label "P{GMR15A05-GAL4}"^^xsd:string
     
     
-Class: FBtp0057752
-
-    Annotations: 
-        rdfs:label "P{GMR15A04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058259
 
     Annotations: 
         rdfs:label "P{GMR20F10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057752
+
+    Annotations: 
+        rdfs:label "P{GMR15A04-GAL4}"^^xsd:string
     
     
 Class: FBtp0058257
@@ -3100,16 +3104,16 @@ Class: FBtp0061226
         rdfs:label "P{GMR54C09-GAL4}"^^xsd:string
     
     
-Class: FBtp0060171
-
-    Annotations: 
-        rdfs:label "P{GMR42B08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058253
 
     Annotations: 
         rdfs:label "P{GMR20F02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060171
+
+    Annotations: 
+        rdfs:label "P{GMR42B08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060173
@@ -3277,16 +3281,16 @@ Class: FBtp0058238
         rdfs:label "P{GMR20D10-GAL4}"^^xsd:string
     
     
-Class: FBtp0057732
-
-    Annotations: 
-        rdfs:label "P{GMR14G06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058239
 
     Annotations: 
         rdfs:label "P{GMR20D11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057732
+
+    Annotations: 
+        rdfs:label "P{GMR14G06-GAL4}"^^xsd:string
     
     
 Class: FBtp0057739
@@ -3385,16 +3389,16 @@ Class: FBtp0058223
         rdfs:label "P{GMR20C06-GAL4}"^^xsd:string
     
     
-Class: FBtp0057742
-
-    Annotations: 
-        rdfs:label "P{GMR14H05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058225
 
     Annotations: 
         rdfs:label "P{GMR20C08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057742
+
+    Annotations: 
+        rdfs:label "P{GMR14H05-GAL4}"^^xsd:string
     
     
 Class: FBtp0057741
@@ -3409,16 +3413,16 @@ Class: FBtp0058227
         rdfs:label "P{GMR20C10-GAL4}"^^xsd:string
     
     
-Class: FBtp0057743
-
-    Annotations: 
-        rdfs:label "P{GMR14H06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058228
 
     Annotations: 
         rdfs:label "P{GMR20C12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057743
+
+    Annotations: 
+        rdfs:label "P{GMR14H06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058229
@@ -3565,16 +3569,16 @@ Class: FBtp0058281
         rdfs:label "P{GMR20H11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060186
-
-    Annotations: 
-        rdfs:label "P{GMR42D01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058282
 
     Annotations: 
         rdfs:label "P{GMR21A01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060186
+
+    Annotations: 
+        rdfs:label "P{GMR42D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0058288
@@ -3583,16 +3587,16 @@ Class: FBtp0058288
         rdfs:label "P{GMR21A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0060181
-
-    Annotations: 
-        rdfs:label "P{GMR42C07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058285
 
     Annotations: 
         rdfs:label "P{GMR21A04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060181
+
+    Annotations: 
+        rdfs:label "P{GMR42C07-GAL4}"^^xsd:string
     
     
 Class: FBtp0058286
@@ -3613,16 +3617,16 @@ Class: FBtp0058278
         rdfs:label "P{GMR20H08-GAL4}"^^xsd:string
     
     
-Class: FBtp0060196
-
-    Annotations: 
-        rdfs:label "P{GMR42D11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058270
 
     Annotations: 
         rdfs:label "P{GMR20G10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060196
+
+    Annotations: 
+        rdfs:label "P{GMR42D11-GAL4}"^^xsd:string
     
     
 Class: FBtp0058273
@@ -3637,16 +3641,16 @@ Class: FBtp0060192
         rdfs:label "P{GMR42D07-GAL4}"^^xsd:string
     
     
-Class: FBtp0060193
-
-    Annotations: 
-        rdfs:label "P{GMR42D08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058275
 
     Annotations: 
         rdfs:label "P{GMR20H03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060193
+
+    Annotations: 
+        rdfs:label "P{GMR42D08-GAL4}"^^xsd:string
     
     
 Class: FBtp0058276
@@ -3799,10 +3803,10 @@ Class: FBtp0059540
         rdfs:label "P{GMR34G10-GAL4}"^^xsd:string
     
     
-Class: FBtp0064348
+Class: FBtp0061280
 
     Annotations: 
-        rdfs:label "P{GMR9E05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR54H03-GAL4}"^^xsd:string
     
     
 Class: FBtp0059521
@@ -3811,10 +3815,10 @@ Class: FBtp0059521
         rdfs:label "P{GMR34F03-GAL4}"^^xsd:string
     
     
-Class: FBtp0061280
+Class: FBtp0064348
 
     Annotations: 
-        rdfs:label "P{GMR54H03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR9E05-GAL4}"^^xsd:string
     
     
 Class: FBtp0059523
@@ -3823,16 +3827,16 @@ Class: FBtp0059523
         rdfs:label "P{GMR34F05-GAL4}"^^xsd:string
     
     
-Class: FBtp0064349
-
-    Annotations: 
-        rdfs:label "P{GMR9E06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059524
 
     Annotations: 
         rdfs:label "P{GMR34F06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064349
+
+    Annotations: 
+        rdfs:label "P{GMR9E06-GAL4}"^^xsd:string
     
     
 Class: FBtp0064344
@@ -3865,16 +3869,16 @@ Class: FBtp0061272
         rdfs:label "P{GMR54G07-GAL4}"^^xsd:string
     
     
-Class: FBtp0059531
-
-    Annotations: 
-        rdfs:label "P{GMR34G01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061270
 
     Annotations: 
         rdfs:label "P{GMR54G05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059531
+
+    Annotations: 
+        rdfs:label "P{GMR34G01-GAL4}"^^xsd:string
     
     
 Class: FBtp0059512
@@ -3979,16 +3983,16 @@ Class: FBtp0059504
         rdfs:label "P{GMR34D05-GAL4}"^^xsd:string
     
     
-Class: FBtp0059503
-
-    Annotations: 
-        rdfs:label "P{GMR34D04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057799
 
     Annotations: 
         rdfs:label "P{GMR15E06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059503
+
+    Annotations: 
+        rdfs:label "P{GMR34D04-GAL4}"^^xsd:string
     
     
 Class: FBtp0059506
@@ -4009,22 +4013,16 @@ Class: FBtp0059502
         rdfs:label "P{GMR34D03-GAL4}"^^xsd:string
     
     
-Class: FBtp0060121
-
-    Annotations: 
-        rdfs:label "P{GMR41E08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061253
 
     Annotations: 
         rdfs:label "P{GMR54E12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060122
+Class: FBtp0060121
 
     Annotations: 
-        rdfs:label "P{GMR41E09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41E08-GAL4}"^^xsd:string
     
     
 Class: FBtp0061252
@@ -4033,16 +4031,22 @@ Class: FBtp0061252
         rdfs:label "P{GMR54E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060124
+Class: FBtp0060122
 
     Annotations: 
-        rdfs:label "P{GMR41E11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR41E09-GAL4}"^^xsd:string
     
     
 Class: FBtp0061258
 
     Annotations: 
         rdfs:label "P{GMR54F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060124
+
+    Annotations: 
+        rdfs:label "P{GMR41E11-GAL4}"^^xsd:string
     
     
 Class: FBtp0060126
@@ -4369,28 +4373,28 @@ Class: FBtp0063469
         rdfs:label "P{GMR84F07-GAL4}"^^xsd:string
     
     
-Class: FBtp0059485
-
-    Annotations: 
-        rdfs:label "P{GMR34B09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063463
 
     Annotations: 
         rdfs:label "P{GMR84F01-GAL4}"^^xsd:string
     
     
-Class: FBtp0059487
+Class: FBtp0059485
 
     Annotations: 
-        rdfs:label "P{GMR34B11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR34B09-GAL4}"^^xsd:string
     
     
 Class: FBtp0063465
 
     Annotations: 
         rdfs:label "P{GMR84F03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059487
+
+    Annotations: 
+        rdfs:label "P{GMR34B11-GAL4}"^^xsd:string
     
     
 Class: FBtp0063466
@@ -4441,16 +4445,16 @@ Class: FBtp0063454
         rdfs:label "P{GMR84E04-GAL4}"^^xsd:string
     
     
-Class: FBtp0059497
-
-    Annotations: 
-        rdfs:label "P{GMR34C09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063455
 
     Annotations: 
         rdfs:label "P{GMR84E05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059497
+
+    Annotations: 
+        rdfs:label "P{GMR34C09-GAL4}"^^xsd:string
     
     
 Class: FBtp0059496
@@ -4465,16 +4469,16 @@ Class: FBtp0063452
         rdfs:label "P{GMR84E02-GAL4}"^^xsd:string
     
     
-Class: FBtp0059495
-
-    Annotations: 
-        rdfs:label "P{GMR34C07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063453
 
     Annotations: 
         rdfs:label "P{GMR84E03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059495
+
+    Annotations: 
+        rdfs:label "P{GMR34C07-GAL4}"^^xsd:string
     
     
 Class: FBtp0059494
@@ -4525,16 +4529,16 @@ Class: FBtp0063442
         rdfs:label "P{GMR84C12-GAL4}"^^xsd:string
     
     
-Class: FBtp0059463
-
-    Annotations: 
-        rdfs:label "P{GMR33H10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062311
 
     Annotations: 
         rdfs:label "P{GMR70E09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059463
+
+    Annotations: 
+        rdfs:label "P{GMR33H10-GAL4}"^^xsd:string
     
     
 Class: FBtp0063441
@@ -4693,16 +4697,16 @@ Class: FBtp0062302
         rdfs:label "P{GMR70D07-GAL4}"^^xsd:string
     
     
-Class: FBtp0062303
-
-    Annotations: 
-        rdfs:label "P{GMR70D08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063435
 
     Annotations: 
         rdfs:label "P{GMR84C05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062303
+
+    Annotations: 
+        rdfs:label "P{GMR70D08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062304
@@ -4759,28 +4763,28 @@ Class: FBtp0064327
         rdfs:label "P{GMR9A04-GAL4}"^^xsd:string
     
     
-Class: FBtp0064328
-
-    Annotations: 
-        rdfs:label "P{GMR9A05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059468
 
     Annotations: 
         rdfs:label "P{GMR34A03-GAL4}"^^xsd:string
     
     
-Class: FBtp0064326
+Class: FBtp0064328
 
     Annotations: 
-        rdfs:label "P{GMR9A03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR9A05-GAL4}"^^xsd:string
     
     
 Class: FBtp0059466
 
     Annotations: 
         rdfs:label "P{GMR34A01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064326
+
+    Annotations: 
+        rdfs:label "P{GMR9A03-GAL4}"^^xsd:string
     
     
 Class: FBtp0064329
@@ -4981,22 +4985,16 @@ Class: FBtp0064300
         rdfs:label "P{GMR95E06-GAL4}"^^xsd:string
     
     
-Class: FBtp0064308
-
-    Annotations: 
-        rdfs:label "P{GMR95F09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059448
 
     Annotations: 
         rdfs:label "P{GMR33G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0064305
+Class: FBtp0064308
 
     Annotations: 
-        rdfs:label "P{GMR95F03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR95F09-GAL4}"^^xsd:string
     
     
 Class: FBtp0059447
@@ -5005,10 +5003,10 @@ Class: FBtp0059447
         rdfs:label "P{GMR33G04-GAL4}"^^xsd:string
     
     
-Class: FBtp0064306
+Class: FBtp0064305
 
     Annotations: 
-        rdfs:label "P{GMR95F05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR95F03-GAL4}"^^xsd:string
     
     
 Class: FBtp0059446
@@ -5017,22 +5015,28 @@ Class: FBtp0059446
         rdfs:label "P{GMR33G02-GAL4}"^^xsd:string
     
     
+Class: FBtp0064306
+
+    Annotations: 
+        rdfs:label "P{GMR95F05-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0059445
 
     Annotations: 
         rdfs:label "P{GMR33G01-GAL4}"^^xsd:string
     
     
-Class: FBtp0064304
-
-    Annotations: 
-        rdfs:label "P{GMR95F02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059444
 
     Annotations: 
         rdfs:label "P{GMR33F11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064304
+
+    Annotations: 
+        rdfs:label "P{GMR95F02-GAL4}"^^xsd:string
     
     
 Class: FBtp0063409
@@ -5269,16 +5273,16 @@ Class: FBtp0062395
         rdfs:label "P{GMR71E04-GAL4}"^^xsd:string
     
     
-Class: FBtp0058332
-
-    Annotations: 
-        rdfs:label "P{GMR21E05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062397
 
     Annotations: 
         rdfs:label "P{GMR71E06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058332
+
+    Annotations: 
+        rdfs:label "P{GMR21E05-GAL4}"^^xsd:string
     
     
 Class: FBtp0062398
@@ -5287,16 +5291,16 @@ Class: FBtp0062398
         rdfs:label "P{GMR71E07-GAL4}"^^xsd:string
     
     
-Class: FBtp0058330
-
-    Annotations: 
-        rdfs:label "P{GMR21E02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062399
 
     Annotations: 
         rdfs:label "P{GMR71E08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058330
+
+    Annotations: 
+        rdfs:label "P{GMR21E02-GAL4}"^^xsd:string
     
     
 Class: FBti0143990
@@ -5317,16 +5321,16 @@ Class: FBtp0058334
         rdfs:label "P{GMR21E07-GAL4}"^^xsd:string
     
     
-Class: FBti0143994
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Spred[CPTI001165]"^^xsd:string
-    
-    
 Class: FBtp0058333
 
     Annotations: 
         rdfs:label "P{GMR21E06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143994
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}Spred[CPTI001165]"^^xsd:string
     
     
 Class: FBti0143991
@@ -5389,28 +5393,28 @@ Class: FBtp0062382
         rdfs:label "P{GMR71D02-GAL4}"^^xsd:string
     
     
-Class: FBtp0058340
-
-    Annotations: 
-        rdfs:label "P{GMR21F01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062387
 
     Annotations: 
         rdfs:label "P{GMR71D07-GAL4}"^^xsd:string
     
     
-Class: FBtp0058342
+Class: FBtp0058340
 
     Annotations: 
-        rdfs:label "P{GMR21F03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR21F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062385
 
     Annotations: 
         rdfs:label "P{GMR71D05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058342
+
+    Annotations: 
+        rdfs:label "P{GMR21F03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062386
@@ -5779,16 +5783,16 @@ Class: FBtp0060769
         rdfs:label "P{GMR49B07-GAL4}"^^xsd:string
     
     
-Class: FBti0143908
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}CPTI001237"^^xsd:string
-    
-    
 Class: FBtp0060768
 
     Annotations: 
         rdfs:label "P{GMR49B06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143908
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}CPTI001237"^^xsd:string
     
     
 Class: FBtp0060761
@@ -5905,6 +5909,12 @@ Class: FBtp0060756
         rdfs:label "P{GMR49A05-GAL4}"^^xsd:string
     
     
+Class: FBtp0062896
+
+    Annotations: 
+        rdfs:label "P{GMR77H07-GAL4}"^^xsd:string
+    
+    
 Class: FBti0143919
 
     Annotations: 
@@ -5917,22 +5927,16 @@ Class: FBtp0060757
         rdfs:label "P{GMR49A06-GAL4}"^^xsd:string
     
     
-Class: FBtp0062896
+Class: FBtp0062897
 
     Annotations: 
-        rdfs:label "P{GMR77H07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR77H08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060754
 
     Annotations: 
         rdfs:label "P{GMR49A03-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0062897
-
-    Annotations: 
-        rdfs:label "P{GMR77H08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062898
@@ -5947,22 +5951,16 @@ Class: FBti0143916
         rdfs:label "PBac{681.P.FSVS-1}mgl[CPTI001282]"^^xsd:string
     
     
-Class: FBti0143915
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Fas2[CPTI001279]"^^xsd:string
-    
-    
 Class: FBtp0062892
 
     Annotations: 
         rdfs:label "P{GMR77H03-GAL4}"^^xsd:string
     
     
-Class: FBti0143918
+Class: FBti0143915
 
     Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}CG8552[CPTI001288]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}Fas2[CPTI001279]"^^xsd:string
     
     
 Class: FBtp0062893
@@ -5971,16 +5969,22 @@ Class: FBtp0062893
         rdfs:label "P{GMR77H04-GAL4}"^^xsd:string
     
     
-Class: FBti0143917
+Class: FBti0143918
 
     Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Cam[CPTI001284]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}CG8552[CPTI001288]"^^xsd:string
     
     
 Class: FBtp0062894
 
     Annotations: 
         rdfs:label "P{GMR77H05-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143917
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}Cam[CPTI001284]"^^xsd:string
     
     
 Class: FBti0143912
@@ -6001,16 +6005,16 @@ Class: FBti0143914
         rdfs:label "PBac{681.P.FSVS-1}Ten-m[CPTI001273]"^^xsd:string
     
     
-Class: FBti0143913
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Eip63E[CPTI001272]"^^xsd:string
-    
-    
 Class: FBtp0062890
 
     Annotations: 
         rdfs:label "P{GMR77H01-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143913
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}Eip63E[CPTI001272]"^^xsd:string
     
     
 Class: FBti0143921
@@ -6175,16 +6179,16 @@ Class: FBti0143932
         rdfs:label "PBac{681.P.FSVS-1}mgl[CPTI001336]"^^xsd:string
     
     
-Class: FBti0143931
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}mgl[CPTI001334]"^^xsd:string
-    
-    
 Class: FBtp0062050
 
     Annotations: 
         rdfs:label "P{GMR65H03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143931
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}mgl[CPTI001334]"^^xsd:string
     
     
 Class: FBtp0062041
@@ -6199,28 +6203,28 @@ Class: FBti0143934
         rdfs:label "PBac{681.P.FSVS-1}CG42684[CPTI001341]"^^xsd:string
     
     
-Class: FBti0143935
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}hth[CPTI001356]"^^xsd:string
-    
-    
 Class: FBtp0062043
 
     Annotations: 
         rdfs:label "P{GMR65G08-GAL4}"^^xsd:string
     
     
-Class: FBti0143936
+Class: FBti0143935
 
     Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}flw[CPTI001360]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}hth[CPTI001356]"^^xsd:string
     
     
 Class: FBtp0062042
 
     Annotations: 
         rdfs:label "P{GMR65G07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143936
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}flw[CPTI001360]"^^xsd:string
     
     
 Class: FBtp0062045
@@ -6265,22 +6269,16 @@ Class: FBtp0060735
         rdfs:label "P{GMR48G08-GAL4}"^^xsd:string
     
     
-Class: FBtp0060734
-
-    Annotations: 
-        rdfs:label "P{GMR48G07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062048
 
     Annotations: 
         rdfs:label "P{GMR65H01-GAL4}"^^xsd:string
     
     
-Class: FBtp0060733
+Class: FBtp0060734
 
     Annotations: 
-        rdfs:label "P{GMR48G06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48G07-GAL4}"^^xsd:string
     
     
 Class: FBtp0061317
@@ -6289,10 +6287,10 @@ Class: FBtp0061317
         rdfs:label "P{GMR55C05-GAL4}"^^xsd:string
     
     
-Class: FBtp0060732
+Class: FBtp0060733
 
     Annotations: 
-        rdfs:label "P{GMR48G05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48G06-GAL4}"^^xsd:string
     
     
 Class: FBtp0062875
@@ -6301,16 +6299,22 @@ Class: FBtp0062875
         rdfs:label "P{GMR77F07-GAL4}"^^xsd:string
     
     
-Class: FBtp0060730
+Class: FBtp0060732
 
     Annotations: 
-        rdfs:label "P{GMR48G02-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48G05-GAL4}"^^xsd:string
     
     
 Class: FBtp0062877
 
     Annotations: 
         rdfs:label "P{GMR77F09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060730
+
+    Annotations: 
+        rdfs:label "P{GMR48G02-GAL4}"^^xsd:string
     
     
 Class: FBtp0061314
@@ -6367,6 +6371,12 @@ Class: FBtp0057621
         rdfs:label "P{GMR13E10-GAL4}"^^xsd:string
     
     
+Class: FBtp0062060
+
+    Annotations: 
+        rdfs:label "P{GMR66A01-GAL4}"^^xsd:string
+    
+    
 Class: FBti0143943
 
     Annotations: 
@@ -6379,22 +6389,16 @@ Class: FBtp0057623
         rdfs:label "P{GMR13E12-GAL4}"^^xsd:string
     
     
-Class: FBtp0062060
+Class: FBtp0062061
 
     Annotations: 
-        rdfs:label "P{GMR66A01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR66A02-GAL4}"^^xsd:string
     
     
 Class: FBti0143942
 
     Annotations: 
         rdfs:label "PBac{681.P.FSVS-1}cup[CPTI001409]"^^xsd:string
-    
-    
-Class: FBtp0062061
-
-    Annotations: 
-        rdfs:label "P{GMR66A02-GAL4}"^^xsd:string
     
     
 Class: FBti0143941
@@ -6415,16 +6419,16 @@ Class: FBtp0057624
         rdfs:label "P{GMR13F01-GAL4}"^^xsd:string
     
     
-Class: FBti0143946
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Flo-2[CPTI001427]"^^xsd:string
-    
-    
 Class: FBtp0062054
 
     Annotations: 
         rdfs:label "P{GMR65H07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143946
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}Flo-2[CPTI001427]"^^xsd:string
     
     
 Class: FBtp0061321
@@ -6439,16 +6443,16 @@ Class: FBti0143944
         rdfs:label "PBac{681.P.FSVS-1}qsm[CPTI001414]"^^xsd:string
     
     
-Class: FBti0143945
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}babos[CPTI001423]"^^xsd:string
-    
-    
 Class: FBtp0062051
 
     Annotations: 
         rdfs:label "P{GMR65H04-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143945
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}babos[CPTI001423]"^^xsd:string
     
     
 Class: FBtp0062058
@@ -6475,16 +6479,16 @@ Class: FBtp0062860
         rdfs:label "P{GMR77E01-GAL4}"^^xsd:string
     
     
-Class: FBti0143948
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Tsf2[CPTI001431]"^^xsd:string
-    
-    
 Class: FBtp0062056
 
     Annotations: 
         rdfs:label "P{GMR65H09-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143948
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}Tsf2[CPTI001431]"^^xsd:string
     
     
 Class: FBti0143949
@@ -6493,28 +6497,16 @@ Class: FBti0143949
         rdfs:label "PBac{681.P.FSVS-1}CG8552[CPTI001450]"^^xsd:string
     
     
-Class: FBtp0060722
-
-    Annotations: 
-        rdfs:label "P{GMR48F06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061328
 
     Annotations: 
         rdfs:label "P{GMR55D05-GAL4}"^^xsd:string
     
     
-Class: FBtp0060721
+Class: FBtp0060722
 
     Annotations: 
-        rdfs:label "P{GMR48F04-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0061329
-
-    Annotations: 
-        rdfs:label "P{GMR55D06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48F06-GAL4}"^^xsd:string
     
     
 Class: FBtp0062864
@@ -6523,16 +6515,28 @@ Class: FBtp0062864
         rdfs:label "P{GMR77E05-GAL4}"^^xsd:string
     
     
-Class: FBtp0060724
+Class: FBtp0061329
 
     Annotations: 
-        rdfs:label "P{GMR48F08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR55D06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060721
+
+    Annotations: 
+        rdfs:label "P{GMR48F04-GAL4}"^^xsd:string
     
     
 Class: FBtp0061326
 
     Annotations: 
         rdfs:label "P{GMR55D03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060724
+
+    Annotations: 
+        rdfs:label "P{GMR48F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0061327
@@ -6553,16 +6557,16 @@ Class: FBtp0062869
         rdfs:label "P{GMR77E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060720
-
-    Annotations: 
-        rdfs:label "P{GMR48F03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062867
 
     Annotations: 
         rdfs:label "P{GMR77E09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060720
+
+    Annotations: 
+        rdfs:label "P{GMR48F03-GAL4}"^^xsd:string
     
     
 Class: FBtp0061323
@@ -6601,16 +6605,16 @@ Class: FBtp0060718
         rdfs:label "P{GMR48F01-GAL4}"^^xsd:string
     
     
-Class: FBti0143952
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Sema-2a[CPTI000798]"^^xsd:string
-    
-    
 Class: FBtp0057636
 
     Annotations: 
         rdfs:label "P{GMR13G01-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143952
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Sema-2a[CPTI000798]"^^xsd:string
     
     
 Class: FBti0143951
@@ -6625,10 +6629,10 @@ Class: FBti0143954
         rdfs:label "PBac{602.P.SVS-1}sdk[CPTI000812]"^^xsd:string
     
     
-Class: FBti0143953
+Class: FBtp0062072
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}CPTI000808"^^xsd:string
+        rdfs:label "P{GMR66B02-GAL4}"^^xsd:string
     
     
 Class: FBtp0057633
@@ -6637,10 +6641,10 @@ Class: FBtp0057633
         rdfs:label "P{GMR13F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0062072
+Class: FBti0143953
 
     Annotations: 
-        rdfs:label "P{GMR66B02-GAL4}"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}CPTI000808"^^xsd:string
     
     
 Class: FBtp0057632
@@ -6655,16 +6659,16 @@ Class: FBtp0057631
         rdfs:label "P{GMR13F08-GAL4}"^^xsd:string
     
     
-Class: FBti0143950
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}tral[CPTI000787]"^^xsd:string
-    
-    
 Class: FBtp0057630
 
     Annotations: 
         rdfs:label "P{GMR13F07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143950
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}tral[CPTI000787]"^^xsd:string
     
     
 Class: FBti0143959
@@ -6685,28 +6689,16 @@ Class: FBtp0062850
         rdfs:label "P{GMR77C12-GAL4}"^^xsd:string
     
     
-Class: FBti0143955
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Fas3[CPTI000833]"^^xsd:string
-    
-    
 Class: FBtp0062063
 
     Annotations: 
         rdfs:label "P{GMR66A04-GAL4}"^^xsd:string
     
     
-Class: FBti0143956
+Class: FBti0143955
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}CG11486[CPTI000836]"^^xsd:string
-    
-    
-Class: FBtp0061330
-
-    Annotations: 
-        rdfs:label "P{GMR55D07-GAL4}"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}Fas3[CPTI000833]"^^xsd:string
     
     
 Class: FBtp0062062
@@ -6715,10 +6707,22 @@ Class: FBtp0062062
         rdfs:label "P{GMR66A03-GAL4}"^^xsd:string
     
     
-Class: FBti0143957
+Class: FBtp0061330
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}cher[CPTI000847]"^^xsd:string
+        rdfs:label "P{GMR55D07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143956
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}CG11486[CPTI000836]"^^xsd:string
+    
+    
+Class: FBtp0062065
+
+    Annotations: 
+        rdfs:label "P{GMR66A06-GAL4}"^^xsd:string
     
     
 Class: FBtp0061331
@@ -6727,10 +6731,10 @@ Class: FBtp0061331
         rdfs:label "P{GMR55D08-GAL4}"^^xsd:string
     
     
-Class: FBtp0062065
+Class: FBti0143957
 
     Annotations: 
-        rdfs:label "P{GMR66A06-GAL4}"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}cher[CPTI000847]"^^xsd:string
     
     
 Class: FBti0143958
@@ -6751,28 +6755,28 @@ Class: FBtp0061334
         rdfs:label "P{GMR55D11-GAL4}"^^xsd:string
     
     
-Class: FBtp0061335
-
-    Annotations: 
-        rdfs:label "P{GMR55D12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062858
 
     Annotations: 
         rdfs:label "P{GMR77D11-GAL4}"^^xsd:string
     
     
-Class: FBtp0061336
+Class: FBtp0061335
 
     Annotations: 
-        rdfs:label "P{GMR55E01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR55D12-GAL4}"^^xsd:string
     
     
 Class: FBtp0062857
 
     Annotations: 
         rdfs:label "P{GMR77D09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061336
+
+    Annotations: 
+        rdfs:label "P{GMR55E01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062852
@@ -6811,16 +6815,16 @@ Class: FBtp0060707
         rdfs:label "P{GMR48E02-GAL4}"^^xsd:string
     
     
-Class: FBtp0060709
-
-    Annotations: 
-        rdfs:label "P{GMR48E04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062848
 
     Annotations: 
         rdfs:label "P{GMR77C10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060709
+
+    Annotations: 
+        rdfs:label "P{GMR48E04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062849
@@ -6847,16 +6851,16 @@ Class: FBti0143964
         rdfs:label "PBac{602.P.SVS-1}CG9650[CPTI000886]"^^xsd:string
     
     
-Class: FBti0143963
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Fas3[CPTI000884]"^^xsd:string
-    
-    
 Class: FBtp0057647
 
     Annotations: 
         rdfs:label "P{GMR13G12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143963
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Fas3[CPTI000884]"^^xsd:string
     
     
 Class: FBtp0062080
@@ -6871,16 +6875,16 @@ Class: FBti0143962
         rdfs:label "PBac{602.P.SVS-1}CG34422[CPTI000883]"^^xsd:string
     
     
-Class: FBti0143961
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}ATPsyn-β[CPTI000877]"^^xsd:string
-    
-    
 Class: FBtp0057641
 
     Annotations: 
         rdfs:label "P{GMR13G06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143961
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}ATPsyn-β[CPTI000877]"^^xsd:string
     
     
 Class: FBti0143960
@@ -6919,10 +6923,10 @@ Class: FBtp0057650
         rdfs:label "P{GMR13H03-GAL4}"^^xsd:string
     
     
-Class: FBti0143968
+Class: FBtp0062076
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}aop[CPTI000924]"^^xsd:string
+        rdfs:label "P{GMR66B07-GAL4}"^^xsd:string
     
     
 Class: FBtp0061342
@@ -6931,16 +6935,10 @@ Class: FBtp0061342
         rdfs:label "P{GMR55E07-GAL4}"^^xsd:string
     
     
-Class: FBtp0062076
+Class: FBti0143968
 
     Annotations: 
-        rdfs:label "P{GMR66B07-GAL4}"^^xsd:string
-    
-    
-Class: FBti0143969
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}nrv1[CPTI000925]"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}aop[CPTI000924]"^^xsd:string
     
     
 Class: FBtp0062075
@@ -6949,16 +6947,22 @@ Class: FBtp0062075
         rdfs:label "P{GMR66B06-GAL4}"^^xsd:string
     
     
-Class: FBti0143966
+Class: FBti0143969
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Unc-115a[CPTI000905]"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}nrv1[CPTI000925]"^^xsd:string
     
     
 Class: FBtp0062074
 
     Annotations: 
         rdfs:label "P{GMR66B05-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143966
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Unc-115a[CPTI000905]"^^xsd:string
     
     
 Class: FBti0143967
@@ -7003,16 +7007,16 @@ Class: FBtp0062842
         rdfs:label "P{GMR77B11-GAL4}"^^xsd:string
     
     
-Class: FBtp0061348
-
-    Annotations: 
-        rdfs:label "P{GMR55F02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062841
 
     Annotations: 
         rdfs:label "P{GMR77B10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061348
+
+    Annotations: 
+        rdfs:label "P{GMR55F02-GAL4}"^^xsd:string
     
     
 Class: FBtp0060701
@@ -7447,16 +7451,16 @@ Class: FBtp0063541
         rdfs:label "P{GMR85E07-GAL4}"^^xsd:string
     
     
-Class: FBtp0059320
-
-    Annotations: 
-        rdfs:label "P{GMR32B12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063540
 
     Annotations: 
         rdfs:label "P{GMR85E06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059320
+
+    Annotations: 
+        rdfs:label "P{GMR32B12-GAL4}"^^xsd:string
     
     
 Class: FBtp0063543
@@ -7531,16 +7535,16 @@ Class: FBtp0063534
         rdfs:label "P{GMR85D09-GAL4}"^^xsd:string
     
     
-Class: FBtp0059332
-
-    Annotations: 
-        rdfs:label "P{GMR32D02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063532
 
     Annotations: 
         rdfs:label "P{GMR85D07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059332
+
+    Annotations: 
+        rdfs:label "P{GMR32D02-GAL4}"^^xsd:string
     
     
 Class: FBtp0059333
@@ -7549,16 +7553,16 @@ Class: FBtp0059333
         rdfs:label "P{GMR32D03-GAL4}"^^xsd:string
     
     
-Class: FBtp0059330
-
-    Annotations: 
-        rdfs:label "P{GMR32C12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063530
 
     Annotations: 
         rdfs:label "P{GMR85D05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059330
+
+    Annotations: 
+        rdfs:label "P{GMR32C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0059335
@@ -7699,16 +7703,16 @@ Class: FBtp0063552
         rdfs:label "P{GMR85F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0059353
-
-    Annotations: 
-        rdfs:label "P{GMR32F01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063551
 
     Annotations: 
         rdfs:label "P{GMR85F09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059353
+
+    Annotations: 
+        rdfs:label "P{GMR32F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0059357
@@ -7969,16 +7973,16 @@ Class: FBtp0059398
         rdfs:label "P{GMR33B02-GAL4}"^^xsd:string
     
     
-Class: FBtp0059397
-
-    Annotations: 
-        rdfs:label "P{GMR33A12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063595
 
     Annotations: 
         rdfs:label "P{GMR86B12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059397
+
+    Annotations: 
+        rdfs:label "P{GMR33A12-GAL4}"^^xsd:string
     
     
 Class: FBtp0059396
@@ -8089,16 +8093,16 @@ Class: FBtp0062955
         rdfs:label "P{GMR78F01-GAL4}"^^xsd:string
     
     
-Class: FBtp0062006
-
-    Annotations: 
-        rdfs:label "P{GMR65D07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062952
 
     Annotations: 
         rdfs:label "P{GMR78E09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062006
+
+    Annotations: 
+        rdfs:label "P{GMR65D07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062953
@@ -8107,28 +8111,28 @@ Class: FBtp0062953
         rdfs:label "P{GMR78E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0062004
-
-    Annotations: 
-        rdfs:label "P{GMR65D05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062950
 
     Annotations: 
         rdfs:label "P{GMR78E05-GAL4}"^^xsd:string
     
     
-Class: FBtp0062005
+Class: FBtp0062004
 
     Annotations: 
-        rdfs:label "P{GMR65D06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR65D05-GAL4}"^^xsd:string
     
     
 Class: FBtp0062951
 
     Annotations: 
         rdfs:label "P{GMR78E06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062005
+
+    Annotations: 
+        rdfs:label "P{GMR65D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0062000
@@ -8401,16 +8405,16 @@ Class: FBtp0063506
         rdfs:label "P{GMR85A12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060685
-
-    Annotations: 
-        rdfs:label "P{GMR48C02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062902
 
     Annotations: 
         rdfs:label "P{GMR78A01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060685
+
+    Annotations: 
+        rdfs:label "P{GMR48C02-GAL4}"^^xsd:string
     
     
 Class: FBtp0063504
@@ -8533,16 +8537,16 @@ Class: FBtp0060695
         rdfs:label "P{GMR48C12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060698
-
-    Annotations: 
-        rdfs:label "P{GMR48D05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062911
 
     Annotations: 
         rdfs:label "P{GMR78A10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060698
+
+    Annotations: 
+        rdfs:label "P{GMR48D05-GAL4}"^^xsd:string
     
     
 Class: FBtp0060697
@@ -8635,28 +8639,28 @@ Class: FBtp0063521
         rdfs:label "P{GMR85C07-GAL4}"^^xsd:string
     
     
-Class: FBtp0060669
-
-    Annotations: 
-        rdfs:label "P{GMR48A09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063524
 
     Annotations: 
         rdfs:label "P{GMR85C10-GAL4}"^^xsd:string
     
     
-Class: FBtp0060668
+Class: FBtp0060669
 
     Annotations: 
-        rdfs:label "P{GMR48A08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48A09-GAL4}"^^xsd:string
     
     
 Class: FBtp0063525
 
     Annotations: 
         rdfs:label "P{GMR85C11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060668
+
+    Annotations: 
+        rdfs:label "P{GMR48A08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060667
@@ -8677,16 +8681,16 @@ Class: FBtp0063529
         rdfs:label "P{GMR85D04-GAL4}"^^xsd:string
     
     
-Class: FBtp0060663
-
-    Annotations: 
-        rdfs:label "P{GMR48A03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063526
 
     Annotations: 
         rdfs:label "P{GMR85C12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060663
+
+    Annotations: 
+        rdfs:label "P{GMR48A03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060662
@@ -8731,16 +8735,16 @@ Class: FBtp0058891
         rdfs:label "P{GMR27E04-GAL4}"^^xsd:string
     
     
-Class: FBtp0058892
-
-    Annotations: 
-        rdfs:label "P{GMR27E05-GAL4}"^^xsd:string
-    
-    
 Class: F73F6684-1B7F-4464-9A3E-6DAB89827C03
 
     Annotations: 
         rdfs:label "transposable_element_insertion_site"^^xsd:string
+    
+    
+Class: FBtp0058892
+
+    Annotations: 
+        rdfs:label "P{GMR27E05-GAL4}"^^xsd:string
     
     
 Class: FBtp0060678
@@ -8767,28 +8771,28 @@ Class: FBtp0063515
         rdfs:label "P{GMR85B10-GAL4}"^^xsd:string
     
     
-Class: FBtp0060673
-
-    Annotations: 
-        rdfs:label "P{GMR48B01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063516
 
     Annotations: 
         rdfs:label "P{GMR85B12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060676
+Class: FBtp0060673
 
     Annotations: 
-        rdfs:label "P{GMR48B04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR48B01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063517
 
     Annotations: 
         rdfs:label "P{GMR85C01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060676
+
+    Annotations: 
+        rdfs:label "P{GMR48B04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063518
@@ -8827,16 +8831,16 @@ Class: FBtp0058066
         rdfs:label "P{GMR18D11-GAL4}"^^xsd:string
     
     
-Class: FBtp0058064
-
-    Annotations: 
-        rdfs:label "P{GMR18D09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060870
 
     Annotations: 
         rdfs:label "P{GMR50C04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058064
+
+    Annotations: 
+        rdfs:label "P{GMR18D09-GAL4}"^^xsd:string
     
     
 Class: FBtp0058062
@@ -8851,16 +8855,16 @@ Class: FBtp0061411
         rdfs:label "P{GMR56C09-GAL4}"^^xsd:string
     
     
-Class: FBtp0058060
-
-    Annotations: 
-        rdfs:label "P{GMR18D05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060874
 
     Annotations: 
         rdfs:label "P{GMR50C08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058060
+
+    Annotations: 
+        rdfs:label "P{GMR18D05-GAL4}"^^xsd:string
     
     
 Class: FBtp0061413
@@ -8869,16 +8873,16 @@ Class: FBtp0061413
         rdfs:label "P{GMR56C11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060872
-
-    Annotations: 
-        rdfs:label "P{GMR50C06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061412
 
     Annotations: 
         rdfs:label "P{GMR56C10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060872
+
+    Annotations: 
+        rdfs:label "P{GMR50C06-GAL4}"^^xsd:string
     
     
 Class: FBtp0060877
@@ -8953,6 +8957,12 @@ Class: FBtp0058056
         rdfs:label "P{GMR18C12-GAL4}"^^xsd:string
     
     
+Class: FBtp0061420
+
+    Annotations: 
+        rdfs:label "P{GMR56D07-GAL4}"^^xsd:string
+    
+    
 Class: FBti0143804
 
     Annotations: 
@@ -8963,12 +8973,6 @@ Class: FBtp0058050
 
     Annotations: 
         rdfs:label "P{GMR18C06-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0061420
-
-    Annotations: 
-        rdfs:label "P{GMR56D07-GAL4}"^^xsd:string
     
     
 Class: FBti0143803
@@ -9091,16 +9095,16 @@ Class: FBtp0058028
         rdfs:label "P{GMR18A08-GAL4}"^^xsd:string
     
     
-Class: FBtp0058031
-
-    Annotations: 
-        rdfs:label "P{GMR18A11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060881
 
     Annotations: 
         rdfs:label "P{GMR50D04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058031
+
+    Annotations: 
+        rdfs:label "P{GMR18A11-GAL4}"^^xsd:string
     
     
 Class: FBtp0058032
@@ -9151,22 +9155,16 @@ Class: FBtp0057515
         rdfs:label "P{GMR12D09-GAL4}"^^xsd:string
     
     
-Class: FBti0143830
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}Mlc1[CPTI002102]"^^xsd:string
-    
-    
 Class: FBtp0062191
 
     Annotations: 
         rdfs:label "P{GMR69B02-GAL4}"^^xsd:string
     
     
-Class: FBti0143833
+Class: FBti0143830
 
     Annotations: 
-        rdfs:label "PBac{544.SVS-1}pip[CPTI002126]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}Mlc1[CPTI002102]"^^xsd:string
     
     
 Class: FBtp0058018
@@ -9175,10 +9173,10 @@ Class: FBtp0058018
         rdfs:label "P{GMR17H10-GAL4}"^^xsd:string
     
     
-Class: FBti0143832
+Class: FBti0143833
 
     Annotations: 
-        rdfs:label "PBac{544.SVS-1}CG10602[CPTI002118]"^^xsd:string
+        rdfs:label "PBac{544.SVS-1}pip[CPTI002126]"^^xsd:string
     
     
 Class: FBtp0058019
@@ -9191,6 +9189,12 @@ Class: FBtp0062193
 
     Annotations: 
         rdfs:label "P{GMR69B05-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143832
+
+    Annotations: 
+        rdfs:label "PBac{544.SVS-1}CG10602[CPTI002118]"^^xsd:string
     
     
 Class: FBtp0057511
@@ -9271,16 +9275,16 @@ Class: FBtp0061457
         rdfs:label "P{GMR56G10-GAL4}"^^xsd:string
     
     
-Class: FBtp0061458
-
-    Annotations: 
-        rdfs:label "P{GMR56G11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062973
 
     Annotations: 
         rdfs:label "P{GMR78G08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061458
+
+    Annotations: 
+        rdfs:label "P{GMR56G11-GAL4}"^^xsd:string
     
     
 Class: FBtp0060833
@@ -9289,16 +9293,16 @@ Class: FBtp0060833
         rdfs:label "P{GMR49H02-GAL4}"^^xsd:string
     
     
-Class: FBtp0061459
-
-    Annotations: 
-        rdfs:label "P{GMR56H01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062972
 
     Annotations: 
         rdfs:label "P{GMR78G07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061459
+
+    Annotations: 
+        rdfs:label "P{GMR56H01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062974
@@ -9349,28 +9353,28 @@ Class: FBtp0058021
         rdfs:label "P{GMR18A01-GAL4}"^^xsd:string
     
     
-Class: FBtp0062189
-
-    Annotations: 
-        rdfs:label "P{GMR69A12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062970
 
     Annotations: 
         rdfs:label "P{GMR78G05-GAL4}"^^xsd:string
     
     
-Class: FBti0143834
+Class: FBtp0062189
 
     Annotations: 
-        rdfs:label "PBac{544.SVS-1}bl[CPTI002129]"^^xsd:string
+        rdfs:label "P{GMR69A12-GAL4}"^^xsd:string
     
     
 Class: FBtp0061450
 
     Annotations: 
         rdfs:label "P{GMR56G03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143834
+
+    Annotations: 
+        rdfs:label "PBac{544.SVS-1}bl[CPTI002129]"^^xsd:string
     
     
 Class: FBtp0061451
@@ -9391,16 +9395,16 @@ Class: FBtp0062186
         rdfs:label "P{GMR69A09-GAL4}"^^xsd:string
     
     
-Class: FBti0143837
-
-    Annotations: 
-        rdfs:label "PBac{544.SVS-1}NetA[CPTI002152]"^^xsd:string
-    
-    
 Class: FBtp0061453
 
     Annotations: 
         rdfs:label "P{GMR56G06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143837
+
+    Annotations: 
+        rdfs:label "PBac{544.SVS-1}NetA[CPTI002152]"^^xsd:string
     
     
 Class: FBti0143844
@@ -9409,16 +9413,16 @@ Class: FBti0143844
         rdfs:label "PBac{754.P.FSVS-0}Hsc70Cb[CPTI002201]"^^xsd:string
     
     
-Class: FBti0143843
-
-    Annotations: 
-        rdfs:label "PBac{769.FSVS-1}Rtnl1[CPTI002200]"^^xsd:string
-    
-    
 Class: FBtp0058008
 
     Annotations: 
         rdfs:label "P{GMR17G11-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143843
+
+    Annotations: 
+        rdfs:label "PBac{769.FSVS-1}Rtnl1[CPTI002200]"^^xsd:string
     
     
 Class: FBtp0057526
@@ -9439,16 +9443,16 @@ Class: FBtp0057525
         rdfs:label "P{GMR12E08-GAL4}"^^xsd:string
     
     
-Class: FBti0143840
-
-    Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}CBP[CPTI002181]"^^xsd:string
-    
-    
 Class: FBtp0058003
 
     Annotations: 
         rdfs:label "P{GMR17G06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143840
+
+    Annotations: 
+        rdfs:label "PBac{754.P.FSVS-0}CBP[CPTI002181]"^^xsd:string
     
     
 Class: FBtp0058005
@@ -9481,16 +9485,16 @@ Class: FBtp0062969
         rdfs:label "P{GMR78G04-GAL4}"^^xsd:string
     
     
-Class: FBtp0061467
-
-    Annotations: 
-        rdfs:label "P{GMR56H09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062968
 
     Annotations: 
         rdfs:label "P{GMR78G03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061467
+
+    Annotations: 
+        rdfs:label "P{GMR56H09-GAL4}"^^xsd:string
     
     
 Class: FBtp0062967
@@ -9523,6 +9527,12 @@ Class: FBtp0062963
         rdfs:label "P{GMR78F10-GAL4}"^^xsd:string
     
     
+Class: FBtp0062962
+
+    Annotations: 
+        rdfs:label "P{GMR78F09-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0060823
 
     Annotations: 
@@ -9535,22 +9545,16 @@ Class: FBtp0061469
         rdfs:label "P{GMR56H11-GAL4}"^^xsd:string
     
     
-Class: FBtp0062962
+Class: FBtp0062961
 
     Annotations: 
-        rdfs:label "P{GMR78F09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR78F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060822
 
     Annotations: 
         rdfs:label "P{GMR49G03-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0062961
-
-    Annotations: 
-        rdfs:label "P{GMR78F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0058011
@@ -9583,16 +9587,16 @@ Class: FBti0143849
         rdfs:label "PBac{768.FSVS-0}Tudor-SN[CPTI002221]"^^xsd:string
     
     
-Class: FBti0143847
-
-    Annotations: 
-        rdfs:label "PBac{769.FSVS-1}Pde11[CPTI002206]"^^xsd:string
-    
-    
 Class: FBtp0062197
 
     Annotations: 
         rdfs:label "P{GMR69B09-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143847
+
+    Annotations: 
+        rdfs:label "PBac{769.FSVS-1}Pde11[CPTI002206]"^^xsd:string
     
     
 Class: FBti0143848
@@ -9631,16 +9635,16 @@ Class: FBtp0060856
         rdfs:label "P{GMR50B02-GAL4}"^^xsd:string
     
     
-Class: FBtp0061437
-
-    Annotations: 
-        rdfs:label "P{GMR56F01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062994
 
     Annotations: 
         rdfs:label "P{GMR79A08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061437
+
+    Annotations: 
+        rdfs:label "P{GMR56F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060854
@@ -9655,10 +9659,10 @@ Class: FBtp0062997
         rdfs:label "P{GMR79A11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060853
+Class: FBtp0062996
 
     Annotations: 
-        rdfs:label "P{GMR50A10-GAL4}"^^xsd:string
+        rdfs:label "P{GMR79A10-GAL4}"^^xsd:string
     
     
 Class: FBtp0061439
@@ -9667,16 +9671,10 @@ Class: FBtp0061439
         rdfs:label "P{GMR56F04-GAL4}"^^xsd:string
     
     
-Class: FBtp0062996
+Class: FBtp0060853
 
     Annotations: 
-        rdfs:label "P{GMR79A10-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0060852
-
-    Annotations: 
-        rdfs:label "P{GMR50A09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR50A10-GAL4}"^^xsd:string
     
     
 Class: FBtp0062999
@@ -9685,16 +9683,10 @@ Class: FBtp0062999
         rdfs:label "P{GMR79B01-GAL4}"^^xsd:string
     
     
-Class: FBtp0060851
+Class: FBtp0060852
 
     Annotations: 
-        rdfs:label "P{GMR50A08-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0061433
-
-    Annotations: 
-        rdfs:label "P{GMR56E09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR50A09-GAL4}"^^xsd:string
     
     
 Class: FBtp0062998
@@ -9703,22 +9695,34 @@ Class: FBtp0062998
         rdfs:label "P{GMR79A12-GAL4}"^^xsd:string
     
     
+Class: FBtp0061433
+
+    Annotations: 
+        rdfs:label "P{GMR56E09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060851
+
+    Annotations: 
+        rdfs:label "P{GMR50A08-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0060850
 
     Annotations: 
         rdfs:label "P{GMR50A07-GAL4}"^^xsd:string
     
     
-Class: FBti0143812
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}MTA1-like[CPTI001990]"^^xsd:string
-    
-    
 Class: FBtp0062162
 
     Annotations: 
         rdfs:label "P{GMR68B08-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143812
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}MTA1-like[CPTI001990]"^^xsd:string
     
     
 Class: FBti0143813
@@ -9733,12 +9737,6 @@ Class: FBti0143814
         rdfs:label "PBac{681.P.FSVS-1}CG15628[CPTI001993]"^^xsd:string
     
     
-Class: FBti0143815
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}PMCA[CPTI001995]"^^xsd:string
-    
-    
 Class: FBtp0061431
 
     Annotations: 
@@ -9751,10 +9749,16 @@ Class: FBtp0062163
         rdfs:label "P{GMR68B09-GAL4}"^^xsd:string
     
     
-Class: FBti0143816
+Class: FBti0143815
 
     Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}CG3777[CPTI001997]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}PMCA[CPTI001995]"^^xsd:string
+    
+    
+Class: FBtp0062991
+
+    Annotations: 
+        rdfs:label "P{GMR79A05-GAL4}"^^xsd:string
     
     
 Class: FBtp0058002
@@ -9769,10 +9773,10 @@ Class: FBtp0062166
         rdfs:label "P{GMR68B12-GAL4}"^^xsd:string
     
     
-Class: FBtp0062991
+Class: FBti0143816
 
     Annotations: 
-        rdfs:label "P{GMR79A05-GAL4}"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}CG3777[CPTI001997]"^^xsd:string
     
     
 Class: FBti0143817
@@ -9793,22 +9797,16 @@ Class: FBtp0062168
         rdfs:label "P{GMR68C02-GAL4}"^^xsd:string
     
     
-Class: FBti0143819
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}lost[CPTI002016]"^^xsd:string
-    
-    
 Class: FBtp0062167
 
     Annotations: 
         rdfs:label "P{GMR68C01-GAL4}"^^xsd:string
     
     
-Class: FBti0143822
+Class: FBti0143819
 
     Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}CG10984[CPTI002035]"^^xsd:string
+        rdfs:label "PBac{681.P.FSVS-1}lost[CPTI002016]"^^xsd:string
     
     
 Class: FBtp0057502
@@ -9821,6 +9819,12 @@ Class: FBtp0062181
 
     Annotations: 
         rdfs:label "P{GMR69A03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143822
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}CG10984[CPTI002035]"^^xsd:string
     
     
 Class: FBti0143821
@@ -9865,16 +9869,16 @@ Class: FBtp0060846
         rdfs:label "P{GMR50A03-GAL4}"^^xsd:string
     
     
-Class: FBtp0057509
-
-    Annotations: 
-        rdfs:label "P{GMR12D03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060847
 
     Annotations: 
         rdfs:label "P{GMR50A04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057509
+
+    Annotations: 
+        rdfs:label "P{GMR12D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060848
@@ -9961,16 +9965,16 @@ Class: FBtp0062987
         rdfs:label "P{GMR78H12-GAL4}"^^xsd:string
     
     
-Class: FBti0143825
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}step[CPTI002054]"^^xsd:string
-    
-    
 Class: FBtp0061441
 
     Annotations: 
         rdfs:label "P{GMR56F06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143825
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}step[CPTI002054]"^^xsd:string
     
     
 Class: FBti0143826
@@ -10003,28 +10007,28 @@ Class: FBti0143829
         rdfs:label "PBac{681.P.FSVS-1}U2af50[CPTI002092]"^^xsd:string
     
     
-Class: FBtp0062179
-
-    Annotations: 
-        rdfs:label "P{GMR69A01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062982
 
     Annotations: 
         rdfs:label "P{GMR78H07-GAL4}"^^xsd:string
     
     
-Class: FBtp0062178
+Class: FBtp0062179
 
     Annotations: 
-        rdfs:label "P{GMR68D02-GAL4}"^^xsd:string
+        rdfs:label "P{GMR69A01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062981
 
     Annotations: 
         rdfs:label "P{GMR78H06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062178
+
+    Annotations: 
+        rdfs:label "P{GMR68D02-GAL4}"^^xsd:string
     
     
 Class: FBtp0062980
@@ -10363,16 +10367,16 @@ Class: FBtp0057576
         rdfs:label "P{GMR13B01-GAL4}"^^xsd:string
     
     
-Class: FBtp0058075
-
-    Annotations: 
-        rdfs:label "P{GMR18E08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057590
 
     Annotations: 
         rdfs:label "P{GMR13C03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058075
+
+    Annotations: 
+        rdfs:label "P{GMR18E08-GAL4}"^^xsd:string
     
     
 Class: FBtp0057591
@@ -10465,16 +10469,16 @@ Class: FBtp0063681
         rdfs:label "P{GMR87C11-GAL4}"^^xsd:string
     
     
-Class: FBtp0063684
-
-    Annotations: 
-        rdfs:label "P{GMR87D04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059220
 
     Annotations: 
         rdfs:label "P{GMR31B01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063684
+
+    Annotations: 
+        rdfs:label "P{GMR87D04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063683
@@ -10603,28 +10607,28 @@ Class: FBtp0058970
         rdfs:label "P{GMR28C12-GAL4}"^^xsd:string
     
     
-Class: FBtp0063674
-
-    Annotations: 
-        rdfs:label "P{GMR87C04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059234
 
     Annotations: 
         rdfs:label "P{GMR31C03-GAL4}"^^xsd:string
     
     
-Class: FBtp0063673
+Class: FBtp0063674
 
     Annotations: 
-        rdfs:label "P{GMR87C03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR87C04-GAL4}"^^xsd:string
     
     
 Class: FBtp0059231
 
     Annotations: 
         rdfs:label "P{GMR31B12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063673
+
+    Annotations: 
+        rdfs:label "P{GMR87C03-GAL4}"^^xsd:string
     
     
 Class: FBtp0063672
@@ -10699,16 +10703,16 @@ Class: FBtp0063668
         rdfs:label "P{GMR87B09-GAL4}"^^xsd:string
     
     
-Class: FBtp0059209
-
-    Annotations: 
-        rdfs:label "P{GMR31A02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058944
 
     Annotations: 
         rdfs:label "P{GMR28A10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059209
+
+    Annotations: 
+        rdfs:label "P{GMR31A02-GAL4}"^^xsd:string
     
     
 Class: FBtp0059208
@@ -10729,28 +10733,28 @@ Class: FBtp0057499
         rdfs:label "P{GMR12C04-GAL4}"^^xsd:string
     
     
-Class: FBtp0059204
-
-    Annotations: 
-        rdfs:label "P{GMR30H09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058941
 
     Annotations: 
         rdfs:label "P{GMR28A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063652
+Class: FBtp0059204
 
     Annotations: 
-        rdfs:label "P{GMR87A01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR30H09-GAL4}"^^xsd:string
     
     
 Class: FBtp0059212
 
     Annotations: 
         rdfs:label "P{GMR31A05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063652
+
+    Annotations: 
+        rdfs:label "P{GMR87A01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063651
@@ -10933,16 +10937,16 @@ Class: FBtp0063692
         rdfs:label "P{GMR87D12-GAL4}"^^xsd:string
     
     
-Class: FBtp0063693
-
-    Annotations: 
-        rdfs:label "P{GMR87E01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059251
 
     Annotations: 
         rdfs:label "P{GMR31D09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063693
+
+    Annotations: 
+        rdfs:label "P{GMR87E01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063690
@@ -11059,16 +11063,16 @@ Class: FBtp0062141
         rdfs:label "P{GMR67E07-GAL4}"^^xsd:string
     
     
-Class: FBti0143759
-
-    Annotations: 
-        rdfs:label "PBac{681.P.FSVS-1}kst[CPTI002266]"^^xsd:string
-    
-    
 Class: FBtp0062142
 
     Annotations: 
         rdfs:label "P{GMR67E08-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143759
+
+    Annotations: 
+        rdfs:label "PBac{681.P.FSVS-1}kst[CPTI002266]"^^xsd:string
     
     
 Class: FBti0143758
@@ -11185,10 +11189,10 @@ Class: FBtp0059285
         rdfs:label "P{GMR31G08-GAL4}"^^xsd:string
     
     
-Class: FBti0143749
+Class: FBtp0062130
 
     Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}sm[CPTI002828]"^^xsd:string
+        rdfs:label "P{GMR67D08-GAL4}"^^xsd:string
     
     
 Class: FBtp0059282
@@ -11197,16 +11201,16 @@ Class: FBtp0059282
         rdfs:label "P{GMR31G04-GAL4}"^^xsd:string
     
     
-Class: FBtp0062130
+Class: FBti0143749
 
     Annotations: 
-        rdfs:label "P{GMR67D08-GAL4}"^^xsd:string
+        rdfs:label "PBac{754.P.FSVS-0}sm[CPTI002828]"^^xsd:string
     
     
-Class: FBti0143748
+Class: FBtp0062131
 
     Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}stv[CPTI002824]"^^xsd:string
+        rdfs:label "P{GMR67D09-GAL4}"^^xsd:string
     
     
 Class: FBtp0059283
@@ -11215,10 +11219,10 @@ Class: FBtp0059283
         rdfs:label "P{GMR31G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0062131
+Class: FBti0143748
 
     Annotations: 
-        rdfs:label "P{GMR67D09-GAL4}"^^xsd:string
+        rdfs:label "PBac{754.P.FSVS-0}stv[CPTI002824]"^^xsd:string
     
     
 Class: FBtp0062137
@@ -11371,16 +11375,16 @@ Class: FBtp0063645
         rdfs:label "P{GMR86H03-GAL4}"^^xsd:string
     
     
-Class: FBtp0063646
-
-    Annotations: 
-        rdfs:label "P{GMR86H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060789
 
     Annotations: 
         rdfs:label "P{GMR49D04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063646
+
+    Annotations: 
+        rdfs:label "P{GMR86H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063643
@@ -11395,16 +11399,16 @@ Class: FBtp0062117
         rdfs:label "P{GMR67C07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063644
-
-    Annotations: 
-        rdfs:label "P{GMR86H02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060787
 
     Annotations: 
         rdfs:label "P{GMR49D02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063644
+
+    Annotations: 
+        rdfs:label "P{GMR86H02-GAL4}"^^xsd:string
     
     
 Class: FBtp0062116
@@ -11413,16 +11417,16 @@ Class: FBtp0062116
         rdfs:label "P{GMR67C06-GAL4}"^^xsd:string
     
     
-Class: FBtp0063649
-
-    Annotations: 
-        rdfs:label "P{GMR86H08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060786
 
     Annotations: 
         rdfs:label "P{GMR49D01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063649
+
+    Annotations: 
+        rdfs:label "P{GMR86H08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062119
@@ -11455,16 +11459,16 @@ Class: FBtp0060780
         rdfs:label "P{GMR49C06-GAL4}"^^xsd:string
     
     
-Class: FBtp0062111
-
-    Annotations: 
-        rdfs:label "P{GMR67C01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063641
 
     Annotations: 
         rdfs:label "P{GMR86G11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062111
+
+    Annotations: 
+        rdfs:label "P{GMR67C01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063642
@@ -11473,28 +11477,28 @@ Class: FBtp0063642
         rdfs:label "P{GMR86G12-GAL4}"^^xsd:string
     
     
-Class: FBtp0062112
-
-    Annotations: 
-        rdfs:label "P{GMR67C02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063640
 
     Annotations: 
         rdfs:label "P{GMR86G09-GAL4}"^^xsd:string
     
     
-Class: FBtp0060799
+Class: FBtp0062112
 
     Annotations: 
-        rdfs:label "P{GMR49E03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR67C02-GAL4}"^^xsd:string
     
     
 Class: FBtp0062106
 
     Annotations: 
         rdfs:label "P{GMR67B08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060799
+
+    Annotations: 
+        rdfs:label "P{GMR49E03-GAL4}"^^xsd:string
     
     
 Class: FBtp0063632
@@ -11533,22 +11537,16 @@ Class: FBtp0063635
         rdfs:label "P{GMR86G04-GAL4}"^^xsd:string
     
     
-Class: FBtp0060795
-
-    Annotations: 
-        rdfs:label "P{GMR49D11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063636
 
     Annotations: 
         rdfs:label "P{GMR86G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0062109
+Class: FBtp0060795
 
     Annotations: 
-        rdfs:label "P{GMR67B11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR49D11-GAL4}"^^xsd:string
     
     
 Class: FBtp0063637
@@ -11557,10 +11555,16 @@ Class: FBtp0063637
         rdfs:label "P{GMR86G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060797
+Class: FBtp0062109
 
     Annotations: 
-        rdfs:label "P{GMR49E01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR67B11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063638
+
+    Annotations: 
+        rdfs:label "P{GMR86G07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062108
@@ -11569,10 +11573,10 @@ Class: FBtp0062108
         rdfs:label "P{GMR67B10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063638
+Class: FBtp0060797
 
     Annotations: 
-        rdfs:label "P{GMR86G07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR49E01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062107
@@ -12175,16 +12179,16 @@ Class: FBtp0059191
         rdfs:label "P{GMR30G08-GAL4}"^^xsd:string
     
     
-Class: FBti0143538
-
-    Annotations: 
-        rdfs:label "PBac{544.SVS-1}SmD3[CPTI100043]"^^xsd:string
-    
-    
 Class: FBtp0059197
 
     Annotations: 
         rdfs:label "P{GMR30H02-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143538
+
+    Annotations: 
+        rdfs:label "PBac{544.SVS-1}SmD3[CPTI100043]"^^xsd:string
     
     
 Class: FBti0143537
@@ -12415,16 +12419,16 @@ Class: FBti0143566
         rdfs:label "PBac{803.P.SVS-0}Capr[CPTI003801]"^^xsd:string
     
     
-Class: FBti0143565
-
-    Annotations: 
-        rdfs:label "PBac{803.P.SVS-0}Hsc70-4[CPTI003798]"^^xsd:string
-    
-    
 Class: FBtp0059159
 
     Annotations: 
         rdfs:label "P{GMR30D10-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143565
+
+    Annotations: 
+        rdfs:label "PBac{803.P.SVS-0}Hsc70-4[CPTI003798]"^^xsd:string
     
     
 Class: FBti0143560
@@ -12547,16 +12551,16 @@ Class: FBti0143576
         rdfs:label "PBac{802.P.SVS-2}Jupiter[CPTI003917]"^^xsd:string
     
     
-Class: FBti0143575
-
-    Annotations: 
-        rdfs:label "PBac{802.P.SVS-2}CG4825[CPTI003911]"^^xsd:string
-    
-    
 Class: FBtp0059147
 
     Annotations: 
         rdfs:label "P{GMR30C08-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143575
+
+    Annotations: 
+        rdfs:label "PBac{802.P.SVS-2}CG4825[CPTI003911]"^^xsd:string
     
     
 Class: FBti0143574
@@ -12565,16 +12569,16 @@ Class: FBti0143574
         rdfs:label "PBac{802.P.SVS-2}Imp[CPTI003910]"^^xsd:string
     
     
-Class: FBti0143573
-
-    Annotations: 
-        rdfs:label "PBac{802.P.SVS-2}msn[CPTI003908]"^^xsd:string
-    
-    
 Class: FBtp0059149
 
     Annotations: 
         rdfs:label "P{GMR30C12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143573
+
+    Annotations: 
+        rdfs:label "PBac{802.P.SVS-2}msn[CPTI003908]"^^xsd:string
     
     
 Class: FBti0143579
@@ -12661,16 +12665,16 @@ Class: FBti0143587
         rdfs:label "PBac{806.LOX-SVS-2}CG8036[CPTI004041]"^^xsd:string
     
     
-Class: FBtp0059137
-
-    Annotations: 
-        rdfs:label "P{GMR30B09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058598
 
     Annotations: 
         rdfs:label "P{GMR24D02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059137
+
+    Annotations: 
+        rdfs:label "P{GMR30B09-GAL4}"^^xsd:string
     
     
 Class: FBti0143586
@@ -12715,16 +12719,16 @@ Class: FBti0143591
         rdfs:label "PBac{806.LOX-SVS-2}Men[CPTI004074]"^^xsd:string
     
     
-Class: FBti0143590
-
-    Annotations: 
-        rdfs:label "PBac{806.LOX-SVS-2}AdenoK[CPTI004071]"^^xsd:string
-    
-    
 Class: FBtp0063805
 
     Annotations: 
         rdfs:label "P{GMR88H07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143590
+
+    Annotations: 
+        rdfs:label "PBac{806.LOX-SVS-2}AdenoK[CPTI004071]"^^xsd:string
     
     
 Class: FBtp0063806
@@ -13111,16 +13115,16 @@ Class: FBtp0063022
         rdfs:label "P{GMR79D08-GAL4}"^^xsd:string
     
     
-Class: FBtp0063736
-
-    Annotations: 
-        rdfs:label "P{GMR88A03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060453
 
     Annotations: 
         rdfs:label "P{GMR45F08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063736
+
+    Annotations: 
+        rdfs:label "P{GMR88A03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060454
@@ -13129,28 +13133,28 @@ Class: FBtp0060454
         rdfs:label "P{GMR45F09-GAL4}"^^xsd:string
     
     
-Class: FBtp0063738
-
-    Annotations: 
-        rdfs:label "P{GMR88A05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060455
 
     Annotations: 
         rdfs:label "P{GMR45F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063737
+Class: FBtp0063738
 
     Annotations: 
-        rdfs:label "P{GMR88A04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR88A05-GAL4}"^^xsd:string
     
     
 Class: FBtp0060456
 
     Annotations: 
         rdfs:label "P{GMR45F11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063737
+
+    Annotations: 
+        rdfs:label "P{GMR88A04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062688
@@ -13207,28 +13211,28 @@ Class: FBtp0062694
         rdfs:label "P{GMR75C10-GAL4}"^^xsd:string
     
     
-Class: FBtp0062695
-
-    Annotations: 
-        rdfs:label "P{GMR75C11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063012
 
     Annotations: 
         rdfs:label "P{GMR79C08-GAL4}"^^xsd:string
     
     
-Class: FBtp0062696
+Class: FBtp0062695
 
     Annotations: 
-        rdfs:label "P{GMR75C12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR75C11-GAL4}"^^xsd:string
     
     
 Class: FBtp0063013
 
     Annotations: 
         rdfs:label "P{GMR79C09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062696
+
+    Annotations: 
+        rdfs:label "P{GMR75C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0063010
@@ -13255,16 +13259,16 @@ Class: FBtp0063748
         rdfs:label "P{GMR88B07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063747
-
-    Annotations: 
-        rdfs:label "P{GMR88B06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060442
 
     Annotations: 
         rdfs:label "P{GMR45E07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063747
+
+    Annotations: 
+        rdfs:label "P{GMR88B06-GAL4}"^^xsd:string
     
     
 Class: FBtp0063746
@@ -13285,16 +13289,16 @@ Class: FBtp0060449
         rdfs:label "P{GMR45F03-GAL4}"^^xsd:string
     
     
-Class: FBtp0062698
-
-    Annotations: 
-        rdfs:label "P{GMR75D02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063019
 
     Annotations: 
         rdfs:label "P{GMR79D04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062698
+
+    Annotations: 
+        rdfs:label "P{GMR75D02-GAL4}"^^xsd:string
     
     
 Class: FBtp0060446
@@ -13303,16 +13307,16 @@ Class: FBtp0060446
         rdfs:label "P{GMR45E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0062699
-
-    Annotations: 
-        rdfs:label "P{GMR75D03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063016
 
     Annotations: 
         rdfs:label "P{GMR79D01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062699
+
+    Annotations: 
+        rdfs:label "P{GMR75D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0060439
@@ -13387,16 +13391,16 @@ Class: FBtp0060438
         rdfs:label "P{GMR45E03-GAL4}"^^xsd:string
     
     
-Class: FBtp0063757
-
-    Annotations: 
-        rdfs:label "P{GMR88C05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060432
 
     Annotations: 
         rdfs:label "P{GMR45D05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063757
+
+    Annotations: 
+        rdfs:label "P{GMR88C05-GAL4}"^^xsd:string
     
     
 Class: FBtp0063759
@@ -13423,16 +13427,16 @@ Class: FBtp0058645
         rdfs:label "P{GMR24H02-GAL4}"^^xsd:string
     
     
-Class: FBtp0063762
-
-    Annotations: 
-        rdfs:label "P{GMR88C11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058651
 
     Annotations: 
         rdfs:label "P{GMR24H08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063762
+
+    Annotations: 
+        rdfs:label "P{GMR88C11-GAL4}"^^xsd:string
     
     
 Class: FBtp0063760
@@ -13447,16 +13451,16 @@ Class: FBtp0060426
         rdfs:label "P{GMR45C10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063764
-
-    Annotations: 
-        rdfs:label "P{GMR88D01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060425
 
     Annotations: 
         rdfs:label "P{GMR45C07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063764
+
+    Annotations: 
+        rdfs:label "P{GMR88D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060422
@@ -13795,6 +13799,12 @@ Class: FBtp0061597
         rdfs:label "P{GMR58G12-GAL4}"^^xsd:string
     
     
+Class: FBtp0061598
+
+    Annotations: 
+        rdfs:label "P{GMR58H01-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0063727
 
     Annotations: 
@@ -13805,12 +13815,6 @@ Class: FBtp0060466
 
     Annotations: 
         rdfs:label "P{GMR45G10-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0061598
-
-    Annotations: 
-        rdfs:label "P{GMR58H01-GAL4}"^^xsd:string
     
     
 Class: FBtp0060465
@@ -13831,10 +13835,10 @@ Class: FBtp0060463
         rdfs:label "P{GMR45G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060462
+Class: FBtp0063076
 
     Annotations: 
-        rdfs:label "P{GMR45G05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR80A12-GAL4}"^^xsd:string
     
     
 Class: FBtp0058690
@@ -13843,10 +13847,10 @@ Class: FBtp0058690
         rdfs:label "P{GMR25D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0063076
+Class: FBtp0060462
 
     Annotations: 
-        rdfs:label "P{GMR80A12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR45G05-GAL4}"^^xsd:string
     
     
 Class: FBtp0061596
@@ -13957,22 +13961,16 @@ Class: FBtp0062608
         rdfs:label "P{GMR74C07-GAL4}"^^xsd:string
     
     
-Class: FBtp0061574
-
-    Annotations: 
-        rdfs:label "P{GMR58F01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063096
 
     Annotations: 
         rdfs:label "P{GMR80D03-GAL4}"^^xsd:string
     
     
-Class: FBtp0061573
+Class: FBtp0061574
 
     Annotations: 
-        rdfs:label "P{GMR58E12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR58F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063097
@@ -13981,22 +13979,28 @@ Class: FBtp0063097
         rdfs:label "P{GMR80D05-GAL4}"^^xsd:string
     
     
+Class: FBtp0061573
+
+    Annotations: 
+        rdfs:label "P{GMR58E12-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0063098
 
     Annotations: 
         rdfs:label "P{GMR80D06-GAL4}"^^xsd:string
     
     
-Class: FBtp0061571
-
-    Annotations: 
-        rdfs:label "P{GMR58E10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063099
 
     Annotations: 
         rdfs:label "P{GMR80D07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061571
+
+    Annotations: 
+        rdfs:label "P{GMR58E10-GAL4}"^^xsd:string
     
     
 Class: FBtp0062615
@@ -14089,28 +14093,28 @@ Class: FBtp0061563
         rdfs:label "P{GMR58E01-GAL4}"^^xsd:string
     
     
-Class: FBtp0061569
-
-    Annotations: 
-        rdfs:label "P{GMR58E07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062620
 
     Annotations: 
         rdfs:label "P{GMR74D07-GAL4}"^^xsd:string
     
     
-Class: FBtp0061567
+Class: FBtp0061569
 
     Annotations: 
-        rdfs:label "P{GMR58E05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR58E07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062626
 
     Annotations: 
         rdfs:label "P{GMR74E01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061567
+
+    Annotations: 
+        rdfs:label "P{GMR58E05-GAL4}"^^xsd:string
     
     
 Class: FBtp0061566
@@ -14209,16 +14213,16 @@ Class: FBtp0062643
         rdfs:label "P{GMR74F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063778
-
-    Annotations: 
-        rdfs:label "P{GMR88E07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062642
 
     Annotations: 
         rdfs:label "P{GMR74F09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063778
+
+    Annotations: 
+        rdfs:label "P{GMR88E07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062645
@@ -14233,28 +14237,28 @@ Class: FBtp0063776
         rdfs:label "P{GMR88E05-GAL4}"^^xsd:string
     
     
-Class: FBtp0063771
-
-    Annotations: 
-        rdfs:label "P{GMR88D12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062641
 
     Annotations: 
         rdfs:label "P{GMR74F07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063772
+Class: FBtp0063771
 
     Annotations: 
-        rdfs:label "P{GMR88E01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR88D12-GAL4}"^^xsd:string
     
     
 Class: FBtp0062640
 
     Annotations: 
         rdfs:label "P{GMR74F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063772
+
+    Annotations: 
+        rdfs:label "P{GMR88E01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063770
@@ -14365,22 +14369,16 @@ Class: FBti0143604
         rdfs:label "PBac{768.FSVS-0}Tis11[CPTI003403]"^^xsd:string
     
     
-Class: FBti0143603
-
-    Annotations: 
-        rdfs:label "PBac{768.FSVS-0}Mio[CPTI003395]"^^xsd:string
-    
-    
 Class: FBtp0063792
 
     Annotations: 
         rdfs:label "P{GMR88F10-GAL4}"^^xsd:string
     
     
-Class: FBti0143605
+Class: FBti0143603
 
     Annotations: 
-        rdfs:label "PBac{768.FSVS-0}CtsB1[CPTI003407]"^^xsd:string
+        rdfs:label "PBac{768.FSVS-0}Mio[CPTI003395]"^^xsd:string
     
     
 Class: FBtp0063790
@@ -14389,10 +14387,10 @@ Class: FBtp0063790
         rdfs:label "P{GMR88F08-GAL4}"^^xsd:string
     
     
-Class: FBti0143608
+Class: FBti0143605
 
     Annotations: 
-        rdfs:label "PBac{768.FSVS-0}UGP[CPTI003431]"^^xsd:string
+        rdfs:label "PBac{768.FSVS-0}CtsB1[CPTI003407]"^^xsd:string
     
     
 Class: FBtp0062661
@@ -14401,10 +14399,10 @@ Class: FBtp0062661
         rdfs:label "P{GMR74H09-GAL4}"^^xsd:string
     
     
-Class: FBti0143607
+Class: FBti0143608
 
     Annotations: 
-        rdfs:label "PBac{768.FSVS-0}Aats-his[CPTI003426]"^^xsd:string
+        rdfs:label "PBac{768.FSVS-0}UGP[CPTI003431]"^^xsd:string
     
     
 Class: FBtp0063796
@@ -14413,22 +14411,28 @@ Class: FBtp0063796
         rdfs:label "P{GMR88G05-GAL4}"^^xsd:string
     
     
+Class: FBti0143607
+
+    Annotations: 
+        rdfs:label "PBac{768.FSVS-0}Aats-his[CPTI003426]"^^xsd:string
+    
+    
 Class: FBtp0062663
 
     Annotations: 
         rdfs:label "P{GMR74H11-GAL4}"^^xsd:string
     
     
-Class: FBti0143609
-
-    Annotations: 
-        rdfs:label "PBac{768.FSVS-0}CG43427[CPTI003445]"^^xsd:string
-    
-    
 Class: FBtp0063794
 
     Annotations: 
         rdfs:label "P{GMR88F12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143609
+
+    Annotations: 
+        rdfs:label "PBac{768.FSVS-0}CG43427[CPTI003445]"^^xsd:string
     
     
 Class: FBtp0058614
@@ -14605,28 +14609,28 @@ Class: FBtp0059099
         rdfs:label "P{GMR29G06-GAL4}"^^xsd:string
     
     
-Class: FBti0143637
-
-    Annotations: 
-        rdfs:label "PBac{768.FSVS-0}kis[CPTI003615]"^^xsd:string
-    
-    
 Class: FBtp0059098
 
     Annotations: 
         rdfs:label "P{GMR29G05-GAL4}"^^xsd:string
     
     
-Class: FBti0143639
+Class: FBti0143637
 
     Annotations: 
-        rdfs:label "PBac{768.FSVS-0}CG6398[CPTI003623]"^^xsd:string
+        rdfs:label "PBac{768.FSVS-0}kis[CPTI003615]"^^xsd:string
     
     
 Class: FBtp0059096
 
     Annotations: 
         rdfs:label "P{GMR29G03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143639
+
+    Annotations: 
+        rdfs:label "PBac{768.FSVS-0}CG6398[CPTI003623]"^^xsd:string
     
     
 Class: FBti0143645
@@ -14731,28 +14735,28 @@ Class: FBti0143610
         rdfs:label "PBac{768.FSVS-0}CPTI003467"^^xsd:string
     
     
-Class: FBti0143613
-
-    Annotations: 
-        rdfs:label "PBac{768.FSVS-0}fz2[CPTI003490]"^^xsd:string
-    
-    
 Class: FBtp0059999
 
     Annotations: 
         rdfs:label "P{GMR40B09-GAL4}"^^xsd:string
     
     
-Class: FBti0143612
+Class: FBti0143613
 
     Annotations: 
-        rdfs:label "PBac{768.FSVS-0}CPTI003476"^^xsd:string
+        rdfs:label "PBac{768.FSVS-0}fz2[CPTI003490]"^^xsd:string
     
     
 Class: FBtp0059998
 
     Annotations: 
         rdfs:label "P{GMR40B08-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143612
+
+    Annotations: 
+        rdfs:label "PBac{768.FSVS-0}CPTI003476"^^xsd:string
     
     
 Class: FBtp0061734
@@ -14983,16 +14987,16 @@ Class: FBtp0059058
         rdfs:label "P{GMR29D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0059980
-
-    Annotations: 
-        rdfs:label "P{GMR40A01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059056
 
     Annotations: 
         rdfs:label "P{GMR29C11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059980
+
+    Annotations: 
+        rdfs:label "P{GMR40A01-GAL4}"^^xsd:string
     
     
 Class: FBtp0059055
@@ -15199,16 +15203,16 @@ Class: FBtp0059951
         rdfs:label "P{GMR39F05-GAL4}"^^xsd:string
     
     
-Class: FBti0143654
-
-    Annotations: 
-        rdfs:label "PBac{CPTI-un}kis[CPTI002847]"^^xsd:string
-    
-    
 Class: FBtp0059956
 
     Annotations: 
         rdfs:label "P{GMR39F10-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143654
+
+    Annotations: 
+        rdfs:label "PBac{CPTI-un}kis[CPTI002847]"^^xsd:string
     
     
 Class: FBti0143655
@@ -15241,16 +15245,16 @@ Class: FBti0143659
         rdfs:label "PBac{768.FSVS-0}CG9796[CPTI002873]"^^xsd:string
     
     
-Class: FBti0143658
-
-    Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}mge[CPTI002870]"^^xsd:string
-    
-    
 Class: FBtp0059075
 
     Annotations: 
         rdfs:label "P{GMR29E06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143658
+
+    Annotations: 
+        rdfs:label "PBac{754.P.FSVS-0}mge[CPTI002870]"^^xsd:string
     
     
 Class: FBtp0059074
@@ -15451,16 +15455,16 @@ Class: FBtp0059067
         rdfs:label "P{GMR29D10-GAL4}"^^xsd:string
     
     
-Class: FBtp0059971
-
-    Annotations: 
-        rdfs:label "P{GMR39H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059069
 
     Annotations: 
         rdfs:label "P{GMR29D12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059971
+
+    Annotations: 
+        rdfs:label "P{GMR39H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0059068
@@ -15505,16 +15509,16 @@ Class: FBtp0059013
         rdfs:label "P{GMR28G09-GAL4}"^^xsd:string
     
     
-Class: FBtp0059932
-
-    Annotations: 
-        rdfs:label "P{GMR39D10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059008
 
     Annotations: 
         rdfs:label "P{GMR28G03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059932
+
+    Annotations: 
+        rdfs:label "P{GMR39D10-GAL4}"^^xsd:string
     
     
 Class: FBtp0059934
@@ -15613,16 +15617,16 @@ Class: FBti0143697
         rdfs:label "PBac{754.P.FSVS-0}rg[CPTI003323]"^^xsd:string
     
     
-Class: FBti0143695
-
-    Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}larp[CPTI003267]"^^xsd:string
-    
-    
 Class: FBtp0059029
 
     Annotations: 
         rdfs:label "P{GMR29A06-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143695
+
+    Annotations: 
+        rdfs:label "PBac{754.P.FSVS-0}larp[CPTI003267]"^^xsd:string
     
     
 Class: FBti0143694
@@ -15679,16 +15683,16 @@ Class: FBti0143693
         rdfs:label "PBac{754.P.FSVS-0}Cip4[CPTI003231]"^^xsd:string
     
     
-Class: FBtp0060605
-
-    Annotations: 
-        rdfs:label "P{GMR47D02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059919
 
     Annotations: 
         rdfs:label "P{GMR39C08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060605
+
+    Annotations: 
+        rdfs:label "P{GMR47D02-GAL4}"^^xsd:string
     
     
 Class: FBti0143692
@@ -15697,16 +15701,16 @@ Class: FBti0143692
         rdfs:label "PBac{754.P.FSVS-0}fax[CPTI003230]"^^xsd:string
     
     
-Class: FBtp0060604
-
-    Annotations: 
-        rdfs:label "P{GMR47D01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059918
 
     Annotations: 
         rdfs:label "P{GMR39C07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060604
+
+    Annotations: 
+        rdfs:label "P{GMR47D01-GAL4}"^^xsd:string
     
     
 Class: FBti0143691
@@ -15751,16 +15755,16 @@ Class: FBtp0059023
         rdfs:label "P{GMR28H10-GAL4}"^^xsd:string
     
     
-Class: FBtp0059920
-
-    Annotations: 
-        rdfs:label "P{GMR39C09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059018
 
     Annotations: 
         rdfs:label "P{GMR28H03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059920
+
+    Annotations: 
+        rdfs:label "P{GMR39C09-GAL4}"^^xsd:string
     
     
 Class: FBtp0059924
@@ -15979,16 +15983,16 @@ Class: FBtp0058777
         rdfs:label "P{GMR26C08-GAL4}"^^xsd:string
     
     
-Class: FBtp0063877
-
-    Annotations: 
-        rdfs:label "P{GMR89G02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060558
 
     Annotations: 
         rdfs:label "P{GMR46H03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063877
+
+    Annotations: 
+        rdfs:label "P{GMR89G02-GAL4}"^^xsd:string
     
     
 Class: FBtp0060559
@@ -16015,28 +16019,28 @@ Class: FBtp0060551
         rdfs:label "P{GMR46G08-GAL4}"^^xsd:string
     
     
-Class: FBtp0063871
-
-    Annotations: 
-        rdfs:label "P{GMR89F07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058780
 
     Annotations: 
         rdfs:label "P{GMR26C11-GAL4}"^^xsd:string
     
     
-Class: FBtp0063870
+Class: FBtp0063871
 
     Annotations: 
-        rdfs:label "P{GMR89F06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR89F07-GAL4}"^^xsd:string
     
     
 Class: FBtp0058781
 
     Annotations: 
         rdfs:label "P{GMR26C12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063870
+
+    Annotations: 
+        rdfs:label "P{GMR89F06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058782
@@ -16087,16 +16091,16 @@ Class: FBtp0060549
         rdfs:label "P{GMR46G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0063888
-
-    Annotations: 
-        rdfs:label "P{GMR89H03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060547
 
     Annotations: 
         rdfs:label "P{GMR46G04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063888
+
+    Annotations: 
+        rdfs:label "P{GMR89H03-GAL4}"^^xsd:string
     
     
 Class: FBtp0063887
@@ -16117,16 +16121,16 @@ Class: FBtp0060541
         rdfs:label "P{GMR46F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063889
-
-    Annotations: 
-        rdfs:label "P{GMR89H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060542
 
     Annotations: 
         rdfs:label "P{GMR46F11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063889
+
+    Annotations: 
+        rdfs:label "P{GMR89H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063880
@@ -16141,28 +16145,28 @@ Class: FBtp0060540
         rdfs:label "P{GMR46F09-GAL4}"^^xsd:string
     
     
-Class: FBtp0063883
-
-    Annotations: 
-        rdfs:label "P{GMR89G08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058772
 
     Annotations: 
         rdfs:label "P{GMR26C02-GAL4}"^^xsd:string
     
     
-Class: FBtp0063881
+Class: FBtp0063883
 
     Annotations: 
-        rdfs:label "P{GMR89G06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR89G08-GAL4}"^^xsd:string
     
     
 Class: FBtp0058770
 
     Annotations: 
         rdfs:label "P{GMR26B12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063881
+
+    Annotations: 
+        rdfs:label "P{GMR89G06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058755
@@ -16273,16 +16277,16 @@ Class: FBtp0058749
         rdfs:label "P{GMR26A03-GAL4}"^^xsd:string
     
     
-Class: FBtp0063869
-
-    Annotations: 
-        rdfs:label "P{GMR89F05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060566
 
     Annotations: 
         rdfs:label "P{GMR46H11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063869
+
+    Annotations: 
+        rdfs:label "P{GMR89F05-GAL4}"^^xsd:string
     
     
 Class: FBtp0060563
@@ -16627,22 +16631,16 @@ Class: FBtp0062752
         rdfs:label "P{GMR76A03-GAL4}"^^xsd:string
     
     
-Class: FBtp0061678
-
-    Annotations: 
-        rdfs:label "P{GMR59G12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062753
 
     Annotations: 
         rdfs:label "P{GMR76A04-GAL4}"^^xsd:string
     
     
-Class: FBtp0061677
+Class: FBtp0061678
 
     Annotations: 
-        rdfs:label "P{GMR59G11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR59G12-GAL4}"^^xsd:string
     
     
 Class: FBtp0062758
@@ -16651,22 +16649,28 @@ Class: FBtp0062758
         rdfs:label "P{GMR76A11-GAL4}"^^xsd:string
     
     
+Class: FBtp0061677
+
+    Annotations: 
+        rdfs:label "P{GMR59G11-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0061676
 
     Annotations: 
         rdfs:label "P{GMR59G10-GAL4}"^^xsd:string
     
     
-Class: FBtp0061674
-
-    Annotations: 
-        rdfs:label "P{GMR59G08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062757
 
     Annotations: 
         rdfs:label "P{GMR76A10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061674
+
+    Annotations: 
+        rdfs:label "P{GMR59G08-GAL4}"^^xsd:string
     
     
 Class: FBtp0061673
@@ -16723,16 +16727,16 @@ Class: FBtp0062729
         rdfs:label "P{GMR75G02-GAL4}"^^xsd:string
     
     
-Class: FBtp0061698
-
-    Annotations: 
-        rdfs:label "P{GMR60A10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062737
 
     Annotations: 
         rdfs:label "P{GMR75G12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061698
+
+    Annotations: 
+        rdfs:label "P{GMR60A10-GAL4}"^^xsd:string
     
     
 Class: FBtp0062732
@@ -16813,16 +16817,16 @@ Class: FBtp0062786
         rdfs:label "P{GMR76E07-GAL4}"^^xsd:string
     
     
-Class: FBtp0061642
-
-    Annotations: 
-        rdfs:label "P{GMR59D06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062789
 
     Annotations: 
         rdfs:label "P{GMR76E10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061642
+
+    Annotations: 
+        rdfs:label "P{GMR59D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0061644
@@ -16891,16 +16895,16 @@ Class: FBti0143723
         rdfs:label "PBac{754.P.FSVS-0}bel[CPTI002755]"^^xsd:string
     
     
-Class: FBti0143716
-
-    Annotations: 
-        rdfs:label "PBac{768.FSVS-0}sm[CPTI002712]"^^xsd:string
-    
-    
 Class: FBtp0062791
 
     Annotations: 
         rdfs:label "P{GMR76E12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143716
+
+    Annotations: 
+        rdfs:label "PBac{768.FSVS-0}sm[CPTI002712]"^^xsd:string
     
     
 Class: FBtp0062790
@@ -16933,22 +16937,16 @@ Class: FBtp0062799
         rdfs:label "P{GMR76F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0061637
-
-    Annotations: 
-        rdfs:label "P{GMR59C12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062798
 
     Annotations: 
         rdfs:label "P{GMR76F08-GAL4}"^^xsd:string
     
     
-Class: FBtp0061634
+Class: FBtp0061637
 
     Annotations: 
-        rdfs:label "P{GMR59C09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR59C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0062797
@@ -16957,16 +16955,22 @@ Class: FBtp0062797
         rdfs:label "P{GMR76F06-GAL4}"^^xsd:string
     
     
-Class: FBtp0061635
+Class: FBtp0061634
 
     Annotations: 
-        rdfs:label "P{GMR59C10-GAL4}"^^xsd:string
+        rdfs:label "P{GMR59C09-GAL4}"^^xsd:string
     
     
 Class: FBtp0062796
 
     Annotations: 
         rdfs:label "P{GMR76F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061635
+
+    Annotations: 
+        rdfs:label "P{GMR59C10-GAL4}"^^xsd:string
     
     
 Class: FBtp0061632
@@ -17035,28 +17039,22 @@ Class: FBtp0058725
         rdfs:label "P{GMR25G02-GAL4}"^^xsd:string
     
     
-Class: FBti0143706
-
-    Annotations: 
-        rdfs:label "PBac{769.FSVS-1}ORMDL[CPTI002636]"^^xsd:string
-    
-    
 Class: FBtp0063895
 
     Annotations: 
         rdfs:label "P{GMR89H11-GAL4}"^^xsd:string
     
     
+Class: FBti0143706
+
+    Annotations: 
+        rdfs:label "PBac{769.FSVS-1}ORMDL[CPTI002636]"^^xsd:string
+    
+    
 Class: FBtp0062762
 
     Annotations: 
         rdfs:label "P{GMR76B03-GAL4}"^^xsd:string
-    
-    
-Class: FBti0143708
-
-    Annotations: 
-        rdfs:label "PBac{769.FSVS-1}CG11576[CPTI002646]"^^xsd:string
     
     
 Class: FBtp0063893
@@ -17071,10 +17069,10 @@ Class: FBtp0062761
         rdfs:label "P{GMR76B02-GAL4}"^^xsd:string
     
     
-Class: FBti0143703
+Class: FBti0143708
 
     Annotations: 
-        rdfs:label "PBac{769.FSVS-1}Tcp-1η[CPTI002629]"^^xsd:string
+        rdfs:label "PBac{769.FSVS-1}CG11576[CPTI002646]"^^xsd:string
     
     
 Class: FBtp0063890
@@ -17083,22 +17081,28 @@ Class: FBtp0063890
         rdfs:label "P{GMR89H06-GAL4}"^^xsd:string
     
     
+Class: FBti0143703
+
+    Annotations: 
+        rdfs:label "PBac{769.FSVS-1}Tcp-1η[CPTI002629]"^^xsd:string
+    
+    
 Class: FBti0143702
 
     Annotations: 
         rdfs:label "PBac{769.FSVS-1}Fas3[CPTI002622]"^^xsd:string
     
     
-Class: FBti0143705
-
-    Annotations: 
-        rdfs:label "PBac{769.FSVS-1}CPTI002633"^^xsd:string
-    
-    
 Class: FBtp0061661
 
     Annotations: 
         rdfs:label "P{GMR59F07-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143705
+
+    Annotations: 
+        rdfs:label "PBac{769.FSVS-1}CPTI002633"^^xsd:string
     
     
 Class: FBti0143704
@@ -17131,16 +17135,16 @@ Class: FBtp0061667
         rdfs:label "P{GMR59G01-GAL4}"^^xsd:string
     
     
-Class: FBtp0061669
-
-    Annotations: 
-        rdfs:label "P{GMR59G03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062766
 
     Annotations: 
         rdfs:label "P{GMR76B07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061669
+
+    Annotations: 
+        rdfs:label "P{GMR59G03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062765
@@ -17299,16 +17303,16 @@ Class: FBtp0059832
         rdfs:label "P{GMR38C09-GAL4}"^^xsd:string
     
     
-Class: FBtp0064039
-
-    Annotations: 
-        rdfs:label "P{GMR92A12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059830
 
     Annotations: 
         rdfs:label "P{GMR38C07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064039
+
+    Annotations: 
+        rdfs:label "P{GMR92A12-GAL4}"^^xsd:string
     
     
 Class: FBtp0059836
@@ -17323,16 +17327,16 @@ Class: FBtp0059833
         rdfs:label "P{GMR38C10-GAL4}"^^xsd:string
     
     
-Class: FBtp0064034
-
-    Annotations: 
-        rdfs:label "P{GMR92A07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059839
 
     Annotations: 
         rdfs:label "P{GMR38D04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064034
+
+    Annotations: 
+        rdfs:label "P{GMR92A07-GAL4}"^^xsd:string
     
     
 Class: FBtp0064033
@@ -17815,28 +17819,28 @@ Class: FBtp0064009
         rdfs:label "P{GMR91G01-GAL4}"^^xsd:string
     
     
-Class: FBti0144058
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Moca-cyp[CPTI000049]"^^xsd:string
-    
-    
 Class: FBtp0058388
 
     Annotations: 
         rdfs:label "P{GMR22B01-GAL4}"^^xsd:string
     
     
-Class: FBti0144057
+Class: FBti0144058
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Fer1HCH[CPTI000038]"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}Moca-cyp[CPTI000049]"^^xsd:string
     
     
 Class: FBtp0058389
 
     Annotations: 
         rdfs:label "P{GMR22B02-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144057
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Fer1HCH[CPTI000038]"^^xsd:string
     
     
 Class: FBti0144059
@@ -17929,16 +17933,16 @@ Class: FBti0144048
         rdfs:label "PBac{602.P.SVS-1}Su(Tpl)[CPTI000783]"^^xsd:string
     
     
-Class: FBti0144047
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}CG3036[CPTI000774]"^^xsd:string
-    
-    
 Class: FBtp0058399
 
     Annotations: 
         rdfs:label "P{GMR22B12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144047
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}CG3036[CPTI000774]"^^xsd:string
     
     
 Class: FBti0144046
@@ -18493,12 +18497,6 @@ Class: FBti0144078
         rdfs:label "PBac{602.P.SVS-1}Meltrin[CPTI000218]"^^xsd:string
     
     
-Class: FBti0144071
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}lola[CPTI000190]"^^xsd:string
-    
-    
 Class: FBtp0064097
 
     Annotations: 
@@ -18509,6 +18507,12 @@ Class: FBtp0059816
 
     Annotations: 
         rdfs:label "P{GMR38B04-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144071
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}lola[CPTI000190]"^^xsd:string
     
     
 Class: FBti0144072
@@ -18565,16 +18569,16 @@ Class: FBtp0059813
         rdfs:label "P{GMR38B01-GAL4}"^^xsd:string
     
     
-Class: FBti0144079
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Su(Tpl)[CPTI000232]"^^xsd:string
-    
-    
 Class: FBtp0058367
 
     Annotations: 
         rdfs:label "P{GMR21H04-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144079
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Su(Tpl)[CPTI000232]"^^xsd:string
     
     
 Class: FBtp0058369
@@ -18643,28 +18647,16 @@ Class: FBti0144065
         rdfs:label "PBac{602.P.SVS-1}aop[CPTI000147]"^^xsd:string
     
     
-Class: FBti0144062
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}for[CPTI000091]"^^xsd:string
-    
-    
 Class: FBtp0064088
 
     Annotations: 
         rdfs:label "P{GMR92G04-GAL4}"^^xsd:string
     
     
-Class: FBti0144063
+Class: FBti0144062
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Mi-2[CPTI000106]"^^xsd:string
-    
-    
-Class: FBtp0064089
-
-    Annotations: 
-        rdfs:label "P{GMR92G05-GAL4}"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}for[CPTI000091]"^^xsd:string
     
     
 Class: FBtp0059828
@@ -18673,16 +18665,16 @@ Class: FBtp0059828
         rdfs:label "P{GMR38C05-GAL4}"^^xsd:string
     
     
-Class: FBti0144060
+Class: FBtp0064089
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}eIF3-S10[CPTI000076]"^^xsd:string
+        rdfs:label "P{GMR92G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0064086
+Class: FBti0144063
 
     Annotations: 
-        rdfs:label "P{GMR92G01-GAL4}"^^xsd:string
+        rdfs:label "PBac{602.P.SVS-1}Mi-2[CPTI000106]"^^xsd:string
     
     
 Class: FBtp0059827
@@ -18691,16 +18683,28 @@ Class: FBtp0059827
         rdfs:label "P{GMR38C04-GAL4}"^^xsd:string
     
     
-Class: FBti0144061
+Class: FBtp0064086
 
     Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}HDAC4[CPTI000077]"^^xsd:string
+        rdfs:label "P{GMR92G01-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144060
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}eIF3-S10[CPTI000076]"^^xsd:string
     
     
 Class: FBtp0064087
 
     Annotations: 
         rdfs:label "P{GMR92G03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144061
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}HDAC4[CPTI000077]"^^xsd:string
     
     
 Class: FBtp0059824
@@ -18727,16 +18731,16 @@ Class: FBtp0058379
         rdfs:label "P{GMR22A04-GAL4}"^^xsd:string
     
     
-Class: FBti0144068
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Hrb98DE[CPTI000165]"^^xsd:string
-    
-    
 Class: FBtp0058378
 
     Annotations: 
         rdfs:label "P{GMR22A03-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144068
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Hrb98DE[CPTI000165]"^^xsd:string
     
     
 Class: FBti0144069
@@ -18787,16 +18791,16 @@ Class: FBtp0058380
         rdfs:label "P{GMR22A05-GAL4}"^^xsd:string
     
     
-Class: FBti0144070
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}rgn[CPTI000176]"^^xsd:string
-    
-    
 Class: FBtp0064096
 
     Annotations: 
         rdfs:label "P{GMR92G12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144070
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}rgn[CPTI000176]"^^xsd:string
     
     
 Class: FBtp0064093
@@ -18805,16 +18809,16 @@ Class: FBtp0064093
         rdfs:label "P{GMR92G09-GAL4}"^^xsd:string
     
     
-Class: FBtp0064091
-
-    Annotations: 
-        rdfs:label "P{GMR92G07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063206
 
     Annotations: 
         rdfs:label "P{GMR81F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064091
+
+    Annotations: 
+        rdfs:label "P{GMR92G07-GAL4}"^^xsd:string
     
     
 Class: FBtp0064090
@@ -18847,22 +18851,16 @@ Class: FBtp0062486
         rdfs:label "P{GMR72F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0058442
-
-    Annotations: 
-        rdfs:label "P{GMR22F08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062485
 
     Annotations: 
         rdfs:label "P{GMR72F09-GAL4}"^^xsd:string
     
     
-Class: FBtp0058441
+Class: FBtp0058442
 
     Annotations: 
-        rdfs:label "P{GMR22F07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR22F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0062484
@@ -18871,10 +18869,10 @@ Class: FBtp0062484
         rdfs:label "P{GMR72F08-GAL4}"^^xsd:string
     
     
-Class: FBtp0060252
+Class: FBtp0058441
 
     Annotations: 
-        rdfs:label "P{GMR43B04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR22F07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062483
@@ -18883,22 +18881,28 @@ Class: FBtp0062483
         rdfs:label "P{GMR72F07-GAL4}"^^xsd:string
     
     
+Class: FBtp0060252
+
+    Annotations: 
+        rdfs:label "P{GMR43B04-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0062482
 
     Annotations: 
         rdfs:label "P{GMR72F06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060254
-
-    Annotations: 
-        rdfs:label "P{GMR43B07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062481
 
     Annotations: 
         rdfs:label "P{GMR72F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060254
+
+    Annotations: 
+        rdfs:label "P{GMR43B07-GAL4}"^^xsd:string
     
     
 Class: FBtp0060253
@@ -18913,16 +18917,16 @@ Class: FBtp0058436
         rdfs:label "P{GMR22F02-GAL4}"^^xsd:string
     
     
-Class: FBtp0058437
-
-    Annotations: 
-        rdfs:label "P{GMR22F03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062490
 
     Annotations: 
         rdfs:label "P{GMR72G02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058437
+
+    Annotations: 
+        rdfs:label "P{GMR22F03-GAL4}"^^xsd:string
     
     
 Class: FBtp0058432
@@ -18949,16 +18953,16 @@ Class: FBtp0060249
         rdfs:label "P{GMR43A12-GAL4}"^^xsd:string
     
     
-Class: FBtp0058431
-
-    Annotations: 
-        rdfs:label "P{GMR22E09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062496
 
     Annotations: 
         rdfs:label "P{GMR72G08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058431
+
+    Annotations: 
+        rdfs:label "P{GMR22E09-GAL4}"^^xsd:string
     
     
 Class: FBtp0062495
@@ -18979,22 +18983,28 @@ Class: FBtp0063299
         rdfs:label "P{GMR82F11-GAL4}"^^xsd:string
     
     
-Class: FBtp0062497
-
-    Annotations: 
-        rdfs:label "P{GMR72G09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063298
 
     Annotations: 
         rdfs:label "P{GMR82F10-GAL4}"^^xsd:string
     
     
+Class: FBtp0062497
+
+    Annotations: 
+        rdfs:label "P{GMR72G09-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0062492
 
     Annotations: 
         rdfs:label "P{GMR72G04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063296
+
+    Annotations: 
+        rdfs:label "P{GMR82F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060242
@@ -19009,10 +19019,10 @@ Class: FBtp0062491
         rdfs:label "P{GMR72G03-GAL4}"^^xsd:string
     
     
-Class: FBtp0063296
+Class: FBtp0063295
 
     Annotations: 
-        rdfs:label "P{GMR82F08-GAL4}"^^xsd:string
+        rdfs:label "P{GMR82F07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062494
@@ -19021,10 +19031,10 @@ Class: FBtp0062494
         rdfs:label "P{GMR72G06-GAL4}"^^xsd:string
     
     
-Class: FBtp0063295
+Class: FBtp0063294
 
     Annotations: 
-        rdfs:label "P{GMR82F07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR82F06-GAL4}"^^xsd:string
     
     
 Class: FBtp0060240
@@ -19037,12 +19047,6 @@ Class: FBtp0062493
 
     Annotations: 
         rdfs:label "P{GMR72G05-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0063294
-
-    Annotations: 
-        rdfs:label "P{GMR82F06-GAL4}"^^xsd:string
     
     
 Class: FBtp0058427
@@ -19087,16 +19091,16 @@ Class: FBtp0063948
         rdfs:label "P{GMR91A01-GAL4}"^^xsd:string
     
     
-Class: FBtp0063952
-
-    Annotations: 
-        rdfs:label "P{GMR91A06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060237
 
     Annotations: 
         rdfs:label "P{GMR42H11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063952
+
+    Annotations: 
+        rdfs:label "P{GMR91A06-GAL4}"^^xsd:string
     
     
 Class: FBtp0063953
@@ -19123,28 +19127,28 @@ Class: FBtp0060233
         rdfs:label "P{GMR42H07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063957
-
-    Annotations: 
-        rdfs:label "P{GMR91A11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0060236
 
     Annotations: 
         rdfs:label "P{GMR42H10-GAL4}"^^xsd:string
     
     
-Class: FBtp0063958
+Class: FBtp0063957
 
     Annotations: 
-        rdfs:label "P{GMR91A12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR91A11-GAL4}"^^xsd:string
     
     
 Class: FBtp0060235
 
     Annotations: 
         rdfs:label "P{GMR42H09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063958
+
+    Annotations: 
+        rdfs:label "P{GMR91A12-GAL4}"^^xsd:string
     
     
 Class: FBtp0060230
@@ -19171,16 +19175,16 @@ Class: FBtp0016769
         rdfs:label "P{Gad1-GAL4.3.098}"^^xsd:string
     
     
-Class: FBtp0063950
-
-    Annotations: 
-        rdfs:label "P{GMR91A03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058463
 
     Annotations: 
         rdfs:label "P{GMR22H07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063950
+
+    Annotations: 
+        rdfs:label "P{GMR91A03-GAL4}"^^xsd:string
     
     
 Class: FBtp0058455
@@ -19255,16 +19259,16 @@ Class: FBtp0063967
         rdfs:label "P{GMR91B11-GAL4}"^^xsd:string
     
     
-Class: FBtp0063960
-
-    Annotations: 
-        rdfs:label "P{GMR91B02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058453
 
     Annotations: 
         rdfs:label "P{GMR22G09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063960
+
+    Annotations: 
+        rdfs:label "P{GMR91B02-GAL4}"^^xsd:string
     
     
 Class: FBtp0063961
@@ -19315,28 +19319,28 @@ Class: FBtp0062443
         rdfs:label "P{GMR72B09-GAL4}"^^xsd:string
     
     
-Class: FBtp0063972
-
-    Annotations: 
-        rdfs:label "P{GMR91C05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063267
 
     Annotations: 
         rdfs:label "P{GMR82D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0062441
+Class: FBtp0063972
 
     Annotations: 
-        rdfs:label "P{GMR72B07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR91C05-GAL4}"^^xsd:string
     
     
 Class: FBtp0063268
 
     Annotations: 
         rdfs:label "P{GMR82D02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062441
+
+    Annotations: 
+        rdfs:label "P{GMR72B07-GAL4}"^^xsd:string
     
     
 Class: FBtp0063261
@@ -19393,6 +19397,12 @@ Class: FBtp0062449
         rdfs:label "P{GMR72C03-GAL4}"^^xsd:string
     
     
+Class: FBtp0063269
+
+    Annotations: 
+        rdfs:label "P{GMR82D03-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0060215
 
     Annotations: 
@@ -19403,12 +19413,6 @@ Class: FBtp0062446
 
     Annotations: 
         rdfs:label "P{GMR72B12-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0063269
-
-    Annotations: 
-        rdfs:label "P{GMR82D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0063973
@@ -19513,16 +19517,16 @@ Class: FBtp0063256
         rdfs:label "P{GMR82B12-GAL4}"^^xsd:string
     
     
-Class: FBtp0063982
-
-    Annotations: 
-        rdfs:label "P{GMR91D06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062452
 
     Annotations: 
         rdfs:label "P{GMR72C08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063982
+
+    Annotations: 
+        rdfs:label "P{GMR91D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0063981
@@ -19531,16 +19535,16 @@ Class: FBtp0063981
         rdfs:label "P{GMR91D04-GAL4}"^^xsd:string
     
     
-Class: FBtp0063980
-
-    Annotations: 
-        rdfs:label "P{GMR91D03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062454
 
     Annotations: 
         rdfs:label "P{GMR72C10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063980
+
+    Annotations: 
+        rdfs:label "P{GMR91D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0063255
@@ -19579,16 +19583,22 @@ Class: FBtp0063988
         rdfs:label "P{GMR91D12-GAL4}"^^xsd:string
     
     
+Class: FBtp0062455
+
+    Annotations: 
+        rdfs:label "P{GMR72C11-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0060206
 
     Annotations: 
         rdfs:label "P{GMR42E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0062455
+Class: FBtp0062456
 
     Annotations: 
-        rdfs:label "P{GMR72C11-GAL4}"^^xsd:string
+        rdfs:label "P{GMR72C12-GAL4}"^^xsd:string
     
     
 Class: FBtp0063986
@@ -19603,10 +19613,10 @@ Class: FBtp0060207
         rdfs:label "P{GMR42E12-GAL4}"^^xsd:string
     
     
-Class: FBtp0062456
+Class: FBtp0062457
 
     Annotations: 
-        rdfs:label "P{GMR72C12-GAL4}"^^xsd:string
+        rdfs:label "P{GMR72D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063985
@@ -19619,12 +19629,6 @@ Class: FBtp0060204
 
     Annotations: 
         rdfs:label "P{GMR42E09-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0062457
-
-    Annotations: 
-        rdfs:label "P{GMR72D01-GAL4}"^^xsd:string
     
     
 Class: FBtp0063259
@@ -19651,16 +19655,16 @@ Class: FBti0144010
         rdfs:label "PBac{602.P.SVS-1}dlp[CPTI000445]"^^xsd:string
     
     
-Class: FBti0144019
-
-    Annotations: 
-        rdfs:label "PBac{602.P.SVS-1}Src64B[CPTI000567]"^^xsd:string
-    
-    
 Class: FBtp0063260
 
     Annotations: 
         rdfs:label "P{GMR82C04-GAL4}"^^xsd:string
+    
+    
+Class: FBti0144019
+
+    Annotations: 
+        rdfs:label "PBac{602.P.SVS-1}Src64B[CPTI000567]"^^xsd:string
     
     
 Class: FBti0144017
@@ -19693,28 +19697,28 @@ Class: FBti0144014
         rdfs:label "PBac{602.P.SVS-1}Fas2[CPTI000483]"^^xsd:string
     
     
-Class: FBtp0062460
-
-    Annotations: 
-        rdfs:label "P{GMR72D04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063283
 
     Annotations: 
         rdfs:label "P{GMR82E06-GAL4}"^^xsd:string
     
     
-Class: FBtp0062461
+Class: FBtp0062460
 
     Annotations: 
-        rdfs:label "P{GMR72D06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR72D04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063284
 
     Annotations: 
         rdfs:label "P{GMR82E08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062461
+
+    Annotations: 
+        rdfs:label "P{GMR72D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0063285
@@ -19735,10 +19739,10 @@ Class: FBtp0063288
         rdfs:label "P{GMR82E12-GAL4}"^^xsd:string
     
     
-Class: FBtp0063994
+Class: FBtp0063289
 
     Annotations: 
-        rdfs:label "P{GMR91E09-GAL4}"^^xsd:string
+        rdfs:label "P{GMR82F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062462
@@ -19747,10 +19751,10 @@ Class: FBtp0062462
         rdfs:label "P{GMR72D07-GAL4}"^^xsd:string
     
     
-Class: FBtp0063289
+Class: FBtp0063994
 
     Annotations: 
-        rdfs:label "P{GMR82F01-GAL4}"^^xsd:string
+        rdfs:label "P{GMR91E09-GAL4}"^^xsd:string
     
     
 Class: FBtp0062463
@@ -19759,16 +19763,16 @@ Class: FBtp0062463
         rdfs:label "P{GMR72D08-GAL4}"^^xsd:string
     
     
-Class: FBtp0063996
-
-    Annotations: 
-        rdfs:label "P{GMR91E12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062468
 
     Annotations: 
         rdfs:label "P{GMR72E01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0063996
+
+    Annotations: 
+        rdfs:label "P{GMR91E12-GAL4}"^^xsd:string
     
     
 Class: FBtp0062469
@@ -19813,16 +19817,16 @@ Class: FBtp0058413
         rdfs:label "P{GMR22D02-GAL4}"^^xsd:string
     
     
-Class: FBtp0058415
-
-    Annotations: 
-        rdfs:label "P{GMR22D04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063291
 
     Annotations: 
         rdfs:label "P{GMR82F03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058415
+
+    Annotations: 
+        rdfs:label "P{GMR22D04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063290
@@ -19831,16 +19835,16 @@ Class: FBtp0063290
         rdfs:label "P{GMR82F02-GAL4}"^^xsd:string
     
     
-Class: FBtp0058417
-
-    Annotations: 
-        rdfs:label "P{GMR22D06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063293
 
     Annotations: 
         rdfs:label "P{GMR82F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058417
+
+    Annotations: 
+        rdfs:label "P{GMR22D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0062470
@@ -20209,28 +20213,28 @@ Class: FBtp0061759
         rdfs:label "P{GMR60G05-GAL4}"^^xsd:string
     
     
-Class: FBtp0061757
-
-    Annotations: 
-        rdfs:label "P{GMR60G03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062436
 
     Annotations: 
         rdfs:label "P{GMR72B01-GAL4}"^^xsd:string
     
     
-Class: FBtp0061758
+Class: FBtp0061757
 
     Annotations: 
-        rdfs:label "P{GMR60G04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR60G03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062435
 
     Annotations: 
         rdfs:label "P{GMR72A12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061758
+
+    Annotations: 
+        rdfs:label "P{GMR60G04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062433
@@ -20533,16 +20537,16 @@ Class: FBtp0061025
         rdfs:label "P{GMR52A10-GAL4}"^^xsd:string
     
     
-Class: FBtp0064181
-
-    Annotations: 
-        rdfs:label "P{GMR93H01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061027
 
     Annotations: 
         rdfs:label "P{GMR52B02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064181
+
+    Annotations: 
+        rdfs:label "P{GMR93H01-GAL4}"^^xsd:string
     
     
 Class: FBtp0061029
@@ -20551,16 +20555,16 @@ Class: FBtp0061029
         rdfs:label "P{GMR52B04-GAL4}"^^xsd:string
     
     
-Class: FBtp0064180
-
-    Annotations: 
-        rdfs:label "P{GMR93G12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061910
 
     Annotations: 
         rdfs:label "P{GMR64D03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064180
+
+    Annotations: 
+        rdfs:label "P{GMR93G12-GAL4}"^^xsd:string
     
     
 Class: FBtp0061911
@@ -20671,28 +20675,28 @@ Class: FBtp0061010
         rdfs:label "P{GMR51H05-GAL4}"^^xsd:string
     
     
-Class: FBtp0064170
-
-    Annotations: 
-        rdfs:label "P{GMR93G02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061016
 
     Annotations: 
         rdfs:label "P{GMR52A01-GAL4}"^^xsd:string
     
     
-Class: FBtp0064172
+Class: FBtp0064170
 
     Annotations: 
-        rdfs:label "P{GMR93G04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR93G02-GAL4}"^^xsd:string
     
     
 Class: FBtp0061014
 
     Annotations: 
         rdfs:label "P{GMR51H11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064172
+
+    Annotations: 
+        rdfs:label "P{GMR93G04-GAL4}"^^xsd:string
     
     
 Class: FBtp0064173
@@ -20737,16 +20741,16 @@ Class: FBtp0064166
         rdfs:label "P{GMR93F10-GAL4}"^^xsd:string
     
     
-Class: FBtp0057380
-
-    Annotations: 
-        rdfs:label "P{GMR10H09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061000
 
     Annotations: 
         rdfs:label "P{GMR51G06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057380
+
+    Annotations: 
+        rdfs:label "P{GMR10H09-GAL4}"^^xsd:string
     
     
 Class: FBtp0057381
@@ -20831,6 +20835,12 @@ Class: FBtp0061939
 
     Annotations: 
         rdfs:label "P{GMR64F09-GAL4}"^^xsd:string
+    
+    
+Class: <http://purl.obolibrary.org/obo/vfb/B8C6934B-C27C-4528-BE59-E75F5B9F61B6>
+
+    Annotations: 
+        rdfs:label "expression pattern"
     
     
 Class: FBtp0064153
@@ -21049,16 +21059,16 @@ Class: FBtp0059724
         rdfs:label "P{GMR37A12-GAL4}"^^xsd:string
     
     
-Class: FBtp0064140
-
-    Annotations: 
-        rdfs:label "P{GMR93D06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061950
 
     Annotations: 
         rdfs:label "P{GMR64G09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064140
+
+    Annotations: 
+        rdfs:label "P{GMR93D06-GAL4}"^^xsd:string
     
     
 Class: FBtp0061069
@@ -21079,16 +21089,16 @@ Class: FBtp0061955
         rdfs:label "P{GMR64H02-GAL4}"^^xsd:string
     
     
-Class: FBtp0059783
-
-    Annotations: 
-        rdfs:label "P{GMR37G05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061062
 
     Annotations: 
         rdfs:label "P{GMR52E05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059783
+
+    Annotations: 
+        rdfs:label "P{GMR37G05-GAL4}"^^xsd:string
     
     
 Class: FBtp0061061
@@ -21097,16 +21107,16 @@ Class: FBtp0061061
         rdfs:label "P{GMR52E04-GAL4}"^^xsd:string
     
     
-Class: FBtp0059781
-
-    Annotations: 
-        rdfs:label "P{GMR37G03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061064
 
     Annotations: 
         rdfs:label "P{GMR52E07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059781
+
+    Annotations: 
+        rdfs:label "P{GMR37G03-GAL4}"^^xsd:string
     
     
 Class: FBtp0059782
@@ -21115,16 +21125,16 @@ Class: FBtp0059782
         rdfs:label "P{GMR37G04-GAL4}"^^xsd:string
     
     
-Class: FBtp0059780
-
-    Annotations: 
-        rdfs:label "P{GMR37G02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061065
 
     Annotations: 
         rdfs:label "P{GMR52E08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059780
+
+    Annotations: 
+        rdfs:label "P{GMR37G02-GAL4}"^^xsd:string
     
     
 Class: FBtp0061068
@@ -21145,10 +21155,10 @@ Class: FBtp0059777
         rdfs:label "P{GMR37F11-GAL4}"^^xsd:string
     
     
-Class: FBtp0064138
+Class: FBtp0061070
 
     Annotations: 
-        rdfs:label "P{GMR93D04-GAL4}"^^xsd:string
+        rdfs:label "P{GMR52F01-GAL4}"^^xsd:string
     
     
 Class: FBtp0059775
@@ -21157,16 +21167,10 @@ Class: FBtp0059775
         rdfs:label "P{GMR37F09-GAL4}"^^xsd:string
     
     
-Class: FBtp0061070
+Class: FBtp0064138
 
     Annotations: 
-        rdfs:label "P{GMR52F01-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0064139
-
-    Annotations: 
-        rdfs:label "P{GMR93D05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR93D04-GAL4}"^^xsd:string
     
     
 Class: FBtp0059774
@@ -21175,22 +21179,28 @@ Class: FBtp0059774
         rdfs:label "P{GMR37F08-GAL4}"^^xsd:string
     
     
+Class: FBtp0064139
+
+    Annotations: 
+        rdfs:label "P{GMR93D05-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0061957
 
     Annotations: 
         rdfs:label "P{GMR64H04-GAL4}"^^xsd:string
     
     
-Class: FBtp0064137
-
-    Annotations: 
-        rdfs:label "P{GMR93D03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061958
 
     Annotations: 
         rdfs:label "P{GMR64H05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064137
+
+    Annotations: 
+        rdfs:label "P{GMR93D03-GAL4}"^^xsd:string
     
     
 Class: FBtp0061959
@@ -21229,16 +21239,16 @@ Class: FBtp0064131
         rdfs:label "P{GMR93C08-GAL4}"^^xsd:string
     
     
-Class: FBtp0061059
-
-    Annotations: 
-        rdfs:label "P{GMR52E01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061961
 
     Annotations: 
         rdfs:label "P{GMR64H08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061059
+
+    Annotations: 
+        rdfs:label "P{GMR52E01-GAL4}"^^xsd:string
     
     
 Class: FBtp0061058
@@ -21313,10 +21323,10 @@ Class: FBtp0059789
         rdfs:label "P{GMR37G11-GAL4}"^^xsd:string
     
     
-Class: FBtp0064128
+Class: FBtp0061060
 
     Annotations: 
-        rdfs:label "P{GMR93C05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR52E03-GAL4}"^^xsd:string
     
     
 Class: FBtp0059785
@@ -21325,10 +21335,10 @@ Class: FBtp0059785
         rdfs:label "P{GMR37G07-GAL4}"^^xsd:string
     
     
-Class: FBtp0061060
+Class: FBtp0064128
 
     Annotations: 
-        rdfs:label "P{GMR52E03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR93C05-GAL4}"^^xsd:string
     
     
 Class: FBtp0064129
@@ -21439,16 +21449,16 @@ Class: FBtp0061045
         rdfs:label "P{GMR52C11-GAL4}"^^xsd:string
     
     
-Class: FBtp0059761
-
-    Annotations: 
-        rdfs:label "P{GMR37E07-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061040
 
     Annotations: 
         rdfs:label "P{GMR52C04-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059761
+
+    Annotations: 
+        rdfs:label "P{GMR37E07-GAL4}"^^xsd:string
     
     
 Class: FBtp0059762
@@ -21469,16 +21479,16 @@ Class: FBtp0059760
         rdfs:label "P{GMR37E06-GAL4}"^^xsd:string
     
     
-Class: FBtp0064118
-
-    Annotations: 
-        rdfs:label "P{GMR93B05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0059755
 
     Annotations: 
         rdfs:label "P{GMR37D11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0064118
+
+    Annotations: 
+        rdfs:label "P{GMR93B05-GAL4}"^^xsd:string
     
     
 Class: FBtp0064119
@@ -21799,28 +21809,28 @@ Class: FBtp0057948
         rdfs:label "P{GMR17B08-GAL4}"^^xsd:string
     
     
-Class: FBti0143494
-
-    Annotations: 
-        rdfs:label "PBac{810.P.FSVS-2}ZAP3[CPTI004292]"^^xsd:string
-    
-    
 Class: FBtp0060406
 
     Annotations: 
         rdfs:label "P{GMR45A11-GAL4}"^^xsd:string
     
     
-Class: FBti0143495
+Class: FBti0143494
 
     Annotations: 
-        rdfs:label "PBac{810.P.FSVS-2}CG9265[CPTI004298]"^^xsd:string
+        rdfs:label "PBac{810.P.FSVS-2}ZAP3[CPTI004292]"^^xsd:string
     
     
 Class: FBtp0060407
 
     Annotations: 
         rdfs:label "P{GMR45A12-GAL4}"^^xsd:string
+    
+    
+Class: FBti0143495
+
+    Annotations: 
+        rdfs:label "PBac{810.P.FSVS-2}CG9265[CPTI004298]"^^xsd:string
     
     
 Class: FBti0143492
@@ -22057,16 +22067,16 @@ Class: FBtp0058468
         rdfs:label "P{GMR22H12-GAL4}"^^xsd:string
     
     
-Class: FBtp0057984
-
-    Annotations: 
-        rdfs:label "P{GMR17E11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058467
 
     Annotations: 
         rdfs:label "P{GMR22H11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057984
+
+    Annotations: 
+        rdfs:label "P{GMR17E11-GAL4}"^^xsd:string
     
     
 Class: FBtp0057988
@@ -22117,16 +22127,16 @@ Class: FBtp0058475
         rdfs:label "P{GMR23A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0057972
-
-    Annotations: 
-        rdfs:label "P{GMR17D09-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058479
 
     Annotations: 
         rdfs:label "P{GMR23A12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057972
+
+    Annotations: 
+        rdfs:label "P{GMR17D09-GAL4}"^^xsd:string
     
     
 Class: FBtp0058478
@@ -22291,16 +22301,16 @@ Class: FBtp0058579
         rdfs:label "P{GMR24B05-GAL4}"^^xsd:string
     
     
-Class: FBtp0058570
-
-    Annotations: 
-        rdfs:label "P{GMR24A08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063198
 
     Annotations: 
         rdfs:label "P{GMR81E09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058570
+
+    Annotations: 
+        rdfs:label "P{GMR24A08-GAL4}"^^xsd:string
     
     
 Class: FBtp0063197
@@ -22363,16 +22373,16 @@ Class: FBtp0058569
         rdfs:label "P{GMR24A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0058561
-
-    Annotations: 
-        rdfs:label "P{GMR23H11-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063189
 
     Annotations: 
         rdfs:label "P{GMR81D11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058561
+
+    Annotations: 
+        rdfs:label "P{GMR23H11-GAL4}"^^xsd:string
     
     
 Class: FBtp0058560
@@ -22399,16 +22409,16 @@ Class: FBtp0063185
         rdfs:label "P{GMR81D06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060375
-
-    Annotations: 
-        rdfs:label "P{GMR44F10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063187
 
     Annotations: 
         rdfs:label "P{GMR81D09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060375
+
+    Annotations: 
+        rdfs:label "P{GMR44F10-GAL4}"^^xsd:string
     
     
 Class: FBtp0060374
@@ -22429,16 +22439,16 @@ Class: FBtp0063191
         rdfs:label "P{GMR81E01-GAL4}"^^xsd:string
     
     
-Class: FBtp0058558
-
-    Annotations: 
-        rdfs:label "P{GMR23H08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063192
 
     Annotations: 
         rdfs:label "P{GMR81E02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058558
+
+    Annotations: 
+        rdfs:label "P{GMR23H08-GAL4}"^^xsd:string
     
     
 Class: FBtp0063194
@@ -22459,16 +22469,16 @@ Class: FBtp0058555
         rdfs:label "P{GMR23H05-GAL4}"^^xsd:string
     
     
-Class: FBtp0058556
-
-    Annotations: 
-        rdfs:label "P{GMR23H06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063190
 
     Annotations: 
         rdfs:label "P{GMR81D12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0058556
+
+    Annotations: 
+        rdfs:label "P{GMR23H06-GAL4}"^^xsd:string
     
     
 Class: FBtp0063179
@@ -22855,16 +22865,16 @@ Class: FBtp0063161
         rdfs:label "P{GMR81B06-GAL4}"^^xsd:string
     
     
-Class: FBtp0057922
-
-    Annotations: 
-        rdfs:label "P{GMR16H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0058526
 
     Annotations: 
         rdfs:label "P{GMR23E11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0057922
+
+    Annotations: 
+        rdfs:label "P{GMR16H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0057920
@@ -22933,16 +22943,16 @@ Class: FBtp0062564
         rdfs:label "P{GMR73F12-GAL4}"^^xsd:string
     
     
-Class: FBtp0062561
-
-    Annotations: 
-        rdfs:label "P{GMR73F08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0063146
 
     Annotations: 
         rdfs:label "P{GMR80H12-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0062561
+
+    Annotations: 
+        rdfs:label "P{GMR73F08-GAL4}"^^xsd:string
     
     
 Class: FBtp0063140
@@ -23005,16 +23015,22 @@ Class: FBtp0060325
         rdfs:label "P{GMR44B02-GAL4}"^^xsd:string
     
     
+Class: FBtp0063137
+
+    Annotations: 
+        rdfs:label "P{GMR80H03-GAL4}"^^xsd:string
+    
+    
 Class: FBtp0062578
 
     Annotations: 
         rdfs:label "P{GMR73H06-GAL4}"^^xsd:string
     
     
-Class: FBtp0063137
+Class: FBtp0063138
 
     Annotations: 
-        rdfs:label "P{GMR80H03-GAL4}"^^xsd:string
+        rdfs:label "P{GMR80H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0057909
@@ -23027,12 +23043,6 @@ Class: FBtp0062579
 
     Annotations: 
         rdfs:label "P{GMR73H07-GAL4}"^^xsd:string
-    
-    
-Class: FBtp0063138
-
-    Annotations: 
-        rdfs:label "P{GMR80H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0063135
@@ -23185,16 +23195,16 @@ Class: FBtp0061098
         rdfs:label "P{GMR52H05-GAL4}"^^xsd:string
     
     
-Class: FBtp0061099
-
-    Annotations: 
-        rdfs:label "P{GMR52H06-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061880
 
     Annotations: 
         rdfs:label "P{GMR64A06-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061099
+
+    Annotations: 
+        rdfs:label "P{GMR52H06-GAL4}"^^xsd:string
     
     
 Class: FBtp0061881
@@ -23203,16 +23213,16 @@ Class: FBtp0061881
         rdfs:label "P{GMR64A07-GAL4}"^^xsd:string
     
     
-Class: FBtp0061094
-
-    Annotations: 
-        rdfs:label "P{GMR52H01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062540
 
     Annotations: 
         rdfs:label "P{GMR73D02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061094
+
+    Annotations: 
+        rdfs:label "P{GMR52H01-GAL4}"^^xsd:string
     
     
 Class: FBtp0057450
@@ -23233,28 +23243,28 @@ Class: FBtp0062541
         rdfs:label "P{GMR73D03-GAL4}"^^xsd:string
     
     
-Class: FBtp0061888
-
-    Annotations: 
-        rdfs:label "P{GMR64B03-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062543
 
     Annotations: 
         rdfs:label "P{GMR73D06-GAL4}"^^xsd:string
     
     
-Class: FBtp0061889
+Class: FBtp0061888
 
     Annotations: 
-        rdfs:label "P{GMR64B05-GAL4}"^^xsd:string
+        rdfs:label "P{GMR64B03-GAL4}"^^xsd:string
     
     
 Class: FBtp0062546
 
     Annotations: 
         rdfs:label "P{GMR73D10-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061889
+
+    Annotations: 
+        rdfs:label "P{GMR64B05-GAL4}"^^xsd:string
     
     
 Class: FBtp0062548
@@ -23323,16 +23333,16 @@ Class: FBtp0062552
         rdfs:label "P{GMR73E08-GAL4}"^^xsd:string
     
     
-Class: FBtp0061878
-
-    Annotations: 
-        rdfs:label "P{GMR64A04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062557
 
     Annotations: 
         rdfs:label "P{GMR73F02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061878
+
+    Annotations: 
+        rdfs:label "P{GMR64A04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062556
@@ -23341,16 +23351,16 @@ Class: FBtp0062556
         rdfs:label "P{GMR73E12-GAL4}"^^xsd:string
     
     
-Class: FBtp0061876
-
-    Annotations: 
-        rdfs:label "P{GMR64A02-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062555
 
     Annotations: 
         rdfs:label "P{GMR73E11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061876
+
+    Annotations: 
+        rdfs:label "P{GMR64A02-GAL4}"^^xsd:string
     
     
 Class: FBtp0062529
@@ -23407,16 +23417,16 @@ Class: FBtp0061073
         rdfs:label "P{GMR52F04-GAL4}"^^xsd:string
     
     
-Class: FBtp0059694
-
-    Annotations: 
-        rdfs:label "P{GMR36G04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061074
 
     Annotations: 
         rdfs:label "P{GMR52F05-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059694
+
+    Annotations: 
+        rdfs:label "P{GMR36G04-GAL4}"^^xsd:string
     
     
 Class: FBtp0057430
@@ -23479,16 +23489,16 @@ Class: FBtp0057418
         rdfs:label "P{GMR11D01-GAL4}"^^xsd:string
     
     
-Class: FBtp0059679
-
-    Annotations: 
-        rdfs:label "P{GMR36E12-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057416
 
     Annotations: 
         rdfs:label "P{GMR11C11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0059679
+
+    Annotations: 
+        rdfs:label "P{GMR36E12-GAL4}"^^xsd:string
     
     
 Class: FBtp0057412
@@ -23527,16 +23537,16 @@ Class: FBtp0059678
         rdfs:label "P{GMR36E11-GAL4}"^^xsd:string
     
     
-Class: FBtp0061085
-
-    Annotations: 
-        rdfs:label "P{GMR52G04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062531
 
     Annotations: 
         rdfs:label "P{GMR73C02-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061085
+
+    Annotations: 
+        rdfs:label "P{GMR52G04-GAL4}"^^xsd:string
     
     
 Class: FBtp0062530
@@ -23563,22 +23573,16 @@ Class: FBtp0061084
         rdfs:label "P{GMR52G03-GAL4}"^^xsd:string
     
     
-Class: FBtp0061089
-
-    Annotations: 
-        rdfs:label "P{GMR52G08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0061892
 
     Annotations: 
         rdfs:label "P{GMR64B08-GAL4}"^^xsd:string
     
     
-Class: FBtp0061087
+Class: FBtp0061089
 
     Annotations: 
-        rdfs:label "P{GMR52G06-GAL4}"^^xsd:string
+        rdfs:label "P{GMR52G08-GAL4}"^^xsd:string
     
     
 Class: FBtp0061890
@@ -23587,16 +23591,22 @@ Class: FBtp0061890
         rdfs:label "P{GMR64B06-GAL4}"^^xsd:string
     
     
-Class: FBtp0061088
+Class: FBtp0061087
 
     Annotations: 
-        rdfs:label "P{GMR52G07-GAL4}"^^xsd:string
+        rdfs:label "P{GMR52G06-GAL4}"^^xsd:string
     
     
 Class: FBtp0061891
 
     Annotations: 
         rdfs:label "P{GMR64B07-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061088
+
+    Annotations: 
+        rdfs:label "P{GMR52G07-GAL4}"^^xsd:string
     
     
 Class: FBtp0062539
@@ -23635,16 +23645,16 @@ Class: FBtp0062533
         rdfs:label "P{GMR73C04-GAL4}"^^xsd:string
     
     
-Class: FBtp0061899
-
-    Annotations: 
-        rdfs:label "P{GMR64C04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062532
 
     Annotations: 
         rdfs:label "P{GMR73C03-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0061899
+
+    Annotations: 
+        rdfs:label "P{GMR64C04-GAL4}"^^xsd:string
     
     
 Class: FBtp0057486
@@ -23719,16 +23729,16 @@ Class: FBtp0060396
         rdfs:label "P{GMR44H11-GAL4}"^^xsd:string
     
     
-Class: FBtp0060395
-
-    Annotations: 
-        rdfs:label "P{GMR44H10-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057491
 
     Annotations: 
         rdfs:label "P{GMR12B08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060395
+
+    Annotations: 
+        rdfs:label "P{GMR44H10-GAL4}"^^xsd:string
     
     
 Class: FBtp0057493
@@ -23737,16 +23747,16 @@ Class: FBtp0057493
         rdfs:label "P{GMR12B10-GAL4}"^^xsd:string
     
     
-Class: FBtp0060390
-
-    Annotations: 
-        rdfs:label "P{GMR44H04-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057496
 
     Annotations: 
         rdfs:label "P{GMR12C01-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060390
+
+    Annotations: 
+        rdfs:label "P{GMR44H04-GAL4}"^^xsd:string
     
     
 Class: FBtp0057477
@@ -23791,28 +23801,28 @@ Class: FBtp0062511
         rdfs:label "P{GMR73A01-GAL4}"^^xsd:string
     
     
-Class: FBtp0060387
-
-    Annotations: 
-        rdfs:label "P{GMR44H01-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0062516
 
     Annotations: 
         rdfs:label "P{GMR73A08-GAL4}"^^xsd:string
     
     
-Class: FBtp0060388
+Class: FBtp0060387
 
     Annotations: 
-        rdfs:label "P{GMR44H02-GAL4}"^^xsd:string
+        rdfs:label "P{GMR44H01-GAL4}"^^xsd:string
     
     
 Class: FBtp0062517
 
     Annotations: 
         rdfs:label "P{GMR73A09-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060388
+
+    Annotations: 
+        rdfs:label "P{GMR44H02-GAL4}"^^xsd:string
     
     
 Class: FBtp0062514
@@ -23827,16 +23837,16 @@ Class: FBtp0062515
         rdfs:label "P{GMR73A06-GAL4}"^^xsd:string
     
     
-Class: FBtp0060384
-
-    Annotations: 
-        rdfs:label "P{GMR44G08-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057480
 
     Annotations: 
         rdfs:label "P{GMR12A08-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060384
+
+    Annotations: 
+        rdfs:label "P{GMR44G08-GAL4}"^^xsd:string
     
     
 Class: FBtp0060386
@@ -23857,16 +23867,16 @@ Class: FBtp0057484
         rdfs:label "P{GMR12A12-GAL4}"^^xsd:string
     
     
-Class: FBtp0060381
-
-    Annotations: 
-        rdfs:label "P{GMR44G05-GAL4}"^^xsd:string
-    
-    
 Class: FBtp0057483
 
     Annotations: 
         rdfs:label "P{GMR12A11-GAL4}"^^xsd:string
+    
+    
+Class: FBtp0060381
+
+    Annotations: 
+        rdfs:label "P{GMR44G05-GAL4}"^^xsd:string
     
     
 Class: FBtp0057482
