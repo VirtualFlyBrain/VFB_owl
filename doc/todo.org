@@ -50,19 +50,37 @@ The mereological sum of all cells expressing X
 depicts expression pattern of X
 depicts part_of expression pattern of X
 
+* Versioning
+Make version system for individual generation
+Should probably just use datestamp
+It will be a challenge to put this into data-version for merged file,
+but should be do-able for each individual files & merged individuals file.
 
 * DB
 *** DONE Move names over from neuron table?
 Note - redundancy should be documented somewhere!
 *** DONE Add names to constructs in DB
+*** TODO Make ID system for images (needs to work with source detail management).
+To decide:
+ - use existing table?
+ - use existing ID recipe, Or mint new one -  VFBi_........ ?
+
+*** TODO Expression patterns are classified as 'adult brain' as well as 'part of adult brain' DOC: is this a necessary hack?
+*** TODO [#A] Unmapped domain in BrainName_to_OWL mapping table - needs updating(?)
+
+*** TODO [#A] Fill out mapping table.
+Requires internet access
+Could do this by re-using table-reading code from Roche project -
+adding annotation mappings directly in tsv/excel.
 
 * code
+*** Generate mapping docs
 *** STARTED Finish code for making ontology of consructs
 Finished apart from classification
 *** STARTED Write code for updating class names in DB from ontology
 DONE? check
 *** DONE Update fc_ind code to use new schema & integrate with new generic code.
-*** Roll image individuals.
+*** STARTED Roll image individuals.
 Current recipes:
 http://flybrain.mrc-lmb.cam.ac.uk/vfb/fc/clusterv/3/Cha-F-100277/thumb_0.333.png
 http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/FlyCircuit/Thumbs/ChaMARCM-F001324_seg001.png
@@ -72,6 +90,47 @@ http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Fruitless
 http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Braintrap/Thumbs/FBti0143523.png
 http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/Janelia2012/Thumbs/GMR_41F01_AE_01_06-fA01b.png
 
-Note old dataset names!
+Note old dataset names.  Also filenames are (i think) old and perhaps
+no longer stored for some types?  This would work much better with an
+ID system for individuals.
+
+*** Refactoring
+
+***** DONE Separate function for rolling types from DB.
+******* DONE Call this function from both fc_ind and roll by source
+******* TODO standardise data structure for representing type assertions
+To fit with DB call - this should be a list of lists.  So, really all
+that needs to be standardised is the keys.
+
+
+*** Missing declarations to add 
+**** DONE Add declaration of expression pattern - with label
+This is required for rolling defs for expression patterns.
+Fix: added declaration to generation of FB_feature.owl
+Obviously needs feature generation to be run again.  
+*** Speed!!! 
+Move to straight OWL-API based queries has massively slowed code.
+Perhaps move constructors out of loops wherever possible?
+*** Unit tests
+***** Query tests
+
+* Jenkins jobs
+*** FB_feature.owl generation
+Works via connection to public FB CHADO
+*** Generation of individuals
+
+*** Generation of classes in OWL and map down of class to type
+But what about redundancy stripping?
+*** DB checks
+
+
+
+
+
+
+
+
+
+
 
 
