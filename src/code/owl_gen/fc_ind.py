@@ -169,7 +169,6 @@ for d in dc:
 cursor.close()
 vfb_ind = Brain(baseURI, baseURI + 'flycircuit_plus.owl')
 # Setup ontologies
-vfb_ind = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/vfb/flycircuit_plus.owl")
 addOboAnnotationProperties(vfb_ind)
 ont_dict = {}
 ont_dict['vfb_ind']=vfb_ind
