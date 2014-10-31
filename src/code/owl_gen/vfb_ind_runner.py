@@ -10,6 +10,14 @@ from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from dict_cursor import dict_cursor
 
+# Refactoring needed: Passing a dict of ontologies is pretty opaque. 
+# Need to hard wire calls to corrects dicts into code
+# Relying on keys => No scope control or checks for declaration, code completion etc.
+# In its current form - doesn't allow passing of some key info such as baseURI. P
+# DM could be extended to allow this, but this seems like more of the same crap. 
+# Would an object-y model be better?  If so what struc?
+
+
 
 """ARG1: db username; ARG2: db password, ARG3: dataset name; ARG4(!) path to FBBT
 ARG4: local path to version of fbbt used throughout.

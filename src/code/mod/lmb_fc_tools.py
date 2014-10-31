@@ -9,13 +9,19 @@ from owltools.graph import OWLGraphWrapper
 import re
 import warnings
 
+# A big bag of functions for working with lmb fc mysql DB.
+  
+#Some refactoring to a more objecty approach could reduce number and complexity of args needed.
+## But this refactoring should be limited to functions not being used in production of individuals.
+
 def get_con(usr, pwd):
-	#conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 def update_class_labels(ont_name, ont, conn): # With a method to query ont name from ont, should be able to limit to 2 args
-	"""Updates class labels in DB (connection via conn), using corresponding labels in ontology (brain object ont) applied to ontology corresponding to specified using file_name."""
+	"""Updates class labels in DB (connection via conn), using corresponding labels in ontology
+	 (brain object ont) applied to ontology corresponding to specified using file_name."""
 	# TODO - rewirte with OWLtools - including obsoletion test.
 
 	onto = ont.getOntology() # get ontology object for rolling graphWrapper
@@ -65,17 +71,17 @@ def oe_check_db_and_add(sfid, typ, cursor, ont):
 			ont.addObjectProperty(baseURI+sfid)
 	else:
 		warnings.warn("Unknown " + typ  + " " + sfid)
-    
+
 def BrainName_mapping(cursor, ont):
-    cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID, o.baseURI FROM BrainName_to_owl b2o JOIN owl_class oe ON (oe.id=b2o.owl_class_id) JOIN ontology o ON (o.id=oe.ontology_id)")
-    BN_dict = {}
-    dc = dict_cursor(cursor)
-    for d in dc:
-        BN = d["BrainName_abbv"]
-        BN_dict[BN] = d["shortFormID"]
-        if not ont.knowsClass(d["shortFormID"]):
-            ont.addClass(d['baseURI'] + d["shortFormID"]) 
-    return BN_dict
+	cursor.execute("SELECT b2o.BrainName_abbv, oe.shortFormID, o.baseURI FROM BrainName_to_owl b2o JOIN owl_class oe ON (oe.id=b2o.owl_class_id) JOIN ontology o ON (o.id=oe.ontology_id)")
+	BN_dict = {}
+	dc = dict_cursor(cursor)
+	for d in dc:
+		BN = d["BrainName_abbv"]
+		BN_dict[BN] = d["shortFormID"]
+		if not ont.knowsClass(d["shortFormID"]):
+			ont.addClass(d['baseURI'] + d["shortFormID"]) 
+	return BN_dict
 
 def gen_ind_dict(conn):
 	cursor=conn.cursor()
@@ -91,35 +97,38 @@ def gen_ind_dict(conn):
 
 def add_ind(conn, ID, name, typ, source, id_name):
 	cursor = conn.cursor()
- 	(vfbid, ID) = gen_id('VFB', ID, 8, id_name)
- 	id_name[vfbid] = name
- 	cursor.execute("INSERT INTO owl_individual (shortFormID, uuid, label, type_for_def, source_id) VALUES ('%s', UUID(), '%s', '%s', (SELECT id as source_id from data_source where name = '%s'))" % (vfbid, name, typ, source))
+	(vfbid, ID) = gen_id('VFB', ID, 8, id_name)
+	id_name[vfbid] = name
+	cursor.execute("INSERT INTO owl_individual (shortFormID, uuid, label, type_for_def, source_id) VALUES ('%s', UUID(), '%s', '%s', (SELECT id as source_id from data_source where name = '%s'))" % (vfbid, name, typ, source))
 	conn.commit()
 	cursor.close()
- 	return (vfbid, id_name, ID)
+	return (vfbid, id_name, ID)
 	
 def make_ind_obsolete(conn, vfbid):
 	cursor = conn.cursor()
- 	cursor.execute("UPDATE owl_individual SET is_obsolete IS TRUE WHERE shortFormID = '%s'" % vfbid)
+	cursor.execute("UPDATE owl_individual SET is_obsolete IS TRUE WHERE shortFormID = '%s'" % vfbid)
 	conn.commit()
 	cursor.close()
 
 def add_ind_test(conn):
 	cursor = conn.cursor()
-	id_name = gen_ind_dict(cursor)
- 	(vfbid, id_name, ID) = add_ind(conn, 16000, "add_ind_test", 'neuron', 'CostaJefferis', id_name)
- 	cursor.execute("SELECT * from owl_individual WHERE label = 'add_ind_test'")
- 	dc = dict_cursor(cursor)
- 	for d in dc:
- 		if d['label'] == "add_ind_test": 
- 			return True
- 	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
+	id_name = gen_ind_dict(conn)
+	(vfbid, id_name, ID) = add_ind(conn, 16000, "add_ind_test", 'neuron', 'CostaJefferis', id_name)
+	cursor.execute("SELECT * from owl_individual WHERE label = 'add_ind_test'")
+	dc = dict_cursor(cursor)
+	stat = False
+	for d in dc:
+		if d['label'] == "add_ind_test": 
+			stat = True
+	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
 	conn.commit()
 	cursor.close()
+	return stat
 
 def type_exists(objectProperty, claz, conn):
 	cursor = conn.cursor()
-	cursor.execute("SELECT ot.id FROM owl_type ot JOIN owl_objectProperty op ON (op.id=ot.objectProperty) JOIN owl_class oc ON (oc.id = ot.class) WHERE oc.shortFormID = '%s' AND op.shortFormID = '%s'" % (claz, objectProperty))
+	cursor.execute("SELECT ot.id FROM owl_type ot JOIN owl_objectProperty op ON (op.id=ot.objectProperty) " \
+                   "JOIN owl_class oc ON (oc.id = ot.class) WHERE oc.shortFormID = '%s' AND op.shortFormID = '%s'" % (claz, objectProperty))
 	dc = dict_cursor(cursor)
 	typ = ''
 	for d in dc:
@@ -129,12 +138,15 @@ def type_exists(objectProperty, claz, conn):
 
 def add_type(objectProperty, claz, conn):
 	cursor = conn.cursor()
-	cursor.execute("INSERT INTO owl_type (objectProperty, class) SELECT id AS objectProperty, (SELECT id FROM owl_class AS class WHERE shortFormID = '%s') FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
+	cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
+                   "SELECT id AS objectProperty, " \
+                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
+                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
 	conn.commit()
 	cursor.close()
-   
+
 def add_ind_type(ind, objectProperty, claz, conn):
-	""" """
+	"""Adds ind """
 	cursor = conn.cursor()
 	if not type_exists(objectProperty, claz, conn):
 		add_type(objectProperty, claz, conn)
@@ -148,35 +160,36 @@ def add_akv_type(key, value, objectProperty, claz, conn):
 		add_type(objectProperty, claz, conn)
 	typ = type_exists(objectProperty, claz, conn)
 	cursor = conn.cursor()
-	cursor.execute("INSERT INTO annotation_type (annotation_key_value_id, owl_type_id) SELECT id AS annotation_key_value_id, '%s' AS type_id FROM annotation_key_value WHERE annotation_class = '%s' AND annotation_text = '%s'" % (typ, key, value))
+	cursor.execute("INSERT IGNORE INTO annotation_type (annotation_key_value_id, owl_type_id) " \
+                   "SELECT id AS annotation_key_value_id, '%s' AS owl_type_id " \
+                   "FROM annotation_key_value " \
+                   "WHERE annotation_class = '%s' " \
+                   "AND annotation_text = '%s'" % (typ, key, value))
 	conn.commit()
 	cursor.close()
 
-def add_ind_type_test(usr,pwd):
-	conn = get_con(usr,pwd)
+def add_ind_type_test(conn):
 	cursor = conn.cursor()
 	id_name = gen_ind_dict(conn)
-	(vfbid, id_name, ID) = add_ind(conn, 16000, "add_ind_test", 'neuron', 'CostaJefferis', id_name)
+	(vfbid, id_name, ID) = add_ind(conn, 16000, "add_ind_test", 
+								'neuron', 'CostaJefferis', id_name)
 	add_ind_type(vfbid, 'BFO_0000050', 'FBbt_00003624', conn)
 	typ = type_exists('BFO_0000050', 'FBbt_00003624', conn)
 	if not typ: 
-		warnings.warn("Failed to create type statementent")
-	cursor.execute("SELECT type_id as tid, individual_id as iid FROM individual_type WHERE individual_id = '%s' AND type_id = '%s'" % (ID, typ))
+		warnings.warn("Failed to create type statement")
+	cursor.execute("SELECT type_id as tid, individual_id as iid " \
+				"FROM individual_type " \
+				"WHERE individual_id = '%s' " \
+				"AND type_id = '%s'" % (ID, typ))
 	dc = dict_cursor(cursor)
 	stat = 0
 	for d in dc:
-		stat = tid + iid
+		stat = d['tid'] + d['iid'] #wuh!
 	if not stat:
 		warnings.warn("Failed to type ind!")
 	cursor.execute("DELETE FROM individual_type WHERE individual_id = '%s'" % (ID))
-	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
 	conn.commit()
+	cursor.execute("DELETE from owl_individual WHERE label = 'add_ind_test'")
 	cursor.close()
 
 
-	
-	
-	
-	
-	
-    

@@ -49,7 +49,9 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name as sname FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) WHERE name = '%s'" % dataset)
+	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name as sname " \
+				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
+				"WHERE name = '%s'" % dataset)
 
 	dc = dict_cursor(cursor)
 	for d in dc:
@@ -59,7 +61,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 
 	cursor.execute("SELECT i.shortFormID AS iID, " \
 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
-				 " oeop.shortFormID AS rel, oeop.label AS relName, " \
+				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
 				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
 				 "s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
 				 "FROM owl_individual i  " \
@@ -76,12 +78,15 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	add_types_2_inds(vfb_ind, dc)
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
-	# Get source infor for this dataset
-	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext FROM data_source s WHERE s.name = '%s'" % dataset)
+	
+	# Get source info for this dataset
+	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
+				"FROM data_source s WHERE s.name = '%s'" % dataset)
+	
 	dc = dict_cursor(cursor)
 	for d in dc:
 		for iID in ilist:	 
-			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo)# replace this with call on add_type_to_in
+			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
 			basic_def = def_roller(types, ont_dict)
 			full_def = "%s from %s (PMID:%s). " % (basic_def, d['pub_miniref'], str(d['pub_pmid']))
 			if d['dtext']:
@@ -96,11 +101,12 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	#
 
 def roll_image_ind(ont, dataset, indLabel, indId):
-	""""""
+	"""STUB"""
 	
 	# This can't work without a reliable ID scheme for individuals!
 	# Ugly - can ditch once this is rationalised.
-	dataset_name_mappings = {'Jenett2012': 'Janelia2012', 'Cachero2010' : '', 'Chiang2010' : 'FlyCircuit', 'Yu2013': '', 'Ito2013' : '' }	
+	dataset_name_mappings = {'Jenett2012': 'Janelia2012', 'Cachero2010' : '', 
+							'Chiang2010' : 'FlyCircuit', 'Yu2013': '', 'Ito2013' : '' }	
 	dataset_name = dataset_name_mappings[dataset]
 	
 	baseURI = "http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/%s/Thumbs/" % dataset_name

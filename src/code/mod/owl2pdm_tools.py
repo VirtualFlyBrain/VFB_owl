@@ -15,7 +15,7 @@ def get_types_for_ind(iri_string, ont):
     manager = OWLManager.createOWLOntologyManager()
     factory = manager.getOWLDataFactory()
     i = factory.getOWLNamedIndividual(iri)
-    return i.getTypes(ont) # Th
+    return i.getTypes(ont) # 
 
 class simpleClassExpression():
     """Takes an OWL API classExpression as arg.

@@ -1,14 +1,18 @@
 #!/usr/bin/env jython
+
+import warnings
+
     
 def addOboAnnotationProperties(brain):
-	brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_0000115") # definition
-	brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_xref") # ??
-	brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasExactSynonym")
-	brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym")
-	brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym")
-	brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym")
-	brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref")
-	return brain
+    """Add obo annotation property declarations to a brain object"""
+    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_0000115") # definition
+    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_xref") # ??
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasExactSynonym")
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym")
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym")
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym")
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref")
+    return brain
 
 def gen_id(idp, ID, length, id_name):
     """ARG1: ID prefix (string), ARG 2 starting ID number (int), ARG3, length of numeric portion ID, ARG4 an id:name hash"""
@@ -39,7 +43,7 @@ def test_gen_id():
 
     # Generate new ID
     (k, ID) = gen_id(idp, start, length, id_name)
-    if k == 'HSNT_00000104':
-       print 'gen_id works!'
-    else: 
-       print 'gen_id fails test'
+    if not k == 'HSNT_00000104':
+        warnings.warn('gen_id is broken!')
+
+test_gen_id()
