@@ -14,9 +14,11 @@ import warnings
 #Some refactoring to a more objecty approach could reduce number and complexity of args needed.
 ## But this refactoring should be limited to functions not being used in production of individuals.
 
+## TODO: wrap compound key hack allowing for NULL in function.
+
 def get_con(usr, pwd):
-	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-	#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+	#conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 def update_class_labels(ont_name, ont, conn): # With a method to query ont name from ont, should be able to limit to 2 args
