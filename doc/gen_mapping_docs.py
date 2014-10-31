@@ -6,9 +6,18 @@ from lmb_fc_tools import get_con
 
 # Could easily refactor to make md table printer.
 
+def list_2_tab_String(l):
+    sl = [str(i) for i in l]
+    return "\t".join(sl) + "\n"
+
 con = get_con(sys.argv[1], sys.argv[2])
 
 cursor = con.cursor()
+# First update AKV table
+cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
+"SELECT DISTINCT annotation_class, text AS annotation_text FROM annotation")
+con.commit()
+# Generate mapping doc table
 cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op_label, op.shortFormID AS op_id, oc.label AS class_label, oc.shortFormID AS class_id " \
 "FROM annotation_key_value akv " \
 "LEFT OUTER JOIN annotation_type  at ON (akv.id = at.annotation_key_value_id) " \
@@ -20,14 +29,24 @@ cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op
 
 dc = dict_cursor(cursor)
 
-FH = open("annotation_map.md", 'w')
-FH.write("| a.annotation_type | a.text | op_label | op_id | class_label | class_id |\n|---|---|---|---|---|---|\n")
+# For now, making tsv and md varieties.  May ditch md.
 
+FH = open("annotation_map.md", 'w')
+FTSV = open("annotation_map.tsv", 'w')
+FH.write("| a.annotation_type | a.text | op_label | op_id | class_label | class_id |\n|---|---|---|---|---|---|\n")
+FTSV.write("\t".join(['a.annotation_type', 'a.text','op_label','op_id','class_label','class_id']) +"\n")
 for d in dc:
-    FH.write("| %s | %s | %s | %s | %s | %s |\n" % (d['annotation_class'], d['annotation_text'], d['op_label'], d['op_id'], d['class_label'], d['class_id']))
+    FH.write("| %s | %s | %s | %s | %s | %s |\n" % 
+             (d['annotation_class'], d['annotation_text'], d['op_label'], 
+              d['op_id'], d['class_label'], d['class_id']))
+    
+    FTSV.write(list_2_tab_String[d['annotation_class'], d['annotation_text'], 
+                                 d['op_label'], d['op_id'], d['class_label'], d['class_id']
+                                ]
+               )
 
 FH.close()
-
+FTSV.close()
 cursor.execute("SELECT BrainName_abbv, oc.label as class_label, oc.shortFormID as class_id " \
 "FROM BrainName_to_owl B2O " \
 "JOIN owl_class oc ON B2O.owl_class_id = oc.id " \
