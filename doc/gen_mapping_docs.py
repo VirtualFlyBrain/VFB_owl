@@ -40,9 +40,9 @@ for d in dc:
              (d['annotation_class'], d['annotation_text'], d['op_label'], 
               d['op_id'], d['class_label'], d['class_id']))
     
-    FTSV.write(list_2_tab_String[d['annotation_class'], d['annotation_text'], 
+    FTSV.write(list_2_tab_String([d['annotation_class'], d['annotation_text'], 
                                  d['op_label'], d['op_id'], d['class_label'], d['class_id']
-                                ]
+                                ])
                )
 
 FH.close()
