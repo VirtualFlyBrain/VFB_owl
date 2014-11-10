@@ -81,7 +81,9 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 
 # Requires Edinburgh server access
 
-conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+#conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+
 cursor = conn.cursor()
 
 def download2Brain(baseURL, filename):
