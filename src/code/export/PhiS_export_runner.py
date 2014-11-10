@@ -26,9 +26,10 @@ def gen_pdm_from_indfile(ont_url, outfile):
     axioms = {}
     
     for i in inds:
+        axioms[i] = {}
         axioms[i]["Types"] = typeAxioms2pdm("http://www.virtualflybrain.org/owl/" + i, onto)
         axioms[i]["label"] = ont.getLabel(i)
-        axioms[i]["def"] =  ont.getAnnotation(id, "IAO_0000115")
+        axioms[i]["def"] =  ont.getAnnotation(i, "IAO_0000115")
         
         # Need boolean checks.  Not sure Brain can do this for individuals, if not - can do slow, iterative check
         # if (is expression pattern):
@@ -40,4 +41,5 @@ def gen_pdm_from_indfile(ont_url, outfile):
 
     jfile = open(outfile, "w")
     jfile.write(json.dumps(axioms, sort_keys=True, indent=4))
+    ont.sleep()
     
