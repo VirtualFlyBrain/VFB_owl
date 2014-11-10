@@ -157,7 +157,7 @@ cursor.execute("SELECT DISTINCT vut.vfbid as cvid, c.cluster as cnum, evut.vfbid
 			   "AND c.clusterv = '3'")
 
 # Note on IDs: At the time of writing this script, queries on individuals all work via OWLtools MS queries with labels. So, labels need to be stable for everything to keep working, but IDs do not.
-			   
+
 dc = dict_cursor(cursor)
 for d in dc:
 	if not vfb_ind.knowsClass(d["cvid"]):
@@ -180,7 +180,7 @@ for d in dc:
 	vfb_ind.objectPropertyAssertion(d['cvid'], "RO_0002351" ,d['mvid']) #  has_member
 	vfb_ind.objectPropertyAssertion(d['mvid'], "RO_0002350", d['cvid']) #  member_of
 
-    
+
 cursor.close()
 conn.close()
 

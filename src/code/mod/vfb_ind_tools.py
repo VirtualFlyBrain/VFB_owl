@@ -9,7 +9,7 @@ from uk.ac.ebi.brain.core import Brain
 #from lmb_fc_tools import get_con
 from owl2pdm_tools import get_types_for_ind
 from owl2pdm_tools import simpleClassExpression
-import time
+#import time
 
 
 def load_ont(url):
