@@ -2,63 +2,149 @@
 
 from com.ziclix.python.sql import zxJDBC # FOR DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
-from uk.ac.ebi.brain.error import BrainException
-from uk.ac.ebi.brain.core import Brain
+#from uk.ac.ebi.brain.error import BrainException
+#from uk.ac.ebi.brain.core import Brain
 from obo_tools import gen_id
 from owltools.graph import OWLGraphWrapper
 import re
 import warnings
+#from fc_ind import ont_dict
 
 # A big bag of functions for working with lmb fc mysql DB.
-  
+
 #Some refactoring to a more objecty approach could reduce number and complexity of args needed.
 ## But this refactoring should be limited to functions not being used in production of individuals.
 
 ## TODO: wrap compound key hack allowing for NULL in function.
+
+def esc_quote(s):
+	return re.sub("\'", "\\'", s)
 
 def get_con(usr, pwd):
 	#conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
 	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
-def update_class_labels(ont_name, ont, conn): # With a method to query ont name from ont, should be able to limit to 2 args
-	"""Updates class labels in DB (connection via conn), using corresponding labels in ontology
-	 (brain object ont) applied to ontology corresponding to specified using file_name."""
-	# TODO - rewirte with OWLtools - including obsoletion test.
 
-	onto = ont.getOntology() # get ontology object for rolling graphWrapper
-	ogw = OWLGraphWrapper(onto) 
+class owlDbOnt():
+	def __init__(self, conn, ont):
+		"""Conn is a zxJBDC database handle;
+		ont is a Brain Object"""
+		self.conn = conn
+		self.ont = ont
+		self.onto = ont.getOntology()
+		self.ogw = OWLGraphWrapper(self.onto)
+		self.update_class_labels()
+		
+	def __str__(self):
+		return str(self.conn)
 
-	cursor1 = conn.cursor()
-	cursor2 = conn.cursor()
-	cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc JOIN ontology o ON (oc.ontology_id=o.id) WHERE short_name = '%s'" % ont_name)
-	dc = dict_cursor(cursor1)
-	for d in dc:
-		obo_id = re.sub('_', ':', d['shortFormID']) # surely there's a method that doesn't require this!
-		clazo = ogw.getOWLClassByIdentifier(obo_id)
-		new_label = ont.getLabel(d['shortFormID'])
-		if ont.knowsClass(d['shortFormID']):
-			if ogw.isObsolete(clazo):
-				warnings.warn("Obsolete class: %s in %s."  %  (d['shortFormID'], ont_name) )
-			elif not new_label == d['label']:
-				update = "UPDATE owl_class set label='%s' WHERE shortFormID = '%s'" % (new_label, d['shortFormID'])
-				#print update
-				cursor2.execute(update)
-				#print cursor2.warnings
+	def update_class_labels(self): 
+		"""Updates class labels in DB (connection via conn), using corresponding labels in ontology
+		 (brain object ont) applied to ontology corresponding to specified using file_name."""	
+		cursor1 = self.conn.cursor()
+		cursor2 = self.conn.cursor()
+		cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc")
+		dc = dict_cursor(cursor1)
+		for d in dc:
+			obo_id = re.sub('_', ':', d['shortFormID']) # surely there's a method that doesn't require this!
+			clazo = self.ogw.getOWLClassByIdentifier(obo_id)
+			new_label = self.ont.getLabel(d['shortFormID'])
+			if self.ont.knowsClass(d['shortFormID']):
+				if self.ogw.isObsolete(clazo):
+					warnings.warn("Obsolete class: %s"  %  d['shortFormID'] )
+				elif not new_label == d['label']:
+					update = "UPDATE owl_class set label='%s' WHERE shortFormID = '%s'" % (new_label, d['shortFormID'])
+					#print update
+					cursor2.execute(update)
+					#print cursor2.warnings
+			else:
+				warnings.warn("Unknown class: %s not in %s."  %  d['shortFormID'] )
+		self.conn.commit() # without this - no updates actually get actioned!
+		cursor1.close()
+		cursor2.close()
+		
+		
+	def add_owl_entity_2_db(self, shortFormId, typ):
+		"""typ must be one of: owl_class; owl_objectProperty"""
+		s = False
+		ont_name = re.match("(\s)\_.+")  # Will fail on UUIDs!
+		if typ == 'owl_objectProperty':
+			if self.ont.knowsObjectProperty(shortFormId):
+				s = True
+		elif typ == 'owl_class':
+			if self.ont.knowsClass(shortFormId):
+				s = True
 		else:
-			warnings.warn("Unknown class: %s not in %s."  %  (d['shortFormID'], ont_name) )
-	conn.commit() # without this - no updates actually get actioned!
-	cursor1.close()
-	cursor2.close()
+			warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
+			return False
+		if s:	
+			cursor = self.conn.cursor
+			cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
+                           "VALUES ('%s', '%s', %s)" % (typ, shortFormId, esc_quote(self.ont.getLabel(shortFormId)), ont_name))
+			cursor.close()
+			return True
+		else:
+			warnings.warn("Requested %s %s is not in the reference ontology!" % (typ, shortFormId))
+			return False
+		
+					
+	def _add_type(self, claz, objectProperty=False):
+		"""Add to DB - a simple class expression to be used in typing.
+		A simple class expression may be a single class(c), or class
+		 + objectProperty (op), interpreted as op some c"""
+		cursor = self.conn.cursor()
+		if objectProperty:
+			self.add_owl_entity_2_db(objectProperty, 'owl_objectProperty')
+		self.add_owl_entity_2_db(claz, 'owl_class')
+		cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
+	                   "SELECT id AS objectProperty, " \
+	                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
+	                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
+		self.conn.commit()
+		cursor.close()
 
-def update_class_labels_test(usr,pwd,file,fname):
-	conn = get_con(usr, pwd)
-	ont = Brain()
-	ont.learn(file)
-	update_class_labels(fname, ont, conn)
+
+	def add_akv_type(self, key, value, objectProperty, claz):
+		if not type_exists(objectProperty, claz, self.conn):
+			self._add_type(objectProperty, claz)
+		typ = type_exists(objectProperty, claz)
+		cursor = self.conn.cursor()
+		cursor.execute("INSERT IGNORE INTO annotation_type (annotation_key_value_id, owl_type_id) " \
+	                   "SELECT id AS annotation_key_value_id, '%s' AS owl_type_id " \
+	                   "FROM annotation_key_value " \
+	                   "WHERE annotation_class = '%s' " \
+	                   "AND annotation_text = '%s'" % (typ, key, value))
+		self.conn.commit()
+		cursor.close()
+		
+
+		
+def add_type(objectProperty, claz, conn):
+	cursor = conn.cursor()
+	cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
+                   "SELECT id AS objectProperty, " \
+                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
+                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
+	conn.commit()
+	cursor.close()
+		
+def add_ind_type(ind, objectProperty, claz, conn):
+	"""Adds ind """
+	cursor = conn.cursor()
+	if not type_exists(objectProperty, claz, conn):
+		add_type(objectProperty, claz, conn)
+	typ = type_exists(objectProperty, claz, conn)
+	cursor.execute("INSERT INTO individual_type (individual_id, type_id) SELECT oi.id AS individual_id, '%s' as type_id FROM owl_individual oi WHERE oi.shortFormID = '%s'" % (typ, ind))
+	conn.commit()
+	cursor.close()
+	
 
 def oe_check_db_and_add(sfid, typ, cursor, ont):
-	"""Takes, sfid, owl type, cursor and ontology as Brain object as args. Checks whether the sfid exists in the lmb owl_entity table, finds the appropriate base URI and then adds to ont. Returns true if the entity is in the table, flase if not."""
+	"""Takes, sfid, owl type, cursor and ontology as Brain object as args. 
+	Checks whether the sfid exists in the lmb owl_entity table, 
+	finds the appropriate base URI and then adds to ont. 
+	Returns true if the entity is in the table, False if not."""
 	if typ not in ['owl_class', 'owl_objectProperty']:
 		warnings.warn("Unknown owl type %s, please use owl_class or owl_objectProperty" % typ)
 	cursor.execute("SELECT o.baseURI bu FROM ontology o JOIN %s oe ON (oe.ontology_id=o.id) WHERE shortFormID = '%s'" % (typ,sfid))
@@ -138,37 +224,7 @@ def type_exists(objectProperty, claz, conn):
 	cursor.close()	
 	return typ
 
-def add_type(objectProperty, claz, conn):
-	cursor = conn.cursor()
-	cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
-                   "SELECT id AS objectProperty, " \
-                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
-                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (claz, objectProperty))
-	conn.commit()
-	cursor.close()
 
-def add_ind_type(ind, objectProperty, claz, conn):
-	"""Adds ind """
-	cursor = conn.cursor()
-	if not type_exists(objectProperty, claz, conn):
-		add_type(objectProperty, claz, conn)
-	typ = type_exists(objectProperty, claz, conn)
-	cursor.execute("INSERT INTO individual_type (individual_id, type_id) SELECT oi.id AS individual_id, '%s' as type_id FROM owl_individual oi WHERE oi.shortFormID = '%s'" % (typ, ind))
-	conn.commit()
-	cursor.close()
-	
-def add_akv_type(key, value, objectProperty, claz, conn):
-	if not type_exists(objectProperty, claz, conn):
-		add_type(objectProperty, claz, conn)
-	typ = type_exists(objectProperty, claz, conn)
-	cursor = conn.cursor()
-	cursor.execute("INSERT IGNORE INTO annotation_type (annotation_key_value_id, owl_type_id) " \
-                   "SELECT id AS annotation_key_value_id, '%s' AS owl_type_id " \
-                   "FROM annotation_key_value " \
-                   "WHERE annotation_class = '%s' " \
-                   "AND annotation_text = '%s'" % (typ, key, value))
-	conn.commit()
-	cursor.close()
 
 def add_ind_type_test(conn):
 	cursor = conn.cursor()
