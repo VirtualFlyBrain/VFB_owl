@@ -27,7 +27,7 @@ def gen_pdm_from_indfile(ont_url, outfile):
     
     for i in inds:
         axioms[i] = {}
-        axioms[i]["Types"] = typeAxioms2pdm("http://www.virtualflybrain.org/owl/" + i, onto)
+        axioms[i]["Types"] = typeAxioms2pdm("http://www.virtualflybrain.org/owl/" + i, onto) # Hard wired baseURI - should pass!
         axioms[i]["label"] = ont.getLabel(i)
         axioms[i]["def"] =  ont.getAnnotation(i, "IAO_0000115")
         
