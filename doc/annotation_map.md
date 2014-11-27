@@ -3,7 +3,8 @@
 | ALGlomerulus | D doublet | None | None | None | None |
 | ALGlomerulus | DA+ | None | None | None | None |
 | ALGlomerulus | DA1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DA1 | FBbt_00003932 |
-| ALGlomerulus | DA1+DL3 | None | None | None | None |
+| ALGlomerulus | DA1+DL3 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DA1 | FBbt_00003932 |
+| ALGlomerulus | DA1+DL3 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL3 | FBbt_00003964 |
 | ALGlomerulus | DA2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DA2 | FBbt_00003933 |
 | ALGlomerulus | DA4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DA4 | FBbt_00003935 |
 | ALGlomerulus | DC2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DC2 | FBbt_00003962 |
@@ -12,12 +13,14 @@
 | ALGlomerulus | DL2d | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL2d | FBbt_00100377 |
 | ALGlomerulus | DL2v | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL2v | FBbt_00100376 |
 | ALGlomerulus | DL2v+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL2v | FBbt_00100376 |
-| ALGlomerulus | DL2v+DM3+ | None | None | None | None |
+| ALGlomerulus | DL2v+DM3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL2v | FBbt_00100376 |
+| ALGlomerulus | DL2v+DM3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM3 | FBbt_00003972 |
 | ALGlomerulus | DL3 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL3 | FBbt_00003964 |
 | ALGlomerulus | DL4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DL4 | FBbt_00003965 |
 | ALGlomerulus | DM1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM1 | FBbt_00003975 |
 | ALGlomerulus | DM3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM3 | FBbt_00003972 |
-| ALGlomerulus | DM3+DP1l | None | None | None | None |
+| ALGlomerulus | DM3+DP1l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM3 | FBbt_00003972 |
+| ALGlomerulus | DM3+DP1l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DP1l | FBbt_00007098 |
 | ALGlomerulus | DM5 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM5 | FBbt_00003940 |
 | ALGlomerulus | DM6 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM6 | FBbt_00003941 |
 | ALGlomerulus | DP1l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DP1l | FBbt_00007098 |
@@ -26,15 +29,17 @@
 | ALGlomerulus | V | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus V | FBbt_00003951 |
 | ALGlomerulus | V+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus V | FBbt_00003951 |
 | ALGlomerulus | VA1d | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA1d | FBbt_00007101 |
-| ALGlomerulus | VA1d+VM5 | None | None | None | None |
+| ALGlomerulus | VA1d+VM5 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA1d | FBbt_00007101 |
+| ALGlomerulus | VA1d+VM5 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM5 | FBbt_00003949 |
 | ALGlomerulus | VA1lm | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA1v | FBbt_00007363 |
-| ALGlomerulus | VA1lm+ | None | None | None | None |
+| ALGlomerulus | VA1lm+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA1v | FBbt_00007363 |
 | ALGlomerulus | VA4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA4 | FBbt_00003944 |
 | ALGlomerulus | VA7m | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VA7m | FBbt_00007102 |
 | ALGlomerulus | VAsomething | None | None | None | None |
 | ALGlomerulus | VC2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC2 | FBbt_00003946 |
 | ALGlomerulus | VC3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC3 | FBbt_00003953 |
-| ALGlomerulus | VC3+VM4 | None | None | None | None |
+| ALGlomerulus | VC3+VM4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC3 | FBbt_00003953 |
+| ALGlomerulus | VC3+VM4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM4 | FBbt_00003957 |
 | ALGlomerulus | VC3l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC3l | FBbt_00007105 |
 | ALGlomerulus | VC3m | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC3m | FBbt_00007104 |
 | ALGlomerulus | VC4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC4 | FBbt_00007366 |
@@ -45,23 +50,28 @@
 | ALGlomerulus | VM1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM1 | FBbt_00003956 |
 | ALGlomerulus | VM2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM2 | FBbt_00003947 |
 | ALGlomerulus | VM3 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM3 | FBbt_00003948 |
-| ALGlomerulus | VM4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM2 | FBbt_00003947 |
-| ALGlomerulus | VM4+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM2 | FBbt_00003947 |
+| ALGlomerulus | VM4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM4 | FBbt_00003957 |
+| ALGlomerulus | VM4+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM4 | FBbt_00003957 |
 | ALGlomerulus | VM4+? | None | None | None | None |
-| ALGlomerulus | VM4+DM3+ | None | None | None | None |
+| ALGlomerulus | VM4+DM3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM4 | FBbt_00003957 |
+| ALGlomerulus | VM4+DM3+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus DM3 | FBbt_00003972 |
 | ALGlomerulus | VM5d | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM5d | FBbt_00007391 |
 | ALGlomerulus | VM5v | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM5v | FBbt_00007365 |
-| ALGlomerulus | VM5v+VC3l | None | None | None | None |
+| ALGlomerulus | VM5v+VC3l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM5v | FBbt_00007365 |
+| ALGlomerulus | VM5v+VC3l | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VC3l | FBbt_00007105 |
 | ALGlomerulus | VM6 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM6 | FBbt_00003958 |
 | ALGlomerulus | VM6+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM6 | FBbt_00003958 |
-| ALGlomerulus | VM6+VP1 | None | None | None | None |
-| ALGlomerulus | VM6+VP2 | None | None | None | None |
+| ALGlomerulus | VM6+VP1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM6 | FBbt_00003958 |
+| ALGlomerulus | VM6+VP1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP1 | FBbt_00003927 |
+| ALGlomerulus | VM6+VP2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM6 | FBbt_00003958 |
+| ALGlomerulus | VM6+VP2 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP2 | FBbt_00003928 |
 | ALGlomerulus | VM7 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VM7 | FBbt_00003973 |
 | ALGlomerulus | VP1 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP1 | FBbt_00003927 |
 | ALGlomerulus | VP1? | None | None | None | None |
 | ALGlomerulus | VP2+ | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP2 | FBbt_00003928 |
 | ALGlomerulus | VP3 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP3 | FBbt_00003929 |
-| ALGlomerulus | VP3+VP4 | None | None | None | None |
+| ALGlomerulus | VP3+VP4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP3 | FBbt_00003929 |
+| ALGlomerulus | VP3+VP4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP4 | FBbt_00110865 |
 | ALGlomerulus | VP3? | None | None | None | None |
 | ALGlomerulus | VP4 | has_postsynaptic_terminal_in | RO_0002110 | antennal lobe glomerulus VP4 | FBbt_00110865 |
 | ALGlomerulus | VP? | None | None | None | None |
