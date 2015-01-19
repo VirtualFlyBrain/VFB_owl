@@ -62,7 +62,7 @@ DL_QueriesByID['FBbt_00005106 that RO_0002113 some FBbt_00003624'] = "neuron tha
 DL_QueriesByID['FBbt_00005106 that RO_0002130 some FBbt_00003624'] = "neuron that has_postsynaptic_terminal_in some 'adult brain'"
 DL_QueriesByID['FBbt_00005106 that RO_0002110 some FBbt_00003624'] = "neuron that has_synaptic_terminal_in some 'adult brain'"
 DL_QueriesByID['FBbt_00005099 that RO_0002134 some FBbt_00003624'] = "neuron projection bundle' that innervates some 'adult brain'"
-DL_QueriesByID['FBbt_00007683 that RO_0002131 some FBbt_00003624'] = "'neuroablast lineage clone' that overlaps some 'adult brain'"
+DL_QueriesByID['FBbt_00007683 that RO_0002131 some FBbt_00003624'] = "'neuroblast lineage clone' that overlaps some 'adult brain'"
 DL_QueriesByID['FBbt_00005106 that RO_0002101 some FBbt_00005099'] = "neuron that fasciculates_with some 'neuron projection bundle'"
 DL_QueriesByID['FBbt_00005106 that BFO_0000050 some FBbt_00007683'] = "neuron that part_of some 'neuroblast lineage clone'"
 
