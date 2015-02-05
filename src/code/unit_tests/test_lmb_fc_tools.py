@@ -22,6 +22,8 @@ def __main__():
     
 class test_suite():
     
+    # Tests to add: add_owl_entity_2_db
+    
     
     def __init__(self, usr,pwd, ont_uri_list):
         self.conn = get_con(usr,pwd)
@@ -77,7 +79,9 @@ class test_suite():
         ID = ''
         for d in dc:
             ID = d['id']
-        self.cleanup_list.append("DELETE FROM annotation_key_value WHERE id = %s" % ID)
+        if not ID:
+            warnings.warn("Failed to add akv type.")
+        self.cleanup_list.append("DELETE FROM annotation_type WHERE id = %s" % ID)
         return ID
     
     def cleanup(self):
