@@ -9,6 +9,9 @@ from uk.ac.ebi.brain.core import Brain
 #from lmb_fc_tools import get_con
 from owl2pdm_tools import get_types_for_ind
 from owl2pdm_tools import simpleClassExpression
+from java.util import TreeSet
+from org.semanticweb.owlapi.model import AddAxiom
+
 #import time
 
 
@@ -87,35 +90,61 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	for d in dc:
 		for iID in ilist:	 
 			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
-			basic_def = def_roller(types, ont_dict)
-			full_def = "%s from %s (PMID:%s). " % (basic_def, d['pub_miniref'], str(d['pub_pmid']))
+			defn = def_roller(types, ont_dict)
+			# To add refs as annotation on def - remove from here.
+			# full_def = "%s from %s (PMID:%s). " % (basic_def, d['pub_miniref'], str(d['pub_pmid']))
 			if d['dtext']:
-				full_def += d['dtext']
-			vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
-			
+				defn += d['dtext']
+			# To add refs as annotation on def - need a new method for adding def annotation that also adds xref	
+			#vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
+			add_def_with_xrefs(vfb_ind, iID, defn, ["PMID:" + str(d['pub_pmid'])]) #  Ref type should not be hardwired!
+						
 	# Roll image individuals. Temporarily commented out.
-#	for iID in ind_id_type:
-#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
-	
+	#	for iID in ind_id_type:
+	#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
 	cursor.close()
-	#
 
-def roll_image_ind(ont, dataset, indLabel, indId):
-	"""STUB"""
+def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
+	man = ont.manager
+	dataFactory = ont.factory
+	onto = ont.getOntology()
 	
-	# This can't work without a reliable ID scheme for individuals!
-	# Ugly - can ditch once this is rationalised.
-	dataset_name_mappings = {'Jenett2012': 'Janelia2012', 'Cachero2010' : '', 
-							'Chiang2010' : 'FlyCircuit', 'Yu2013': '', 'Ito2013' : '' }	
-	dataset_name = dataset_name_mappings[dataset]
+	#First build the individual axioms
 	
-	baseURI = "http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/%s/Thumbs/" % dataset_name
-	vfbIndBase = "http://www.virtualflybrain.org/owl/" # Don't like having paths in here.  Needs to come from DB.
-	image_ind =  indLabel + ".png"
-	ont.addNamedIndividual(baseURI + image_ind)
-	ont.type('image', image_ind)
-	ont.addNamedIndividual(vfbIndBase + indId)
-	ont.objectPropertyAssertion(image_ind, 'depicts',  indId)
+	### Get APs
+	
+	defn_ap = ont.getOWLAnnotationProperty('IAO_0000115') # Definition
+	xref_ap = ont.getOWLAnnotationProperty('hasDbXref') # Check that this shortform works.
+	
+	xref_an_axioms = TreeSet()  # Is there a way to specify the type of object store from a Jython call?
+	
+	# Then roll annotations
+	
+	# Java: 
+	# OWLAnnotation getOWLAnnotation(OWLAnnotationProperty property, OWLAnnotationValue value)
+	for xref in xrefs:
+		val = dataFactory.getOWLLiteral(xref)
+		annotation_axiom = dataFactory.getOWLAnnotation(xref_ap, val) 
+		xref_an_axioms.add(annotation_axiom)
+		
+	defn_value = dataFactory.getOWLLiteral(def_text)
+	def_a = dataFactory.getOWLAnnotation(defn_ap, defn_value)
+	
+	# Java:
+	#OWLAxiom axiom = this.factory.getOWLAnnotationAssertionAxiom(owlEntity.getIRI(), labelAnnotation);
+
+	# Hook def up to individual:
+
+	ind = ont.getOWLNamedIndividual(entity_sfid) 
+	defax =  dataFactory.getOWLAnnotationAssertionAxiom(ind.getIRI(), def_a)
+	# Hook def_dbxref axioms to def
+	# OWLAxiom getAnnotatedAxiom(java.util.Set<OWLAnnotation> annotations)
+	defax_an = defax.getAnnotatedAxiom(xref_an_axioms)
+	
+	#AddAxiom addAx = new AddAxiom(this.ontology, owlAxiom);
+	#this.manager.applyChange(addAx);
+	ax = AddAxiom(onto, defax_an)
+	man.applyChange(ax)
 			
 def def_roller(types, ont_dict):  #
 	"""Takes 2 args. ARG1: a list of simple owl class expression objects (soce) as an arg. 
@@ -181,7 +210,22 @@ def def_roller(types, ont_dict):  #
 
 
 	
-
+def roll_image_ind(ont, dataset, indLabel, indId):
+	"""STUB"""
+	
+	# This can't work without a reliable ID scheme for individuals!
+	# Ugly mapping - can ditch once this is rationalised.
+	dataset_name_mappings = {'Jenett2012': 'Janelia2012', 'Cachero2010' : '', 
+							'Chiang2010' : 'FlyCircuit', 'Yu2013': '', 'Ito2013' : '' }	
+	dataset_name = dataset_name_mappings[dataset]
+	
+	baseURI = "http://www.virtualflybrain.org/data/thirdparty/THIRD_PARTY_INTEGRATION/%s/Thumbs/" % dataset_name
+	vfbIndBase = "http://www.virtualflybrain.org/owl/" # Don't like having paths in here.  Needs to come from DB.
+	image_ind =  indLabel + ".png"
+	ont.addNamedIndividual(baseURI + image_ind)
+	ont.type('image', image_ind)
+	ont.addNamedIndividual(vfbIndBase + indId)
+	ont.objectPropertyAssertion(image_ind, 'depicts',  indId)
 
 			
 		
