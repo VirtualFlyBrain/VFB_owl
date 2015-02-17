@@ -12,14 +12,14 @@ ALGlomerulus	DL1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulu
 ALGlomerulus	DL2d	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2d	FBbt_00100377
 ALGlomerulus	DL2v	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
 ALGlomerulus	DL2v+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
-ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
+ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DL3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL3	FBbt_00003964
 ALGlomerulus	DL4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL4	FBbt_00003965
 ALGlomerulus	DM1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM1	FBbt_00003975
 ALGlomerulus	DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
-ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
+ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DM5	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM5	FBbt_00003940
 ALGlomerulus	DM6	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM6	FBbt_00003941
 ALGlomerulus	DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
@@ -49,11 +49,13 @@ ALGlomerulus	VL2p	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerul
 ALGlomerulus	VM1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM1	FBbt_00003956
 ALGlomerulus	VM2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM3	FBbt_00003948
+ALGlomerulus	VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
+ALGlomerulus	VM4+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM4+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
 ALGlomerulus	VM4+?	None	None	None	None
-ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
 ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
+ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
 ALGlomerulus	VM5d	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5d	FBbt_00007391
 ALGlomerulus	VM5v	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5v	FBbt_00007365
 ALGlomerulus	VM5v+VC3l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5v	FBbt_00007365
@@ -110,7 +112,7 @@ NeuronType	adult fruitless aDT-b (female) neuron	null_hack	0	adult fruitless aDT
 NeuronType	adult fruitless aDT-b (male) neuron	null_hack	0	adult fruitless aDT-b (male) neuron	FBbt_00110579
 NeuronType	adult fruitless pMP-e (female) neuron	null_hack	0	adult fruitless pMP-e (female) neuron	FBbt_00110507
 NeuronType	adult fruitless pMP-e (male) neuron	null_hack	0	adult fruitless pMP-e (male) neuron	FBbt_00110621
-NeuronType	AL Descending Neuron	None	0	None	None
+NeuronType	AL Descending Neuron	None	None	None	None
 NeuronType	alpha'/beta' Kenyon cell	null_hack	0	alpha'/beta' Kenyon cell	FBbt_00100249
 NeuronType	alpha/beta Kenyon cell	null_hack	0	alpha/beta Kenyon cell	FBbt_00100248
 NeuronType	AMMC LN	null_hack	0	antennal mechanosensory and motor center local AMMC neuron	FBbt_00110873
@@ -123,6 +125,7 @@ NeuronType	AMMC-VLP PN	null_hack	0	antennal mechanosensory and motor center AMMC
 NeuronType	AMMC-VNC PN	null_hack	0	antennal mechanosensory and motor center AMMC-VNC projection neuron	FBbt_00110631
 NeuronType	bilateral PN	None	None	None	None
 NeuronType	contra adPN	develops from	RO_0002202	neuroblast ALad1	FBbt_00067346
+NeuronType	contra adPN	null_hack	0	neuroblast ALad1	FBbt_00067346
 NeuronType	contra PN	None	None	None	None
 NeuronType	ContraProjAcrossALs	None	None	None	None
 NeuronType	descending neuron	None	None	None	None
