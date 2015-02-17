@@ -24,8 +24,8 @@ def esc_quote(s):
 	return re.sub("\'", "\\'", s)
 
 def get_con(usr, pwd):
-	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
-#	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
+#	conn = zxJDBC.connect("jdbc:mysql://localhost/flycircuit",usr, pwd, "org.gjt.mm.mysql.Driver") # Use for local installation
+	conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", usr, pwd, "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 	return conn
 
 
@@ -97,7 +97,8 @@ class owlDbOnt():
 		
 		## Notes: In order to add to DB, ontology name is needed.
 		s = False
-		ont_name = re.match("(\s)\_.+", shortFormId)  # Will fail on UUIDs!
+		mung = re.match("(\w+)\_.+", shortFormId)  # Will fail on UUIDs!
+		ont_name = mung.group(1).lower()
 		if typ == 'owl_objectProperty':
 			if self.ont.knowsObjectProperty(shortFormId):
 				s = True
@@ -108,9 +109,9 @@ class owlDbOnt():
 			warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
 			return False
 		if s:	
-			cursor = self.conn.cursor
+			cursor = self.conn.cursor()
 			cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
-                           "VALUES ('%s', '%s', %s)" % (typ, shortFormId, esc_quote(self.ont.getLabel(shortFormId)), ont_name))
+                           "VALUES ('%s', '%s', (SELECT id FROM ontology WHERE short_name = '%s'))" % (typ, shortFormId, esc_quote(self.ont.getLabel(shortFormId)), ont_name))
 			cursor.close()
 			return True
 		else:
@@ -134,10 +135,10 @@ class owlDbOnt():
 
 	def add_akv_type(self, key, value, objectProperty, claz):
 		if not self.type_exists(objectProperty, claz):
-			self._add_type(objectProperty, claz)
+			self._add_type(claz, objectProperty)
 		typ = self.type_exists(objectProperty, claz)
 		cursor = self.conn.cursor()
-		cursor.execute("INSERT INTO annotation_type (annotation_key_value_id, owl_type_id) " \
+		cursor.execute("INSERT IGNORE INTO annotation_type (annotation_key_value_id, owl_type_id) " \
 	                   "SELECT id AS annotation_key_value_id, '%s' AS owl_type_id " \
 	                   "FROM annotation_key_value " \
 	                   "WHERE annotation_class = '%s' " \
