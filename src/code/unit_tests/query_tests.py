@@ -21,12 +21,12 @@ class Query:
     Methods:
         qtest - 
     """  
-    def __init__(self, query_labels, query_ids, query_text, description ,i, s):  
+    def __init__(self, query_labels, query_ids, query_text, description ,i = False, s = True):  
         self.query_by_label = '' # DL query with labels (for reference)
-        self.query_text = ''  # Dexcriptive text for web-page / doc.
+        self.query_text = ''  # Descriptive text for web-page / doc.
         self.description = ''  # Why is this test being run?
-        self.i = False # Should it have instances? - Default = False
-        self.s = True  # should it have subclasses? - Default = True
+        self.i = i # Should it have instances? - Default = False
+        self.s = s  # should it have subclasses? - Default = True
         
     def qtest(self, ont):
         qstat = 1

@@ -29,4 +29,4 @@ owltools $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`
 # # assert inferences and strip out redundancy  # This 
 echo ''
 echo "*** Asserting inferences and striping redundancy ***"
-owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.
+owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o -f ofn fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.

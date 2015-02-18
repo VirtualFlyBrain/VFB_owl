@@ -7,12 +7,18 @@ import re
 
 # DONE: Check relationship of tree node IDs to stack IDs.
 # There is no relationship.  treeContent.jso stores links the node and stack (label field) IDs.  As far as I can tell, arbitrary assignment of node IDs is possible. They  seem to be in order in the tree, but it seems very unlikely that this is important.
- 
+
 # TODO - split out functions requiring Brain?
 
-# Potential major refactoring - use object orientation to abstract out tree crawling from operations on/with tree content.  The challenge will be developing a system for managing (arbitrary numbers of) additional arguments to be passed on tail recursion.
+# Potential major refactoring - use object orientation to abstract out tree crawling 
+# from operations on/with tree content.  The challenge will be developing a system for 
+# managing (arbitrary numbers of) additional arguments to be passed on tail recursion.
 
-"""A set of functions for operating on the JSON files that define trees on VFB.  Note that - after every tree structure manipulation it is essential to re-serialise nodeId numbering and ordering in the treeStructure, treeContent file pair using the function update_node_IDs().  Without this, the javascript on VFB will barf on the files."""
+"""A set of functions for operating on the JSON files that define trees on VFB.
+  Note that - after every tree structure manipulation it is essential to re-serialise 
+  nodeId numbering and ordering in the treeStructure, treeContent file pair using the
+  function update_node_IDs().  Without this, the javascript on VFB will barf on the files.
+  """
 
 
 # Tree structure for ref. 
@@ -58,7 +64,8 @@ def update_names(treeContent, fbbt):
 		node['name'] = fbbt.getLabel(shortFormID)
 
 def update_centres(treeContent, domainId_centre):
-	"""Modified a treeContent JSON (1st arg) by substituting domain centres specified as a list in a dict (2nd arg) keyed on domainId"""
+	"""Modified a treeContent JSON (1st arg) by substituting domain centres 
+	specified in a dict (2nd arg) keyed on domainId"""
 	for node in treeContent:
 		if 'domainData' in node:
 			if 'domainId' in node['domainData']:
@@ -67,8 +74,8 @@ def update_centres(treeContent, domainId_centre):
 					node['domainData']['domainCentre']= domainId_centre[domId]
 
 def serialise_json_file(path):
-	json_var = load_json(path)
-	write_json(path)
+    json_var = load_json(path)
+    write_json(path)
 
 def blank_tree_node_no_dom():
 	return {u'extId': [], u'nodeId': u'', u'nodeState': {u'open': u'false', u'selected': u'false'}, u'domainData': {u'domainSelected': u'false'}, u'name': u''}
@@ -78,7 +85,9 @@ def blank_tree_node_with_dom():
 	
 
 def add_leaf(nodeId, tree, parent_nodeId):
-	"""Adds a leaf node with specified nodeID (arg[0]) to a VFB  JSON treeStructure specified in arg[1] under parent with parent_nodeId specified in arg[2] """
+	"""Adds a leaf node with specified nodeID (arg[0]) to a VFB  
+	JSON treeStructure specified in arg[1] under parent with 
+	parent_nodeId specified in arg[2] """
 	for v in tree.values():
 		if (v['nodeId'] == parent_nodeId):
 			if 'children' in v:
@@ -99,7 +108,9 @@ def add_leaf_by_name(treeContent, treeStructure, parent, child):
 	add_leaf(name_nodeId[child], treeStructure, name_nodeId[parent])
 
 def find_and_return_subtree(nodeId, tree, subtree_out = '', address = []):
-	"""Returns a subtree starting from a specified node.  Should also return an address for that subtree that could be used to specify it for deletion. But so far this does not work."""
+	"""Returns a subtree starting from a specified node.  
+	Should also return an address for that subtree that 
+	could be used to specify it for deletion. But so far this does not work."""
 	# The difficulty here is the snipping bit.  If I can get it to store an adress, then it will work with single inheritance.  Looks like this adress will need to be rolled as it goes.
 	if not subtree_out:
 		for k, v in tree.items():
@@ -183,7 +194,8 @@ def roll_readable_tree_by_name(treeContent, treeStructure):
 	roll_readable_tree(nodeId_name, treeStructure)
 
 def treeStruc_order_rep(treeStructure, outfile):
-	"""Writes a list of nodeId\toboID to a file specified by outfile. The order of the list corresponds to the order of nodes in the tree"""
+	"""Writes a list of nodeId\toboID to a file specified by outfile. 
+	The order of the list corresponds to the order of nodes in the tree"""
 	for v in treeStructure.values():
 		ID = v['nodeId']
 		outfile.write(ID + "\n")
@@ -192,7 +204,8 @@ def treeStruc_order_rep(treeStructure, outfile):
 				treeStruc_order_rep(subtree, outfile)
 
 def update_node_IDs(treeContent, treeStructure):
-	""" Order the treeContent array by the order of nodes in treeStructure. This is needed because of the borderline insane javascript tree parser we run on VFB """
+	""" Order the treeContent array by the order of nodes in treeStructure. 
+	This is needed because of the borderline insane javascript tree parser we run on VFB """
 	# Make tmp file with list of nodes in treeStructure order.
 	outfile = open("array.tmp", "w")
 	treeStruc_order_rep(treeStructure, outfile)
@@ -257,21 +270,6 @@ def update_ts_nodeIds(treeStructure, oldNodeId_new_Node_id):
 	
 		
 	
-	
-	
-
-        
-
-
-
-
-
-
-
-
-
-
-
 
     
 

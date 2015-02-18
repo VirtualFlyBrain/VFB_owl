@@ -16,10 +16,11 @@ import re
 
 ## - Could simply use OWLtools GraphWrapper to find relevant axioms.  Then use Brain to add them to the individual.
 
-
+### Do we really need the ontology owltools OGW for this!?
 def migrate_axioms_to_ind(cogw, classId, ind, indId):
     # Check that ind really is member of class 
-    owlClass = cogw.getOWLClassByIdentifier(classId) # Seems to want an OBO ID!  # Really need to get around this - ask Chris & Heiko
+    owlClass = cogw.getOWLClassByIdentifier(classId) # Seems to want an OBO ID!  
+    # Really need to get around this - ask Chris & Heiko. Or dump owltools altogether!
     edges = cogw.getOutgoingEdges(owlClass)
     for edge in edges:
         property_list = edge.getQuantifiedPropertyList()

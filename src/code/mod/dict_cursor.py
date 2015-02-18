@@ -1,9 +1,10 @@
 #!/usr/bin/env jython
-import sys
 from com.ziclix.python.sql import zxJDBC # DB connection
 
 def dict_cursor(cursor):
-	description = [x[0] for x in cursor.description] # iterate over rows in cursor.description, pulling first element
+	"""Takes cursor as an input, following execution of a query, returns results as a list of dicts"""
+	# iterate over rows in cursor.description, pulling first element
+	description = [x[0] for x in cursor.description] 
 	l = []
 	for row in cursor: # iterate over rows in cursor
 		d = dict(zip(description, row))
@@ -11,7 +12,7 @@ def dict_cursor(cursor):
 		l.append(d)
 	return l
 
-        
+
 # def dict_cursor2(cursor):
 #     description = [x[0] for x in cursor.description]
 # 	dout = ()

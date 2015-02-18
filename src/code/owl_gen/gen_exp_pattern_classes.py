@@ -45,7 +45,7 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 	
 	dc = dict_cursor(cursor)
 	ID = ''
-	start = time.time() # for debugging slowness
+	#start = time.time() # for debugging slowness
 	for d in dc:
 		# Add class declaration for transgene if not already declared
 		if not expPat.knowsClass(d['transgene_uniquename']):
@@ -58,41 +58,43 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 		elif len(ec_list) == 1:
 			ID = ec_list[0]
 		else:
-			print "Time to populate class for expression pattern of %s: %s" % (d['transgene_name'],  time.time() - start) # for debugging slowness
-			start = time.time()
+#			print "Time to populate class for expression pattern of %s: %s" % (d['transgene_name'],  time.time() - start) # for debugging slowness
+#			start = time.time()
 			ID = str(uuid.uuid1())
 			expPat.addClass(ID)      
 			expPat.label(ID, "%s expression pattern in the adult brain" % d['transgene_name'])
-			expPat.equivalentClasses(id, ec_exp) 
-        # Add class declaration for anatomical structure, if not already declared.	
+			expPat.equivalentClasses(ID, ec_exp) 
+		# Add class declaration for anatomical structure, if not already declared.	
 		if not expPat.knowsClass("FBbt_" + d['accession']):
 			expPat.addClass(obo_base + "FBbt_" + d['accession'])
 		# Assert overlap of expression pattern to anatomical structure	  
-		if id:
-			expPat.subClassOf(id, ("RO_0002131 some %s" % ("FBbt_" + d['accession']))) # overlaps some blah
-        
+		if ID:
+			expPat.subClassOf(ID, "RO_0002131 some %s" % "FBbt_" + d['accession']) # overlaps some blah
+
 	expPat.save("../../owl/expression_pattern_classes.owl")
 	fbbt.sleep()
 	fb_feat.sleep()
 	expPat.sleep()
 
-  
+
 # Connect to chado
 
 # Requires Edinburgh server access
 
 conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+#conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" , sys.argv[1], sys.argv[2], "org.postgresql.Driver") # Use for local installation
+
 cursor = conn.cursor()
 
 def download2Brain(baseURL, filename):
-   # Downloading directly avoids intermittent timeout problems experienced with direct downloading
-   ont_file = open(filename, "w")
-   ont_url_handle = urllib2.urlopen(baseURL + filename)
-   ont_download = ont_url_handle.read()
-   ont_file.write(ont_download)
-   ont = Brain()
-   ont.learn("file://" + os.getcwd() + "/" + filename)
-   return ont
+	# Downloading directly avoids intermittent timeout problems experienced with direct downloading
+	ont_file = open(filename, "w")
+	ont_url_handle = urllib2.urlopen(baseURL + filename)
+	ont_download = ont_url_handle.read()
+	ont_file.write(ont_download)
+	ont = Brain()
+	ont.learn("file://" + os.getcwd() + "/" + filename)
+	return ont
 
 expPat = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
 expPat.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6") #  sfid for expression pattern.
@@ -111,4 +113,3 @@ FBrf = 'FBrf0219498' # Janelia expression patterns
 
 expression_annotation_to_owl(cursor, ont_dict, FBrf)
 
-	
