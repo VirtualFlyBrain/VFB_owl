@@ -32,7 +32,7 @@ dc = dict_cursor(cursor)
 # For now, making tsv and md varieties.  May ditch md.
 
 FH = open("annotation_map.md", 'w')
-FTSV = open("annotation_map.tsv", 'w')
+FTSV = open("annotation_map_report.tsv", 'w')
 FH.write("| a.annotation_type | a.text | op_label | op_id | class_label | class_id |\n|---|---|---|---|---|---|\n")
 FTSV.write("\t".join(['a.annotation_type', 'a.text','op_label','op_id','class_label','class_id']) +"\n")
 for d in dc:
