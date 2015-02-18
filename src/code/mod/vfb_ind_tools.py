@@ -108,39 +108,28 @@ def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
 	man = ont.manager
 	dataFactory = ont.factory
 	onto = ont.getOntology()
-	
 	#First build the individual axioms
-	
 	### Get APs
-	
 	defn_ap = ont.getOWLAnnotationProperty('IAO_0000115') # Definition
 	xref_ap = ont.getOWLAnnotationProperty('hasDbXref') # Check that this shortform works.
-	
-	xref_an_axioms = TreeSet()  # Is there a way to specify the type of object store from a Jython call?
-	
-	# Then roll annotations
-	
-	# Java: 
+	# Then roll annotations	
 	# OWLAnnotation getOWLAnnotation(OWLAnnotationProperty property, OWLAnnotationValue value)
+	xref_an_axioms = TreeSet()  # Is there a way to specify the type of object store from a Jython call?
 	for xref in xrefs:
 		val = dataFactory.getOWLLiteral(xref)
 		annotation_axiom = dataFactory.getOWLAnnotation(xref_ap, val) 
-		xref_an_axioms.add(annotation_axiom)
-		
+		xref_an_axioms.add(annotation_axiom)		
 	defn_value = dataFactory.getOWLLiteral(def_text)
 	def_a = dataFactory.getOWLAnnotation(defn_ap, defn_value)
 	
-	# Java:
-	#OWLAxiom axiom = this.factory.getOWLAnnotationAssertionAxiom(owlEntity.getIRI(), labelAnnotation);
-
 	# Hook def up to individual:
-
+	#OWLAxiom axiom = this.factory.getOWLAnnotationAssertionAxiom(owlEntity.getIRI(), labelAnnotation);
 	ind = ont.getOWLNamedIndividual(entity_sfid) 
 	defax =  dataFactory.getOWLAnnotationAssertionAxiom(ind.getIRI(), def_a)
 	# Hook def_dbxref axioms to def
 	# OWLAxiom getAnnotatedAxiom(java.util.Set<OWLAnnotation> annotations)
-	defax_an = defax.getAnnotatedAxiom(xref_an_axioms)
 	
+	defax_an = defax.getAnnotatedAxiom(xref_an_axioms)
 	#AddAxiom addAx = new AddAxiom(this.ontology, owlAxiom);
 	#this.manager.applyChange(addAx);
 	ax = AddAxiom(onto, defax_an)
