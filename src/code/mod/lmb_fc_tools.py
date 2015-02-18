@@ -39,7 +39,8 @@ class owlDbOnt():
 	# Efficient addition means that it should be possible to add a type statement to an individual
 	# even if the type statement, nor its constituent object properties or classes are currently in the DB.
 	# Safety? Rather than checking, we use INSERT IGNORE + table constraints to avoid duplications in the DB.
-	
+	# TODO - come up with a clean way to hide the ugly-ness of this null hack business!
+	# Make sure argument order & naming is standardised for all methods
 	
 	
 	def __init__(self, conn, ont):
@@ -51,7 +52,7 @@ class owlDbOnt():
 		self.onto = ont.getOntology()
 		self.ogw = OWLGraphWrapper(self.onto)
 		self.ind_IdName = self._gen_ind_dict()
-		self.ID_range_start = 0  # ID number to start from when generating new IDs.
+		self.ID_range_start = 1  # ID number to start from when generating new IDs.
 		
 	def update_akv(self):
 		cursor = self.conn.cursor()
@@ -96,7 +97,11 @@ class owlDbOnt():
 		will be assumed - derived from the shortFormId. e.g. FBbt_00000100 => fbbt."""
 		
 		## Notes: In order to add to DB, ontology name is needed.
+		
+		# Null hack workaround!
 		s = False
+		if shortFormId == '0':
+			return True
 		mung = re.match("(\w+)\_.+", shortFormId)  # Will fail on UUIDs!
 		ont_name = mung.group(1).lower()
 		if typ == 'owl_objectProperty':
@@ -118,12 +123,13 @@ class owlDbOnt():
 			warnings.warn("Requested %s %s is not in the reference ontology!" % (typ, shortFormId))
 			return False
 							
-	def _add_type(self, OWLclass, objectProperty=False):
+	def _add_type(self, OWLclass, objectProperty='0'):
 		"""Add to DB - a simple class expression to be used in typing.
 		A simple class expression may be a single class(c), or class
 		 + objectProperty (op), interpreted as op some c"""
 		cursor = self.conn.cursor()
-		if objectProperty:
+		# Null hack!
+		if not objectProperty == '0':  
 			self.add_owl_entity_2_db(objectProperty, 'owl_objectProperty')
 		self.add_owl_entity_2_db(OWLclass, 'owl_class')
 		cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
@@ -133,10 +139,11 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 
-	def add_akv_type(self, key, value, objectProperty, claz):
-		if not self.type_exists(objectProperty, claz):
-			self._add_type(claz, objectProperty)
-		typ = self.type_exists(objectProperty, claz)
+	def add_akv_type(self, key, value, OWLclass, objectProperty='0'):
+		self.update_akv()
+		if not self.type_exists(objectProperty, OWLclass):
+			self._add_type(OWLclass, objectProperty)
+		typ = self.type_exists(OWLclass, objectProperty)
 		cursor = self.conn.cursor()
 		cursor.execute("INSERT IGNORE INTO annotation_type (annotation_key_value_id, owl_type_id) " \
 	                   "SELECT id AS annotation_key_value_id, '%s' AS owl_type_id " \
@@ -146,12 +153,14 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 		
-	def add_ind_type(self, ind, objectProperty, claz):
-		"""Adds ind """
+	def add_ind_type(self, ind, OWLclass, objectProperty='0'):
+		"""Adds a type statement to an individual.  
+		If only class is specified, then a named class type is specified,
+		otherwise the type is a class expression of the form op some c."""
 		cursor = self.conn.cursor()
-		if not self.type_exists(objectProperty, claz):
-			self._add_type(objectProperty, claz)
-		typ = self.type_exists(objectProperty, claz)
+		if not self.type_exists(OWLclass, objectProperty):
+			self._add_type(OWLclass, objectProperty)
+		typ = self.type_exists(OWLclass, objectProperty)
 		cursor.execute("INSERT IGNORE INTO individual_type (individual_id, type_id) " \
 					 "SELECT oi.id AS individual_id, '%s' AS type_id FROM owl_individual oi " \
 					 " WHERE oi.shortFormID = '%s'" % (typ, ind))
@@ -170,15 +179,19 @@ class owlDbOnt():
 		return id_name
 		cursor.close()
 
-	def add_ind(self, name, source):
+	def add_ind(self, name, source, ID_range_start = 0):
 		"""Add an individual to the DB
 		name = name of individual (string)
 		source = short source name in data_source table.
+		Optionally specify a start for ID range scanning 
+		(otherwise defaults to self.ID_range_start).
 		"""
+		if ID_range_start:
+			self.ID_range_start = ID_range_start
 		cursor = self.conn.cursor()
 		(vfbid, self.ID_range_start) = gen_id('VFB', self.ID_range_start, 8, self.ind_IdName)
 		self.ind_IdName[vfbid] = name
-		cursor.execute("INSERT INTO owl_individual (shortFormID, uuid, label, source_id) " \
+		cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id) " \
 						"VALUES ('%s', UUID(), '%s', "
 						"(SELECT id as source_id from data_source where name = '%s'))" 
 						% (vfbid, name, source))
@@ -192,21 +205,36 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 				
-	def type_exists(self, objectProperty, claz):
+	def type_exists(self, OWLclass, objectProperty = '0'):
 		"""Checks whether a type statement exist, if it does, returns the typestatement id, 
 		if not, returns FLASE."""
 		# Note - may not be needed if already using INSERT IGNORE.
 		cursor = self.conn.cursor()
 		cursor.execute("SELECT ot.id FROM owl_type ot JOIN owl_objectProperty op ON (op.id=ot.objectProperty) " \
-                   "JOIN owl_class oc ON (oc.id = ot.class) WHERE oc.shortFormID = '%s' AND op.shortFormID = '%s'" % (claz, objectProperty))
+                   "JOIN owl_class oc ON (oc.id = ot.class) WHERE oc.shortFormID = '%s' AND op.shortFormID = '%s'" %
+                    (OWLclass, objectProperty))
 		dc = dict_cursor(cursor)
 		typ = ''
 		for d in dc:
 			typ = d['id']
 		cursor.close()	
 		return typ
+	
+	def ind_type_report(self, ind):
+		cursor = self.conn.cursor()
+		cursor.execute("SELECT oi.label as ind, op.label as rel, oc.label as claz FROM owl_type ot " \
+						"JOIN individual_type it ON (ot.id=it.type_id) " \
+						"JOIN owl_individual oi ON (oi.id = it.individual_id) " \
+						"JOIN owl_objectProperty op ON (op.id = ot.objectProperty) " \
+						"JOIN owl_class oc ON (oc.id = ot.class) " \
+						"WHERE oi.shortFormId = '%s'" % ind)
+		dc = dict_cursor(cursor)
+		out = ''
+		for d in dc:
+			out += '%s\t%s\t%s' % (d['ind'], d['rel'], d['claz'])
+		return out
 
-		
+
 # def add_type(objectProperty, claz, conn):
 # 	cursor = conn.cursor()
 # 	cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
