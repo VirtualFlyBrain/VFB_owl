@@ -18,7 +18,9 @@ import warnings
 
 def __main__():
     test = test_suite(sys.argv[1], sys.argv[2], sys.argv[3:])
-    return test.run_tests()
+    out = test.run_tests()
+    test.ont.sleep()
+    return out
     
 class test_suite():
     
@@ -58,8 +60,8 @@ class test_suite():
         cursor.close()
         # add ind_type_test
         if iid:
-            self.od.add_ind_type(iid, 'BFO_0000050', 'FBbt_00003624')
-            typ = self.od.type_exists('BFO_0000050', 'FBbt_00003624')
+            self.od.add_ind_type(iid, 'FBbt_00003624', 'BFO_0000050')
+            typ = self.od.type_exists('FBbt_00003624', 'BFO_0000050')
             stat = False
             if not typ: 
                 warnings.warn("Failed to create test type statement")
@@ -70,7 +72,7 @@ class test_suite():
         return stat
                 
     def add_akv_type_test(self):
-        self.od.add_akv_type('process', 'note', 'BFO_0000050', 'FBbt_00003624')
+        self.od.add_akv_type('process', 'note','FBbt_00003624', 'BFO_0000050')
         cursor = self.conn.cursor()
         cursor.execute("SELECT at.id FROM annotation_type at " \
                        "JOIN annotation_key_value akv ON (akv.id = at.annotation_key_value_id) " \

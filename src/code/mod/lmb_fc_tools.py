@@ -56,9 +56,9 @@ class owlDbOnt():
 		
 	def update_akv(self):
 		cursor = self.conn.cursor()
-		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " /
+		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
 						"SELECT DISTINCT annotation_class, text from annotation")
-		cursor.commit()
+		self.conn.commit()
 		cursor.close()
 				
 	def __str__(self):
