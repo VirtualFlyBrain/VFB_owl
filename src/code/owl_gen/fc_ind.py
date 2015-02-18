@@ -33,6 +33,20 @@ in the LMB VFB mysql DB.
 
 # TODO: refactoring needed to cope with changes to DB schema - specifically, use of type table for annotations
 
+# TODO - filter out bad registrations: 
+## select Name from neuron where idid NOT IN (select neuron_idid from annotation where annotation_class='process' AND text='v3bad')
+
+def gen_bad_reg_list(cursor):
+	"""Returns a list of idids corresponding to badly registered flycircuit"""
+	cursor.execute("SELECT neuron_idid FROM annotation WHERE annotation_class='process' AND text='v3bad'")
+	dc = dict_cursor(cursor)
+	out = [] 
+	for d in dc:
+		out.append(d['neuron_idid'])
+	return out
+
+
+
 def add_manual_ann(cursor, vfb_ind):
 	"""Function to add manual typing assertions to vfb individuals."""
 	
