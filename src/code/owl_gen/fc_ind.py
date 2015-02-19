@@ -121,7 +121,7 @@ def add_clusters(cursor, vfb_ind):
 
 	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
 	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
-	oe_check_db_and_add('87466F00-CCBA-4632-820E-F619FF3AA087', 'owl_objectProperty', cursor, vfb_ind)
+	oe_check_db_and_add('C888C3DB-AEFA-447F-BD4C-858DFE33DBE7', 'owl_objectProperty', cursor, vfb_ind)
 	oe_check_db_and_add('VFB_10000005', 'owl_class', cursor, vfb_ind)
 
 	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
