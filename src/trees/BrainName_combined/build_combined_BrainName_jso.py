@@ -31,7 +31,6 @@ i = max(D_nodeIds) + 1
 
 
 for r in ttc_tab.tab:
-    r['domainID'] = str(int(r['domainID']) + 300) # Bump up domain id before adding
     # if domain is mapped
     if r['oboId']:
         # if not already in tree - append to end
@@ -47,4 +46,3 @@ roll_readable_tree(idn, dts)
 
 write_json(json_var = dtc, path = "json/treeContent.jso")
 write_json(json_var = dts, path = "json/treeStructure.jso")
-ttc_tab.save_tab()
