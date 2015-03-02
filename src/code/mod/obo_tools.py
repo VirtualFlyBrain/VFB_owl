@@ -12,10 +12,10 @@ def addOboAnnotationProperties(brain):
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref")
-    return brain
 
 def addVFBAnnotationProperties(brain):
     brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005") # data_source_link
+    
 
 
 def gen_id(idp, ID, length, id_name):

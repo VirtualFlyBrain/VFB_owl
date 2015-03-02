@@ -40,7 +40,6 @@ cursor.close()
 
 vfb_ind = Brain(baseURI, baseURI + dataset + ".owl")
 vfb_image = Brain()  # Not specifying base as there seems to be a bug that overides full URL specified when adding individuals.  Not ideal!
-vfb_ind.learn("../../owl/vfb_ext.owl")
 addOboAnnotationProperties(vfb_ind)
 addOboAnnotationProperties(vfb_image)
 addVFBAnnotationProperties(vfb_ind)
