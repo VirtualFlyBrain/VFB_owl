@@ -34,10 +34,43 @@ AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
 
     
+Datatype: rdf:PlainLiteral
+
+    
 Datatype: xsd:string
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0>
+
+    Annotations: 
+        rdfs:label "exemplar_of"
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>
+
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7>
+
+    Annotations: 
+        rdfs:label "has_exemplar"@en
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002351>
+
+    Annotations: 
+        rdfs:label "has_member"
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002350>
+
+    Annotations: 
+        rdfs:label "member_of"
+    
+    
+ObjectProperty: <http://xmlns.com/foaf/0.1/depicts>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00110606>
@@ -151,6 +184,12 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00110414>
 Class: <http://purl.obolibrary.org/obo/FBbt_00110450>
 
     
+Class: <http://purl.obolibrary.org/obo/vfb/VFB_10000005>
+
+    Annotations: 
+        rdfs:label "cluster"
+    
+    
 Class: <http://purl.obolibrary.org/obo/FBbt_00110468>
 
     
@@ -219,6 +258,12 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00110420>
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00110422>
 
+    
+Class: <http://purl.obolibrary.org/obo/vfb/B8C6934B-C27C-4528-BE59-E75F5B9F61B6>
+
+    Annotations: 
+        rdfs:label "expression pattern"@en
+    
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00110620>
 
@@ -314,6 +359,9 @@ Individual: VFB_00020119
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020119
+    
     
 Individual: VFB_00020118
 
@@ -327,6 +375,9 @@ Individual: VFB_00020118
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110422>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020118
     
     
 Individual: VFB_00020117
@@ -342,6 +393,9 @@ Individual: VFB_00020117
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110420>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020117
+    
     
 Individual: VFB_00020116
 
@@ -355,6 +409,9 @@ Individual: VFB_00020116
         <http://purl.obolibrary.org/obo/FBbt_00110418>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020116
     
     
 Individual: VFB_00020115
@@ -370,6 +427,9 @@ Individual: VFB_00020115
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110416>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020115
+    
     
 Individual: VFB_00020114
 
@@ -384,6 +444,9 @@ Individual: VFB_00020114
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110414>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020114
+    
     
 Individual: VFB_00017908
 
@@ -391,7 +454,7 @@ Individual: VFB_00017908
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-h lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-h_M"^^xsd:string
+        rdfs:label "aIP-h_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -402,10 +465,10 @@ Individual: VFB_00017908
 Individual: VFB_00017909
 
     Annotations: 
-        rdfs:label "aIP-i_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-i lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-i lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aIP-i_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110572>,
@@ -416,10 +479,10 @@ Individual: VFB_00017909
 Individual: VFB_00017906
 
     Annotations: 
+        rdfs:label "aIP-f_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-f lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-f_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-f lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -430,10 +493,10 @@ Individual: VFB_00017906
 Individual: VFB_00017907
 
     Annotations: 
-        rdfs:label "aIP-g_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-g (male) lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-g (male) lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aIP-g_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110592>,
@@ -444,10 +507,10 @@ Individual: VFB_00017907
 Individual: VFB_00017900
 
     Annotations: 
-        rdfs:label "aDT-h_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-h lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-h lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aDT-h_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110428>,
@@ -461,7 +524,7 @@ Individual: VFB_00017901
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-a lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-a_M"^^xsd:string
+        rdfs:label "aIP-a_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -475,7 +538,7 @@ Individual: VFB_00017904
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-d (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-d_M"^^xsd:string
+        rdfs:label "aIP-d_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110588>,
@@ -486,10 +549,10 @@ Individual: VFB_00017904
 Individual: VFB_00017905
 
     Annotations: 
+        rdfs:label "aIP-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-e (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-e_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-e (male) lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -500,7 +563,7 @@ Individual: VFB_00017905
 Individual: VFB_00017902
 
     Annotations: 
-        rdfs:label "aIP-b_M"^^xsd:string,
+        rdfs:label "aIP-b_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-b (male) lineage clone in the adult brain"^^xsd:string
@@ -514,10 +577,10 @@ Individual: VFB_00017902
 Individual: VFB_00017903
 
     Annotations: 
+        rdfs:label "aIP-c_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-c (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aIP-c_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aIP-c (male) lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110586>,
@@ -528,10 +591,10 @@ Individual: VFB_00017903
 Individual: VFB_00017914
 
     Annotations: 
+        rdfs:label "aSP-d_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-d lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-d_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-d lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -552,6 +615,9 @@ Individual: VFB_00020146
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020146
+    
     
 Individual: VFB_00017913
 
@@ -559,7 +625,7 @@ Individual: VFB_00017913
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-c lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-c_M"^^xsd:string
+        rdfs:label "aSP-c_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -580,6 +646,9 @@ Individual: VFB_00020147
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020147
+    
     
 Individual: VFB_00017916
 
@@ -587,7 +656,7 @@ Individual: VFB_00017916
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-f (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-f_M"^^xsd:string
+        rdfs:label "aSP-f_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110598>,
@@ -608,11 +677,14 @@ Individual: VFB_00020148
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110482>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020148
+    
     
 Individual: VFB_00017915
 
     Annotations: 
-        rdfs:label "aSP-e_M"^^xsd:string,
+        rdfs:label "aSP-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-e lineage clone in the adult brain"^^xsd:string
@@ -636,11 +708,14 @@ Individual: VFB_00020149
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020149
+    
     
 Individual: VFB_00017910
 
     Annotations: 
-        rdfs:label "aSG-a_M"^^xsd:string,
+        rdfs:label "aSG-a_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSG-a lineage clone in the adult brain"^^xsd:string
@@ -664,6 +739,9 @@ Individual: VFB_00020142
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020142
+    
     
 Individual: VFB_00020143
 
@@ -678,11 +756,14 @@ Individual: VFB_00020143
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110472>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020143
+    
     
 Individual: VFB_00017912
 
     Annotations: 
-        rdfs:label "aSP-b_M"^^xsd:string,
+        rdfs:label "aSP-b_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-b (male) lineage clone in the adult brain"^^xsd:string
@@ -706,14 +787,17 @@ Individual: VFB_00020144
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110474>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020144
+    
     
 Individual: VFB_00017911
 
     Annotations: 
-        rdfs:label "aSP-a_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-a (male) lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-a (male) lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aSP-a_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110594>,
@@ -733,6 +817,9 @@ Individual: VFB_00020145
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020145
+    
     
 Individual: VFBi_00020135
 
@@ -741,6 +828,9 @@ Individual: VFBi_00020135
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020135
     
     
 Individual: VFBi_00020134
@@ -751,6 +841,9 @@ Individual: VFBi_00020134
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020134
+    
     
 Individual: VFBi_00020133
 
@@ -759,6 +852,9 @@ Individual: VFBi_00020133
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020133
     
     
 Individual: VFBc_00020140
@@ -778,6 +874,9 @@ Individual: VFBi_00020132
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020132
+    
     
 Individual: VFB_00017918
 
@@ -785,7 +884,7 @@ Individual: VFB_00017918
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-h (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-h_M"^^xsd:string
+        rdfs:label "aSP-h_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110602>,
@@ -801,14 +900,17 @@ Individual: VFBi_00020131
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020131
+    
     
 Individual: VFB_00017917
 
     Annotations: 
-        rdfs:label "aSP-g_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-g (male) lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-g (male) lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aSP-g_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110600>,
@@ -824,14 +926,17 @@ Individual: VFBi_00020130
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020130
+    
     
 Individual: VFB_00017919
 
     Annotations: 
-        rdfs:label "aSP-i_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-i (male) lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-i (male) lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aSP-i_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110604>,
@@ -865,6 +970,9 @@ Individual: VFBi_00020129
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020129
+    
     
 Individual: VFBc_00020136
 
@@ -892,6 +1000,9 @@ Individual: VFBi_00020127
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020127
+    
     
 Individual: VFBc_00020130
 
@@ -909,6 +1020,9 @@ Individual: VFBi_00020128
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020128
     
     
 Individual: VFBc_00020131
@@ -928,6 +1042,9 @@ Individual: VFBi_00020125
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020125
+    
     
 Individual: VFBc_00020132
 
@@ -945,6 +1062,9 @@ Individual: VFBi_00020126
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020126
     
     
 Individual: VFBc_00020133
@@ -969,6 +1089,9 @@ Individual: VFB_00020150
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110486>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020150
+    
     
 Individual: VFB_00020152
 
@@ -983,6 +1106,9 @@ Individual: VFB_00020152
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020152
+    
     
 Individual: VFB_00020151
 
@@ -996,6 +1122,9 @@ Individual: VFB_00020151
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110488>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020151
     
     
 Individual: VFBc_00020138
@@ -1019,10 +1148,10 @@ Individual: VFBc_00020139
 Individual: VFB_00017927
 
     Annotations: 
+        rdfs:label "pIP-d_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-d lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pIP-d_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-d lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -1043,11 +1172,14 @@ Individual: VFB_00020159
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020159
+    
     
 Individual: VFB_00017926
 
     Annotations: 
-        rdfs:label "pIP-c_M"^^xsd:string,
+        rdfs:label "pIP-c_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-c lineage clone in the adult brain"^^xsd:string
@@ -1064,7 +1196,7 @@ Individual: VFB_00017925
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-b lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pIP-b_M"^^xsd:string
+        rdfs:label "pIP-b_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110480>,
@@ -1085,11 +1217,14 @@ Individual: VFB_00020157
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110500>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020157
+    
     
 Individual: VFB_00017924
 
     Annotations: 
-        rdfs:label "pIP-a_M"^^xsd:string,
+        rdfs:label "pIP-a_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-a (male) lineage clone in the adult brain"^^xsd:string
@@ -1113,14 +1248,17 @@ Individual: VFB_00020158
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020158
+    
     
 Individual: VFB_00017923
 
     Annotations: 
+        rdfs:label "aSP-m_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-m lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-m_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-m lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -1141,14 +1279,17 @@ Individual: VFB_00020155
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020155
+    
     
 Individual: VFB_00017922
 
     Annotations: 
-        rdfs:label "aSP-l_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-l lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-l lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aSP-l_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110470>,
@@ -1169,6 +1310,9 @@ Individual: VFB_00020156
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110498>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020156
+    
     
 Individual: VFB_00017921
 
@@ -1176,7 +1320,7 @@ Individual: VFB_00017921
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-k (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aSP-k_M"^^xsd:string
+        rdfs:label "aSP-k_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110606>,
@@ -1197,11 +1341,14 @@ Individual: VFB_00020153
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020153
+    
     
 Individual: VFB_00017920
 
     Annotations: 
-        rdfs:label "aSP-j_M"^^xsd:string,
+        rdfs:label "aSP-j_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aSP-j lineage clone in the adult brain"^^xsd:string
@@ -1225,6 +1372,9 @@ Individual: VFB_00020154
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020154
+    
     
 Individual: VFBi_00020122
 
@@ -1233,6 +1383,9 @@ Individual: VFBi_00020122
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020122
     
     
 Individual: VFBc_00020151
@@ -1252,6 +1405,9 @@ Individual: VFBi_00020121
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020121
+    
     
 Individual: VFBc_00020150
 
@@ -1270,6 +1426,9 @@ Individual: VFBi_00020124
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020124
+    
     
 Individual: VFBi_00020123
 
@@ -1279,11 +1438,14 @@ Individual: VFBi_00020123
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020123
+    
     
 Individual: VFB_00017929
 
     Annotations: 
-        rdfs:label "pIP-f_M"^^xsd:string,
+        rdfs:label "pIP-f_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-f lineage clone in the adult brain"^^xsd:string
@@ -1302,6 +1464,9 @@ Individual: VFBi_00020120
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020120
+    
     
 Individual: VFB_00017928
 
@@ -1309,7 +1474,7 @@ Individual: VFB_00017928
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-e (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pIP-e_M"^^xsd:string
+        rdfs:label "pIP-e_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -1324,6 +1489,9 @@ Individual: VFBi_00020118
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020118
     
     
 Individual: VFBc_00020147
@@ -1342,6 +1510,9 @@ Individual: VFBi_00020119
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020119
     
     
 Individual: VFBc_00020148
@@ -1379,6 +1550,9 @@ Individual: VFBi_00020114
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020114
+    
     
 Individual: VFBc_00020143
 
@@ -1396,6 +1570,9 @@ Individual: VFBi_00020115
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020115
     
     
 Individual: VFBc_00020144
@@ -1415,6 +1592,9 @@ Individual: VFBi_00020116
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020116
+    
     
 Individual: VFBc_00020141
 
@@ -1432,6 +1612,9 @@ Individual: VFBi_00020117
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020117
     
     
 Individual: VFBc_00020142
@@ -1456,14 +1639,17 @@ Individual: VFB_00020163
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020163
+    
     
 Individual: VFB_00017930
 
     Annotations: 
+        rdfs:label "pIP-g_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-g lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pIP-g_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-g lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110490>,
@@ -1484,6 +1670,9 @@ Individual: VFB_00020162
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110510>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020162
+    
     
 Individual: VFB_00020161
 
@@ -1498,6 +1687,9 @@ Individual: VFB_00020161
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020161
+    
     
 Individual: VFB_00020160
 
@@ -1511,6 +1703,9 @@ Individual: VFB_00020160
         <http://purl.obolibrary.org/obo/FBbt_00110506>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020160
     
     
 Individual: VFBc_00020149
@@ -1535,11 +1730,14 @@ Individual: VFB_00020120
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020120
+    
     
 Individual: VFB_00017932
 
     Annotations: 
-        rdfs:label "pIP-i_M"^^xsd:string,
+        rdfs:label "pIP-i_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-i lineage clone in the adult brain"^^xsd:string
@@ -1553,7 +1751,7 @@ Individual: VFB_00017932
 Individual: VFB_00017931
 
     Annotations: 
-        rdfs:label "pIP-h_M"^^xsd:string,
+        rdfs:label "pIP-h_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-h (male) lineage clone in the adult brain"^^xsd:string
@@ -1577,6 +1775,9 @@ Individual: VFB_00020121
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020121
+    
     
 Individual: VFB_00020122
 
@@ -1591,14 +1792,17 @@ Individual: VFB_00020122
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020122
+    
     
 Individual: VFB_00017934
 
     Annotations: 
-        rdfs:label "pMP-a_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-a (male) lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-a (male) lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "pMP-a_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110614>,
@@ -1619,11 +1823,14 @@ Individual: VFB_00020123
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110432>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020123
+    
     
 Individual: VFB_00017933
 
     Annotations: 
-        rdfs:label "pIP-j_M"^^xsd:string,
+        rdfs:label "pIP-j_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pIP-j lineage clone in the adult brain"^^xsd:string
@@ -1647,6 +1854,9 @@ Individual: VFB_00020124
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110434>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020124
+    
     
 Individual: VFB_00017936
 
@@ -1654,7 +1864,7 @@ Individual: VFB_00017936
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-c (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pMP-c_M"^^xsd:string
+        rdfs:label "pMP-c_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110618>,
@@ -1675,14 +1885,17 @@ Individual: VFB_00020125
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020125
+    
     
 Individual: VFB_00017935
 
     Annotations: 
+        rdfs:label "pMP-b_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-b (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pMP-b_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-b (male) lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110616>,
@@ -1703,11 +1916,14 @@ Individual: VFB_00020126
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020126
+    
     
 Individual: VFB_00017938
 
     Annotations: 
-        rdfs:label "pMP-e_M"^^xsd:string,
+        rdfs:label "pMP-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-e (male) lineage clone in the adult brain"^^xsd:string
@@ -1731,11 +1947,14 @@ Individual: VFB_00020127
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110440>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020127
+    
     
 Individual: VFB_00017937
 
     Annotations: 
-        rdfs:label "pMP-d_M"^^xsd:string,
+        rdfs:label "pMP-d_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-d lineage clone in the adult brain"^^xsd:string
@@ -1754,6 +1973,9 @@ Individual: VFBi_00020153
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020153
+    
     
 Individual: VFB_00020128
 
@@ -1767,6 +1989,9 @@ Individual: VFB_00020128
         <http://purl.obolibrary.org/obo/FBbt_00110442>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020128
     
     
 Individual: VFB_00020129
@@ -1782,6 +2007,9 @@ Individual: VFB_00020129
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020129
+    
     
 Individual: VFB_00017939
 
@@ -1789,7 +2017,7 @@ Individual: VFB_00017939
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-f (male) lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pMP-f_M"^^xsd:string
+        rdfs:label "pMP-f_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -1805,6 +2033,9 @@ Individual: VFBi_00020152
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020152
+    
     
 Individual: VFBi_00020151
 
@@ -1814,6 +2045,9 @@ Individual: VFBi_00020151
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020151
+    
     
 Individual: VFBi_00020150
 
@@ -1822,6 +2056,9 @@ Individual: VFBi_00020150
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020150
     
     
 Individual: VFBc_00020160
@@ -1841,6 +2078,9 @@ Individual: VFBi_00020157
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020157
+    
     
 Individual: VFBi_00020156
 
@@ -1849,6 +2089,9 @@ Individual: VFBi_00020156
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020156
     
     
 Individual: VFBc_00020162
@@ -1868,6 +2111,9 @@ Individual: VFBi_00020155
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020155
+    
     
 Individual: VFBc_00020161
 
@@ -1886,6 +2132,9 @@ Individual: VFBi_00020154
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020154
+    
     
 Individual: VFBc_00020152
 
@@ -1903,6 +2152,9 @@ Individual: VFBi_00020149
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020149
     
     
 Individual: VFBc_00020153
@@ -1931,6 +2183,9 @@ Individual: VFBi_00020147
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020147
+    
     
 Individual: VFBc_00020155
 
@@ -1948,6 +2203,9 @@ Individual: VFBi_00020148
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020148
     
     
 Individual: VFBc_00020156
@@ -1999,14 +2257,17 @@ Individual: VFB_00020130
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020130
+    
     
 Individual: VFB_00017940
 
     Annotations: 
+        rdfs:label "pMP-g_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-g lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pMP-g_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pMP-g lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -2020,7 +2281,7 @@ Individual: VFB_00017941
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-a lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pSG-a_M"^^xsd:string
+        rdfs:label "pSG-a_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110512>,
@@ -2041,6 +2302,9 @@ Individual: VFB_00020133
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110452>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020133
+    
     
 Individual: VFB_00017945
 
@@ -2048,7 +2312,7 @@ Individual: VFB_00017945
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-e lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pSG-e_M"^^xsd:string
+        rdfs:label "pSG-e_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -2069,14 +2333,17 @@ Individual: VFB_00020134
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110454>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020134
+    
     
 Individual: VFB_00017944
 
     Annotations: 
+        rdfs:label "pSG-d_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-d lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pSG-d_M"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-d lineage clone in the adult brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110518>,
@@ -2097,6 +2364,9 @@ Individual: VFB_00020131
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020131
+    
     
 Individual: VFB_00017943
 
@@ -2104,7 +2374,7 @@ Individual: VFB_00017943
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-c lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pSG-c_M"^^xsd:string
+        rdfs:label "pSG-c_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110516>,
@@ -2125,6 +2395,9 @@ Individual: VFB_00020132
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110450>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020132
+    
     
 Individual: VFB_00017942
 
@@ -2132,7 +2405,7 @@ Individual: VFB_00017942
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSG-b lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "pSG-b_M"^^xsd:string
+        rdfs:label "pSG-b_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110514>,
@@ -2153,11 +2426,14 @@ Individual: VFB_00020137
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110460>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020137
+    
     
 Individual: VFB_00017949
 
     Annotations: 
-        rdfs:label "pSP-e_M"^^xsd:string,
+        rdfs:label "pSP-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-e lineage clone in the adult brain"^^xsd:string
@@ -2181,14 +2457,17 @@ Individual: VFB_00020138
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110462>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020138
+    
     
 Individual: VFB_00017948
 
     Annotations: 
-        rdfs:label "pSP-d_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-d lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-d lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "pSP-d_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -2209,11 +2488,14 @@ Individual: VFB_00020135
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020135
+    
     
 Individual: VFB_00017947
 
     Annotations: 
-        rdfs:label "pSP-b_M"^^xsd:string,
+        rdfs:label "pSP-b_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-b (male) lineage clone in the adult brain"^^xsd:string
@@ -2237,11 +2519,14 @@ Individual: VFB_00020136
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020136
+    
     
 Individual: VFB_00017946
 
     Annotations: 
-        rdfs:label "pSP-a_M"^^xsd:string,
+        rdfs:label "pSP-a_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-a lineage clone in the adult brain"^^xsd:string
@@ -2260,6 +2545,9 @@ Individual: VFBi_00020140
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020140
+    
     
 Individual: VFB_00020139
 
@@ -2274,6 +2562,9 @@ Individual: VFB_00020139
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020139
+    
     
 Individual: VFBi_00020142
 
@@ -2282,6 +2573,9 @@ Individual: VFBi_00020142
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020142
     
     
 Individual: VFBi_00020141
@@ -2292,6 +2586,9 @@ Individual: VFBi_00020141
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020141
+    
     
 Individual: VFBi_00020144
 
@@ -2300,6 +2597,9 @@ Individual: VFBi_00020144
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020144
     
     
 Individual: VFBi_00020143
@@ -2310,6 +2610,9 @@ Individual: VFBi_00020143
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020143
+    
     
 Individual: VFBi_00020146
 
@@ -2318,6 +2621,9 @@ Individual: VFBi_00020146
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020146
     
     
 Individual: VFBc_00020170
@@ -2337,6 +2643,9 @@ Individual: VFBi_00020145
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020145
+    
     
 Individual: VFBc_00020165
 
@@ -2354,6 +2663,9 @@ Individual: VFBi_00020136
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020136
     
     
 Individual: VFBc_00020166
@@ -2373,6 +2685,9 @@ Individual: VFBi_00020137
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020137
+    
     
 Individual: VFBc_00020163
 
@@ -2391,6 +2706,9 @@ Individual: VFBi_00020138
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020138
+    
     
 Individual: VFBc_00020164
 
@@ -2408,6 +2726,9 @@ Individual: VFBi_00020139
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020139
     
     
 Individual: VFBc_00020169
@@ -2450,6 +2771,9 @@ Individual: VFB_00020141
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020141
+    
     
 Individual: VFB_00020140
 
@@ -2464,11 +2788,14 @@ Individual: VFB_00020140
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020140
+    
     
 Individual: VFB_00017950
 
     Annotations: 
-        rdfs:label "pSP-f_M"^^xsd:string,
+        rdfs:label "pSP-f_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless pSP-f lineage clone in the adult brain"^^xsd:string
@@ -2487,6 +2814,9 @@ Individual: VFBi_00020169
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020169
+    
     
 Individual: VFBi_00020170
 
@@ -2495,6 +2825,9 @@ Individual: VFBi_00020170
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020170
     
     
 Individual: VFBi_00020159
@@ -2505,6 +2838,9 @@ Individual: VFBi_00020159
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020159
+    
     
 Individual: VFBi_00020158
 
@@ -2513,6 +2849,9 @@ Individual: VFBi_00020158
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020158
     
     
 Individual: VFBi_00020167
@@ -2523,6 +2862,9 @@ Individual: VFBi_00020167
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020167
+    
     
 Individual: VFBi_00020168
 
@@ -2531,6 +2873,9 @@ Individual: VFBi_00020168
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020168
     
     
 Individual: VFBi_00020165
@@ -2541,6 +2886,9 @@ Individual: VFBi_00020165
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020165
+    
     
 Individual: VFBi_00020166
 
@@ -2549,6 +2897,9 @@ Individual: VFBi_00020166
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020166
     
     
 Individual: VFBi_00020163
@@ -2559,6 +2910,9 @@ Individual: VFBi_00020163
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020163
+    
     
 Individual: VFBi_00020164
 
@@ -2567,6 +2921,9 @@ Individual: VFBi_00020164
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020164
     
     
 Individual: VFBi_00020161
@@ -2577,6 +2934,9 @@ Individual: VFBi_00020161
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020161
+    
     
 Individual: VFBi_00020162
 
@@ -2586,6 +2946,9 @@ Individual: VFBi_00020162
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020162
+    
     
 Individual: VFBi_00020160
 
@@ -2594,6 +2957,9 @@ Individual: VFBi_00020160
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020160
     
     
 Individual: VFB_00020170
@@ -2608,6 +2974,9 @@ Individual: VFB_00020170
         <http://purl.obolibrary.org/obo/FBbt_00110526>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020170
     
     
 Individual: VFBc_00020128
@@ -2713,6 +3082,9 @@ Individual: VFB_00020167
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020167
+    
     
 Individual: VFB_00020166
 
@@ -2726,6 +3098,9 @@ Individual: VFB_00020166
         <http://purl.obolibrary.org/obo/FBbt_00110518>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020166
     
     
 Individual: VFB_00020165
@@ -2741,6 +3116,9 @@ Individual: VFB_00020165
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020165
+    
     
 Individual: VFB_00020164
 
@@ -2754,6 +3132,9 @@ Individual: VFB_00020164
         <http://purl.obolibrary.org/obo/FBbt_00110514>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020164
     
     
 Individual: VFB_00020169
@@ -2769,6 +3150,9 @@ Individual: VFB_00020169
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020169
+    
     
 Individual: VFB_00020168
 
@@ -2782,6 +3166,9 @@ Individual: VFB_00020168
         <http://purl.obolibrary.org/obo/FBbt_00110522>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020168
     
     
 Individual: VFBc_00020119
@@ -2841,10 +3228,10 @@ Individual: VFBc_00020114
 Individual: VFB_00017892
 
     Annotations: 
-        rdfs:label "aDT-a_M"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-a lineage clone in the adult brain"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-a lineage clone in the adult brain"^^xsd:string,
+        rdfs:label "aDT-a_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -2855,7 +3242,7 @@ Individual: VFB_00017892
 Individual: VFB_00017893
 
     Annotations: 
-        rdfs:label "aDT-b_M"^^xsd:string,
+        rdfs:label "aDT-b_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
@@ -2867,7 +3254,7 @@ Individual: VFB_00017895
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-c lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aDT-c_M"^^xsd:string
+        rdfs:label "aDT-c_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
@@ -2878,7 +3265,7 @@ Individual: VFB_00017895
 Individual: VFB_00017896
 
     Annotations: 
-        rdfs:label "aDT-d_M"^^xsd:string,
+        rdfs:label "aDT-d_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-d (male) lineage clone in the adult brain"^^xsd:string
@@ -2892,7 +3279,7 @@ Individual: VFB_00017896
 Individual: VFB_00017897
 
     Annotations: 
-        rdfs:label "aDT-e_M"^^xsd:string,
+        rdfs:label "aDT-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-e (male) lineage clone in the adult brain"^^xsd:string
@@ -2909,7 +3296,7 @@ Individual: VFB_00017899
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-g lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aDT-g_M"^^xsd:string
+        rdfs:label "aDT-g_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110426>,
@@ -2923,7 +3310,7 @@ Individual: VFB_00017898
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of an adult fruitless aDT-f lineage clone in the adult brain"^^xsd:string,
-        rdfs:label "aDT-f_M"^^xsd:string
+        rdfs:label "aDT-f_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110424>,
