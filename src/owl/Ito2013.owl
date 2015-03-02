@@ -1,7 +1,6 @@
 Prefix: : <http://www.virtualflybrain.org/owl/>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-Prefix: vfb: <http://purl.obolibrary.org/obo/fbbt/vfb/>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -20,14 +19,8 @@ AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSyno
 AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
 
     
-AnnotationProperty: vfb:VFBext_0000005
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
 
-    Annotations: 
-        rdfs:label "source_data_link"
-    
-    Annotations: 
-        rdfs:label "source_data_link"
-    
     
 AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_xref>
 
@@ -44,68 +37,14 @@ AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
 
     
-Datatype: rdf:PlainLiteral
-
-    
 Datatype: xsd:string
 
-    
-ObjectProperty: vfb:c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0
-
-    Annotations: 
-        rdfs:label "exemplar_of"
-    
-    SubPropertyOf: 
-        <http://purl.obolibrary.org/obo/RO_0002350>
-    
-    
-ObjectProperty: vfb:C888C3DB-AEFA-447F-BD4C-858DFE33DBE7
-
-    Annotations: 
-        rdfs:label "has_exemplar"@en
-    
-    
-ObjectProperty: vfb:VFBext_0000003
-
-    Annotations: 
-        rdfs:label "has_signal_channel"
-    
-    SubPropertyOf: 
-        vfb:VFBext_0000001
-    
     
 ObjectProperty: <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>
 
     
-ObjectProperty: vfb:VFBext_0000001
-
-    Annotations: 
-        rdfs:label "has_channel"
-    
-    
-ObjectProperty: vfb:VFBext_0000002
-
-    Annotations: 
-        rdfs:label "has_background_channel"
-    
-    SubPropertyOf: 
-        vfb:VFBext_0000001
-    
-    
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
 
-    
-ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002351>
-
-    Annotations: 
-        rdfs:label "has_member"
-    
-    
-ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002350>
-
-    Annotations: 
-        rdfs:label "member_of"
-    
     
 ObjectProperty: <http://xmlns.com/foaf/0.1/depicts>
 
@@ -140,10 +79,10 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050101>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050182>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050241>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050045>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00050045>
+Class: <http://purl.obolibrary.org/obo/FBbt_00050241>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050185>
@@ -155,17 +94,11 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050048>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050188>
 
     
-Class: <http://purl.obolibrary.org/obo/FBbt_00110559>
-
-    
 Class: <http://purl.obolibrary.org/obo/FBbt_00050042>
 
     
-Class: <http://purl.obolibrary.org/obo/vfb/VFB_10000005>
+Class: <http://purl.obolibrary.org/obo/FBbt_00110559>
 
-    Annotations: 
-        rdfs:label "cluster"
-    
     
 Class: owl:Thing
 
@@ -199,12 +132,6 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050158>
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050256>
 
-    
-Class: <http://purl.obolibrary.org/obo/vfb/B8C6934B-C27C-4528-BE59-E75F5B9F61B6>
-
-    Annotations: 
-        rdfs:label "expression pattern"@en
-    
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00110399>
 
@@ -371,12 +298,6 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050119>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050194>
 
     
-Class: <http://purl.obolibrary.org/obo/vfb/VFBext_0000004>
-
-    Annotations: 
-        rdfs:label "channel"
-    
-    
 Class: <http://purl.obolibrary.org/obo/FBbt_00050191>
 
     
@@ -411,9 +332,6 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050223>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050220>
-
-    
-Class: <http://xmlns.com/foaf/0.1/image>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050016>
