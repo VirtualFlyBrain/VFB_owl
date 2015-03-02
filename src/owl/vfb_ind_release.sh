@@ -6,7 +6,6 @@ DSSTRING=''
 
 cd ../code/owl_gen
 
-STAT=0
 ERROR_SUMMARY=""
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
@@ -14,14 +13,11 @@ do
     echo $var
     java -Xmx6000m -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $var $FBBT
     DSSTRING+="--merge ${var}.owl "
-    STAT+=$?
-    echo $STAT
-    ERROR_SUMMARY=${ERROR_SUMMARY}${var}" build failed\n"
+    echo "Return stat: "$?
 done
 
 java -Xmx6000m -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
-STAT+=$?
-ERROR_SUMMARY=${ERROR_SUMMARY}${var}" build failed\n"
+echo "Return stat: "$?
 
 DSSTRING+="--merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl "
 
@@ -38,6 +34,5 @@ echo ''
 echo "*** Asserting inferences and striping redundancy ***"
 owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o -f ofn fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.
 
-echo $ERROR_SUMMARY
-return $STAT
+
 
