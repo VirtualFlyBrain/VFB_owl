@@ -94,7 +94,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, " \
 				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
-				"WHERE name = '%s' AND shortFormID like '%s'" % (dataset, 'VFB_%'))  # IGNORING VFBi and VFBc.
+				"WHERE name = '%s' AND shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
 	dc = dict_cursor(cursor)
 	for d in dc:
@@ -124,11 +124,11 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				 "JOIN data_source s ON (i.source_id=s.id)  " \
 				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
-				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB_%'))
+				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 
 	dc = dict_cursor(cursor)
 	add_types_2_inds(vfb_ind, dc)
-	add_facts(cursor, vfb_ind, dataset)
+#	add_facts(cursor, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
