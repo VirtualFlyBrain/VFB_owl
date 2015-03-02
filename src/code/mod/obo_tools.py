@@ -14,6 +14,10 @@ def addOboAnnotationProperties(brain):
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref")
     return brain
 
+def addVFBAnnotationProperties(brain):
+    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005") # data_source_link
+
+
 def gen_id(idp, ID, length, id_name):
     """ARG1: ID prefix (string), ARG 2 starting ID number (int), ARG3, length of numeric portion ID, ARG4 an id:name hash"""
     def gen_key(ID, length):  # This function is limited to the scope of the gen_id function.

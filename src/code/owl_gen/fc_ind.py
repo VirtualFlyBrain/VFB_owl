@@ -5,7 +5,7 @@ sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code'
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 # from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-from obo_tools import addOboAnnotationProperties
+from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 from lmb_fc_tools import oe_check_db_and_add
 from lmb_fc_tools import BrainName_mapping
 from lmb_fc_tools import get_con
@@ -31,9 +31,8 @@ in the LMB VFB mysql DB.
 #(It is probably worth changing this to make code more robust, 
 #as getting the order wrong produced incomplete output but doesn't throw an error!)
 
-# TODO: refactoring needed to cope with changes to DB schema - specifically, use of type table for annotations
 
-# TODO - filter out bad registrations: 
+# DONE - filter out bad registrations: 
 ## select Name from neuron where idid NOT IN (select neuron_idid from annotation where annotation_class='process' AND text='v3bad')
 
 def gen_bad_reg_list(cursor):
@@ -44,7 +43,6 @@ def gen_bad_reg_list(cursor):
 	for d in dc:
 		out.append(d['neuron_idid'])
 	return out
-
 
 
 def add_manual_ann(cursor, vfb_ind):
@@ -184,9 +182,10 @@ cursor.close()
 vfb_ind = Brain(baseURI, baseURI + 'flycircuit_plus.owl')
 # Setup ontologies
 addOboAnnotationProperties(vfb_ind)
+addVFBAnnotationProperties(vfb_ind)
 ont_dict = {}
 ont_dict['vfb_ind']=vfb_ind
-ont_dict['fbbt'] = load_ont("file://"+FBBT)
+ont_dict['fbbt'] = load_ont(FBBT)
 #ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")

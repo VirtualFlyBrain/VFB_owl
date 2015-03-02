@@ -1,7 +1,7 @@
 #!/usr/bin/env jython -J-Xmx8000m
 import sys
 sys.path.append('../mod')
-from obo_tools import addOboAnnotationProperties
+from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 #from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 #from com.ziclix.python.sql import zxJDBC
@@ -43,6 +43,7 @@ vfb_image = Brain()  # Not specifying base as there seems to be a bug that overi
 vfb_ind.learn("../../owl/vfb_ext.owl")
 addOboAnnotationProperties(vfb_ind)
 addOboAnnotationProperties(vfb_image)
+addVFBAnnotationProperties(vfb_ind)
 vfb_image.addObjectProperty('http://xmlns.com/foaf/0.1/depicts')
 vfb_image.addClass('http://xmlns.com/foaf/0.1/image')
 
