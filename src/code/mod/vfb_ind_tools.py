@@ -124,7 +124,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				 "JOIN data_source s ON (i.source_id=s.id)  " \
 				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
-				 "WHERE s.name = '%s' " % dataset)
+				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB_%'))
 
 	dc = dict_cursor(cursor)
 	add_types_2_inds(vfb_ind, dc)
