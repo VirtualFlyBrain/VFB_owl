@@ -34,10 +34,43 @@ AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
 
     
+Datatype: rdf:PlainLiteral
+
+    
 Datatype: xsd:string
 
     
+ObjectProperty: <http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0>
+
+    Annotations: 
+        rdfs:label "exemplar_of"
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>
+
+    
 ObjectProperty: <http://purl.obolibrary.org/obo/BFO_0000050>
+
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7>
+
+    Annotations: 
+        rdfs:label "has_exemplar"@en
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002351>
+
+    Annotations: 
+        rdfs:label "has_member"
+    
+    
+ObjectProperty: <http://purl.obolibrary.org/obo/RO_0002350>
+
+    Annotations: 
+        rdfs:label "member_of"
+    
+    
+ObjectProperty: <http://xmlns.com/foaf/0.1/depicts>
 
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050075>
@@ -166,6 +199,12 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050247>
 Class: <http://purl.obolibrary.org/obo/FBbt_00050137>
 
     
+Class: <http://purl.obolibrary.org/obo/vfb/VFB_10000005>
+
+    Annotations: 
+        rdfs:label "cluster"
+    
+    
 Class: <http://purl.obolibrary.org/obo/FBbt_00050134>
 
     
@@ -252,6 +291,12 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00050022>
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050125>
 
+    
+Class: <http://purl.obolibrary.org/obo/vfb/B8C6934B-C27C-4528-BE59-E75F5B9F61B6>
+
+    Annotations: 
+        rdfs:label "expression pattern"@en
+    
     
 Class: <http://purl.obolibrary.org/obo/FBbt_00050122>
 
@@ -410,6 +455,9 @@ Individual: VFB_00020007
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020007
+    
     
 Individual: VFBc_00020075
 
@@ -431,6 +479,9 @@ Individual: VFB_00020008
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050024>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020008
     
     
 Individual: VFBc_00020078
@@ -454,6 +505,9 @@ Individual: VFB_00020009
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050027>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020009
     
     
 Individual: VFBc_00020077
@@ -487,6 +541,9 @@ Individual: VFB_00020000
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020000
+    
     
 Individual: VFB_00020001
 
@@ -500,6 +557,9 @@ Individual: VFB_00020001
         <http://purl.obolibrary.org/obo/FBbt_00050004>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020001
     
     
 Individual: VFB_00020002
@@ -515,6 +575,9 @@ Individual: VFB_00020002
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050007>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020002
+    
     
 Individual: VFB_00020003
 
@@ -528,6 +591,9 @@ Individual: VFB_00020003
         <http://purl.obolibrary.org/obo/FBbt_00050010>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020003
     
     
 Individual: VFB_00020004
@@ -543,6 +609,9 @@ Individual: VFB_00020004
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050013>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020004
+    
     
 Individual: VFB_00020005
 
@@ -556,6 +625,9 @@ Individual: VFB_00020005
         <http://purl.obolibrary.org/obo/FBbt_00050016>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020005
     
     
 Individual: VFB_00020006
@@ -571,6 +643,9 @@ Individual: VFB_00020006
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020006
+    
     
 Individual: VFB_00020020
 
@@ -584,6 +659,9 @@ Individual: VFB_00020020
         <http://purl.obolibrary.org/obo/FBbt_00050060>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020020
     
     
 Individual: VFBc_00020091
@@ -671,6 +749,9 @@ Individual: VFB_00020018
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050054>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020018
+    
     
 Individual: VFBc_00020086
 
@@ -694,6 +775,9 @@ Individual: VFB_00020019
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020019
+    
     
 Individual: VFB_00020012
 
@@ -707,6 +791,9 @@ Individual: VFB_00020012
         <http://purl.obolibrary.org/obo/FBbt_00050036>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020012
     
     
 Individual: VFB_00020013
@@ -722,6 +809,9 @@ Individual: VFB_00020013
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020013
+    
     
 Individual: VFB_00020010
 
@@ -735,6 +825,9 @@ Individual: VFB_00020010
         <http://purl.obolibrary.org/obo/FBbt_00050030>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020010
     
     
 Individual: VFB_00020011
@@ -750,6 +843,9 @@ Individual: VFB_00020011
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020011
+    
     
 Individual: VFB_00020016
 
@@ -763,6 +859,9 @@ Individual: VFB_00020016
         <http://purl.obolibrary.org/obo/FBbt_00050048>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020016
     
     
 Individual: VFB_00020017
@@ -778,6 +877,9 @@ Individual: VFB_00020017
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020017
+    
     
 Individual: VFB_00020014
 
@@ -791,6 +893,9 @@ Individual: VFB_00020014
         <http://purl.obolibrary.org/obo/FBbt_00050042>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020014
     
     
 Individual: VFB_00020015
@@ -806,6 +911,9 @@ Individual: VFB_00020015
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020015
+    
     
 Individual: VFB_00020031
 
@@ -820,6 +928,9 @@ Individual: VFB_00020031
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020031
+    
     
 Individual: VFB_00020030
 
@@ -833,6 +944,9 @@ Individual: VFB_00020030
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050090>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020030
     
     
 Individual: VFBc_00020060
@@ -920,6 +1034,9 @@ Individual: VFB_00020029
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020029
+    
     
 Individual: VFBc_00020053
 
@@ -961,6 +1078,9 @@ Individual: VFB_00020025
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020025
+    
     
 Individual: VFB_00020026
 
@@ -974,6 +1094,9 @@ Individual: VFB_00020026
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050078>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020026
     
     
 Individual: VFB_00020027
@@ -989,6 +1112,9 @@ Individual: VFB_00020027
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020027
+    
     
 Individual: VFB_00020028
 
@@ -1002,6 +1128,9 @@ Individual: VFB_00020028
         <http://purl.obolibrary.org/obo/FBbt_00050084>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020028
     
     
 Individual: VFB_00020021
@@ -1017,6 +1146,9 @@ Individual: VFB_00020021
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050063>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020021
+    
     
 Individual: VFB_00020022
 
@@ -1030,6 +1162,9 @@ Individual: VFB_00020022
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050066>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020022
     
     
 Individual: VFB_00020023
@@ -1045,6 +1180,9 @@ Individual: VFB_00020023
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020023
+    
     
 Individual: VFB_00020024
 
@@ -1058,6 +1196,9 @@ Individual: VFB_00020024
         <http://purl.obolibrary.org/obo/FBbt_00050072>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020024
     
     
 Individual: VFB_00020042
@@ -1073,6 +1214,9 @@ Individual: VFB_00020042
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020042
+    
     
 Individual: VFB_00020041
 
@@ -1087,6 +1231,9 @@ Individual: VFB_00020041
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020041
+    
     
 Individual: VFB_00020040
 
@@ -1100,6 +1247,9 @@ Individual: VFB_00020040
         <http://purl.obolibrary.org/obo/FBbt_00050119>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020040
     
     
 Individual: VFBc_00020073
@@ -1214,6 +1364,9 @@ Individual: VFB_00020038
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020038
+    
     
 Individual: VFB_00020039
 
@@ -1227,6 +1380,9 @@ Individual: VFB_00020039
         <http://purl.obolibrary.org/obo/FBbt_00050116>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020039
     
     
 Individual: VFB_00020036
@@ -1242,6 +1398,9 @@ Individual: VFB_00020036
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020036
+    
     
 Individual: VFB_00020037
 
@@ -1255,6 +1414,9 @@ Individual: VFB_00020037
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050110>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020037
     
     
 Individual: VFB_00020034
@@ -1270,6 +1432,9 @@ Individual: VFB_00020034
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050101>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020034
+    
     
 Individual: VFB_00020035
 
@@ -1283,6 +1448,9 @@ Individual: VFB_00020035
         <http://purl.obolibrary.org/obo/FBbt_00050104>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020035
     
     
 Individual: VFB_00020032
@@ -1298,6 +1466,9 @@ Individual: VFB_00020032
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020032
+    
     
 Individual: VFB_00020033
 
@@ -1312,6 +1483,9 @@ Individual: VFB_00020033
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020033
+    
     
 Individual: VFBi_00020032
 
@@ -1320,6 +1494,9 @@ Individual: VFBi_00020032
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "ALad1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020032
     
     
 Individual: VFBi_00020031
@@ -1330,6 +1507,9 @@ Individual: VFBi_00020031
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020031
+    
     
 Individual: VFBi_00020030
 
@@ -1338,6 +1518,9 @@ Individual: VFBi_00020030
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020030
     
     
 Individual: VFBi_00020036
@@ -1348,6 +1531,9 @@ Individual: VFBi_00020036
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020036
+    
     
 Individual: VFBi_00020035
 
@@ -1357,6 +1543,9 @@ Individual: VFBi_00020035
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VLPl1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020035
+    
     
 Individual: VFBi_00020034
 
@@ -1365,6 +1554,9 @@ Individual: VFBi_00020034
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "DM3_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020034
     
     
 Individual: VFBc_00020041
@@ -1383,6 +1575,9 @@ Individual: VFBi_00020033
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020033
     
     
 Individual: VFBc_00020040
@@ -1411,6 +1606,9 @@ Individual: VFBi_00020028
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020028
+    
     
 Individual: VFBc_00020031
 
@@ -1428,6 +1626,9 @@ Individual: VFBi_00020029
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "WEDa1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020029
     
     
 Individual: VFBc_00020032
@@ -1447,6 +1648,9 @@ Individual: VFBi_00020026
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SIPp1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020026
+    
     
 Individual: VFBc_00020033
 
@@ -1464,6 +1668,9 @@ Individual: VFBi_00020027
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHp1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020027
     
     
 Individual: VFBc_00020034
@@ -1519,6 +1726,9 @@ Individual: VFBi_00020021
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020021
+    
     
 Individual: VFBi_00020020
 
@@ -1527,6 +1737,9 @@ Individual: VFBi_00020020
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020020
     
     
 Individual: VFBc_00020052
@@ -1546,6 +1759,9 @@ Individual: VFBi_00020023
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020023
+    
     
 Individual: VFBc_00020051
 
@@ -1563,6 +1779,9 @@ Individual: VFBi_00020022
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020022
     
     
 Individual: VFBc_00020050
@@ -1582,6 +1801,9 @@ Individual: VFBi_00020025
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VLPl_d1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020025
+    
     
 Individual: VFBi_00020024
 
@@ -1590,6 +1812,9 @@ Individual: VFBi_00020024
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "WEDd2_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020024
     
     
 Individual: VFBc_00020044
@@ -1609,6 +1834,9 @@ Individual: VFBi_00020015
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020015
+    
     
 Individual: VFBc_00020045
 
@@ -1626,6 +1854,9 @@ Individual: VFBi_00020016
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHl1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020016
     
     
 Individual: VFBc_00020042
@@ -1645,6 +1876,9 @@ Individual: VFBi_00020017
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "PSa1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020017
+    
     
 Individual: VFBc_00020043
 
@@ -1663,6 +1897,9 @@ Individual: VFBi_00020018
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020018
+    
     
 Individual: VFBc_00020048
 
@@ -1680,6 +1917,9 @@ Individual: VFBi_00020019
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SLPav3_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020019
     
     
 Individual: VFBc_00020049
@@ -1717,6 +1957,9 @@ Individual: VFBi_00020014
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPad1f_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020014
+    
     
 Individual: VFBi_00020013
 
@@ -1725,6 +1968,9 @@ Individual: VFBi_00020013
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020013
     
     
 Individual: VFBi_00020012
@@ -1735,6 +1981,9 @@ Individual: VFBi_00020012
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020012
+    
     
 Individual: VFBi_00020011
 
@@ -1744,6 +1993,9 @@ Individual: VFBi_00020011
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHl2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020011
+    
     
 Individual: VFBi_00020010
 
@@ -1752,6 +2004,9 @@ Individual: VFBi_00020010
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPpv1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020010
     
     
 Individual: VFBc_00020017
@@ -1807,6 +2062,9 @@ Individual: VFBi_00020008
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020008
+    
     
 Individual: VFBc_00020015
 
@@ -1824,6 +2082,9 @@ Individual: VFBi_00020009
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHa1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020009
     
     
 Individual: VFBc_00020016
@@ -1843,6 +2104,9 @@ Individual: VFBi_00020006
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "DM1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020006
+    
     
 Individual: VFBi_00020007
 
@@ -1851,6 +2115,9 @@ Individual: VFBi_00020007
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPpd1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020007
     
     
 Individual: VFBc_00020010
@@ -1870,6 +2137,9 @@ Individual: VFBi_00020004
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VPNl_d1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020004
+    
     
 Individual: VFBc_00020011
 
@@ -1887,6 +2157,9 @@ Individual: VFBi_00020005
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020005
     
     
 Individual: VFBc_00020012
@@ -1906,6 +2179,9 @@ Individual: VFBi_00020001
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020001
+    
     
 Individual: VFBc_00020030
 
@@ -1924,6 +2200,9 @@ Individual: VFBi_00020000
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHa2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020000
+    
     
 Individual: VFBi_00020003
 
@@ -1933,6 +2212,9 @@ Individual: VFBi_00020003
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020003
+    
     
 Individual: VFBi_00020002
 
@@ -1941,6 +2223,9 @@ Individual: VFBi_00020002
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020002
     
     
 Individual: VFBc_00020028
@@ -2100,6 +2385,9 @@ Individual: VFB_00020089
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050265>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020089
+    
     
 Individual: VFB_00020087
 
@@ -2114,6 +2402,9 @@ Individual: VFB_00020087
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020087
+    
     
 Individual: VFB_00020088
 
@@ -2127,6 +2418,9 @@ Individual: VFB_00020088
         <http://purl.obolibrary.org/obo/FBbt_00050262>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020088
     
     
 Individual: VFBc_00020007
@@ -2178,6 +2472,9 @@ Individual: VFB_00020093
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020093
+    
     
 Individual: VFB_00020092
 
@@ -2191,6 +2488,9 @@ Individual: VFB_00020092
         <http://purl.obolibrary.org/obo/FBbt_00050274>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020092
     
     
 Individual: VFB_00020091
@@ -2206,6 +2506,9 @@ Individual: VFB_00020091
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050271>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020091
+    
     
 Individual: VFB_00020090
 
@@ -2220,6 +2523,9 @@ Individual: VFB_00020090
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050268>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020090
+    
     
 Individual: VFBi_00020070
 
@@ -2228,6 +2534,9 @@ Individual: VFBi_00020070
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020070
     
     
 Individual: VFBi_00020071
@@ -2238,6 +2547,9 @@ Individual: VFBi_00020071
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020071
+    
     
 Individual: VFBi_00020072
 
@@ -2246,6 +2558,9 @@ Individual: VFBi_00020072
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "PSp1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020072
     
     
 Individual: VFB_00020094
@@ -2261,6 +2576,9 @@ Individual: VFB_00020094
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050280>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020094
+    
     
 Individual: VFBi_00020073
 
@@ -2269,6 +2587,9 @@ Individual: VFBi_00020073
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020073
     
     
 Individual: VFBi_00020074
@@ -2279,6 +2600,9 @@ Individual: VFBi_00020074
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020074
+    
     
 Individual: VFBi_00020075
 
@@ -2287,6 +2611,9 @@ Individual: VFBi_00020075
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "AOTUv1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020075
     
     
 Individual: VFBi_00020076
@@ -2297,6 +2624,9 @@ Individual: VFBi_00020076
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020076
+    
     
 Individual: VFBi_00020077
 
@@ -2305,6 +2635,9 @@ Individual: VFBi_00020077
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020077
     
     
 Individual: VFBi_00020078
@@ -2315,6 +2648,9 @@ Individual: VFBi_00020078
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020078
+    
     
 Individual: VFBi_00020079
 
@@ -2323,6 +2659,9 @@ Individual: VFBi_00020079
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020079
     
     
 Individual: VFBi_00020059
@@ -2333,6 +2672,9 @@ Individual: VFBi_00020059
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020059
+    
     
 Individual: VFBi_00020060
 
@@ -2341,6 +2683,9 @@ Individual: VFBi_00020060
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020060
     
     
 Individual: VFBi_00020061
@@ -2351,6 +2696,9 @@ Individual: VFBi_00020061
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "AOTUv2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020061
+    
     
 Individual: VFBi_00020064
 
@@ -2359,6 +2707,9 @@ Individual: VFBi_00020064
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "FLAa1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020064
     
     
 Individual: VFBi_00020065
@@ -2369,6 +2720,9 @@ Individual: VFBi_00020065
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPp_v1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020065
+    
     
 Individual: VFBi_00020062
 
@@ -2377,6 +2731,9 @@ Individual: VFBi_00020062
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020062
     
     
 Individual: VFBi_00020063
@@ -2387,6 +2744,9 @@ Individual: VFBi_00020063
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "FLAa2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020063
+    
     
 Individual: VFBi_00020068
 
@@ -2395,6 +2755,9 @@ Individual: VFBi_00020068
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020068
     
     
 Individual: VFBi_00020069
@@ -2405,6 +2768,9 @@ Individual: VFBi_00020069
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "CLp1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020069
+    
     
 Individual: VFBi_00020066
 
@@ -2413,6 +2779,9 @@ Individual: VFBi_00020066
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "ALv1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020066
     
     
 Individual: VFBi_00020067
@@ -2423,6 +2792,9 @@ Individual: VFBi_00020067
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020067
+    
     
 Individual: VFBi_00020049
 
@@ -2432,6 +2804,9 @@ Individual: VFBi_00020049
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020049
+    
     
 Individual: VFBi_00020048
 
@@ -2440,6 +2815,9 @@ Individual: VFBi_00020048
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020048
     
     
 Individual: VFB_00020174
@@ -2463,6 +2841,9 @@ Individual: VFBi_00020050
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "CREa1f_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020050
+    
     
 Individual: VFBi_00020055
 
@@ -2471,6 +2852,9 @@ Individual: VFBi_00020055
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020055
     
     
 Individual: VFBi_00020056
@@ -2481,6 +2865,9 @@ Individual: VFBi_00020056
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020056
+    
     
 Individual: VFBi_00020057
 
@@ -2489,6 +2876,9 @@ Individual: VFBi_00020057
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020057
     
     
 Individual: VFBi_00020058
@@ -2499,6 +2889,9 @@ Individual: VFBi_00020058
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPad3_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020058
+    
     
 Individual: VFBi_00020051
 
@@ -2507,6 +2900,9 @@ Individual: VFBi_00020051
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SLPal3_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020051
     
     
 Individual: VFBi_00020052
@@ -2517,6 +2913,9 @@ Individual: VFBi_00020052
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SLPal4_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020052
+    
     
 Individual: VFBi_00020053
 
@@ -2526,6 +2925,9 @@ Individual: VFBi_00020053
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VLPa1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020053
+    
     
 Individual: VFBi_00020054
 
@@ -2534,6 +2936,9 @@ Individual: VFBi_00020054
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020054
     
     
 Individual: VFB_00020180
@@ -2596,6 +3001,9 @@ Individual: VFBi_00020039
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHd2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020039
+    
     
 Individual: VFB_00020184
 
@@ -2617,6 +3025,9 @@ Individual: VFBi_00020038
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SMPpv2_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020038
     
     
 Individual: VFB_00020185
@@ -2640,6 +3051,9 @@ Individual: VFBi_00020037
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020037
+    
     
 Individual: VFBi_00020046
 
@@ -2648,6 +3062,9 @@ Individual: VFBi_00020046
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "EBa1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020046
     
     
 Individual: VFB_00020176
@@ -2671,6 +3088,9 @@ Individual: VFBi_00020047
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020047
+    
     
 Individual: VFB_00020175
 
@@ -2692,6 +3112,9 @@ Individual: VFBi_00020044
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020044
     
     
 Individual: VFB_00020178
@@ -2715,6 +3138,9 @@ Individual: VFBi_00020045
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VLPa2_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020045
+    
     
 Individual: VFB_00020177
 
@@ -2737,6 +3163,9 @@ Individual: VFBi_00020042
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020042
+    
     
 Individual: VFBi_00020043
 
@@ -2745,6 +3174,9 @@ Individual: VFBi_00020043
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "AOTUv3_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020043
     
     
 Individual: VFB_00020179
@@ -2768,6 +3200,9 @@ Individual: VFBi_00020040
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "VESa1_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020040
+    
     
 Individual: VFBi_00020041
 
@@ -2776,6 +3211,9 @@ Individual: VFBi_00020041
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020041
     
     
 Individual: VFB_00020046
@@ -2791,6 +3229,9 @@ Individual: VFB_00020046
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020046
+    
     
 Individual: VFB_00020045
 
@@ -2804,6 +3245,9 @@ Individual: VFB_00020045
         <http://purl.obolibrary.org/obo/FBbt_00050134>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020045
     
     
 Individual: VFB_00020044
@@ -2819,6 +3263,9 @@ Individual: VFB_00020044
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050131>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020044
+    
     
 Individual: VFB_00020043
 
@@ -2832,6 +3279,9 @@ Individual: VFB_00020043
         <http://purl.obolibrary.org/obo/FBbt_00050128>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020043
     
     
 Individual: VFB_00020049
@@ -2847,6 +3297,9 @@ Individual: VFB_00020049
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020049
+    
     
 Individual: VFB_00020048
 
@@ -2860,6 +3313,9 @@ Individual: VFB_00020048
         <http://purl.obolibrary.org/obo/FBbt_00050143>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020048
     
     
 Individual: VFB_00020047
@@ -2875,6 +3331,9 @@ Individual: VFB_00020047
         <http://purl.obolibrary.org/obo/FBbt_00050140>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020047
+    
     
 Individual: VFB_00020052
 
@@ -2888,6 +3347,9 @@ Individual: VFB_00020052
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050155>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020052
     
     
 Individual: VFB_00020053
@@ -2903,6 +3365,9 @@ Individual: VFB_00020053
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050158>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020053
+    
     
 Individual: VFB_00020050
 
@@ -2916,6 +3381,9 @@ Individual: VFB_00020050
         <http://purl.obolibrary.org/obo/FBbt_00050149>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020050
     
     
 Individual: VFB_00020051
@@ -2931,6 +3399,9 @@ Individual: VFB_00020051
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020051
+    
     
 Individual: VFB_00020055
 
@@ -2944,6 +3415,9 @@ Individual: VFB_00020055
         <http://purl.obolibrary.org/obo/FBbt_00050164>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020055
     
     
 Individual: VFB_00020054
@@ -2959,6 +3433,9 @@ Individual: VFB_00020054
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020054
+    
     
 Individual: VFB_00020057
 
@@ -2972,6 +3449,9 @@ Individual: VFB_00020057
         <http://purl.obolibrary.org/obo/FBbt_00050170>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020057
     
     
 Individual: VFB_00020056
@@ -2987,6 +3467,9 @@ Individual: VFB_00020056
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050167>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020056
+    
     
 Individual: VFB_00020059
 
@@ -3000,6 +3483,9 @@ Individual: VFB_00020059
         <http://purl.obolibrary.org/obo/FBbt_00050176>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020059
     
     
 Individual: VFB_00020058
@@ -3015,6 +3501,9 @@ Individual: VFB_00020058
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020058
+    
     
 Individual: VFB_00020060
 
@@ -3028,6 +3517,9 @@ Individual: VFB_00020060
         <http://purl.obolibrary.org/obo/FBbt_00050179>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020060
     
     
 Individual: VFB_00020061
@@ -3043,6 +3535,9 @@ Individual: VFB_00020061
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020061
+    
     
 Individual: VFB_00020062
 
@@ -3056,6 +3551,9 @@ Individual: VFB_00020062
         <http://purl.obolibrary.org/obo/FBbt_00050185>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020062
     
     
 Individual: VFB_00020063
@@ -3071,6 +3569,9 @@ Individual: VFB_00020063
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020063
+    
     
 Individual: VFB_00020064
 
@@ -3084,6 +3585,9 @@ Individual: VFB_00020064
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050191>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020064
     
     
 Individual: VFB_00020069
@@ -3099,6 +3603,9 @@ Individual: VFB_00020069
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020069
+    
     
 Individual: VFB_00020068
 
@@ -3112,6 +3619,9 @@ Individual: VFB_00020068
         <http://purl.obolibrary.org/obo/FBbt_00050202>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020068
     
     
 Individual: VFB_00020067
@@ -3127,6 +3637,9 @@ Individual: VFB_00020067
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020067
+    
     
 Individual: VFB_00020066
 
@@ -3140,6 +3653,9 @@ Individual: VFB_00020066
         <http://purl.obolibrary.org/obo/FBbt_00050196>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020066
     
     
 Individual: VFB_00020065
@@ -3155,6 +3671,9 @@ Individual: VFB_00020065
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050194>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020065
+    
     
 Individual: VFBi_00020092
 
@@ -3163,6 +3682,9 @@ Individual: VFBi_00020092
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020092
     
     
 Individual: VFB_00020074
@@ -3178,6 +3700,9 @@ Individual: VFB_00020074
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020074
+    
     
 Individual: VFBi_00020091
 
@@ -3186,6 +3711,9 @@ Individual: VFBi_00020091
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "MBp1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020091
     
     
 Individual: VFB_00020075
@@ -3201,6 +3729,9 @@ Individual: VFB_00020075
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020075
+    
     
 Individual: VFBi_00020094
 
@@ -3209,6 +3740,9 @@ Individual: VFBi_00020094
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020094
     
     
 Individual: VFB_00020072
@@ -3224,6 +3758,9 @@ Individual: VFB_00020072
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020072
+    
     
 Individual: VFBi_00020093
 
@@ -3232,6 +3769,9 @@ Individual: VFBi_00020093
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SIPa1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020093
     
     
 Individual: VFB_00020073
@@ -3247,6 +3787,9 @@ Individual: VFB_00020073
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020073
+    
     
 Individual: VFB_00020070
 
@@ -3260,6 +3803,9 @@ Individual: VFB_00020070
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050208>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020070
     
     
 Individual: VFB_00020071
@@ -3275,6 +3821,9 @@ Individual: VFB_00020071
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020071
+    
     
 Individual: VFBi_00020090
 
@@ -3283,6 +3832,9 @@ Individual: VFBi_00020090
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SLPal2_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020090
     
     
 Individual: VFB_00020077
@@ -3298,6 +3850,9 @@ Individual: VFB_00020077
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020077
+    
     
 Individual: VFB_00020076
 
@@ -3311,6 +3866,9 @@ Individual: VFB_00020076
         <http://purl.obolibrary.org/obo/FBbt_00050226>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020076
     
     
 Individual: VFB_00020079
@@ -3326,6 +3884,9 @@ Individual: VFB_00020079
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020079
+    
     
 Individual: VFB_00020078
 
@@ -3340,6 +3901,9 @@ Individual: VFB_00020078
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020078
+    
     
 Individual: VFBi_00020089
 
@@ -3348,6 +3912,9 @@ Individual: VFBi_00020089
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020089
     
     
 Individual: VFBi_00020088
@@ -3358,6 +3925,9 @@ Individual: VFBi_00020088
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020088
+    
     
 Individual: VFBi_00020087
 
@@ -3366,6 +3936,9 @@ Individual: VFBi_00020087
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020087
     
     
 Individual: VFBi_00020086
@@ -3376,6 +3949,9 @@ Individual: VFBi_00020086
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "LHl3_02-i"^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020086
+    
     
 Individual: VFBi_00020085
 
@@ -3384,6 +3960,9 @@ Individual: VFBi_00020085
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020085
     
     
 Individual: VFBi_00020084
@@ -3394,6 +3973,9 @@ Individual: VFBi_00020084
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
     
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020084
+    
     
 Individual: VFBi_00020083
 
@@ -3402,6 +3984,9 @@ Individual: VFBi_00020083
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020083
     
     
 Individual: VFB_00020083
@@ -3417,6 +4002,9 @@ Individual: VFB_00020083
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050247>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020083
+    
     
 Individual: VFBi_00020082
 
@@ -3425,6 +4013,9 @@ Individual: VFBi_00020082
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020082
     
     
 Individual: VFB_00020084
@@ -3440,6 +4031,9 @@ Individual: VFB_00020084
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020084
+    
     
 Individual: VFBi_00020081
 
@@ -3448,6 +4042,9 @@ Individual: VFBi_00020081
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "WEDd1_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020081
     
     
 Individual: VFB_00020085
@@ -3463,6 +4060,9 @@ Individual: VFB_00020085
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020085
+    
     
 Individual: VFBi_00020080
 
@@ -3471,6 +4071,9 @@ Individual: VFBi_00020080
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23541733"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "This clone was generated by FLP-out MARCM at larval hatching. It therefore does not include embryonic born neurons."^^xsd:string,
         rdfs:label "SLPav2_02-i"^^xsd:string
+    
+    Facts:  
+     <http://purl.obolibrary.org/obo/vfb/VFBrel_0000003>  VFBc_00020080
     
     
 Individual: VFB_00020086
@@ -3486,6 +4089,9 @@ Individual: VFB_00020086
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00050256>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020086
+    
     
 Individual: VFB_00020080
 
@@ -3499,6 +4105,9 @@ Individual: VFB_00020080
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00050238>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020080
     
     
 Individual: VFB_00020081
@@ -3514,6 +4123,9 @@ Individual: VFB_00020081
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020081
+    
     
 Individual: VFB_00020082
 
@@ -3527,5 +4139,8 @@ Individual: VFB_00020082
         <http://purl.obolibrary.org/obo/FBbt_00050244>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    Facts:  
+     <http://xmlns.com/foaf/0.1/depicts>  VFBc_00020082
     
     
