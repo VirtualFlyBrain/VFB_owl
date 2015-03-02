@@ -9,6 +9,7 @@ from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from dict_cursor import dict_cursor
+import os
 
 # Refactoring needed: Passing a dict of ontologies is pretty opaque. 
 # Need to hard wire calls to corrects dicts into code
@@ -39,7 +40,7 @@ cursor.close()
 
 vfb_ind = Brain(baseURI, baseURI + dataset + ".owl")
 vfb_image = Brain()  # Not specifying base as there seems to be a bug that overides full URL specified when adding individuals.  Not ideal!
-
+vfb_ind.learn("../../owl/vfb_ext.owl")
 addOboAnnotationProperties(vfb_ind)
 addOboAnnotationProperties(vfb_image)
 vfb_image.addObjectProperty('http://xmlns.com/foaf/0.1/depicts')
@@ -47,7 +48,7 @@ vfb_image.addClass('http://xmlns.com/foaf/0.1/image')
 
 
 ont_dict = {}
-ont_dict['fbbt'] = load_ont("file://"+FBBT)
+ont_dict['fbbt'] = load_ont(FBBT)
 #ont_dict['fbbt'] = load_ont("http://purl.obolibrary.org/obo/fbbt/%s/fbbt-simple.owl" % fbbt_release_version)
 ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
