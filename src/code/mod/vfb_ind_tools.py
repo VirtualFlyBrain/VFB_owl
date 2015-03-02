@@ -1,6 +1,7 @@
 #!/usr/bin/env jython
 import warnings
 import sys
+import re
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 #from uk.ac.ebi.brain.error import BrainException
@@ -20,12 +21,6 @@ def load_ont(url):
 	ont.learn(url)
 	return ont
 
-# class simple_classExpression:
-# 	# Could just use ontology itself for this.  Do this with owltools module?
-# 	def __init__(self, rel='', obj=''):
-# 		self.rel = rel
-# 		self.obj = obj
-		
 
 def add_types_2_inds(ont, dc):
 	"""Adds type assertions to individuals in an ontology (ont)
@@ -44,15 +39,60 @@ def add_types_2_inds(ont, dc):
 			ont.type(d['rel'] + ' some ' + d['claz'], d['iID'])
 		else:
 			ont.type(d['claz'], d['iID'])
-		
+			
+def add_facts(cursor, ont, source):
+	"""Adds all facts to ont for a specified source.
+	"""
+	cursor.execute("SELECT subject.shortFormID AS sub, obj.shortFormID AS ob, rel.shortFormID AS relation, o.baseURI as relBase " \
+				"FROM owl_fact of "
+				"JOIN owl_individual subject ON (subject.id = of.subject) " \
+				"JOIN owl_individual obj ON (obj.id = of.object) " \
+				"JOIN owl_objectProperty rel ON (rel.id = of.relation) " 
+				"JOIN ontology o ON (rel.ontology_id = o.id)"\
+				"JOIN data_source objSource ON (obj.source_id = objSource.id) " \
+				"JOIN data_source subjSource ON (subject.source_id = subjSource.id) " \
+				"WHERE objSource.name = '%s' " \
+				"AND subjSource.name = '%s'" % (source, source))
+	dc = dict_cursor(cursor)
+	
+	for d in dc:
+		if not ont.knowsObjectProperty(d['relation']):				
+			ont.addObjectProperty(d['relBase']+d['relation'])
+		ont.objectPropertyAssertion(d['sub'], d['relation'], d['ob']) # Check Brain methods
+
+# For now - perhaps better to hard wire with a function that generates channel/image pairs + relevant classification and facts, assuming 1:1, re-using IDs and allowing specification of a template.
+# But this will almost certainly need to be 
+
+def gen_channel_image_pair_for_ind(ont, ind, registered_to):
+	"""Adds channel and image individuals to ont for ind using schema:
+	image has_signal_channel channel
+	image 'has_background_channel', registered_to
+	channel depicts ind
+	"""
+	
+	# Requires an existing channel for background channel.  
+	acc = re.findall("VFB_(\d+)", ind)
+	image_id = "VFBi_" + acc.group(2)
+	channel_id = "VFBc_" + acc.group(2)
+	ont.addNameIndividual(image_id)
+	ont.addNameIndividual(channel_id)
+	ont.addLabel(image_id, ont.getLabel(ind) + "_i")
+	ont.addLabel(channel_id, ont.getLabel(ind) + "_c")
+	ont.type(image_id, 'image')
+	ont.type(channel_id, 'channel')	# Switch to id for rel spec
+	ont.objectPropertyAssertion(image_id, 'has_signal_channel', channel_id)  # Switch to id for rel spec
+	ont.objectPropertyAssertion(image_id, 'has_background_channel', registered_to) # Switch to if for rel spec
+	ont.objectPropertyAssertion(channel_id, 'depicts', ind)
 	
 
 def gen_ind_by_source(cursor, ont_dict, dataset):
 	
+	# TODO - extend to add facts
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name as sname " \
+	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, " \
+				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 				"WHERE name = '%s'" % dataset)
 
@@ -60,7 +100,16 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
-		
+		if d['extID']:
+			if d['pre']:
+				link = d['pre'] + d['extID']
+			else:
+				warnings.warn("%s has an external ID  (%s) but data source (%s) has no baseURI!" % 
+							(d['iname'], d['extID'], d['sname']))
+				continue
+			if d['post']:
+				link = link + d['post']
+			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) # 
 
 	cursor.execute("SELECT i.shortFormID AS iID, " \
 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
@@ -79,6 +128,8 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 
 	dc = dict_cursor(cursor)
 	add_types_2_inds(vfb_ind, dc)
+	add_facts(cursor, vfb_ind, dataset)
+
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
 	
@@ -91,18 +142,15 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 		for iID in ilist:	 
 			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
 			defn = def_roller(types, ont_dict)
-			# To add refs as annotation on def - remove from here.
-			# full_def = "%s from %s (PMID:%s). " % (basic_def, d['pub_miniref'], str(d['pub_pmid']))
 			if d['dtext']:
 				defn += d['dtext']
-			# To add refs as annotation on def - need a new method for adding def annotation that also adds xref	
-			#vfb_ind.annotation(iID, "IAO_0000115", full_def) # Definition
 			add_def_with_xrefs(vfb_ind, iID, defn, ["PMID:" + str(d['pub_pmid'])]) #  Ref type should not be hardwired!
 						
 	# Roll image individuals. Temporarily commented out.
 	#	for iID in ind_id_type:
 	#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
 	cursor.close()
+	
 
 def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
 	man = ont.manager
