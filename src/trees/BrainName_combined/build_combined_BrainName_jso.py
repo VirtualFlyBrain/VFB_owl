@@ -35,8 +35,10 @@ for r in ttc_tab.tab:
     if r['oboId']:
         # if not already in tree - append to end
         if r['oboId'] not in dlist:
+            colors = [ int(X) for X in r['domainColour'].split(',')]
+            centre = [ float(X) for X in r['domainCentre'].split(',')]
             n = blank_treeContent_node(domainId=r['domainID'], nodeId=str(i), name = r['name'], oboID = r['oboId'], 
-                                       color = r['domainColour'], centre = r['domainCentre'])
+                                       color = colors, centre = centre)
             dtc.append(n)
             add_leaf(str(i), dts, '0')
             i += 1
