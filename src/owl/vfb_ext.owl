@@ -51,6 +51,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7">
+        <rdfs:label xml:lang="en">has_exemplar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
@@ -67,10 +75,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/C888C3DB-AEFA-447F-BD4C-858DFE33DBE7 -->
+    <!-- http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0 -->
 
-    <owl:ObjectProperty rdf:about="&vfb;C888C3DB-AEFA-447F-BD4C-858DFE33DBE7">
-        <rdfs:label xml:lang="en">has_exemplar</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0">
+        <rdfs:label>exemplar_of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
     </owl:ObjectProperty>
     
 
@@ -97,15 +106,6 @@
     <owl:ObjectProperty rdf:about="&vfb;VFBext_0000003">
         <rdfs:label>has_signal_channel</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&vfb;VFBext_0000001"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0 -->
-
-    <owl:ObjectProperty rdf:about="&vfb;c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0">
-        <rdfs:label>exemplar_of</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
     </owl:ObjectProperty>
     
 
