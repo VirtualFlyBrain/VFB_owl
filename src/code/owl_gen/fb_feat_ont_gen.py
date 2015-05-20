@@ -27,6 +27,10 @@ vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
 fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
 					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
 
+#fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
+#					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
+
+
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
