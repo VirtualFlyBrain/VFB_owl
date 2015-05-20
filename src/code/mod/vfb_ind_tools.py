@@ -13,7 +13,6 @@ from owl2pdm_tools import simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
 
-#import time
 
 
 def load_ont(url):
@@ -91,7 +90,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, " \
+	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
 				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 				"WHERE name = '%s' AND shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
@@ -100,6 +99,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
+		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000006', d['short_name'], )
 		if d['extID']:
 			if d['pre']:
 				link = d['pre'] + d['extID']
