@@ -15,7 +15,7 @@ def addOboAnnotationProperties(brain):
 
 def addVFBAnnotationProperties(brain):
     brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005") # data_source_link
-    
+    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006")
 
 
 def gen_id(idp, ID, length, id_name):
