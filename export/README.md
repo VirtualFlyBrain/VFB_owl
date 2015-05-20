@@ -4,7 +4,7 @@ JSON structure:
 
 ~~~.javascript
 
-{ shortFormID : 
+{ shortFormID_string : 
       { 'label': string,
         'def': string,
         'types': [ 
@@ -18,3 +18,7 @@ JSON structure:
   }
 
 ~~~~~
+
+e.g.
+
+
