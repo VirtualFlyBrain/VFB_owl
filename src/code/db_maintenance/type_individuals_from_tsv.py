@@ -1,3 +1,4 @@
+#!/usr/bin/env jython -J-Xmx4000m
 from lmb_fc_tools import get_con, owlDbOnt
 from uk.ac.ebi.brain.core import Brain
 from tsv2pdm import tab
@@ -15,7 +16,7 @@ ontologies.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl") # Better
 odbo = owlDbOnt(conn = con, ont = ontologies) # Object for interacting with the database + ontologies.
 # Also detects anything that looks like a FlyBase feature and checks validity against public FlyBase.
 
-annotation_table = tab(path = 'data/', file_name='annotations.tsv')
+annotation_table = tab(path = sys.argv[3], file_name=sys.argv[4])
 
 ID_range_start = 20000
 for row in annotation_table.tab:
