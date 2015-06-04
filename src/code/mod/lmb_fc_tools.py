@@ -8,6 +8,7 @@ from obo_tools import gen_id
 from owltools.graph import OWLGraphWrapper
 import re
 import warnings
+
 #from fc_ind import ont_dict
 
 # A big bag of functions for working with lmb fc mysql DB.
@@ -34,13 +35,28 @@ class owlDbOnt():
 	Methods act on the DB, rather than on the ontologies, and allow addition of 
 	OWLEntities, type statements on individuals. 
 	"""
-	# Aim: Safely and efficiently add content to OWL DB, checking against ontology.  
+	# Aims: 
+	# 1. Safely and efficiently add content to OWL DB, checking against ontology.
+	#  a. Addition of simple type statements should be possible by specify shortFormID of class and (optionally) OP.
+	#     Class only may be specified as class = 'pre_123456', object_Property =''  OR as just class = 'pre_123456'
+	
+	  
 	# Should fail gracefully with an instructive error message.
 	# Efficient addition means that it should be possible to add a type statement to an individual
 	# even if the type statement, nor its constituent object properties or classes are currently in the DB.
 	# Safety? Rather than checking, we use INSERT IGNORE + table constraints to avoid duplications in the DB.
+	
+	# Dealing with Null hack:
+	# Background: MySQL multi-column uniqueness constraints don't work with NULL.  
+	# So, to store type as named class & have uniqueness constraints, 
+	# we have an OP called null_hack with shortFormID = ''.  A uniqueness constraint on shortFormID makes this safe.
+	# All 
+	
+	# This is messy to code to, and hack to do so should be isolated.
 	# TODO - come up with a clean way to hide the ugly-ness of this null hack business!
 	# Make sure argument order & naming is standardised for all methods
+	
+	# Specs for typ
 	
 	
 	def __init__(self, conn, ont):
@@ -51,10 +67,16 @@ class owlDbOnt():
 		self.ont = ont
 		self.onto = ont.getOntology()
 		self.ogw = OWLGraphWrapper(self.onto)
-		self.ind_IdName = self._gen_ind_dict()
+		self.ind_IdName = {}
+		self.ind_NameId = {}
+		self._gen_ind_dicts()
 		self.ID_range_start = 1  # ID number to start from when generating new IDs.
 		self.fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
 										,'flybase', 'flybase', "org.postgresql.Driver")
+
+	def __str__(self):
+		return str(self.conn) + str(self.ont)
+
 		
 	def add_fb_feature(self, fbid):
 		"""A FlyBase feature to DB, as specified by fbid"""
@@ -63,17 +85,21 @@ class owlDbOnt():
 		# Is this a valid, non-obsolete feature? What is its name?
 		# If OK, add to DB under correct ontology.
 		
-		cursor.execute("SELECT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
+		# SQL HERE NEEDS WORK!
+		cursor.execute("SELECT DISTINCT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
 					"FROM synonym s " \
 					"JOIN cvterm typ ON (typ.cvterm_id=s.type_id) " \
 					"JOIN feature_synonym fs ON (fs.synonym_id=s.synonym_id) " \
 					"JOIN feature f ON (f.feature_id=fs.feature_id) " \
-					"WHERE f.uniquename  = '%s' and fs.is_current IS TRUE" % (fbid))
+					"WHERE f.uniquename = '%s' and fs.is_current IS TRUE and typ.name = 'symbol'" % (fbid))
 		
 		dc = dict_cursor(cursor)
+		# Add in check for dict length?
 		if dc:
 			for d in dc:
 				if not d['obstat']:
+					self.ont.addClass(fbid) # Not worrying about baseURI here!  Adding allows lookup later.  Bit hacky.
+					self.ont.label(fbid, d['uc_name'])
 					self.add_owl_entity_2_db(shortFormId = fbid, typ = 'owl_class', ont_name = 'fb_feat') 
 					cursor.close()
 					return True
@@ -85,18 +111,13 @@ class owlDbOnt():
 			warnings.warn("%s is not in FlyBase.")
 			cursor.close()
 			return False
-		
-
-		
+				
 	def update_akv(self):
 		cursor = self.conn.cursor()
 		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
 						"SELECT DISTINCT annotation_class, text from annotation")
 		self.conn.commit()
 		cursor.close()
-				
-	def __str__(self):
-		return str(self.conn) + str(self.ont)
 
 	def update_class_labels(self): 
 		"""Updates class labels in DB (connection via conn), using corresponding labels in ontology
@@ -130,43 +151,46 @@ class owlDbOnt():
 		Optionally specify and ontology name, otherwise the obo standard short name 
 		will be assumed - derived from the shortFormId. e.g. FBbt_00000100 => fbbt."""
 		
-		## Notes: In order to add to DB, ontology name is needed.
-		
-		# Null hack workaround!
-		
-		s = False
-		if shortFormId == '0':
-			return True
+		# Is the ontology name specified? if no, try to work out what if is by regex on ID or return a warning.
 		if not ont_name:
-			mung = re.match("(\w+)\_.+", shortFormId)  # Will fail on UUIDs!
-			ont_name = mung.group(1).lower()
-		if typ == 'owl_objectProperty':
-			if self.ont.knowsObjectProperty(shortFormId):
-				s = True
-		elif typ == 'owl_class':
-			if self.ont.knowsClass(shortFormId):
-				s = True
+			if re.match("(\w+)\_.+", shortFormId) :
+				mung = re.match("(\w+)\_.+", shortFormId)
+				ont_name = mung.group(1).lower()
+			else: 
+				warnings.warn("No ontology was specified for %s, and not it is not possible to derive the ontology name from the ID structure." \
+						"This OWL entity must be added manually to the DB.")
+				return False
 		else:
-			warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
-			return False
-		if s:	
-			cursor = self.conn.cursor()
-			cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
-                           "VALUES ('%s', '%s', (SELECT id FROM ontology WHERE short_name = '%s'))" % (typ, shortFormId, esc_quote(self.ont.getLabel(shortFormId)), ont_name))
-			cursor.close()
-			return True
-		else:
-			warnings.warn("Requested %s %s is not in the reference ontology!" % (typ, shortFormId))
-			return False
+		# Is the specified class/op already in the ontology.		
+			s = False # in ontology ?
+			if typ == 'owl_objectProperty':
+				if self.ont.knowsObjectProperty(shortFormId):
+					s = True
+			elif typ == 'owl_class':
+				if self.ont.knowsClass(shortFormId):
+					s = True
+			else:
+				warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
+				return False
+			if s:	
+				cursor = self.conn.cursor()
+				cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
+	                           "VALUES (\"%s\", \"%s\", (SELECT id FROM ontology WHERE short_name = \"%s\"))" % (typ, 
+												shortFormId, self.ont.getLabel(shortFormId), ont_name)) # Relies on being in ontology to get name!
+				cursor.close()
+				return True
+			else:
+				warnings.warn("Requested %s %s is not in the reference ontologies!" % (typ, shortFormId))
+				return False
 							
 	def _add_type(self, OWLclass, objectProperty=''):
 		"""Add to DB - a simple class expression to be used in typing.
 		A simple class expression may be a single class(c), or class
-		 + objectProperty (op), interpreted as op some c"""
+		 + objectProperty (op), interpreted as op some c."""
 		cursor = self.conn.cursor()
-		# Null hack!
+
 		if objectProperty:
-			self.add_owl_entity_2_db(objectProperty, 'owl_objectProperty')
+			self.add_owl_entity_2_db (shortFormId = objectProperty, typ = 'owl_objectProperty')
 		if re.match(pattern = 'FBtp|FBgn|FBti', string = OWLclass):
 			self.add_fb_feature(OWLclass)
 		else:
@@ -179,7 +203,7 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 
-	def add_akv_type(self, key, value, OWLclass, objectProperty='0'):
+	def add_akv_type(self, key, value, OWLclass, objectProperty=''):
 		self.update_akv()
 		if not self.type_exists(objectProperty, OWLclass):
 			self._add_type(OWLclass, objectProperty)
@@ -193,7 +217,7 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 		
-	def add_ind_type(self, ind, OWLclass, objectProperty='0'):
+	def add_ind_type(self, ind, OWLclass, objectProperty=''):
 		"""Adds a type statement to an individual.  
 		If only class is specified, then a named class type is specified,
 		otherwise the type is a class expression of the form op some c."""
@@ -208,15 +232,15 @@ class owlDbOnt():
 		cursor.close()
 		return typ
 	
-	def _gen_ind_dict(self):
+	def _gen_ind_dicts(self):
 		cursor=self.conn.cursor()
 		"""Generates a name:id dict of all individuals"""
 		cursor.execute("SELECT shortFormID, label FROM owl_individual")
 		dc = dict_cursor(cursor)
-		id_name = {}
 		for d in dc:
-			id_name[d['shortFormID']] = d['label']
-		return id_name
+			self.ind_IdName[d['shortFormID']] = d['label']
+			self.ind_NameId[d['label']] = d['shortFormID']
+
 		cursor.close()
 
 	def add_ind(self, name, source, ID_range_start = 0):
@@ -224,7 +248,9 @@ class owlDbOnt():
 		name = name of individual (string)
 		source = short source name in data_source table.
 		Optionally specify a start for ID range scanning 
-		(otherwise defaults to self.ID_range_start).
+		(otherwise defaults to self.ID_range_start).  
+		If individual of that name already exist, trigger warning and return False.
+		Otherwise return shortFormID of newly created individual.
 		"""
 		if ID_range_start:
 			self.ID_range_start = ID_range_start
@@ -232,13 +258,21 @@ class owlDbOnt():
 		(vfbid, self.ID_range_start) = gen_id('VFB', self.ID_range_start, 8, self.ind_IdName)
 		self.ind_IdName[vfbid] = name
 		name = re.sub("'", r"\'", name) # Is this enough quotes?
-		cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id) " \
-						"VALUES ('%s', UUID(), '%s', "
-						"(SELECT id as source_id from data_source where name = '%s'))" 
-						% (vfbid, name, source))
-		self.conn.commit()
-		cursor.close()
-		return vfbid
+		cursor.execute("SELECT oi.shortFormID from owl_individual oi WHERE oi.label = \"%s\"" % (name))
+		dc = dict_cursor(cursor)
+		if len(dc):
+			for d in dc:
+				warnings.warn("Database already has an individual called %s.  Its ID is %s." % (name, d['shortFormID']) )
+			cursor.close()
+			return False			
+		else:
+			cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id) " \
+							"VALUES (\"%s\", UUID(), \"%s\", "
+							"(SELECT id as source_id from data_source where name = \"%s\"))" 
+							% (vfbid, name, source))
+			self.conn.commit()
+			cursor.close()
+			return vfbid
 		
 	def make_ind_obsolete(self, vfbid):
 		cursor = self.conn.cursor()
@@ -246,7 +280,7 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 				
-	def type_exists(self, OWLclass, objectProperty = '0'):
+	def type_exists(self, OWLclass, objectProperty = ''):
 		"""Checks whether a type statement exist, if it does, returns the typestatement id, 
 		if not, returns FLASE."""
 		# Note - may not be needed if already using INSERT IGNORE.
