@@ -32,7 +32,7 @@ def get_con(usr, pwd):
 class owlDbOnt():
 	"""A class that bundles an OWL ontology with a DB handle for the VFB OWL DB.
 	Methods act on the DB, rather than on the ontologies, and allow addition of 
-	OWLEntities, type statements on individuals. It also allows mappings of 
+	OWLEntities, type statements on individuals. 
 	"""
 	# Aim: Safely and efficiently add content to OWL DB, checking against ontology.  
 	# Should fail gracefully with an instructive error message.
@@ -53,6 +53,40 @@ class owlDbOnt():
 		self.ogw = OWLGraphWrapper(self.onto)
 		self.ind_IdName = self._gen_ind_dict()
 		self.ID_range_start = 1  # ID number to start from when generating new IDs.
+		self.fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
+										,'flybase', 'flybase', "org.postgresql.Driver")
+		
+	def add_fb_feature(self, fbid):
+		"""A FlyBase feature to DB, as specified by fbid"""
+		cursor = self.fb_pg_conn.cursor()
+		
+		# Is this a valid, non-obsolete feature? What is its name?
+		# If OK, add to DB under correct ontology.
+		
+		cursor.execute("SELECT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
+					"FROM synonym s " \
+					"JOIN cvterm typ ON (typ.cvterm_id=s.type_id) " \
+					"JOIN feature_synonym fs ON (fs.synonym_id=s.synonym_id) " \
+					"JOIN feature f ON (f.feature_id=fs.feature_id) " \
+					"WHERE f.uniquename  = '%s' and fs.is_current IS TRUE" % (fbid))
+		
+		dc = dict_cursor(cursor)
+		if dc:
+			for d in dc:
+				if not d['obstat']:
+					self.add_owl_entity_2_db(shortFormId = fbid, typ = 'owl_class', ont_name = 'fb_feat') 
+					cursor.close()
+					return True
+				else:
+					warnings.warn("%s is an obsolete feature in FlyBase.")
+					cursor.close()
+					return False
+		else:
+			warnings.warn("%s is not in FlyBase.")
+			cursor.close()
+			return False
+		
+
 		
 	def update_akv(self):
 		cursor = self.conn.cursor()
@@ -99,11 +133,13 @@ class owlDbOnt():
 		## Notes: In order to add to DB, ontology name is needed.
 		
 		# Null hack workaround!
+		
 		s = False
 		if shortFormId == '0':
 			return True
-		mung = re.match("(\w+)\_.+", shortFormId)  # Will fail on UUIDs!
-		ont_name = mung.group(1).lower()
+		if not ont_name:
+			mung = re.match("(\w+)\_.+", shortFormId)  # Will fail on UUIDs!
+			ont_name = mung.group(1).lower()
 		if typ == 'owl_objectProperty':
 			if self.ont.knowsObjectProperty(shortFormId):
 				s = True
@@ -123,15 +159,19 @@ class owlDbOnt():
 			warnings.warn("Requested %s %s is not in the reference ontology!" % (typ, shortFormId))
 			return False
 							
-	def _add_type(self, OWLclass, objectProperty='0'):
+	def _add_type(self, OWLclass, objectProperty=''):
 		"""Add to DB - a simple class expression to be used in typing.
 		A simple class expression may be a single class(c), or class
 		 + objectProperty (op), interpreted as op some c"""
 		cursor = self.conn.cursor()
 		# Null hack!
-		if not objectProperty == '0':  
+		if objectProperty:
 			self.add_owl_entity_2_db(objectProperty, 'owl_objectProperty')
-		self.add_owl_entity_2_db(OWLclass, 'owl_class')
+		if re.match(pattern = 'FBtp|FBgn|FBti', string = OWLclass):
+			self.add_fb_feature(OWLclass)
+		else:
+			self.add_owl_entity_2_db(OWLclass, 'owl_class')
+			
 		cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
 	                   "SELECT id AS objectProperty, " \
 	                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
@@ -191,6 +231,7 @@ class owlDbOnt():
 		cursor = self.conn.cursor()
 		(vfbid, self.ID_range_start) = gen_id('VFB', self.ID_range_start, 8, self.ind_IdName)
 		self.ind_IdName[vfbid] = name
+		name = re.sub("'", r"\'", name) # Is this enough quotes?
 		cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id) " \
 						"VALUES ('%s', UUID(), '%s', "
 						"(SELECT id as source_id from data_source where name = '%s'))" 
