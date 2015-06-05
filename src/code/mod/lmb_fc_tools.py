@@ -160,28 +160,29 @@ class owlDbOnt():
 				warnings.warn("No ontology was specified for %s, and not it is not possible to derive the ontology name from the ID structure." \
 						"This OWL entity must be added manually to the DB.")
 				return False
-		else:
+			
 		# Is the specified class/op already in the ontology.		
-			s = False # in ontology ?
-			if typ == 'owl_objectProperty':
-				if self.ont.knowsObjectProperty(shortFormId):
-					s = True
-			elif typ == 'owl_class':
-				if self.ont.knowsClass(shortFormId):
-					s = True
-			else:
-				warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
-				return False
-			if s:	
-				cursor = self.conn.cursor()
-				cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
+		s = False # in ontology ?
+		if typ == 'owl_objectProperty':
+			if self.ont.knowsObjectProperty(shortFormId):
+				s = True
+		elif typ == 'owl_class':
+			if self.ont.knowsClass(shortFormId):
+				s = True
+		else:
+			warnings.warn("Unknown type, must must be one of: 'owl_class'; 'owl_objectProperty'")
+			return False
+		if s:	
+			cursor = self.conn.cursor()
+			cursor.execute("INSERT IGNORE INTO %s (shortFormID, label, ontology_id) " \
 	                           "VALUES (\"%s\", \"%s\", (SELECT id FROM ontology WHERE short_name = \"%s\"))" % (typ, 
-												shortFormId, self.ont.getLabel(shortFormId), ont_name)) # Relies on being in ontology to get name!
-				cursor.close()
-				return True
-			else:
-				warnings.warn("Requested %s %s is not in the reference ontologies!" % (typ, shortFormId))
-				return False
+								shortFormId, self.ont.getLabel(shortFormId), ont_name)) # Relies on being in ontology to get name!
+			cursor.close()
+			self.conn.commit()
+			return True
+		else:
+			warnings.warn("Requested %s %s is not in the reference ontologies!" % (typ, shortFormId))
+			return False
 							
 	def _add_type(self, OWLclass, objectProperty=''):
 		"""Add to DB - a simple class expression to be used in typing.

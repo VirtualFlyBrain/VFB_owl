@@ -1,3 +1,5 @@
+#!/usr/bin/env jython -J-Xmx4000m
+
 from lmb_fc_tools import get_con, owlDbOnt
 from uk.ac.ebi.brain.core import Brain
 from dict_cursor import dict_cursor
@@ -30,7 +32,7 @@ class test_suite():
     def __init__(self, usr,pwd, ont_uri_list):
         self.conn = get_con(usr,pwd)
         self.ont = Brain()
-        for uri in ont_uri_list:    
+        for uri in ont_uri_list:
                 self.ont.learn(uri)
         self.od = owlDbOnt(self.conn, self.ont)
         self.cleanup_list = []
@@ -44,9 +46,10 @@ class test_suite():
   
     
     def add_ind_type_test(self):
-        """Combined test of add ind and add_ind_type
+        """Combined test of add ind and add_ind_type..
         """
-        # add ind_test
+        # A better test would use silly examples that could never be real, so all entities could safely be deleted.
+        # add ind_test where name has quotes to be escaped.
         self.od.add_ind("add_ind_test", 'CostaJefferis')
         cursor = self.conn.cursor()
         cursor.execute("SELECT * from owl_individual WHERE label = 'add_ind_test'")
@@ -60,16 +63,24 @@ class test_suite():
         cursor.close()
         # add ind_type_test
         if iid:
-            self.od.add_ind_type(iid, 'FBbt_00003624', 'BFO_0000050')
+            self.od.add_ind_type(ind = iid, OWLclass = 'FBbt_00003624', objectProperty =  'BFO_0000050')
             typ = self.od.type_exists('FBbt_00003624', 'BFO_0000050')
+            self.od.add_ind_type(ind = iid, OWLclass = 'FBgn0000490', objectProperty = 'RO_0002292')
+            typ2 = self.od.type_exists('FBgn0000490', 'RO_0002292')
             stat = False
             if not typ: 
-                warnings.warn("Failed to create test type statement")
+                warnings.warn("Failed to create test type statement 'BFO_0000050' some 'FBbt_00003624'")
+            elif not typ2:
+                warnings.warn("Failed to create test type statement 'expresses some dpp'.")
             else:
                 stat = True
-        self.cleanup_list.append("DELETE FROM individual_type WHERE id = %s" % typ)  # This must be deleted first.
+            # No longer needed as DELETE cascade set    
+#            self.cleanup_list.append("DELETE FROM individual_type WHERE id = %s" % typ)  # Type assertions must be deleted first.
+#            self.cleanup_list.append("DELETE FROM individual_type WHERE id = %s" % typ2)  # Type assertions must be deleted first.
+
         self.cleanup_list.append("DELETE from owl_individual WHERE label = 'add_ind_test'")
         return stat
+    
                 
     def add_akv_type_test(self):
         self.od.add_akv_type('process', 'note','FBbt_00003624', 'BFO_0000050')
