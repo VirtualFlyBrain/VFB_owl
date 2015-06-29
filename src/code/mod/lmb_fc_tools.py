@@ -218,6 +218,22 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 		
+	def remove_akv_type(self, key, value, OWLclass, objectProperty=''):
+		self.update_akv()
+		if not self.type_exists(objectProperty, OWLclass):
+			self._add_type(OWLclass, objectProperty)
+		typ = self.type_exists(OWLclass, objectProperty)
+		cursor = self.conn.cursor()
+		cursor.execute("DELETE FROM annotation_type WHERE owl_type_id = '%s' " \
+					"AND annotation_key_value_id = ( " \
+					"SELECT id AS annotation_key_value_id " \
+					"FROM annotation_key_value " \
+	                "WHERE annotation_class = '%s' " \
+	                "AND annotation_text = '%s')" % (typ, key, value))
+		self.conn.commit()
+		cursor.close()		
+		return True
+		
 	def add_ind_type(self, ind, OWLclass, objectProperty=''):
 		"""Adds a type statement to an individual.  
 		If only class is specified, then a named class type is specified,
@@ -297,6 +313,7 @@ class owlDbOnt():
 		return typ
 	
 	def ind_type_report(self, ind):
+		# Currently returns a string.  Would be better as a table.
 		cursor = self.conn.cursor()
 		cursor.execute("SELECT oi.label as ind, op.label as rel, oc.label as claz FROM owl_type ot " \
 						"JOIN individual_type it ON (ot.id=it.type_id) " \
@@ -304,11 +321,51 @@ class owlDbOnt():
 						"JOIN owl_objectProperty op ON (op.id = ot.objectProperty) " \
 						"JOIN owl_class oc ON (oc.id = ot.class) " \
 						"WHERE oi.shortFormId = '%s'" % ind)
-		dc = dict_cursor(cursor)
+		return dict_cursor(cursor)
+		i = 0
 		out = ''
 		for d in dc:
-			out += '%s\t%s\t%s' % (d['ind'], d['rel'], d['claz'])
+			if not i: out += d['ind']
+			out += '\t%s ; %s' % (d['rel'], d['claz']) # Better to do this as a proper table report.
+			i = 1
 		return out
+	
+	def gen_annotation_report(self):
+		"""Returns an iterable of dicts with they keys
+		
+			d['annotation_class']
+			d['annotation_text']
+			d['op_label']
+			d['op_id']
+			d['class_label'] 
+			d['class_id']
+		
+		"""
+		cursor = self.con.cursor()
+		# First update AKV table
+		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
+		"SELECT DISTINCT annotation_class, text AS annotation_text FROM annotation")
+		self.con.commit()
+		# Generate mapping doc table
+		cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op_label, op.shortFormID AS op_id" \
+		"oc.label AS class_label, oc.shortFormID AS class_id " \
+		"FROM annotation_key_value akv " \
+		"LEFT OUTER JOIN annotation_type  at ON (akv.id = at.annotation_key_value_id) " \
+		"LEFT OUTER JOIN owl_type t ON at.owl_type_id = t.id " \
+		"LEFT OUTER JOIN owl_class oc ON t.class = oc.id " \
+		"LEFT OUTER JOIN owl_objectProperty op ON t.objectProperty = op.id " \
+		"ORDER BY annotation_class")
+		return dict_cursor(cursor)
+		
+	
+
+	
+
+
+			
+			
+			
+		
 
 
 # def add_type(objectProperty, claz, conn):
@@ -362,6 +419,7 @@ def BrainName_mapping(cursor, ont):
 		if not ont.knowsClass(d["shortFormID"]):
 			ont.addClass(d['baseURI'] + d["shortFormID"]) 
 	return BN_dict
+
 
 # def gen_ind_dict(conn):
 # 	cursor=conn.cursor()
