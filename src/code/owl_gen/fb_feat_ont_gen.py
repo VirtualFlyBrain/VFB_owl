@@ -8,66 +8,91 @@ from uk.ac.ebi.brain.core import Brain
 import lmb_fc_tools
 import re
 import warnings
+import time
 
 
 fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
+obo_base = "http://purl.obolibrary.org/"
+
 fb_feature = Brain(fbf_base, fbf)
 # declaration of tmp classes for transgenes
 
-fb_feature.addClass("F73F6684-1B7F-4464-9A3E-6DAB89827C03")
-fb_feature.label("F73F6684-1B7F-4464-9A3E-6DAB89827C03", "transposable_element_insertion_site")
-fb_feature.addClass("E3091C3F-964B-4C39-8AD3-067221C55442")
-fb_feature.label("E3091C3F-964B-4C39-8AD3-067221C55442", "transgenic_transposon")
+fb_feature.addClass(obo_base + "SO_0000704")
+fb_feature.label("SO_0000704", "gene")
+fb_feature.addClass(obo_base + 'SO_0000796')
+fb_feature.label('SO_0000796', "transgenic_transposable_element")
+fb_feature.addClass(obo_base + "SO_0001218")
+fb_feature.label("SO_0001218", "transgenic_insertion")
+fb_feature.addClass(obo_base + "SO_0001023")
+fb_feature.label("SO_0001023", "allele")
 
 fb_feature.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6")
 fb_feature.label("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", "expression pattern")
 
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
-fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
-					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
-
-#fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
+#fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
 #					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
+
+fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
+					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
 
 
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
 vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " \
-				"JOIN ontology o ON (oc.ontology_id=oc.ontology_id)" \
+				"JOIN ontology o ON (oc.ontology_id=o.id)" \
 				" WHERE o.URI = '%s'" % (fbf))
 
 flist = []
 dc = dict_cursor(vfb_cursor)
 for d in dc:
 	flist.append(d['shortFormID'])
+# Need to chunk list up - try chunks of 100 + short pause between.
 
-class_list_string = ''
-while flist:
-	claz = flist.pop()    
-	class_list_string += "'%s'" % claz
-	if len(flist) >= 1:
-		class_list_string += ", "
+def chunks(l, n):
+	"""Yield successive n-sized chunks from l."""
+	for i in xrange(0, len(l), n):
+		yield l[i:i+n]
+
+class_lists = chunks(l = flist, n = 100)
+
+for cl in class_lists:
+	class_list_string = "'" + "', '".join(cl) + "'"	
+	query = "SELECT DISTINCT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
+	"FROM synonym s " \
+	"JOIN cvterm typ ON (typ.cvterm_id=s.type_id) " \
+	"JOIN feature_synonym fs ON (fs.synonym_id=s.synonym_id) " \
+	"JOIN feature f ON (f.feature_id=fs.feature_id) " \
+	"WHERE f.uniquename in (%s) and fs.is_current IS TRUE and typ.name = 'symbol'" % (class_list_string)
 	
-fb_cursor.execute("SELECT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
-"FROM synonym s " \
-"JOIN cvterm typ ON (typ.cvterm_id=s.type_id) " \
-"JOIN feature_synonym fs ON (fs.synonym_id=s.synonym_id) " \
-"JOIN feature f ON (f.feature_id=fs.feature_id) " \
-"WHERE f.uniquename in (%s) and fs.is_current IS TRUE" % (class_list_string))  # 
+	fb_cursor.execute(query)  # 
+	
+	fb_dc = dict_cursor(fb_cursor)
+	for fb in fb_dc:
+#		print "\nProcessing:" + fb['uc_name']
+		if fb['obstat']:
+			warnings.warn(fb['fbid'] +" " + fb['uc_name'] + " is obsolete !  Not adding to fb_feature.owl.") 
+		else:
+			if not fb_feature.knowsClass(fb['fbid']): # Only add class if not obsolete.
+				fb_feature.addClass(fb['fbid'])
+				if re.match('FBtp\d+', fb['fbid']):
+					fb_feature.subClassOf(fb['fbid'], 'SO_0000796')
+				elif re.match('FBti\d+', fb['fbid']):
+					fb_feature.subClassOf(fb['fbid'], 'SO_0001218')
+				elif re.match('FBgn\d+', fb['fbid']):
+					fb_feature.subClassOf(fb['fbid'], 'SO_0000704')
+				elif re.match('FBal\d+', fb['fbid']):
+					fb_feature.subClassOf(fb['fbid'], 'SO_0001023')
+				else:
+					warnings.warn("Ignoring this, as doesn't look like an FB feature: %s."  % fb['fbid'])
+					continue
 
-fb_dc = dict_cursor(fb_cursor)
-for fb in fb_dc:
-	if fb['obstat']:
-		warnings.warn(fb['fbid'] +" " + fb['uc_name'] + " is obsolete !  Not adding to fb_feature.owl.") 
-	else:
-		if not fb_feature.knowsClass(fb['fbid']): # Only add class if not obsolete.
-			fb_feature.addClass(fb['fbid'])
-		tmp = re.sub("<up\>", "[",fb['uc_name'])
-		uc_name = re.sub("<\/up>", "]", tmp)
-		fb_feature.label(fb['fbid'], uc_name)
-		#		fb_feature.subClassOf(fb['fbid'], ??)
+			tmp = re.sub("<up\>", "[",fb['uc_name'])
+			uc_name = re.sub("<\/up>", "]", tmp)
+			fb_feature.label(fb['fbid'], uc_name)
+	time.sleep(0.1)
 
 vfb_cursor.close()
 vfb_ms_conn.close()
@@ -75,4 +100,5 @@ vfb_ms_conn.close()
 fb_cursor.close()
 fb_pg_conn.close()
 
-fb_feature.save("../../owl/fb_features.owl") 
+fb_feature.save("fb_features.owl") 
+fb_feature.sleep()
