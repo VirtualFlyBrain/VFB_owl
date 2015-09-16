@@ -62,7 +62,7 @@ class simpleClassExpression():
 
 class ont_manager():
     # I seem to be reinventing Brain....
-    """Constructor: ont_manager(OWLontology)
+    """Constructors: ont_manager(OWLontology)
        Attributes:
            ont
            manager: OWLManager
@@ -71,7 +71,7 @@ class ont_manager():
            bi_sfp: uses .getEntity(<string> shortForm), .getShortForm(OWLEntity entity)
            """
         
-    def __init__(self, ont):
+    def __init__(self, ont, file_path=''):
         self.ont = ont
         self.manager = OWLManager.createOWLOntologyManager()
         self.factory = self.manager.getOWLDataFactory()
@@ -141,6 +141,14 @@ class ont_manager():
             sce = simpleClassExpression(t)
             if sce.is_simple():
                 out.append(sce.get_sce_pdm())
+        return out
+    
+    def getAllObjectProperties(self):
+        """Returns a list of object Property sfids"""
+        ### A good candidate for addition to Brain
+        out = []
+        for r in self.ont.getObjectPropertiesInSignature():
+            out.append(self.simple_sfp.getShortForm(r))
         return out
     
 def migrate_axioms_to_ind(brain, claz):
