@@ -1,7 +1,7 @@
 #!/usr/bin/env jython -J-Xmx8000m
 import json # Requires 2.7 !  Using beta1
-from uk.ac.ebi.brain.error import BrainException
-from uk.ac.ebi.brain.core import Brain
+#from uk.ac.ebi.brain.error import BrainException
+#from uk.ac.ebi.brain.core import Brain
 import re
 
 # DONE: Check relationship of tree node IDs to stack IDs.
@@ -134,13 +134,6 @@ def fu(root, d, tree):
         # keep going until hit a term with no children, subtracting each node you find from the list to iterate over
         # (Hmmm - is this a recipe for single inheritance?)
         # Then back track to children of root  and start from 2nd longest.
-        # But how do you know if
-        
-        # How to structure? 
-    
-    
-def val_with_longest_list(d):
-    return    
 
 
 def update_centres(treeContent, domainId_centre):
