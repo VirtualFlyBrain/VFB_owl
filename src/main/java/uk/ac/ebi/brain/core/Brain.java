@@ -15,6 +15,8 @@
 package uk.ac.ebi.brain.core;
 
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.*;
 import java.util.*;
 
@@ -1246,7 +1248,7 @@ public class Brain {
 	 */
 	private OWLObjectPropertyExpression parseObjectPropertyExpression(String objectPropertyExpression) throws ObjectPropertyExpressionException {
 		OWLObjectPropertyExpression owlObjectPropertyExpression = null;
-		ManchesterOWLSyntaxEditorParser parser = getParser(objectPropertyExpression);
+		ManchesterParser parser = getParser(objectPropertyExpression);
 		try {
 			owlObjectPropertyExpression = parser.parseObjectPropertyExpression();
 		} catch (ParserException e) {
@@ -1263,9 +1265,9 @@ public class Brain {
 	 */
 	private OWLDataPropertyExpression parseDataPropertyExpression(String dataPropertyExpression) throws DataPropertyExpressionException {
 		OWLDataPropertyExpression owlDataPropertyExpression = null;
-		ManchesterOWLSyntaxEditorParser parser = getParser(dataPropertyExpression);
+		ManchesterParser parser = getParser(dataPropertyExpression);
 		try {
-			owlDataPropertyExpression = parser.parseDataPropertyExpression();
+			owlDataPropertyExpression = parser.parseDataPropertyExpressionFixed();
 		} catch (ParserException e) {
 			throw new DataPropertyExpressionException(e);
 		}
@@ -1297,7 +1299,7 @@ public class Brain {
 	 */
 	private OWLNamedIndividual parseNamedIndividual(String namedIndividual) throws NamedIndividualException  {
 		OWLNamedIndividual owlNamedIndividual = null;
-		ManchesterOWLSyntaxEditorParser parser = getParser(namedIndividual);
+		ManchesterParser parser = getParser(namedIndividual);
 		try {
 			owlNamedIndividual = (OWLNamedIndividual) parser.parseIndividual();
 		} catch (ParserException e) {
@@ -1306,13 +1308,50 @@ public class Brain {
 		return owlNamedIndividual;
 	}
 
+	private static class ManchesterParser extends ManchesterOWLSyntaxEditorParser {
+
+		public ManchesterParser(OWLDataFactory dataFactory, String s) {
+			super(dataFactory, s);
+		}
+	
+		public OWLIndividual parseIndividual() {
+			return super.parseIndividual();
+		}
+		
+		public OWLObjectPropertyExpression parseObjectPropertyExpression() {
+			return super.parseObjectPropertyExpression(false);
+		}
+		
+		OWLDataPropertyExpression parseDataPropertyExpressionFixed() throws DataPropertyExpressionException {
+			// very nasty hack to access a private method in the ManchesterOWLSyntaxEditorParser
+			try {
+				Method method = ManchesterOWLSyntaxEditorParser.class.getDeclaredMethod("parseDataPropertyExpression");
+				method.setAccessible(true);
+				Object result = method.invoke(this);
+				if (result != null && result instanceof OWLDataPropertyExpression) {
+					return (OWLDataPropertyExpression) result;
+				}
+			} catch (InvocationTargetException e) {
+				// handle ParserException thrown by method
+				if (e.getTargetException() instanceof ParserException) {
+					throw (ParserException) e.getTargetException();
+				}
+				throw new DataPropertyExpressionException(e);
+			
+			} catch (Exception e) {
+				throw new DataPropertyExpressionException(e);
+			}
+			return null;
+		}
+	}
+	
 	/**
 	 * Instantiate a new Manchester syntax parser.
 	 * @param expression
 	 * @return parser
 	 */
-	private ManchesterOWLSyntaxEditorParser getParser(String expression) {	
-		ManchesterOWLSyntaxEditorParser parser = new ManchesterOWLSyntaxEditorParser(this.factory, expression);
+	private ManchesterParser getParser(String expression) {	
+		ManchesterParser parser = new ManchesterParser(this.factory, expression);
 		parser.setDefaultOntology(this.ontology);
 		parser.setOWLEntityChecker(this.entityChecker);
 		return parser;
@@ -1620,7 +1659,7 @@ public class Brain {
 	public boolean hasElProfile() {
 		OWL2ELProfile profile = new OWL2ELProfile();
 		OWLProfileReport report = profile.checkOntology(this.ontology);
-		if(report.getViolations().size() == 0){
+		if(filterElReport(report).isEmpty()){
 			return true;
 		}else{
 			return false;
@@ -1636,11 +1675,35 @@ public class Brain {
 		OWLProfileReport report = profile.checkOntology(this.ontology);
 		ArrayList<String> violations = new ArrayList<String>();
 		if(report.getViolations().size() != 0){
-			for (OWLProfileViolation violation : report.getViolations()) {
+			for (OWLProfileViolation violation : filterElReport(report)) {
 				violations.add(violation.toString());
 			}
 		}	
 		return violations;
+	}
+	
+	/**
+	 * Filter EL report. It seems with the switch from owl-api 3.4.10 to 3.5.1 
+	 * disjoint classes are now no longer in the EL profile.
+	 * 
+	 * But because EK supports disjoint classes it isn't a real issue.
+	 * 
+	 * @param report
+	 * @return filtered violations
+	 */
+	private List<OWLProfileViolation> filterElReport(OWLProfileReport report) {
+		List<OWLProfileViolation> violations = report.getViolations();
+		if (violations.isEmpty()) {
+			return violations;
+		}
+		List<OWLProfileViolation> filtered = new ArrayList<OWLProfileViolation>(violations.size());
+		for(OWLProfileViolation violation : violations) {
+			AxiomType<?> violationType = violation.getAxiom().getAxiomType();
+			if (AxiomType.DISJOINT_CLASSES.equals(violationType) == false) {
+				violations.add(violation);
+			}
+		}
+		return filtered;
 	}
 
 	/**
