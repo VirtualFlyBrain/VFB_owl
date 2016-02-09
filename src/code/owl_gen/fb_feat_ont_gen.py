@@ -13,7 +13,7 @@ import time
 
 fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
-obo_base = "http://purl.obolibrary.org/"
+obo_base = "http://purl.obolibrary.org/obo"
 
 fb_feature = Brain(fbf_base, fbf)
 # declaration of tmp classes for transgenes
