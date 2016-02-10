@@ -1,5 +1,5 @@
 from uk.ac.ebi.brain.core import Brain
-from owl2pdm_tools import typeAxioms2pdm, ont_manager
+from owl2pdm_tools import ont_manager
 import  json
 
 
