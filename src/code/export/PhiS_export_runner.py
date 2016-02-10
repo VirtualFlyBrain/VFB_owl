@@ -34,8 +34,8 @@ def gen_pdm_from_indfile(ont_url, outfile):
     ont = Brain()
     ont.learn(ont_url)
     axioms = {}
-    if ont.knowsClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6"):
-        axioms.update(gen_pdm(ont, ont.getInstances("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", 0), "B8C6934B-C27C-4528-BE59-E75F5B9F61B6")) # expression_patterns
+    if ont.knowsClass("CARO_0030002"):
+        axioms.update(gen_pdm(ont, ont.getInstances("CARO_0030002", 0), "CARO_0030002")) # expression_patterns
     if ont.knowsClass("FBbt_00005106"):
         axioms.update(gen_pdm(ont, ont.getInstances("FBbt_00005106", 0), "FBbt_00005106")) # neurons
     if ont.knowsClass("FBbt_00007683"):

@@ -20,13 +20,12 @@ import os
 
 
 
-"""ARG1: db username; ARG2: db password, ARG3: dataset name; ARG4(!) path to FBBT
-ARG4: local path to version of fbbt used throughout.
+"""ARG1: db username; ARG2: db password, ARG3: dataset name; 
+ARG4(!) path to FBbt version used throughout - can be local path or full URL.
 """
 
 conn = get_con(sys.argv[1], sys.argv[2])
 
-#conn = zxJDBC.connect("jdbc:mysql://127.0.0.1:3307/flycircuit", sys.argv[1], sys.argv[2], "org.gjt.mm.mysql.Driver") # To be used via ssh tunnel.
 
 dataset = sys.argv[3]
 FBBT = sys.argv[4]

@@ -209,7 +209,7 @@ def def_roller(types, ont_dict):  #
 			if (parent_class == 'FBbt_00005106'): # neuron
 				genus = 'neuron'
 				#			if parent_class == 'FBbt_00003624': # adult brain - hack for EP! change back once fixed on site!!!!!!!
-			if (parent_class == 'B8C6934B-C27C-4528-BE59-E75F5B9F61B6'):
+			if (parent_class == 'CARO_0030002'):
 				genus = 'expression pattern' 
 					# po = 'adult brain' # hack for EP! change back once fixed on site!!!!!!!
 			if fbbt.isSuperClass('FBbt_00007683', parent_class, 0) or (parent_class == 'FBbt_00007683') : # neuroblast lineage clone

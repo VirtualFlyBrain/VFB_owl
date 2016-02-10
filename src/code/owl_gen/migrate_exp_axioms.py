@@ -13,7 +13,7 @@ eont.learn(sys.argv[2]) #
 
 # Find all expression classes
 
-exp = eont.getSubClasses("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", 0) # SC of expression pattern
+exp = eont.getSubClasses("CARO_0030002", 0) # SC of expression pattern
 
 # Iterate over expression pattern classes, migrating all subclass axioms to their instances.
 start = time.time()
