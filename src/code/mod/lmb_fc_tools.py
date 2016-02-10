@@ -63,16 +63,16 @@ class owlDbOnt():
 		"""Conn is a zxJBDC database handle;
 		ont is a Brain Object."""
 
-		self.conn = conn
-		self.ont = ont
-		self.onto = ont.getOntology()
-		self.ogw = OWLGraphWrapper(self.onto)
-		self.ind_IdName = {}
-		self.ind_NameId = {}
-		self._gen_ind_dicts()
+		self.conn = conn  # Database connection
+		self.ont = ont # Loaded ontologies (as Brain object)
+		self.onto = ont.getOntology() # OWL-API ontology object
+		self.ogw = OWLGraphWrapper(self.onto) #
+		self.ind_IdName = {} # ID:name lookup for individuals in DB.  Updated when new individuals are generated.
+		self.ind_NameId = {} # Name:ID lookup for individuals in DB.  Updated when new individuals are generated
+		self._gen_ind_dicts()  # Initialise look dicts
 		self.ID_range_start = 1  # ID number to start from when generating new IDs.
 		self.fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
-										,'flybase', 'flybase', "org.postgresql.Driver")
+										,'flybase', 'flybase', "org.postgresql.Driver")  # Connection to public FlyBase.
 
 	def __str__(self):
 		return str(self.conn) + str(self.ont)
@@ -112,19 +112,19 @@ class owlDbOnt():
 			cursor.close()
 			return False
 				
-	def update_akv(self):
+	def _update_akv(self):
+		"""Updates the annotation_key_value table."""
 		cursor = self.conn.cursor()
 		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
 						"SELECT DISTINCT annotation_class, text from annotation")
 		self.conn.commit()
 		cursor.close()
 
-	def update_class_labels(self): 
-		"""Updates class labels in DB (connection via conn), using corresponding labels in ontology
-		 (brain object ont) applied to ontology corresponding to specified using file_name."""	
+	def update_ont(self, typ): 
+		"""Checks OWL classes and relations in DB for whether they Updates class or relation labels in DB using corresponding labels in ontology."""	
 		cursor1 = self.conn.cursor()
 		cursor2 = self.conn.cursor()
-		cursor1.execute("SELECT oc.shortFormID, oc.label FROM owl_class oc")
+		cursor1.execute("SELECT oc.shortFormID, oc.label FROM %s oc" % typ)
 		dc = dict_cursor(cursor1)
 		for d in dc:
 			obo_id = re.sub('_', ':', d['shortFormID']) # surely there's a method that doesn't require this!
@@ -134,7 +134,7 @@ class owlDbOnt():
 				if self.ogw.isObsolete(clazo):
 					warnings.warn("Obsolete class: %s"  %  d['shortFormID'] )
 				elif not new_label == d['label']:
-					update = "UPDATE owl_class set label='%s' WHERE shortFormID = '%s'" % (new_label, d['shortFormID'])
+					update = "UPDATE %s set label='%s' WHERE shortFormID = '%s'" % (typ, new_label, d['shortFormID'])
 					#print update
 					cursor2.execute(update)
 					#print cursor2.warnings
@@ -158,7 +158,7 @@ class owlDbOnt():
 				ont_name = mung.group(1).lower()
 			else: 
 				warnings.warn("No ontology was specified for %s, and not it is not possible to derive the ontology name from the ID structure." \
-						"This OWL entity must be added manually to the DB.")
+						"This OWL entity must be added manually to the DB." % shortFormId)
 				return False
 			
 		# Is the specified class/op already in the ontology.		
@@ -205,7 +205,7 @@ class owlDbOnt():
 		cursor.close()
 
 	def add_akv_type(self, key, value, OWLclass, objectProperty=''):
-		self.update_akv()
+		self._update_akv()
 		if not self.type_exists(objectProperty, OWLclass):
 			self._add_type(OWLclass, objectProperty)
 		typ = self.type_exists(OWLclass, objectProperty)
@@ -219,7 +219,7 @@ class owlDbOnt():
 		cursor.close()
 		
 	def remove_akv_type(self, key, value, OWLclass, objectProperty=''):
-		self.update_akv()
+		self._update_akv()
 		if not self.type_exists(objectProperty, OWLclass):
 			self._add_type(OWLclass, objectProperty)
 		typ = self.type_exists(OWLclass, objectProperty)
@@ -260,7 +260,7 @@ class owlDbOnt():
 
 		cursor.close()
 
-	def add_ind(self, name, source, ID_range_start = 0):
+	def add_ind(self, name, source, ID_range_start = 0, short_name = ''):
 		"""Add an individual to the DB
 		name = name of individual (string)
 		source = short source name in data_source table.
@@ -283,9 +283,9 @@ class owlDbOnt():
 			cursor.close()
 			return False			
 		else:
-			cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id) " \
+			cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id, short_name) " \
 							"VALUES (\"%s\", UUID(), \"%s\", "
-							"(SELECT id as source_id from data_source where name = \"%s\"))" 
+							"(SELECT id as source_id from data_source where name = \"%s\"), short_name)" 
 							% (vfbid, name, source))
 			self.conn.commit()
 			cursor.close()
@@ -313,6 +313,15 @@ class owlDbOnt():
 		return typ
 	
 	def ind_type_report(self, ind):
+		
+		"""Returns an iterable of dicts with the keys
+		
+			d['ind'] - label of individual
+			d['rel'] - label of relation in type assertion on ind
+			d['claz'] - label of class in type assertion on ind
+
+		All type assertions are simple - either named class or 'R some C'
+		"""
 		# Currently returns a string.  Would be better as a table.
 		cursor = self.conn.cursor()
 		cursor.execute("SELECT oi.label as ind, op.label as rel, oc.label as claz FROM owl_type ot " \
@@ -322,16 +331,10 @@ class owlDbOnt():
 						"JOIN owl_class oc ON (oc.id = ot.class) " \
 						"WHERE oi.shortFormId = '%s'" % ind)
 		return dict_cursor(cursor)
-		i = 0
-		out = ''
-		for d in dc:
-			if not i: out += d['ind']
-			out += '\t%s ; %s' % (d['rel'], d['claz']) # Better to do this as a proper table report.
-			i = 1
-		return out
+
 	
 	def gen_annotation_report(self):
-		"""Returns an iterable of dicts with they keys
+		"""Returns an iterable of dicts with the keys
 		
 			d['annotation_class']
 			d['annotation_text']
@@ -341,13 +344,13 @@ class owlDbOnt():
 			d['class_id']
 		
 		"""
-		cursor = self.con.cursor()
+		cursor = self.conn.cursor()
 		# First update AKV table
 		cursor.execute("INSERT IGNORE INTO annotation_key_value (annotation_class, annotation_text) " \
 		"SELECT DISTINCT annotation_class, text AS annotation_text FROM annotation")
-		self.con.commit()
+		self.conn.commit()
 		# Generate mapping doc table
-		cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op_label, op.shortFormID AS op_id" \
+		cursor.execute("SELECT akv.annotation_class, akv.annotation_text, op.label AS op_label, op.shortFormID AS op_id, " \
 		"oc.label AS class_label, oc.shortFormID AS class_id " \
 		"FROM annotation_key_value akv " \
 		"LEFT OUTER JOIN annotation_type  at ON (akv.id = at.annotation_key_value_id) " \

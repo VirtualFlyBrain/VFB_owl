@@ -27,9 +27,6 @@ fb_feature.label("SO_0001218", "transgenic_insertion")
 fb_feature.addClass(obo_base + "SO_0001023")
 fb_feature.label("SO_0001023", "allele")
 
-fb_feature.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6")
-fb_feature.label("B8C6934B-C27C-4528-BE59-E75F5B9F61B6", "expression pattern")
-
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
 #fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
 #					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
@@ -77,6 +74,9 @@ for cl in class_lists:
 		else:
 			if not fb_feature.knowsClass(fb['fbid']): # Only add class if not obsolete.
 				fb_feature.addClass(fb['fbid'])
+				tmp = re.sub("<up\>", "[",fb['uc_name'])
+				uc_name = re.sub("<\/up>", "]", tmp)
+				fb_feature.label(fb['fbid'], uc_name)
 				if re.match('FBtp\d+', fb['fbid']):
 					fb_feature.subClassOf(fb['fbid'], 'SO_0000796')
 				elif re.match('FBti\d+', fb['fbid']):
@@ -89,9 +89,7 @@ for cl in class_lists:
 					warnings.warn("Ignoring this, as doesn't look like an FB feature: %s."  % fb['fbid'])
 					continue
 
-			tmp = re.sub("<up\>", "[",fb['uc_name'])
-			uc_name = re.sub("<\/up>", "]", tmp)
-			fb_feature.label(fb['fbid'], uc_name)
+
 	time.sleep(0.1)
 
 vfb_cursor.close()
