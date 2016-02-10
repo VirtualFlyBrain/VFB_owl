@@ -50,7 +50,7 @@ def expression_annotation_to_owl(cursor, ont_dict, FBrf):
 		# Add class declaration for transgene if not already declared
 		if not expPat.knowsClass(d['transgene_uniquename']):
 			expPat.addClass(fbf_base + d['transgene_uniquename'])
-		ec_exp = "B8C6934B-C27C-4528-BE59-E75F5B9F61B6 that RO_0002292 some %s" % d['transgene_uniquename'] # Expression pattern that expresses some X
+		ec_exp = "CARO_0030002 that RO_0002292 some %s" % d['transgene_uniquename'] # Expression pattern that expresses some X
 		# If class Equivalent to ex_exp does not exist, add it, name it, define it.
 		ec_list =  expPat.getEquivalentClasses(ec_exp)
 		if len(ec_list) > 1:
@@ -97,7 +97,7 @@ def download2Brain(baseURL, filename):
 	return ont
 
 expPat = Brain("http://purl.obolibrary.org/obo/vfb/", "http://purl.obolibrary.org/obo/fbbt/vfb/exp_pat.owl")
-expPat.addClass("B8C6934B-C27C-4528-BE59-E75F5B9F61B6") #  sfid for expression pattern.
+expPat.addClass("http://purl.obolibrary.org/obo/CARO_0030002") #   expression pattern.
 expPat.addObjectProperty("http://purl.obolibrary.org/obo/RO_0002292")
 expPat.addObjectProperty("http://purl.obolibrary.org/obo/RO_0002131")
 # fbbt = download2Brain("http://purl.obolibrary.org/obo/fbbt/", "fbbt-simple.owl")
