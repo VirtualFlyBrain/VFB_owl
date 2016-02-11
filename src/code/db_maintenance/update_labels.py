@@ -1,34 +1,27 @@
-#!/usr/bin/env jython
+#!/usr/bin/env jython -J-Xmx3000m
 
 import sys
-sys.path.append('../mod')
-
-from lmb_fc_tools import update_class_labels
-from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-from lmb_fc_tools import get_con
-
-
+sys.path.append('../mod')
+from lmb_fc_tools import get_con, owlDbOnt
 con = get_con(sys.argv[1], sys.argv[2])
 
-fbbt = Brain()
-fbbt.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
-update_class_labels('fbbt', fbbt, con)
+obo = "http://purl.obolibrary.org/obo/"
+vfb = obo + "fbbt/vfb/"
 
-so = Brain()
-so.learn("http://purl.obolibrary.org/obo/so.owl")
-update_class_labels('so', so, con)
+paths = [obo + "fbbt/fbbt-simple.owl",
+         obo + "so.owl",
+         vfb + "fb_features.owl",
+         obo + "ro.owl",
+         vfb + "vfb_ext.owl"
+         ]
 
-fb = Brain()
-fb.learn("file:///repos/VFB_owl/src/owl/fb_features.owl")
-update_class_labels('fb_feat', fb, con)
-
-ro = Brain()
-ro.learn("http://purl.obolibrary.org/obo/ro.owl")
-update_class_labels('ro', ro, con)
-
-vfb = Brain()
-vfb.learn("file:///repos/VFB_owl/src/owl/vfb_ext.owl")
-update_class_labels('vfb_ext', vfb, con)
+# Could be done with one big brain file in memory, but would require lots of ram to run
+for p in paths:
+    b = Brain()
+    b.learn(p)
+    od = owlDbOnt(con, b)
+    od.update_labels()
+    b.sleep()
 
 con.close()
