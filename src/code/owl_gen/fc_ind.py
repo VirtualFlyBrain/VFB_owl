@@ -1,4 +1,4 @@
-#!/usr/bin/env jython -J-Xmx8000m
+#!/usr/bin/env jython -J-Xmx4000m
 
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.

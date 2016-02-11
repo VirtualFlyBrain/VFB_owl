@@ -13,10 +13,12 @@ import time
 
 fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
-obo_base = "http://purl.obolibrary.org/"
+obo_base = "http://purl.obolibrary.org/obo/"
 
 fb_feature = Brain(fbf_base, fbf)
-# declaration of tmp classes for transgenes
+
+# declaration of parent classes for FB features and expression patterns
+# Shouldn't really be adding labels here...
 
 fb_feature.addClass(obo_base + "SO_0000704")
 fb_feature.label("SO_0000704", "gene")
@@ -27,13 +29,15 @@ fb_feature.label("SO_0001218", "transgenic_insertion")
 fb_feature.addClass(obo_base + "SO_0001023")
 fb_feature.label("SO_0001023", "allele")
 
+fb_feature.addClass(obo_base + "CARO_0030002")
+fb_feature.label("CARO_0030002", "expression pattern")
+
 vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
 #fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
-#					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
+#					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") 
 
-fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase" 
-					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") # Use for local installation
-
+fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", 
+					'flybase', '', "org.postgresql.Driver") # public DB
 
 vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
@@ -55,6 +59,7 @@ def chunks(l, n):
 
 class_lists = chunks(l = flist, n = 100)
 
+# Need to be careful to preserve UTF-8 content here!
 for cl in class_lists:
 	class_list_string = "'" + "', '".join(cl) + "'"	
 	query = "SELECT DISTINCT f.uniquename AS fbid, synonym_sgml AS uc_name, f.is_obsolete as obstat " \
