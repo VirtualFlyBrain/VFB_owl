@@ -21,6 +21,7 @@ warnings are triggered. It is straightforward to remove this assumption.
 Double quotes in names are banned.
 """
 
+
 sys.path.append("../mod/")
 con = get_con(usr = sys.argv[1] , pwd = sys.argv[2])  # connection to LMB DB. Need to make ssh tunnel first.
 
@@ -43,7 +44,8 @@ for row in annotation_table.tab:
     new_ind = odbo.add_ind(name = row['ind_name'], source = row['ind_source'], ID_range_start = 20000) # Returns FALSE and warns if addn fails
     if not new_ind:
         new_ind = odbo.ind_NameId[row['ind_name']]
-        warnings.warn("Assuming existing individual called %s (%s) is the correct one, and adding types accordingly." % (new_ind, row['ind_name']))
+        warnings.warn("Assuming existing individual called %s (%s) is the correct one, and adding types accordingly." % 
+                      (new_ind, row['ind_name']))
     print new_ind
     odbo.add_ind_type(ind = new_ind, OWLclass = row['class'], objectProperty = row['rel'])
     

@@ -25,21 +25,21 @@ def gen_report_tab(od):
         row['class_label'] = d['class_label'] 
         row['class_id'] = d['class_id']
         report.tab.append(row)
-    return report_tab
+    return report
         
 def update_akv_from_tab(od, table):
     # Should probably move all out this out
     # For ref
     # headers = ['a.annotation_type', 'a.text', 'op_label', 'op_id', 'class_label', 'class_id'] # Feels wrong to hard-wire here.
-    report = gen_report_tab
-    update = table.tab
+    report = gen_report_tab(od)
+    update = table
     ct = compare_tabs(tab1 = report, tab2 = update) # Takes care of header checks
-    deleted = ct.tab1only().tab
-    new = ct.tab2only().tab
-    for r in new():
-        od.add_akv_type(key = r['annotation_type'], value =r['a.text'] , OWLclass = r['class_id'], objectProperty =r['op_id'] )     
-    for r in deleted:
-        od.remove_akv_type(key = r['annotation_type'], value =r['a.text'] , OWLclass = r['class_id'], objectProperty =r['op_id'] )     
+    deleted = ct.tab1_only()
+    new = ct.tab2_only()
+    for r in new.tab:
+        od.add_akv_type(key = r['a.annotation_type'], value =r['a.text'] , OWLclass = r['class_id'], objectProperty =r['op_id'] )     
+    for r in deleted.tab:
+        od.remove_akv_type(key = r['a.annotation_type'], value =r['a.text'] , OWLclass = r['class_id'], objectProperty =r['op_id'] )     
 
 c = get_con(sys.argv[1], sys.argv[2])
 b = Brain()
@@ -47,9 +47,10 @@ b.learn("http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl")
 od = owlDbOnt(conn = c, ont = b)
 update_table = tab("mapping_tables/", "annotation_map.tsv")
 update_akv_from_tab(od, update_table)
-outfile = open("mapping_tables/annotation_map_report.tsv")  
+outfile = open("mapping_tables/annotation_map_report.tsv", "w")  
 report_tab = gen_report_tab(od)
 outfile.write(report_tab.print_tab(sort_keys = ('a.annotation_type', 'a.text')))
+outfile.close()
 
 
 c.commit()
