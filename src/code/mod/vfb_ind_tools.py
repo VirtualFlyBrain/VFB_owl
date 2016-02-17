@@ -32,7 +32,8 @@ def add_types_2_inds(ont, dc):
 	for d in dc:
 		if not ont.knowsClass(d['claz']):
 			ont.addClass(d['clazBase']+d['claz'])
-		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
+#		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
+		if(d['rel']):
 			if not ont.knowsObjectProperty(d['rel']):
 				ont.addObjectProperty(d['relBase']+d['rel'])
 			ont.type(d['rel'] + ' some ' + d['claz'], d['iID'])
