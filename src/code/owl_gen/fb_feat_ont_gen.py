@@ -103,5 +103,5 @@ vfb_ms_conn.close()
 fb_cursor.close()
 fb_pg_conn.close()
 
-fb_feature.save("fb_features.owl") 
+fb_feature.save("../../owl/fb_features.owl") # yuk
 fb_feature.sleep()
