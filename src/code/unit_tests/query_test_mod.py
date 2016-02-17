@@ -1,6 +1,5 @@
 #!/usr/bin/env Jython -J-Xmx8000m
 
-from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from tsv2pdm import tab
 import sys
@@ -56,7 +55,7 @@ class Query:
                 
 def __main__():
     ont = Brain()
-    ont.learn("file:///repos/VFB_owl/src/owl/fbbt_vfb_ind_pr_nr.owl")
+    ont.learn(sys.argv[1])
     qtab = tab("./", "queries.tsv") 
     for r in qtab.tab:
         q = Query(r, ont)
