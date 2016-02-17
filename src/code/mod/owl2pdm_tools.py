@@ -64,7 +64,7 @@ class ont_manager():
     # I seem to be reinventing Brain....
     """Constructors: ont_manager(OWLontology)
        Attributes:
-           ont
+           ont: OWLOntology
            manager: OWLManager
            factory: OWLDataFactory
            simple_sfp: uses getShortForm(IRI, iri)
@@ -150,6 +150,33 @@ class ont_manager():
         for r in self.ont.getObjectPropertiesInSignature():
             out.append(self.simple_sfp.getShortForm(r))
         return out
+    
+    def get_triples(self, sfid):
+        """returns a list of triple as (subj, rel, obj) tuples."""
+        triples = []
+        i = self.bi_sfp.getEntity(sfid)
+        for a in i.getReferencingAxioms(self.ont):
+            if a.getAxiomType().getName() == "ObjectPropertyAssertion":
+                subj = self.bi_sfp.getShortForm(a.getSubject())
+                rel = self.bi_sfp.getShortForm(a.getProperty())
+                obj = self.bi_sfp.getShortForm(a.getObject())
+                triples.append((subj,rel,obj))
+        return triples
+    
+#     def _get_triples_test(self):
+#         from uk.ac.ebi.brain.core import Brain    
+#         b = Brain()
+#         b.learn(self.ont)
+#         b.addNamedIndividual("Mary")
+#         b.addObjectProperty("knows")
+#         b.addNamedIndividual("Joe")
+#         b.objectPropertyAssertion("Joe", "knows", "Mary")
+#         t = self.get_triples("Joe")
+#         if t == [("Joe", "knows", "Mary")]:
+#             return True
+#         else:
+#             return False
+        
     
 def migrate_axioms_to_ind(brain, claz):
     """Finds all instances of a specified class, and migrates asserted
