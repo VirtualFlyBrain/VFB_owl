@@ -6,8 +6,7 @@ from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 from uk.ac.ebi.brain.core import Brain
 #from com.ziclix.python.sql import zxJDBC
 from lmb_fc_tools import get_con
-from vfb_ind_tools import gen_ind_by_source
-from vfb_ind_tools import load_ont
+from vfb_ind_tools import gen_ind_by_source, add_facts,load_ont
 from dict_cursor import dict_cursor
 import os
 
@@ -54,6 +53,7 @@ ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 ont_dict['vfb_ind'] = vfb_ind
 #ont_dict['vfb_image'] = vfb_image  # Commenting for now as problems rolling some image files 
 gen_ind_by_source(conn.cursor(), ont_dict, dataset)
+add_facts(cursor=conn.cursor(), ont=vfb_ind, source=dataset)
 vfb_ind.save("../../owl/" + dataset + ".owl")
 vfb_image.save("../../owl/" + dataset + "_image.owl")
 conn.close()
