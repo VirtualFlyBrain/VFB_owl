@@ -1,16 +1,24 @@
 #!/usr/bin/env bash
 
-DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013')
+DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName')
 
 DSSTRING=''
 
 cd ../code/owl_gen
 
+# Generate new set of feature classes from FlyBase
+
+echo ''
+echo 'Building ontology of FlyBase features'
+
+./fb_feat_ont_gen.py $USR $PD
+echo "Return stat: "$?
+
 ERROR_SUMMARY=""
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
 do
-    echo $var
+    echo "Building "$var
     ./vfb_ind_runner.py $USR $PD $var $FBBT
     DSSTRING+="--merge ${var}.owl "
     echo "Return stat: "$?
@@ -38,7 +46,12 @@ echo "***Building file for SOLR loading ***"
 echo ''
 
 owltools fbbt_vfb_ind_pr_nr.owl --reasoner elk --assert-inferred-subclass-axioms --removeRedundant -o fbbt_vfb_ind_prc_nr.owl
+owltools fbbt_vfb_ind_prc_nr.owl --set-ontology-id -v 'http://purl.obolibrary.org/obo/fbbt/vfb/'$v'vfb.owl' 'http://purl.obolibrary.org/obo/fbbt/vfb/vfb.owl' -o vfb.owl
 
-./DL2subset.py fbbt_vfb_ind_prc_nr.owl
+# Running reporting tests on build
 
+export p=`pwd`
 
+cd ../code/unit_tests
+
+./query_test_mod.py $p'/fbbt_vfb_ind_prc_nr.owl' > $p'/test_results.txt'
