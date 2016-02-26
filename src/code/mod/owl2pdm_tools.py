@@ -2,6 +2,7 @@ from org.semanticweb.owlapi.apibinding import OWLManager
 from org.semanticweb.owlapi.model import IRI
 from org.semanticweb.owlapi.util import SimpleShortFormProvider
 from org.semanticweb.owlapi.util import BidirectionalShortFormProviderAdapter
+from java.io import File
 from java.util import TreeSet
 
 import warnings
@@ -71,18 +72,33 @@ class ont_manager():
            bi_sfp: uses .getEntity(<string> shortForm), .getShortForm(OWLEntity entity)
            """
         
-    def __init__(self, ont, file_path=''):
-        self.ont = ont
-        self.manager = OWLManager.createOWLOntologyManager()
+    def __init__(self, ont = '', file_path=''):
+        self.manager = OWLManager.createOWLOntologyManager()         
+        if not ont:
+            if file_path:
+                self.ont = self.manager.loadOntologyFromOntologyDocument(File(file_path))
+            else:
+                warnings.warn("Constructor failed. Empty args")
+        else:
+                self.ont = ont
         self.factory = self.manager.getOWLDataFactory()
         self.simple_sfp = SimpleShortFormProvider() # .getShortForm(iri)
         ontset = TreeSet()
-        ontset.add(ont)
+        ontset.add(self.ont)
         #public BidirectionalShortFormProviderAdapter(OWLOntologyManager man,
         #java.util.Set<OWLOntology> ontologies,
         #ShortFormProvider shortFormProvider) # Providing the manager, means that this listens for changes.
         self.bi_sfp = BidirectionalShortFormProviderAdapter(self.manager, ontset, self.simple_sfp) # .getShortForm(iri); .getEntity()
     
+    def get_labels(self, sfid):
+        out = []
+        e = self.bi_sfp.getEntity(sfid)
+        label_annotations = e.getAnnotations(self.ont, self.factory.getRDFSLabel())
+        for l in label_annotations:
+            v = l.getValue()
+            out.append(v.getLiteral())
+        return out
+            
     def get_ind_from_iri(self, iri_string):
         iri = IRI.create(iri_string)
         return self.factory.getOWLNamedIndividual(iri)
