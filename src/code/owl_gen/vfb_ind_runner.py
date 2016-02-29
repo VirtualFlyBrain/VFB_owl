@@ -53,7 +53,7 @@ ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 ont_dict['vfb_ind'] = vfb_ind
 #ont_dict['vfb_image'] = vfb_image  # Commenting for now as problems rolling some image files 
 gen_ind_by_source(conn.cursor(), ont_dict, dataset)
-add_facts(cursor=conn.cursor(), ont=vfb_ind, source=dataset)
+#add_facts(cursor=conn.cursor(), ont=vfb_ind, source=dataset) # Before turning this on, need to make sure all inds declared first.
 vfb_ind.save("../../owl/" + dataset + ".owl")
 vfb_image.save("../../owl/" + dataset + "_image.owl")
 conn.close()
