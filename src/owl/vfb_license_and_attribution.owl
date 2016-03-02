@@ -12,6 +12,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/fbbt/vfb/vfb_license_and_attribution.owl>
+Annotation(<http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-0173-9080>)
 Annotation(rdfs:comment "If you re-use this resource, we kindly ask you to avoid creating new entities in the URI namespaces 'http://www.virtualflybrain.org/owl/' and 'http://purl.obolibrary.org/obo/fbbt/vfb' or with shortForm IDs using the following patterns: \"VFB_\\d{8}\", \"VFBi_\\d{8}\", \"VFBc_\\d{8}\"")
 Annotation(dc:creator <http://orcid.org/0000-0002-7073-9172>)
 Annotation(dc:title "Virtual Fly Brain Knowledge Base")
