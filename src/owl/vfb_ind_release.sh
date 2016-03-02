@@ -21,10 +21,10 @@ DSSTRING=''
 
 
 cd ../code/owl_gen
-job='Building ontology of FlyBase features';
-progress_chat "$job";
- java -Xmx6000m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
-exit_on_fail $? "$job"
+# job='Building ontology of FlyBase features';
+# progress_chat "$job";
+# java -Xmx6000m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
+# exit_on_fail $? "$job"
 
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
@@ -49,7 +49,7 @@ cd ../../owl
 # # Merge ind files with specified release of fbbt
 job="Merging ind files with ${FBBT}" 
 progress_chat $job
-owltools $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
+owltools $FBBT --merge fb_features.owl --merge vfb_ext.owl --merge vfb_license_and_attribution.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
 exit_on_fail $? $job
 
 # # assert inferences and strip out redundancy  # This
