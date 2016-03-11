@@ -81,5 +81,10 @@
 	        <artifactId>postgresql</artifactId>
 	        <version>9.3-1102-jdbc4</version>
         </dependency>
+        <dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.26</version>
+	</dependency>
     </dependencies>
 </project>
