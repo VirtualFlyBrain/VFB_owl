@@ -1,5 +1,19 @@
 #!/usr/bin/env bash
 
+## Lib setup for this job - Use maven (pom.xml in vfb_owl repo root)
+## The following VARS must be set before runnning this job
+### $USR, $PD = mySQL DB credentials (DB connection requires ssh tunnel using shared key)
+### $FBBT = full path to local copy of fbbt-non-classified.owl - of appropriate version.
+### The following files must be present
+
+### Repo file structure:
+# lib/
+# src/owl/{build script and OWL files live here}
+# src/code/mod local Jython mods
+# src/code/owl_build Jython build scripts
+
+
+
 exit_on_fail() { 
     status=$1
     message=$2
@@ -15,6 +29,7 @@ progress_chat() {
     echo "*** $@ ***"
 }
 
+# Edit this to add additional datasets
 DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName')
 
 DSSTRING=''
@@ -58,10 +73,10 @@ progress_chat $job
 owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.
 exit_on_fail $? $job
 
-$job="Setting URI"
+$v = `date "+%Y-%m-%d"`
+$job="Setting IRI + version IRI using current date "$v
 progress_chat $job
 # Ideally would save as functional syntax, but bug in owltools preventing this.
-$v = `date "+%Y-%m-%d"`
 owltools fbbt_vfb_ind_prc_nr.owl --set-ontology-id -v 'http://purl.obolibrary.org/obo/fbbt/vfb/'$v'vfb.owl' 'http://purl.obolibrary.org/obo/fbbt/vfb/vfb.owl' -o vfb.owl
 exit_on_fail $? $job
 
