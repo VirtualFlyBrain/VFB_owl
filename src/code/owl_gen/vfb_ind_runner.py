@@ -1,7 +1,6 @@
 #!/usr/bin/env jython -J-Xmx8000m
 import sys
 sys.path.append('../mod')
-sys.setrecursionlimit(2000)
 from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 #from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
