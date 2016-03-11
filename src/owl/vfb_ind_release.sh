@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 ## Lib setup for this job - Use maven (pom.xml in vfb_owl repo root)
+### $CP = full classpath with Jython JAR and rqd JAVA libs
 ## The following VARS must be set before runnning this job
 ### $USR, $PD = mySQL DB credentials (DB connection requires ssh tunnel using shared key)
 ### $FBBT = full path to local copy of fbbt-non-classified.owl - of appropriate version.
