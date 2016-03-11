@@ -54,7 +54,7 @@ done
 
 job="Adding analysis results to flycircuit neuron inds.";
 progress_chat $job
-java -Xmx6000m -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
 exit_on_fail $? $job
 
 DSSTRING+="--merge flycircuit_plus.owl --merge flycircuit_direct_mappings.owl "
