@@ -35,12 +35,11 @@ DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainNam
 
 DSSTRING=''
 
-
 cd ../code/owl_gen
-# job='Building ontology of FlyBase features';
-# progress_chat "$job";
-# java -Xmx6000m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
-# exit_on_fail $? "$job"
+job='Building ontology of FlyBase features';
+progress_chat "$job";
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
+exit_on_fail $? "$job"
 
 for var in ${DATASETS[@]}
 # java -classpath lib/*.jar:. my.package.Program
@@ -69,16 +68,21 @@ owltools $FBBT --merge fb_features.owl --merge vfb_ext.owl --merge vfb_license_a
 exit_on_fail $? $job
 
 # # assert inferences and strip out redundancy  # This
-job="Asserting inferences and striping redundancy" 
+job="Asserting inferences" 
 progress_chat $job
 owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.
+exit_on_fail $? $job
+
+job="Stripping redundancy"
+progress_chat $job
+owltools fbbt_vfb_ind_pr_nr.owl --reasoner elk --assert-inferred-subclass-axioms --removeRedundant -o fbbt_vfb_ind_prc_nr.owl
 exit_on_fail $? $job
 
 v=`date "+%Y-%m-%d"`
 job="Setting IRI + version IRI using current date "$v
 progress_chat $job
 # Ideally would save as functional syntax, but bug in owltools preventing this.
-owltools fbbt_vfb_ind_prc_nr.owl --set-ontology-id -v 'http://purl.obolibrary.org/obo/fbbt/vfb/'$v'vfb.owl' 'http://purl.obolibrary.org/obo/fbbt/vfb/vfb.owl' -o vfb.owl
+owltools fbbt_vfb_ind_prc_nr.owl --set-ontology-id -v 'http://purl.obolibrary.org/obo/fbbt/vfb/'$v'/vfb.owl' 'http://purl.obolibrary.org/obo/fbbt/vfb/vfb.owl' -o vfb.owl
 exit_on_fail $? $job
 
 job="Compressing"
