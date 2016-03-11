@@ -74,14 +74,14 @@ progress_chat $job
 owltools fbbt_vfb_ind.owl --reasoner elk --reasoner-ask-all --remove-indirect -a INDIVIDUALS -o fbbt_vfb_ind_pr_nr.owl # Some special magic here. Best ask the owltools devs if you want to know how it works.
 exit_on_fail $? $job
 
-export v=`date "+%Y-%m-%d"`
-$job="Setting IRI + version IRI using current date "$v
+v=`date "+%Y-%m-%d"`
+job="Setting IRI + version IRI using current date "$v
 progress_chat $job
 # Ideally would save as functional syntax, but bug in owltools preventing this.
 owltools fbbt_vfb_ind_prc_nr.owl --set-ontology-id -v 'http://purl.obolibrary.org/obo/fbbt/vfb/'$v'vfb.owl' 'http://purl.obolibrary.org/obo/fbbt/vfb/vfb.owl' -o vfb.owl
 exit_on_fail $? $job
 
-$job="Compressing"
+job="Compressing"
 progress_chat $job
 gzip -c vfb.owl > vfb.owl.gz
 exit_on_fail $? $job
@@ -90,7 +90,7 @@ export p=`pwd`
 
 cd ../code/unit_tests
 
-$job="Running reporting tests on build"
+job="Running reporting tests on build"
 progress_chat $job
 java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython query_test_mod.py $p'/vfb.owl' > $p'/test_results.txt'
 exit_on_fail $? $job
