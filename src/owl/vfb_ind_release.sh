@@ -47,7 +47,7 @@ for var in ${DATASETS[@]}
 do
     job="Building $var inds";
     progress_chat $job
-    java -Xmx8000m -Xss515m -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $var $FBBT
+    java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $var $FBBT
     DSSTRING+="--merge ${var}.owl "
     exit_on_fail $? "$job"
 done
