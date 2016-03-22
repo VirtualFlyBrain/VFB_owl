@@ -11,7 +11,7 @@ import sys
 
 
 nc = neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
-c = get_con(sys.argv[4])
+c = get_con(sys.argv[4], sys.argv[4])
 cursor = c.cursor()
 
 cursor.execute("SELECT s.shortFormID as subj_sfid, " \
