@@ -25,7 +25,7 @@ cypher_facts = []
 
 for d in dict_cursor(cursor):
     cypher_facts.append("MERGE (:Individual { short_form : '%s', label : '%s' })" \
-                       "-[:RELATED { short_form : '%s', label : '%s' }]->(:):Individual { short_form : '%s'label : '%s' })" % 
+                       "-[:RELATED { short_form : '%s', label : '%s' }]->(:Individual: { short_form : '%s', label : '%s' })" % 
                        (d['subj_sfid'], d['subj_label'], d['rel_sfid'], d['rel_label'] , d['obj_sfid'], d['obj_label']))
   
 nc.commit_list_in_chunks(statements = cypher_facts, verbose = True, chunk_length = 1000)
