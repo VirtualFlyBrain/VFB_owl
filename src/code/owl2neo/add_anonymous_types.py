@@ -23,7 +23,7 @@ vom = ont_manager(file_path=sys.argv[4])
 # Grabbing individuals from from neo4J, avoiding Brain.  Setting to VFB only for now.
 statements = ["MATCH (i:VFB:Individual) RETURN i"]
 r = nc.commit_list(statements)
-inds = [x['row'][0] for x in r[0]['data']]
+inds = [x['row'][0]['short_form'] for x in r[0]['data']]
 
 
 # Iterate over individuals, looking up types and adding them
