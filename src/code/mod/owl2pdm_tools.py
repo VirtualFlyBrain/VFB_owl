@@ -98,6 +98,29 @@ class ont_manager():
             v = l.getValue()
             out.append(v.getLiteral())
         return out
+
+    def get_annotations(self, owl_entity_sfid, owl_annotation_property_sfid):
+        # Broken for subsets as the annotation value is an AP.
+        out = []
+        e = self.bi_sfp.getEntity(owl_entity_sfid)
+        ap = self.bi_sfp.getEntity(owl_annotation_property_sfid)
+        annotations = e.getAnnotations(self.ont, ap)
+        for a in annotations:
+            v = a.getValue()
+            out.append(v.getLiteral())
+        return out
+
+    def get_subsets(self, owl_entity_sfid):
+        # Broken for subsets as the annotation value is an AP.
+        out = []
+        e = self.bi_sfp.getEntity(owl_entity_sfid)
+        ap = self.bi_sfp.getEntity('inSubset')
+        annotations = e.getAnnotations(self.ont, ap)
+        for a in annotations:
+            v = a.getValue()
+            out.append(v.toString()) # Value is IRI.  Returning as string.  Could probably be improved.
+        return out
+        
             
     def get_ind_from_iri(self, iri_string):
         iri = IRI.create(iri_string)
