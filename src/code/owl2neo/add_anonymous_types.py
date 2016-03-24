@@ -8,7 +8,10 @@ import re
 Requires uniqueness constraint on individual & class short_form_id."""
 
 nc = neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
-vom = ont_manager(file_path=sys.argv[4])
+
+vfb = Brain()
+vfb.learn(sys.argv[4]) # Make this non-local
+vom = ont_manager(vfb.getOntology())
 
 
 # vom.typeAxioms2pdm(sfid = 'VFB_00005000')
@@ -20,10 +23,15 @@ vom = ont_manager(file_path=sys.argv[4])
 # Simple to use. Only issue is resolution of short_form_ids.  This can be done as long as these are stored as attributes on relations.  These should be added in the process of adding named relations.  Check proposed schema on ticket...
 
 
-# Grabbing individuals from from neo4J, avoiding Brain.  Setting to VFB only for now.
-statements = ["MATCH (i:VFB:Individual) RETURN i"]
-r = nc.commit_list(statements)
-inds = [x['row'][0]['short_form'] for x in r[0]['data']]
+
+# Get all inds by query
+
+inds = vfb.getInstances("Thing", 0) 
+
+# Could grab from neo4J avoiding Brain
+#statements = ["MATCH (i:Individual) RETURN i"]
+#r = nc.commit_list(statements)
+#inds = {some proc step here}
 
 
 # Iterate over individuals, looking up types and adding them
@@ -32,23 +40,15 @@ for i in inds:
     types = vom.typeAxioms2pdm(sfid = i)
     for t in types:
         if t['isAnonymous']:
-            rel = re.sub(' ', '_', vom.get_labels(t['relId'])[0])
+            rel = re.sub(' ', '_', vfb.getLabel(t['relId']))
             # Using related link. Can denormalise with generic edge naming script.
             s = "MATCH (I:Individual), (C:Class) WHERE I.short_form = '%s'" \
                 "AND C.short_form = '%s' MERGE (I)-[r:Related {label: '%s', short_form: '%s' }]->(C)" \
                 % (i, t['objectId'], rel, t['relId']) # 
             statements.append(s)
-    facts = vom.get_triples(sfid = i)
-    for f in facts:
-        rel = re.sub(' ', '_', vom.get_labels(vom.get_labels(f[1][0])))
-        s = "MATCH (I1:Individual), (I2:Individual) " \
-            "WHERE I1.short_form = '%s' and I1.short_form = '%s' " \
-            "MERGE (I1)-[r:Related { label: '%s', short_form: '%s' }]-(I2)" \
-            % (f[0], f[2], rel, f[1])
-        statements.append(s)
 
 nc.commit_list_in_chunks(statements, verbose = True, chunk_length = 1000)
-#vfb.sleep()
+vfb.sleep()
 
 # Inds from graph (probably don't need this)
 # payload = {'statements': [{'statement': 'MATCH (i:Individual) RETURN i.short_form'}]}
