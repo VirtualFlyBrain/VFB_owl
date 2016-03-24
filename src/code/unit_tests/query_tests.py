@@ -4,9 +4,10 @@ from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from tsv2pdm import tab
 import warnings
+import sys
 
 vfb_ind = Brain()
-vfb_ind.learn("../../owl/fbbt_vfb_ind_pr_nr.owl")
+vfb_ind.learn(sys.argv[1])
 
 # Draft class for object-based unit test system.  This allows more info to be stored about queries and tests. Objects should be populated from a tsv.  Good potential for generating documentation straight from tsv or by using these objects...
 
