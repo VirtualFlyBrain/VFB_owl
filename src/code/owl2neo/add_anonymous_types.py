@@ -46,6 +46,14 @@ for i in inds:
                 "AND C.short_form = '%s' MERGE (I)-[r:Related {label: '%s', short_form: '%s' }]->(C)" \
                 % (i, t['objectId'], rel, t['relId']) # 
             statements.append(s)
+    facts = vom.get_triples(sfid = i)
+        for f in facts:
+            rel = re.sub(' ', '_', vfb.getLabel(f[1]['relId']))
+            s = "MATCH (I1:Individual), (I2:Individual) " \
+                "WHERE I1.short_form = '%s' and I1.short_form = '%s' " \
+                "MERGE (I1)-[r:Related { label: '%s', short_form: '%s' }]-(I2)" \
+                % (f[0], f[2], rel, f[1])
+            statements.append(s)
 
 nc.commit_list_in_chunks(statements, verbose = True, chunk_length = 1000)
 vfb.sleep()
