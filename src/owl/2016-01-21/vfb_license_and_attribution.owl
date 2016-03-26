@@ -14,11 +14,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/fbbt/vfb/vfb_license_and_attribution.owl>
 Annotation(<http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-0173-9080>)
 Annotation(dc:creator <http://orcid.org/0000-0002-7073-9172>)
+Annotation(rdfs:comment "Please see dc:rights for license. The value of dc:attribution_url is a link to the latest paper describing this knowledge base.  Please use this paper as a reference in your publications making use of this resource. If you re-use this knowledge-base, we kindly ask you to avoid creating new entities in the URI namespaces 'http://www.virtualflybrain.org/owl/' and 'http://purl.obolibrary.org/obo/fbbt/vfb' or with shortForm IDs using the following patterns: \"VFB_\\\\d{8}\", \"VFBi_\\\\d{8}\", \"VFBc_\\\\d{8}\"")
 Annotation(dc:title "Virtual Fly Brain Knowledge Base")
 Annotation(dc:rights <http://creativecommons.org/licenses/by-sa/4.0/>)
 Annotation(<http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0001-5948-3092>)
 Annotation(fbbt:attributionURL <http://www.ncbi.nlm.nih.gov/pubmed/22180411>)
-Annotation(rdfs:comment "If you re-use this resource, we kindly ask you to avoid creating new entities in the URI namespaces 'http://www.virtualflybrain.org/owl/' and 'http://purl.obolibrary.org/obo/fbbt/vfb' or with shortForm IDs using the following patterns: \"VFB_\\\\d{8}\", \"VFBi_\\\\d{8}\", \"VFBc_\\\\d{8}\"")
 Annotation(<http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0002-0587-9355>)
 
 Declaration(AnnotationProperty(cc:attributionURL))
