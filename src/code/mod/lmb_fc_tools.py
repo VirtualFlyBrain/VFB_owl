@@ -260,19 +260,20 @@ class owlDbOnt():
 
 		cursor.close()
 
-	def add_ind(self, name, source, ID_range_start = 0, short_name = ''):
+	def add_ind(self, name, source, ID_range_start = 0, short_name = '', idp = 'VFB'):
 		"""Add an individual to the DB
 		name = name of individual (string)
 		source = short source name in data_source table.
 		Optionally specify a start for ID range scanning 
 		(otherwise defaults to self.ID_range_start).  
+		Optionally specify an IDP (otherwise VFB used as default)
 		If individual of that name already exist, trigger warning and return False.
 		Otherwise return shortFormID of newly created individual.
 		"""
 		if ID_range_start:
 			self.ID_range_start = ID_range_start
 		cursor = self.conn.cursor()
-		(vfbid, self.ID_range_start) = gen_id('VFB', self.ID_range_start, 8, self.ind_IdName)
+		(vfbid, self.ID_range_start) = gen_id(idp, self.ID_range_start, 8, self.ind_IdName)
 		self.ind_IdName[vfbid] = name
 		name = re.sub("'", r"\'", name) # Is this enough quotes?
 		cursor.execute("SELECT oi.shortFormID from owl_individual oi WHERE oi.label = \"%s\"" % (name))
