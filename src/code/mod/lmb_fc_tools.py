@@ -191,7 +191,7 @@ class owlDbOnt():
 		cursor = self.conn.cursor()
 
 		if objectProperty:
-			self.add_owl_entity_2_db (shortFormId = objectProperty, typ = 'owl_objectProperty')
+			self.add_owl_entity_2_db(shortFormId = objectProperty, typ = 'owl_objectProperty')
 		if re.match(pattern = 'FBtp|FBgn|FBti', string = OWLclass):
 			self.add_fb_feature(OWLclass)
 		else:
@@ -248,6 +248,25 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 		return typ
+	
+	def add_fact(self, subj, rel, obj):
+		"""Adds a fact statement linking two individuals.
+		The relation used to link the two must be in ont.
+		individuals must already be in the DB.  Arguments
+		specify a triple."""
+		
+		cursor = self.conn.cursor()
+		if self.ont.knowsObjectProperty(rel):
+			cursor.execute("INSERT IGNORE INTO owl_fact (subject, relation, object) VALUES (" \
+							"(SELECT s.id FROM owl_individual s where s.shortFormID = '%s'), " \
+							"(SELECT r.id FROM owl_objectProperty r where r.shortFormID = '%s'), " \
+							"(SELECT o.id FROM owl_individual o where o.shortFormID = '%s') " \
+							")" % (subj, rel, obj))
+			self.conn.commit()
+			cursor.close()
+			return True
+		else:
+			return False
 	
 	def _gen_ind_dicts(self):
 		cursor=self.conn.cursor()
