@@ -100,6 +100,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
+		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
 		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000006', d['short_name'], )
 		if d['extID']:
 			if d['pre']:
@@ -110,8 +111,9 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				continue
 			if d['post']:
 				link = link + d['post']
-			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) # 
+			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) #
 
+	# Pull type statements
 	cursor.execute("SELECT i.shortFormID AS iID, " \
 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
 				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
@@ -128,8 +130,8 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 
 	dc = dict_cursor(cursor)
-	add_types_2_inds(vfb_ind, dc)
-#	add_facts(cursor, vfb_ind, dataset)
+#	add_types_2_inds(vfb_ind, dc)
+	add_facts(cursor, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
@@ -139,6 +141,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
 	dc = dict_cursor(cursor)
+	# Roll defs.
 	for d in dc:
 		for iID in ilist:	 
 			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
