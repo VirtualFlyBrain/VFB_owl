@@ -130,8 +130,8 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 
 	dc = dict_cursor(cursor)
-#	add_types_2_inds(vfb_ind, dc)
-	add_facts(cursor, vfb_ind, dataset)
+	add_types_2_inds(vfb_ind, dc)
+#	add_facts(cursor, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
