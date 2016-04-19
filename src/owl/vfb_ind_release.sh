@@ -31,7 +31,7 @@ progress_chat() {
 }
 
 # Edit this to add additional datasets
-DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName')
+DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName' 'VDRC_VT')
 
 DSSTRING=''
 
