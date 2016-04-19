@@ -191,18 +191,22 @@ class owlDbOnt():
 		cursor = self.conn.cursor()
 
 		if objectProperty:
-			self.add_owl_entity_2_db(shortFormId = objectProperty, typ = 'owl_objectProperty')
+			attempt = self.add_owl_entity_2_db(shortFormId = objectProperty, typ = 'owl_objectProperty')
+			if not attempt:
+				return False
 		if re.match(pattern = 'FBtp|FBgn|FBti', string = OWLclass):
 			self.add_fb_feature(OWLclass)
 		else:
-			self.add_owl_entity_2_db(OWLclass, 'owl_class')
-			
+			attempt = self.add_owl_entity_2_db(OWLclass, 'owl_class')
+			if not attempt:
+				return False
 		cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
 	                   "SELECT id AS objectProperty, " \
 	                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
 	                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (OWLclass, objectProperty))
 		self.conn.commit()
 		cursor.close()
+		return True # Should be able to get status from cursor or conn -> False if INSERT fails! 
 
 	def add_akv_type(self, key, value, OWLclass, objectProperty=''):
 		self._update_akv()
@@ -240,7 +244,10 @@ class owlDbOnt():
 		otherwise the type is a class expression of the form op some c."""
 		cursor = self.conn.cursor()
 		if not self.type_exists(OWLclass, objectProperty):
-			self._add_type(OWLclass, objectProperty)
+			attempt = self._add_type(OWLclass, objectProperty)
+			if not attempt:
+				warnings.warn("Failed to type ind: %s: %s %s")
+				return False
 		typ = self.type_exists(OWLclass, objectProperty)
 		cursor.execute("INSERT IGNORE INTO individual_type (individual_id, type_id) " \
 					 "SELECT oi.id AS individual_id, '%s' AS type_id FROM owl_individual oi " \
