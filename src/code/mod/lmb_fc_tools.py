@@ -345,24 +345,30 @@ class owlDbOnt():
 		cursor.close()	
 		return typ
 	
-	def ind_type_report(self, ind):
-		
+	def ind_type_report(self, ind, ids=0):
+		if ids:
+			return_type = 'shortFormId'
+		else:
+			return_type = 'label'
+			
+			
 		"""Returns an iterable of dicts with the keys
 		
-			d['ind'] - label of individual
-			d['rel'] - label of relation in type assertion on ind
-			d['claz'] - label of class in type assertion on ind
-
-		All type assertions are simple - either named class or 'R some C'
+			d['ind'] - label/id of individual
+			d['rel'] - label/id of relation in type assertion on ind
+			d['claz'] - label/id of class in type assertion on ind
+			
+		* Default values are labels, optional ids arg switches this to shortFormIDs if true.
+		* All type assertions are simple - either named class or 'R some C'
 		"""
-		# Currently returns a string.  Would be better as a table.
+		
 		cursor = self.conn.cursor()
-		cursor.execute("SELECT oi.label as ind, op.label as rel, oc.label as claz FROM owl_type ot " \
+		cursor.execute("SELECT oi.%s as ind, op.%s as rel, oc.%s as claz FROM owl_type ot " \
 						"JOIN individual_type it ON (ot.id=it.type_id) " \
 						"JOIN owl_individual oi ON (oi.id = it.individual_id) " \
 						"JOIN owl_objectProperty op ON (op.id = ot.objectProperty) " \
 						"JOIN owl_class oc ON (oc.id = ot.class) " \
-						"WHERE oi.shortFormId = '%s'" % ind)
+						"WHERE oi.shortFormId = '%s'" % (return_type, return_type, return_type, ind))
 		return dict_cursor(cursor)
 
 	
