@@ -1,20 +1,3 @@
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-
-Ontology(<http://purl.obolibrary.org/obo/fbbt/vfb/neuron_synapse_closure_test.owl>
-Import(<http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl>)
-Import(<http://purl.obolibrary.org/obo/fbbt/fbbt_spatial_disjonts.owl>)
-
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00040000> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003963> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067014> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003961> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067353> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003968> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067354> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003962> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00067355> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003960> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100367> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007360> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100368> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003925> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FBbt_00100384> ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002130> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectUnionOf(<http://purl.obolibrary.org/obo/FBbt_00003934> <http://purl.obolibrary.org/obo/FBbt_00007053> <http://purl.obolibrary.org/obo/FBbt_00007385>))))
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2845ae5fda5c4989a4c88e2eb9d2e230dd2ce7dc6eca1bd0dbf7bc1d6a31d4b
+size 3258
