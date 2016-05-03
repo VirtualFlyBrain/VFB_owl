@@ -131,6 +131,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 
 	dc = dict_cursor(cursor)
 	add_types_2_inds(vfb_ind, dc)
+    
 #	add_facts(cursor, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)

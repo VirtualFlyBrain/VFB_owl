@@ -191,18 +191,22 @@ class owlDbOnt():
 		cursor = self.conn.cursor()
 
 		if objectProperty:
-			self.add_owl_entity_2_db (shortFormId = objectProperty, typ = 'owl_objectProperty')
+			attempt = self.add_owl_entity_2_db(shortFormId = objectProperty, typ = 'owl_objectProperty')
+			if not attempt:
+				return False
 		if re.match(pattern = 'FBtp|FBgn|FBti', string = OWLclass):
 			self.add_fb_feature(OWLclass)
 		else:
-			self.add_owl_entity_2_db(OWLclass, 'owl_class')
-			
+			attempt = self.add_owl_entity_2_db(OWLclass, 'owl_class')
+			if not attempt:
+				return False
 		cursor.execute("INSERT IGNORE INTO owl_type (objectProperty, class) " \
 	                   "SELECT id AS objectProperty, " \
 	                   "(SELECT id FROM owl_class AS class WHERE shortFormID = '%s')" \
 	                    "FROM owl_objectProperty WHERE shortFormID = '%s'" % (OWLclass, objectProperty))
 		self.conn.commit()
 		cursor.close()
+		return True # Should be able to get status from cursor or conn -> False if INSERT fails! 
 
 	def add_akv_type(self, key, value, OWLclass, objectProperty=''):
 		self._update_akv()
@@ -240,7 +244,10 @@ class owlDbOnt():
 		otherwise the type is a class expression of the form op some c."""
 		cursor = self.conn.cursor()
 		if not self.type_exists(OWLclass, objectProperty):
-			self._add_type(OWLclass, objectProperty)
+			attempt = self._add_type(OWLclass, objectProperty)
+			if not attempt:
+				warnings.warn("Failed to type ind: %s: %s %s")
+				return False
 		typ = self.type_exists(OWLclass, objectProperty)
 		cursor.execute("INSERT IGNORE INTO individual_type (individual_id, type_id) " \
 					 "SELECT oi.id AS individual_id, '%s' AS type_id FROM owl_individual oi " \
@@ -248,6 +255,25 @@ class owlDbOnt():
 		self.conn.commit()
 		cursor.close()
 		return typ
+	
+	def add_fact(self, subj, rel, obj):
+		"""Adds a fact statement linking two individuals.
+		The relation used to link the two must be in ont.
+		individuals must already be in the DB.  Arguments
+		specify a triple."""
+		
+		cursor = self.conn.cursor()
+		if self.ont.knowsObjectProperty(rel):
+			cursor.execute("INSERT IGNORE INTO owl_fact (subject, relation, object) VALUES (" \
+							"(SELECT s.id FROM owl_individual s where s.shortFormID = '%s'), " \
+							"(SELECT r.id FROM owl_objectProperty r where r.shortFormID = '%s'), " \
+							"(SELECT o.id FROM owl_individual o where o.shortFormID = '%s') " \
+							")" % (subj, rel, obj))
+			self.conn.commit()
+			cursor.close()
+			return True
+		else:
+			return False
 	
 	def _gen_ind_dicts(self):
 		cursor=self.conn.cursor()
@@ -319,24 +345,30 @@ class owlDbOnt():
 		cursor.close()	
 		return typ
 	
-	def ind_type_report(self, ind):
-		
+	def ind_type_report(self, ind, ids=0):
+		if ids:
+			return_type = 'shortFormId'
+		else:
+			return_type = 'label'
+			
+			
 		"""Returns an iterable of dicts with the keys
 		
-			d['ind'] - label of individual
-			d['rel'] - label of relation in type assertion on ind
-			d['claz'] - label of class in type assertion on ind
-
-		All type assertions are simple - either named class or 'R some C'
+			d['ind'] - label/id of individual
+			d['rel'] - label/id of relation in type assertion on ind
+			d['claz'] - label/id of class in type assertion on ind
+			
+		* Default values are labels, optional ids arg switches this to shortFormIDs if true.
+		* All type assertions are simple - either named class or 'R some C'
 		"""
-		# Currently returns a string.  Would be better as a table.
+		
 		cursor = self.conn.cursor()
-		cursor.execute("SELECT oi.label as ind, op.label as rel, oc.label as claz FROM owl_type ot " \
+		cursor.execute("SELECT oi.%s as ind, op.%s as rel, oc.%s as claz FROM owl_type ot " \
 						"JOIN individual_type it ON (ot.id=it.type_id) " \
 						"JOIN owl_individual oi ON (oi.id = it.individual_id) " \
 						"JOIN owl_objectProperty op ON (op.id = ot.objectProperty) " \
 						"JOIN owl_class oc ON (oc.id = ot.class) " \
-						"WHERE oi.shortFormId = '%s'" % ind)
+						"WHERE oi.shortFormId = '%s'" % (return_type, return_type, return_type, ind))
 		return dict_cursor(cursor)
 
 	
