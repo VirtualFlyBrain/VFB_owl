@@ -168,7 +168,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/depicts -->
 
-    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depicts"/>
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depicts">
+        <rdfs:label>depicts</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -219,7 +221,9 @@
 
     <!-- http://xmlns.com/foaf/0.1/image -->
 
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/image"/>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/image">
+        <rdfs:label>image</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 
