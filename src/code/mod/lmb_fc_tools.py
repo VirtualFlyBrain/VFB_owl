@@ -33,8 +33,23 @@ def get_con(usr, pwd):
 class owlDbOnt():
 	"""A class that bundles an OWL ontology with a DB handle for the VFB OWL DB.
 	Methods act on the DB, rather than on the ontologies, and allow addition of 
-	OWLEntities, type statements on individuals. 
+	OWLEntities, type statements on individuals, facts etc.
+	
+	Individuals must be added to the DB before they are referenced.  Individuals 
+	
+	Classes and ObjectProperties referenced in type statements must either be:
+	* present in the database
+	* present in the loaded ontology
+	* valid current genetic feature identifiers in FlyBase
+	
+	ShortForm resolution assumes the OBO short_form pattern relation to ontology name unless
+	it matches pattern = 'FBtp|FBgn|FBti' - in which case FlyBase is checked.
+	
 	"""
+	
+	## Notes: The main drawback of the approach used here is speed.  
+	
+	
 	# Aims: 
 	# 1. Safely and efficiently add content to OWL DB, checking against ontology.
 	#  a. Addition of simple type statements should be possible by specify shortFormID of class and (optionally) OP.
@@ -243,9 +258,10 @@ class owlDbOnt():
 		If only class is specified, then a named class type is specified,
 		otherwise the type is a class expression of the form op some c."""
 		cursor = self.conn.cursor()
-		if not self.type_exists(OWLclass, objectProperty):
-			attempt = self._add_type(OWLclass, objectProperty)
-			if not attempt:
+		typ = self.type_exists(OWLclass, objectProperty)
+		if not typ:
+			typ = self._add_type(OWLclass, objectProperty)
+			if not typ:
 				warnings.warn("Failed to type ind: %s: %s %s")
 				return False
 		typ = self.type_exists(OWLclass, objectProperty)
@@ -256,14 +272,47 @@ class owlDbOnt():
 		cursor.close()
 		return typ
 	
+	def owl_entity_in_db(self, shortFormID, typ):
+		"""Checks if owl_entity, spec as shortFormID, is in DB.
+		Typ = individual, objectProperty or Class
+		  Return = T/F."""
+		cursor = self.conn.cursor()
+		cursor.execute("SELECT * FROM owl_%s WHERE shortFormID = '%s'" % (typ, shortFormID))
+		dc = dict_cursor(cursor)
+		if dc:
+			cursor.close()
+			return True
+		else:
+			cursor.close()
+			return False
+	
 	def add_fact(self, subj, rel, obj):
 		"""Adds a fact statement linking two individuals.
 		The relation used to link the two must be in ont.
-		individuals must already be in the DB.  Arguments
-		specify a triple."""
+		individuals must already be in the DB. 
+		Rel must be in DB or ont.
+		 Arguments specify a triple."""
 		
 		cursor = self.conn.cursor()
-		if self.ont.knowsObjectProperty(rel):
+		stat = 0
+		if self.owl_entity_in_db(shortFormID = subj, typ = 'individual'):
+			stat = 1
+		else:
+			stat = 0
+			warnings.warn("%s not in DB" % subj, stacklevel = 3)
+		if self.owl_entity_in_db(shortFormID = obj, typ = 'individual'):
+			stat = 1
+		else:
+			warnings.warn("%s not in DB" % obj, stacklevel = 3)
+			stat = 0
+		if self.owl_entity_in_db(shortFormID = rel, typ = 'objectProperty'):
+			stat = 1
+		elif self.ont.knowsObjectProperty(rel):
+			stat = 1
+		else:
+			warnings.warn("%s not in DB or ontology" % rel, stacklevel = 3)
+			stat = 0
+		if stat:
 			cursor.execute("INSERT IGNORE INTO owl_fact (subject, relation, object) VALUES (" \
 							"(SELECT s.id FROM owl_individual s where s.shortFormID = '%s'), " \
 							"(SELECT r.id FROM owl_objectProperty r where r.shortFormID = '%s'), " \
@@ -271,8 +320,10 @@ class owlDbOnt():
 							")" % (subj, rel, obj))
 			self.conn.commit()
 			cursor.close()
-			return True
+			return (subj, rel, obj)
 		else:
+			warnings.warn("Failed to add triple. Unknown components.")
+			cursor.close
 			return False
 	
 	def _gen_ind_dicts(self):
@@ -314,7 +365,7 @@ class owlDbOnt():
 			for d in dc:
 				warnings.warn("Database already has an individual called %s.  Its ID is %s." % (name, d['shortFormID']) )
 			cursor.close()
-			return False			
+			return d['shortFormID']			
 		else:
 			cursor.execute("INSERT IGNORE INTO owl_individual (shortFormID, uuid, label, source_id, short_name) " \
 							"VALUES (\"%s\", UUID(), \"%s\", "
@@ -324,6 +375,71 @@ class owlDbOnt():
 			cursor.close()
 			return vfbid
 		
+	def add_linked_anatomy_image_channel(self, name, short_name, source, channel_type, background_channel, id_start_range):
+		"""Adds a linked set of individuals:
+		* anatomical individual
+		* channel individual 
+		* image individual
+		
+		Schema (neo4J notation)
+		(anat:Individual)<-[:depicts]-(channel:Individual)
+		<-[:has_signal_channel]-(image)-[:has_background_channel]-(background_channel)
+		
+		image-[:SUBCLASSOF]->(:Class { })
+		channel-[:SUBCLASSOF]->(:Class { })
+		channel-[:Type { short_form: 'OBI_', label : '' } ]->(:Class { }) % channel_type
+		
+		Args:
+		name = name of anatomical individual
+		channel_type = an fbbi term
+		source = short_name of entry in data_source table
+		background_channel = short_form id of background channel (e.g. registration template)
+		
+		returns: 
+		short_form ID of anatomical individual
+		
+		Typing of the anatomical individual is up to implementing code."""
+		
+		## Generate individuals
+		anat = self.add_ind(name = name, short_name = short_name, 
+						source = source, ID_range_start = id_start_range)
+		self.gen_image_channel_set(anat, channel_type, background_channel, id_start_range)
+		return anat
+
+	
+	def gen_image_channel_set(self, anat, channel_type, background_channel, id_start_range):
+		"""ARGS: 
+		* anat = ID of anatomical individual
+		* channel_type = { some fbbi imaging method }
+		"""
+		
+		# Get metadata for anatomy channel - inc source and short name
+		
+		cur = self.conn.cursor()
+		cur.execute("SELECT ds.name AS source, oi.short_name FROM owl_individual oi " \
+				"JOIN data_source ds ON ds.id = oi.source_id " \
+				"WHERE oi.shortFormID = '%s'" % anat)
+		dc = dict_cursor(cur)
+		
+		for d in dc: 
+			source = d['source']
+			aname = d['short_name']
+		# Add channel and image inds
+		channel = self.add_ind(name = aname + '_c', short_name = aname + '_c', source = source, idp = 'VFBc', ID_range_start = id_start_range)
+		image = self.add_ind(name = aname + '_i', short_name = aname + '_i', source = source, idp = 'VFBi', ID_range_start = id_start_range)
+		
+		### add facts
+		self.add_fact(channel, 'depicts', anat)
+		self.add_fact(image, 'VFBext_0000003', channel) # has_signal_channel
+		self.add_fact(image, 'VFBext_0000002', background_channel) # has_background_channel
+		
+		### add types
+		self.add_ind_type(ind = image, OWLclass = 'VFBext_0000006') # multi-channel image
+		self.add_ind_type(ind = channel, OWLclass = 'VFBext_0000014') # channel
+		self.add_ind_type(ind = channel, OWLclass = channel_type, objectProperty = 'OBI_0000312') #
+		self.conn.commit()
+		cur.close()
+
 	def make_ind_obsolete(self, vfbid):
 		cursor = self.conn.cursor()
 		cursor.execute("UPDATE owl_individual SET is_obsolete IS TRUE WHERE shortFormID = '%s'" % vfbid)
@@ -350,7 +466,6 @@ class owlDbOnt():
 			return_type = 'shortFormId'
 		else:
 			return_type = 'label'
-			
 			
 		"""Returns an iterable of dicts with the keys
 		

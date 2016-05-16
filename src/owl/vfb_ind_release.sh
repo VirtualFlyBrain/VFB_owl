@@ -64,7 +64,7 @@ cd ../../owl
 # # Merge ind files with specified release of fbbt
 job="Merging ind files with ${FBBT}" 
 progress_chat $job
-owltools vfb_license_and_attribution.owl --merge $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
+owltools vfb_license_and_attribution.owl --merge $FBBT --merge fb_features.owl --merge vfb_ext.owl --merge $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
 exit_on_fail $? $job
 
 # # assert inferences and strip out redundancy  # This
