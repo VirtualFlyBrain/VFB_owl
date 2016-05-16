@@ -353,6 +353,10 @@ class owlDbOnt():
 		cursor = self.conn.cursor()
 		if manual_spec_sfid:
 			vfbid = manual_spec_sfid
+			if vfbid in self.ind_IdName:
+				warnings.warn("not creating ind %s ('%s').  short_form already exists, with name: '%s'"
+							% (vfbid, name, self.ind_IdName[vfbid]))
+				return False
 		else:
 			if ID_range_start:
 				self.ID_range_start = ID_range_start
@@ -375,7 +379,8 @@ class owlDbOnt():
 			cursor.close()
 			return vfbid
 		
-	def add_linked_anatomy_image_channel(self, name, short_name, source, channel_type, background_channel, id_start_range):
+	def add_linked_anatomy_image_channel(self, name, short_name, source, channel_type, 
+										background_channel, id_start_range, match_ids = False):
 		"""Adds a linked set of individuals:
 		* anatomical individual
 		* channel individual 
@@ -402,12 +407,13 @@ class owlDbOnt():
 		
 		## Generate individuals
 		anat = self.add_ind(name = name, short_name = short_name, 
-						source = source, ID_range_start = id_start_range)
+						source = source, ID_range_start = id_start_range, match_ids = match_ids)
 		self.gen_image_channel_set(anat, channel_type, background_channel, id_start_range)
 		return anat
 
 	
-	def gen_image_channel_set(self, anat, channel_type, background_channel, id_start_range):
+	def gen_image_channel_set(self, anat, channel_type, background_channel, id_start_range = 1,
+							 match_ids = False):
 		"""ARGS: 
 		* anat = ID of anatomical individual
 		* channel_type = { some fbbi imaging method }
@@ -416,19 +422,36 @@ class owlDbOnt():
 		# Get metadata for anatomy channel - inc source and short name
 		
 		cur = self.conn.cursor()
-		cur.execute("SELECT ds.name AS source, oi.short_name FROM owl_individual oi " \
+		cur.execute("SELECT ds.name AS source, oi.short_name, oi.label FROM owl_individual oi " \
 				"JOIN data_source ds ON ds.id = oi.source_id " \
 				"WHERE oi.shortFormID = '%s'" % anat)
 		dc = dict_cursor(cur)
 		
-		for d in dc: 
-			source = d['source']
-			aname = d['short_name']
+		source = dc[0]['source']
+		if dc[0]['short_name']:
+			aname = dc[0]['short_name']
+		else:
+			aname = dc[0]['label']
+		iname = aname + '_i'
+		cname = aname + '_c'
 		# Add channel and image inds
-		channel = self.add_ind(name = aname + '_c', short_name = aname + '_c', source = source, idp = 'VFBc', ID_range_start = id_start_range)
-		image = self.add_ind(name = aname + '_i', short_name = aname + '_i', source = source, idp = 'VFBi', ID_range_start = id_start_range)
+		if match_ids:
+			m = re.match('VFB_(\d+)', anat)
+			acc = m.group(1)
+			channel = self.add_ind(name = cname, short_name = cname, 
+								source = source, manual_spec_sfid= 'VFBc_' + acc)
+			image = self.add_ind(name = iname, short_name = iname, 
+								source = source, manual_spec_sfid= 'VFBi_' + acc)
+		else:
+			channel = self.add_ind(name = aname + '_c', short_name = aname + '_c', 
+								source = source, idp = 'VFBc', ID_range_start = id_start_range)
+			image = self.add_ind(name = aname + '_i', short_name = aname + '_i', 
+								source = source, idp = 'VFBi', ID_range_start = id_start_range)
 		
 		### add facts
+		if not (channel and image):
+			warnings.warn('Failed to add channel or image inds for %s %s. Aborting.')
+			return False
 		self.add_fact(channel, 'depicts', anat)
 		self.add_fact(image, 'VFBext_0000003', channel) # has_signal_channel
 		self.add_fact(image, 'VFBext_0000002', background_channel) # has_background_channel
