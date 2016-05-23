@@ -417,6 +417,30 @@ class owlDbOnt():
 		"""ARGS: 
 		* anat = ID of anatomical individual
 		* channel_type = { some fbbi imaging method }
+		* background_channel = channel 
+		* id_start_range = starting accession in search for new ID.
+		* match_ids: Optional: attempts to match accessions of channel and image to anat.
+		
+		Adds a linked set of individuals:
+		* anatomical individual
+		* channel individual 
+		* image individual
+		
+		Schema (neo4J notation)
+		(anat:Individual)<-[:depicts]-(channel:Individual)
+		<-[:has_signal_channel]-(image)-[:has_background_channel]-(background_channel)
+		
+		image-[:SUBCLASSOF]->(:Class { label: 'multi-channel image' }) 
+		channel-[:SUBCLASSOF]->(:Class { label: 'channel' })
+		channel-[:Type { short_form: 'OBI_', label : '' } ]->(:Class { short_form : '%s' }) % channel_type
+		
+		Notes:
+		
+		* Source id is compulsory in the individual table so **added redundantly* with anat!
+		* label is compulsory (?) and must be unique in individual table.  
+		Script attempts to derive from short_name or from label if now short_name is present.
+		
+		
 		"""
 		
 		# Get metadata for anatomy channel - inc source and short name
@@ -484,7 +508,7 @@ class owlDbOnt():
 		cursor.close()	
 		return typ
 	
-	def ind_type_report(self, ind, ids=0):
+	def ind_type_report(self, ind, ids=False):
 		if ids:
 			return_type = 'shortFormId'
 		else:
@@ -509,6 +533,29 @@ class owlDbOnt():
 						"WHERE oi.shortFormId = '%s'" % (return_type, return_type, return_type, ind))
 		return dict_cursor(cursor)
 
+	def ind_fact_report(self, ind, ids=False):
+		out = []
+		if ids: 
+			rtype = 'shortFormID'
+		else:
+			rtype = 'label'
+		cursor = self.conn.cursor()
+		q = "SELECT s.%s as sub, r.%s as rel, o.%s as obj " \
+		"FROM owl_fact ofa " \
+		"JOIN owl_individual s on s.id=ofa.subject " \
+		"JOIN owl_individual o on o.id=ofa.object " \
+		"JOIN owl_objectProperty r on r.id=ofa.relation " \
+		"WHERE %s.shortFormID = '%s'"
+		cursor.execute(q % (rtype, rtype, rtype, 'o', ind))
+		dc = dict_cursor(cursor)
+		for d in dc:
+			out.append((d['sub'], d['rel'], d['obj']))
+		cursor.execute(q % (rtype, rtype, rtype, 's', ind))
+		dc = dict_cursor(cursor)
+		for d in dc:
+			out.append((d['sub'], d['rel'], d['obj']))
+		return out
+		
 	
 	def gen_annotation_report(self):
 		"""Returns an iterable of dicts with the keys
