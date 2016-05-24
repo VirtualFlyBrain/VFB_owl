@@ -63,15 +63,27 @@ class simpleClassExpression():
 
 class ont_manager():
     # I seem to be reinventing Brain....
-    """Constructors: ont_manager(OWLontology)
+    """Constructors: 
+            ont_manager(ont = OWLontology) # An owl ontology object
+             ont_manager(file_path = path) # A string = path to ontology         
        Attributes:
-           ont: OWLOntology
+           ont: OWLOntology object
+           file_path: Used to load ontology if no ontoogy object specified.
            manager: OWLManager
            factory: OWLDataFactory
            simple_sfp: uses getShortForm(IRI, iri)
            bi_sfp: uses .getEntity(<string> shortForm), .getShortForm(OWLEntity entity)
            """
-        
+        # TODO add constructor for url. Ideally would just have one ARG for url or file_path
+        #, modeled after Brain:
+        #         private boolean isExternalEntity(String entityName) {
+        #         try {
+        #             new URL(entityName);
+        #             return true;
+        #         } catch (MalformedURLException e) {
+        #             return false;
+        #         }
+        #     }
     def __init__(self, ont = '', file_path=''):
         self.manager = OWLManager.createOWLOntologyManager()         
         if not ont:
