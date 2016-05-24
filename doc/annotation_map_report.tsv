@@ -209,15 +209,23 @@ NeuronType	antennal mechanosensory and motor center B2 projection neuron	None	No
 NeuronType	BAmas2 lineage neuron	null_hack		BAmas2 lineage neuron	FBbt_00100656
 NeuronType	bilateral PN	None	None	None	None
 NeuronType	BLD2 lineage neuron	null_hack		BLD2 lineage neuron	FBbt_00100719
+NeuronType	CCP-VMP-PB 2 neuron	None	None	None	None
+NeuronType	CCP-VMP-PB 4 neuron	None	None	None	None
 NeuronType	contra adPN	develops from	RO_0002202	neuroblast ALad1	FBbt_00067346
 NeuronType	contra PN	None	None	None	None
 NeuronType	ContraProjAcrossALs	None	None	None	None
 NeuronType	CSD interneuron	null_hack		CSD interneuron	FBbt_00007405
+NeuronType	CVLP-IDFP-VMP-PB neuron	None	None	None	None
 NeuronType	descending neuron	None	None	None	None
 NeuronType	dFB neuron of the dopaminergic PPL1 cluster	null_hack		dFB neuron of the dopaminergic PPL1 cluster	FBbt_00110322
 NeuronType	dorsal anterior lateral neuron of the protocerebrum	null_hack		dorsal anterior lateral neuron of the protocerebrum	FBbt_00110034
 NeuronType	DP neuron of the dopaminergic PPL1 cluster	null_hack		DP neuron of the dopaminergic PPL1 cluster	FBbt_00110319
 NeuronType	EB neuron of the dopaminergic PPM3 cluster	null_hack		EB neuron of the dopaminergic PPM3 cluster	FBbt_00110327
+NeuronType	EB-IDFP DSB-PB 2 glomeruli neuron	None	None	None	None
+NeuronType	EB-IDFP DSB-PB slice 3 neuron	None	None	None	None
+NeuronType	EB-IDFP DSB-PB slice 7 neuron	None	None	None	None
+NeuronType	EB-IDFP VSB-PB slice 4 glomerulus neuron	None	None	None	None
+NeuronType	EB-IDFP VSB-PB slice 8 glomerulus neuron	None	None	None	None
 NeuronType	gamma dorsal Kenyon cell	null_hack		gamma dorsal Kenyon cell	FBbt_00110932
 NeuronType	gamma Kenyon cell	null_hack		gamma Kenyon cell	FBbt_00100247
 NeuronType	inferior ventrolateral protocerebrum local IVLP-IVLP neuron	None	None	None	None
@@ -228,6 +236,7 @@ NeuronType	lobula columnar neuron Lcn10A	null_hack		lobula columnar neuron Lcn10
 NeuronType	lobula columnar neuron Lcn10B	null_hack		lobula columnar neuron Lcn10	FBbt_00100482
 NeuronType	lobula columnar neuron Lcn11	null_hack		lobula columnar neuron Lcn11	FBbt_00100483
 NeuronType	lobula columnar neuron Lcn12	null_hack		lobula columnar neuron Lcn12	FBbt_00100484
+NeuronType	lobula columnar neuron Lcn13	None	None	None	None
 NeuronType	lobula columnar neuron Lcn14	null_hack		lobula columnar neuron Lcn14	FBbt_00100486
 NeuronType	lobula columnar neuron Lcn4	null_hack		lobula columnar neuron Lcn4	FBbt_00003874
 NeuronType	lobula columnar neuron Lcn6	null_hack		lobula columnar neuron Lcn6	FBbt_00003876
@@ -245,6 +254,55 @@ NeuronType	mushroom body pedunculus-medial lobe arborizing neuron 1	null_hack		m
 NeuronType	mushroom body ventral lobe arborizing neuron 1	null_hack		mushroom body ventral lobe arborizing neuron 1	FBbt_00100236
 NeuronType	mushroom body ventral lobe arborizing neuron 3	null_hack		mushroom body ventral lobe arborizing neuron 3	FBbt_00100238
 NeuronType	mushroom body vertical lobe arborizing neuron 1	None	None	None	None
+NeuronType	PB 2 glomeruli-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB 2 glomeruli-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 1-EB posterior-IDFP DSB neuron	None	None	None	None
+NeuronType	PB slice 1-FB layer 2-IDFP HB-lateral ipsilateral neuron	None	None	None	None
+NeuronType	PB slice 1-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 1-FB layers 1 to 4-bilateral IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 1-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 1-FB layers layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 2-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 2-FB layers 1 to 4-IDFP HB-medial ipsilateral neuron	None	None	None	None
+NeuronType	PB slice 2-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 2-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 2-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 3-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 3-FB layer 5-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 3-FB layers 1 to 4-bilateral IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 3-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 3-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 3-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 3-FB-NO subunit 3 anterior domain neuron	None	None	None	None
+NeuronType	PB slice 3-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 4-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 4-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 4-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 4-FB-NO subunit 2 dorsal domain neuron	None	None	None	None
+NeuronType	PB slice 4-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 5-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 5-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 5-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 5-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 6-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 6-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 6-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 6-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 6-FB-NO subunit 2 dorsal domain neuron	None	None	None	None
+NeuronType	PB slice 6-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 7-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
+NeuronType	PB slice 7-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
+NeuronType	PB slice 7-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 7-FB layers 3-5-IDFP RB neuron	None	None	None	None
+NeuronType	PB slice 8-EB posterior-IDFP DSB neuron	None	None	None	None
+NeuronType	PB slice 8-FB layers 3 and 6-ventral gall neuron	None	None	None	None
+NeuronType	PB slice 8-FB-NO subunit 3 anterior domain neuron	None	None	None	None
+NeuronType	PB slice 8-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB slice 9-FB-NO subunit 3 posterior domain neuron	None	None	None	None
+NeuronType	PB-EB-NO 3 neuron	None	None	None	None
+NeuronType	PB-EB-NO 5 neuron	None	None	None	None
+NeuronType	protocerebral bridge 18 glomeruli type 1 neuron	None	None	None	None
+NeuronType	protocerebral bridge 18 glomeruli type 2 neuron	None	None	None	None
 NeuronType	ventrolateral protocerebrum local VLP1 neuron	None	None	None	None
 NeuronType	vFB neuron of the dopaminergic PPM3 cluster	null_hack		vFB neuron of the dopaminergic PPM3 cluster	FBbt_00110326
 NeuronType	vlPN	None	None	None	None
