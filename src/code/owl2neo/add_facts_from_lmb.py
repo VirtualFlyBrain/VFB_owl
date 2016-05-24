@@ -44,14 +44,14 @@ for d in dict_cursor(cursor):
     else:
         rel_label_string = ''
     # First create individuals if the don't already exist.  Then create triple.    
-    cypher_facts.append("MERGE (s:Individual:VFB { short_form : '%s', label : '%s' , ontology_name : 'vfb', iri: '%s%s'}) " \
-                        "MERGE (o:Individual:VFB { short_form : '%s', label: '%s', ontology_name : 'vfb', iri: '%s%s' }) " \
-                        "MERGE (s)-[:Related { short_form : '%s' %s, uri : '%s%s' }]->(o)" \
+    cypher_facts.append('MERGE (s:Individual:VFB { short_form : "%s", label : "%s" , ontology_name : "vfb", iri: "%s%s"}) ' \
+                        'MERGE (s:Individual:VFB { short_form : "%s", label : "%s" , ontology_name : "vfb", iri: "%s%s"}) ' \
+                        'MERGE (s)-[:Related { short_form : "%s" %s, iri : "%s%s" }]->(o)'\
                         % (d['subj_sfid'], d['subj_label'], vfb_ind_base_uri, d['subj_sfid'], 
                            d['obj_sfid'], d['obj_label'], vfb_ind_base_uri, d['obj_sfid'], 
                            d['rel_sfid'], rel_label_string, d['rBase'], d['rel_sfid']))
     
-nc.commit_list_in_chunks(statements = cypher_facts, verbose = True, chunk_length = 1000) 
+nc.commit_list_in_chunks(statements = cypher_facts, verbose = True, chunk_length = 10000) 
 
 # Add type assertions for images inds from lmb:
 
@@ -60,7 +60,7 @@ cypher_image_types = []
 cursor.execute("SELECT oc.shortFormID AS claz, " \
                "oi.shortFormID AS ind, " \
                "oop.shortFormID AS rel_sfid, " \
-               "oop.shortFormID AS rel_label, " \
+               "oop.label AS rel_label, " \
                "ront.baseURI AS rBase, " \
                "ront.short_name AS ront_name " \
                "FROM owl_individual oi " \
@@ -84,7 +84,7 @@ for d in dict_cursor(cursor):
                               "MERGE (i)-[%s]->(c)" % 
                               (d['claz'], d['ind'], edge))
     
-nc.commit_list_in_chunks(statements = cypher_image_types, verbose = True, chunk_length = 1000)
+nc.commit_list_in_chunks(statements = cypher_image_types, verbose = True, chunk_length = 10000)
 
 
 
