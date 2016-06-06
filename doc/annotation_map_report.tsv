@@ -1,6 +1,9 @@
 a.annotation_type	a.text	op_label	op_id	class_label	class_id
+ALGlomerulus	D doublet	None	None	None	None
+ALGlomerulus	DA+	None	None	None	None
 ALGlomerulus	DA1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DA1	FBbt_00003932
 ALGlomerulus	DA1+DL3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DA1	FBbt_00003932
+ALGlomerulus	DA1+DL3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL3	FBbt_00003964
 ALGlomerulus	DA2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DA2	FBbt_00003933
 ALGlomerulus	DA4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DA4	FBbt_00003935
 ALGlomerulus	DC2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DC2	FBbt_00003962
@@ -10,17 +13,15 @@ ALGlomerulus	DL2d	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerul
 ALGlomerulus	DL2v	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
 ALGlomerulus	DL2v+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
 ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL2v	FBbt_00100376
-ALGlomerulus	DA1+DL3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL3	FBbt_00003964
+ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DL3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL3	FBbt_00003964
 ALGlomerulus	DL4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DL4	FBbt_00003965
 ALGlomerulus	DM1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM1	FBbt_00003975
-ALGlomerulus	DL2v+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
+ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
 ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
-ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	DM5	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM5	FBbt_00003940
 ALGlomerulus	DM6	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM6	FBbt_00003941
-ALGlomerulus	DM3+DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
 ALGlomerulus	DP1l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
 ALGlomerulus	DP1l+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1l	FBbt_00007098
 ALGlomerulus	DP1m+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DP1m	FBbt_00007097
@@ -28,53 +29,52 @@ ALGlomerulus	V	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus 
 ALGlomerulus	V+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus V	FBbt_00003951
 ALGlomerulus	VA1d	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA1d	FBbt_00007101
 ALGlomerulus	VA1d+VM5	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA1d	FBbt_00007101
+ALGlomerulus	VA1d+VM5	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5	FBbt_00003949
 ALGlomerulus	VA1lm	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA1v	FBbt_00007363
 ALGlomerulus	VA1lm+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA1v	FBbt_00007363
 ALGlomerulus	VA4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA4	FBbt_00003944
 ALGlomerulus	VA7m	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VA7m	FBbt_00007102
+ALGlomerulus	VAsomething	None	None	None	None
 ALGlomerulus	VC2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC2	FBbt_00003946
 ALGlomerulus	VC3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3	FBbt_00003953
 ALGlomerulus	VC3+VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3	FBbt_00003953
+ALGlomerulus	VC3+VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
 ALGlomerulus	VC3l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3l	FBbt_00007105
-ALGlomerulus	VM5v+VC3l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3l	FBbt_00007105
 ALGlomerulus	VC3m	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3m	FBbt_00007104
 ALGlomerulus	VC4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC4	FBbt_00007366
+ALGlomerulus	VC4?	None	None	None	None
 ALGlomerulus	VL1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VL1	FBbt_00003954
 ALGlomerulus	VL2a	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VL2a	FBbt_00007106
 ALGlomerulus	VL2p	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VL2p	FBbt_00007107
 ALGlomerulus	VM1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM1	FBbt_00003956
 ALGlomerulus	VM2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
-ALGlomerulus	VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
-ALGlomerulus	VM4+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM3	FBbt_00003948
-ALGlomerulus	VC3+VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
+ALGlomerulus	VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
+ALGlomerulus	VM4+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM2	FBbt_00003947
 ALGlomerulus	VM4+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
+ALGlomerulus	VM4+?	None	None	None	None
+ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus DM3	FBbt_00003972
 ALGlomerulus	VM4+DM3+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM4	FBbt_00003957
-ALGlomerulus	VA1d+VM5	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5	FBbt_00003949
 ALGlomerulus	VM5d	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5d	FBbt_00007391
 ALGlomerulus	VM5v	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5v	FBbt_00007365
 ALGlomerulus	VM5v+VC3l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM5v	FBbt_00007365
+ALGlomerulus	VM5v+VC3l	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VC3l	FBbt_00007105
 ALGlomerulus	VM6	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM6	FBbt_00003958
 ALGlomerulus	VM6+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM6	FBbt_00003958
 ALGlomerulus	VM6+VP1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM6	FBbt_00003958
-ALGlomerulus	VM6+VP2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM6	FBbt_00003958
-ALGlomerulus	VM7	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM7	FBbt_00003973
 ALGlomerulus	VM6+VP1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP1	FBbt_00003927
-ALGlomerulus	VP1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP1	FBbt_00003927
+ALGlomerulus	VM6+VP2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM6	FBbt_00003958
 ALGlomerulus	VM6+VP2	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP2	FBbt_00003928
+ALGlomerulus	VM7	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VM7	FBbt_00003973
+ALGlomerulus	VP1	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP1	FBbt_00003927
+ALGlomerulus	VP1?	None	None	None	None
 ALGlomerulus	VP2+	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP2	FBbt_00003928
 ALGlomerulus	VP3	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP3	FBbt_00003929
 ALGlomerulus	VP3+VP4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP3	FBbt_00003929
 ALGlomerulus	VP3+VP4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP4	FBbt_00110865
-ALGlomerulus	VP4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP4	FBbt_00110865
-ALGlomerulus	D doublet	None	None	None	None
-ALGlomerulus	DA+	None	None	None	None
-ALGlomerulus	VAsomething	None	None	None	None
-ALGlomerulus	VC4?	None	None	None	None
-ALGlomerulus	VM4+?	None	None	None	None
-ALGlomerulus	VP1?	None	None	None	None
 ALGlomerulus	VP3?	None	None	None	None
+ALGlomerulus	VP4	has_postsynaptic_terminal_in	RO_0002110	antennal lobe glomerulus VP4	FBbt_00110865
 ALGlomerulus	VP?	None	None	None	None
 ImageType	Almost Whole Brain	None	None	None	None
 ImageType	Half Brain	None	None	None	None
@@ -91,22 +91,23 @@ laterality	recheck	None	None	None	None
 laterality	soma_left	None	None	None	None
 laterality	soma_midline	None	None	None	None
 laterality	soma_right	None	None	None	None
-MainTract	lALT	fasciculates_with	RO_0002101	lateral antennal lobe tract	FBbt_00003983
-MainTract	oACT	fasciculates_with	RO_0002101	lateral antennal lobe tract	FBbt_00003983
 MainTract	iACT	fasciculates_with	RO_0002101	medial antennal lobe tract	FBbt_00003985
-MainTract	mALT	fasciculates_with	RO_0002101	medial antennal lobe tract	FBbt_00003985
+MainTract	lALT	fasciculates_with	RO_0002101	lateral antennal lobe tract	FBbt_00003983
 MainTract	mACT	fasciculates_with	RO_0002101	mediolateral antennal lobe tract	FBbt_00003984
+MainTract	mALT	fasciculates_with	RO_0002101	medial antennal lobe tract	FBbt_00003985
 MainTract	mlALT	fasciculates_with	RO_0002101	mediolateral antennal lobe tract	FBbt_00003984
+MainTract	oACT	fasciculates_with	RO_0002101	lateral antennal lobe tract	FBbt_00003983
+MainTract	omACT	fasciculates_with	RO_0002101	transverse antennal lobe tract	FBbt_00007482
 MainTract	other	None	None	None	None
 MainTract	posterior to mACT	None	None	None	None
 MainTract	t1ALT	None	None	None	None
 MainTract	t2ALT	None	None	None	None
 MainTract	t3ALT	None	None	None	None
-MainTract	omACT	fasciculates_with	RO_0002101	transverse antennal lobe tract	FBbt_00007482
 NeuronSubType	oligoPN	null_hack		multiglomerular antennal lobe projection neuron	FBbt_00007384
 NeuronSubType	polyglomerularPN	null_hack		multiglomerular antennal lobe projection neuron	FBbt_00007384
-NeuronSubType	ventroposterior AL	None	None	None	None
 NeuronSubType	uPN	null_hack		uniglomerular antennal lobe projection neuron	FBbt_00007383
+NeuronSubType	ventroposterior AL	None	None	None	None
+NeuronType	adPN	develops from	RO_0002202	neuroblast ALad1	FBbt_00067346
 NeuronType	adult ALv1 lineage neuron	null_hack		adult ALv1 lineage neuron	FBbt_00050197
 NeuronType	adult ALv2 lineage neuron	null_hack		adult ALv2 lineage neuron	FBbt_00050037
 NeuronType	adult AOTUv2 lineage neuron	null_hack		adult AOTUv2 lineage neuron	FBbt_00050183
@@ -184,20 +185,29 @@ NeuronType	adult VPNd3 lineage neuron	null_hack		adult VPNd3 lineage neuron	FBbt
 NeuronType	adult VPNp2 lineage neuron	null_hack		adult VPNp2 lineage neuron	FBbt_00110394
 NeuronType	adult VPNv2 lineage neuron	null_hack		adult VPNv2 lineage neuron	FBbt_00110406
 NeuronType	adult WEDa2 lineage neuron	null_hack		adult WEDa2 lineage neuron	FBbt_00050017
+NeuronType	AL Descending Neuron	None	None	None	None
 NeuronType	alpha'/beta' Kenyon cell	null_hack		alpha'/beta' Kenyon cell	FBbt_00100249
 NeuronType	alpha/beta core Kenyon cell	null_hack		alpha/beta core Kenyon cell	FBbt_00110929
 NeuronType	alpha/beta Kenyon cell	null_hack		alpha/beta Kenyon cell	FBbt_00100248
 NeuronType	alpha/beta posterior Kenyon cell	null_hack		alpha/beta posterior Kenyon cell	FBbt_00110931
 NeuronType	alpha/beta surface Kenyon cell	null_hack		alpha/beta surface Kenyon cell	FBbt_00110930
+NeuronType	AMMC LN	null_hack		antennal mechanosensory and motor center local AMMC neuron	FBbt_00110873
 NeuronType	AMMC-AMMC PN1	null_hack		antennal mechanosensory and motor center AMMC-AMMC projection neuron 1	FBbt_00110629
 NeuronType	AMMC-AMMC PN2	null_hack		antennal mechanosensory and motor center AMMC-AMMC projection neuron 2	FBbt_00110630
+NeuronType	AMMC-B1 PN	null_hack		antennal mechanosensory and motor center B1 projection neuron	FBbt_00110120
 NeuronType	AMMC-IVLP PN1	null_hack		antennal mechanosensory and motor center AMMC-IVLP projection neuron 1	FBbt_00110632
 NeuronType	AMMC-IVLP PN2	null_hack		antennal mechanosensory and motor center AMMC-IVLP projection neuron 2	FBbt_00110633
 NeuronType	AMMC-VLP PN	null_hack		antennal mechanosensory and motor center AMMC-VLP projection neuron	FBbt_00110634
 NeuronType	AMMC-VNC PN	null_hack		antennal mechanosensory and motor center AMMC-VNC projection neuron	FBbt_00110631
-NeuronType	AMMC-B1 PN	null_hack		antennal mechanosensory and motor center B1 projection neuron	FBbt_00110120
-NeuronType	AMMC LN	null_hack		antennal mechanosensory and motor center local AMMC neuron	FBbt_00110873
+NeuronType	antennal mechanosensory and motor center A1 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center AMMC-AL1 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center AMMC-VLP1 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center AMMC-VLP2 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center AMMC-VLP3 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center AMMC-VLP5 projection neuron	None	None	None	None
+NeuronType	antennal mechanosensory and motor center B2 projection neuron	None	None	None	None
 NeuronType	BAmas2 lineage neuron	null_hack		BAmas2 lineage neuron	FBbt_00100656
+NeuronType	bilateral PN	None	None	None	None
 NeuronType	BLD2 lineage neuron	null_hack		BLD2 lineage neuron	FBbt_00100719
 NeuronType	CCP-VMP-PB 2 neuron	None	None	None	None
 NeuronType	CCP-VMP-PB 4 neuron	None	None	None	None
@@ -218,8 +228,9 @@ NeuronType	EB-IDFP VSB-PB slice 4 glomerulus neuron	None	None	None	None
 NeuronType	EB-IDFP VSB-PB slice 8 glomerulus neuron	None	None	None	None
 NeuronType	gamma dorsal Kenyon cell	null_hack		gamma dorsal Kenyon cell	FBbt_00110932
 NeuronType	gamma Kenyon cell	null_hack		gamma Kenyon cell	FBbt_00100247
-NeuronType	IVLP-IVLP PN	null_hack		inferior ventrolateral protocerebrum commissural IVLP-IVLP neuron	FBbt_00110125
+NeuronType	inferior ventrolateral protocerebrum local IVLP-IVLP neuron	None	None	None	None
 NeuronType	IVLP LN	null_hack		inferior ventrolateral protocerebrum local IVLP neuron	FBbt_00110874
+NeuronType	IVLP-IVLP PN	null_hack		inferior ventrolateral protocerebrum commissural IVLP-IVLP neuron	FBbt_00110125
 NeuronType	lobula columnar neuron Lcn10	null_hack		lobula columnar neuron Lcn10	FBbt_00100482
 NeuronType	lobula columnar neuron Lcn10A	null_hack		lobula columnar neuron Lcn10	FBbt_00100482
 NeuronType	lobula columnar neuron Lcn10B	null_hack		lobula columnar neuron Lcn10	FBbt_00100482
@@ -231,6 +242,8 @@ NeuronType	lobula columnar neuron Lcn4	null_hack		lobula columnar neuron Lcn4	FB
 NeuronType	lobula columnar neuron Lcn6	null_hack		lobula columnar neuron Lcn6	FBbt_00003876
 NeuronType	lobula columnar neuron Lcn9	null_hack		lobula columnar neuron Lcn9	FBbt_00100480
 NeuronType	lobula tangential neuron Lt12	null_hack		lobula tangential neuron Lt12	FBbt_00100488
+NeuronType	lPN	develops from	RO_0002202	neuroblast ALl1	FBbt_00067347
+NeuronType	lPN?	None	None	None	None
 NeuronType	MB-alpha neuron of the dopaminergic PPL1 cluster	null_hack		MB-alpha neuron of the dopaminergic PPL1 cluster	FBbt_00110320
 NeuronType	MB-alpha prime neuron of the dopaminergic PPL1 cluster	null_hack		MB-alpha' neuron of the dopaminergic PPL1 cluster	FBbt_00110321
 NeuronType	MB-AMP neuron of the dopaminergic PPL1 cluster	null_hack		MB-AMP neuron of the dopaminergic PPL1 cluster	FBbt_00110324
@@ -240,24 +253,6 @@ NeuronType	mushroom body medial-vertical lobe arborizing neuron 1	null_hack		mus
 NeuronType	mushroom body pedunculus-medial lobe arborizing neuron 1	null_hack		mushroom body pedunculus-medial lobe arborizing neuron 1	FBbt_00100243
 NeuronType	mushroom body ventral lobe arborizing neuron 1	null_hack		mushroom body ventral lobe arborizing neuron 1	FBbt_00100236
 NeuronType	mushroom body ventral lobe arborizing neuron 3	null_hack		mushroom body ventral lobe arborizing neuron 3	FBbt_00100238
-NeuronType	adPN	develops from	RO_0002202	neuroblast ALad1	FBbt_00067346
-NeuronType	contra adPN	develops from	RO_0002202	neuroblast ALad1	FBbt_00067346
-NeuronType	lPN	develops from	RO_0002202	neuroblast ALl1	FBbt_00067347
-NeuronType	vPN	develops from	RO_0002202	neuroblast ALv1	FBbt_00067348
-NeuronType	AL Descending Neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center A1 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center AMMC-AL1 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center AMMC-VLP1 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center AMMC-VLP2 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center AMMC-VLP3 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center AMMC-VLP5 projection neuron	None	None	None	None
-NeuronType	antennal mechanosensory and motor center B2 projection neuron	None	None	None	None
-NeuronType	bilateral PN	None	None	None	None
-NeuronType	contra PN	None	None	None	None
-NeuronType	ContraProjAcrossALs	None	None	None	None
-NeuronType	descending neuron	None	None	None	None
-NeuronType	inferior ventrolateral protocerebrum local IVLP-IVLP neuron	None	None	None	None
-NeuronType	lPN?	None	None	None	None
 NeuronType	mushroom body vertical lobe arborizing neuron 1	None	None	None	None
 NeuronType	PB 2 glomeruli-FB layer 2-IDFP HB-lateral neuron	None	None	None	None
 NeuronType	PB 2 glomeruli-FB layers 1 to 4-IDFP HB-medial neuron	None	None	None	None
@@ -309,5 +304,6 @@ NeuronType	PB-EB-NO 5 neuron	None	None	None	None
 NeuronType	protocerebral bridge 18 glomeruli type 1 neuron	None	None	None	None
 NeuronType	protocerebral bridge 18 glomeruli type 2 neuron	None	None	None	None
 NeuronType	ventrolateral protocerebrum local VLP1 neuron	None	None	None	None
-NeuronType	vlPN	None	None	None	None
 NeuronType	vFB neuron of the dopaminergic PPM3 cluster	null_hack		vFB neuron of the dopaminergic PPM3 cluster	FBbt_00110326
+NeuronType	vlPN	None	None	None	None
+NeuronType	vPN	develops from	RO_0002202	neuroblast ALv1	FBbt_00067348
