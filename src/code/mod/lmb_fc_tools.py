@@ -396,7 +396,7 @@ class owlDbOnt():
 		
 		Args:
 		name = name of anatomical individual
-		channel_type = an fbbi term
+		channel_type = an fbbi term (sfid)
 		source = short_name of entry in data_source table
 		background_channel = short_form id of background channel (e.g. registration template)
 		
@@ -407,8 +407,8 @@ class owlDbOnt():
 		
 		## Generate individuals
 		anat = self.add_ind(name = name, short_name = short_name, 
-						source = source, ID_range_start = id_start_range, match_ids = match_ids)
-		self.gen_image_channel_set(anat, channel_type, background_channel, id_start_range)
+						source = source, ID_range_start = id_start_range)
+		self.gen_image_channel_set(anat, channel_type, background_channel, id_start_range,  match_ids)
 		return anat
 
 	
