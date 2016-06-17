@@ -115,6 +115,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <rdfs:label>has specified output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
@@ -191,6 +199,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005 -->
+
+    <owl:Class rdf:about="&vfb;VFB_10000005">
+        <rdfs:label>cluster</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006 -->
 
     <owl:Class rdf:about="&vfb;VFBext_0000006">
@@ -205,14 +221,6 @@
     <owl:Class rdf:about="&vfb;VFBext_0000014">
         <rdfs:label>channel</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/image"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/vfb/VFB_10000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/vfb/VFB_10000005">
-        <rdfs:label>cluster</rdfs:label>
     </owl:Class>
     
 
