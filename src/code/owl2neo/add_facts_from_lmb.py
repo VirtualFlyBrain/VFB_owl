@@ -45,13 +45,13 @@ for d in dict_cursor(cursor):
         rel_label_string = ''
     # First create individuals if the don't already exist.  Then create triple.    
     cypher_facts.append('MERGE (s:Individual:VFB { short_form : "%s", label : "%s" , ontology_name : "vfb", iri: "%s%s"}) ' \
-                        'MERGE (s:Individual:VFB { short_form : "%s", label : "%s" , ontology_name : "vfb", iri: "%s%s"}) ' \
+                        'MERGE (o:Individual:VFB { short_form : "%s", label : "%s" , ontology_name : "vfb", iri: "%s%s"}) ' \
                         'MERGE (s)-[:Related { short_form : "%s" %s, iri : "%s%s" }]->(o)'\
                         % (d['subj_sfid'], d['subj_label'], vfb_ind_base_uri, d['subj_sfid'], 
                            d['obj_sfid'], d['obj_label'], vfb_ind_base_uri, d['obj_sfid'], 
                            d['rel_sfid'], rel_label_string, d['rBase'], d['rel_sfid']))
     
-nc.commit_list_in_chunks(statements = cypher_facts, verbose = True, chunk_length = 10000) 
+nc.commit_list_in_chunks(statements = cypher_facts, verbose = True, chunk_length = 5000) 
 
 # Add type assertions for images inds from lmb:
 
@@ -84,7 +84,7 @@ for d in dict_cursor(cursor):
                               "MERGE (i)-[%s]->(c)" % 
                               (d['claz'], d['ind'], edge))
     
-nc.commit_list_in_chunks(statements = cypher_image_types, verbose = True, chunk_length = 10000)
+nc.commit_list_in_chunks(statements = cypher_image_types, verbose = True, chunk_length = 5000)
 
 
 
