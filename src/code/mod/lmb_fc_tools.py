@@ -224,6 +224,7 @@ class owlDbOnt():
 		return True # Should be able to get status from cursor or conn -> False if INSERT fails! 
 
 	def add_akv_type(self, key, value, OWLclass, objectProperty=''):
+		value = re.sub("'", "\\'", value)
 		self._update_akv()
 		if not self.type_exists(objectProperty, OWLclass):
 			self._add_type(OWLclass, objectProperty)
@@ -238,6 +239,7 @@ class owlDbOnt():
 		cursor.close()
 		
 	def remove_akv_type(self, key, value, OWLclass, objectProperty=''):
+		value = re.sub("'", "\\'", value)
 		self._update_akv()
 		if not self.type_exists(objectProperty, OWLclass):
 			self._add_type(OWLclass, objectProperty)
