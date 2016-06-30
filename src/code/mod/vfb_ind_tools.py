@@ -101,7 +101,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
 		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
-		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000006', d['short_name'], )
+		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'], )
 		if d['extID']:
 			if d['pre']:
 				link = d['pre'] + d['extID']
