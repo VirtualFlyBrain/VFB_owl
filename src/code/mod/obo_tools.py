@@ -6,7 +6,7 @@ import warnings
 def addOboAnnotationProperties(brain):
     """Add obo annotation property declarations to a brain object"""
     brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_0000115") # definition
-    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_xref") # ??
+    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref") # ??
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasExactSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym")
@@ -15,7 +15,7 @@ def addOboAnnotationProperties(brain):
 
 def addVFBAnnotationProperties(brain):
     brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005") # data_source_link
-    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000006")
+    brain.addAnnotationProperty("http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004") # short_name  # Better to use typed exact syn?
 
 
 def gen_id(idp, ID, length, id_name):
