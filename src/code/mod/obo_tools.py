@@ -6,7 +6,6 @@ import warnings
 def addOboAnnotationProperties(brain):
     """Add obo annotation property declarations to a brain object"""
     brain.addAnnotationProperty("http://purl.obolibrary.org/obo/IAO_0000115") # definition
-    brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasDbXref") # ??
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasExactSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym")
     brain.addAnnotationProperty("http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym")
