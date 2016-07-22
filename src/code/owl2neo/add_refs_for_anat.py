@@ -17,7 +17,7 @@ Sets uniqueness constraint on FBrf for all PUB."""
 nc = neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
 ontology_uri = sys.argv[4]
 
-supported_xrefs = { 'FlyBase' : 'FlyBase:FBrf\d{7}', 'PMID': 'PMID:\d+', 'DOI': 'DOI:.+', 'url' : '(http|https):.+'}
+supported_xrefs = { 'FlyBase' : 'FlyBase:FBrf\d{7}', 'PMID': 'PMID:\d+', 'DOI': 'DOI:.+', 'http' : 'http:.+'}
 
 
 def proc_xrefs(dbxrefs):
