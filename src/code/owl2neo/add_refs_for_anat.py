@@ -14,21 +14,25 @@ Sets uniqueness constraint on FBrf for all PUB."""
 # Note: should be straightforward to remove dependency on Brain.  
 # One option is to use Neo4J for the initial query.
 
-nc= neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
+nc = neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
 ontology_uri = sys.argv[4]
+
+supported_xrefs = { 'FlyBase' : 'FlyBase:FBrf\d{7}', 'PMID': 'PMID:\d+', 'DOI': 'DOI:.+', 'url' : '(http|https):.+'}
 
 
 def proc_xrefs(dbxrefs):
-    out = []
     if not dbxrefs:
-        return out
-    else:
-        for xref in dbxrefs:
-            if re.match("FlyBase:FBrf\d{7}", xref):
-                fbrf = xref.split(':')[1]
-                out.append(fbrf)
+        return False
+    out = {}
+    for db in supported_xrefs.keys():
+        out[db] = []
+    for xref in dbxrefs:
+        for db, re_string in supported_xrefs.items():
+            m = re.compile(re_string)
+            if re.match(m, xref):
+                ref = xref.split(':')[1]
+                out[db].append(ref)     
     return out
-
 
 vfb = Brain()
 vfb.learn(ontology_uri)
@@ -44,40 +48,55 @@ fbbt_classes = vfb.getSubClasses("FBbt_10000000", 0) # FBbt root
 
 # Add unattribued pub node and set uniqueness:
 # (Separate commits needed as can't combined adding data with schema change.)
+# By convention, unnattributed is a FlyBase attribute.  May want to change this.
 
 statements = ["MERGE (:pub:Individual { FlyBase: 'Unattributed' })"]
 nc.commit_list(statements)
-statements = ["CREATE CONSTRAINT ON (p:pub) ASSERT p.FlyBase IS UNIQUE"]
+
+for db in supported_xrefs:
+    statements.append("CREATE CONSTRAINT ON (p:pub) ASSERT p.%s IS UNIQUE" % db)
+
 nc.commit_list(statements)
+
+def roll_cypher_add_def_pub_link(sfid, pub_id_typ, pub_id):
+    """Generates a Cypher statement that links an existing class 
+    to a pub node with the specified attribute.  Generates a new pub node
+     if none exists."""
+    return  "MATCH (a:Class { short_form : '%s' }) " \
+            "MERGE (p:pub:Individual { %s : '%s' }) " \
+            "MERGE (a)-[:has_reference { typ : 'def' }]->(p)"  % (sfid, pub_id_typ, pub_id)
+            
+
+def roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ, pub_id):
+    """Generates a Cypher statement that links an existing class 
+    to a pub node ..."""  
+    label = re.sub("'", "\'", s.getLabel())
+    return  "MATCH (a:Class { short_form : '%s' }) " \
+            "MERGE (p:pub:Individual { %s : '%s' }) " \
+            "MERGE (a)-[:has_reference { typ : 'syn', scope: '%s', synonym : \"%s\", cat: '%s' }]->(p)" \
+            "" % (sfid, pub_id_typ, pub_id, s.getScope(), label, s.getCategory())
 
 
 statements = []
 
 for sfid in fbbt_classes:
     dbxrefs = ogw.getDefXref(vom.bi_sfp.getEntity(sfid))
-    fbrfs = proc_xrefs(dbxrefs)
+    pub_refs = proc_xrefs(dbxrefs)
     syns = ogw.getOBOSynonyms(vom.bi_sfp.getEntity(sfid))
-    if fbrfs:
-        for fbrf in fbrfs:
-            statements.append("MATCH (a:Class { short_form : '%s' }) " \
-                              "MERGE (p:pub:Individual { FlyBase : '%s' }) " \
-                              "MERGE (a)-[:has_reference { typ : 'def' }]->(p)"
-                               % (sfid, fbrf))
+    if pub_refs:
+        for db in supported_xrefs.keys():
+            for ref in pub_refs[db]:
+                statements.append(roll_cypher_add_def_pub_link(sfid, pub_id_typ = db, pub_id = ref))
+
     if syns:
         for s in syns:
-            fbrfs = proc_xrefs(s.getXrefs())
-            label = re.sub("'", "\'", s.getLabel())
-            if fbrfs: 
-                for f in fbrfs:
-                    statements.append("MATCH (a:Class { short_form : '%s' }) " \
-                                      "MERGE (p:pub:Individual { FlyBase : '%s' }) " \
-                                      "MERGE (a)-[:has_reference { typ : 'syn', scope: '%s', synonym : \"%s\", cat: '%s' }]->(p)"
-                                      % (sfid, f, s.getScope(),label, s.getCategory()))
+            pub_refs = proc_xrefs(s.getXrefs())
+            if pub_refs:
+                for db in supported_xrefs.keys():
+                    for ref in pub_refs[db]:
+                        statements.append(roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ = db, pub_id = ref))         
             else:
-                statements.append("MATCH (a:Class { short_form : '%s' }) " \
-                                      "MERGE (p:pub:Individual { FlyBase : '%s' }) " \
-                                      "MERGE (a)-[:has_reference { typ : 'syn', scope: '%s', synonym : \"%s\", cat: '%s' }]->(p)"
-                                      % (sfid, 'Unattributed', s.getScope(), label, s.getCategory()))
+                statements.append(roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ = 'FlyBase', pub_id = 'unattributed'))           
         
 nc.commit_list_in_chunks(statements, verbose= True, chunk_length = 500)
 
