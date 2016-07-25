@@ -15,7 +15,7 @@ Sets uniqueness constraint on FBrf for all PUB."""
 # One option is to use Neo4J for the initial query.
 
 batch = True
-if len(sys.argv) == 5:
+if len(sys.argv) == 6:
     arg = sys.argv.pop(1)
     if arg == '--no_batch':
         batch = False
