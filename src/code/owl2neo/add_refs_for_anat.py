@@ -14,6 +14,14 @@ Sets uniqueness constraint on FBrf for all PUB."""
 # Note: should be straightforward to remove dependency on Brain.  
 # One option is to use Neo4J for the initial query.
 
+batch = True
+if len(sys.argv) == 5:
+    arg = sys.argv.pop(1)
+    if arg == '--no_batch':
+        batch = False
+    else:
+        warnings.warn('Illegal argument %s' % arg)
+
 nc = neo4j_connect(base_uri = sys.argv[1], usr = sys.argv[2], pwd = sys.argv[3])
 ontology_uri = sys.argv[4]
 
@@ -96,9 +104,14 @@ for sfid in fbbt_classes:
                     for ref in pub_refs[db]:
                         statements.append(roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ = db, pub_id = ref))         
             else:
-                statements.append(roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ = 'FlyBase', pub_id = 'unattributed'))           
-        
-nc.commit_list_in_chunks(statements, verbose= True, chunk_length = 500)
+                statements.append(roll_cypher_add_syn_pub_link(sfid, s, pub_id_typ = 'FlyBase', pub_id = 'Unattributed'))           
+
+if batch: 
+    chunk_length = 500
+else:
+    chunk_length = 1
+    
+nc.commit_list_in_chunks(statements, verbose= True, chunk_length = chunk_length)
 
 vfb.sleep()
         
