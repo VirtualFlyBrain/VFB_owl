@@ -220,12 +220,12 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00003684>
 Individual: VFB_00030623
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SLP_JFRC"^^xsd:string,
         rdfs:label "SLP - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SLP_JFRC"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007054>
@@ -236,10 +236,10 @@ Individual: VFB_00030622
     Annotations: 
         rdfs:label "LO - painted domain JFRC2"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "LO_JFRC"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003852>
@@ -251,7 +251,7 @@ Individual: VFB_00030621
         rdfs:label "AME - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AME_JFRC"^^xsd:string
     
@@ -265,7 +265,7 @@ Individual: VFB_00030620
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "FLA_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "FLA - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
@@ -278,7 +278,7 @@ Individual: VFB_00030901
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "MB_PED - painted domain JFRC2"^^xsd:string
     
@@ -291,7 +291,7 @@ Individual: VFB_00030902
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "MB_VL - painted domain JFRC2"^^xsd:string
     
@@ -305,7 +305,7 @@ Individual: VFB_00030871
         rdfs:label "SNP - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -318,7 +318,7 @@ Individual: VFB_00030872
         rdfs:label "VLNP - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -328,11 +328,11 @@ Individual: VFB_00030872
 Individual: VFB_00030599
 
     Annotations: 
-        rdfs:label "EPA - painted domain JFRC2"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "EPA_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "EPA_JFRC"^^xsd:string,
+        rdfs:label "EPA - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -345,7 +345,7 @@ Individual: VFB_00030873
         rdfs:label "VMNP - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -359,7 +359,7 @@ Individual: VFB_00030856
         rdfs:label "SEZ - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110639>
@@ -371,7 +371,7 @@ Individual: VFB_00030619
         rdfs:label "PB - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "PB_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
@@ -386,7 +386,7 @@ Individual: VFB_00030618
         rdfs:label "SCL - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SCL_JFRC"^^xsd:string
     
     Types: 
@@ -401,7 +401,7 @@ Individual: VFB_00030617
         rdfs:label "ICL - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040049>
@@ -410,12 +410,12 @@ Individual: VFB_00030617
 Individual: VFB_00030616
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "VES_JFRC"^^xsd:string,
         rdfs:label "VES - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040041>
@@ -424,12 +424,12 @@ Individual: VFB_00030616
 Individual: VFB_00030615
 
     Annotations: 
+        rdfs:label "ATL - painted domain JFRC2"^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "ATL_JFRC"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "ATL_JFRC"^^xsd:string,
-        rdfs:label "ATL - painted domain JFRC2"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045039>
@@ -438,12 +438,12 @@ Individual: VFB_00030615
 Individual: VFB_00030614
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SMP_JFRC"^^xsd:string,
-        rdfs:label "SMP - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SMP_JFRC"^^xsd:string,
+        rdfs:label "SMP - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007055>
@@ -454,10 +454,10 @@ Individual: VFB_00030613
     Annotations: 
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AMMC_JFRC"^^xsd:string,
         rdfs:label "AMMC - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003982>
@@ -469,7 +469,7 @@ Individual: VFB_00030612
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "LOP - painted domain JFRC2"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "LOP_JFRC"^^xsd:string
     
@@ -484,7 +484,7 @@ Individual: VFB_00030611
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "EB_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "EB - painted domain JFRC2"^^xsd:string
     
     Types: 
@@ -494,12 +494,12 @@ Individual: VFB_00030611
 Individual: VFB_00030610
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "GOR_JFRC"^^xsd:string,
-        rdfs:label "GOR - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        rdfs:label "GOR - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040039>
@@ -508,11 +508,11 @@ Individual: VFB_00030610
 Individual: VFB_00030874
 
     Annotations: 
-        rdfs:label "CB - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "CB - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045020>
@@ -522,10 +522,10 @@ Individual: VFB_00030849
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CRG - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "CRG - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110636>
@@ -537,7 +537,7 @@ Individual: VFB_00030879
         rdfs:label "PS - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -547,10 +547,10 @@ Individual: VFB_00030879
 Individual: VFB_00030878
 
     Annotations: 
-        rdfs:label "VLP - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "VLP - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -563,7 +563,7 @@ Individual: VFB_00030877
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "LOX - painted domain JFRC2"^^xsd:string
     
     Types: 
@@ -573,11 +573,11 @@ Individual: VFB_00030877
 Individual: VFB_00030876
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "CL - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CL - painted domain JFRC2"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040047>
@@ -588,7 +588,7 @@ Individual: VFB_00030875
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "MB_L - painted domain JFRC2"^^xsd:string
     
@@ -599,10 +599,10 @@ Individual: VFB_00030875
 Individual: VFB_00030609
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "NO_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "NO_JFRC"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "NO - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
@@ -615,7 +615,7 @@ Individual: VFB_00030608
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AVLP_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "AVLP - painted domain JFRC2"^^xsd:string
@@ -627,11 +627,11 @@ Individual: VFB_00030608
 Individual: VFB_00030607
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "GA_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "GA - painted domain JFRC2"^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "GA_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -643,7 +643,7 @@ Individual: VFB_00030606
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "CRE_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "CRE - painted domain JFRC2"^^xsd:string
@@ -658,7 +658,7 @@ Individual: VFB_00030605
         rdfs:label "LAL - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "LAL_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
@@ -674,7 +674,7 @@ Individual: VFB_00030604
         rdfs:label "PRW - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040051>
@@ -685,10 +685,10 @@ Individual: VFB_00030603
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "IPS_JFRC"^^xsd:string,
-        rdfs:label "IPS - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "IPS - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045046>
@@ -702,7 +702,7 @@ Individual: VFB_00030602
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045051>
@@ -711,12 +711,12 @@ Individual: VFB_00030602
 Individual: VFB_00030601
 
     Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
         rdfs:label "SPS - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SPS_JFRC"^^xsd:string
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SPS_JFRC"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045040>
@@ -727,7 +727,7 @@ Individual: VFB_00030600
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "SAD - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SAD_JFRC"^^xsd:string
@@ -742,7 +742,7 @@ Individual: VFB_00030633
         rdfs:label "FB - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "FB_JFRC"^^xsd:string
     
@@ -757,7 +757,7 @@ Individual: VFB_00030632
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "PVLP_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "PVLP - painted domain JFRC2"^^xsd:string
     
     Types: 
@@ -772,7 +772,7 @@ Individual: VFB_00030631
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "IB_JFRC"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040050>
@@ -783,10 +783,10 @@ Individual: VFB_00030630
     Annotations: 
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "PLP_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "PLP - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "PLP - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040044>
@@ -798,7 +798,7 @@ Individual: VFB_00030880
         rdfs:label "VX - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -810,7 +810,7 @@ Individual: VFB_00030840
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "GNG - painted domain JFRC2"^^xsd:string
     
@@ -825,7 +825,7 @@ Individual: VFB_00030870
         rdfs:label "OL - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003701>
@@ -834,10 +834,10 @@ Individual: VFB_00030870
 Individual: VFB_00030838
 
     Annotations: 
-        rdfs:label "MB_CA - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "MB_CA - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -847,11 +847,11 @@ Individual: VFB_00030838
 Individual: VFB_00030869
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "LX - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "LX - painted domain JFRC2"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040001>
@@ -860,11 +860,11 @@ Individual: VFB_00030869
 Individual: VFB_00030868
 
     Annotations: 
-        rdfs:label "INP - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "INP - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040037>
@@ -873,10 +873,10 @@ Individual: VFB_00030868
 Individual: VFB_00030867
 
     Annotations: 
-        rdfs:label "MB - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "MB - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -888,7 +888,7 @@ Individual: VFB_00030866
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "CX - painted domain JFRC2"^^xsd:string
     
@@ -902,7 +902,7 @@ Individual: VFB_00030903
         rdfs:label "MB_ML - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -912,11 +912,11 @@ Individual: VFB_00030903
 Individual: VFB_00030900
 
     Annotations: 
-        rdfs:label "LH - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "LH - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007053>
@@ -925,11 +925,11 @@ Individual: VFB_00030900
 Individual: VFB_00030629
 
     Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AL_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "AL - painted domain JFRC2"^^xsd:string
     
     Types: 
@@ -941,7 +941,7 @@ Individual: VFB_00030628
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "SIP - painted domain JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "SIP_JFRC"^^xsd:string
@@ -955,10 +955,10 @@ Individual: VFB_00030627
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         rdfs:label "AOTU - painted domain JFRC2"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AOTU_JFRC"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "AOTU_JFRC"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007059>
@@ -967,12 +967,12 @@ Individual: VFB_00030627
 Individual: VFB_00030626
 
     Annotations: 
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "IVLP_JFRC"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         rdfs:label "IVLP - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "IVLP_JFRC"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045027>
@@ -983,10 +983,10 @@ Individual: VFB_00030625
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "BU_JFRC"^^xsd:string,
-        rdfs:label "BU - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "BU - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003682>
@@ -997,10 +997,10 @@ Individual: VFB_00030624
     Annotations: 
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004> "ME_JFRC"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "ME - painted domain JFRC2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> ""^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "ME - painted domain JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003748>

@@ -169,10 +169,10 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00111496>
 Individual: VFB_00030785
 
     Annotations: 
+        rdfs:label "P3b"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC P3b neuron expressing  that is part of an "^^xsd:string,
-        rdfs:label "P3b"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC P3b neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -182,11 +182,11 @@ Individual: VFB_00030785
 Individual: VFB_00030759
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        rdfs:label "Bi15"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi15 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Bi15"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi15 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111479>
@@ -195,10 +195,10 @@ Individual: VFB_00030759
 Individual: VFB_00030758
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi14 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi14 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         rdfs:label "Bi14"^^xsd:string
     
     Types: 
@@ -210,7 +210,7 @@ Individual: VFB_00030757
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi13 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi13 neuron."^^xsd:string,
         rdfs:label "Bi13"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
@@ -223,7 +223,7 @@ Individual: VFB_00030756
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi12 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi12 neuron."^^xsd:string,
         rdfs:label "Bi12"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
@@ -238,7 +238,7 @@ Individual: VFB_00030755
         rdfs:label "Bi11"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi11 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi11 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111475>
@@ -247,10 +247,10 @@ Individual: VFB_00030755
 Individual: VFB_00030754
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi10 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi10 neuron."^^xsd:string,
         rdfs:label "Bi10"^^xsd:string
     
     Types: 
@@ -260,10 +260,10 @@ Individual: VFB_00030754
 Individual: VFB_00030753
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center local AMMC Bi1 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center local AMMC Bi1 neuron."^^xsd:string,
         rdfs:label "Bi1"^^xsd:string
     
     Types: 
@@ -274,10 +274,10 @@ Individual: VFB_00030752
 
     Annotations: 
         rdfs:label "Bb4"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb4 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb4 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111484>
@@ -286,11 +286,11 @@ Individual: VFB_00030752
 Individual: VFB_00030751
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Bb3"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb3 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb3 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        rdfs:label "Bb3"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111483>
@@ -302,7 +302,7 @@ Individual: VFB_00030750
         rdfs:label "Bb2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb2 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb2 neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -313,10 +313,10 @@ Individual: VFB_00030783
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Di7"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di7 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di7 neuron."^^xsd:string,
+        rdfs:label "Di7"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111492>
@@ -325,11 +325,11 @@ Individual: VFB_00030783
 Individual: VFB_00030782
 
     Annotations: 
-        rdfs:label "Di6"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di6 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di6 neuron."^^xsd:string,
+        rdfs:label "Di6"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111491>
@@ -339,10 +339,10 @@ Individual: VFB_00030781
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Di5"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di5 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di5 neuron."^^xsd:string,
+        rdfs:label "Di5"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111490>
@@ -355,7 +355,7 @@ Individual: VFB_00030780
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di4 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di4 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111489>
@@ -364,11 +364,11 @@ Individual: VFB_00030780
 Individual: VFB_00030749
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         rdfs:label "Bb1"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb1 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb1 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111481>
@@ -381,7 +381,7 @@ Individual: VFB_00030748
         rdfs:label "AMMC-D1"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center D1 projection neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center D1 projection neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110978>
@@ -390,11 +390,11 @@ Individual: VFB_00030748
 Individual: VFB_00030747
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "AMMC-B2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center B2 projection neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center B2 projection neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        rdfs:label "AMMC-B2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110665>
@@ -404,10 +404,10 @@ Individual: VFB_00030746
 
     Annotations: 
         rdfs:label "AMMC-B1"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center B1 projection neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center B1 projection neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110120>
@@ -419,7 +419,7 @@ Individual: VFB_00030745
         rdfs:label "AMMC-A1"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center A1 projection neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center A1 projection neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -429,11 +429,11 @@ Individual: VFB_00030745
 Individual: VFB_00030778
 
     Annotations: 
-        rdfs:label "Di1"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di1 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di1 neuron."^^xsd:string,
+        rdfs:label "Di1"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111486>
@@ -444,7 +444,7 @@ Individual: VFB_00030777
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db7 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db7 neuron."^^xsd:string,
         rdfs:label "Db7"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
@@ -459,7 +459,7 @@ Individual: VFB_00030776
         rdfs:label "Db6"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db6 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db6 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111501>
@@ -468,11 +468,11 @@ Individual: VFB_00030776
 Individual: VFB_00030775
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        rdfs:label "Db5"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db5 neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Db5"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db5 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111500>
@@ -484,7 +484,7 @@ Individual: VFB_00030774
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db4 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db4 neuron."^^xsd:string,
         rdfs:label "Db4"^^xsd:string
     
     Types: 
@@ -498,7 +498,7 @@ Individual: VFB_00030773
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3c neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3c neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111498>
@@ -507,10 +507,10 @@ Individual: VFB_00030773
 Individual: VFB_00030772
 
     Annotations: 
+        rdfs:label "Db3b"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3b neuron expressing  that is part of an "^^xsd:string,
-        rdfs:label "Db3b"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3b neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -521,10 +521,10 @@ Individual: VFB_00030771
 
     Annotations: 
         rdfs:label "Db3a"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3a neuron expressing  that is part of an "^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db3a neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111496>
@@ -536,7 +536,7 @@ Individual: VFB_00030770
         rdfs:label "Db2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db2 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db2 neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -548,7 +548,7 @@ Individual: VFB_00030779
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di3 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Di3 neuron."^^xsd:string,
         rdfs:label "Di3"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
@@ -560,10 +560,10 @@ Individual: VFB_00030769
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Db1"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db1 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Db1 neuron."^^xsd:string,
+        rdfs:label "Db1"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111493>
@@ -572,10 +572,10 @@ Individual: VFB_00030769
 Individual: VFB_00030768
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi9 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi9 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         rdfs:label "Bi9"^^xsd:string
     
     Types: 
@@ -585,11 +585,11 @@ Individual: VFB_00030768
 Individual: VFB_00030767
 
     Annotations: 
-        rdfs:label "Bi8"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi8 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi8 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        rdfs:label "Bi8"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111472>
@@ -598,11 +598,11 @@ Individual: VFB_00030767
 Individual: VFB_00030766
 
     Annotations: 
+        rdfs:label "Bi7"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi7 neuron expressing  that is part of an "^^xsd:string,
-        rdfs:label "Bi7"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi7 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111471>
@@ -613,7 +613,7 @@ Individual: VFB_00030765
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi6 neuron expressing  that is part of an "^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi6 neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         rdfs:label "Bi6"^^xsd:string
     
@@ -625,10 +625,10 @@ Individual: VFB_00030764
 
     Annotations: 
         rdfs:label "Bi5"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi5 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi5 neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111469>
@@ -637,10 +637,10 @@ Individual: VFB_00030764
 Individual: VFB_00030763
 
     Annotations: 
+        rdfs:label "Bi4"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi4 neuron expressing  that is part of an "^^xsd:string,
-        rdfs:label "Bi4"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi4 neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
@@ -651,10 +651,10 @@ Individual: VFB_00030762
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "Bi3"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi3 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi3 neuron."^^xsd:string,
+        rdfs:label "Bi3"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111467>
@@ -667,7 +667,7 @@ Individual: VFB_00030761
         rdfs:label "Bi2"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center local AMMC Bi2 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center local AMMC Bi2 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111466>
@@ -680,7 +680,7 @@ Individual: VFB_00030760
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi16 neuron expressing  that is part of an "^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bi16 neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00111480>
@@ -689,10 +689,10 @@ Individual: VFB_00030760
 Individual: VFB_00030784
 
     Annotations: 
+        rdfs:label "GF"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron expressing  that is part of an "^^xsd:string,
-        rdfs:label "GF"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
