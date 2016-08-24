@@ -257,7 +257,8 @@ def def_roller(types, ont_dict):  #
 			def_comps[0] = "An example of an %s" % spec_genus
 		if po:
 			def_comps[1] = "An example of an %s" % spec_genus			
-	defn = ' '.join(def_comps) + '.'
+	def_pre = ' '.join(def_comps)
+	defn = def_pre.strip()  + '.'
 	return defn
 
 	
