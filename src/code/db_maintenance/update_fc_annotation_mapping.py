@@ -14,7 +14,10 @@ def gen_report_tab(od):
         row['a.annotation_type'] = d['annotation_class']
         row['a.text'] = d['annotation_text']
         row['op_label'] = d['op_label']
-        row['op_id'] = d['op_id']
+        if d['op_id'] == None:
+            row['op_id'] = ''
+        else:
+            row['op_id'] = d['op_id']
         row['class_label'] = d['class_label'] 
         row['class_id'] = d['class_id']
         report.tab.append(row)

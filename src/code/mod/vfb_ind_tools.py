@@ -131,7 +131,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 
 	dc = dict_cursor(cursor)
 	add_types_2_inds(vfb_ind, dc)
-    
+	
 #	add_facts(cursor, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
@@ -201,7 +201,6 @@ def def_roller(types, ont_dict):  #
 	spec_genus = '' # Specific typing for use in def.
 	po = ''
 	exp = ''
-	defn = ''
 	gender = ''
 	for typ in types:
 		#print "Generating %s at %s" % (typ, time.gmtime())
@@ -239,17 +238,27 @@ def def_roller(types, ont_dict):  #
 		po = 'adult male brain'
 	if gender == 'F':
 		po = 'adult female brain'
+	def_comps = ['', '', '']
 	if genus == 'neuron':
 		if spec_genus:
-			defn = "A %s expressing %s that is part of an %s" % (spec_genus, exp, po)
+			def_comps[0] = "A %s" % spec_genus
 		else:
-			defn = "A %s expressing %s that is part of an %s" % (genus, exp, po)
+			def_comps[0] = "A %s" % genus
+		if exp:
+			def_comps[1] = 'expressing %s' % exp
+		if po:
+			def_comps[2] = 'that is part of an %s' % po
 	elif genus == 'expression pattern':
-		defn = "An %s expressing %s" % (po, exp)
+		if po and exp:
+			def_comps[0] = "An %s" & po
+			def_comps[1] = "expressing %s" % exp
 	elif genus == 'neuroblast lineage clone':
-		defn = "An example of an %s in the %s" % (spec_genus, po)
+		if spec_genus:
+			def_comps[0] = "An example of an %s" % spec_genus
+		if po:
+			def_comps[1] = "An example of an %s" % spec_genus			
+	defn = ' '.join(def_comps) + '.'
 	return defn
-
 
 	
 def roll_image_ind(ont, dataset, indLabel, indId):
