@@ -250,13 +250,13 @@ def def_roller(types, ont_dict):  #
 			def_comps[2] = 'that is part of an %s' % po
 	elif genus == 'expression pattern':
 		if po and exp:
-			def_comps[0] = "An %s" & po
+			def_comps[0] = "An %s" % po
 			def_comps[1] = "expressing %s" % exp
 	elif genus == 'neuroblast lineage clone':
 		if spec_genus:
-			def_comps[0] = "An example of an %s" % spec_genus
+			def_comps[0] = "An example of a(n) %s" % spec_genus
 		if po:
-			def_comps[1] = "An example of an %s" % spec_genus			
+			def_comps[1] = "that is part of a(n) %s" % spec_genus			
 	def_pre = ' '.join(def_comps)
 	defn = def_pre.strip()  + '.'
 	return defn
