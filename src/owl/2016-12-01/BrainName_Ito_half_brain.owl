@@ -1,0 +1,1252 @@
+Prefix: : <http://www.virtualflybrain.org/owl/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://www.virtualflybrain.org/owl/BrainName_Ito_half_brain.owl>
+
+
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007354>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00014013>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003885>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007677>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100349>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100347>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100346>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100345>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100344>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100343>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100342>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100341>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100340>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007054>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007453>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003985>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003984>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045007>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003982>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007083>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045003>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007080>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003679>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100338>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100337>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007385>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007077>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007074>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007072>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003668>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003983>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00110653>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045051>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045050>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00015407>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007401>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004020>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004043>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040041>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003678>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003852>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003748>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045048>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007053>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045046>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045040>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040049>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007427>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040050>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007059>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100339>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007055>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003683>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040048>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040051>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040044>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040043>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040042>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045039>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040040>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045037>
+
+    
+Class: owl:Thing
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045032>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00040039>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003682>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003681>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003680>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00045027>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100357>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100356>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100355>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100354>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100352>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100351>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00100350>
+
+    
+Individual: VFB_00030848
+
+    Annotations: 
+        rdfs:label "LEF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100343>
+    
+    
+Individual: VFB_00030847
+
+    Annotations: 
+        rdfs:label "lCCF - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100347>
+    
+    
+Individual: VFB_00030846
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "lALT - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003983>
+    
+    
+Individual: VFB_00030845
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "LALC - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007074>
+    
+    
+Individual: VFB_00030844
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "IFS - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100350>
+    
+    
+Individual: VFB_00030843
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "iALC - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100352>
+    
+    
+Individual: VFB_00030842
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "hVLPF - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100340>
+    
+    
+Individual: VFB_00030841
+
+    Annotations: 
+        rdfs:label "tVLPF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100340>
+    
+    
+Individual: VFB_00030799
+
+    Annotations: 
+        rdfs:label "IB - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040050>
+    
+    
+Individual: VFB_00030798
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "VES - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040041>
+    
+    
+Individual: VFB_00030797
+
+    Annotations: 
+        rdfs:label "ICL - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040049>
+    
+    
+Individual: VFB_00030796
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "AMMC_AN - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003982>
+    
+    
+Individual: VFB_00030795
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "CAN - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045051>
+    
+    
+Individual: VFB_00030794
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "SAD - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045048>
+    
+    
+Individual: VFB_00030793
+
+    Annotations: 
+        rdfs:label "LAL - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003681>
+    
+    
+Individual: VFB_00030792
+
+    Annotations: 
+        rdfs:label "LH - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007053>
+    
+    
+Individual: VFB_00030791
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "PB - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003668>
+    
+    
+Individual: VFB_00030790
+
+    Annotations: 
+        rdfs:label "BU - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003682>
+    
+    
+Individual: VFB_00030839
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "aSLPF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100339>
+    
+    
+Individual: VFB_00030837
+
+    Annotations: 
+        rdfs:label "ADC_ant_dors_com - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007072>
+    
+    
+Individual: VFB_00030836
+
+    Annotations: 
+        rdfs:label "aCCF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100346>
+    
+    
+Individual: VFB_00030835
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "AST - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007354>
+    
+    
+Individual: VFB_00030834
+
+    Annotations: 
+        rdfs:label "PRW - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040051>
+    
+    
+Individual: VFB_00030833
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "SEG - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00014013>
+    
+    
+Individual: VFB_00030832
+
+    Annotations: 
+        rdfs:label "GF - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004020>
+    
+    
+Individual: VFB_00030831
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "max_lab_nerve - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004043>
+    
+    
+Individual: VFB_00030830
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "labro_frontal_nerve - painted domain, BrainName pu"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110653>
+    
+    
+Individual: VFB_00030789
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "NO - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003680>
+    
+    
+Individual: VFB_00030788
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "LO - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003852>
+    
+    
+Individual: VFB_00030787
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "AME - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045003>
+    
+    
+Individual: VFB_00030786
+
+    Annotations: 
+        rdfs:label "BrainName standard - Ito half brain"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    
+Individual: VFB_00030829
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "GC - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007080>
+    
+    
+Individual: VFB_00030828
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "POC - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007427>
+    
+    
+Individual: VFB_00030827
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "AOT - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100337>
+    
+    
+Individual: VFB_00030826
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "mALT - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003985>
+    
+    
+Individual: VFB_00030825
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "EPA - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040040>
+    
+    
+Individual: VFB_00030824
+
+    Annotations: 
+        rdfs:label "SCL - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040048>
+    
+    
+Individual: VFB_00030823
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "IPS - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045046>
+    
+    
+Individual: VFB_00030822
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "SPS - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045040>
+    
+    
+Individual: VFB_00030821
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "MB_CA - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007385>
+    
+    
+Individual: VFB_00030820
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "GOR - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040039>
+    
+    
+Individual: VFB_00030819
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "AOTU - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007059>
+    
+    
+Individual: VFB_00030818
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "PLP - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040044>
+    
+    
+Individual: VFB_00030817
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "IVLP - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045027>
+    
+    
+Individual: VFB_00030816
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "PVLP - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040042>
+    
+    
+Individual: VFB_00030815
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "AVLP - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040043>
+    
+    
+Individual: VFB_00030814
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "SMP - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007055>
+    
+    
+Individual: VFB_00030813
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "SIP - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045032>
+    
+    
+Individual: VFB_00030812
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "SLP - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007054>
+    
+    
+Individual: VFB_00030811
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "FB - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003679>
+    
+    
+Individual: VFB_00030810
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "ME - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003748>
+    
+    
+Individual: VFB_00030809
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "AL - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007401>
+    
+    
+Individual: VFB_00030808
+
+    Annotations: 
+        rdfs:label "EB - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003678>
+    
+    
+Individual: VFB_00030807
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "LOP - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003885>
+    
+    
+Individual: VFB_00030806
+
+    Annotations: 
+        rdfs:label "MB_ACA - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045007>
+    
+    
+Individual: VFB_00030805
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "FLA - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045050>
+    
+    
+Individual: VFB_00030804
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "MB_M_lobes - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007677>
+    
+    
+Individual: VFB_00030803
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "MB_V_lobes - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00015407>
+    
+    
+Individual: VFB_00030802
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "MB_PED - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007453>
+    
+    
+Individual: VFB_00030801
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "CRE - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045037>
+    
+    
+Individual: VFB_00030800
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "ATL - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045039>
+    
+    
+Individual: VFB_00030865
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "IVLPC - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100356>
+    
+    
+Individual: VFB_00030864
+
+    Annotations: 
+        rdfs:label "vVLPF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100341>
+    
+    
+Individual: VFB_00030863
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "sPLPC - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007077>
+    
+    
+Individual: VFB_00030862
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "SFS - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100349>
+    
+    
+Individual: VFB_00030861
+
+    Annotations: 
+        rdfs:label "SEC_sAVLPC - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100354>
+    
+    
+Individual: VFB_00030860
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "sALC - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100351>
+    
+    
+Individual: VFB_00030859
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "sAMMCC - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100357>
+    
+    
+Individual: VFB_00030858
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "PYF - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100338>
+    
+    
+Individual: VFB_00030857
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "pPLPC - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100355>
+    
+    
+Individual: VFB_00030855
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "PLF - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007083>
+    
+    
+Individual: VFB_00030854
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "pCCF - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100344>
+    
+    
+Individual: VFB_00030853
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "mlALT - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003984>
+    
+    
+Individual: VFB_00030852
+
+    Annotations: 
+        rdfs:label "MBDL - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003683>
+    
+    
+Individual: VFB_00030851
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "MEF - painted domain, BrainName pub"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100342>
+    
+    
+Individual: VFB_00030850
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "mCCF - painted domain, BrainName pub"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00100345>
+    
+    
