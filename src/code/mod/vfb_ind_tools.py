@@ -8,6 +8,7 @@ from dict_cursor import dict_cursor  # Handy local module for turning JBDC curso
 from uk.ac.ebi.brain.core import Brain
 #import obo_tools
 #from lmb_fc_tools import get_con
+from neo4j_tools import neo4j_connect
 from owl2pdm_tools import get_types_for_ind
 from owl2pdm_tools import simpleClassExpression
 from java.util import TreeSet
@@ -40,24 +41,18 @@ def add_types_2_inds(ont, dc):
 		else:
 			ont.type(d['claz'], d['iID'])
 			
-def add_facts(cursor, ont, source):
+def add_facts(nc, ont, source):
 	"""Adds all facts to ont for a specified source.
 	"""
-	cursor.execute("SELECT subject.shortFormID AS sub, obj.shortFormID AS ob, rel.shortFormID AS relation, o.baseURI as relBase " \
-				"FROM owl_fact of "
-				"JOIN owl_individual subject ON (subject.id = of.subject) " \
-				"JOIN owl_individual obj ON (obj.id = of.object) " \
-				"JOIN owl_objectProperty rel ON (rel.id = of.relation) " 
-				"JOIN ontology o ON (rel.ontology_id = o.id)"\
-				"JOIN data_source objSource ON (obj.source_id = objSource.id) " \
-				"JOIN data_source subjSource ON (subject.source_id = subjSource.id) " \
-				"WHERE objSource.name = '%s' " \
-				"AND subjSource.name = '%s'" % (source, source))
-	dc = dict_cursor(cursor)
+	r = nc.commit_list(['MATCH (s:Individual)-[r:Related]-(o:Individual) ' \
+				'RETURN s.short_form AS sub, r.IRI as rel_IRI, ' \
+				'r.short_form as relation, o.short_form as ob'])
+	
+	# transform r into dict
 	
 	for d in dc:
 		if not ont.knowsObjectProperty(d['relation']):				
-			ont.addObjectProperty(d['relBase']+d['relation'])
+			ont.addObjectProperty(d['rel_IRI'])
 		ont.objectPropertyAssertion(d['sub'], d['relation'], d['ob']) # Check Brain methods
 
 # For now - perhaps better to hard wire with a function that generates channel/image pairs + relevant classification and facts, assuming 1:1, re-using IDs and allowing specification of a template.
@@ -85,18 +80,20 @@ def gen_channel_image_pair_for_ind(ont, ind, registered_to):
 	ont.objectPropertyAssertion(channel_id, 'depicts', ind)
 	
 
-def gen_ind_by_source(cursor, ont_dict, dataset):
+def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	# TODO - extend to add facts
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
+	nc.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
 				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	dc = dict_cursor(cursor)
+	nc.commit_list["MATCH (ds:dataset { label : '%s'} )<-[:has_data_source]-(a:Individual) " \
+					"return ds, a.short_form as iID, ..."]
+	dc = dict_cursor(nc)
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
@@ -114,7 +111,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) #
 
 	# Pull type statements
-	cursor.execute("SELECT i.shortFormID AS iID, " \
+	nc.execute("SELECT i.shortFormID AS iID, " \
 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
 				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
 				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
@@ -129,19 +126,19 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 
-	dc = dict_cursor(cursor)
+	dc = dict_cursor(nc)
 	add_types_2_inds(vfb_ind, dc)
 	
-#	add_facts(cursor, vfb_ind, dataset)
+#	add_facts(nc, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
 	
 	# Get source info for this dataset
-	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
+	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	dc = dict_cursor(cursor)
+	dc = dict_cursor(nc)
 	# Roll defs.
 	for d in dc:
 		for iID in ilist:	 
@@ -154,7 +151,7 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	# Roll image individuals. Temporarily commented out.
 	#	for iID in ind_id_type:
 	#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
-	cursor.close()
+	nc.close()
 	
 
 def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
