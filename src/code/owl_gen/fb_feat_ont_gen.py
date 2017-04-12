@@ -111,7 +111,7 @@ for cl in class_lists:
 
 	time.sleep(0.1)
 
-vfb_ms_conn.close()
+# vfb_ms_conn.close()
 
 fb_cursor.close()
 fb_pg_conn.close()
