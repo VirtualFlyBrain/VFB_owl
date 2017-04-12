@@ -151,10 +151,10 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 	
 	r = nc.commit_list(["MATCH (ds:data_source)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
-					"WHERE ds.label = '%s' " \
+					"WHERE ds.name = '%s' " \
 					"RETURN a.short_form as iID, " \
 					"type(r) as edge_type, r.short_form as rel, r.IRI as rel_IRI, " \
-					"c.short_form as claz, c.IRI as cIRI" ])
+					"c.short_form as claz, c.IRI as cIRI" % dataset])
 	
 	# Feels slightly dodgy, 
 	# but should be able to rely on null return to distinguish INSTANCEOF from Related
@@ -165,7 +165,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	for d in dc:
 		if not vfb_ind.knowsClass(d['claz']):
-			vfb_ind.addClass(dp['cIRI'])
+			vfb_ind.addClass(d['cIRI'])
 #		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
 		if(d['edge_type'] == 'Related'):
 			if not vfb_ind.knowsObjectProperty(d['rel']):
@@ -191,13 +191,13 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 # 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	r = nc.commit_list(["MATCH (ds:data_source { name : '%s' })-[:has_reference]-(p:pub) " \
-					"RETURN p.pmid, ds.dataset_spec_text"])  # Need a sync script for pubs, pulling FBrfs...
+	r = nc.commit_list(["MATCH (ds:data_source { name : '%s' })-[:has_reference]-(p:pub) " 
+					"RETURN p.PMID AS pub_pmid, ds.dataset_spec_text AS dtext" % dataset])  # Need a sync script for pubs, pulling FBrfs...
 	
 	dc = dict_cursor(r)
 	# Roll defs.
 	
-
+	# Def rolling only works if there's a ref!
 	for d in dc:
 		for iID in ilist:	 
 			types = vfb_om.get_types_for_ind(sfid = iID)
