@@ -3,7 +3,6 @@ import warnings
 import sys
 import re
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 #from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 #import obo_tools
@@ -14,7 +13,25 @@ from owl2pdm_tools import simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
 
+def iri2shortForm(iri_string, delimiter = '/'):
+	m = re.findall("^(.+)" + delimiter + "(.+)$", iri_string)
+	if m:
+		return { 'base' :  m.group(1),
+				'short_form' : m.group(2)}
+	else:
+		return False
+		
 
+def dict_cursor(r):
+	"""
+	Takes JSON results from a neo4J query and turns them into a table.
+	Only works for queries returning keyed attributes"""
+	### The idea here is to mimic the existing dict_cursor to plug into existing code
+	### Only works for queries returning keyed attributes
+	dc = {}
+	for n in r[0]['data']:
+		dc.append(dict(zip(r[0]['columns'], n['row'])))
+	return dc
 
 def load_ont(url):
 	ont = Brain()
@@ -44,11 +61,16 @@ def add_types_2_inds(ont, dc):
 def add_facts(nc, ont, source):
 	"""Adds all facts to ont for a specified source.
 	"""
-	r = nc.commit_list(['MATCH (s:Individual)-[r:Related]-(o:Individual) ' \
-				'RETURN s.short_form AS sub, r.IRI as rel_IRI, ' \
-				'r.short_form as relation, o.short_form as ob'])
-	
+	# Too broad?  Will pull in channels.  
+	# Should the schema have an extra edge annotation to indicate status for translation?
+	r = nc.commit_list(['MATCH (ds:data_source)<-[has_source]-(a:Individual) ' \
+						'-[r:Related]-(o:Individual) ' \
+						'WHERE ds.name = "%s" ' \
+						'RETURN s.short_form AS sub, r.IRI as rel_IRI, ' \
+						'r.short_form as relation, o.short_form as ob' 
+						% source])
 	# transform r into dict
+	dc = dict_cursor(r)
 	
 	for d in dc:
 		if not ont.knowsObjectProperty(d['relation']):				
@@ -86,19 +108,23 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	nc.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
-				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
-				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
-				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
+# 	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
+# 				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
+# 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
+# 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	nc.commit_list["MATCH (ds:dataset { label : '%s'} )<-[:has_data_source]-(a:Individual) " \
-					"return ds, a.short_form as iID, ..."]
+	nc.commit_list["MATCH (ds:dataset { label : '%s'} )<-[hs:has_source]-(a:Individual) " \
+					"return ds.name AS sname, hs.id_in_source as sid" \
+					"a.short_form as iID, a.label as iname"]
+	
+	# How to work with short_name? Not (yet?) in KB?
+	
 	dc = dict_cursor(nc)
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iID'])
 		vfb_ind.label(d['iID'], d['iname'])
 		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
-		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
+#		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
 		if d['extID']:
 			if d['pre']:
 				link = d['pre'] + d['extID']
@@ -111,23 +137,38 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) #
 
 	# Pull type statements
-	nc.execute("SELECT i.shortFormID AS iID, " \
-				 "oc.shortFormID AS claz, oc.label AS clazName, " \
-				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
-				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
-				 "s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
-				 "FROM owl_individual i  " \
-				 "JOIN individual_type it ON (i.id=it.individual_id)  " \
-				 "JOIN owl_type ot ON (it.type_id=ot.id)  " \
-				 "JOIN owl_class oc ON (ot.class=oc.id)  " \
-				 "JOIN ontology ontc ON (ontc.id=oc.ontology_id)  " \
-				 "JOIN data_source s ON (i.source_id=s.id)  " \
-				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
-				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
-				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
-
-	dc = dict_cursor(nc)
-	add_types_2_inds(vfb_ind, dc)
+# 	nc.execute("SELECT i.shortFormID AS iID, " \
+# 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
+# 				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
+# 				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
+# 				 "s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
+# 				 "FROM owl_individual i  " \
+# 				 "JOIN individual_type it ON (i.id=it.individual_id)  " \
+# 				 "JOIN owl_type ot ON (it.type_id=ot.id)  " \
+# 				 "JOIN owl_class oc ON (ot.class=oc.id)  " \
+# 				 "JOIN ontology ontc ON (ontc.id=oc.ontology_id)  " \
+# 				 "JOIN data_source s ON (i.source_id=s.id)  " \
+# 				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
+# 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
+# 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
+	
+	nc.commit_list(["MATCH (ds:dataset)<-[:has_data_source]-(a:Individual)-[r]->(c:Class) " \
+					"WHERE ds.label = '%s' " \
+					"RETURN type(r) as edge_type, r.short_form as rel, " \
+					"r.IRI as rel_IRI, r.label as relName, " \
+					"i.label as clazName " ])
+	
+	# Feels slightly dodgy, 
+	# but should be able to rely on null return to distinguish INSTANCEOF from Related
+	
+	dc = dict_cursor(nc)  	
+	# Add - somethign
+	add_types_2_inds(vfb_ind, dc) 
+		# iID: shortFormId of individual
+		# 	claz: shortFormId of class
+		# 	clazBase: BaseURI of claz
+		# 	rel: shortFormId of relation (set to '0' if no relation)
+		# 	relBase: BaseURI of relation"""
 	
 #	add_facts(nc, vfb_ind, dataset)
 
@@ -138,11 +179,16 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
+	nc.commit_list(["MATCH (ds:data_source { label : '%s' })-[:has_reference]-(p:pub) " \
+					"RETURN p.pmid, ds.dataset_spec_text"])  # Need a sync script for pubs, pulling FBrfs...
+	
 	dc = dict_cursor(nc)
 	# Roll defs.
+	
+
 	for d in dc:
 		for iID in ilist:	 
-			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
+			types = get_types_for_ind("http://www.virtualflybrain.org/reports/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
 			defn = def_roller(types, ont_dict)
 			if d['dtext']:
 				defn += d['dtext']
