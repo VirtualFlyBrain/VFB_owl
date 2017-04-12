@@ -39,7 +39,7 @@ DSSTRING=''
 cd ../code/owl_gen
 job='Building ontology of FlyBase features';
 progress_chat "$job";
-java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $KB_endpoint $USR $PD
 exit_on_fail $? "$job"
 
 for var in ${DATASETS[@]}

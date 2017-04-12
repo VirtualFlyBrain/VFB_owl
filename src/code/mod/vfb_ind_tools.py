@@ -28,7 +28,7 @@ def dict_cursor(r):
 	Only works for queries returning keyed attributes"""
 	### The idea here is to mimic the existing dict_cursor to plug into existing code
 	### Only works for queries returning keyed attributes
-	dc = {}
+	dc = []
 	for n in r[0]['data']:
 		dc.append(dict(zip(r[0]['columns'], n['row'])))
 	return dc

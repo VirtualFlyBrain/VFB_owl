@@ -5,10 +5,22 @@ sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code'
 from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.core import Brain
+from neo4j_tools import neo4j_connect
 import lmb_fc_tools
 import re
 import warnings
 import time
+
+
+def neo_json_2_dict(r):
+	"""
+	Takes JSON results from a neo4J query and turns them into a table.
+	Only works for queries returning keyed attributes"""
+	### Only works for queries returning keyed attributes!
+	dc = []
+	for n in r[0]['data']:
+		dc.append(dict(zip(r[0]['columns'], n['row'])))
+	return dc
 
 
 fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
@@ -32,24 +44,26 @@ fb_feature.label("SO_0001023", "allele")
 fb_feature.addClass(obo_base + "CARO_0030002")
 fb_feature.label("CARO_0030002", "expression pattern")
 
-vfb_ms_conn = lmb_fc_tools.get_con(sys.argv[1], sys.argv[2])
+nc = neo4j_connect(sys.argv[1], sys.argv[2], sys.argv[3])
 #fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
 #					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") 
 
 fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", 
 					'flybase', '', "org.postgresql.Driver") # public DB
 
-vfb_cursor = vfb_ms_conn.cursor()
+#vfb_cursor = vfb_ms_conn.cursor()
 fb_cursor = fb_pg_conn.cursor()
 
-vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " \
-				"JOIN ontology o ON (oc.ontology_id=o.id)" \
-				" WHERE o.URI = '%s'" % (fbf))
+#vfb_cursor.execute("SELECT oc.shortFormID FROM owl_class oc " \
+#				"JOIN ontology o ON (oc.ontology_id=o.id)" \
+#				" WHERE o.URI = '%s'" % (fbf))
+
+feature_result = nc.commit_list(["MATCH (f:Feature)-[r]-(i:Individual) RETURN f.IRI, f.short_form"])
 
 flist = []
-dc = dict_cursor(vfb_cursor)
+dc = neo_json_2_dict(feature_result)
 for d in dc:
-	flist.append(d['shortFormID'])
+	flist.append(d['f.short_form'])
 # Need to chunk list up - try chunks of 100 + short pause between.
 
 def chunks(l, n):
@@ -97,7 +111,6 @@ for cl in class_lists:
 
 	time.sleep(0.1)
 
-vfb_cursor.close()
 vfb_ms_conn.close()
 
 fb_cursor.close()
