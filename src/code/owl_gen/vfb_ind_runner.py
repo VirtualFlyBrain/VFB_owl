@@ -6,8 +6,8 @@ from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 #from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 #from com.ziclix.python.sql import zxJDBC
-from lmb_fc_tools import get_con
-from vfb_ind_tools import gen_ind_by_source, add_facts,load_ont
+#from lmb_fc_tools import get_con
+from vfb_ind_tools import gen_ind_by_source, add_facts, load_ont
 from dict_cursor import dict_cursor
 from neo4j_tools import neo4j_connect
 import os
@@ -62,7 +62,6 @@ gen_ind_by_source(nc, ont_dict, dataset)
 #add_facts(cursor=conn.cursor(), ont=vfb_ind, source=dataset) # Before turning this on, need to make sure all inds declared first.
 vfb_ind.save("../../owl/" + dataset + ".owl")
 #vfb_image.save("../../owl/" + dataset + "_image.owl")
-conn.close()
 vfb_ind.sleep()
 ont_dict['fbbt'].sleep()
 ont_dict['fb_feature'].sleep()

@@ -3,13 +3,8 @@ import warnings
 import sys
 import re
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-#from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-#import obo_tools
-#from lmb_fc_tools import get_con
-#from owl2pdm_tools import get_types_for_ind
-from owl2pdm_tools import ont_manager
-from owl2pdm_tools import simpleClassExpression
+from owl2pdm_tools import ont_manager, simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
 
@@ -69,7 +64,6 @@ def add_facts(nc, ont, source):
 						'RETURN s.short_form AS sub, r.IRI as rel_IRI, ' \
 						'r.short_form as relation, o.short_form as ob' 
 						% source])
-	# transform r into dict
 	dc = dict_cursor(r)
 	
 	for d in dc:
@@ -114,13 +108,16 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 # 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	nc.commit_list["MATCH (ds:dataset { label : '%s'} )<-[hs:has_source]-(a:Individual) " \
-					"return ds.name AS sname, hs.id_in_source as sid" \
-					"a.IRI as iIRI, a.short_form as iID, a.label as iname"]
+	r = nc.commit_list(["MATCH (ds:data_source { name : '%s'} )<-[hs:has_source]-(a:Individual) " \
+					"return ds.name AS sname, hs.id_in_source as extID, " \
+					"a.IRI as iIRI, a.short_form as iID, a.label as iname, " \
+					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
 	
-	# How to work with short_name? Not (yet?) in KB?
-	
-	dc = dict_cursor(nc)
+	# How to work with short_name? Not (yet?) in KB?
+	if not r: 
+		raise Exception("neo4j query fail")
+	# transform r into dict
+	dc = dict_cursor(r)
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
 		vfb_ind.label(d['iID'], d['iname']) # short_form is sufficient for lookup
@@ -153,16 +150,16 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
 # 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 	
-	nc.commit_list(["MATCH (ds:dataset)<-[:has_data_source]-(a:Individual)-[r]->(c:Class) " \
+	r = nc.commit_list(["MATCH (ds:data_source)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
 					"WHERE ds.label = '%s' " \
-					"RETURN a.short_form as iID " \
+					"RETURN a.short_form as iID, " \
 					"type(r) as edge_type, r.short_form as rel, r.IRI as rel_IRI, " \
 					"c.short_form as claz, c.IRI as cIRI" ])
 	
 	# Feels slightly dodgy, 
 	# but should be able to rely on null return to distinguish INSTANCEOF from Related
 	
-	dc = dict_cursor(nc)  	
+	dc = dict_cursor(r)  	
 	# Add - somethign
 #	add_types_2_inds(vfb_ind, dc) 
 	
@@ -194,10 +191,10 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 # 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	nc.commit_list(["MATCH (ds:data_source { label : '%s' })-[:has_reference]-(p:pub) " \
+	r = nc.commit_list(["MATCH (ds:data_source { name : '%s' })-[:has_reference]-(p:pub) " \
 					"RETURN p.pmid, ds.dataset_spec_text"])  # Need a sync script for pubs, pulling FBrfs...
 	
-	dc = dict_cursor(nc)
+	dc = dict_cursor(r)
 	# Roll defs.
 	
 
@@ -212,7 +209,6 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	# Roll image individuals. Temporarily commented out.
 	#	for iID in ind_id_type:
 	#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
-	nc.close()
 	
 
 def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
