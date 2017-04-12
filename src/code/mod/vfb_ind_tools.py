@@ -7,8 +7,8 @@ sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code'
 from uk.ac.ebi.brain.core import Brain
 #import obo_tools
 #from lmb_fc_tools import get_con
-from neo4j_tools import neo4j_connect
-from owl2pdm_tools import get_types_for_ind
+#from owl2pdm_tools import get_types_for_ind
+from owl2pdm_tools import ont_manager
 from owl2pdm_tools import simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
@@ -101,6 +101,7 @@ def gen_channel_image_pair_for_ind(ont, ind, registered_to):
 	ont.objectPropertyAssertion(image_id, 'has_background_channel', registered_to) # Switch to if for rel spec
 	ont.objectPropertyAssertion(channel_id, 'depicts', ind)
 	
+# TODO - add overlap gen function.
 
 def gen_ind_by_source(nc, ont_dict, dataset):
 	
@@ -115,14 +116,14 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	nc.commit_list["MATCH (ds:dataset { label : '%s'} )<-[hs:has_source]-(a:Individual) " \
 					"return ds.name AS sname, hs.id_in_source as sid" \
-					"a.short_form as iID, a.label as iname"]
+					"a.IRI as iIRI, a.short_form as iID, a.label as iname"]
 	
 	# How to work with short_name? Not (yet?) in KB?
 	
 	dc = dict_cursor(nc)
 	for d in dc:
-		vfb_ind.addNamedIndividual(d['iID'])
-		vfb_ind.label(d['iID'], d['iname'])
+		vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
+		vfb_ind.label(d['iID'], d['iname']) # short_form is sufficient for lookup
 		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
 #		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
 		if d['extID']:
@@ -154,17 +155,30 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	nc.commit_list(["MATCH (ds:dataset)<-[:has_data_source]-(a:Individual)-[r]->(c:Class) " \
 					"WHERE ds.label = '%s' " \
-					"RETURN type(r) as edge_type, r.short_form as rel, " \
-					"r.IRI as rel_IRI, r.label as relName, " \
-					"i.label as clazName " ])
+					"RETURN a.short_form as iID " \
+					"type(r) as edge_type, r.short_form as rel, r.IRI as rel_IRI, " \
+					"c.short_form as claz, c.IRI as cIRI" ])
 	
 	# Feels slightly dodgy, 
 	# but should be able to rely on null return to distinguish INSTANCEOF from Related
 	
 	dc = dict_cursor(nc)  	
 	# Add - somethign
-	add_types_2_inds(vfb_ind, dc) 
-		# iID: shortFormId of individual
+#	add_types_2_inds(vfb_ind, dc) 
+	
+	for d in dc:
+		if not vfb_ind.knowsClass(d['claz']):
+			vfb_ind.addClass(dp['cIRI'])
+#		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
+		if(d['edge_type'] == 'Related'):
+			if not vfb_ind.knowsObjectProperty(d['rel']):
+				vfb_ind.addObjectProperty(d['rel_IRI'])
+			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['iID'])
+		elif (d['edge_type'] == 'INSTANCEOF'):
+			vfb_ind.type(d['claz'], d['iID'])
+		else:
+			warnings.warn("Unknown edge type: %s in triple %s, %s, %s"  % (d['edge_type'], d['iID'], d['rel'], d['claz']) )
+		#   iID: shortFormId of individual
 		# 	claz: shortFormId of class
 		# 	clazBase: BaseURI of claz
 		# 	rel: shortFormId of relation (set to '0' if no relation)
@@ -174,10 +188,11 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
+	vfb_om = ont_manager(vfb_indo)
 	
-	# Get source info for this dataset
-	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
-				"FROM data_source s WHERE s.name = '%s'" % dataset)
+# 	# Get source info for this dataset
+# 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
+# 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
 	nc.commit_list(["MATCH (ds:data_source { label : '%s' })-[:has_reference]-(p:pub) " \
 					"RETURN p.pmid, ds.dataset_spec_text"])  # Need a sync script for pubs, pulling FBrfs...
@@ -188,7 +203,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	for d in dc:
 		for iID in ilist:	 
-			types = get_types_for_ind("http://www.virtualflybrain.org/reports/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
+			types = vfb_om.get_types_for_ind(sfid = iID)
 			defn = def_roller(types, ont_dict)
 			if d['dtext']:
 				defn += d['dtext']
