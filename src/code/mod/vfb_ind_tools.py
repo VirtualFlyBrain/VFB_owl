@@ -61,7 +61,7 @@ def add_facts(nc, ont, source):
 	r = nc.commit_list(['MATCH (ds:data_source)<-[has_source]-(a:Individual) ' \
 						'-[r:Related]-(o:Individual) ' \
 						'WHERE ds.name = "%s" ' \
-						'RETURN s.short_form AS sub, r.IRI as rel_IRI, ' \
+						'RETURN s.short_form AS sub, r.iri as rel_IRI, ' \
 						'r.short_form as relation, o.short_form as ob' 
 						% source])
 	dc = dict_cursor(r)
@@ -110,7 +110,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	r = nc.commit_list(["MATCH (ds:data_source { name : '%s'} )<-[hs:has_source]-(a:Individual) " \
 					"return ds.name AS sname, hs.id_in_source as extID, " \
-					"a.IRI as iIRI, a.short_form as iID, a.label as iname, " \
+					"a.iri as iIRI, a.short_form as iID, a.label as iname, " \
 					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
 	
 	# How to work with short_name? Not (yet?) in KB?
@@ -153,8 +153,8 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	r = nc.commit_list(["MATCH (ds:data_source)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
 					"WHERE ds.name = '%s' " \
 					"RETURN a.short_form as iID, " \
-					"type(r) as edge_type, r.short_form as rel, r.IRI as rel_IRI, " \
-					"c.short_form as claz, c.IRI as cIRI" % dataset])
+					"type(r) as edge_type, r.short_form as rel, r.iri as rel_IRI, " \
+					"c.short_form as claz, c.iri as cIRI" % dataset])
 	
 	# Feels slightly dodgy, 
 	# but should be able to rely on null return to distinguish INSTANCEOF from Related
