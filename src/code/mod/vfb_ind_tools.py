@@ -58,9 +58,9 @@ def add_facts(nc, ont, source):
 	"""
 	# Too broad?  Will pull in channels.  
 	# Should the schema have an extra edge annotation to indicate status for translation?
-	r = nc.commit_list(['MATCH (ds:data_source)<-[has_source]-(a:Individual) ' \
+	r = nc.commit_list(['MATCH (ds:DataSet)<-[has_source]-(a:Individual) ' \
 						'-[r:Related]-(o:Individual) ' \
-						'WHERE ds.name = "%s" ' \
+						'WHERE ds.label = "%s" ' \
 						'RETURN s.short_form AS sub, r.iri as rel_IRI, ' \
 						'r.short_form as relation, o.short_form as ob' 
 						% source])
@@ -108,8 +108,8 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 # 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	r = nc.commit_list(["MATCH (ds:data_source { name : '%s'} )<-[hs:has_source]-(a:Individual) " \
-					"return ds.name AS sname, hs.id_in_source as extID, " \
+	r = nc.commit_list(["MATCH (ds:DataSet { name : '%s'} )<-[hs:has_source]-(a:Individual) " \
+					"return ds.label AS sname, hs.id_in_source as extID, " \
 					"a.iri as iIRI, a.short_form as iID, a.label as iname, " \
 					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
 	
@@ -150,8 +150,8 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
 # 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 	
-	r = nc.commit_list(["MATCH (ds:data_source)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
-					"WHERE ds.name = '%s' " \
+	r = nc.commit_list(["MATCH (ds:DataSet)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
+					"WHERE ds.label = '%s' " \
 					"RETURN a.short_form as iID, " \
 					"type(r) as edge_type, r.short_form as rel, r.iri as rel_IRI, " \
 					"c.short_form as claz, c.iri as cIRI" % dataset])
@@ -191,7 +191,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 # 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	r = nc.commit_list(["MATCH (ds:data_source { name : '%s' })-[:has_reference]-(p:pub) " 
+	r = nc.commit_list(["MATCH (ds:DataSet { name : '%s' })-[:has_reference]-(p:pub) " 
 					"RETURN p.PMID AS pub_pmid, ds.dataset_spec_text AS dtext" % dataset])  # Need a sync script for pubs, pulling FBrfs...
 	
 	dc = dict_cursor(r)
