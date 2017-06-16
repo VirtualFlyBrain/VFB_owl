@@ -35,6 +35,17 @@ in the LMB VFB mysql DB.
 # DONE - filter out bad registrations: 
 ## select Name from neuron where idid NOT IN (select neuron_idid from annotation where annotation_class='process' AND text='v3bad')
 
+def results_2_dict_list(results):
+	"""Takes JSON results from a neo4J query and turns them into a list of dicts.
+    """
+	dc = []
+	for n in results:
+		# Add conditional to skip any failures
+		if n:
+			for d in n['data']:
+				dc.append(dict(zip(n['columns'], d['row'])))
+	return dc
+
 def gen_bad_reg_list(cursor):
 	"""Returns a list of idids corresponding to badly registered flycircuit"""
 	cursor.execute("SELECT neuron_idid FROM annotation WHERE annotation_class='process' AND text='v3bad'")
@@ -69,46 +80,60 @@ def add_manual_ann(cursor, vfb_ind):
 	add_types_2_inds(vfb_ind, dc)
 	# Could add additional check against fbbt here: 
 	cursor.close()
+	
 
-def add_BN_dom_overlap(cursor, vfb_ind, fbbt):
+def add_BN_dom_overlap(nc, vfb_ind, fbbt):
 	"""Function to add assertions of overlap to BrainName domains.  Currently works with a simple cutoff, but there is scope to modify this to at least specify a proportion of voxel size of domain."""
+	# Note - new version is source agnostic.
+	# Cypher query for overlap > 1000.
+	cutoff = 1000
+	s = ["MATCH (neuron:Individual)<-[d1:Related]- " \
+			"(s:Individual)-[re:Related]->(o:Individual)" \
+			"->[d2:Related]-(Individual:neuropil)-[:INSTANCEOF]->(neuropil_class:Class) " \
+			"WHERE d1.short_form = 'depicts" \
+			"AND d2.short_form = 'depicts" \
+			"((re.voxel_overlap_left > %d)  " \
+			"OR (re.voxel_overlap_right > %d) " \
+			"OR (re.voxel_overlap_center > %d))  " \
+			"RETURN DISTINCT neuron.short_form , neuropil_class.short_form, properties(re) as voxel_overlap" 
+			% (cutoff, cutoff, cutoff)]  # Add processing step to cypher => n
+	
+	# In order to support comment text generation, 
+	# need to convert data structure to a dict keyed on neuron.
 
-	# Hmmm - surely possible to do this in one query, rather than rolling dict...
-
-	# Roll lookup for BrainName shorthand:
-
-	BN_dict = BrainName_mapping(cursor, vfb_ind)  # Guess there's no harm in this being global, but could limit scope...
-	#print BN_dict
-	BN_abbv_list = BN_dict.keys()
-
-
-	# Adding typing based on domain overlap
-
+	r = nc.commit_list(s)
+	overlap_results = results_2_dict_list(r)
 	oe_check_db_and_add("RO_0002131", 'owl_objectProperty', cursor, vfb_ind)
-
-	cursor.execute("SELECT ind.shortFormID as vid, sj.* " \
-				   "FROM spatdist_jfrc sj " \
-				   "JOIN neuron n ON (sj.idid=n.idid) " \
-				   "JOIN owl_individual ind ON (n.uuid=ind.uuid)")
-
-	dc = dict_cursor(cursor)
-	for d in dc:
-		above_cutoff = {} # Dict containing all domains above cutoff as keys and the voxel overlap as value
-		voxel_overlap_txt = "From analysis of a registered 3D image, this neuron is predicted to overlap the following neuropils: "
-		for abbv in BN_abbv_list:
-			if d[abbv] > 1000:  # Using crude cutoff for now - but could make this ratio based instead, given data from Marta.
-				above_cutoff[BN_dict[abbv]] = (d[abbv])
-		while above_cutoff:
-			dom = above_cutoff.popitem()  # pop item from dict (dom now has a list of key, value)
-			typ = "RO_0002131 some " + dom[0]
-			vfb_ind.type(typ,d["vid"])
-			voxel_overlap_txt += str(dom[1]) + " voxels overlap the " + fbbt.getLabel(dom[0])   
-			if len(above_cutoff) >= 1:  # Equivalent for keys with iterable?
-				voxel_overlap_txt +=  "; "
-			else:
-				voxel_overlap_txt += "."
-		vfb_ind.comment(d['vid'], voxel_overlap_txt)
-	cursor.close()
+	voxel_overlap = overlap_results['voxel_overlap']
+	voxel_overlap_txt = ''
+	overlap_by_neuron = {}
+	for o in overlap_results:
+		n = o['neuron.short_form']
+		d = {'neuropil' : o['neuropil_class.short_form'],
+			'voxel_overlap' : o['voxel_overlap']}
+		if not (n in overlap_by_neuron.keys()):
+			overlap_by_neuron[n] = []
+		overlap_by_neuron[n].append(d)
+					
+	
+	vokeys = {'voxel_overlap_left': 'left', 
+		'voxel_overlap_right' : 'right', 
+		'voxel_overlap_center': ''}
+			
+			
+	for neuron, overlaps in overlap_by_neuron.items():
+		voxel_overlap_txt = ''
+		for o in overlaps: 
+			typ = "RO_0002131 some <%s>" % o['neuropil']
+			vfb_ind.type(typ,neuron)
+			voxel_overlap_txt += "Overlap of %s inferred from: " % fbbt.getLabel(o['neuropil'])
+			vo_data = []
+		for k,v in vokeys.items():
+			if k in voxel_overlap.keys() and voxel_overlap[k] > cutoff:
+				vo_data.append()
+				voxel_overlap_txt += "%s voxel overlap of %d"  % (v, k) # Txt may need work.
+		voxel_overlap_txt += '; '.join(vo_data) + '.'
+		vfb_ind.comment(neuron, voxel_overlap_txt)
 
 
 def add_clusters(cursor, vfb_ind):
