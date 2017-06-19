@@ -48,7 +48,7 @@ nc = neo4j_connect(sys.argv[1], sys.argv[2], sys.argv[3])
 #fb_pg_conn = zxJDBC.connect("jdbc:postgresql://bocian.inf.ed.ac.uk/flybase" + "?ssl=true" + "&sslfactory=org.postgresql.ssl.NonValidatingFactory" 
 #					, sys.argv[3], sys.argv[4], "org.postgresql.Driver") 
 
-fb_pg_conn = zxJDBC.connect("jdbc:postgresql://flybase.org/flybase", 
+fb_pg_conn = zxJDBC.connect("jdbc:postgresql://chado.flybase.org/flybase", 
 					'flybase', '', "org.postgresql.Driver") # public DB
 
 #vfb_cursor = vfb_ms_conn.cursor()
