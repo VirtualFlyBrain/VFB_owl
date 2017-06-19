@@ -1,14 +1,13 @@
 #!/usr/bin/env jython -J-Xmx4000m
 
 import sys
+from neo4j_tools import neo4j_connect
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 # from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
 from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 from lmb_fc_tools import oe_check_db_and_add
-from lmb_fc_tools import BrainName_mapping
-from lmb_fc_tools import get_con
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from vfb_ind_tools import add_types_2_inds
@@ -57,6 +56,7 @@ def gen_bad_reg_list(cursor):
 
 
 def add_manual_ann(cursor, vfb_ind):
+	### NO LONGER USED ####
 	"""Function to add manual typing assertions to vfb individuals."""
 	
 	cursor.execute("SELECT ind.shortFormID as iID, " \
@@ -83,81 +83,108 @@ def add_manual_ann(cursor, vfb_ind):
 	
 
 def add_BN_dom_overlap(nc, vfb_ind, fbbt):
+	
+	if not vfb_ind.knowsObjectProperty('RO_0002131'):
+		vfb_ind.addObjectProperty('RO_0002131') # Assuming it gets correct base.  should checkx
 	"""Function to add assertions of overlap to BrainName domains.  Currently works with a simple cutoff, but there is scope to modify this to at least specify a proportion of voxel size of domain."""
 	# Note - new version is source agnostic.
 	# Cypher query for overlap > 1000.
 	cutoff = 1000
-	s = ["MATCH (neuron:Individual)<-[d1:Related]- " \
-			"(s:Individual)-[re:Related]->(o:Individual)" \
-			"->[d2:Related]-(Individual:neuropil)-[:INSTANCEOF]->(neuropil_class:Class) " \
-			"WHERE d1.short_form = 'depicts" \
-			"AND d2.short_form = 'depicts" \
-			"((re.voxel_overlap_left > %d)  " \
-			"OR (re.voxel_overlap_right > %d) " \
-			"OR (re.voxel_overlap_center > %d))  " \
-			"RETURN DISTINCT neuron.short_form , neuropil_class.short_form, properties(re) as voxel_overlap" 
-			% (cutoff, cutoff, cutoff)]  # Add processing step to cypher => n
+	s = ["MATCH (neuron:Individual)<-[:Related { short_form: 'depicts' }]-(s:Individual)" \
+		"-[re:Related]->(o:Individual)-[:Related { short_form: 'depicts' }]->(x)" \
+		"-[:INSTANCEOF]->(neuropil_class:Class) " \
+		"WHERE re.label = 'overlaps' " \
+		"AND ((re.voxel_overlap_left > %s)  " \
+		"OR (re.voxel_overlap_right > %s) " \
+		"OR (re.voxel_overlap_center > %s))  " \
+		"RETURN properties(re) as voxel_overlap, neuron.short_form, neuron.iri, neuropil_class.short_form, neuropil_class.iri" % (cutoff, cutoff, cutoff)] # Add processing step to cypher => n
 	
 	# In order to support comment text generation, 
 	# need to convert data structure to a dict keyed on neuron.
 
 	r = nc.commit_list(s)
+	if not r: 
+		raise Exception("Neo4j query returned no results")
 	overlap_results = results_2_dict_list(r)
-	oe_check_db_and_add("RO_0002131", 'owl_objectProperty', cursor, vfb_ind)
-	voxel_overlap = overlap_results['voxel_overlap']
-	voxel_overlap_txt = ''
+	
+	# Intermediate data-structures to add neuropils and iterate over neurons
 	overlap_by_neuron = {}
+	all_neuropils = set()
 	for o in overlap_results:
 		n = o['neuron.short_form']
 		d = {'neuropil' : o['neuropil_class.short_form'],
 			'voxel_overlap' : o['voxel_overlap']}
+		all_neuropils.add(o['neuropil_class.iri'])
 		if not (n in overlap_by_neuron.keys()):
 			overlap_by_neuron[n] = []
 		overlap_by_neuron[n].append(d)
-					
 	
+	# Add neuropils to model				
+	for n in all_neuropils: vfb_ind.addClass(n)
+		
 	vokeys = {'voxel_overlap_left': 'left', 
 		'voxel_overlap_right' : 'right', 
 		'voxel_overlap_center': ''}
 			
+	# Add overlaps & comments
 			
 	for neuron, overlaps in overlap_by_neuron.items():
-		voxel_overlap_txt = ''
-		for o in overlaps: 
-			typ = "RO_0002131 some <%s>" % o['neuropil']
+		neuron_overlap_txt  = []
+		for o in overlaps:
+			voxel_overlap = o['voxel_overlap'] 
+			typ = "RO_0002131 some %s" % o['neuropil']
 			vfb_ind.type(typ,neuron)
-			voxel_overlap_txt += "Overlap of %s inferred from: " % fbbt.getLabel(o['neuropil'])
+			neuropil_overlap_txt = "Overlap of %s inferred from: " % fbbt.getLabel(o['neuropil'])
 			vo_data = []
-		for k,v in vokeys.items():
-			if k in voxel_overlap.keys() and voxel_overlap[k] > cutoff:
-				vo_data.append()
-				voxel_overlap_txt += "%s voxel overlap of %d"  % (v, k) # Txt may need work.
-		voxel_overlap_txt += '; '.join(vo_data) + '.'
-		vfb_ind.comment(neuron, voxel_overlap_txt)
+			for k,v in vokeys.items():
+				if k in voxel_overlap.keys() and voxel_overlap[k] > cutoff:
+					vo_data.append("%s voxel overlap of %d"  % (v, voxel_overlap[k])) # Txt may need work.
+			neuropil_overlap_txt += v.join(vo_data) + '. '
+		vfb_ind.comment(neuron, '. '.join(neuron_overlap_txt))
 
 
-def add_clusters(cursor, vfb_ind):
+def add_clusters(nc, vfb_ind):
+	
 
 	""" Declare cluster individuals """
 
 	# TODO: Add typing to clusters.
-
 	# Temp ID as UUID.  This one can be safely switched to an RO ID as individual queries on the site currently work on labels (!)
-	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
-	oe_check_db_and_add('C888C3DB-AEFA-447F-BD4C-858DFE33DBE7', 'owl_objectProperty', cursor, vfb_ind)
-	oe_check_db_and_add('VFB_10000005', 'owl_class', cursor, vfb_ind)
+	# Should just be able to add as part of loop without any extra check.
+#	oe_check_db_and_add('c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0', 'owl_objectProperty', cursor, vfb_ind)
+#	oe_check_db_and_add('C888C3DB-AEFA-447F-BD4C-858DFE33DBE7', 'owl_objectProperty', cursor, vfb_ind)
+#	oe_check_db_and_add('VFB_10000005', 'owl_class', cursor, vfb_ind)
+#   Loop used in vfb_ind_tools:
+# 		if not vfb_ind.knowsClass(d['claz']):
+# 			vfb_ind.addClass(d['cIRI'])
+# 		if(d['edge_type'] == 'Related'):
+# 			if not vfb_ind.knowsObjectProperty(d['rel']):
+# 				vfb_ind.addObjectProperty(d['rel_IRI'])
+# 			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['iID'])
+# 		elif (d['edge_type'] == 'INSTANCEOF'):
+# 			vfb_ind.type(d['claz'], d['iID'])
+# 		else:
+# 			warnings.warn("Unknown edge type: %s in triple %s, %s, %s"  % (d['edge_type'], d['iID'], d['rel'], d['claz']) )
 
-	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
-				   "FROM owl_individual ind " \
-				   "JOIN cluster c ON (ind.uuid=c.uuid) " \
-				   "JOIN clustering cg ON (cg.cluster=c.cluster) " \
-				   "JOIN neuron n ON (cg.exemplar_idid=n.idid) " \
-				   "JOIN owl_individual eind ON (n.uuid=eind.uuid) " \
-				   "WHERE cg.clusterv_id = c.clusterv " \
-				   "AND ind.type_for_def  = 'cluster' " \
-				   "AND c.clusterv = '3'")
+	r = nc.commit_list(["MATCH (ds:DataSet) WHERE ds.label = '' " \
+					"with ci (cc:Class)<-[:INSTANCEOF]-(ci)<-[r:Related]-(n:Individual) " \
+					"WHERE cc.label = 'cluster' AND r.label = 'member_of' " \
+					"RETURN cc.iri as cluster_class, ci.iri as cluster_ind, ci.label as cluster_ind_label " \
+					"ci.label"]) # How to restrict to V3.  
+	# I think this can be done on dataSet. CHECK
+	dc = results_2_dict_list(r)
+	# Now iterate over adding member_of / has_member reciprocals.  Would be good to add some standard text too.  
+	
+#	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
+# 				   "FROM owl_individual ind " \
+# 				   "JOIN cluster c ON (ind.uuid=c.uuid) " \
+# 				   "JOIN clustering cg ON (cg.cluster=c.cluster) " \
+# 				   "JOIN neuron n ON (cg.exemplar_idid=n.idid) " \
+# 				   "JOIN owl_individual eind ON (n.uuid=eind.uuid) " \
+# 				   "WHERE cg.clusterv_id = c.clusterv " \
+# 				   "AND ind.type_for_def  = 'cluster' " \
+# 				   "AND c.clusterv = '3'")
 
-	dc = dict_cursor(cursor)
 	for d in dc:
 		if not vfb_ind.knowsClass(d["cvid"]):
 			vfb_ind.addNamedIndividual(d["cvid"])
@@ -166,7 +193,7 @@ def add_clusters(cursor, vfb_ind):
 			vfb_ind.objectPropertyAssertion(d["evid"], "c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0", d["cvid"]) # UUID for exemplar as a placeholder - awaiting addition to RO
 			vfb_ind.objectPropertyAssertion(d["cvid"], "C888C3DB-AEFA-447F-BD4C-858DFE33DBE7", d["evid"]) # UUID for exemplar as a placeholder - awaiting addition to RO
 
-	cursor.close()
+#	cursor.close()
 
 def map_to_clusters(cursor, vfb_ind):
 	"""Maps fc individuals to clusters"""
@@ -194,17 +221,18 @@ def map_to_clusters(cursor, vfb_ind):
 
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 
-conn = get_con(sys.argv[1], sys.argv[2])
-FBBT = sys.argv[3]
+#conn = get_con(sys.argv[1], sys.argv[2])
+nc = neo4j_connect(sys.argv[1], sys.argv[2], sys.argv[3])
+FBBT = sys.argv[4]
 dataset = 'Chiang2010'
-cursor = conn.cursor()
-cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
-dc = dict_cursor(cursor)
-baseURI = ''
-for d in dc:
-	baseURI = d['baseURI']
-cursor.close()
-vfb_ind = Brain(baseURI, baseURI + 'flycircuit_plus.owl')
+# cursor = conn.cursor()
+# cursor.execute("SELECT baseURI FROM ontology where short_name = 'vfb_ind'")
+# dc = dict_cursor(cursor)
+# baseURI = ''
+# for d in dc:
+# 	baseURI = d['baseURI']
+# cursor.close()
+vfb_ind = Brain('http://www.virtualflybrain.org/owl/', 'http://www.virtualflybrain.org/owl/' + 'flycircuit_plus.owl') # Adding IRI manually for now.
 # Setup ontologies
 addOboAnnotationProperties(vfb_ind)
 addVFBAnnotationProperties(vfb_ind)
@@ -216,17 +244,17 @@ ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 #ont_dict['fb_feature'] = load_ont("http://purl.obolibrary.org/obo/fbbt/vfb/fb_features.owl")
 # Now run all the functions
 
-gen_ind_by_source(conn.cursor(), ont_dict, dataset)
-add_manual_ann(conn.cursor(), vfb_ind)
-add_BN_dom_overlap(conn.cursor(), vfb_ind, ont_dict['fbbt'])
-add_clusters(conn.cursor(), vfb_ind)
-map_to_clusters(conn.cursor(), vfb_ind)
+gen_ind_by_source(nc, ont_dict, dataset)
+#add_manual_ann(conn.cursor(), vfb_ind)
+add_BN_dom_overlap(nc, vfb_ind, ont_dict['fbbt'])
+#add_clusters(nc, vfb_ind) Temporarily commenting to test voxel overlp function.
+#map_to_clusters(nc, vfb_ind)
 
 
 # Save output file and clean up
 
 vfb_ind.save("../../owl/flycircuit_plus.owl")
-conn.close()
+#conn.close()
 vfb_ind.sleep()
 ont_dict['fbbt'].sleep()
 ont_dict['fb_feature'].sleep()

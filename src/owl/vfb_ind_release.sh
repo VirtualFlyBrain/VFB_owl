@@ -52,10 +52,10 @@ do
     exit_on_fail $? "$job"
 done
 
-#job="Adding analysis results to flycircuit neuron inds.";
-#progress_chat $job
-#java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $KB_endpoint $USR $PD $var $FBBT
-#exit_on_fail $? $job
+job="Adding analysis results to flycircuit neuron inds.";
+progress_chat $job
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $KB_endpoint $USR $PD $FBBT
+exit_on_fail $? $job
 
 DSSTRING+=" --merge flycircuit_direct_mappings.owl "  # Need to move these to KB.
 
