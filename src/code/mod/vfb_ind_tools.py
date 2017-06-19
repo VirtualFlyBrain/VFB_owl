@@ -7,6 +7,7 @@ from uk.ac.ebi.brain.core import Brain
 from owl2pdm_tools import ont_manager, simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
+#sys.setrecursionlimit(100000)
 
 def iri2shortForm(iri_string, delimiter = '/'):
 	m = re.findall("^(.+)" + delimiter + "(.+)$", iri_string)
@@ -108,8 +109,8 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 # 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	r = nc.commit_list(["MATCH (ds:DataSet { name : '%s'} )<-[hs:has_source]-(a:Individual) " \
-					"return ds.label AS sname, hs.id_in_source as extID, " \
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual) " \
+					"return distinct ds.label AS sname, hs.id_in_source as extID, " \
 					"a.iri as iIRI, a.short_form as iID, a.label as iname, " \
 					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
 	
