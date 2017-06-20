@@ -1,11 +1,11 @@
 #!/usr/bin/env jython -J-Xmx4000m
 
 import sys
-from neo4j_tools import neo4j_connect
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 # from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
+from neo4j_tools import neo4j_connect
 from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
 from lmb_fc_tools import oe_check_db_and_add
 from vfb_ind_tools import gen_ind_by_source
