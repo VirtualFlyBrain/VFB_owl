@@ -85,7 +85,7 @@ def add_manual_ann(cursor, vfb_ind):
 def add_BN_dom_overlap(nc, vfb_ind, fbbt):
 	
 	if not vfb_ind.knowsObjectProperty('RO_0002131'):
-		vfb_ind.addObjectProperty('RO_0002131') # Assuming it gets correct base.  should checkx
+		vfb_ind.addObjectProperty('http://purl.obolibrary.org/obo/RO_0002131') 
 	"""Function to add assertions of overlap to BrainName domains.  Currently works with a simple cutoff, but there is scope to modify this to at least specify a proportion of voxel size of domain."""
 	# Note - new version is source agnostic.
 	# Cypher query for overlap > 1000.
@@ -130,18 +130,18 @@ def add_BN_dom_overlap(nc, vfb_ind, fbbt):
 			
 	for neuron, overlaps in overlap_by_neuron.items():
 		neuron_overlap_txt  = []
+		# Iterate over neuropils.
 		for o in overlaps:
 			voxel_overlap = o['voxel_overlap'] 
 			typ = "RO_0002131 some %s" % o['neuropil']
 			vfb_ind.type(typ,neuron)
-			neuropil_overlap_txt = "Overlap of %s inferred from: " % fbbt.getLabel(o['neuropil'])
+			txt = "Overlap of %s inferred from " % fbbt.getLabel(o['neuropil'])
 			vo_data = []
 			for k,v in vokeys.items():
 				if k in voxel_overlap.keys() and voxel_overlap[k] > cutoff:
-					vo_data.append("%s voxel overlap of %d"  % (v, voxel_overlap[k])) # Txt may need work.
-			neuropil_overlap_txt += v.join(vo_data) + '. '
-		vfb_ind.comment(neuron, '. '.join(neuron_overlap_txt))
-
+					vo_data.append("%d voxel overlap of the %s %s"  % (voxel_overlap[k], v, fbbt.getLabel(o['neuropil']))) # Better to ref painted domain?
+			neuron_overlap_txt.append(txt + ', '.join(vo_data))
+		vfb_ind.comment(neuron, '. '.join(neuron_overlap_txt) + '.')
 
 def add_clusters(nc, vfb_ind):
 	

@@ -109,10 +109,19 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
 # 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual) " \
+	# MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[x]-(s:Site)-[]-(ds)" # s.acc + s.? => xref linkout. 
+
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)" \
 					"return distinct ds.label AS sname, hs.id_in_source as extID, " \
 					"a.iri as iIRI, a.short_form as iID, a.label as iname, " \
 					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
+	
+	"MATCH (s:Site)-[:has_site]-(ds:DataSet { label : 'Chiang2010'} )<-[hs:has_source]-(a:Individual)-[dbx:hasDbXref]-(s) " \
+	"return distinct ds.label AS sname, dbx.accession as extID, s.link_base as pre, " \
+	"a.iri as iIRI, a.short_form as iID, a.label as iname LIMIT 10;"
+	
+	# TODO: Update dataset handling.  Need to think this through.  Maybe shouldn't be duplicating 
+	# link generation as working in VFB 2 ?
 	
 	# How to work with short_name? Not (yet?) in KB?
 	if not r: 
@@ -128,7 +137,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 			if d['pre']:
 				link = d['pre'] + d['extID']
 			else:
-				warnings.warn("%s has an external ID  (%s) but data source (%s) has no baseURI!" % 
+				warnings.warn("%s has an external ID (%s) but data source (%s) has no baseURI!" % 
 							(d['iname'], d['extID'], d['sname']))
 				continue
 			if d['post']:
@@ -192,7 +201,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 # 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
 # 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	r = nc.commit_list(["MATCH (ds:DataSet { name : '%s' })-[:has_reference]-(p:pub) " 
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s' })-[:has_reference]-(p:pub) " 
 					"RETURN p.PMID AS pub_pmid, ds.dataset_spec_text AS dtext" % dataset])  # Need a sync script for pubs, pulling FBrfs...
 	
 	dc = dict_cursor(r)
