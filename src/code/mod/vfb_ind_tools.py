@@ -111,14 +111,15 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	# MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[x]-(s:Site)-[]-(ds)" # s.acc + s.? => xref linkout. 
 	
-	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)" \
-					"return distinct ds.label AS sname, hs.id_in_source as extID, " \
-					"a.iri as iIRI, a.short_form as iID, a.label as iname, " \
-					"ds.data_link_pre as pre, ds.data_link_post as post" % dataset])
-
 	
-	# TODO: Update dataset handling.  Need to think this through.  Maybe shouldn't be duplicating 
+	r = nc.commit_list(["MATCH (s:Site)-[:has_site]-(ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[dbx:hasDbXref]-(s) " \
+					"return distinct ds.label AS sname, dbx.accession as extID, s.link_base as pre, " \
+					"s.link_post as post, a.iri as iIRI, a.short_form as iID, a.label as iname" % dataset])
+	
+	
+	# DONE: Update dataset handling.  Need to think this through.  Maybe shouldn't be duplicating 
 	# link generation as working in VFB 2 ?
+	# Kept as-is for now.  Should reconsider in new Scala scripts.
 	
 	# How to work with short_name? Not (yet?) in KB?
 	if not r: 
