@@ -19979,11 +19979,11 @@ Individual: VFB_00022642
 
     Annotations: 
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R20B05"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string,
+        rdfs:label "GMR_20B05_AE_01_11-fA01b"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23063364"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An adult brain expressing P{GMR20B05-GAL4}."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string,
-        rdfs:label "GMR_20B05_AE_01_11-fA01b"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -22309,11 +22309,11 @@ Individual: VFB_00021358
 Individual: VFB_00021357
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R23C06"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23063364"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An adult brain expressing P{GMR23C06-GAL4}."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R23C06"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string,
         rdfs:label "GMR_23C06_AE_01_06-fA01b"^^xsd:string
     
     Types: 
@@ -23567,10 +23567,10 @@ Individual: VFB_00023152
 Individual: VFB_00023151
 
     Annotations: 
+        rdfs:label "GMR_50B06_AE_01_04-fA01b"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23063364"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An adult brain expressing P{GMR50B06-GAL4}."^^xsd:string,
-        rdfs:label "GMR_50B06_AE_01_04-fA01b"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R50B06"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string
     
@@ -30798,7 +30798,7 @@ Individual: VFB_00021269
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23063364"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An adult brain expressing P{GMR15E07-GAL4}."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/CARO_0030002>,
@@ -61169,11 +61169,11 @@ Individual: VFB_00022807
 Individual: VFB_00022806
 
     Annotations: 
+        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R15E10"^^xsd:string,
         rdfs:label "GMR_15E10_AE_01_05-fA01b"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:23063364"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An adult brain expressing P{GMR15E10-GAL4}."^^xsd:string,
-        <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005> "http://flweb.janelia.org/cgi-bin/view_flew_imagery.cgi?line=R15E10"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Jenett2012"^^xsd:string
     
     Types: 
