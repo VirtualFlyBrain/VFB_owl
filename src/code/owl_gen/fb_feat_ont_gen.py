@@ -2,11 +2,11 @@
 
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-from com.ziclix.python.sql import zxJDBC # DB connection
+# from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.core import Brain
 from neo4j_tools import neo4j_connect
-import lmb_fc_tools
+# import lmb_fc_tools
 import re
 import warnings
 import time
@@ -27,7 +27,7 @@ fbf = "http://purl.obolibrary.org/fbbt/fbfeat/fb_features.owl"
 fbf_base = "http://flybase.org/reports/"
 obo_base = "http://purl.obolibrary.org/obo/"
 
-fb_feature = Brain(fbf_base, fbf)
+fb_feature = Brain(fbf_base, fbf)  # Should really be pulling full URIs here!
 
 # declaration of parent classes for FB features and expression patterns
 # Shouldn't really be adding labels here...
