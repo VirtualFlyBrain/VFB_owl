@@ -111,21 +111,31 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 
 	# MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[x]-(s:Site)-[]-(ds)" # s.acc + s.? => xref linkout. 
 	
+	# First get information about DataSet & store in local datastructure.
+	# This is worth doing as not all DataSets have a site link.  Avoids 
+	# optional match in following query.
 	
-	r = nc.commit_list(["MATCH (s:Site)-[:has_site]-(ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[dbx:hasDbXref]-(s) " \
-					"return distinct ds.label AS sname, dbx.accession as extID, s.link_base as pre, " \
-					"s.link_post as post, a.iri as iIRI, a.short_form as iID, a.label as iname" % dataset])
 	
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} ) " \
+					"<-[hs:has_source]-(a:Individual) with ds,hs, a " \
+					"OPTIONAL MATCH (ds)-[:has_site]-(s:Site) " \
+					"WITH ds, hs, a, s " \
+					"OPTIONAL MATCH (a)-[dbx:hasDbXref]-(s) " \
+					"RETURN DISTINCT ds.label AS sname, " \
+					"dbx.accession as extID, s.link_base as pre, " \
+					"s.link_postfix as post, a.iri as iIRI,  " \
+					"a.short_form as iID, a.label as iname" % dataset])
 	
 	# DONE: Update dataset handling.  Need to think this through.  Maybe shouldn't be duplicating 
 	# link generation as working in VFB 2 ?
 	# Kept as-is for now.  Should reconsider in new Scala scripts.
 	
 	# How to work with short_name? Not (yet?) in KB?
-	if not r: 
-		raise Exception("neo4j query fail")
+#	if not r: 
+#		raise Exception("neo4j query fail")
 	# transform r into dict
 	dc = dict_cursor(r)
+	print "Number of individuals in %s: %d"% (dataset, len(dc))
 	for d in dc:
 		vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
 		vfb_ind.label(d['iID'], d['iname']) # short_form is sufficient for lookup
