@@ -32,7 +32,7 @@ progress_chat() {
 
 # Edit this to add additional datasets
 
-DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName' 'Dickson_VT' 'Kohl2013' 'Matsuo2016' 'BrainName_Ito_half_brain' 'Chiang2010')
+DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName' 'Dickson_VT' 'Kohl2013' 'Matsuo2016' 'BrainName_Ito_half_brain')
 
 DSSTRING=''
 
@@ -52,12 +52,12 @@ do
     exit_on_fail $? "$job"
 done
 
-job="Adding analysis results to flycircuit neuron inds.";
+job="Adding analysis flycircuit neuron inds, mappings and clusters.";
 progress_chat $job
 java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $KB_endpoint $USR $PD $FBBT
 exit_on_fail $? $job
 
-DSSTRING+=" --merge flycircuit_direct_mappings.owl "  # Need to move these to KB.
+DSSTRING+=" --merge flycircuit_direct_mappings.owl --merge flycircuit_plus.owl "  # Need to move these to KB.
 
 cd ../../owl
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
