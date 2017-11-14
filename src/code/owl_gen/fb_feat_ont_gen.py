@@ -2,7 +2,7 @@
 
 import sys
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-# from com.ziclix.python.sql import zxJDBC # DB connection
+from com.ziclix.python.sql import zxJDBC # DB connection
 from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
 from uk.ac.ebi.brain.core import Brain
 from neo4j_tools import neo4j_connect
