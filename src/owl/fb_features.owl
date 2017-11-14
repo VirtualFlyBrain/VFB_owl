@@ -7096,10 +7096,10 @@ Class: FBtp0105821
         <http://purl.obolibrary.org/obo/SO_0000796>
     
     
-Class: FBtp0022557
+Class: FBtp0105820
 
     Annotations: 
-        rdfs:label "P{VGlut-GAL4.D}"^^xsd:string
+        rdfs:label "P{VT046246-GAL4}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
@@ -10034,15 +10034,6 @@ Class: FBtp0062579
 
     Annotations: 
         rdfs:label "P{GMR73H07-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
-Class: FBtp0058497
-
-    Annotations: 
-        rdfs:label "P{GMR23C06-GAL4}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
@@ -15839,15 +15830,6 @@ Class: FBtp0100010
 
     Annotations: 
         rdfs:label "P{VT023792-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
-Class: FBtp0102959
-
-    Annotations: 
-        rdfs:label "P{VT025999-GAL4}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
@@ -34810,7 +34792,7 @@ Class: FBtp0106394
 Class: FBti0143489
 
     Annotations: 
-        rdfs:label "PBac{810.P.FSVS-2}CG5010[CPTI004244]"^^xsd:string
+        rdfs:label "PBac{810.P.FSVS-2}Chchd2[CPTI004244]"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0001218>
@@ -47767,28 +47749,10 @@ Class: FBtp0061920
         <http://purl.obolibrary.org/obo/SO_0000796>
     
     
-Class: FBtp0057803
-
-    Annotations: 
-        rdfs:label "P{GMR15E10-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
 Class: FBtp0057802
 
     Annotations: 
         rdfs:label "P{GMR15E09-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
-Class: FBtp0057800
-
-    Annotations: 
-        rdfs:label "P{GMR15E07-GAL4}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
@@ -54949,10 +54913,10 @@ Class: FBtp0058213
         <http://purl.obolibrary.org/obo/SO_0000796>
     
     
-Class: FBtp0058211
+Class: FBtp0102959
 
     Annotations: 
-        rdfs:label "P{GMR20B05-GAL4}"^^xsd:string
+        rdfs:label "P{VT025999-GAL4}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
@@ -63904,15 +63868,6 @@ Class: FBtp0060930
         <http://purl.obolibrary.org/obo/SO_0000796>
     
     
-Class: FBtp0105820
-
-    Annotations: 
-        rdfs:label "P{VT046246-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
 Class: FBti0143671
 
     Annotations: 
@@ -66799,15 +66754,6 @@ Class: FBtp0060863
         <http://purl.obolibrary.org/obo/SO_0000796>
     
     
-Class: FBtp0060860
-
-    Annotations: 
-        rdfs:label "P{GMR50B06-GAL4}"^^xsd:string
-    
-    SubClassOf: 
-        <http://purl.obolibrary.org/obo/SO_0000796>
-    
-    
 Class: FBtp0107362
 
     Annotations: 
@@ -66847,7 +66793,7 @@ Class: FBti0143743
 Class: FBti0143747
 
     Annotations: 
-        rdfs:label "PBac{754.P.FSVS-0}CG7837[CPTI002822]"^^xsd:string
+        rdfs:label "PBac{754.P.FSVS-0}Rnb[CPTI002822]"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0001218>
@@ -77939,6 +77885,15 @@ Class: FBtp0059459
 
     Annotations: 
         rdfs:label "P{GMR33H06-GAL4}"^^xsd:string
+    
+    SubClassOf: 
+        <http://purl.obolibrary.org/obo/SO_0000796>
+    
+    
+Class: FBtp0022557
+
+    Annotations: 
+        rdfs:label "P{VGlut-GAL4.D}"^^xsd:string
     
     SubClassOf: 
         <http://purl.obolibrary.org/obo/SO_0000796>
