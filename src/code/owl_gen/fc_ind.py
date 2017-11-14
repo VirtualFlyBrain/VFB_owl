@@ -7,10 +7,11 @@ from dict_cursor import dict_cursor  # Handy local module for turning JBDC curso
 from uk.ac.ebi.brain.core import Brain
 from neo4j_tools import neo4j_connect
 from obo_tools import addOboAnnotationProperties, addVFBAnnotationProperties
-from lmb_fc_tools import oe_check_db_and_add
+# from lmb_fc_tools import oe_check_db_and_add
 from vfb_ind_tools import gen_ind_by_source
 from vfb_ind_tools import load_ont
 from vfb_ind_tools import add_types_2_inds
+from vfb_ind_tools import iri2shortForm
 
 """ Use:fc_ind.py usr pwd fbbt_path
 Where usr and pwd are connection credentials for LMB DB.
@@ -139,11 +140,13 @@ def add_BN_dom_overlap(nc, vfb_ind, fbbt):
 			vo_data = []
 			for k,v in vokeys.items():
 				if k in voxel_overlap.keys() and voxel_overlap[k] > cutoff:
-					vo_data.append("%d voxel overlap of the %s %s"  % (voxel_overlap[k], v, fbbt.getLabel(o['neuropil']))) # Better to ref painted domain?
+					vo_data.append(
+						"%d voxel overlap of the %s %s"  % (voxel_overlap[k], 
+														v, fbbt.getLabel(o['neuropil']))) # Better to ref painted domain?
 			neuron_overlap_txt.append(txt + ', '.join(vo_data))
 		vfb_ind.comment(neuron, '. '.join(neuron_overlap_txt) + '.')
 
-def add_clusters(nc, vfb_ind):
+def map_to_clusters(nc, vfb_ind):
 	
 
 	""" Declare cluster individuals """
@@ -166,58 +169,35 @@ def add_clusters(nc, vfb_ind):
 # 		else:
 # 			warnings.warn("Unknown edge type: %s in triple %s, %s, %s"  % (d['edge_type'], d['iID'], d['rel'], d['claz']) )
 
-	r = nc.commit_list(["MATCH (ds:DataSet) WHERE ds.label = '' " \
-					"with ci (cc:Class)<-[:INSTANCEOF]-(ci)<-[r:Related]-(n:Individual) " \
-					"WHERE cc.label = 'cluster' AND r.label = 'member_of' " \
-					"RETURN cc.iri as cluster_class, ci.iri as cluster_ind, ci.label as cluster_ind_label " \
-					"ci.label"]) # How to restrict to V3.  
+	r = nc.commit_list(["MATCH (cc:Class)<-[:INSTANCEOF]-(ci)" \
+						"-[r:Related]-(n:Individual) " \
+						"WHERE cc.label = 'cluster' " \
+						"RETURN cc.iri as cluster_class, " \
+						"ci.iri, " \
+						"ci.label as cluster_ind_label, " \
+						"r.iri, r.label as rlabel, " \
+						"n.iri, n.short_form as neuron_id, "
+						"CASE WHEN STARTNODE(r) = ci " \
+						"THEN 'outgoing' ELSE 'incoming' END AS direction"])
+	
+	# How to restrict to V3?  Seems like only v3 are currently in the DB!
+	# Bit dangerous as could potentially => re-use of IDs  
 	# I think this can be done on dataSet. CHECK
 	dc = results_2_dict_list(r)
-	# Now iterate over adding member_of / has_member reciprocals.  Would be good to add some standard text too.  
 	
-#	cursor.execute("SELECT DISTINCT ind.shortFormID as cvid, c.cluster as cnum, eind.shortFormID as evid, c.clusterv as cversion " \
-# 				   "FROM owl_individual ind " \
-# 				   "JOIN cluster c ON (ind.uuid=c.uuid) " \
-# 				   "JOIN clustering cg ON (cg.cluster=c.cluster) " \
-# 				   "JOIN neuron n ON (cg.exemplar_idid=n.idid) " \
-# 				   "JOIN owl_individual eind ON (n.uuid=eind.uuid) " \
-# 				   "WHERE cg.clusterv_id = c.clusterv " \
-# 				   "AND ind.type_for_def  = 'cluster' " \
-# 				   "AND c.clusterv = '3'")
-
 	for d in dc:
-		if not vfb_ind.knowsClass(d["cvid"]):
-			vfb_ind.addNamedIndividual(d["cvid"])
-			vfb_ind.type('VFB_10000005', d["cvid"])
-			vfb_ind.label(d["cvid"], "cluster " + str(d["cversion"]) + "." + str(d["cnum"])) # Note ints returned by query need to be coerced into strings.
-			vfb_ind.objectPropertyAssertion(d["evid"], "c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0", d["cvid"]) # UUID for exemplar as a placeholder - awaiting addition to RO
-			vfb_ind.objectPropertyAssertion(d["cvid"], "C888C3DB-AEFA-447F-BD4C-858DFE33DBE7", d["evid"]) # UUID for exemplar as a placeholder - awaiting addition to RO
-
+		cluster = iri2shortForm(d['ci.iri'])['short_form']
+		if not vfb_ind.knowsObjectProperty(iri2shortForm(d['r.iri'])['short_form']):
+			vfb_ind.addObjectProperty(d['r.iri'])	
+		rel = iri2shortForm(d['r.iri'])['short_form']
+		neuron = iri2shortForm(d['n.iri'])['short_form']
+		if d['direction'] == 'outgoing':	
+			vfb_ind.objectPropertyAssertion(cluster, rel, neuron) # UUID for exemplar as a placeholder - awaiting addition to RO
+		elif d['direction'] == 'incoming':
+			vfb_ind.objectPropertyAssertion(neuron, rel, cluster) # UUID for exemplar as a placeholder - awaiting addition to RO
+		
 #	cursor.close()
 
-def map_to_clusters(cursor, vfb_ind):
-	"""Maps fc individuals to clusters"""
-
-	oe_check_db_and_add("RO_0002351", 'owl_objectProperty', cursor, vfb_ind) #  has_member
-	oe_check_db_and_add("RO_0002350", 'owl_objectProperty', cursor, vfb_ind)  #  member_of
-
-	cursor.execute("SELECT DISTINCT cind.shortFormID AS cvid, nind.shortFormID AS mvid " \
-				   "FROM clustering cg " \
-				   "JOIN neuron n ON (cg.idid=n.idid) " \
-				   "JOIN owl_individual nind ON (n.uuid=nind.uuid) " \
-				   "JOIN cluster c ON (cg.cluster=c.cluster) " \
-				   "JOIN owl_individual cind ON (c.uuid=cind.uuid) " \
-				   "WHERE c.clusterv = cg.clusterv_id " \
-				   "AND cg.clusterv_id = '3'") # It is essential to set clustering version twice ! (crappy schema...)
-
-	# Now add cluster assertions.  Note - these are declared in both directions as elk cannot cope with inverses.
-
-	dc = dict_cursor(cursor)
-	for d in dc:
-		vfb_ind.objectPropertyAssertion(d['cvid'], "RO_0002351" ,d['mvid']) 
-		vfb_ind.objectPropertyAssertion(d['mvid'], "RO_0002350", d['cvid'])
-
-	cursor.close()
 
 # Initialise brain object for vfb individuals, and add declarations of OBO-style object property 
 
@@ -245,10 +225,10 @@ ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 # Now run all the functions
 
 gen_ind_by_source(nc, ont_dict, dataset)
+gen_ind_by_source(nc, ont_dict, "CostaJefferis") # Add v3 clusters
 #add_manual_ann(conn.cursor(), vfb_ind)
 add_BN_dom_overlap(nc, vfb_ind, ont_dict['fbbt'])
-#add_clusters(nc, vfb_ind) Temporarily commenting to test voxel overlp function.
-#map_to_clusters(nc, vfb_ind)
+map_to_clusters(nc, vfb_ind)
 
 
 # Save output file and clean up

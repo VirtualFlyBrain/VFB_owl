@@ -10,7 +10,7 @@ from org.semanticweb.owlapi.model import AddAxiom
 #sys.setrecursionlimit(100000)
 
 def iri2shortForm(iri_string, delimiter = '/'):
-	m = re.findall("^(.+)" + delimiter + "(.+)$", iri_string)
+	m = re.match("^(.+)" + delimiter + "(.+)$", iri_string)
 	if m:
 		return { 'base' :  m.group(1),
 				'short_form' : m.group(2)}
@@ -137,8 +137,12 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	dc = dict_cursor(r)
 	print "Number of individuals in %s: %d"% (dataset, len(dc))
 	for d in dc:
-		vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
-		vfb_ind.label(d['iID'], d['iname']) # short_form is sufficient for lookup
+		if d['iname']:
+			vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
+			vfb_ind.label(d['iID'], d['iname'])  # short_form is sufficient for lookup
+		else:
+			warnings.warn("Not adding individual %s as has no label." % d['iID'])
+			continue
 		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
 #		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
 		if d['extID']:
@@ -170,6 +174,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	r = nc.commit_list(["MATCH (ds:DataSet)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
 					"WHERE ds.label = '%s' " \
+					"AND exists(a.label)" \
 					"RETURN a.short_form as iID, " \
 					"type(r) as edge_type, r.short_form as rel, r.iri as rel_IRI, " \
 					"c.short_form as claz, c.iri as cIRI" % dataset])
