@@ -220,8 +220,8 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00003684>
 Individual: VFB_00030879
 
     Annotations: 
-        rdfs:label "PS - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "posterior slope on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040072>
@@ -230,7 +230,7 @@ Individual: VFB_00030879
 Individual: VFB_00030878
 
     Annotations: 
-        rdfs:label "VLP - painted domain JFRC2"^^xsd:string,
+        rdfs:label "ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -241,7 +241,7 @@ Individual: VFB_00030877
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "LOX - painted domain JFRC2"^^xsd:string
+        rdfs:label "lobula complex on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045004>
@@ -250,8 +250,8 @@ Individual: VFB_00030877
 Individual: VFB_00030876
 
     Annotations: 
-        rdfs:label "CL - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "clamp on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040047>
@@ -260,7 +260,7 @@ Individual: VFB_00030876
 Individual: VFB_00030875
 
     Annotations: 
-        rdfs:label "MB_L - painted domain JFRC2"^^xsd:string,
+        rdfs:label "lobe system of adult mushroom body on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -271,7 +271,7 @@ Individual: VFB_00030874
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CB - painted domain JFRC2"^^xsd:string
+        rdfs:label "central body on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045020>
@@ -280,8 +280,8 @@ Individual: VFB_00030874
 Individual: VFB_00030873
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "VMNP - painted domain JFRC2"^^xsd:string
+        rdfs:label "ventromedial neuropils on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040002>
@@ -291,37 +291,37 @@ Individual: VFB_00030607
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "GA - painted domain JFRC2"^^xsd:string
+        rdfs:label "gall on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040060>
     
     
-Individual: VFB_00030871
+Individual: VFB_00030606
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "SNP - painted domain JFRC2"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00045030>
-    
-    
-Individual: VFB_00030605
-
-    Annotations: 
-        rdfs:label "LAL - painted domain JFRC2"^^xsd:string,
+        rdfs:label "crepine on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00003681>
+        <http://purl.obolibrary.org/obo/FBbt_00045037>
+    
+    
+Individual: VFB_00030870
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "optic lobe on adult brain template JFRC2"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003701>
     
     
 Individual: VFB_00030604
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "PRW - painted domain JFRC2"^^xsd:string
+        rdfs:label "prow on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040051>
@@ -330,8 +330,8 @@ Individual: VFB_00030604
 Individual: VFB_00030603
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "IPS - painted domain JFRC2"^^xsd:string
+        rdfs:label "inferior posterior slope on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045046>
@@ -340,8 +340,8 @@ Individual: VFB_00030603
 Individual: VFB_00030602
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CAN - painted domain JFRC2"^^xsd:string
+        rdfs:label "cantle on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045051>
@@ -350,7 +350,7 @@ Individual: VFB_00030602
 Individual: VFB_00030601
 
     Annotations: 
-        rdfs:label "SPS - painted domain JFRC2"^^xsd:string,
+        rdfs:label "superior posterior slope on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -360,7 +360,7 @@ Individual: VFB_00030601
 Individual: VFB_00030600
 
     Annotations: 
-        rdfs:label "SAD - painted domain JFRC2"^^xsd:string,
+        rdfs:label "saddle on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -371,7 +371,7 @@ Individual: VFB_00030633
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "FB - painted domain JFRC2"^^xsd:string
+        rdfs:label "fan-shaped body on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003679>
@@ -380,7 +380,7 @@ Individual: VFB_00030633
 Individual: VFB_00030632
 
     Annotations: 
-        rdfs:label "PVLP - painted domain JFRC2"^^xsd:string,
+        rdfs:label "posterior ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -390,8 +390,8 @@ Individual: VFB_00030632
 Individual: VFB_00030631
 
     Annotations: 
-        rdfs:label "IB - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "inferior bridge on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040050>
@@ -401,27 +401,17 @@ Individual: VFB_00030630
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "PLP - painted domain JFRC2"^^xsd:string
+        rdfs:label "posterior lateral protocerebrum on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040044>
     
     
-Individual: VFB_00030615
-
-    Annotations: 
-        rdfs:label "ATL - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00045039>
-    
-    
 Individual: VFB_00030838
 
     Annotations: 
-        rdfs:label "MB_CA - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "calyx of adult mushroom body on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007385>
@@ -430,7 +420,7 @@ Individual: VFB_00030838
 Individual: VFB_00030869
 
     Annotations: 
-        rdfs:label "LX - painted domain JFRC2"^^xsd:string,
+        rdfs:label "lateral complex on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -440,8 +430,8 @@ Individual: VFB_00030869
 Individual: VFB_00030868
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "INP - painted domain JFRC2"^^xsd:string
+        rdfs:label "inferior neuropils on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040037>
@@ -450,7 +440,7 @@ Individual: VFB_00030868
 Individual: VFB_00030867
 
     Annotations: 
-        rdfs:label "MB - painted domain JFRC2"^^xsd:string,
+        rdfs:label "adult mushroom body on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -460,28 +450,18 @@ Individual: VFB_00030867
 Individual: VFB_00030866
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CX - painted domain JFRC2"^^xsd:string
+        rdfs:label "adult central complex on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003632>
     
     
-Individual: VFB_00030613
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "AMMC - painted domain JFRC2"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00003982>
-    
-    
 Individual: VFB_00030903
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "MB_ML - painted domain JFRC2"^^xsd:string
+        rdfs:label "medial lobe of adult mushroom body on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007677>
@@ -490,8 +470,8 @@ Individual: VFB_00030903
 Individual: VFB_00030902
 
     Annotations: 
-        rdfs:label "MB_VL - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "vertical lobe of adult mushroom body on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00015407>
@@ -501,7 +481,7 @@ Individual: VFB_00030629
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "AL - painted domain JFRC2"^^xsd:string
+        rdfs:label "adult antennal lobe on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007401>
@@ -510,8 +490,8 @@ Individual: VFB_00030629
 Individual: VFB_00030900
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "LH - painted domain JFRC2"^^xsd:string
+        rdfs:label "lateral horn on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007053>
@@ -520,28 +500,28 @@ Individual: VFB_00030900
 Individual: VFB_00030627
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "AOTU - painted domain JFRC2"^^xsd:string
+        rdfs:label "anterior optic tubercle on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007059>
     
     
-Individual: VFB_00030870
+Individual: VFB_00030626
 
     Annotations: 
-        rdfs:label "OL - painted domain JFRC2"^^xsd:string,
+        rdfs:label "wedge on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00003701>
+        <http://purl.obolibrary.org/obo/FBbt_00045027>
     
     
 Individual: VFB_00030625
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "BU - painted domain JFRC2"^^xsd:string
+        rdfs:label "bulb on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003682>
@@ -550,8 +530,8 @@ Individual: VFB_00030625
 Individual: VFB_00030624
 
     Annotations: 
-        rdfs:label "ME - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "medulla on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003748>
@@ -560,7 +540,7 @@ Individual: VFB_00030624
 Individual: VFB_00030623
 
     Annotations: 
-        rdfs:label "SLP - painted domain JFRC2"^^xsd:string,
+        rdfs:label "superior lateral protocerebrum on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -571,7 +551,7 @@ Individual: VFB_00030622
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "LO - painted domain JFRC2"^^xsd:string
+        rdfs:label "lobula on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003852>
@@ -580,8 +560,8 @@ Individual: VFB_00030622
 Individual: VFB_00030621
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "AME - painted domain JFRC2"^^xsd:string
+        rdfs:label "accessory medulla on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045003>
@@ -590,38 +570,58 @@ Individual: VFB_00030621
 Individual: VFB_00030620
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "FLA - painted domain JFRC2"^^xsd:string
+        rdfs:label "flange on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045050>
     
     
-Individual: VFB_00030626
+Individual: VFB_00030871
 
     Annotations: 
-        rdfs:label "IVLP - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "superior neuropils on adult brain template JFRC2"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00045030>
+    
+    
+Individual: VFB_00030840
+
+    Annotations: 
+        rdfs:label "adult gnathal ganglion on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00045027>
+        <http://purl.obolibrary.org/obo/FBbt_00014013>
     
     
 Individual: VFB_00030872
 
     Annotations: 
-        rdfs:label "VLNP - painted domain JFRC2"^^xsd:string,
+        rdfs:label "ventrolateral neuropils on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045021>
     
     
+Individual: VFB_00030599
+
+    Annotations: 
+        rdfs:label "epaulette on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00040040>
+    
+    
 Individual: VFB_00030901
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "MB_PED - painted domain JFRC2"^^xsd:string
+        rdfs:label "pedunculus of adult mushroom body on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007453>
@@ -630,7 +630,7 @@ Individual: VFB_00030901
 Individual: VFB_00030856
 
     Annotations: 
-        rdfs:label "SEZ - painted domain JFRC2"^^xsd:string,
+        rdfs:label "adult subesophageal zone on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -640,8 +640,8 @@ Individual: VFB_00030856
 Individual: VFB_00030628
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "SIP - painted domain JFRC2"^^xsd:string
+        rdfs:label "SIP - painted domain JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045032>
@@ -661,7 +661,7 @@ Individual: VFB_00030618
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "SCL - painted domain JFRC2"^^xsd:string
+        rdfs:label "superior clamp on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040048>
@@ -671,7 +671,7 @@ Individual: VFB_00030617
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "ICL - painted domain JFRC2"^^xsd:string
+        rdfs:label "inferior clamp on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040049>
@@ -680,8 +680,8 @@ Individual: VFB_00030617
 Individual: VFB_00030616
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "VES - painted domain JFRC2"^^xsd:string
+        rdfs:label "vest on adult brain template JFRC2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040041>
@@ -690,7 +690,7 @@ Individual: VFB_00030616
 Individual: VFB_00030880
 
     Annotations: 
-        rdfs:label "VX - painted domain JFRC2"^^xsd:string,
+        rdfs:label "ventral complex on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -701,27 +701,27 @@ Individual: VFB_00030614
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "SMP - painted domain JFRC2"^^xsd:string
+        rdfs:label "superior medial protocerebrum on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007055>
     
     
-Individual: VFB_00030840
+Individual: VFB_00030613
 
     Annotations: 
-        rdfs:label "GNG - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "antennal mechanosensory and motor center on adult brain template JFRC2"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00014013>
+        <http://purl.obolibrary.org/obo/FBbt_00003982>
     
     
 Individual: VFB_00030612
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "LOP - painted domain JFRC2"^^xsd:string
+        rdfs:label "lobula plate on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003885>
@@ -730,37 +730,37 @@ Individual: VFB_00030612
 Individual: VFB_00030611
 
     Annotations: 
-        rdfs:label "EB - painted domain JFRC2"^^xsd:string,
+        rdfs:label "ellipsoid body on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003678>
     
     
-Individual: VFB_00030599
-
-    Annotations: 
-        rdfs:label "EPA - painted domain JFRC2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00040040>
-    
-    
-Individual: VFB_00030606
+Individual: VFB_00030610
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CRE - painted domain JFRC2"^^xsd:string
+        rdfs:label "gorget on adult brain template JFRC2"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00045037>
+        <http://purl.obolibrary.org/obo/FBbt_00040039>
+    
+    
+Individual: VFB_00030605
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
+        rdfs:label "lateral accessory lobe on adult brain template JFRC2"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003681>
     
     
 Individual: VFB_00030608
 
     Annotations: 
-        rdfs:label "AVLP - painted domain JFRC2"^^xsd:string,
+        rdfs:label "anterior ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
@@ -771,7 +771,7 @@ Individual: VFB_00030849
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string,
-        rdfs:label "CRG - painted domain JFRC2"^^xsd:string
+        rdfs:label "adult cerebral ganglion on adult brain template JFRC2"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110636>
@@ -780,20 +780,20 @@ Individual: VFB_00030849
 Individual: VFB_00030609
 
     Annotations: 
-        rdfs:label "NO - painted domain JFRC2"^^xsd:string,
+        rdfs:label "nodulus on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003680>
     
     
-Individual: VFB_00030610
+Individual: VFB_00030615
 
     Annotations: 
-        rdfs:label "GOR - painted domain JFRC2"^^xsd:string,
+        rdfs:label "antler on adult brain template JFRC2"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:JenettShinomya_BrainName"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00040039>
+        <http://purl.obolibrary.org/obo/FBbt_00045039>
     
     
