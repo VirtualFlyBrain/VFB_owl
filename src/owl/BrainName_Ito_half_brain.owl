@@ -1025,11 +1025,11 @@ Individual: VFB_00030816
 Individual: VFB_00030815
 
     Annotations: 
+        rdfs:label "anterior ventrolateral protocerebrum on adult brain template Ito2014"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "anterior ventrolateral protocerebrum on adult brain template Ito2014"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040043>

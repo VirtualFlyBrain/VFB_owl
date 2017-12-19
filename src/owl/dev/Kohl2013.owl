@@ -61,17 +61,17 @@ Class: <http://purl.obolibrary.org/obo/FBbt_00110461>
 Class: <http://purl.obolibrary.org/obo/FBbt_00110603>
 
     
-Individual: VFB_00030740
+Individual: VFB_00030742
 
     Annotations: 
+        rdfs:label "120616-1JK1029fill"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120713-3JK1029fill"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
+        <http://purl.obolibrary.org/obo/FBbt_00110461>
     
     
 Individual: VFB_00030649
@@ -230,17 +230,17 @@ Individual: VFB_00030743
         <http://purl.obolibrary.org/obo/FBbt_00110461>
     
     
-Individual: VFB_00030742
+Individual: VFB_00030639
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120616-1JK1029fill"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
+        rdfs:label "120313-JK1029fill"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
+        <http://purl.obolibrary.org/obo/FBbt_00110459>
     
     
 Individual: VFB_00030638
@@ -1101,6 +1101,19 @@ Individual: VFB_00030710
         <http://purl.obolibrary.org/obo/FBbt_00110461>
     
     
+Individual: VFB_00030740
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
+        rdfs:label "120713-3JK1029fill"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110603>
+    
+    
 Individual: VFB_00030669
 
     Annotations: 
@@ -1486,19 +1499,6 @@ Individual: VFB_00030650
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030639
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120313-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00110459>

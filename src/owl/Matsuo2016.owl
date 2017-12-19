@@ -179,17 +179,17 @@ Individual: VFB_00030770
         <http://purl.obolibrary.org/obo/FBbt_00111494>
     
     
-Individual: VFB_00030745
+Individual: VFB_00030751
 
     Annotations: 
+        rdfs:label "Bb3"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center A1 projection neuron."^^xsd:string,
-        rdfs:label "AMMC-A1"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb3 neuron."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110183>
+        <http://purl.obolibrary.org/obo/FBbt_00111483>
     
     
 Individual: VFB_00030769
@@ -322,6 +322,19 @@ Individual: VFB_00030760
         <http://purl.obolibrary.org/obo/FBbt_00111480>
     
     
+Individual: VFB_00030745
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center A1 projection neuron."^^xsd:string,
+        rdfs:label "AMMC-A1"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110183>
+    
+    
 Individual: VFB_00030759
 
     Annotations: 
@@ -426,30 +439,30 @@ Individual: VFB_00030752
         <http://purl.obolibrary.org/obo/FBbt_00111484>
     
     
-Individual: VFB_00030751
+Individual: VFB_00030785
 
     Annotations: 
-        rdfs:label "Bb3"^^xsd:string,
+        rdfs:label "P3b"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb3 neuron."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC P3b neuron."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111483>
+        <http://purl.obolibrary.org/obo/FBbt_00111485>
     
     
-Individual: VFB_00030784
+Individual: VFB_00030750
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        rdfs:label "GF"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb2 neuron."^^xsd:string,
+        rdfs:label "Bb2"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00004020>
+        <http://purl.obolibrary.org/obo/FBbt_00111482>
     
     
 Individual: VFB_00030783
@@ -504,30 +517,17 @@ Individual: VFB_00030780
         <http://purl.obolibrary.org/obo/FBbt_00111489>
     
     
-Individual: VFB_00030750
+Individual: VFB_00030784
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC Bb2 neuron."^^xsd:string,
-        rdfs:label "Bb2"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111482>
-    
-    
-Individual: VFB_00030785
-
-    Annotations: 
-        rdfs:label "P3b"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Matsuo2016"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:26762251"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A antennal mechanosensory and motor center AMMC P3b neuron."^^xsd:string
+        rdfs:label "GF"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111485>
+        <http://purl.obolibrary.org/obo/FBbt_00004020>
     
     
 Individual: VFB_00030749

@@ -424,18 +424,18 @@ Individual: VFB_00017922
         <http://purl.obolibrary.org/obo/FBbt_00110470>
     
     
-Individual: VFB_00020168
+Individual: VFB_00017921
 
     Annotations: 
+        rdfs:label "aSP-k_M clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-a lineage clone that is part of a(n) adult fruitless pSP-a lineage clone."^^xsd:string,
-        rdfs:label "pSP-a clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-k (male) lineage clone that is part of a(n) adult fruitless aSP-k (male) lineage clone."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110522>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110606>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
@@ -514,19 +514,19 @@ Individual: VFB_00020163
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00020162
+Individual: VFB_00020156
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-g lineage clone that is part of a(n) adult fruitless pMP-g lineage clone."^^xsd:string,
-        rdfs:label "pMP-g clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-a (female) lineage clone that is part of a(n) adult fruitless pMP-a (female) lineage clone."^^xsd:string,
+        rdfs:label "pMP-a clone of Cachero 2010"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110510>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110498>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
 Individual: VFB_00020157
@@ -572,21 +572,6 @@ Individual: VFB_00020159
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
         <http://purl.obolibrary.org/obo/FBbt_00110504>
-    
-    
-Individual: VFB_00017921
-
-    Annotations: 
-        rdfs:label "aSP-k_M clone of Cachero 2010"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-k (male) lineage clone that is part of a(n) adult fruitless aSP-k (male) lineage clone."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110606>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
 Individual: VFB_00017944
@@ -724,19 +709,19 @@ Individual: VFB_00017912
         <http://purl.obolibrary.org/obo/FBbt_00110596>
     
     
-Individual: VFB_00020158
+Individual: VFB_00017911
 
     Annotations: 
-        rdfs:label "pMP-c clone of Cachero 2010"^^xsd:string,
+        rdfs:label "aSP-a_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-c (female) lineage clone that is part of a(n) adult fruitless pMP-c (female) lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-a (male) lineage clone that is part of a(n) adult fruitless aSP-a (male) lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110502>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>
+        <http://purl.obolibrary.org/obo/FBbt_00110594>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
 Individual: VFB_00017910
@@ -754,19 +739,19 @@ Individual: VFB_00017910
         <http://purl.obolibrary.org/obo/FBbt_00110446>
     
     
-Individual: VFB_00020156
+Individual: VFB_00020148
 
     Annotations: 
+        rdfs:label "pIP-c clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-a (female) lineage clone that is part of a(n) adult fruitless pMP-a (female) lineage clone."^^xsd:string,
-        rdfs:label "pMP-a clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-c lineage clone that is part of a(n) adult fruitless pIP-c lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110498>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00110482>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
 Individual: VFB_00020155
@@ -817,11 +802,11 @@ Individual: VFB_00020153
 Individual: VFB_00020152
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-g lineage clone that is part of a(n) adult fruitless pIP-g lineage clone."^^xsd:string,
-        rdfs:label "pIP-g clone of Cachero 2010"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
+        rdfs:label "pIP-g clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
@@ -829,34 +814,34 @@ Individual: VFB_00020152
         <http://purl.obolibrary.org/obo/FBbt_00110490>
     
     
-Individual: VFB_00020151
+Individual: VFB_00020167
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-f lineage clone that is part of a(n) adult fruitless pIP-f lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSG-e lineage clone that is part of a(n) adult fruitless pSG-e lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pIP-f clone of Cachero 2010"^^xsd:string
+        rdfs:label "pSG-e clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110488>,
+        <http://purl.obolibrary.org/obo/FBbt_00110520>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
-Individual: VFB_00020150
+Individual: VFB_00020168
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-e (female) lineage clone that is part of a(n) adult fruitless pIP-e (female) lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pIP-e clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-a lineage clone that is part of a(n) adult fruitless pSP-a lineage clone."^^xsd:string,
+        rdfs:label "pSP-a clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110486>
+        <http://purl.obolibrary.org/obo/FBbt_00110522>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
 Individual: VFB_00020169
@@ -872,36 +857,6 @@ Individual: VFB_00020169
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00110524>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
-    
-    
-Individual: VFB_00017900
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-h lineage clone that is part of a(n) adult fruitless aDT-h lineage clone."^^xsd:string,
-        rdfs:label "aDT-h_M clone of Cachero 2010"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110428>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
-    
-    
-Individual: VFB_00017902
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-b (male) lineage clone that is part of a(n) adult fruitless aIP-b (male) lineage clone."^^xsd:string,
-        rdfs:label "aIP-b_M clone of Cachero 2010"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110584>
     
     
 Individual: VFB_00017909
@@ -1009,19 +964,19 @@ Individual: VFB_00017903
         <http://purl.obolibrary.org/obo/FBbt_00110586>
     
     
-Individual: VFB_00020149
+Individual: VFB_00017902
 
     Annotations: 
-        rdfs:label "pIP-d clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-d lineage clone that is part of a(n) adult fruitless pIP-d lineage clone."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-b (male) lineage clone that is part of a(n) adult fruitless aIP-b (male) lineage clone."^^xsd:string,
+        rdfs:label "aIP-b_M clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110484>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00110584>
     
     
 Individual: VFB_00017901
@@ -1039,18 +994,18 @@ Individual: VFB_00017901
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00020147
+Individual: VFB_00017900
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pIP-b clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-b lineage clone that is part of a(n) adult fruitless pIP-b lineage clone."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-h lineage clone that is part of a(n) adult fruitless aDT-h lineage clone."^^xsd:string,
+        rdfs:label "aDT-h_M clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110480>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110428>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
@@ -1158,32 +1113,47 @@ Individual: VFB_00020140
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00017911
+Individual: VFB_00020114
 
     Annotations: 
-        rdfs:label "aSP-a_M clone of Cachero 2010"^^xsd:string,
+        rdfs:label "aDT-a clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-a (male) lineage clone that is part of a(n) adult fruitless aSP-a (male) lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-a lineage clone that is part of a(n) adult fruitless aDT-a lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110594>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110414>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00020167
+Individual: VFB_00020150
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSG-e lineage clone that is part of a(n) adult fruitless pSG-e lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-e (female) lineage clone that is part of a(n) adult fruitless pIP-e (female) lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pSG-e clone of Cachero 2010"^^xsd:string
+        rdfs:label "pIP-e clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110520>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110486>
+    
+    
+Individual: VFB_00020151
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-f lineage clone that is part of a(n) adult fruitless pIP-f lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "pIP-f clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110488>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
@@ -1218,18 +1188,18 @@ Individual: VFB_00020138
         <http://purl.obolibrary.org/obo/FBbt_00110462>
     
     
-Individual: VFB_00020137
+Individual: VFB_00020125
 
     Annotations: 
-        rdfs:label "aSP-g clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-g (female) lineage clone that is part of a(n) adult fruitless aSP-g (female) lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-d (female) lineage clone that is part of a(n) adult fruitless aIP-d (female) lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "aIP-d clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110460>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00110436>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
@@ -1338,6 +1308,51 @@ Individual: VFB_00020130
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
+Individual: VFB_00020122
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-a lineage clone that is part of a(n) adult fruitless aIP-a lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "aIP-a clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110430>
+    
+    
+Individual: VFB_00020123
+
+    Annotations: 
+        rdfs:label "aIP-b clone of Cachero 2010"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-b (female) lineage clone that is part of a(n) adult fruitless aIP-b (female) lineage clone."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110432>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020124
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-c (female) lineage clone that is part of a(n) adult fruitless aIP-c (female) lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "aIP-c clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110434>
+    
+    
 Individual: VFB_00017950
 
     Annotations: 
@@ -1353,18 +1368,33 @@ Individual: VFB_00017950
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
-Individual: VFB_00020148
+Individual: VFB_00020115
 
     Annotations: 
-        rdfs:label "pIP-c clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-c lineage clone that is part of a(n) adult fruitless pIP-c lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-b (female) lineage clone that is part of a(n) adult fruitless aDT-b (female) lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "aDT-b clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110482>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110416>
+    
+    
+Individual: VFB_00020158
+
+    Annotations: 
+        rdfs:label "pMP-c clone of Cachero 2010"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-c (female) lineage clone that is part of a(n) adult fruitless pMP-c (female) lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110502>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
@@ -1428,64 +1458,64 @@ Individual: VFB_00020126
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00020125
+Individual: VFB_00017949
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-e lineage clone that is part of a(n) adult fruitless pSP-e lineage clone."^^xsd:string,
+        rdfs:label "pSP-e_M clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110532>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+    
+    
+Individual: VFB_00017948
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-d (female) lineage clone that is part of a(n) adult fruitless aIP-d (female) lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-d lineage clone that is part of a(n) adult fruitless pSP-d lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "aIP-d clone of Cachero 2010"^^xsd:string
+        rdfs:label "pSP-d_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110436>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110530>
     
     
-Individual: VFB_00020124
+Individual: VFB_00017947
 
     Annotations: 
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-c (female) lineage clone that is part of a(n) adult fruitless aIP-c (female) lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-b (male) lineage clone that is part of a(n) adult fruitless pSP-b (male) lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "aIP-c clone of Cachero 2010"^^xsd:string
+        rdfs:label "pSP-b_M clone of Cachero 2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110434>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110624>
     
     
-Individual: VFB_00020123
+Individual: VFB_00017946
 
     Annotations: 
-        rdfs:label "aIP-b clone of Cachero 2010"^^xsd:string,
+        rdfs:label "pSP-a_M clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-b (female) lineage clone that is part of a(n) adult fruitless aIP-b (female) lineage clone."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-a lineage clone that is part of a(n) adult fruitless pSP-a lineage clone."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110432>,
+        <http://purl.obolibrary.org/obo/FBbt_00110522>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>
-    
-    
-Individual: VFB_00020122
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aIP-a lineage clone that is part of a(n) adult fruitless aIP-a lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "aIP-a clone of Cachero 2010"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110430>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
 Individual: VFB_00020121
@@ -1578,34 +1608,34 @@ Individual: VFB_00017940
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
-Individual: VFB_00017938
+Individual: VFB_00020137
 
     Annotations: 
+        rdfs:label "aSP-g clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-e (male) lineage clone that is part of a(n) adult fruitless pMP-e (male) lineage clone."^^xsd:string,
-        rdfs:label "pMP-e_M clone of Cachero 2010"^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aSP-g (female) lineage clone that is part of a(n) adult fruitless aSP-g (female) lineage clone."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110460>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110620>
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
-Individual: VFB_00017939
+Individual: VFB_00020161
 
     Annotations: 
-        rdfs:label "pMP-f_M clone of Cachero 2010"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-f (male) lineage clone that is part of a(n) adult fruitless pMP-f (male) lineage clone."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-f (female) lineage clone that is part of a(n) adult fruitless pMP-f (female) lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "pMP-f clone of Cachero 2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00110622>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110508>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
 Individual: VFB_00017899
@@ -1708,26 +1738,26 @@ Individual: VFB_00017892
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
-Individual: VFB_00017947
+Individual: VFB_00017945
 
     Annotations: 
+        rdfs:label "pSG-e_M clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-b (male) lineage clone that is part of a(n) adult fruitless pSP-b (male) lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pSP-b_M clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSG-e lineage clone that is part of a(n) adult fruitless pSG-e lineage clone."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110624>
+        <http://purl.obolibrary.org/obo/FBbt_00110520>
     
     
 Individual: VFB_00020119
 
     Annotations: 
-        rdfs:label "aDT-f clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
+        rdfs:label "aDT-f clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-f lineage clone that is part of a(n) adult fruitless aDT-f lineage clone."^^xsd:string
@@ -1783,34 +1813,34 @@ Individual: VFB_00020116
         <http://purl.obolibrary.org/obo/FBbt_00007683>
     
     
-Individual: VFB_00020115
+Individual: VFB_00017939
 
     Annotations: 
+        rdfs:label "pMP-f_M clone of Cachero 2010"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-b (female) lineage clone that is part of a(n) adult fruitless aDT-b (female) lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "aDT-b clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-f (male) lineage clone that is part of a(n) adult fruitless pMP-f (male) lineage clone."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110416>
+        <http://purl.obolibrary.org/obo/FBbt_00110622>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
     
     
-Individual: VFB_00020114
+Individual: VFB_00017938
 
     Annotations: 
-        rdfs:label "aDT-a clone of Cachero 2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless aDT-a lineage clone that is part of a(n) adult fruitless aDT-a lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-e (male) lineage clone that is part of a(n) adult fruitless pMP-e (male) lineage clone."^^xsd:string,
+        rdfs:label "pMP-e_M clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110414>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
+        <http://purl.obolibrary.org/obo/FBbt_00110620>
     
     
 Individual: VFB_00017937
@@ -1933,18 +1963,33 @@ Individual: VFB_00017930
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00020161
+Individual: VFB_00020162
 
     Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-f (female) lineage clone that is part of a(n) adult fruitless pMP-f (female) lineage clone."^^xsd:string,
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pMP-g lineage clone that is part of a(n) adult fruitless pMP-g lineage clone."^^xsd:string,
+        rdfs:label "pMP-g clone of Cachero 2010"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
+        <http://purl.obolibrary.org/obo/FBbt_00110510>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>
+    
+    
+Individual: VFB_00020147
+
+    Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pMP-f clone of Cachero 2010"^^xsd:string
+        rdfs:label "pIP-b clone of Cachero 2010"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-b lineage clone that is part of a(n) adult fruitless pIP-b lineage clone."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007683>,
-        <http://purl.obolibrary.org/obo/FBbt_00110508>,
+        <http://purl.obolibrary.org/obo/FBbt_00110480>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
@@ -1963,63 +2008,18 @@ Individual: VFB_00020170
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
-Individual: VFB_00017945
+Individual: VFB_00020149
 
     Annotations: 
+        rdfs:label "pIP-d clone of Cachero 2010"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSG-e lineage clone that is part of a(n) adult fruitless pSG-e lineage clone."^^xsd:string,
-        rdfs:label "pSG-e_M clone of Cachero 2010"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pIP-d lineage clone that is part of a(n) adult fruitless pIP-d lineage clone."^^xsd:string
     
     Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110520>
-    
-    
-Individual: VFB_00017946
-
-    Annotations: 
-        rdfs:label "pSP-a_M clone of Cachero 2010"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-a lineage clone that is part of a(n) adult fruitless pSP-a lineage clone."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110522>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>
-    
-    
-Individual: VFB_00017948
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-d lineage clone that is part of a(n) adult fruitless pSP-d lineage clone."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        rdfs:label "pSP-d_M clone of Cachero 2010"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>,
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110530>
-    
-    
-Individual: VFB_00017949
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Cachero2010"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:20832311"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "An example of a(n) adult fruitless pSP-e lineage clone that is part of a(n) adult fruitless pSP-e lineage clone."^^xsd:string,
-        rdfs:label "pSP-e_M clone of Cachero 2010"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00007004>,
-        <http://purl.obolibrary.org/obo/FBbt_00110532>,
+        <http://purl.obolibrary.org/obo/FBbt_00007683>,
+        <http://purl.obolibrary.org/obo/FBbt_00110484>,
         <http://purl.obolibrary.org/obo/BFO_0000050> some <http://purl.obolibrary.org/obo/FBbt_00003624>
     
     
