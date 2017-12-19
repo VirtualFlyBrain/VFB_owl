@@ -225,7 +225,7 @@ ont_dict['fb_feature'] = load_ont("../../owl/fb_features.owl")
 # Now run all the functions
 
 gen_ind_by_source(nc, ont_dict, dataset)
-gen_ind_by_source(nc, ont_dict, "CostaJefferis") # Add v3 clusters
+gen_ind_by_source(nc, ont_dict, "CostaJefferis_v3") # Add v3 clusters
 #add_manual_ann(conn.cursor(), vfb_ind)
 add_BN_dom_overlap(nc, vfb_ind, ont_dict['fbbt'])
 map_to_clusters(nc, vfb_ind)
