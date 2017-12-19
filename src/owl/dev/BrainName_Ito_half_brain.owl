@@ -274,7 +274,7 @@ Individual: VFB_00030863
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "sPLPC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior posterior lateral protocerebrum commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -285,7 +285,7 @@ Individual: VFB_00030862
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "SFS - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior fiber system on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -297,8 +297,8 @@ Individual: VFB_00030862
 Individual: VFB_00030861
 
     Annotations: 
-        rdfs:label "SEC_sAVLPC - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "superior ellipsoid commissure on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -310,7 +310,7 @@ Individual: VFB_00030861
 Individual: VFB_00030860
 
     Annotations: 
-        rdfs:label "sALC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior antennal lobe commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -323,7 +323,7 @@ Individual: VFB_00030860
 Individual: VFB_00030859
 
     Annotations: 
-        rdfs:label "sAMMCC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior AMMC commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -339,8 +339,8 @@ Individual: VFB_00030858
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "PYF - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "pyriform fascicle on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100338>
@@ -349,11 +349,11 @@ Individual: VFB_00030858
 Individual: VFB_00030857
 
     Annotations: 
-        rdfs:label "pPLPC - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "posterior posteriolateral protocerebral commissure on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100355>
@@ -363,10 +363,10 @@ Individual: VFB_00030855
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "PLF - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "posterior lateral fascicle on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007083>
@@ -376,10 +376,10 @@ Individual: VFB_00030854
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "posterior cerebro-cervical fascicle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "pCCF - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100344>
@@ -388,7 +388,7 @@ Individual: VFB_00030854
 Individual: VFB_00030853
 
     Annotations: 
-        rdfs:label "mlALT - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "mediolateral antennal lobe tract on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -402,7 +402,7 @@ Individual: VFB_00030852
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "MBDL - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "median bundle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -417,8 +417,8 @@ Individual: VFB_00030851
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "MEF - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "medial equatorial fascicle on adult brain template Ito2014"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100342>
@@ -430,8 +430,8 @@ Individual: VFB_00030850
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "mCCF - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "medial cerebro-cervical fascicle on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100345>
@@ -441,7 +441,7 @@ Individual: VFB_00030848
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "LEF - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "lateral equatorial fascicle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -454,10 +454,10 @@ Individual: VFB_00030847
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "lateral cerebro-cervical fascicle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "lCCF - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100347>
@@ -466,11 +466,11 @@ Individual: VFB_00030847
 Individual: VFB_00030846
 
     Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "lALT - painted domain, BrainName pub"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "lateral antennal lobe tract on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003983>
@@ -479,7 +479,7 @@ Individual: VFB_00030846
 Individual: VFB_00030845
 
     Annotations: 
-        rdfs:label "LALC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "lateral accessory lobe commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -496,7 +496,7 @@ Individual: VFB_00030844
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "IFS - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "inferior fiber system on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100350>
@@ -508,7 +508,7 @@ Individual: VFB_00030843
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "iALC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "inferior antennal lobe commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -518,11 +518,11 @@ Individual: VFB_00030843
 Individual: VFB_00030842
 
     Annotations: 
-        rdfs:label "hVLPF - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "horizontal ventrolateral protocerebral fascicle on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100340>
@@ -535,7 +535,7 @@ Individual: VFB_00030841
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "tVLPF - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "horizontal ventrolateral protocerebral fascicle on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100340>
@@ -548,7 +548,7 @@ Individual: VFB_00030799
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "IB - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "inferior bridge on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040050>
@@ -558,10 +558,10 @@ Individual: VFB_00030798
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "vest on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "VES - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040041>
@@ -571,7 +571,7 @@ Individual: VFB_00030797
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "ICL - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "inferior clamp on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -583,8 +583,8 @@ Individual: VFB_00030797
 Individual: VFB_00030796
 
     Annotations: 
-        rdfs:label "AMMC_AN - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "antennal mechanosensory and motor center on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -596,10 +596,10 @@ Individual: VFB_00030796
 Individual: VFB_00030795
 
     Annotations: 
+        rdfs:label "cantle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "CAN - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -609,10 +609,10 @@ Individual: VFB_00030795
 Individual: VFB_00030794
 
     Annotations: 
+        rdfs:label "saddle on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "SAD - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -622,10 +622,10 @@ Individual: VFB_00030794
 Individual: VFB_00030793
 
     Annotations: 
+        rdfs:label "lateral accessory lobe on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "LAL - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -636,7 +636,7 @@ Individual: VFB_00030792
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "LH - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "lateral horn on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -649,7 +649,7 @@ Individual: VFB_00030791
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "PB - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "protocerebral bridge on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -662,7 +662,7 @@ Individual: VFB_00030790
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "BU - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "bulb on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -674,7 +674,7 @@ Individual: VFB_00030790
 Individual: VFB_00030839
 
     Annotations: 
-        rdfs:label "aSLPF - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "anterior superior lateral protocerebrum fascicle on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -690,8 +690,8 @@ Individual: VFB_00030837
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "ADC_ant_dors_com - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "anterior dorsal commissure on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007072>
@@ -703,7 +703,7 @@ Individual: VFB_00030836
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "aCCF - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "anterior cerebro-cervical fascicle on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -716,7 +716,7 @@ Individual: VFB_00030835
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "AST - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "antenno-subesophageal tract on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -727,10 +727,10 @@ Individual: VFB_00030834
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "PRW - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "prow on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040051>
@@ -739,11 +739,11 @@ Individual: VFB_00030834
 Individual: VFB_00030833
 
     Annotations: 
-        rdfs:label "SEG - painted domain, BrainName pub"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        rdfs:label "adult gnathal ganglion on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00014013>
@@ -752,11 +752,11 @@ Individual: VFB_00030833
 Individual: VFB_00030832
 
     Annotations: 
+        rdfs:label "giant fiber neuron on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string,
-        rdfs:label "GF - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "A giant fiber neuron."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00004020>
@@ -765,7 +765,7 @@ Individual: VFB_00030832
 Individual: VFB_00030831
 
     Annotations: 
-        rdfs:label "max_lab_nerve - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "adult maxillary nerve on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -791,8 +791,8 @@ Individual: VFB_00030830
 Individual: VFB_00030789
 
     Annotations: 
+        rdfs:label "nodulus on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "NO - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -807,7 +807,7 @@ Individual: VFB_00030788
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "LO - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "lobula on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -821,7 +821,7 @@ Individual: VFB_00030787
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "AME - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "accessory medulla on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045003>
@@ -830,10 +830,10 @@ Individual: VFB_00030787
 Individual: VFB_00030786
 
     Annotations: 
+        rdfs:label "adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "BrainName standard - Ito half brain"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -843,10 +843,10 @@ Individual: VFB_00030786
 Individual: VFB_00030829
 
     Annotations: 
-        rdfs:label "GC - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "great commissure on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -856,7 +856,7 @@ Individual: VFB_00030829
 Individual: VFB_00030828
 
     Annotations: 
-        rdfs:label "POC - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "posterior optic commissure on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
@@ -870,10 +870,10 @@ Individual: VFB_00030827
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "AOT - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "anterior optic tract on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100337>
@@ -886,7 +886,7 @@ Individual: VFB_00030826
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "mALT - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "medial antennal lobe tract on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003985>
@@ -899,7 +899,7 @@ Individual: VFB_00030825
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "EPA - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "epaulette on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040040>
@@ -909,10 +909,10 @@ Individual: VFB_00030824
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "superior clamp on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "SCL - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040048>
@@ -924,8 +924,8 @@ Individual: VFB_00030823
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "IPS - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "inferior posterior slope on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045046>
@@ -934,10 +934,10 @@ Individual: VFB_00030823
 Individual: VFB_00030822
 
     Annotations: 
+        rdfs:label "superior posterior slope on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "SPS - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -950,7 +950,7 @@ Individual: VFB_00030821
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "MB_CA - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "calyx of adult mushroom body on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -960,11 +960,11 @@ Individual: VFB_00030821
 Individual: VFB_00030820
 
     Annotations: 
-        rdfs:label "GOR - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "gorget on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040039>
@@ -973,7 +973,7 @@ Individual: VFB_00030820
 Individual: VFB_00030819
 
     Annotations: 
-        rdfs:label "AOTU - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "anterior optic tubercle on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -986,8 +986,8 @@ Individual: VFB_00030819
 Individual: VFB_00030818
 
     Annotations: 
-        rdfs:label "PLP - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "posterior lateral protocerebrum on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -999,7 +999,7 @@ Individual: VFB_00030818
 Individual: VFB_00030817
 
     Annotations: 
-        rdfs:label "IVLP - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "wedge on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -1015,8 +1015,8 @@ Individual: VFB_00030816
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "PVLP - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "posterior ventrolateral protocerebrum on adult brain template Ito2014"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040042>
@@ -1025,11 +1025,11 @@ Individual: VFB_00030816
 Individual: VFB_00030815
 
     Annotations: 
-        rdfs:label "AVLP - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "anterior ventrolateral protocerebrum on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00040043>
@@ -1041,7 +1041,7 @@ Individual: VFB_00030814
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "SMP - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior medial protocerebrum on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
@@ -1052,7 +1052,7 @@ Individual: VFB_00030813
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "SIP - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior intermediate protocerebrum on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -1064,7 +1064,7 @@ Individual: VFB_00030813
 Individual: VFB_00030812
 
     Annotations: 
-        rdfs:label "SLP - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "superior lateral protocerebrum on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
@@ -1078,10 +1078,10 @@ Individual: VFB_00030811
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "fan-shaped body on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "FB - painted domain, BrainName pub"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003679>
@@ -1090,11 +1090,11 @@ Individual: VFB_00030811
 Individual: VFB_00030810
 
     Annotations: 
-        rdfs:label "ME - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "medulla on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003748>
@@ -1106,8 +1106,8 @@ Individual: VFB_00030809
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "AL - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "adult antennal lobe on adult brain template Ito2014"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007401>
@@ -1119,8 +1119,8 @@ Individual: VFB_00030808
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "EB - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "ellipsoid body on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00003678>
@@ -1129,7 +1129,7 @@ Individual: VFB_00030808
 Individual: VFB_00030807
 
     Annotations: 
-        rdfs:label "LOP - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "lobula plate on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
@@ -1146,7 +1146,7 @@ Individual: VFB_00030806
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "MB_ACA - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "mushroom body accessory calyx on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045007>
@@ -1155,11 +1155,11 @@ Individual: VFB_00030806
 Individual: VFB_00030805
 
     Annotations: 
-        rdfs:label "FLA - painted domain, BrainName pub"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "flange on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045050>
@@ -1169,7 +1169,7 @@ Individual: VFB_00030804
 
     Annotations: 
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "MB_M_lobes - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "medial lobe of adult mushroom body on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -1181,8 +1181,8 @@ Individual: VFB_00030804
 Individual: VFB_00030803
 
     Annotations: 
+        rdfs:label "vertical lobe of adult mushroom body on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "MB_V_lobes - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
@@ -1197,8 +1197,8 @@ Individual: VFB_00030802
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "MB_PED - painted domain, BrainName pub"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "pedunculus of adult mushroom body on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00007453>
@@ -1207,11 +1207,11 @@ Individual: VFB_00030802
 Individual: VFB_00030801
 
     Annotations: 
-        rdfs:label "CRE - painted domain, BrainName pub"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
+        rdfs:label "crepine on adult brain template Ito2014"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00045037>
@@ -1220,7 +1220,7 @@ Individual: VFB_00030801
 Individual: VFB_00030800
 
     Annotations: 
-        rdfs:label "ATL - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "antler on adult brain template Ito2014"^^xsd:string,
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
@@ -1236,8 +1236,8 @@ Individual: VFB_00030865
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string,
-        rdfs:label "IVLPC - painted domain, BrainName pub"^^xsd:string
+        rdfs:label "wedge commissure on adult brain template Ito2014"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
         <http://purl.obolibrary.org/obo/FBbt_00100356>
@@ -1249,7 +1249,7 @@ Individual: VFB_00030864
         
             Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24559671"^^xsd:string
         <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
-        rdfs:label "vVLPF - painted domain, BrainName pub"^^xsd:string,
+        rdfs:label "vertical ventrolateral protocerebral fascicle on adult brain template Ito2014"^^xsd:string,
         <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:BrainName_Ito_half_brain"^^xsd:string
     
     Types: 
