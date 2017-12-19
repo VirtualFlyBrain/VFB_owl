@@ -118,7 +118,7 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} ) " \
 					"<-[hs:has_source]-(a:Individual) with ds,hs, a " \
-					"OPTIONAL MATCH (ds)-[:has_site]-(s:Site) " \
+					"OPTIONAL MATCH (ds)-[:hasDbXref]-(s:Site) " \
 					"WITH ds, hs, a, s " \
 					"OPTIONAL MATCH (a)-[dbx:hasDbXref]-(s) " \
 					"RETURN DISTINCT ds.label AS sname, " \
