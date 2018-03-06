@@ -39,7 +39,7 @@ DSSTRING=''
 cd ../code/owl_gen
 job='Building ontology of FlyBase features';
 progress_chat "$job";
-java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $USR $PD
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fb_feat_ont_gen.py $KB_endpoint $USR $PD
 exit_on_fail $? "$job"
 
 for var in ${DATASETS[@]}
@@ -47,17 +47,17 @@ for var in ${DATASETS[@]}
 do
     job="Building $var inds";
     progress_chat $job
-    java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython vfb_ind_runner.py $USR $PD $var $FBBT
+    java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython vfb_ind_runner.py $KB_endpoint $USR $PD $var $FBBT
     DSSTRING+="--merge ${var}.owl "
     exit_on_fail $? "$job"
 done
 
-job="Adding analysis results to flycircuit neuron inds.";
+job="Adding analysis flycircuit neuron inds, mappings and clusters.";
 progress_chat $job
-java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $USR $PD $FBBT
+java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython fc_ind.py $KB_endpoint $USR $PD $FBBT
 exit_on_fail $? $job
 
-DSSTRING+="--merge flycircuit_plus.owl "
+DSSTRING+=" --merge flycircuit_plus.owl "  # Need to move these to KB.
 
 cd ../../owl
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
@@ -99,5 +99,4 @@ job="Running reporting tests on build"
 progress_chat $job
 java -Xmx6000m -Xss515m -cp $CP"*" org.python.util.jython query_test_mod.py $p'/vfb.owl' > $p'/test_results.txt'
 exit_on_fail $? $job
-
 
