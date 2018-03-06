@@ -3,17 +3,31 @@ import warnings
 import sys
 import re
 sys.path.append('../mod') # Assuming whole repo, or at least branch under 'code', is checked out, this allows local mods to be found.
-from dict_cursor import dict_cursor  # Handy local module for turning JBDC cursor output into dicts
-#from uk.ac.ebi.brain.error import BrainException
 from uk.ac.ebi.brain.core import Brain
-#import obo_tools
-#from lmb_fc_tools import get_con
-from owl2pdm_tools import get_types_for_ind
-from owl2pdm_tools import simpleClassExpression
+from owl2pdm_tools import ont_manager, simpleClassExpression
 from java.util import TreeSet
 from org.semanticweb.owlapi.model import AddAxiom
+#sys.setrecursionlimit(100000)
 
+def iri2shortForm(iri_string, delimiter = '/'):
+	m = re.match("^(.+)" + delimiter + "(.+)$", iri_string)
+	if m:
+		return { 'base' :  m.group(1),
+				'short_form' : m.group(2)}
+	else:
+		return False
+		
 
+def dict_cursor(r):
+	"""
+	Takes JSON results from a neo4J query and turns them into a table.
+	Only works for queries returning keyed attributes"""
+	### The idea here is to mimic the existing dict_cursor to plug into existing code
+	### Only works for queries returning keyed attributes
+	dc = []
+	for n in r[0]['data']:
+		dc.append(dict(zip(r[0]['columns'], n['row'])))
+	return dc
 
 def load_ont(url):
 	ont = Brain()
@@ -40,24 +54,22 @@ def add_types_2_inds(ont, dc):
 		else:
 			ont.type(d['claz'], d['iID'])
 			
-def add_facts(cursor, ont, source):
+def add_facts(nc, ont, source):
 	"""Adds all facts to ont for a specified source.
 	"""
-	cursor.execute("SELECT subject.shortFormID AS sub, obj.shortFormID AS ob, rel.shortFormID AS relation, o.baseURI as relBase " \
-				"FROM owl_fact of "
-				"JOIN owl_individual subject ON (subject.id = of.subject) " \
-				"JOIN owl_individual obj ON (obj.id = of.object) " \
-				"JOIN owl_objectProperty rel ON (rel.id = of.relation) " 
-				"JOIN ontology o ON (rel.ontology_id = o.id)"\
-				"JOIN data_source objSource ON (obj.source_id = objSource.id) " \
-				"JOIN data_source subjSource ON (subject.source_id = subjSource.id) " \
-				"WHERE objSource.name = '%s' " \
-				"AND subjSource.name = '%s'" % (source, source))
-	dc = dict_cursor(cursor)
+	# Too broad?  Will pull in channels.  
+	# Should the schema have an extra edge annotation to indicate status for translation?
+	r = nc.commit_list(['MATCH (ds:DataSet)<-[has_source]-(a:Individual) ' \
+						'-[r:Related]-(o:Individual) ' \
+						'WHERE ds.label = "%s" ' \
+						'RETURN s.short_form AS sub, r.iri as rel_IRI, ' \
+						'r.short_form as relation, o.short_form as ob' 
+						% source])
+	dc = dict_cursor(r)
 	
 	for d in dc:
 		if not ont.knowsObjectProperty(d['relation']):				
-			ont.addObjectProperty(d['relBase']+d['relation'])
+			ont.addObjectProperty(d['rel_IRI'])
 		ont.objectPropertyAssertion(d['sub'], d['relation'], d['ob']) # Check Brain methods
 
 # For now - perhaps better to hard wire with a function that generates channel/image pairs + relevant classification and facts, assuming 1:1, re-using IDs and allowing specification of a template.
@@ -84,29 +96,60 @@ def gen_channel_image_pair_for_ind(ont, ind, registered_to):
 	ont.objectPropertyAssertion(image_id, 'has_background_channel', registered_to) # Switch to if for rel spec
 	ont.objectPropertyAssertion(channel_id, 'depicts', ind)
 	
+# TODO - add overlap gen function.
 
-def gen_ind_by_source(cursor, ont_dict, dataset):
+def gen_ind_by_source(nc, ont_dict, dataset):
 	
 	# TODO - extend to add facts
 	vfb_ind = ont_dict['vfb_ind']
 
 	# Query for ID, name and source info for each individual
-	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
-				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
-				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
-				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
+# 	cursor.execute("SELECT i.shortFormID AS iID, i.label AS iname, s.name AS sname, i.short_name," \
+# 				"s.data_link_pre AS pre, data_link_post AS post, i.ID_in_source as extID " \
+# 				"FROM owl_individual i JOIN data_source s ON (i.source_id=s.id) " \
+# 				"WHERE name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))  # IGNORING VFBi and VFBc.
 
-	dc = dict_cursor(cursor)
+	# MATCH (ds:DataSet { label : '%s'} )<-[hs:has_source]-(a:Individual)-[x]-(s:Site)-[]-(ds)" # s.acc + s.? => xref linkout. 
+	
+	# First get information about DataSet & store in local datastructure.
+	# This is worth doing as not all DataSets have a site link.  Avoids 
+	# optional match in following query.
+	
+	
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} ) " \
+					"<-[hs:has_source]-(a:Individual) with ds,hs, a " \
+					"OPTIONAL MATCH (ds)-[:hasDbXref]-(s:Site) " \
+					"WITH ds, hs, a, s " \
+					"OPTIONAL MATCH (a)-[dbx:hasDbXref]-(s) " \
+					"RETURN DISTINCT ds.label AS sname, " \
+					"dbx.accession as extID, s.link_base as pre, " \
+					"s.link_postfix as post, a.iri as iIRI,  " \
+					"a.short_form as iID, a.label as iname" % dataset])
+	
+	# DONE: Update dataset handling.  Need to think this through.  Maybe shouldn't be duplicating 
+	# link generation as working in VFB 2 ?
+	# Kept as-is for now.  Should reconsider in new Scala scripts.
+	
+	# How to work with short_name? Not (yet?) in KB?
+#	if not r: 
+#		raise Exception("neo4j query fail")
+	# transform r into dict
+	dc = dict_cursor(r)
+	print "Number of individuals in %s: %d"% (dataset, len(dc))
 	for d in dc:
-		vfb_ind.addNamedIndividual(d['iID'])
-		vfb_ind.label(d['iID'], d['iname'])
+		if d['iname']:
+			vfb_ind.addNamedIndividual(d['iIRI']) # Full IRI specified here.
+			vfb_ind.label(d['iID'], d['iname'])  # short_form is sufficient for lookup
+		else:
+			warnings.warn("Not adding individual %s as has no label." % d['iID'])
+			continue
 		vfb_ind.annotation(d['iID'], 'hasDbXref', 'source:' + d['sname'])
-		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
+#		if d['short_name']: vfb_ind.annotation(d['iID'], 'VFBext_0000004', d['short_name'])
 		if d['extID']:
 			if d['pre']:
 				link = d['pre'] + d['extID']
 			else:
-				warnings.warn("%s has an external ID  (%s) but data source (%s) has no baseURI!" % 
+				warnings.warn("%s has an external ID (%s) but data source (%s) has no baseURI!" % 
 							(d['iname'], d['extID'], d['sname']))
 				continue
 			if d['post']:
@@ -114,38 +157,73 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 			vfb_ind.annotation(d['iID'], 'VFBext_0000005', link) #
 
 	# Pull type statements
-	cursor.execute("SELECT i.shortFormID AS iID, " \
-				 "oc.shortFormID AS claz, oc.label AS clazName, " \
-				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
-				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
-				 "s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
-				 "FROM owl_individual i  " \
-				 "JOIN individual_type it ON (i.id=it.individual_id)  " \
-				 "JOIN owl_type ot ON (it.type_id=ot.id)  " \
-				 "JOIN owl_class oc ON (ot.class=oc.id)  " \
-				 "JOIN ontology ontc ON (ontc.id=oc.ontology_id)  " \
-				 "JOIN data_source s ON (i.source_id=s.id)  " \
-				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
-				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
-				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
-
-	dc = dict_cursor(cursor)
-	add_types_2_inds(vfb_ind, dc)
+# 	nc.execute("SELECT i.shortFormID AS iID, " \
+# 				 "oc.shortFormID AS claz, oc.label AS clazName, " \
+# 				 "oeop.shortFormID AS rel, oeop.label AS relName, " \
+# 				 "ontop.baseURI AS relBase, ontc.baseURI AS clazBase, " \
+# 				 "s.pub_miniref, s.pub_pmid, it.for_text_def AS for_def  " \
+# 				 "FROM owl_individual i  " \
+# 				 "JOIN individual_type it ON (i.id=it.individual_id)  " \
+# 				 "JOIN owl_type ot ON (it.type_id=ot.id)  " \
+# 				 "JOIN owl_class oc ON (ot.class=oc.id)  " \
+# 				 "JOIN ontology ontc ON (ontc.id=oc.ontology_id)  " \
+# 				 "JOIN data_source s ON (i.source_id=s.id)  " \
+# 				 "JOIN owl_objectProperty oeop ON (ot.objectProperty=oeop.id)  " \
+# 				 "JOIN ontology ontop ON (ontop.id=oeop.ontology_id)  " \
+# 				 "WHERE s.name = '%s' AND i.shortFormID like '%s'" % (dataset, 'VFB\_%'))
 	
-#	add_facts(cursor, vfb_ind, dataset)
+	r = nc.commit_list(["MATCH (ds:DataSet)<-[:has_source]-(a:Individual)-[r]->(c:Class) " \
+					"WHERE ds.label = '%s' " \
+					"AND exists(a.label)" \
+					"RETURN a.short_form as iID, " \
+					"type(r) as edge_type, r.short_form as rel, r.iri as rel_IRI, " \
+					"c.short_form as claz, c.iri as cIRI" % dataset])
+	
+	# Feels slightly dodgy, 
+	# but should be able to rely on null return to distinguish INSTANCEOF from Related
+	
+	dc = dict_cursor(r)  	
+	# Add - somethign
+#	add_types_2_inds(vfb_ind, dc) 
+	
+	for d in dc:
+		if not vfb_ind.knowsClass(d['claz']):
+			vfb_ind.addClass(d['cIRI'])
+#		if not (d['rel'] == '0'): # hack to allow mySQL combination key constraint - using OP sfid = 0 as no OP
+		if(d['edge_type'] == 'Related'):
+			if not vfb_ind.knowsObjectProperty(d['rel']):
+				vfb_ind.addObjectProperty(d['rel_IRI'])
+			vfb_ind.type(d['rel'] + ' some ' + d['claz'], d['iID'])
+		elif (d['edge_type'] == 'INSTANCEOF'):
+			vfb_ind.type(d['claz'], d['iID'])
+		else:
+			warnings.warn("Unknown edge type: %s in triple %s, %s, %s"  % (d['edge_type'], d['iID'], d['rel'], d['claz']) )
+		#   iID: shortFormId of individual
+		# 	claz: shortFormId of class
+		# 	clazBase: BaseURI of claz
+		# 	rel: shortFormId of relation (set to '0' if no relation)
+		# 	relBase: BaseURI of relation"""
+	
+#	add_facts(nc, vfb_ind, dataset)
 
 	ilist = vfb_ind.getInstances("Thing", 0)
 	vfb_indo = vfb_ind.getOntology() # owl-api ontology object for typeAxioms2pdm
+	vfb_om = ont_manager(vfb_indo)
 	
-	# Get source info for this dataset
-	cursor.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
-				"FROM data_source s WHERE s.name = '%s'" % dataset)
+# 	# Get source info for this dataset
+# 	nc.execute("SELECT s.name, s.pub_pmid, s.pub_miniref, s.dataset_spec_text as dtext " \
+# 				"FROM data_source s WHERE s.name = '%s'" % dataset)
 	
-	dc = dict_cursor(cursor)
+	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s' })-[:has_reference]-(p:pub) " 
+					"RETURN p.PMID AS pub_pmid, ds.dataset_spec_text AS dtext" % dataset])  # Need a sync script for pubs, pulling FBrfs...
+	
+	dc = dict_cursor(r)
 	# Roll defs.
+	
+	# Def rolling only works if there's a ref!
 	for d in dc:
 		for iID in ilist:	 
-			types = get_types_for_ind("http://www.virtualflybrain.org/owl/" + iID, vfb_indo) # BaseURI should NOT be hard wired!
+			types = vfb_om.get_types_for_ind(sfid = iID)
 			defn = def_roller(types, ont_dict)
 			if d['dtext']:
 				defn += d['dtext']
@@ -154,7 +232,6 @@ def gen_ind_by_source(cursor, ont_dict, dataset):
 	# Roll image individuals. Temporarily commented out.
 	#	for iID in ind_id_type:
 	#		roll_image_ind(ont_dict['vfb_image'], dataset, vfb_ind.getLabel(iID), iID) 
-	cursor.close()
 	
 
 def add_def_with_xrefs(ont, entity_sfid, def_text, xrefs):
