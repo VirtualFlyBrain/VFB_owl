@@ -116,12 +116,12 @@ def gen_ind_by_source(nc, ont_dict, dataset):
 	# optional match in following query.
 	
 	
-	r = nc.commit_list(["MATCH (ds:DataSet { label : '%s'} ) " \
+	r = nc.commit_list(["MATCH (ds:DataSet { short_form : '%s'} ) " \
 					"<-[hs:has_source]-(a:Individual) with ds,hs, a " \
 					"OPTIONAL MATCH (ds)-[:hasDbXref]-(s:Site) " \
 					"WITH ds, hs, a, s " \
 					"OPTIONAL MATCH (a)-[dbx:hasDbXref]-(s) " \
-					"RETURN DISTINCT ds.label AS sname, " \
+					"RETURN DISTINCT ds.short_form AS sname, " \
 					"dbx.accession as extID, s.link_base as pre, " \
 					"s.link_postfix as post, a.iri as iIRI,  " \
 					"a.short_form as iID, a.label as iname" % dataset])
