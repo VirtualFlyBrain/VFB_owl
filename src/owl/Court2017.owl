@@ -1,0 +1,413 @@
+Prefix: : <http://virtualflybrain.org/reports/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://purl.obolibrary.org/obo/fbbt/vfb/Court2017.owl>
+
+
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
+
+    
+Datatype: xsd:string
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004062>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004063>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00003625>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00110176>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004099>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004096>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004095>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004094>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00110174>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00110173>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004060>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004091>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004019>
+
+    
+Class: owl:Thing
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004052>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00007657>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00110175>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004108>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004107>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004106>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004057>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004056>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004055>
+
+    
+Class: <http://purl.obolibrary.org/obo/FBbt_00004061>
+
+    
+Individual: VFB_00100011
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "accessory metathoracic nerve on adult VNS template, Court2018"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004095>
+    
+    
+Individual: VFB_00100010
+
+    Annotations: 
+        rdfs:label "metathoracic leg nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004096>
+    
+    
+Individual: VFB_00100022
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "ventral prothoracic nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004057>
+    
+    
+Individual: VFB_00100021
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "adult brain cell body rind on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00003625>
+    
+    
+Individual: VFB_00100020
+
+    Annotations: 
+        rdfs:label "adult accessory mesothoracic neuromere on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004091>
+    
+    
+Individual: VFB_00100009
+
+    Annotations: 
+        rdfs:label "abdominal segment 2 nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004106>
+    
+    
+Individual: VFB_00100008
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "abdominal segment 3 nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004107>
+    
+    
+Individual: VFB_00100007
+
+    Annotations: 
+        rdfs:label "abdominal segment 4 nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004108>
+    
+    
+Individual: VFB_00100006
+
+    Annotations: 
+        rdfs:label "abdominal nerve trunk on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004099>
+    
+    
+Individual: VFB_00100005
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "adult abdominal neuromere on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110173>
+    
+    
+Individual: VFB_00100004
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "cervical connective on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004019>
+    
+    
+Individual: VFB_00100003
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "adult prothoracic neuromere on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110174>
+    
+    
+Individual: VFB_00100002
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "adult mesothoracic neuromere on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110175>
+    
+    
+Individual: VFB_00100001
+
+    Annotations: 
+        rdfs:label "adult metathoracic neuromere on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00110176>
+    
+    
+Individual: VFB_00100000
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        rdfs:label "adult VNS template - Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004052>
+    
+    
+Individual: VFB_00100019
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "dorsal metathoracic nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004094>
+    
+    
+Individual: VFB_00100018
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "accessory mesothoracic nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004062>
+    
+    
+Individual: VFB_00100017
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "posterior dorsal mesothoracic nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004061>
+    
+    
+Individual: VFB_00100016
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "prothoracic leg nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00007657>
+    
+    
+Individual: VFB_00100015
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "accessory prothoracic nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004056>
+    
+    
+Individual: VFB_00100014
+
+    Annotations: 
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "dorsal prothoracic nerve on adult VNS template, Court2018"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004055>
+    
+    
+Individual: VFB_00100013
+
+    Annotations: 
+        rdfs:label "anterior dorsal mesothoracic nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004060>
+    
+    
+Individual: VFB_00100012
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Court2017"^^xsd:string,
+        rdfs:label "mesothoracic leg nerve on adult VNS template, Court2018"^^xsd:string,
+        
+            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:None"^^xsd:string
+        <http://purl.obolibrary.org/obo/IAO_0000115> "."^^xsd:string
+    
+    Types: 
+        <http://purl.obolibrary.org/obo/FBbt_00004063>
+    
+    
