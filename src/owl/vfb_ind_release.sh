@@ -32,7 +32,7 @@ progress_chat() {
 
 # Edit this to add additional datasets
 
-DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName' 'Dickson_VT' 'Kohl2013' 'Matsuo2016' 'BrainName_Ito_half_brain' 'WoodHartenstein2018')
+DATASETS=('Cachero2010' 'Ito2013' 'Jenett2012' 'Yu2013' 'JenettShinomya_BrainName' 'Dickson_VT' 'Kohl2013' 'Matsuo2016' 'BrainName_Ito_half_brain' 'WoodHartenstein2018' 'Hampel2015' 'Court2017' 'Ohyama2015' 'Aso2014')
 
 DSSTRING=''
 
@@ -62,11 +62,13 @@ DSSTRING+=" --merge flycircuit_plus.owl "  # Need to move these to KB.
 cd ../../owl
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
 
-# # Merge ind files with specified release of fbbt
-job="Merging ind files with ${FBBT}" 
-progress_chat $job
-owltools vfb_license_and_attribution.owl --merge $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
-exit_on_fail $? $job
+# gunzip TrumanWood2018.owl.gz
+
+# # # Merge ind files with specified release of fbbt
+# job="Merging ind files with ${FBBT}" 
+# progress_chat $job
+# owltools vfb_license_and_attribution.owl --merge $FBBT --merge TrumanWood2018.owl --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl
+# exit_on_fail $? $job
 
 # # assert inferences and strip out redundancy  # This
 job="Asserting inferences" 

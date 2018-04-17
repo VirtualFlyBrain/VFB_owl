@@ -1,0 +1,59 @@
+Prefix: : <http://virtualflybrain.org/reports/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <http://purl.obolibrary.org/obo/fbbt/vfb/Hampel2015.owl>
+
+
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
+
+    
+AnnotationProperty: rdfs:label
+
+    
+AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>
+
+    
+AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
+
+    
+Datatype: xsd:string
+
+    
+Class: owl:Thing
+
+    
+Individual: VFB_00090001
+
+    Annotations: 
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Hampel2015"^^xsd:string,
+        rdfs:label "aDN1-spGAL4-1 adult brain - Hampel2015"^^xsd:string
+    
+    
+Individual: VFB_00090002
+
+    Annotations: 
+        rdfs:label "aBN1-spGAL4-1 adult brain - Hampel2015"^^xsd:string,
+        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Hampel2015"^^xsd:string
+    
+    
