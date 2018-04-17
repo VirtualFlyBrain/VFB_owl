@@ -62,12 +62,12 @@ DSSTRING+=" --merge flycircuit_plus.owl "  # Need to move these to KB.
 cd ../../owl
 # # env should be moved to Jenkins job.  Should be actual list, with iteration deriving env with --merge in.
 
-# gunzip TrumanWood2018.owl.gz
+gunzip TrumanWood2018.owl.gz
 
 # # # Merge ind files with specified release of fbbt
 job="Merging ind files with ${FBBT}" 
 progress_chat $job
-owltools vfb_license_and_attribution.owl --merge $FBBT --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl 
+owltools vfb_license_and_attribution.owl --merge $FBBT --merge TrumanWood2018.owl --merge fb_features.owl --merge vfb_ext.owl $DSSTRING -o file://`pwd`/fbbt_vfb_ind.owl 
 exit_on_fail $? $job
 
 # # assert inferences and strip out redundancy  # This
