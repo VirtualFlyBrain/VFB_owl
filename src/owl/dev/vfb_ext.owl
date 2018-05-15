@@ -286,6 +286,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-15T15:53:38Z</oboInOwl:creation_date>
+        <rdfs:comment>A single channel image that is used as a template for image registration.</rdfs:comment>
+        <rdfs:label xml:lang="en">template image</rdfs:label>
+        <oboInOwl1:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl1:created_by>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014">

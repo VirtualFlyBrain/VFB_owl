@@ -75,6 +75,20 @@
       "type" : "CLASS",
       "lbl" : "multi channel image"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007",
+      "meta" : {
+        "comments" : [ "A single channel image that is used as a template for image registration." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2018-05-15T15:53:38Z"
+        }, {
+          "pred" : "ttp://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "dos"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "template image"
+    }, {
       "id" : "http://purl.org/dc/terms/references",
       "type" : "PROPERTY",
       "lbl" : "has_reference"
@@ -95,6 +109,10 @@
       "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000002",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000014"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/c099d9d6-4ef3-11e3-9da7-b1ad5291e0b0",
       "pred" : "subPropertyOf",
