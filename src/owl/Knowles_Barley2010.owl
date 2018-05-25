@@ -514,6 +514,7 @@ Declaration(Class(<http://flybase.org/reports/FBti0144097>))
 Declaration(Class(<http://flybase.org/reports/FBti0145066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003624>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000400>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00023727>))
@@ -1025,6 +1026,2530 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
+
+############################
+#   Classes
+############################
+
+# Class: <http://flybase.org/reports/FBti0143413> (PBac{681.P.FSVS-1}cold[CPTI001277])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143413> "PBac{681.P.FSVS-1}cold[CPTI001277]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143413> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143483> (PBac{806.LOX-SVS-2}Rm62[CPTI004179])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143483> "PBac{806.LOX-SVS-2}Rm62[CPTI004179]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143483> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143485> (PBac{810.P.FSVS-2}RnpS1[CPTI004189])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143485> "PBac{810.P.FSVS-2}RnpS1[CPTI004189]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143485> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143487> (PBac{810.P.FSVS-2}orb2[CPTI004204])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143487> "PBac{810.P.FSVS-2}orb2[CPTI004204]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143487> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143488> (PBac{810.P.FSVS-2}rump[CPTI004242])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143488> "PBac{810.P.FSVS-2}rump[CPTI004242]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143488> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143489> (PBac{810.P.FSVS-2}CG5010[CPTI004244])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143489> "PBac{810.P.FSVS-2}CG5010[CPTI004244]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143489> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143490> (PBac{810.P.FSVS-2}RnpS1[CPTI004245])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143490> "PBac{810.P.FSVS-2}RnpS1[CPTI004245]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143490> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143491> (PBac{810.P.FSVS-2}Rab1[CPTI004256])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143491> "PBac{810.P.FSVS-2}Rab1[CPTI004256]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143491> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143492> (PBac{810.P.FSVS-2}RnpS1[CPTI004270])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143492> "PBac{810.P.FSVS-2}RnpS1[CPTI004270]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143492> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143493> (PBac{810.P.FSVS-2}RnpS1[CPTI004278])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143493> "PBac{810.P.FSVS-2}RnpS1[CPTI004278]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143493> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143494> (PBac{810.P.FSVS-2}ZAP3[CPTI004292])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143494> "PBac{810.P.FSVS-2}ZAP3[CPTI004292]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143494> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143495> (PBac{810.P.FSVS-2}CG9265[CPTI004298])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143495> "PBac{810.P.FSVS-2}CG9265[CPTI004298]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143495> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143496> (PBac{810.P.FSVS-2}Argk[CPTI004299])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143496> "PBac{810.P.FSVS-2}Argk[CPTI004299]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143496> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143497> (PBac{754.P.FSVS-0}CRAT[CPTI004337])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143497> "PBac{754.P.FSVS-0}CRAT[CPTI004337]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143497> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143498> (PBac{806.LOX-SVS-2}rudhira[CPTI004347])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143498> "PBac{806.LOX-SVS-2}rudhira[CPTI004347]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143498> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143499> (PBac{806.LOX-SVS-2}pug[CPTI004349])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143499> "PBac{806.LOX-SVS-2}pug[CPTI004349]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143499> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143500> (PBac{810.P.FSVS-2}orb2[CPTI004362])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143500> "PBac{810.P.FSVS-2}orb2[CPTI004362]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143500> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143502> (PBac{810.P.FSVS-2}l(2)k01209[CPTI004381])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143502> "PBac{810.P.FSVS-2}l(2)k01209[CPTI004381]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143502> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143503> (PBac{810.P.FSVS-2}Rab1[CPTI004394])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143503> "PBac{810.P.FSVS-2}Rab1[CPTI004394]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143503> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143504> (PBac{810.P.FSVS-2}stx[CPTI004402])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143504> "PBac{810.P.FSVS-2}stx[CPTI004402]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143504> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143505> (PBac{810.P.FSVS-2}CG14207[CPTI004445])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143505> "PBac{810.P.FSVS-2}CG14207[CPTI004445]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143505> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143506> (PBac{810.P.FSVS-2}CG4829[CPTI004450])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143506> "PBac{810.P.FSVS-2}CG4829[CPTI004450]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143506> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143507> (PBac{810.P.FSVS-2}dally[CPTI004473])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143507> "PBac{810.P.FSVS-2}dally[CPTI004473]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143507> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143508> (PBac{810.P.FSVS-2}ab[CPTI004479])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143508> "PBac{810.P.FSVS-2}ab[CPTI004479]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143508> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143509> (PBac{810.P.FSVS-2}bol[CPTI004519])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143509> "PBac{810.P.FSVS-2}bol[CPTI004519]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143509> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143510> (PBac{810.P.FSVS-2}Oda[CPTI004525])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143510> "PBac{810.P.FSVS-2}Oda[CPTI004525]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143510> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143511> (PBac{810.P.FSVS-2}Pdcd4[CPTI004527])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143511> "PBac{810.P.FSVS-2}Pdcd4[CPTI004527]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143511> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143512> (PBac{810.P.FSVS-2}unk[CPTI004533])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143512> "PBac{810.P.FSVS-2}unk[CPTI004533]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143512> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143513> (PBac{810.P.FSVS-2}siz[CPTI004536])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143513> "PBac{810.P.FSVS-2}siz[CPTI004536]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143513> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143514> (PBac{810.P.FSVS-2}nmo[CPTI004543])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143514> "PBac{810.P.FSVS-2}nmo[CPTI004543]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143514> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143515> (PBac{566.P.SVS-1}CG9338[CPTI100000])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143515> "PBac{566.P.SVS-1}CG9338[CPTI100000]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143515> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143516> (PBac{566.P.SVS-1}CG3902[CPTI100001])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143516> "PBac{566.P.SVS-1}CG3902[CPTI100001]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143516> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143517> (PBac{566.P.SVS-1}Gs2[CPTI100002])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143517> "PBac{566.P.SVS-1}Gs2[CPTI100002]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143517> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143518> (PBac{566.P.SVS-1}fabp[CPTI100003])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143518> "PBac{566.P.SVS-1}fabp[CPTI100003]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143518> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143519> (PBac{566.P.SVS-1}CG3902[CPTI100004])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143519> "PBac{566.P.SVS-1}CG3902[CPTI100004]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143519> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143520> (PBac{566.P.SVS-1}Bsg[CPTI100005])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143520> "PBac{566.P.SVS-1}Bsg[CPTI100005]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143520> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143521> (PBac{566.P.SVS-1}Su(Tpl)[CPTI100008])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143521> "PBac{566.P.SVS-1}Su(Tpl)[CPTI100008]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143521> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143523> (PBac{566.P.SVS-1}CG1648[CPTI100012])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143523> "PBac{566.P.SVS-1}CG1648[CPTI100012]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143523> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143524> (PBac{566.P.SVS-1}IA-2[CPTI100013])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143524> "PBac{566.P.SVS-1}IA-2[CPTI100013]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143524> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143525> (PBac{566.P.SVS-1}Unc-115a[CPTI100017])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143525> "PBac{566.P.SVS-1}Unc-115a[CPTI100017]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143525> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143526> (PBac{566.P.SVS-1}CG2678[CPTI100021])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143526> "PBac{566.P.SVS-1}CG2678[CPTI100021]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143526> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143527> (PBac{566.P.SVS-1}Fas3[CPTI100022])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143527> "PBac{566.P.SVS-1}Fas3[CPTI100022]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143527> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143528> (PBac{566.P.SVS-1}14-3-3epsilon[CPTI100026])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143528> "PBac{566.P.SVS-1}14-3-3epsilon[CPTI100026]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143528> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143529> (PBac{566.P.SVS-1}sgg[CPTI100027])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143529> "PBac{566.P.SVS-1}sgg[CPTI100027]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143529> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143530> (PBac{566.P.SVS-1}CG7985[CPTI100032])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143530> "PBac{566.P.SVS-1}CG7985[CPTI100032]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143530> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143531> (PBac{544.SVS-1}Ptpmeg[CPTI100033])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143531> "PBac{544.SVS-1}Ptpmeg[CPTI100033]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143531> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143532> (PBac{544.SVS-1}14-3-3epsilon[CPTI100034])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143532> "PBac{544.SVS-1}14-3-3epsilon[CPTI100034]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143532> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143533> (PBac{544.SVS-1}B4[CPTI100035])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143533> "PBac{544.SVS-1}B4[CPTI100035]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143533> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143534> (PBac{544.SVS-1}zip[CPTI100036])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143534> "PBac{544.SVS-1}zip[CPTI100036]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143534> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143535> (PBac{544.SVS-1}CG42255[CPTI100038])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143535> "PBac{544.SVS-1}CG42255[CPTI100038]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143535> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143536> (PBac{544.SVS-1}vig[CPTI100039])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143536> "PBac{544.SVS-1}vig[CPTI100039]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143536> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143537> (PBac{544.SVS-1}Vha16-1[CPTI100041])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143537> "PBac{544.SVS-1}Vha16-1[CPTI100041]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143537> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143538> (PBac{544.SVS-1}SmD3[CPTI100043])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143538> "PBac{544.SVS-1}SmD3[CPTI100043]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143538> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143539> (PBac{544.SVS-1}PAPLA1[CPTI100044])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143539> "PBac{544.SVS-1}PAPLA1[CPTI100044]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143539> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143540> (PBac{544.SVS-1}14-3-3epsilon[CPTI100045])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143540> "PBac{544.SVS-1}14-3-3epsilon[CPTI100045]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143540> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143541> (PBac{544.SVS-1}obst-E[CPTI100048])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143541> "PBac{544.SVS-1}obst-E[CPTI100048]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143541> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143542> (PBac{544.SVS-1}Bsg[CPTI100050])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143542> "PBac{544.SVS-1}Bsg[CPTI100050]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143542> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143543> (PBac{544.SVS-1}Rab11[CPTI100051])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143543> "PBac{544.SVS-1}Rab11[CPTI100051]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143543> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143544> (PBac{544.SVS-1}tral[CPTI100059])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143544> "PBac{544.SVS-1}tral[CPTI100059]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143544> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143545> (PBac{544.SVS-1}Bsg[CPTI100062])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143545> "PBac{544.SVS-1}Bsg[CPTI100062]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143545> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143546> (PBac{544.SVS-1}Vha55[CPTI100063])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143546> "PBac{544.SVS-1}Vha55[CPTI100063]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143546> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143547> (PBac{544.SVS-1}Fer2LCH[CPTI100064])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143547> "PBac{544.SVS-1}Fer2LCH[CPTI100064]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143547> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143548> (PBac{544.SVS-1}14-3-3epsilon[CPTI100065])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143548> "PBac{544.SVS-1}14-3-3epsilon[CPTI100065]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143548> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143549> (PBac{544.SVS-1}Fim[CPTI100066])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143549> "PBac{544.SVS-1}Fim[CPTI100066]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143549> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143550> (PBac{544.SVS-1}obst-E[CPTI100067])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143550> "PBac{544.SVS-1}obst-E[CPTI100067]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143550> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143551> (PBac{768.FSVS-0}Klp54D[CPTI003686])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143551> "PBac{768.FSVS-0}Klp54D[CPTI003686]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143551> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143552> (PBac{768.FSVS-0}CCT8[CPTI003689])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143552> "PBac{768.FSVS-0}CCT8[CPTI003689]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143552> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143554> (PBac{803.P.SVS-0}CG6340[CPTI003728])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143554> "PBac{803.P.SVS-0}CG6340[CPTI003728]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143554> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143555> (PBac{803.P.SVS-0}CG43333[CPTI003732])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143555> "PBac{803.P.SVS-0}CG43333[CPTI003732]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143555> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143556> (PBac{803.P.SVS-0}ade3[CPTI003733])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143556> "PBac{803.P.SVS-0}ade3[CPTI003733]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143556> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143557> (PBac{803.P.SVS-0}Myo10A[CPTI003738])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143557> "PBac{803.P.SVS-0}Myo10A[CPTI003738]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143557> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143558> (PBac{803.P.SVS-0}hth[CPTI003745])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143558> "PBac{803.P.SVS-0}hth[CPTI003745]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143558> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143559> (PBac{803.P.SVS-0}S6k[CPTI003751])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143559> "PBac{803.P.SVS-0}S6k[CPTI003751]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143559> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143560> (PBac{803.P.SVS-0}Unc-115b[CPTI003765])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143560> "PBac{803.P.SVS-0}Unc-115b[CPTI003765]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143560> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143565> (PBac{803.P.SVS-0}Hsc70-4[CPTI003798])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143565> "PBac{803.P.SVS-0}Hsc70-4[CPTI003798]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143565> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143566> (PBac{803.P.SVS-0}Capr[CPTI003801])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143566> "PBac{803.P.SVS-0}Capr[CPTI003801]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143566> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143569> (PBac{803.P.SVS-0}Dys[CPTI003818])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143569> "PBac{803.P.SVS-0}Dys[CPTI003818]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143569> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143571> (PBac{802.P.SVS-2}Pxn[CPTI003897])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143571> "PBac{802.P.SVS-2}Pxn[CPTI003897]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143571> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143572> (PBac{802.P.SVS-2}Myo10A[CPTI003907])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143572> "PBac{802.P.SVS-2}Myo10A[CPTI003907]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143572> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143573> (PBac{802.P.SVS-2}msn[CPTI003908])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143573> "PBac{802.P.SVS-2}msn[CPTI003908]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143573> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143574> (PBac{802.P.SVS-2}Imp[CPTI003910])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143574> "PBac{802.P.SVS-2}Imp[CPTI003910]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143574> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143575> (PBac{802.P.SVS-2}CG4825[CPTI003911])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143575> "PBac{802.P.SVS-2}CG4825[CPTI003911]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143575> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143576> (PBac{802.P.SVS-2}Jupiter[CPTI003917])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143576> "PBac{802.P.SVS-2}Jupiter[CPTI003917]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143576> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143577> (PBac{806.LOX-SVS-2}CG42258[CPTI003923])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143577> "PBac{806.LOX-SVS-2}CG42258[CPTI003923]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143577> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143578> (PBac{806.LOX-SVS-2}SmD1[CPTI003926])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143578> "PBac{806.LOX-SVS-2}SmD1[CPTI003926]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143578> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143579> (PBac{806.LOX-SVS-2}me31B[CPTI003927])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143579> "PBac{806.LOX-SVS-2}me31B[CPTI003927]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143579> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143580> (PBac{806.LOX-SVS-2}Arpc2[CPTI003932])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143580> "PBac{806.LOX-SVS-2}Arpc2[CPTI003932]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143580> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143582> (PBac{806.LOX-SVS-2}Sema1b[CPTI003971])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143582> "PBac{806.LOX-SVS-2}Sema1b[CPTI003971]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143582> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143584> (PBac{806.LOX-SVS-2}Nep2[CPTI003993])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143584> "PBac{806.LOX-SVS-2}Nep2[CPTI003993]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143584> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143586> (PBac{806.LOX-SVS-2}CG2003[CPTI004022])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143586> "PBac{806.LOX-SVS-2}CG2003[CPTI004022]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143586> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143587> (PBac{806.LOX-SVS-2}CG8036[CPTI004041])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143587> "PBac{806.LOX-SVS-2}CG8036[CPTI004041]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143587> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143590> (PBac{806.LOX-SVS-2}AdenoK[CPTI004071])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143590> "PBac{806.LOX-SVS-2}AdenoK[CPTI004071]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143590> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143591> (PBac{806.LOX-SVS-2}Men[CPTI004074])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143591> "PBac{806.LOX-SVS-2}Men[CPTI004074]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143591> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143592> (PBac{806.LOX-SVS-2}bun[CPTI004088])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143592> "PBac{806.LOX-SVS-2}bun[CPTI004088]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143592> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143593> (PBac{806.LOX-SVS-2}Swip-1[CPTI004094])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143593> "PBac{806.LOX-SVS-2}Swip-1[CPTI004094]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143593> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143595> (PBac{806.LOX-SVS-2}gish[CPTI004113])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143595> "PBac{806.LOX-SVS-2}gish[CPTI004113]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143595> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143596> (PBac{806.LOX-SVS-2}Imp[CPTI004117])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143596> "PBac{806.LOX-SVS-2}Imp[CPTI004117]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143596> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143597> (PBac{806.LOX-SVS-2}if[CPTI004152])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143597> "PBac{806.LOX-SVS-2}if[CPTI004152]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143597> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143599> (PBac{806.LOX-SVS-2}trol[CPTI004167])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143599> "PBac{806.LOX-SVS-2}trol[CPTI004167]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143599> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143603> (PBac{768.FSVS-0}Mondo[CPTI003395])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143603> "PBac{768.FSVS-0}Mondo[CPTI003395]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143603> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143604> (PBac{768.FSVS-0}Tis11[CPTI003403])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143604> "PBac{768.FSVS-0}Tis11[CPTI003403]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143604> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143605> (PBac{768.FSVS-0}CtsB1[CPTI003407])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143605> "PBac{768.FSVS-0}CtsB1[CPTI003407]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143605> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143607> (PBac{768.FSVS-0}HisRS[CPTI003426])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143607> "PBac{768.FSVS-0}HisRS[CPTI003426]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143607> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143608> (PBac{768.FSVS-0}UGP[CPTI003431])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143608> "PBac{768.FSVS-0}UGP[CPTI003431]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143608> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143609> (PBac{768.FSVS-0}CG43427[CPTI003445])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143609> "PBac{768.FSVS-0}CG43427[CPTI003445]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143609> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143610> (PBac{768.FSVS-0}CPTI003467)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143610> "PBac{768.FSVS-0}CPTI003467"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143610> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143612> (PBac{768.FSVS-0}CPTI003476)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143612> "PBac{768.FSVS-0}CPTI003476"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143612> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143613> (PBac{768.FSVS-0}fz2[CPTI003490])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143613> "PBac{768.FSVS-0}fz2[CPTI003490]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143613> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143614> (PBac{768.FSVS-0}Fim[CPTI003498])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143614> "PBac{768.FSVS-0}Fim[CPTI003498]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143614> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143615> (PBac{768.FSVS-0}eIF5B[CPTI003501])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143615> "PBac{768.FSVS-0}eIF5B[CPTI003501]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143615> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143616> (PBac{768.FSVS-0}Papss[CPTI003504])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143616> "PBac{768.FSVS-0}Papss[CPTI003504]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143616> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143617> (PBac{768.FSVS-0}CG42748[CPTI003505])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143617> "PBac{768.FSVS-0}CG42748[CPTI003505]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143617> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143618> (PBac{768.FSVS-0}path[CPTI003513])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143618> "PBac{768.FSVS-0}path[CPTI003513]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143618> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143619> (PBac{768.FSVS-0}BicD[CPTI003522])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143619> "PBac{768.FSVS-0}BicD[CPTI003522]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143619> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143621> (PBac{768.FSVS-0}Nlp[CPTI003532])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143621> "PBac{768.FSVS-0}Nlp[CPTI003532]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143621> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143622> (PBac{768.FSVS-0}Pat1[CPTI003542])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143622> "PBac{768.FSVS-0}Pat1[CPTI003542]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143622> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143624> (PBac{768.FSVS-0}mbl[CPTI003555])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143624> "PBac{768.FSVS-0}mbl[CPTI003555]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143624> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143627> (PBac{768.FSVS-0}MEP-1[CPTI003583])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143627> "PBac{768.FSVS-0}MEP-1[CPTI003583]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143627> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143628> (PBac{768.FSVS-0}piwi[CPTI003588])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143628> "PBac{768.FSVS-0}piwi[CPTI003588]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143628> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143629> (PBac{768.FSVS-0}Sep1[CPTI003593])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143629> "PBac{768.FSVS-0}Sep1[CPTI003593]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143629> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143630> (PBac{768.FSVS-0}Cam[CPTI003597])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143630> "PBac{768.FSVS-0}Cam[CPTI003597]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143630> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143631> (PBac{768.FSVS-0}Alh[CPTI003598])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143631> "PBac{768.FSVS-0}Alh[CPTI003598]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143631> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143632> (PBac{768.FSVS-0}larp[CPTI003605])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143632> "PBac{768.FSVS-0}larp[CPTI003605]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143632> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143633> (PBac{768.FSVS-0}dsx-c73A[CPTI003606])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143633> "PBac{768.FSVS-0}dsx-c73A[CPTI003606]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143633> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143637> (PBac{768.FSVS-0}kis[CPTI003615])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143637> "PBac{768.FSVS-0}kis[CPTI003615]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143637> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143639> (PBac{768.FSVS-0}CG6398[CPTI003623])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143639> "PBac{768.FSVS-0}CG6398[CPTI003623]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143639> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143641> (PBac{768.FSVS-0}shot[CPTI003653])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143641> "PBac{768.FSVS-0}shot[CPTI003653]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143641> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143642> (PBac{768.FSVS-0}CG10512[CPTI003660])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143642> "PBac{768.FSVS-0}CG10512[CPTI003660]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143642> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143643> (PBac{768.FSVS-0}mRpS9[CPTI003663])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143643> "PBac{768.FSVS-0}mRpS9[CPTI003663]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143643> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143644> (PBac{768.FSVS-0}Myo10A[CPTI003664])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143644> "PBac{768.FSVS-0}Myo10A[CPTI003664]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143644> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143645> (PBac{768.FSVS-0}Hrb98DE[CPTI003669])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143645> "PBac{768.FSVS-0}Hrb98DE[CPTI003669]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143645> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143647> (PBac{768.FSVS-0}ss[CPTI003674])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143647> "PBac{768.FSVS-0}ss[CPTI003674]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143647> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143648> (PBac{768.FSVS-0}Npl4[CPTI003678])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143648> "PBac{768.FSVS-0}Npl4[CPTI003678]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143648> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143649> (PBac{768.FSVS-0}CG30463[CPTI003680])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143649> "PBac{768.FSVS-0}CG30463[CPTI003680]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143649> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143650> (PBac{768.FSVS-0}mts[CPTI003684])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143650> "PBac{768.FSVS-0}mts[CPTI003684]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143650> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143653> (PBac{CPTI-un}Dsp1[CPTI002844])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143653> "PBac{CPTI-un}Dsp1[CPTI002844]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143653> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143654> (PBac{CPTI-un}kis[CPTI002847])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143654> "PBac{CPTI-un}kis[CPTI002847]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143654> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143655> (PBac{CPTI-un}hth[CPTI002852])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143655> "PBac{CPTI-un}hth[CPTI002852]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143655> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143656> (PBac{CPTI-un}pum[CPTI002853])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143656> "PBac{CPTI-un}pum[CPTI002853]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143656> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143657> (PBac{CPTI-un}dlg1[CPTI002860])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143657> "PBac{CPTI-un}dlg1[CPTI002860]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143657> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143658> (PBac{754.P.FSVS-0}mge[CPTI002870])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143658> "PBac{754.P.FSVS-0}mge[CPTI002870]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143658> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143659> (PBac{768.FSVS-0}GILT1[CPTI002873])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143659> "PBac{768.FSVS-0}GILT1[CPTI002873]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143659> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143661> (PBac{754.P.FSVS-0}RpL41[CPTI002881])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143661> "PBac{754.P.FSVS-0}RpL41[CPTI002881]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143661> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143662> (PBac{754.P.FSVS-0}Cam[CPTI002888])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143662> "PBac{754.P.FSVS-0}Cam[CPTI002888]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143662> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143663> (PBac{754.P.FSVS-0}tmod[CPTI002889])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143663> "PBac{754.P.FSVS-0}tmod[CPTI002889]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143663> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143664> (PBac{754.P.FSVS-0}Sh3beta[CPTI002892])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143664> "PBac{754.P.FSVS-0}Sh3beta[CPTI002892]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143664> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143665> (PBac{754.P.FSVS-0}Sec61alpha[CPTI002894])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143665> "PBac{754.P.FSVS-0}Sec61alpha[CPTI002894]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143665> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143666> (PBac{754.P.FSVS-0}Lasp[CPTI002905])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143666> "PBac{754.P.FSVS-0}Lasp[CPTI002905]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143666> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143667> (PBac{754.P.FSVS-0}zip[CPTI002907])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143667> "PBac{754.P.FSVS-0}zip[CPTI002907]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143667> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143668> (PBac{754.P.FSVS-0}CG32066[CPTI002910])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143668> "PBac{754.P.FSVS-0}CG32066[CPTI002910]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143668> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143669> (PBac{754.P.FSVS-0}CG12163[CPTI002924])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143669> "PBac{754.P.FSVS-0}CG12163[CPTI002924]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143669> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143670> (PBac{754.P.FSVS-0}Top1[CPTI002927])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143670> "PBac{754.P.FSVS-0}Top1[CPTI002927]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143670> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143671> (PBac{754.P.FSVS-0}Caper[CPTI002939])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143671> "PBac{754.P.FSVS-0}Caper[CPTI002939]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143671> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143673> (PBac{768.FSVS-0}gammaCOP[CPTI002986])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143673> "PBac{768.FSVS-0}gammaCOP[CPTI002986]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143673> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143674> (PBac{754.P.FSVS-0}Mapmodulin[CPTI003020])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143674> "PBac{754.P.FSVS-0}Mapmodulin[CPTI003020]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143674> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143675> (PBac{754.P.FSVS-0}Indy[CPTI003049])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143675> "PBac{754.P.FSVS-0}Indy[CPTI003049]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143675> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143676> (PBac{754.P.FSVS-0}srl[CPTI003074])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143676> "PBac{754.P.FSVS-0}srl[CPTI003074]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143676> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143677> (PBac{754.P.FSVS-0}Tis11[CPTI003080])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143677> "PBac{754.P.FSVS-0}Tis11[CPTI003080]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143677> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143678> (PBac{754.P.FSVS-0}osa[CPTI003089])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143678> "PBac{754.P.FSVS-0}osa[CPTI003089]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143678> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143680> (PBac{754.P.FSVS-0}Rbfox1[CPTI003100])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143680> "PBac{754.P.FSVS-0}Rbfox1[CPTI003100]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143680> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143681> (PBac{754.P.FSVS-0}CPTI003116)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143681> "PBac{754.P.FSVS-0}CPTI003116"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143681> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143685> (PBac{754.P.FSVS-0}msk[CPTI003146])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143685> "PBac{754.P.FSVS-0}msk[CPTI003146]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143685> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143686> (PBac{754.P.FSVS-0}mip130[CPTI003151])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143686> "PBac{754.P.FSVS-0}mip130[CPTI003151]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143686> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143687> (PBac{754.P.FSVS-0}nudC[CPTI003161])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143687> "PBac{754.P.FSVS-0}nudC[CPTI003161]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143687> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143688> (PBac{754.P.FSVS-0}ATPsynO[CPTI003171])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143688> "PBac{754.P.FSVS-0}ATPsynO[CPTI003171]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143688> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143689> (PBac{754.P.FSVS-0}CG12163[CPTI003173])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143689> "PBac{754.P.FSVS-0}CG12163[CPTI003173]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143689> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143691> (PBac{754.P.FSVS-0}Clic[CPTI003213])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143691> "PBac{754.P.FSVS-0}Clic[CPTI003213]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143691> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143692> (PBac{754.P.FSVS-0}fax[CPTI003230])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143692> "PBac{754.P.FSVS-0}fax[CPTI003230]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143692> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143693> (PBac{754.P.FSVS-0}Cip4[CPTI003231])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143693> "PBac{754.P.FSVS-0}Cip4[CPTI003231]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143693> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143694> (PBac{754.P.FSVS-0}Sytbeta[CPTI003250])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143694> "PBac{754.P.FSVS-0}Sytbeta[CPTI003250]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143694> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143695> (PBac{754.P.FSVS-0}larp[CPTI003267])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143695> "PBac{754.P.FSVS-0}larp[CPTI003267]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143695> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143697> (PBac{754.P.FSVS-0}rg[CPTI003323])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143697> "PBac{754.P.FSVS-0}rg[CPTI003323]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143697> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143698> (PBac{754.P.FSVS-0}Map205[CPTI003339])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143698> "PBac{754.P.FSVS-0}Map205[CPTI003339]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143698> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143699> (PBac{754.P.FSVS-0}CG1640[CPTI003349])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143699> "PBac{754.P.FSVS-0}CG1640[CPTI003349]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143699> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143702> (PBac{769.FSVS-1}Fas3[CPTI002622])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143702> "PBac{769.FSVS-1}Fas3[CPTI002622]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143702> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143703> (PBac{769.FSVS-1}CCT7[CPTI002629])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143703> "PBac{769.FSVS-1}CCT7[CPTI002629]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143703> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143704> (PBac{769.FSVS-1}CG31997[CPTI002632])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143704> "PBac{769.FSVS-1}CG31997[CPTI002632]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143704> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143705> (PBac{769.FSVS-1}CPTI002633)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143705> "PBac{769.FSVS-1}CPTI002633"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143705> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143706> (PBac{769.FSVS-1}ORMDL[CPTI002636])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143706> "PBac{769.FSVS-1}ORMDL[CPTI002636]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143706> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143708> (PBac{769.FSVS-1}CG11576[CPTI002646])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143708> "PBac{769.FSVS-1}CG11576[CPTI002646]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143708> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143711> (PBac{769.FSVS-1}sm[CPTI002653])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143711> "PBac{769.FSVS-1}sm[CPTI002653]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143711> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143716> (PBac{768.FSVS-0}sm[CPTI002712])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143716> "PBac{768.FSVS-0}sm[CPTI002712]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143716> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143718> (PBac{754.P.FSVS-0}CG6084[CPTI002728])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143718> "PBac{754.P.FSVS-0}CG6084[CPTI002728]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143718> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143720> (PBac{754.P.FSVS-0}emc[CPTI002740])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143720> "PBac{754.P.FSVS-0}emc[CPTI002740]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143720> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143721> (PBac{754.P.FSVS-0}tau[CPTI002745])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143721> "PBac{754.P.FSVS-0}tau[CPTI002745]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143721> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143722> (PBac{754.P.FSVS-0}Ptpmeg2[CPTI002750])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143722> "PBac{754.P.FSVS-0}Ptpmeg2[CPTI002750]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143722> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143723> (PBac{754.P.FSVS-0}bel[CPTI002755])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143723> "PBac{754.P.FSVS-0}bel[CPTI002755]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143723> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143725> (PBac{CPTI-un}PRAS40[CPTI002758])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143725> "PBac{CPTI-un}PRAS40[CPTI002758]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143725> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143726> (PBac{CPTI-un}Men[CPTI002759])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143726> "PBac{CPTI-un}Men[CPTI002759]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143726> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143727> (PBac{CPTI-un}crp[CPTI002760])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143727> "PBac{CPTI-un}crp[CPTI002760]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143727> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143728> (PBac{CPTI-un}Atpalpha[CPTI002761])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143728> "PBac{CPTI-un}Atpalpha[CPTI002761]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143728> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143730> (PBac{CPTI-un}Tlk[CPTI002768])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143730> "PBac{CPTI-un}Tlk[CPTI002768]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143730> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143732> (PBac{754.P.FSVS-0}Npl4[CPTI002772])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143732> "PBac{754.P.FSVS-0}Npl4[CPTI002772]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143732> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143733> (PBac{754.P.FSVS-0}tmod[CPTI002773])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143733> "PBac{754.P.FSVS-0}tmod[CPTI002773]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143733> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143734> (PBac{754.P.FSVS-0}fax[CPTI002774])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143734> "PBac{754.P.FSVS-0}fax[CPTI002774]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143734> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143735> (PBac{768.FSVS-0}CG11030[CPTI002785])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143735> "PBac{768.FSVS-0}CG11030[CPTI002785]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143735> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143736> (PBac{768.FSVS-0}Cat[CPTI002786])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143736> "PBac{768.FSVS-0}Cat[CPTI002786]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143736> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143737> (PBac{754.P.FSVS-0}Amph[CPTI002789])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143737> "PBac{754.P.FSVS-0}Amph[CPTI002789]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143737> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143738> (PBac{754.P.FSVS-0}CG1640[CPTI002793])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143738> "PBac{754.P.FSVS-0}CG1640[CPTI002793]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143738> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143739> (PBac{754.P.FSVS-0}shep[CPTI002796])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143739> "PBac{754.P.FSVS-0}shep[CPTI002796]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143739> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143741> (PBac{754.P.FSVS-0}Gli[CPTI002805])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143741> "PBac{754.P.FSVS-0}Gli[CPTI002805]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143741> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143742> (PBac{754.P.FSVS-0}CtsB1[CPTI002807])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143742> "PBac{754.P.FSVS-0}CtsB1[CPTI002807]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143742> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143743> (PBac{754.P.FSVS-0}hth[CPTI002808])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143743> "PBac{754.P.FSVS-0}hth[CPTI002808]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143743> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143745> (PBac{754.P.FSVS-0}CPTI002817)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143745> "PBac{754.P.FSVS-0}CPTI002817"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143745> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143746> (PBac{754.P.FSVS-0}Pop2[CPTI002818])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143746> "PBac{754.P.FSVS-0}Pop2[CPTI002818]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143746> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143747> (PBac{754.P.FSVS-0}CG7837[CPTI002822])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143747> "PBac{754.P.FSVS-0}CG7837[CPTI002822]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143747> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143748> (PBac{754.P.FSVS-0}stv[CPTI002824])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143748> "PBac{754.P.FSVS-0}stv[CPTI002824]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143748> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143749> (PBac{754.P.FSVS-0}sm[CPTI002828])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143749> "PBac{754.P.FSVS-0}sm[CPTI002828]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143749> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143750> (PBac{754.P.FSVS-0}mask[CPTI002830])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143750> "PBac{754.P.FSVS-0}mask[CPTI002830]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143750> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143751> (PBac{768.FSVS-0}CG1910[CPTI002226])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143751> "PBac{768.FSVS-0}CG1910[CPTI002226]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143751> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143752> (PBac{768.FSVS-0}Ald[CPTI002230])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143752> "PBac{768.FSVS-0}Ald[CPTI002230]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143752> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143753> (PBac{754.P.FSVS-0}tsr[CPTI002237])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143753> "PBac{754.P.FSVS-0}tsr[CPTI002237]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143753> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143754> (PBac{754.P.FSVS-0}Tm1[CPTI002243])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143754> "PBac{754.P.FSVS-0}Tm1[CPTI002243]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143754> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143755> (PBac{754.P.FSVS-0}drk[CPTI002249])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143755> "PBac{754.P.FSVS-0}drk[CPTI002249]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143755> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143756> (PBac{754.P.FSVS-0}CG6293[CPTI002251])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143756> "PBac{754.P.FSVS-0}CG6293[CPTI002251]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143756> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143757> (PBac{681.P.FSVS-1}Dys[CPTI002256])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143757> "PBac{681.P.FSVS-1}Dys[CPTI002256]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143757> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143758> (PBac{681.P.FSVS-1}flw[CPTI002264])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143758> "PBac{681.P.FSVS-1}flw[CPTI002264]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143758> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143759> (PBac{681.P.FSVS-1}kst[CPTI002266])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143759> "PBac{681.P.FSVS-1}kst[CPTI002266]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143759> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143763> (PBac{681.P.FSVS-1}vimar[CPTI002285])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143763> "PBac{681.P.FSVS-1}vimar[CPTI002285]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143763> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143764> (PBac{681.P.FSVS-1}CG4038[CPTI002287])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143764> "PBac{681.P.FSVS-1}CG4038[CPTI002287]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143764> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143765> (PBac{681.P.FSVS-1}Vap33[CPTI002292])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143765> "PBac{681.P.FSVS-1}Vap33[CPTI002292]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143765> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143766> (PBac{681.P.FSVS-1}MFS3[CPTI002305])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143766> "PBac{681.P.FSVS-1}MFS3[CPTI002305]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143766> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143767> (PBac{544.SVS-1}Mdh2[CPTI002315])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143767> "PBac{544.SVS-1}Mdh2[CPTI002315]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143767> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143769> (PBac{544.SVS-1}alpha-Cat[CPTI002342])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143769> "PBac{544.SVS-1}alpha-Cat[CPTI002342]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143769> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143770> (PBac{544.SVS-1}AGO2[CPTI002343])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143770> "PBac{544.SVS-1}AGO2[CPTI002343]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143770> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143774> (PBac{544.SVS-1}stai[CPTI002399])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143774> "PBac{544.SVS-1}stai[CPTI002399]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143774> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143775> (PBac{544.SVS-1}Fer1HCH[CPTI002401])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143775> "PBac{544.SVS-1}Fer1HCH[CPTI002401]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143775> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143776> (PBac{544.SVS-1}heph[CPTI002406])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143776> "PBac{544.SVS-1}heph[CPTI002406]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143776> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143779> (PBac{544.SVS-1}CG11920[CPTI002443])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143779> "PBac{544.SVS-1}CG11920[CPTI002443]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143779> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143780> (PBac{544.SVS-1}tkv[CPTI002487])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143780> "PBac{544.SVS-1}tkv[CPTI002487]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143780> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143781> (PBac{681.P.FSVS-1}larp[CPTI002498])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143781> "PBac{681.P.FSVS-1}larp[CPTI002498]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143781> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143782> (PBac{681.P.FSVS-1}Cda4[CPTI002501])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143782> "PBac{681.P.FSVS-1}Cda4[CPTI002501]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143782> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143784> (PBac{681.P.FSVS-1}Smr[CPTI002514])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143784> "PBac{681.P.FSVS-1}Smr[CPTI002514]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143784> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143786> (PBac{681.P.FSVS-1}Lsd-2[CPTI002546])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143786> "PBac{681.P.FSVS-1}Lsd-2[CPTI002546]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143786> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143787> (PBac{754.P.FSVS-0}Dek[CPTI002560])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143787> "PBac{754.P.FSVS-0}Dek[CPTI002560]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143787> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143788> (PBac{754.P.FSVS-0}eIF1A[CPTI002562])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143788> "PBac{754.P.FSVS-0}eIF1A[CPTI002562]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143788> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143789> (PBac{754.P.FSVS-0}Pkn[CPTI002565])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143789> "PBac{754.P.FSVS-0}Pkn[CPTI002565]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143789> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143790> (PBac{754.P.FSVS-0}dlg1[CPTI002569])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143790> "PBac{754.P.FSVS-0}dlg1[CPTI002569]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143790> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143791> (PBac{754.P.FSVS-0}eIF4G1[CPTI002576])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143791> "PBac{754.P.FSVS-0}eIF4G1[CPTI002576]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143791> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143792> (PBac{754.P.FSVS-0}Sdc[CPTI002578])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143792> "PBac{754.P.FSVS-0}Sdc[CPTI002578]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143792> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143793> (PBac{754.P.FSVS-0}heph[CPTI002584])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143793> "PBac{754.P.FSVS-0}heph[CPTI002584]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143793> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143795> (PBac{769.FSVS-1}Lac[CPTI002601])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143795> "PBac{769.FSVS-1}Lac[CPTI002601]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143795> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143798> (PBac{769.FSVS-1}CG42748[CPTI002614])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143798> "PBac{769.FSVS-1}CG42748[CPTI002614]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143798> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143802> (PBac{681.P.FSVS-1}CTPsyn[CPTI001881])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143802> "PBac{681.P.FSVS-1}CTPsyn[CPTI001881]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143802> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143803> (PBac{681.P.FSVS-1}MCU[CPTI001883])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143803> "PBac{681.P.FSVS-1}MCU[CPTI001883]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143803> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143804> (PBac{681.P.FSVS-1}CG8213[CPTI001902])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143804> "PBac{681.P.FSVS-1}CG8213[CPTI001902]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143804> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143806> (PBac{681.P.FSVS-1}CG6583[CPTI001919])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143806> "PBac{681.P.FSVS-1}CG6583[CPTI001919]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143806> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143807> (PBac{681.P.FSVS-1}CPTI001951)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143807> "PBac{681.P.FSVS-1}CPTI001951"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143807> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143808> (PBac{681.P.FSVS-1}shot[CPTI001962])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143808> "PBac{681.P.FSVS-1}shot[CPTI001962]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143808> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143811> (PBac{681.P.FSVS-1}Nrx-IV[CPTI001977])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143811> "PBac{681.P.FSVS-1}Nrx-IV[CPTI001977]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143811> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143812> (PBac{681.P.FSVS-1}MTA1-like[CPTI001990])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143812> "PBac{681.P.FSVS-1}MTA1-like[CPTI001990]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143812> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143813> (PBac{681.P.FSVS-1}mbl[CPTI001991])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143813> "PBac{681.P.FSVS-1}mbl[CPTI001991]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143813> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143814> (PBac{681.P.FSVS-1}CG15628[CPTI001993])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143814> "PBac{681.P.FSVS-1}CG15628[CPTI001993]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143814> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143815> (PBac{681.P.FSVS-1}PMCA[CPTI001995])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143815> "PBac{681.P.FSVS-1}PMCA[CPTI001995]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143815> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143816> (PBac{681.P.FSVS-1}CG3777[CPTI001997])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143816> "PBac{681.P.FSVS-1}CG3777[CPTI001997]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143816> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143817> (PBac{681.P.FSVS-1}Rack1[CPTI001998])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143817> "PBac{681.P.FSVS-1}Rack1[CPTI001998]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143817> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143819> (PBac{681.P.FSVS-1}lost[CPTI002016])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143819> "PBac{681.P.FSVS-1}lost[CPTI002016]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143819> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143820> (PBac{681.P.FSVS-1}gish[CPTI002023])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143820> "PBac{681.P.FSVS-1}gish[CPTI002023]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143820> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143821> (PBac{681.P.FSVS-1}fwe[CPTI002032])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143821> "PBac{681.P.FSVS-1}fwe[CPTI002032]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143821> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143822> (PBac{681.P.FSVS-1}CG10984[CPTI002035])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143822> "PBac{681.P.FSVS-1}CG10984[CPTI002035]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143822> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143823> (PBac{681.P.FSVS-1}trol[CPTI002049])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143823> "PBac{681.P.FSVS-1}trol[CPTI002049]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143823> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143825> (PBac{681.P.FSVS-1}step[CPTI002054])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143825> "PBac{681.P.FSVS-1}step[CPTI002054]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143825> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143826> (PBac{681.P.FSVS-1}PH4alphaEFB[CPTI002064])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143826> "PBac{681.P.FSVS-1}PH4alphaEFB[CPTI002064]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143826> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143828> (PBac{681.P.FSVS-1}Gprk2[CPTI002085])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143828> "PBac{681.P.FSVS-1}Gprk2[CPTI002085]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143828> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143829> (PBac{681.P.FSVS-1}U2af50[CPTI002092])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143829> "PBac{681.P.FSVS-1}U2af50[CPTI002092]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143829> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143830> (PBac{681.P.FSVS-1}Mlc1[CPTI002102])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143830> "PBac{681.P.FSVS-1}Mlc1[CPTI002102]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143830> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143831> (PBac{681.P.FSVS-1}qkr58E-1[CPTI002103])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143831> "PBac{681.P.FSVS-1}qkr58E-1[CPTI002103]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143831> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143832> (PBac{544.SVS-1}CG10602[CPTI002118])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143832> "PBac{544.SVS-1}CG10602[CPTI002118]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143832> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143833> (PBac{544.SVS-1}pip[CPTI002126])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143833> "PBac{544.SVS-1}pip[CPTI002126]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143833> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143834> (PBac{544.SVS-1}HnRNP-K[CPTI002129])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143834> "PBac{544.SVS-1}HnRNP-K[CPTI002129]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143834> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143836> (PBac{544.SVS-1}CG30463[CPTI002151])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143836> "PBac{544.SVS-1}CG30463[CPTI002151]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143836> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143837> (PBac{544.SVS-1}NetA[CPTI002152])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143837> "PBac{544.SVS-1}NetA[CPTI002152]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143837> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143839> (PBac{681.P.FSVS-1}CG7920[CPTI002166])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143839> "PBac{681.P.FSVS-1}CG7920[CPTI002166]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143839> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143840> (PBac{754.P.FSVS-0}CBP[CPTI002181])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143840> "PBac{754.P.FSVS-0}CBP[CPTI002181]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143840> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143841> (PBac{769.FSVS-1}eIF4B[CPTI002187])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143841> "PBac{769.FSVS-1}eIF4B[CPTI002187]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143841> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143843> (PBac{769.FSVS-1}Rtnl1[CPTI002200])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143843> "PBac{769.FSVS-1}Rtnl1[CPTI002200]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143843> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143844> (PBac{754.P.FSVS-0}Hsc70Cb[CPTI002201])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143844> "PBac{754.P.FSVS-0}Hsc70Cb[CPTI002201]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143844> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143847> (PBac{769.FSVS-1}Pde11[CPTI002206])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143847> "PBac{769.FSVS-1}Pde11[CPTI002206]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143847> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143848> (PBac{769.FSVS-1}ade5[CPTI002207])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143848> "PBac{769.FSVS-1}ade5[CPTI002207]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143848> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143849> (PBac{768.FSVS-0}Tudor-SN[CPTI002221])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143849> "PBac{768.FSVS-0}Tudor-SN[CPTI002221]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143849> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143850> (PBac{768.FSVS-0}nonA[CPTI002223])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143850> "PBac{768.FSVS-0}nonA[CPTI002223]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143850> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143851> (PBac{681.P.FSVS-1}nrv2[CPTI001455])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143851> "PBac{681.P.FSVS-1}nrv2[CPTI001455]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143851> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143852> (PBac{681.P.FSVS-1}Spn[CPTI001457])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143852> "PBac{681.P.FSVS-1}Spn[CPTI001457]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143852> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143853> (PBac{681.P.FSVS-1}cpx[CPTI001473])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143853> "PBac{681.P.FSVS-1}cpx[CPTI001473]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143853> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143854> (PBac{681.P.FSVS-1}Sap130[CPTI001478])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143854> "PBac{681.P.FSVS-1}Sap130[CPTI001478]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143854> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143855> (PBac{681.P.FSVS-1}Sema2a[CPTI001481])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143855> "PBac{681.P.FSVS-1}Sema2a[CPTI001481]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143855> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143856> (PBac{681.P.FSVS-1}CPTI001488)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143856> "PBac{681.P.FSVS-1}CPTI001488"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143856> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143857> (PBac{681.P.FSVS-1}Usp10[CPTI001495])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143857> "PBac{681.P.FSVS-1}Usp10[CPTI001495]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143857> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143858> (PBac{681.P.FSVS-1}Sema2a[CPTI001506])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143858> "PBac{681.P.FSVS-1}Sema2a[CPTI001506]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143858> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143860> (PBac{681.P.FSVS-1}bel[CPTI001515])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143860> "PBac{681.P.FSVS-1}bel[CPTI001515]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143860> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143861> (PBac{681.P.FSVS-1}seq[CPTI001516])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143861> "PBac{681.P.FSVS-1}seq[CPTI001516]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143861> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143862> (PBac{681.P.FSVS-1}CPTI001527)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143862> "PBac{681.P.FSVS-1}CPTI001527"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143862> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143863> (PBac{681.P.FSVS-1}Pka-R2[CPTI001580])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143863> "PBac{681.P.FSVS-1}Pka-R2[CPTI001580]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143863> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143864> (PBac{681.P.FSVS-1}CG42389[CPTI001586])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143864> "PBac{681.P.FSVS-1}CG42389[CPTI001586]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143864> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143865> (PBac{681.P.FSVS-1}hts[CPTI001589])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143865> "PBac{681.P.FSVS-1}hts[CPTI001589]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143865> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143866> (PBac{681.P.FSVS-1}spen[CPTI001595])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143866> "PBac{681.P.FSVS-1}spen[CPTI001595]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143866> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143867> (PBac{681.P.FSVS-1}tws[CPTI001600])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143867> "PBac{681.P.FSVS-1}tws[CPTI001600]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143867> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143869> (PBac{681.P.FSVS-1}olf413[CPTI001636])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143869> "PBac{681.P.FSVS-1}olf413[CPTI001636]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143869> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143870> (PBac{681.P.FSVS-1}CG9336[CPTI001654])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143870> "PBac{681.P.FSVS-1}CG9336[CPTI001654]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143870> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143871> (PBac{681.P.FSVS-1}Lsd-2[CPTI001655])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143871> "PBac{681.P.FSVS-1}Lsd-2[CPTI001655]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143871> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143872> (PBac{681.P.FSVS-1}dap[CPTI001658])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143872> "PBac{681.P.FSVS-1}dap[CPTI001658]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143872> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143873> (PBac{681.P.FSVS-1}CG11138[CPTI001659])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143873> "PBac{681.P.FSVS-1}CG11138[CPTI001659]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143873> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143874> (PBac{681.P.FSVS-1}CG16812[CPTI001660])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143874> "PBac{681.P.FSVS-1}CG16812[CPTI001660]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143874> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143875> (PBac{681.P.FSVS-1}mew[CPTI001678])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143875> "PBac{681.P.FSVS-1}mew[CPTI001678]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143875> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143876> (PBac{681.P.FSVS-1}fat-spondin[CPTI001685])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143876> "PBac{681.P.FSVS-1}fat-spondin[CPTI001685]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143876> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143877> (PBac{681.P.FSVS-1}sdk[CPTI001692])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143877> "PBac{681.P.FSVS-1}sdk[CPTI001692]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143877> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143878> (PBac{681.P.FSVS-1}Gdi[CPTI001693])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143878> "PBac{681.P.FSVS-1}Gdi[CPTI001693]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143878> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143879> (PBac{681.P.FSVS-1}cindr[CPTI001695])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143879> "PBac{681.P.FSVS-1}cindr[CPTI001695]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143879> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143880> (PBac{681.P.FSVS-1}Gdh[CPTI001709])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143880> "PBac{681.P.FSVS-1}Gdh[CPTI001709]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143880> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143881> (PBac{681.P.FSVS-1}Nrg[CPTI001714])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143881> "PBac{681.P.FSVS-1}Nrg[CPTI001714]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143881> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143883> (PBac{681.P.FSVS-1}vsg[CPTI001718])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143883> "PBac{681.P.FSVS-1}vsg[CPTI001718]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143883> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143884> (PBac{681.P.FSVS-1}kst[CPTI001728])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143884> "PBac{681.P.FSVS-1}kst[CPTI001728]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143884> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143885> (PBac{681.P.FSVS-1}Fs(2)Ket[CPTI001735])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143885> "PBac{681.P.FSVS-1}Fs(2)Ket[CPTI001735]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143885> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143886> (PBac{681.P.FSVS-1}CG9650[CPTI001740])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143886> "PBac{681.P.FSVS-1}CG9650[CPTI001740]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143886> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143890> (PBac{681.P.FSVS-1}LRR[CPTI001765])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143890> "PBac{681.P.FSVS-1}LRR[CPTI001765]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143890> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143891> (PBac{681.P.FSVS-1}dpy[CPTI001769])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143891> "PBac{681.P.FSVS-1}dpy[CPTI001769]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143891> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143892> (PBac{681.P.FSVS-1}CG31694[CPTI001771])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143892> "PBac{681.P.FSVS-1}CG31694[CPTI001771]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143892> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143893> (PBac{681.P.FSVS-1}Lamp1[CPTI001775])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143893> "PBac{681.P.FSVS-1}Lamp1[CPTI001775]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143893> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143896> (PBac{681.P.FSVS-1}CPTI001796)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143896> "PBac{681.P.FSVS-1}CPTI001796"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143896> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143897> (PBac{681.P.FSVS-1}CG6983[CPTI001802])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143897> "PBac{681.P.FSVS-1}CG6983[CPTI001802]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143897> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143898> (PBac{681.P.FSVS-1}Asph[CPTI001828])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143898> "PBac{681.P.FSVS-1}Asph[CPTI001828]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143898> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143900> (PBac{681.P.FSVS-1}Mnt[CPTI001879])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143900> "PBac{681.P.FSVS-1}Mnt[CPTI001879]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143900> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143901> (PBac{681.P.FSVS-1}PpD3[CPTI001194])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143901> "PBac{681.P.FSVS-1}PpD3[CPTI001194]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143901> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143902> (PBac{681.P.FSVS-1}arm[CPTI001198])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143902> "PBac{681.P.FSVS-1}arm[CPTI001198]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143902> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143903> (PBac{681.P.FSVS-1}N[CPTI001214])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143903> "PBac{681.P.FSVS-1}N[CPTI001214]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143903> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143904> (PBac{681.P.FSVS-1}dlp[CPTI001218])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143904> "PBac{681.P.FSVS-1}dlp[CPTI001218]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143904> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143905> (PBac{681.P.FSVS-1}drd[CPTI001223])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143905> "PBac{681.P.FSVS-1}drd[CPTI001223]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143905> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143906> (PBac{681.P.FSVS-1}Ino80[CPTI001224])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143906> "PBac{681.P.FSVS-1}Ino80[CPTI001224]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143906> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143907> (PBac{681.P.FSVS-1}stai[CPTI001234])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143907> "PBac{681.P.FSVS-1}stai[CPTI001234]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143907> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143908> (PBac{681.P.FSVS-1}CPTI001237)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143908> "PBac{681.P.FSVS-1}CPTI001237"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143908> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143911> (PBac{681.P.FSVS-1}Meltrin[CPTI001259])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143911> "PBac{681.P.FSVS-1}Meltrin[CPTI001259]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143911> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143912> (PBac{681.P.FSVS-1}ps[CPTI001261])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143912> "PBac{681.P.FSVS-1}ps[CPTI001261]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143912> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143913> (PBac{681.P.FSVS-1}Eip63E[CPTI001272])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143913> "PBac{681.P.FSVS-1}Eip63E[CPTI001272]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143913> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143914> (PBac{681.P.FSVS-1}Ten-m[CPTI001273])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143914> "PBac{681.P.FSVS-1}Ten-m[CPTI001273]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143914> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143915> (PBac{681.P.FSVS-1}Fas2[CPTI001279])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143915> "PBac{681.P.FSVS-1}Fas2[CPTI001279]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143915> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143916> (PBac{681.P.FSVS-1}mgl[CPTI001282])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143916> "PBac{681.P.FSVS-1}mgl[CPTI001282]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143916> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143917> (PBac{681.P.FSVS-1}Cam[CPTI001284])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143917> "PBac{681.P.FSVS-1}Cam[CPTI001284]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143917> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143918> (PBac{681.P.FSVS-1}PAPLA1[CPTI001288])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143918> "PBac{681.P.FSVS-1}PAPLA1[CPTI001288]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143918> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143919> (PBac{681.P.FSVS-1}Rtnl1[CPTI001291])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143919> "PBac{681.P.FSVS-1}Rtnl1[CPTI001291]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143919> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143921> (PBac{681.P.FSVS-1}kuz[CPTI001303])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143921> "PBac{681.P.FSVS-1}kuz[CPTI001303]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143921> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143922> (PBac{681.P.FSVS-1}CG11486[CPTI001306])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143922> "PBac{681.P.FSVS-1}CG11486[CPTI001306]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143922> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143923> (PBac{681.P.FSVS-1}Usp10[CPTI001308])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143923> "PBac{681.P.FSVS-1}Usp10[CPTI001308]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143923> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143924> (PBac{681.P.FSVS-1}fra[CPTI001309])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143924> "PBac{681.P.FSVS-1}fra[CPTI001309]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143924> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143925> (PBac{681.P.FSVS-1}CG17292[CPTI001313])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143925> "PBac{681.P.FSVS-1}CG17292[CPTI001313]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143925> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143926> (PBac{681.P.FSVS-1}scny[CPTI001323])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143926> "PBac{681.P.FSVS-1}scny[CPTI001323]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143926> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143927> (PBac{681.P.FSVS-1}rngo[CPTI001324])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143927> "PBac{681.P.FSVS-1}rngo[CPTI001324]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143927> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143928> (PBac{681.P.FSVS-1}Smr[CPTI001328])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143928> "PBac{681.P.FSVS-1}Smr[CPTI001328]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143928> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143929> (PBac{681.P.FSVS-1}CG17931[CPTI001330])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143929> "PBac{681.P.FSVS-1}CG17931[CPTI001330]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143929> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143930> (PBac{681.P.FSVS-1}sals[CPTI001332])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143930> "PBac{681.P.FSVS-1}sals[CPTI001332]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143930> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143931> (PBac{681.P.FSVS-1}mgl[CPTI001334])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143931> "PBac{681.P.FSVS-1}mgl[CPTI001334]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143931> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143932> (PBac{681.P.FSVS-1}mgl[CPTI001336])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143932> "PBac{681.P.FSVS-1}mgl[CPTI001336]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143932> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143934> (PBac{681.P.FSVS-1}CG42684[CPTI001341])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143934> "PBac{681.P.FSVS-1}CG42684[CPTI001341]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143934> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143935> (PBac{681.P.FSVS-1}hth[CPTI001356])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143935> "PBac{681.P.FSVS-1}hth[CPTI001356]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143935> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143936> (PBac{681.P.FSVS-1}flw[CPTI001360])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143936> "PBac{681.P.FSVS-1}flw[CPTI001360]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143936> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143941> (PBac{681.P.FSVS-1}cher[CPTI001403])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143941> "PBac{681.P.FSVS-1}cher[CPTI001403]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143941> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143942> (PBac{681.P.FSVS-1}cup[CPTI001409])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143942> "PBac{681.P.FSVS-1}cup[CPTI001409]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143942> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143943> (PBac{681.P.FSVS-1}MCU[CPTI001412])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143943> "PBac{681.P.FSVS-1}MCU[CPTI001412]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143943> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143944> (PBac{681.P.FSVS-1}qsm[CPTI001414])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143944> "PBac{681.P.FSVS-1}qsm[CPTI001414]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143944> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143945> (PBac{681.P.FSVS-1}babos[CPTI001423])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143945> "PBac{681.P.FSVS-1}babos[CPTI001423]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143945> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143946> (PBac{681.P.FSVS-1}Flo2[CPTI001427])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143946> "PBac{681.P.FSVS-1}Flo2[CPTI001427]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143946> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143948> (PBac{681.P.FSVS-1}Tsf2[CPTI001431])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143948> "PBac{681.P.FSVS-1}Tsf2[CPTI001431]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143948> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143949> (PBac{681.P.FSVS-1}PAPLA1[CPTI001450])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143949> "PBac{681.P.FSVS-1}PAPLA1[CPTI001450]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143949> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143950> (PBac{602.P.SVS-1}tral[CPTI000787])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143950> "PBac{602.P.SVS-1}tral[CPTI000787]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143950> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143951> (PBac{602.P.SVS-1}CG17839[CPTI000794])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143951> "PBac{602.P.SVS-1}CG17839[CPTI000794]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143951> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143952> (PBac{602.P.SVS-1}Sema2a[CPTI000798])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143952> "PBac{602.P.SVS-1}Sema2a[CPTI000798]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143952> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143953> (PBac{602.P.SVS-1}CPTI000808)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143953> "PBac{602.P.SVS-1}CPTI000808"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143953> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143954> (PBac{602.P.SVS-1}sdk[CPTI000812])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143954> "PBac{602.P.SVS-1}sdk[CPTI000812]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143954> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143955> (PBac{602.P.SVS-1}Fas3[CPTI000833])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143955> "PBac{602.P.SVS-1}Fas3[CPTI000833]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143955> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143956> (PBac{602.P.SVS-1}CG11486[CPTI000836])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143956> "PBac{602.P.SVS-1}CG11486[CPTI000836]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143956> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143957> (PBac{602.P.SVS-1}cher[CPTI000847])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143957> "PBac{602.P.SVS-1}cher[CPTI000847]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143957> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143958> (PBac{602.P.SVS-1}pbl[CPTI000850])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143958> "PBac{602.P.SVS-1}pbl[CPTI000850]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143958> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143959> (PBac{602.P.SVS-1}sgg[CPTI000854])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143959> "PBac{602.P.SVS-1}sgg[CPTI000854]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143959> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143960> (PBac{602.P.SVS-1}aop[CPTI000876])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143960> "PBac{602.P.SVS-1}aop[CPTI000876]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143960> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143961> (PBac{602.P.SVS-1}ATPsynbeta[CPTI000877])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143961> "PBac{602.P.SVS-1}ATPsynbeta[CPTI000877]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143961> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143962> (PBac{602.P.SVS-1}htk[CPTI000883])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143962> "PBac{602.P.SVS-1}htk[CPTI000883]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143962> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143963> (PBac{602.P.SVS-1}Fas3[CPTI000884])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143963> "PBac{602.P.SVS-1}Fas3[CPTI000884]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143963> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143964> (PBac{602.P.SVS-1}CG9650[CPTI000886])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143964> "PBac{602.P.SVS-1}CG9650[CPTI000886]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143964> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143965> (PBac{602.P.SVS-1}CPTI000902)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143965> "PBac{602.P.SVS-1}CPTI000902"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143965> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143966> (PBac{602.P.SVS-1}Unc-115a[CPTI000905])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143966> "PBac{602.P.SVS-1}Unc-115a[CPTI000905]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143966> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143967> (PBac{602.P.SVS-1}Trxr-1[CPTI000915])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143967> "PBac{602.P.SVS-1}Trxr-1[CPTI000915]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143967> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143968> (PBac{602.P.SVS-1}aop[CPTI000924])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143968> "PBac{602.P.SVS-1}aop[CPTI000924]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143968> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143969> (PBac{602.P.SVS-1}nrv1[CPTI000925])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143969> "PBac{602.P.SVS-1}nrv1[CPTI000925]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143969> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143970> (PBac{602.P.SVS-1}fl(2)d[CPTI000936])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143970> "PBac{602.P.SVS-1}fl(2)d[CPTI000936]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143970> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143971> (PBac{602.P.SVS-1}aop[CPTI000941])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143971> "PBac{602.P.SVS-1}aop[CPTI000941]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143971> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143972> (PBac{602.P.SVS-1}mgl[CPTI000943])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143972> "PBac{602.P.SVS-1}mgl[CPTI000943]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143972> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143974> (PBac{602.P.SVS-1}Gad1[CPTI000977])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143974> "PBac{602.P.SVS-1}Gad1[CPTI000977]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143974> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143975> (PBac{602.P.SVS-1}SelR[CPTI001015])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143975> "PBac{602.P.SVS-1}SelR[CPTI001015]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143975> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143976> (PBac{602.P.SVS-1}Su(Tpl)[CPTI001018])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143976> "PBac{602.P.SVS-1}Su(Tpl)[CPTI001018]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143976> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143977> (PBac{602.P.SVS-1}twin[CPTI001025])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143977> "PBac{602.P.SVS-1}twin[CPTI001025]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143977> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143978> (PBac{602.P.SVS-1}Su(Tpl)[CPTI001029])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143978> "PBac{602.P.SVS-1}Su(Tpl)[CPTI001029]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143978> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143979> (PBac{602.P.SVS-1}Pdk1[CPTI001036])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143979> "PBac{602.P.SVS-1}Pdk1[CPTI001036]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143979> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143980> (PBac{602.P.SVS-1}dally[CPTI001039])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143980> "PBac{602.P.SVS-1}dally[CPTI001039]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143980> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143981> (PBac{602.P.SVS-1}Mtor[CPTI001044])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143981> "PBac{602.P.SVS-1}Mtor[CPTI001044]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143981> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143982> (PBac{602.P.SVS-1}LRP1[CPTI001046])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143982> "PBac{602.P.SVS-1}LRP1[CPTI001046]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143982> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143983> (PBac{602.P.SVS-1}CG43740[CPTI001053])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143983> "PBac{602.P.SVS-1}CG43740[CPTI001053]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143983> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143984> (PBac{602.P.SVS-1}CG43740[CPTI001056])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143984> "PBac{602.P.SVS-1}CG43740[CPTI001056]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143984> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143985> (PBac{602.P.SVS-1}ps[CPTI001063])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143985> "PBac{602.P.SVS-1}ps[CPTI001063]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143985> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143986> (PBac{602.P.SVS-1}fl(2)d[CPTI001064])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143986> "PBac{602.P.SVS-1}fl(2)d[CPTI001064]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143986> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143987> (PBac{602.P.SVS-1}AMPdeam[CPTI001081])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143987> "PBac{602.P.SVS-1}AMPdeam[CPTI001081]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143987> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143989> (PBac{602.P.SVS-1}PAPLA1[CPTI001111])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143989> "PBac{602.P.SVS-1}PAPLA1[CPTI001111]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143989> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143990> (PBac{681.P.FSVS-1}Reep1[CPTI001117])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143990> "PBac{681.P.FSVS-1}Reep1[CPTI001117]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143990> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143991> (PBac{681.P.FSVS-1}Mi-2[CPTI001119])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143991> "PBac{681.P.FSVS-1}Mi-2[CPTI001119]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143991> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143993> (PBac{681.P.FSVS-1}Thor[CPTI001137])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143993> "PBac{681.P.FSVS-1}Thor[CPTI001137]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143993> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143994> (PBac{681.P.FSVS-1}Spred[CPTI001165])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143994> "PBac{681.P.FSVS-1}Spred[CPTI001165]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143994> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143995> (PBac{681.P.FSVS-1}Mapmodulin[CPTI001166])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143995> "PBac{681.P.FSVS-1}Mapmodulin[CPTI001166]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143995> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143996> (PBac{681.P.FSVS-1}skd[CPTI001170])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143996> "PBac{681.P.FSVS-1}skd[CPTI001170]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143996> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143998> (PBac{681.P.FSVS-1}Ten-m[CPTI001175])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143998> "PBac{681.P.FSVS-1}Ten-m[CPTI001175]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143998> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0143999> (PBac{681.P.FSVS-1}CG5059[CPTI001180])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0143999> "PBac{681.P.FSVS-1}CG5059[CPTI001180]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0143999> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144000> (PBac{602.P.SVS-1}Abl[CPTI000349])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144000> "PBac{602.P.SVS-1}Abl[CPTI000349]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144000> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144001> (PBac{602.P.SVS-1}Dek[CPTI000365])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144001> "PBac{602.P.SVS-1}Dek[CPTI000365]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144001> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144002> (PBac{602.P.SVS-1}twin[CPTI000371])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144002> "PBac{602.P.SVS-1}twin[CPTI000371]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144002> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144003> (PBac{602.P.SVS-1}hth[CPTI000378])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144003> "PBac{602.P.SVS-1}hth[CPTI000378]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144003> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144004> (PBac{602.P.SVS-1}CG6724[CPTI000379])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144004> "PBac{602.P.SVS-1}CG6724[CPTI000379]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144004> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144005> (PBac{602.P.SVS-1}Src64B[CPTI000401])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144005> "PBac{602.P.SVS-1}Src64B[CPTI000401]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144005> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144006> (PBac{602.P.SVS-1}Zasp52[CPTI000408])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144006> "PBac{602.P.SVS-1}Zasp52[CPTI000408]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144006> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144007> (PBac{602.P.SVS-1}Dek[CPTI000426])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144007> "PBac{602.P.SVS-1}Dek[CPTI000426]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144007> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144008> (PBac{602.P.SVS-1}N[CPTI000433])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144008> "PBac{602.P.SVS-1}N[CPTI000433]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144008> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144009> (PBac{602.P.SVS-1}CG6983[CPTI000442])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144009> "PBac{602.P.SVS-1}CG6983[CPTI000442]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144009> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144010> (PBac{602.P.SVS-1}dlp[CPTI000445])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144010> "PBac{602.P.SVS-1}dlp[CPTI000445]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144010> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144011> (PBac{602.P.SVS-1}Dek[CPTI000448])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144011> "PBac{602.P.SVS-1}Dek[CPTI000448]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144011> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144012> (PBac{602.P.SVS-1}CTPsyn[CPTI000453])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144012> "PBac{602.P.SVS-1}CTPsyn[CPTI000453]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144012> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144013> (PBac{602.P.SVS-1}bmm[CPTI000472])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144013> "PBac{602.P.SVS-1}bmm[CPTI000472]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144013> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144014> (PBac{602.P.SVS-1}Fas2[CPTI000483])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144014> "PBac{602.P.SVS-1}Fas2[CPTI000483]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144014> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144016> (PBac{602.P.SVS-1}RpS9[CPTI000493])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144016> "PBac{602.P.SVS-1}RpS9[CPTI000493]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144016> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144017> (PBac{602.P.SVS-1}Sema1a[CPTI000505])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144017> "PBac{602.P.SVS-1}Sema1a[CPTI000505]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144017> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144018> (PBac{602.P.SVS-1}Eaf[CPTI000560])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144018> "PBac{602.P.SVS-1}Eaf[CPTI000560]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144018> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144019> (PBac{602.P.SVS-1}Src64B[CPTI000567])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144019> "PBac{602.P.SVS-1}Src64B[CPTI000567]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144019> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144020> (PBac{602.P.SVS-1}cno[CPTI000590])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144020> "PBac{602.P.SVS-1}cno[CPTI000590]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144020> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144021> (PBac{602.P.SVS-1}Ubx[CPTI000601])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144021> "PBac{602.P.SVS-1}Ubx[CPTI000601]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144021> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144022> (PBac{602.P.SVS-1}eRF3[CPTI000609])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144022> "PBac{602.P.SVS-1}eRF3[CPTI000609]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144022> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144023> (PBac{602.P.SVS-1}ed[CPTI000616])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144023> "PBac{602.P.SVS-1}ed[CPTI000616]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144023> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144024> (PBac{602.P.SVS-1}l(1)G0320[CPTI000633])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144024> "PBac{602.P.SVS-1}l(1)G0320[CPTI000633]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144024> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144025> (PBac{602.P.SVS-1}ssp2[CPTI000635])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144025> "PBac{602.P.SVS-1}ssp2[CPTI000635]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144025> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144026> (PBac{602.P.SVS-1}grp[CPTI000640])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144026> "PBac{602.P.SVS-1}grp[CPTI000640]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144026> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144027> (PBac{602.P.SVS-1}ed[CPTI000655])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144027> "PBac{602.P.SVS-1}ed[CPTI000655]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144027> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144028> (PBac{602.P.SVS-1}CG11486[CPTI000657])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144028> "PBac{602.P.SVS-1}CG11486[CPTI000657]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144028> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144029> (PBac{602.P.SVS-1}Abl[CPTI000658])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144029> "PBac{602.P.SVS-1}Abl[CPTI000658]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144029> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144030> (PBac{602.P.SVS-1}ps[CPTI000668])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144030> "PBac{602.P.SVS-1}ps[CPTI000668]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144030> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144031> (PBac{602.P.SVS-1}Pdi[CPTI000688])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144031> "PBac{602.P.SVS-1}Pdi[CPTI000688]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144031> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144032> (PBac{602.P.SVS-1}Ubx[CPTI000694])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144032> "PBac{602.P.SVS-1}Ubx[CPTI000694]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144032> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144033> (PBac{602.P.SVS-1}CG7675[CPTI000703])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144033> "PBac{602.P.SVS-1}CG7675[CPTI000703]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144033> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144034> (PBac{602.P.SVS-1}Ptp69D[CPTI000720])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144034> "PBac{602.P.SVS-1}Ptp69D[CPTI000720]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144034> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144035> (PBac{602.P.SVS-1}nej[CPTI000727])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144035> "PBac{602.P.SVS-1}nej[CPTI000727]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144035> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144036> (PBac{602.P.SVS-1}fwe[CPTI000736])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144036> "PBac{602.P.SVS-1}fwe[CPTI000736]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144036> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144037> (PBac{602.P.SVS-1}CG5830[CPTI000737])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144037> "PBac{602.P.SVS-1}CG5830[CPTI000737]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144037> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144038> (PBac{602.P.SVS-1}htk[CPTI000739])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144038> "PBac{602.P.SVS-1}htk[CPTI000739]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144038> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144039> (PBac{602.P.SVS-1}AGO2[CPTI000743])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144039> "PBac{602.P.SVS-1}AGO2[CPTI000743]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144039> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144040> (PBac{602.P.SVS-1}CPTI000745)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144040> "PBac{602.P.SVS-1}CPTI000745"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144040> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144042> (PBac{602.P.SVS-1}Tm1[CPTI000760])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144042> "PBac{602.P.SVS-1}Tm1[CPTI000760]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144042> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144043> (PBac{602.P.SVS-1}CG34401[CPTI000762])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144043> "PBac{602.P.SVS-1}CG34401[CPTI000762]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144043> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144044> (PBac{602.P.SVS-1}CG1440[CPTI000763])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144044> "PBac{602.P.SVS-1}CG1440[CPTI000763]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144044> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144045> (PBac{602.P.SVS-1}kat80[CPTI000764])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144045> "PBac{602.P.SVS-1}kat80[CPTI000764]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144045> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144046> (PBac{602.P.SVS-1}Tsr1[CPTI000765])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144046> "PBac{602.P.SVS-1}Tsr1[CPTI000765]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144046> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144047> (PBac{602.P.SVS-1}CG3036[CPTI000774])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144047> "PBac{602.P.SVS-1}CG3036[CPTI000774]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144047> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144048> (PBac{602.P.SVS-1}Su(Tpl)[CPTI000783])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144048> "PBac{602.P.SVS-1}Su(Tpl)[CPTI000783]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144048> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144050> (PBac{602.P.SVS-1}mgl[CPTI000016])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144050> "PBac{602.P.SVS-1}mgl[CPTI000016]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144050> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144051> (PBac{602.P.SVS-1}Mi-2[CPTI000020])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144051> "PBac{602.P.SVS-1}Mi-2[CPTI000020]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144051> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144052> (PBac{602.P.SVS-1}sgg[CPTI000023])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144052> "PBac{602.P.SVS-1}sgg[CPTI000023]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144052> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144053> (PBac{602.P.SVS-1}heph[CPTI000030])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144053> "PBac{602.P.SVS-1}heph[CPTI000030]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144053> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144054> (PBac{602.P.SVS-1}kuz[CPTI000031])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144054> "PBac{602.P.SVS-1}kuz[CPTI000031]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144054> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144055> (PBac{602.P.SVS-1}CG42342[CPTI000033])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144055> "PBac{602.P.SVS-1}CG42342[CPTI000033]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144055> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144056> (PBac{602.P.SVS-1}CCT1[CPTI000037])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144056> "PBac{602.P.SVS-1}CCT1[CPTI000037]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144056> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144057> (PBac{602.P.SVS-1}Fer1HCH[CPTI000038])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144057> "PBac{602.P.SVS-1}Fer1HCH[CPTI000038]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144057> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144058> (PBac{602.P.SVS-1}Moca-cyp[CPTI000049])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144058> "PBac{602.P.SVS-1}Moca-cyp[CPTI000049]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144058> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144059> (PBac{602.P.SVS-1}Lk6[CPTI000056])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144059> "PBac{602.P.SVS-1}Lk6[CPTI000056]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144059> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144060> (PBac{602.P.SVS-1}eIF3a[CPTI000076])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144060> "PBac{602.P.SVS-1}eIF3a[CPTI000076]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144060> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144061> (PBac{602.P.SVS-1}HDAC4[CPTI000077])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144061> "PBac{602.P.SVS-1}HDAC4[CPTI000077]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144061> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144062> (PBac{602.P.SVS-1}for[CPTI000091])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144062> "PBac{602.P.SVS-1}for[CPTI000091]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144062> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144063> (PBac{602.P.SVS-1}Mi-2[CPTI000106])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144063> "PBac{602.P.SVS-1}Mi-2[CPTI000106]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144063> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144064> (PBac{602.P.SVS-1}CPTI000113)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144064> "PBac{602.P.SVS-1}CPTI000113"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144064> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144065> (PBac{602.P.SVS-1}aop[CPTI000147])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144065> "PBac{602.P.SVS-1}aop[CPTI000147]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144065> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144066> (PBac{602.P.SVS-1}glec[CPTI000155])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144066> "PBac{602.P.SVS-1}glec[CPTI000155]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144066> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144067> (PBac{602.P.SVS-1}Pax[CPTI000161])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144067> "PBac{602.P.SVS-1}Pax[CPTI000161]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144067> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144068> (PBac{602.P.SVS-1}Hrb98DE[CPTI000165])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144068> "PBac{602.P.SVS-1}Hrb98DE[CPTI000165]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144068> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144069> (PBac{602.P.SVS-1}NetB[CPTI000168])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144069> "PBac{602.P.SVS-1}NetB[CPTI000168]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144069> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144070> (PBac{602.P.SVS-1}rgn[CPTI000176])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144070> "PBac{602.P.SVS-1}rgn[CPTI000176]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144070> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144071> (PBac{602.P.SVS-1}lola[CPTI000190])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144071> "PBac{602.P.SVS-1}lola[CPTI000190]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144071> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144072> (PBac{602.P.SVS-1}tau[CPTI000194])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144072> "PBac{602.P.SVS-1}tau[CPTI000194]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144072> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144073> (PBac{602.P.SVS-1}CPTI000196)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144073> "PBac{602.P.SVS-1}CPTI000196"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144073> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144074> (PBac{602.P.SVS-1}Cse1[CPTI000199])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144074> "PBac{602.P.SVS-1}Cse1[CPTI000199]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144074> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144075> (PBac{602.P.SVS-1}Hrb98DE[CPTI000205])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144075> "PBac{602.P.SVS-1}Hrb98DE[CPTI000205]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144075> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144076> (PBac{602.P.SVS-1}dlg1[CPTI000207])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144076> "PBac{602.P.SVS-1}dlg1[CPTI000207]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144076> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144077> (PBac{602.P.SVS-1}Lk6[CPTI000216])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144077> "PBac{602.P.SVS-1}Lk6[CPTI000216]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144077> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144078> (PBac{602.P.SVS-1}Meltrin[CPTI000218])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144078> "PBac{602.P.SVS-1}Meltrin[CPTI000218]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144078> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144079> (PBac{602.P.SVS-1}Su(Tpl)[CPTI000232])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144079> "PBac{602.P.SVS-1}Su(Tpl)[CPTI000232]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144079> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144080> (PBac{602.P.SVS-1}sqd[CPTI000239])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144080> "PBac{602.P.SVS-1}sqd[CPTI000239]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144080> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144081> (PBac{602.P.SVS-1}glec[CPTI000245])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144081> "PBac{602.P.SVS-1}glec[CPTI000245]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144081> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144082> (PBac{602.P.SVS-1}otk[CPTI000252])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144082> "PBac{602.P.SVS-1}otk[CPTI000252]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144082> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144083> (PBac{602.P.SVS-1}MTA1-like[CPTI000256])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144083> "PBac{602.P.SVS-1}MTA1-like[CPTI000256]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144083> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144084> (PBac{602.P.SVS-1}stwl[CPTI000263])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144084> "PBac{602.P.SVS-1}stwl[CPTI000263]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144084> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144085> (PBac{602.P.SVS-1}JIL-1[CPTI000274])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144085> "PBac{602.P.SVS-1}JIL-1[CPTI000274]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144085> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144086> (PBac{602.P.SVS-1}Ced-12[CPTI000286])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144086> "PBac{602.P.SVS-1}Ced-12[CPTI000286]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144086> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144087> (PBac{602.P.SVS-1}tapas[CPTI000298])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144087> "PBac{602.P.SVS-1}tapas[CPTI000298]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144087> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144088> (PBac{602.P.SVS-1}Got1[CPTI000303])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144088> "PBac{602.P.SVS-1}Got1[CPTI000303]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144088> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144089> (PBac{602.P.SVS-1}chrb[CPTI000318])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144089> "PBac{602.P.SVS-1}chrb[CPTI000318]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144089> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144090> (PBac{602.P.SVS-1}Ankle2[CPTI000326])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144090> "PBac{602.P.SVS-1}Ankle2[CPTI000326]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144090> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144091> (PBac{602.P.SVS-1}CPTI000328)
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144091> "PBac{602.P.SVS-1}CPTI000328"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144091> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144092> (PBac{602.P.SVS-1}CG32683[CPTI000330])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144092> "PBac{602.P.SVS-1}CG32683[CPTI000330]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144092> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144093> (PBac{602.P.SVS-1}mbc[CPTI000332])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144093> "PBac{602.P.SVS-1}mbc[CPTI000332]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144093> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144094> (PBac{602.P.SVS-1}Uhg1[CPTI000335])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144094> "PBac{602.P.SVS-1}Uhg1[CPTI000335]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144094> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144095> (PBac{602.P.SVS-1}sdk[CPTI000337])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144095> "PBac{602.P.SVS-1}sdk[CPTI000337]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144095> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144096> (PBac{602.P.SVS-1}CG33158[CPTI000340])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144096> "PBac{602.P.SVS-1}CG33158[CPTI000340]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144096> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0144097> (PBac{602.P.SVS-1}CG16812[CPTI000342])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0144097> "PBac{602.P.SVS-1}CG16812[CPTI000342]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0144097> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBti0145066> (PBac{602.P.SVS-1}l(2)35Be[CPTI000130])
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBti0145066> "PBac{602.P.SVS-1}l(2)35Be[CPTI000130]"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBti0145066> <http://purl.obolibrary.org/obo/SO_0000400>)
 
 
 ############################
