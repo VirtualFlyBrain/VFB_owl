@@ -1,317 +1,156 @@
-Prefix: : <http://virtualflybrain.org/reports/>
-Prefix: owl: <http://www.w3.org/2002/07/owl#>
-Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-Prefix: xml: <http://www.w3.org/XML/1998/namespace>
-Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix(:=<http://virtualflybrain.org/owl/Aso2014#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Aso2014>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100232>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100234>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100238>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100239>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100240>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100242>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100246>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110101>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111012>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030930>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030931>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030932>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030933>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030934>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030935>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030936>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030937>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030938>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030939>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030940>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030941>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030942>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030943>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030944>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030945>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030946>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 
 
 
-Ontology: <http://purl.obolibrary.org/obo/fbbt/vfb/Aso2014.owl>
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030930> (MBON-15 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030930> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030930> "MBON-15 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111010> <http://virtualflybrain.org/reports/VFB_00030930>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030931> (MB-V4 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030931> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030931> "MB-V4 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100239> <http://virtualflybrain.org/reports/VFB_00030931>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030932> (MB-V2 alpha\' of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030932> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030932> "MB-V2 alpha\\' of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110102> <http://virtualflybrain.org/reports/VFB_00030932>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030933> (MBON-07 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030933> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030933> "MBON-07 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111005> <http://virtualflybrain.org/reports/VFB_00030933>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030934> (MBON-19 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030934> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030934> "MBON-19 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111011> <http://virtualflybrain.org/reports/VFB_00030934>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030935> (MB-V2 alpha of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030935> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030935> "MB-V2 alpha of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110101> <http://virtualflybrain.org/reports/VFB_00030935>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030936> (MB-V3 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030936> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030936> "MB-V3 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100238> <http://virtualflybrain.org/reports/VFB_00030936>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030937> (MBON-10 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030937> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030937> "MBON-10 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111008> <http://virtualflybrain.org/reports/VFB_00030937>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030938> (MB-M4 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030938> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030938> "MB-M4 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100232> <http://virtualflybrain.org/reports/VFB_00030938>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030939> (MB-MV2 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030939> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030939> "MB-MV2 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100242> <http://virtualflybrain.org/reports/VFB_00030939>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030940> (MBON-02 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030940> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030940> "MBON-02 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111012> <http://virtualflybrain.org/reports/VFB_00030940>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030941> (MBON-CP1 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030941> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030941> "MBON-CP1 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100240> <http://virtualflybrain.org/reports/VFB_00030941>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030942> (MB-MVP2 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030942> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030942> "MB-MVP2 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100246> <http://virtualflybrain.org/reports/VFB_00030942>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030943> (MBON-12 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030943> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030943> "MBON-12 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111009> <http://virtualflybrain.org/reports/VFB_00030943>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030944> (MBON-09 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030944> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030944> "MBON-09 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111007> <http://virtualflybrain.org/reports/VFB_00030944>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030945> (MBON-05 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030945> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030945> "MBON-05 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111004> <http://virtualflybrain.org/reports/VFB_00030945>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030946> (MB-M6 of Aso 2014)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030946> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030946> "MB-M6 of Aso 2014"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100234> <http://virtualflybrain.org/reports/VFB_00030946>)
 
 
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
-
-    
-AnnotationProperty: rdfs:label
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
-
-    
-Datatype: xsd:string
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111010>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110102>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110101>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100246>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100242>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100240>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111009>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111008>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111007>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111005>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111004>
-
-    
-Class: owl:Thing
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111011>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100239>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100238>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100234>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00111012>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00100232>
-
-    
-Individual: VFB_00030943
-
-    Annotations: 
-        rdfs:label "MBON-12 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 12."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111009>
-    
-    
-Individual: VFB_00030942
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body pedunculus-medial lobe and vertical lobe arborizing neuron 2."^^xsd:string,
-        rdfs:label "MB-MVP2 of Aso 2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100246>
-    
-    
-Individual: VFB_00030939
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body medial-vertical lobe arborizing neuron 2."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        rdfs:label "MB-MV2 of Aso 2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100242>
-    
-    
-Individual: VFB_00030938
-
-    Annotations: 
-        rdfs:label "MB-M4 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body medial lobe arborizing neuron 4."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100232>
-    
-    
-Individual: VFB_00030937
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 10."^^xsd:string,
-        rdfs:label "MBON-10 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111008>
-    
-    
-Individual: VFB_00030936
-
-    Annotations: 
-        rdfs:label "MB-V3 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body vertical lobe arborizing neuron 3."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100238>
-    
-    
-Individual: VFB_00030935
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        rdfs:label "MB-V2 alpha of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body vertical lobe arborizing neuron 2 alpha."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110101>
-    
-    
-Individual: VFB_00030934
-
-    Annotations: 
-        rdfs:label "MBON-19 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 19."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111011>
-    
-    
-Individual: VFB_00030933
-
-    Annotations: 
-        rdfs:label "MBON-07 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 7."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111005>
-    
-    
-Individual: VFB_00030941
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        rdfs:label "MBON-CP1 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body calyx-pedunculus arborizing neuron 1."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100240>
-    
-    
-Individual: VFB_00030931
-
-    Annotations: 
-        rdfs:label "MB-V4 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body vertical lobe arborizing neuron 4."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100239>
-    
-    
-Individual: VFB_00030930
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 15."^^xsd:string,
-        rdfs:label "MBON-15 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111010>
-    
-    
-Individual: VFB_00030940
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 2."^^xsd:string,
-        rdfs:label "MBON-02 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111012>
-    
-    
-Individual: VFB_00030932
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body vertical lobe arborizing neuron 2 alpha'."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        rdfs:label "MB-V2 alpha\\' of Aso 2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110102>
-    
-    
-Individual: VFB_00030946
-
-    Annotations: 
-        rdfs:label "MB-M6 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body medial lobe arborizing neuron 6."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00100234>
-    
-    
-Individual: VFB_00030945
-
-    Annotations: 
-        rdfs:label "MBON-05 of Aso 2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 5."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111004>
-    
-    
-Individual: VFB_00030944
-
-    Annotations: 
-        rdfs:label "MBON-09 of Aso 2014"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Aso2014"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25535793"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A mushroom body output neuron 9."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00111007>
-    
-    
+)

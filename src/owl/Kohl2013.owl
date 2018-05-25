@@ -1,1506 +1,803 @@
-Prefix: : <http://virtualflybrain.org/reports/>
-Prefix: owl: <http://www.w3.org/2002/07/owl#>
-Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-Prefix: xml: <http://www.w3.org/XML/1998/namespace>
-Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
-
-
-Ontology: <http://purl.obolibrary.org/obo/fbbt/vfb/Kohl2013.owl>
-
-
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000005>
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/IAO_0000115>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasDbXref>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>
-
-    
-AnnotationProperty: rdfs:label
-
-    
-AnnotationProperty: <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000004>
-
-    
-AnnotationProperty: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>
-
-    
-Datatype: xsd:string
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110601>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110459>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110599>
-
-    
-Class: owl:Thing
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110463>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110461>
-
-    
-Class: <http://purl.obolibrary.org/obo/FBbt_00110603>
-
-    
-Individual: VFB_00030742
-
-    Annotations: 
-        rdfs:label "120616-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030649
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120823-2JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030648
-
-    Annotations: 
-        rdfs:label "120820-JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030647
-
-    Annotations: 
-        rdfs:label "120815-JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030646
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120815-2JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030645
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120710-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030644
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120529-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030643
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120524-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030642
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120326-2-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030641
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120322-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030640
-
-    Annotations: 
-        rdfs:label "120319-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030744
-
-    Annotations: 
-        rdfs:label "121127-3JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030743
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "121127-1JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030639
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120313-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030638
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120306-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030637
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "C3-111011-1JK56Fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030636
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "C3-110914-3fruFill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030635
-
-    Annotations: 
-        rdfs:label "C3-110913-1fruFill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030634
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "C3-110911-6fruFill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030699
-
-    Annotations: 
-        rdfs:label "120522-4JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030698
-
-    Annotations: 
-        rdfs:label "120522-2JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030697
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "120521-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030696
-
-    Annotations: 
-        rdfs:label "121130-2JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030695
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "121130-1JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030694
-
-    Annotations: 
-        rdfs:label "121127-2JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030693
-
-    Annotations: 
-        rdfs:label "120925-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030692
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120818-JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030691
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "120817-JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030690
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120816-JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030739
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120614-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030738
-
-    Annotations: 
-        rdfs:label "120514-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030737
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120508-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030736
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120508-1JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030735
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120503-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030734
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120502-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030733
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120425-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030732
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120424-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030731
-
-    Annotations: 
-        rdfs:label "120421-1JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030730
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        rdfs:label "121130-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030689
-
-    Annotations: 
-        rdfs:label "120815-3JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030688
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120814-JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030687
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120814-3JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030686
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120812-2JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030685
-
-    Annotations: 
-        rdfs:label "120812-1JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030684
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120811-JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030683
-
-    Annotations: 
-        rdfs:label "120811-2JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030682
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "120811-1JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030681
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120810-JK56fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030680
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120502-1JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030741
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        rdfs:label "120718-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030729
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120727-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030728
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120727-1JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030727
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120726-2JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030726
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120726-1JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030725
-
-    Annotations: 
-        rdfs:label "120530-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030724
-
-    Annotations: 
-        rdfs:label "120529-6JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030723
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (female) neuron."^^xsd:string,
-        rdfs:label "120309-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110463>
-    
-    
-Individual: VFB_00030722
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string,
-        rdfs:label "120723-4JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030721
-
-    Annotations: 
-        rdfs:label "120723-3JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030720
-
-    Annotations: 
-        rdfs:label "120723-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030679
-
-    Annotations: 
-        rdfs:label "120421-4JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030678
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120420-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030677
-
-    Annotations: 
-        rdfs:label "120418-2JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030676
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "120417-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030675
-
-    Annotations: 
-        rdfs:label "120404-JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030674
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "120308-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030673
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        rdfs:label "110911-5fruFill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030672
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "110911-1fruFill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030671
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "110908-4fruFill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030670
-
-    Annotations: 
-        rdfs:label "110907-2fruFill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110599>
-    
-    
-Individual: VFB_00030719
-
-    Annotations: 
-        rdfs:label "120718-2JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030718
-
-    Annotations: 
-        rdfs:label "120717-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030717
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120717-4JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030716
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string,
-        rdfs:label "120716-9JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030715
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string,
-        rdfs:label "120716-6JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030714
-
-    Annotations: 
-        rdfs:label "120716-4JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030713
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string,
-        rdfs:label "120713-4JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030712
-
-    Annotations: 
-        rdfs:label "120614-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030711
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120529-5JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (male) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110601>
-    
-    
-Individual: VFB_00030710
-
-    Annotations: 
-        rdfs:label "121208-1JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030740
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-h (male) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120713-3JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110603>
-    
-    
-Individual: VFB_00030669
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "121129-1JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030668
-
-    Annotations: 
-        rdfs:label "121128-4JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030667
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "121128-12JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030666
-
-    Annotations: 
-        rdfs:label "121127-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030665
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "121126-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030664
-
-    Annotations: 
-        rdfs:label "121126-4JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030663
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "121126-3JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030662
-
-    Annotations: 
-        rdfs:label "121123-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030661
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "121123-3JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030660
-
-    Annotations: 
-        rdfs:label "121122-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030709
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "121129-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030708
-
-    Annotations: 
-        rdfs:label "121128-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030707
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "121122-2JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030706
-
-    Annotations: 
-        rdfs:label "121120-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030705
-
-    Annotations: 
-        rdfs:label "120731-2JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030704
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "120731-1JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030703
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "120730-JK1029fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030702
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "120726-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030701
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        rdfs:label "120725-JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030700
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-g (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120614-3JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110461>
-    
-    
-Individual: VFB_00030659
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "121122-4JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030658
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "121122-3JK1029fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030657
-
-    Annotations: 
-        rdfs:label "121121-4JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030656
-
-    Annotations: 
-        rdfs:label "121120-4JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030655
-
-    Annotations: 
-        rdfs:label "121120-3JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030654
-
-    Annotations: 
-        rdfs:label "120926-JK1029fill"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030653
-
-    Annotations: 
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120825-JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030652
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        rdfs:label "120825-2JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030651
-
-    Annotations: 
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        rdfs:label "120824-1JK56fill"^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
-Individual: VFB_00030650
-
-    Annotations: 
-        rdfs:label "120823-3JK56fill"^^xsd:string,
-        <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "source:Kohl2013"^^xsd:string,
-        
-            Annotations: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:24360281"^^xsd:string
-        <http://purl.obolibrary.org/obo/IAO_0000115> "A adult fruitless aSP-f (female) neuron."^^xsd:string
-    
-    Types: 
-        <http://purl.obolibrary.org/obo/FBbt_00110459>
-    
-    
+Prefix(:=<http://virtualflybrain.org/owl/Kohl2013#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Kohl2013>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110461>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110599>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110601>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110603>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030634>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030635>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030636>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030637>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030638>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030639>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030640>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030641>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030642>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030643>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030644>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030645>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030646>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030647>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030648>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030649>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030650>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030651>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030652>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030653>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030654>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030655>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030656>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030657>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030658>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030659>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030660>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030661>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030662>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030663>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030664>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030665>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030666>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030667>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030668>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030669>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030670>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030671>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030672>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030673>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030674>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030675>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030676>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030677>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030678>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030679>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030680>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030681>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030682>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030683>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030684>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030685>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030686>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030687>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030688>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030689>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030690>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030691>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030692>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030693>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030694>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030695>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030696>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030697>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030698>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030699>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030700>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030701>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030702>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030703>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030704>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030705>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030706>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030707>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030708>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030709>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030710>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030711>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030712>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030713>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030714>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030715>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030716>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030717>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030718>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030719>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030720>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030721>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030722>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030723>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030724>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030725>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030726>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030727>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030728>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030729>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030730>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030731>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030732>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030733>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030734>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030735>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030736>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030737>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030738>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030739>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030740>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030741>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030742>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030743>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030744>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030634> (C3-110911-6fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030634> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030634> "C3-110911-6fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030634>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030635> (C3-110913-1fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030635> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030635> "C3-110913-1fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030635>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030636> (C3-110914-3fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030636> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030636> "C3-110914-3fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030636>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030637> (C3-111011-1JK56Fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030637> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030637> "C3-111011-1JK56Fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030637>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030638> (120306-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030638> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030638> "120306-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030638>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030639> (120313-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030639> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030639> "120313-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030639>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030640> (120319-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030640> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030640> "120319-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030640>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030641> (120322-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030641> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030641> "120322-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030641>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030642> (120326-2-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030642> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030642> "120326-2-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030642>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030643> (120524-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030643> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030643> "120524-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030643>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030644> (120529-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030644> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030644> "120529-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030644>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030645> (120710-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030645> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030645> "120710-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030645>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030646> (120815-2JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030646> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030646> "120815-2JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030646>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030647> (120815-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030647> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030647> "120815-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030647>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030648> (120820-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030648> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030648> "120820-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030648>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030649> (120823-2JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030649> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030649> "120823-2JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030649>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030650> (120823-3JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030650> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030650> "120823-3JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030650>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030651> (120824-1JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030651> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030651> "120824-1JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030651>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030652> (120825-2JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030652> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030652> "120825-2JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030652>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030653> (120825-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030653> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030653> "120825-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030653>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030654> (120926-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030654> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030654> "120926-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030654>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030655> (121120-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030655> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030655> "121120-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030655>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030656> (121120-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030656> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030656> "121120-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030656>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030657> (121121-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030657> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030657> "121121-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030657>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030658> (121122-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030658> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030658> "121122-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030658>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030659> (121122-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030659> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030659> "121122-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030659>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030660> (121122-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030660> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030660> "121122-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030660>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030661> (121123-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030661> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030661> "121123-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030661>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030662> (121123-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030662> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030662> "121123-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030662>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030663> (121126-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030663> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030663> "121126-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030663>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030664> (121126-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030664> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030664> "121126-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030664>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030665> (121126-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030665> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030665> "121126-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030665>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030666> (121127-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030666> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030666> "121127-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030666>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030667> (121128-12JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030667> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030667> "121128-12JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030667>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030668> (121128-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030668> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030668> "121128-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030668>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030669> (121129-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030669> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030669> "121129-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110459> <http://virtualflybrain.org/reports/VFB_00030669>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030670> (110907-2fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030670> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030670> "110907-2fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030670>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030671> (110908-4fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030671> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030671> "110908-4fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030671>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030672> (110911-1fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030672> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030672> "110911-1fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030672>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030673> (110911-5fruFill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030673> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030673> "110911-5fruFill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030673>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030674> (120308-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030674> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030674> "120308-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030674>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030675> (120404-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030675> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030675> "120404-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030675>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030676> (120417-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030676> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030676> "120417-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030676>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030677> (120418-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030677> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030677> "120418-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030677>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030678> (120420-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030678> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030678> "120420-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030678>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030679> (120421-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030679> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030679> "120421-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030679>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030680> (120502-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030680> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030680> "120502-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030680>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030681> (120810-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030681> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030681> "120810-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030681>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030682> (120811-1JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030682> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030682> "120811-1JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030682>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030683> (120811-2JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030683> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030683> "120811-2JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030683>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030684> (120811-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030684> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030684> "120811-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030684>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030685> (120812-1JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030685> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030685> "120812-1JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030685>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030686> (120812-2JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030686> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030686> "120812-2JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030686>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030687> (120814-3JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030687> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030687> "120814-3JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030687>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030688> (120814-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030688> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030688> "120814-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030688>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030689> (120815-3JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030689> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030689> "120815-3JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030689>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030690> (120816-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030690> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030690> "120816-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030690>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030691> (120817-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030691> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030691> "120817-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030691>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030692> (120818-JK56fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030692> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030692> "120818-JK56fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030692>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030693> (120925-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030693> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030693> "120925-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030693>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030694> (121127-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030694> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030694> "121127-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030694>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030695> (121130-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030695> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030695> "121130-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030695>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030696> (121130-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030696> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030696> "121130-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030696>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030697> (120521-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030697> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030697> "120521-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030697>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030698> (120522-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030698> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030698> "120522-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030698>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030699> (120522-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030699> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030699> "120522-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030699>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030700> (120614-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030700> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030700> "120614-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030700>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030701> (120725-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030701> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030701> "120725-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030701>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030702> (120726-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030702> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030702> "120726-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030702>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030703> (120730-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030703> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030703> "120730-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030703>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030704> (120731-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030704> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030704> "120731-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030704>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030705> (120731-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030705> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030705> "120731-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030705>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030706> (121120-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030706> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030706> "121120-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030706>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030707> (121122-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030707> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030707> "121122-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030707>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030708> (121128-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030708> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030708> "121128-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030708>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030709> (121129-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030709> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030709> "121129-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030709>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030710> (121208-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030710> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030710> "121208-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030710>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030711> (120529-5JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030711> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030711> "120529-5JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030711>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030712> (120614-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030712> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030712> "120614-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030712>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030713> (120713-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030713> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030713> "120713-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030713>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030714> (120716-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030714> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030714> "120716-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030714>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030715> (120716-6JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030715> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030715> "120716-6JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030715>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030716> (120716-9JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030716> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030716> "120716-9JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030716>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030717> (120717-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030717> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030717> "120717-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030717>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030718> (120717-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030718> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030718> "120717-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030718>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030719> (120718-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030719> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030719> "120718-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030719>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030720> (120723-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030720> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030720> "120723-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030720>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030721> (120723-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030721> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030721> "120723-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030721>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030722> (120723-4JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030722> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030722> "120723-4JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110601> <http://virtualflybrain.org/reports/VFB_00030722>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030723> (120309-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030723> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030723> "120309-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030723>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030724> (120529-6JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030724> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030724> "120529-6JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030724>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030725> (120530-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030725> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030725> "120530-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030725>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030726> (120726-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030726> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030726> "120726-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030726>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030727> (120726-2JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030727> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030727> "120726-2JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030727>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030728> (120727-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030728> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030728> "120727-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030728>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030729> (120727-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030729> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030729> "120727-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030729>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030730> (121130-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030730> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030730> "121130-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110463> <http://virtualflybrain.org/reports/VFB_00030730>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030731> (120421-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030731> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030731> "120421-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030731>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030732> (120424-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030732> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030732> "120424-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030732>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030733> (120425-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030733> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030733> "120425-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030733>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030734> (120502-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030734> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030734> "120502-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030734>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030735> (120503-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030735> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030735> "120503-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030735>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030736> (120508-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030736> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030736> "120508-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030736>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030737> (120508-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030737> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030737> "120508-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030737>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030738> (120514-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030738> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030738> "120514-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030738>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030739> (120614-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030739> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030739> "120614-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030739>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030740> (120713-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030740> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030740> "120713-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030740>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030741> (120718-JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030741> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030741> "120718-JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110603> <http://virtualflybrain.org/reports/VFB_00030741>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030742> (120616-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030742> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030742> "120616-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030742>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030743> (121127-1JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030743> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030743> "121127-1JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110461> <http://virtualflybrain.org/reports/VFB_00030743>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00030744> (121127-3JK1029fill)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030744> "."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030744> "121127-3JK1029fill"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110599> <http://virtualflybrain.org/reports/VFB_00030744>)
+
+
+)
