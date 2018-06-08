@@ -490,7 +490,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004043> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030832> (giant fiber neuron on adult brain template Ito2014)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030832> "."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030832> "A(n) giant fiber neuron."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030832> "GF - painted domain, BrainName pub"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030832> "giant fiber neuron on adult brain template Ito2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004020> <http://virtualflybrain.org/reports/VFB_00030832>)

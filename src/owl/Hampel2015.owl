@@ -22,13 +22,13 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00090001> (aDN1-spGAL4-1 adult brain - Hampel2015)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00090001> "."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00090001> "A(n) antennal grooming descending neuron 1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00090001> "aDN1-spGAL4-1 adult brain - Hampel2015"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111647> <http://virtualflybrain.org/reports/VFB_00090001>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00090002> (aBN1-spGAL4-1 adult brain - Hampel2015)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00090002> "."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00090002> "A(n) antennal grooming brain interneuron 1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00090002> "aBN1-spGAL4-1 adult brain - Hampel2015"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111645> <http://virtualflybrain.org/reports/VFB_00090002>)
 
