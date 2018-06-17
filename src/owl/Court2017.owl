@@ -54,7 +54,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100019>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100020>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100021>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100022>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -65,13 +64,11 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100000> (adult VNS template - Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100000> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100000> "adult VNS template - Court2018"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004052> <http://virtualflybrain.org/reports/VFB_00100000>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100001> (adult metathoracic neuromere on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100001> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100001> "MetaNm"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100001> "metathoracic neuromere "^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100001> "adult metathoracic neuromere on adult VNS template, Court2018"^^xsd:string)
@@ -79,7 +76,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110176> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100002> (adult mesothoracic neuromere on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100002> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100002> "MesoNm"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100002> "mesothoracic neuromere "^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100002> "adult mesothoracic neuromere on adult VNS template, Court2018"^^xsd:string)
@@ -87,7 +83,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110175> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100003> (adult prothoracic neuromere on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100003> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100003> "ProNm"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100003> "prothoracic neuromere "^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100003> "adult prothoracic neuromere on adult VNS template, Court2018"^^xsd:string)
@@ -95,7 +90,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110174> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100004> (cervical connective on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100004> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100004> "CvC"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100004> "cervical connective"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100004> "cervical connective on adult VNS template, Court2018"^^xsd:string)
@@ -103,7 +97,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004019> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100005> (adult abdominal neuromere on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100005> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100005> "AGC"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100005> "abdominal ganglionic complex"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100005> "adult abdominal neuromere on adult VNS template, Court2018"^^xsd:string)
@@ -111,7 +104,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110173> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100006> (abdominal nerve trunk on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100006> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100006> "AbNT"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100006> "abdominal nerve trunk"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100006> "abdominal nerve trunk on adult VNS template, Court2018"^^xsd:string)
@@ -119,7 +111,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004099> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100007> (abdominal segment 4 nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100007> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100007> "AbN4"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100007> "forth abdominal nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100007> "abdominal segment 4 nerve on adult VNS template, Court2018"^^xsd:string)
@@ -127,7 +118,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004108> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100008> (abdominal segment 3 nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100008> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100008> "AbN3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100008> "third abdominal nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100008> "abdominal segment 3 nerve on adult VNS template, Court2018"^^xsd:string)
@@ -135,7 +125,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004107> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100009> (abdominal segment 2 nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100009> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100009> "AbN2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100009> "second abdominal nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100009> "abdominal segment 2 nerve on adult VNS template, Court2018"^^xsd:string)
@@ -143,7 +132,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004106> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100010> (metathoracic leg nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100010> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100010> "MetaLN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100010> "metathoracic leg nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100010> "metathoracic leg nerve on adult VNS template, Court2018"^^xsd:string)
@@ -151,7 +139,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004096> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100011> (accessory metathoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100011> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100011> "AbN1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100011> "first abdominal nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100011> "accessory metathoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -159,7 +146,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004095> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100012> (mesothoracic leg nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100012> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100012> "MesoLN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100012> "mesothoracic leg nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100012> "mesothoracic leg nerve on adult VNS template, Court2018"^^xsd:string)
@@ -167,7 +153,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004063> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100013> (anterior dorsal mesothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100013> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100013> "ADMN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100013> "anterior dorsal mesothoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100013> "anterior dorsal mesothoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -175,7 +160,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004060> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100014> (dorsal prothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100014> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100014> "DProN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100014> "dorsal prothoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100014> "dorsal prothoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -183,7 +167,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004055> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100015> (accessory prothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100015> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100015> "ProAN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100015> "prothoracic accessory nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100015> "accessory prothoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -191,7 +174,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004056> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100016> (prothoracic leg nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100016> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100016> "ProLN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100016> "prothoracic leg nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100016> "prothoracic leg nerve on adult VNS template, Court2018"^^xsd:string)
@@ -199,7 +181,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007657> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100017> (posterior dorsal mesothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100017> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100017> "PDMN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100017> "posterior dorsal mesothoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100017> "posterior dorsal mesothoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -207,7 +188,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004061> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100018> (accessory mesothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100018> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100018> "MesoAN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100018> "mesothoracic accessory nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100018> "accessory mesothoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -215,7 +195,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004062> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100019> (dorsal metathoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100019> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100019> "DMetaN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100019> "dorsal metathoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100019> "dorsal metathoracic nerve on adult VNS template, Court2018"^^xsd:string)
@@ -223,7 +202,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004094> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100020> (adult accessory mesothoracic neuromere on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100020> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100020> "AMNp"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100020> "accessory mesothoracic neuropil"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100020> "adult accessory mesothoracic neuromere on adult VNS template, Court2018"^^xsd:string)
@@ -231,7 +209,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004091> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100021> (adult brain cell body rind on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100021> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100021> "C"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100021> "cortex"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100021> "adult brain cell body rind on adult VNS template, Court2018"^^xsd:string)
@@ -239,7 +216,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003625> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100022> (ventral prothoracic nerve on adult VNS template, Court2018)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100022> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100022> "VProN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100022> "ventral prothoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100022> "ventral prothoracic nerve on adult VNS template, Court2018"^^xsd:string)

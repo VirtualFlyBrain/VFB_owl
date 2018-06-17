@@ -124,7 +124,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030900>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030901>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030902>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030903>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -135,7 +134,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030599> (epaulette on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030599> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030599> "EPA - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030599> "EPA_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030599> "epaulette on adult brain template JFRC2"^^xsd:string)
@@ -143,7 +141,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040040> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030600> (saddle on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030600> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030600> "SAD - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030600> "SAD_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030600> "saddle on adult brain template JFRC2"^^xsd:string)
@@ -151,7 +148,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045048> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030601> (superior posterior slope on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030601> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030601> "SPS - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030601> "SPS_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030601> "superior posterior slope on adult brain template JFRC2"^^xsd:string)
@@ -159,7 +155,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045040> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030602> (cantle on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030602> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030602> "CAN - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030602> "CAN_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030602> "cantle on adult brain template JFRC2"^^xsd:string)
@@ -167,7 +162,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045051> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030603> (inferior posterior slope on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030603> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030603> "IPS - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030603> "IPS_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030603> "inferior posterior slope on adult brain template JFRC2"^^xsd:string)
@@ -175,7 +169,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045046> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030604> (prow on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030604> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030604> "PRW - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030604> "PRW_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030604> "prow on adult brain template JFRC2"^^xsd:string)
@@ -183,7 +176,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040051> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030605> (lateral accessory lobe on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030605> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030605> "LAL - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030605> "LAL_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030605> "lateral accessory lobe on adult brain template JFRC2"^^xsd:string)
@@ -191,7 +183,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003681> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030606> (crepine on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030606> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030606> "CRE - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030606> "CRE_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030606> "crepine on adult brain template JFRC2"^^xsd:string)
@@ -199,7 +190,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045037> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030607> (gall on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030607> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030607> "GA - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030607> "GA_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030607> "gall on adult brain template JFRC2"^^xsd:string)
@@ -207,7 +197,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040060> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030608> (anterior ventrolateral protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030608> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030608> "AVLP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030608> "AVLP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030608> "anterior ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string)
@@ -215,7 +204,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040043> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030609> (nodulus on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030609> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030609> "NO - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030609> "NO_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030609> "nodulus on adult brain template JFRC2"^^xsd:string)
@@ -223,7 +211,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003680> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030610> (gorget on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030610> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030610> "GOR - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030610> "GOR_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030610> "gorget on adult brain template JFRC2"^^xsd:string)
@@ -231,7 +218,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040039> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030611> (ellipsoid body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030611> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030611> "EB - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030611> "EB_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030611> "ellipsoid body on adult brain template JFRC2"^^xsd:string)
@@ -239,7 +225,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003678> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030612> (lobula plate on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030612> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030612> "LOP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030612> "LOP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030612> "lobula plate on adult brain template JFRC2"^^xsd:string)
@@ -247,7 +232,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003885> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030613> (antennal mechanosensory and motor center on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030613> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030613> "AMMC - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030613> "AMMC_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030613> "antennal mechanosensory and motor center on adult brain template JFRC2"^^xsd:string)
@@ -255,7 +239,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003982> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030614> (superior medial protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030614> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030614> "SMP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030614> "SMP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030614> "superior medial protocerebrum on adult brain template JFRC2"^^xsd:string)
@@ -263,7 +246,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007055> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030615> (antler on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030615> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030615> "ATL - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030615> "ATL_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030615> "antler on adult brain template JFRC2"^^xsd:string)
@@ -271,7 +253,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045039> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030616> (vest on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030616> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030616> "VES - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030616> "VES_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030616> "vest on adult brain template JFRC2"^^xsd:string)
@@ -279,7 +260,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040041> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030617> (inferior clamp on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030617> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030617> "ICL - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030617> "ICL_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030617> "inferior clamp on adult brain template JFRC2"^^xsd:string)
@@ -287,7 +267,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040049> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030618> (superior clamp on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030618> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030618> "SCL - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030618> "SCL_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030618> "superior clamp on adult brain template JFRC2"^^xsd:string)
@@ -295,14 +274,12 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040048> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030619> (PB - painted domain JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030619> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030619> "PB_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030619> "PB - painted domain JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003668> <http://virtualflybrain.org/reports/VFB_00030619>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030620> (flange on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030620> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030620> "FLA - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030620> "FLA_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030620> "flange on adult brain template JFRC2"^^xsd:string)
@@ -310,7 +287,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045050> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030621> (accessory medulla on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030621> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030621> "AME - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030621> "AME_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030621> "accessory medulla on adult brain template JFRC2"^^xsd:string)
@@ -318,7 +294,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045003> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030622> (lobula on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030622> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030622> "LO - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030622> "LO_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030622> "lobula on adult brain template JFRC2"^^xsd:string)
@@ -326,7 +301,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003852> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030623> (superior lateral protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030623> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030623> "SLP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030623> "SLP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030623> "superior lateral protocerebrum on adult brain template JFRC2"^^xsd:string)
@@ -334,7 +308,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007054> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030624> (medulla on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030624> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030624> "ME - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030624> "ME_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030624> "medulla on adult brain template JFRC2"^^xsd:string)
@@ -342,7 +315,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003748> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030625> (bulb on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030625> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030625> "BU - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030625> "BU_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030625> "bulb on adult brain template JFRC2"^^xsd:string)
@@ -350,7 +322,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003682> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030626> (wedge on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030626> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030626> "IVLP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030626> "IVLP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030626> "wedge on adult brain template JFRC2"^^xsd:string)
@@ -358,7 +329,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045027> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030627> (anterior optic tubercle on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030627> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030627> "AOTU - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030627> "AOTU_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030627> "anterior optic tubercle on adult brain template JFRC2"^^xsd:string)
@@ -366,14 +336,12 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007059> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030628> (SIP - painted domain JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030628> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030628> "SIP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030628> "SIP - painted domain JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045032> <http://virtualflybrain.org/reports/VFB_00030628>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030629> (adult antennal lobe on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030629> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030629> "AL - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030629> "AL_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030629> "adult antennal lobe on adult brain template JFRC2"^^xsd:string)
@@ -381,7 +349,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007401> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030630> (posterior lateral protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030630> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030630> "PLP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030630> "PLP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030630> "posterior lateral protocerebrum on adult brain template JFRC2"^^xsd:string)
@@ -389,7 +356,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040044> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030631> (inferior bridge on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030631> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030631> "IB - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030631> "IB_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030631> "inferior bridge on adult brain template JFRC2"^^xsd:string)
@@ -397,7 +363,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040050> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030632> (posterior ventrolateral protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030632> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030632> "PVLP - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030632> "PVLP_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030632> "posterior ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string)
@@ -405,7 +370,6 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040042> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030633> (fan-shaped body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030633> "."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030633> "FB - painted domain JFRC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00030633> "FB_JFRC"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030633> "fan-shaped body on adult brain template JFRC2"^^xsd:string)
@@ -413,139 +377,116 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003679> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030838> (calyx of adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030838> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030838> "calyx of adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007385> <http://virtualflybrain.org/reports/VFB_00030838>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030840> (adult gnathal ganglion on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030840> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030840> "adult gnathal ganglion on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00014013> <http://virtualflybrain.org/reports/VFB_00030840>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030849> (adult cerebral ganglion on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030849> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030849> "adult cerebral ganglion on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110636> <http://virtualflybrain.org/reports/VFB_00030849>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030856> (adult subesophageal zone on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030856> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030856> "adult subesophageal zone on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110639> <http://virtualflybrain.org/reports/VFB_00030856>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030866> (adult central complex on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030866> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030866> "adult central complex on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003632> <http://virtualflybrain.org/reports/VFB_00030866>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030867> (adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030867> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030867> "adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003684> <http://virtualflybrain.org/reports/VFB_00030867>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030868> (inferior neuropils on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030868> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030868> "inferior neuropils on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040037> <http://virtualflybrain.org/reports/VFB_00030868>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030869> (lateral complex on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030869> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030869> "lateral complex on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040001> <http://virtualflybrain.org/reports/VFB_00030869>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030870> (optic lobe on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030870> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030870> "optic lobe on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003701> <http://virtualflybrain.org/reports/VFB_00030870>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030871> (superior neuropils on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030871> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030871> "superior neuropils on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045030> <http://virtualflybrain.org/reports/VFB_00030871>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030872> (ventrolateral neuropils on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030872> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030872> "ventrolateral neuropils on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045021> <http://virtualflybrain.org/reports/VFB_00030872>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030873> (ventromedial neuropils on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030873> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030873> "ventromedial neuropils on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040002> <http://virtualflybrain.org/reports/VFB_00030873>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030874> (central body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030874> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030874> "central body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045020> <http://virtualflybrain.org/reports/VFB_00030874>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030875> (lobe system of adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030875> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030875> "lobe system of adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013688> <http://virtualflybrain.org/reports/VFB_00030875>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030876> (clamp on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030876> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030876> "clamp on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040047> <http://virtualflybrain.org/reports/VFB_00030876>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030877> (lobula complex on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030877> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030877> "lobula complex on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045004> <http://virtualflybrain.org/reports/VFB_00030877>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030878> (ventrolateral protocerebrum on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030878> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030878> "ventrolateral protocerebrum on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007058> <http://virtualflybrain.org/reports/VFB_00030878>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030879> (posterior slope on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030879> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030879> "posterior slope on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040072> <http://virtualflybrain.org/reports/VFB_00030879>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030880> (ventral complex on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030880> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030880> "ventral complex on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040071> <http://virtualflybrain.org/reports/VFB_00030880>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030900> (lateral horn on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030900> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030900> "lateral horn on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007053> <http://virtualflybrain.org/reports/VFB_00030900>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030901> (pedunculus of adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030901> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030901> "pedunculus of adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007453> <http://virtualflybrain.org/reports/VFB_00030901>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030902> (vertical lobe of adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030902> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030902> "vertical lobe of adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00015407> <http://virtualflybrain.org/reports/VFB_00030902>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030903> (medial lobe of adult mushroom body on adult brain template JFRC2)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030903> "."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030903> "medial lobe of adult mushroom body on adult brain template JFRC2"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007677> <http://virtualflybrain.org/reports/VFB_00030903>)
 
