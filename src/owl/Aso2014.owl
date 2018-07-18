@@ -43,6 +43,7 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030944>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030945>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00030946>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 
 
 
@@ -53,48 +54,65 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 # Individual: <http://virtualflybrain.org/reports/VFB_00030930> (MBON-15 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030930> "A(n) mushroom body output neuron 15."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030930> "FlyLight:MB543B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030930> "MBON-15 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111010> <http://virtualflybrain.org/reports/VFB_00030930>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030931> (MB-V4 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030931> "A(n) mushroom body vertical lobe arborizing neuron 4."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030931> "FlyLight:MB018B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030931> "FlyLight:MB091C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030931> "MB-V4 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100239> <http://virtualflybrain.org/reports/VFB_00030931>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030932> (MB-V2 alpha\' of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030932> "A(n) mushroom body vertical lobe arborizing neuron 2 alpha'."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030932> "FlyLight:MB027B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030932> "MB-V2 alpha\\' of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110102> <http://virtualflybrain.org/reports/VFB_00030932>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030933> (MBON-07 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030933> "A(n) mushroom body output neuron 7."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030933> "FlyLight:MB310C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030933> "FlyLight:MB319C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030933> "FlyLight:MB323B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030933> "MBON-07 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111005> <http://virtualflybrain.org/reports/VFB_00030933>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030934> (MBON-19 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030934> "A(n) mushroom body output neuron 19."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030934> "FlyLight:MB062B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030934> "FlyLight:MB542B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030934> "MBON-19 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111011> <http://virtualflybrain.org/reports/VFB_00030934>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030935> (MB-V2 alpha of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030935> "A(n) mushroom body vertical lobe arborizing neuron 2 alpha."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030935> "FlyLight:MB050B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030935> "FlyLight:MB080C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030935> "FlyLight:MB549C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030935> "MB-V2 alpha of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110101> <http://virtualflybrain.org/reports/VFB_00030935>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030936> (MB-V3 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030936> "A(n) mushroom body vertical lobe arborizing neuron 3."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030936> "FlyLight:G0239"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030936> "FlyLight:MB082C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030936> "FlyLight:MB093C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030936> "MB-V3 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100238> <http://virtualflybrain.org/reports/VFB_00030936>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030937> (MBON-10 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030937> "A(n) mushroom body output neuron 10."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030937> "FlyLight:MB057B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030937> "FlyLight:MB078C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030937> "MBON-10 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111008> <http://virtualflybrain.org/reports/VFB_00030937>)
 
@@ -119,24 +137,34 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111012> <http://virtualfly
 # Individual: <http://virtualflybrain.org/reports/VFB_00030941> (MBON-CP1 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030941> "A(n) mushroom body calyx-pedunculus arborizing neuron 1."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030941> "FlyLight:MB242A"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030941> "FlyLight:MB622B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030941> "MBON-CP1 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100240> <http://virtualflybrain.org/reports/VFB_00030941>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030942> (MB-MVP2 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030942> "A(n) mushroom body pedunculus-medial lobe and vertical lobe arborizing neuron 2."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030942> "FlyLight:MB085C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030942> "FlyLight:MB112C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030942> "FlyLight:MB262B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030942> "MB-MVP2 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100246> <http://virtualflybrain.org/reports/VFB_00030942>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030943> (MBON-12 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030943> "A(n) mushroom body output neuron 12."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030943> "FlyLight:MB051B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030943> "FlyLight:MB077B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030943> "FlyLight:MB090C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030943> "MBON-12 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111009> <http://virtualflybrain.org/reports/VFB_00030943>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00030944> (MBON-09 of Aso 2014)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00030944> "A(n) mushroom body output neuron 9."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030944> "FlyLight:MB083C"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00030944> "FlyLight:MB110C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00030944> "MBON-09 of Aso 2014"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111007> <http://virtualflybrain.org/reports/VFB_00030944>)
 
