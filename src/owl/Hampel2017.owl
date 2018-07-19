@@ -1,0 +1,28 @@
+Prefix(:=<http://virtualflybrain.org/owl/Hampel2017#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Hampel2017>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030002>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063688>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00063688> (VT17251 LexA that targets mechanosensory eye bristles)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00063688> "VDRC:VT17251"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063688> "VT17251 LexA that targets mechanosensory eye bristles"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CARO_0030002> <http://virtualflybrain.org/reports/VFB_00063688>)
+
+
+)
