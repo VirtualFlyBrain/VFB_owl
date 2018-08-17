@@ -1,0 +1,42 @@
+Prefix(:=<http://virtualflybrain.org/owl/Zwart2016#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Zwart2016>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100023>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100024>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100025>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00100023> (L1 CNS neuron A03g_a1l)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100023> "A(n) neuron."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100023> "L1 CNS neuron A03g_a1l"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100023>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00100024> (L1 CNS neuron T01d1_t3r)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100024> "A(n) neuron."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100024> "L1 CNS neuron T01d1_t3r"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100024>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00100025> (L1 CNS neuron A00g_a1)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100025> "A(n) neuron."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100025> "L1 CNS neuron A00g_a1"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100025>)
+
+
+)
