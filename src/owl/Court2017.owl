@@ -27,6 +27,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004107>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004108>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007657>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007727>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110173>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110174>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110175>))
@@ -54,6 +55,7 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100019>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100020>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100021>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100022>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101131>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -220,6 +222,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00100022> "ventral prothoracic nerve"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100022> "ventral prothoracic nerve on adult VNS template, Court2018"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004057> <http://virtualflybrain.org/reports/VFB_00100022>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00101131> (tectulum on adult VNS template, Court2018)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101131> "tectulum on adult VNS template, Court2018"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007727> <http://virtualflybrain.org/reports/VFB_00101131>)
 
 
 )
