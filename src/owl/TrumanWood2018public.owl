@@ -1,0 +1,112 @@
+Prefix(:=<http://virtualflybrain.org/owl/TrumanWood2018public#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/TrumanWood2018public>
+
+Declaration(Class(<http://flybase.org/reports/FBtp0058829>))
+Declaration(Class(<http://flybase.org/reports/FBtp0106263>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001919>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007118>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007719>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007723>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007725>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111204>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0000400>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0058829>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0106263>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002131>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00056507>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00056603>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://flybase.org/reports/FBtp0058829> (P{GMR26H01-GAL4})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0058829> "P{GMR26H01-GAL4}"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBtp0058829> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://flybase.org/reports/FBtp0106263> (P{VT033614-GAL4})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0106263> "P{VT033614-GAL4}"^^xsd:string)
+SubClassOf(<http://flybase.org/reports/FBtp0106263> <http://purl.obolibrary.org/obo/SO_0000400>)
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0058829> (P{GMR26H01-GAL4} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0058829> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{GMR26H01-GAL4}."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0058829> "P{GMR26H01-GAL4} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0058829> <http://purl.obolibrary.org/obo/CARO_0030002>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0058829> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBtp0058829>))
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0106263> (P{VT033614-GAL4} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0106263> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{VT033614-GAL4}."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0106263> "P{VT033614-GAL4} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0106263> <http://purl.obolibrary.org/obo/CARO_0030002>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0106263> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBtp0106263>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00056507> (VT033614 FLP 4-2)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00056507> "A(n) neuron expressing P{VT033614-GAL4} that is part of a P{VT033614-GAL4} expression pattern."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00056507> "VDRC:VT033614"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056507> "6100761_G__1"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056507> "Lines/GMR_120-129/127B01/Confocal_63X_2014-09-23_Br/127B01_57C10wt_C_Br.tif"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://virtualflybrain.org/reports/VFB_00056507> "A single 127B01 expressing neuron from the flip-out collection of Jim Truman.  It is from the Green channel of a stack imaging the central brain with no signal outside the imaged ROI. The orginal filepath was Lines/GMR_120-129/127B01/Confocal_63X_2014-09-23_Br/127B01_57C10wt_C_Br.tif."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00056507> "VT033614 FLP 4-2"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001919>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://virtualflybrain.org/reports/VFBexp_FBtp0106263>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007063>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007064>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007068>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007723>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007725>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00111204>) <http://virtualflybrain.org/reports/VFB_00056507>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBtp0106263>) <http://virtualflybrain.org/reports/VFB_00056507>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00056603> (GMR 26H01 FLP 1-1)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00056603> "A(n) neuron expressing P{GMR26H01-GAL4} that is part of a embryonic/larval central nervous system."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056603> "5300058_G__1"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056603> "Lines/GMR_21-40/26H01/Confocal_63x_2012-08-03_26H01_Br/stack_TIFF/26H01_57C10FlpL_A_Br.tif"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://virtualflybrain.org/reports/VFB_00056603> "A single 26H01 expressing neuron from the flip-out collection of Jim Truman.  It is from the Green channel of a stack imaging the central brain with no signal outside the imaged ROI. The orginal filepath was Lines/GMR_21-40/26H01/Confocal_63x_2012-08-03_26H01_Br/stack_TIFF/26H01_57C10FlpL_A_Br.tif."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00056603> "GMR 26H01 FLP 1-1"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00001919>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://virtualflybrain.org/reports/VFBexp_FBtp0058829>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007063>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007067>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007068>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007118>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007719>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007723>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00007725>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002131> <http://purl.obolibrary.org/obo/FBbt_00111204>) <http://virtualflybrain.org/reports/VFB_00056603>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://flybase.org/reports/FBtp0058829>) <http://virtualflybrain.org/reports/VFB_00056603>)
+
+
+)
