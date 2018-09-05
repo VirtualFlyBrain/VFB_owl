@@ -8,7 +8,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Schlegel2016>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001919>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00050000>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100717>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100718>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100719>))
@@ -209,6 +211,11 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00050000> (L1 larval CNS SBEM - Cardona/Janelia)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00050000> "L1 larval CNS SBEM - Cardona/Janelia"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001919> <http://virtualflybrain.org/reports/VFB_00050000>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100717> (L1 CNS neuron AN-L-Sens-B1-ACa-10)
 
