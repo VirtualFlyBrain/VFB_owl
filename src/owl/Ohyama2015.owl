@@ -178,9 +178,9 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 #   Named Individuals
 ############################
 
-# Individual: <http://virtualflybrain.org/reports/VFB_00050000> (L1 larval CNS SBEM - Cardona/Janelia)
+# Individual: <http://virtualflybrain.org/reports/VFB_00050000> (L1 larval CNS ssTEM - Cardona/Janelia)
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00050000> "L1 larval CNS SBEM - Cardona/Janelia"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00050000> "L1 larval CNS ssTEM - Cardona/Janelia"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001919> <http://virtualflybrain.org/reports/VFB_00050000>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100592> (L1 CNS neuron vchA/B a1l)

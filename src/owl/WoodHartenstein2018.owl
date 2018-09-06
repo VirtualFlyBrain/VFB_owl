@@ -8,7 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/WoodHartenstein2018>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001919>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007065>))
@@ -140,7 +139,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111204>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111205>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111206>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111207>))
-Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00049000>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00050257>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00050258>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00050260>))
@@ -389,11 +387,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Named Individuals
 ############################
-
-# Individual: <http://virtualflybrain.org/reports/VFB_00049000> (L3 CNS template - Wood2018)
-
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00049000> "L3 CNS template - Wood2018"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001919> <http://virtualflybrain.org/reports/VFB_00049000>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00050257> (superior intermediate protocerebrum on L3 CNS template, Wood2018)
 
