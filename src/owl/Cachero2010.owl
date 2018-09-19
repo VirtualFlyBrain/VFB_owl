@@ -209,6 +209,10 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00020167>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00020168>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00020169>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00020170>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063691>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063692>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063693>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063694>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -1243,6 +1247,30 @@ AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020170>
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020170>)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110526> <http://virtualflybrain.org/reports/VFB_00020170>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00020170>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00063691> (pSP-f_F clone of Cachero 2010)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063691> "An example of a(n) adult fruitless pSP-f lineage clone."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063691> "pSP-f_F clone of Cachero 2010"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110534> <http://virtualflybrain.org/reports/VFB_00063691>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00063692> (pSP-e_F clone of Cachero 2010)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063692> "An example of a(n) adult fruitless pSP-e lineage clone."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063692> "pSP-e_F clone of Cachero 2010"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110532> <http://virtualflybrain.org/reports/VFB_00063692>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00063693> (pSP-d_F clone of Cachero 2010)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063693> "An example of a(n) adult fruitless pSP-d lineage clone."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063693> "pSP-d_F clone of Cachero 2010"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110530> <http://virtualflybrain.org/reports/VFB_00063693>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00063694> (aIP-i_F clone of Cachero 2010)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063694> "An example of a(n) adult fruitless aIP-i lineage clone."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063694> "aIP-i_F clone of Cachero 2010"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110572> <http://virtualflybrain.org/reports/VFB_00063694>)
 
 
 )
