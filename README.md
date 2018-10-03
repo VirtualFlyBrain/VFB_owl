@@ -2,6 +2,8 @@
 
 This repository is a home for the OWL files that are central to the VFB query system, and the scripts that generate these files.
 
+WARNING - MOST OF THE CODE ON THIS REPO IS NOW DEPRECATED. The repository will likely be retired soon as it will be superceded by a version 2.0 of the VFB pipeline.
+
 ## Background & summary
 
 The VFB query system relies on representation of data/knowledge in OWL.  Central to this a representation of Drosophila neuro-anatomy in the [Drosophila anatomy ontology](https://sourceforge.net/p/fbbtdv/wiki/Home/). The anatomical structures depicted in images displayed on VFB are represented as a [KnowledgeBase of OWL individuals](https://github.com/VirtualFlyBrain/VFB_owl/blob/master/doc/vfb_owl_ind_schema.md), which are classified (typed) using OWL class expressions referencing the anatomy ontology.  When this KnowledgeBase of individuals is combined with the ontology, a reasoner can be used to classify and query for anatomical structures depicted in the images on VFB.
