@@ -205,6 +205,7 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100907>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100908>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
 
@@ -214,6 +215,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00050000> (L1 larval CNS ssTEM - Cardona/Janelia)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00050000> "Seymour"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00050000> "L1 larval CNS ssTEM - Cardona/Janelia"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001919> <http://virtualflybrain.org/reports/VFB_00050000>)
 
