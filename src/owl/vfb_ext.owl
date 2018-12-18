@@ -293,6 +293,7 @@
     <!-- http://purl.obolibrary.org/obo/CARO_0030002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0030002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_10000000"/>
         <rdfs:label xml:lang="en">expression pattern</rdfs:label>
     </owl:Class>
     
@@ -304,10 +305,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FBbt_10000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FBbt_10000000"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFB_10000005">
-        <rdfs:label>cluster</rdfs:label>
+        <rdfs:label>cell cluster</rdfs:label>
     </owl:Class>
     
 
@@ -358,6 +365,7 @@
     <!-- http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FBbt_10000000"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-26T07:54:17Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">intersectional expression pattern</rdfs:label>
         <oboInOwl1:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dos</oboInOwl1:created_by>
