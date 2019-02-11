@@ -8,25 +8,25 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/AsoRubin2016>
 
+Declaration(Class(<http://flybase.org/reports/FBtp0099189>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099465>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099469>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099472>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099478>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099479>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099488>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099504>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099523>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099524>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099551>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099561>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099567>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117250>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117252>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117254>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117259>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099189>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099465>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099469>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099472>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099478>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099479>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099488>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099504>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099523>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099524>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099551>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099561>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0099567>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0117250>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0117252>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0117254>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0117259>))
-Declaration(Class(<http://virtualflybrain.org/reports/FBtp0117260>))
 Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524>))
 Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250>))
 Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561>))
@@ -60,77 +60,77 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 #   Classes
 ############################
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099189> (P{R65D07-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099189> (P{R65D07-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099189> "P{R65D07-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099189> "P{R65D07-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099465> (P{R22B12-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099465> (P{R22B12-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099465> "P{R22B12-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099465> "P{R22B12-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099469> (P{R23C12-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099469> (P{R23C12-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099469> "P{R23C12-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099469> "P{R23C12-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099472> (P{R26F01-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099472> (P{R26F01-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099472> "P{R26F01-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099472> "P{R26F01-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099478> (P{R32D11-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099478> (P{R32D11-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099478> "P{R32D11-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099478> "P{R32D11-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099479> (P{R32G08-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099479> (P{R32G08-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099479> "P{R32G08-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099479> "P{R32G08-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099488> (P{R48H11-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099488> (P{R48H11-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099488> "P{R48H11-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099488> "P{R48H11-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099504> (P{R72B05-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0099504> (P{R72B05-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099504> "P{R72B05-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099504> "P{R72B05-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099523> (P{R15B01-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0099523> (P{R15B01-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099523> "P{R15B01-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099523> "P{R15B01-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099524> (P{R17A04-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0099524> (P{R17A04-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099524> "P{R17A04-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099524> "P{R17A04-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099551> (PBac{R58E02-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0099551> (PBac{R58E02-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099551> "PBac{R58E02-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099551> "PBac{R58E02-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099561> (P{R76F05-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0099561> (P{R76F05-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099561> "P{R76F05-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099561> "P{R76F05-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0099567> (P{ple-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0099567> (P{ple-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0099567> "P{ple-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099567> "P{ple-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0117250> (PBac{ple-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0117250> (PBac{ple-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0117250> "PBac{ple-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117250> "PBac{ple-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0117252> (P{R93D10-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0117252> (P{R93D10-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0117252> "P{R93D10-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117252> "P{R93D10-p65.AD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0117254> (P{R68C09-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0117254> (P{R68C09-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0117254> "P{R68C09-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117254> "P{R68C09-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0117259> (P{R73F07-GAL4.DBD})
+# Class: <http://flybase.org/reports/FBtp0117259> (P{R73F07-GAL4.DBD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0117259> "P{R73F07-GAL4.DBD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117259> "P{R73F07-GAL4.DBD}"^^xsd:string)
 
-# Class: <http://virtualflybrain.org/reports/FBtp0117260> (P{VT026773-p65.AD})
+# Class: <http://flybase.org/reports/FBtp0117260> (P{VT026773-p65.AD})
 
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/FBtp0117260> "P{VT026773-p65.AD}"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117260> "P{VT026773-p65.AD}"^^xsd:string)
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> (P{R65D07-GAL4.DBD} ∩ P{R17A04-p65.AD} expression pattern)
 
@@ -138,8 +138,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R65D07-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> "P{R65D07-GAL4.DBD} ∩ P{R17A04-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099189>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099524>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099189>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099524>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> (P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
 
@@ -147,8 +147,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R22B12-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099465>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117250>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099465>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117250>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> (P{R23C12-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern)
 
@@ -156,8 +156,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R76F05-p65.AD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "P{R23C12-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099469>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099561>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099469>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099561>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> (P{R26F01-GAL4.DBD} ∩ P{R15B01-p65.AD} expression pattern)
 
@@ -165,8 +165,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R26F01-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "P{R26F01-GAL4.DBD} ∩ P{R15B01-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099472>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099523>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099472>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099523>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> (P{R32D11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern)
 
@@ -174,8 +174,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R32D11-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "P{R32D11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099478>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099551>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099478>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099551>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> (P{R32G08-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern)
 
@@ -183,8 +183,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R76F05-p65.AD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "P{R32G08-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099479>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099561>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099479>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099561>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> (P{R48H11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern)
 
@@ -192,8 +192,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R48H11-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "P{R48H11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099488>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099551>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099488>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099551>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> (P{R72B05-GAL4.DBD} ∩ P{ple-p65.AD} expression pattern)
 
@@ -201,8 +201,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{ple-p65.AD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "P{R72B05-GAL4.DBD} ∩ P{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099504>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099567>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099504>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099567>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> (P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern)
 
@@ -210,8 +210,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{VT026773-p65.AD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0099504>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117260>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099504>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117260>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> (P{R68C09-GAL4.DBD} ∩ P{R93D10-p65.AD} expression pattern)
 
@@ -219,8 +219,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R93D10-p65.AD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "P{R68C09-GAL4.DBD} ∩ P{R93D10-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117252>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117254>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117252>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117254>))
 
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> (P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
 
@@ -228,8 +228,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "All the cells in some region of the body (e.g. adult brain, larval CNS) that express P{R73F07-GAL4.DBD}."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117250>))
-SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://virtualflybrain.org/reports/FBtp0117259>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117250>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117259>))
 
 
 ############################
