@@ -21,13 +21,13 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00063689> (pIP10 neuron in the adult brain)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063689> "A(n) adult fruitless pIP10 neuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063689> "A(n) adult fruitless pIP10 (male) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063689> "pIP10 neuron in the adult brain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110854> <http://virtualflybrain.org/reports/VFB_00063689>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00063690> (pIP10 neuron in the adult VNS)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063690> "A(n) adult fruitless pIP10 neuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00063690> "A(n) adult fruitless pIP10 (male) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063690> "pIP10 neuron in the adult VNS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110854> <http://virtualflybrain.org/reports/VFB_00063690>)
 
