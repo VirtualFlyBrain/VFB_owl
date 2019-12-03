@@ -1064,6 +1064,7 @@ ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0129932FBtp0129962
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00070046> (P{R76F05-GAL4.DBD} ∩ P{R61H03-p65.AD} expression pattern of Xie2018)
 
+AnnotationAssertion(rdfs:comment <http://virtualflybrain.org/reports/VFB_00070046> "original image file missing from original dataset. 1 of 3 example images for this split combination so made obsolete."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00070046> "P{R76F05-GAL4.DBD} ∩ P{R61H03-p65.AD} expression pattern of Xie2018"^^xsd:string)
 ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0129932FBtp0129963> <http://virtualflybrain.org/reports/VFB_00070046>)
 
