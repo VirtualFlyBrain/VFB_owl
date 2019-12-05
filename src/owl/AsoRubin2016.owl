@@ -139,6 +139,7 @@ AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117260> "P{VT026
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> (P{R65D07-GAL4.DBD} ∩ P{R17A04-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> "The sum of all cells at the intersection between the expression patterns of P{R65D07-GAL4.DBD} and P{R17A04-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> "MB380B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> "P{R65D07-GAL4.DBD} ∩ P{R17A04-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099189>))
@@ -147,6 +148,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099189FBtp0099524> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> (P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "The sum of all cells at the intersection between the expression patterns of P{R22B12-GAL4.DBD} and PBac{ple-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "GMR_TH-x-GMR_22B12"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "MB320C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099465>))
@@ -155,6 +158,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> (P{R23C12-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "The sum of all cells at the intersection between the expression patterns of P{R23C12-GAL4.DBD} and P{R76F05-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "GMR_76F05-x-GMR_23C12"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "MB109B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> "P{R23C12-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099469>))
@@ -163,6 +168,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099469FBtp0099561> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> (P{R26F01-GAL4.DBD} ∩ P{R15B01-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "The sum of all cells at the intersection between the expression patterns of P{R26F01-GAL4.DBD} and P{R15B01-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "GMR_15B01-x-GMR_26F01"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "MB296B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> "P{R26F01-GAL4.DBD} ∩ P{R15B01-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099472>))
@@ -171,6 +178,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099472FBtp0099523> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> (P{R32D11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "The sum of all cells at the intersection between the expression patterns of P{R32D11-GAL4.DBD} and PBac{R58E02-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "GMR_58E02-x-GMR_32D11"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "MB043C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> "P{R32D11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099478>))
@@ -179,6 +188,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099478FBtp0099551> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> (P{R32G08-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "The sum of all cells at the intersection between the expression patterns of P{R32G08-GAL4.DBD} and P{R76F05-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "GMR_76F05-x-GMR_32G08"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "MB213B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> "P{R32G08-GAL4.DBD} ∩ P{R76F05-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099479>))
@@ -187,6 +198,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099479FBtp0099561> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> (P{R48H11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "The sum of all cells at the intersection between the expression patterns of P{R48H11-GAL4.DBD} and PBac{R58E02-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "GMR_58E02-x-GMR_48H11"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "MB315C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> "P{R48H11-GAL4.DBD} ∩ PBac{R58E02-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099488>))
@@ -195,6 +208,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099488FBtp0099551> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> (P{R72B05-GAL4.DBD} ∩ P{ple-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "The sum of all cells at the intersection between the expression patterns of P{R72B05-GAL4.DBD} and P{ple-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "GMR_TH-x-GMR_72B05"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "MB065B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> "P{R72B05-GAL4.DBD} ∩ P{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099504>))
@@ -203,6 +218,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0099567> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> (P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "The sum of all cells at the intersection between the expression patterns of P{R72B05-GAL4.DBD} and P{VT026773-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "MB630B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "VT026773-x-GMR_72B05"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099504>))
@@ -211,6 +228,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> (P{R68C09-GAL4.DBD} ∩ P{R93D10-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "The sum of all cells at the intersection between the expression patterns of P{R68C09-GAL4.DBD} and P{R93D10-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "GMR_93D10-x-GMR_68C09"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "MB063B"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> "P{R68C09-GAL4.DBD} ∩ P{R93D10-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117252>))
@@ -219,6 +238,8 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117254FBtp0117252> Ob
 # Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> (P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "The sum of all cells at the intersection between the expression patterns of P{R73F07-GAL4.DBD} and PBac{ple-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "GMR_TH-x-GMR_73F07"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "MB099C"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
 SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117250>))
