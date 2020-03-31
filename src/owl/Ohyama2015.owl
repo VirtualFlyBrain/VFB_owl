@@ -18,6 +18,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047273>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047287>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047683>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111031>))
@@ -250,10 +252,11 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> 
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100599> (L1 CNS neuron A00c_a3l)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100599> "A(n) neuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100599> "A(n) larval A00c-a3 neuron."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00100599> "VFB CATMAID L1 CNS:1339400"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100599> "L1 CNS neuron A00c_a3l"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100599>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047683> <http://virtualflybrain.org/reports/VFB_00100599>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100600> (L1 CNS neuron Basin-1 a4r)
 
@@ -548,10 +551,11 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> 
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100634> (L1 CNS neuron A00c_a3r)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100634> "A(n) neuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00100634> "A(n) larval A00c-a3 neuron."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00100634> "VFB CATMAID L1 CNS:4262162"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100634> "L1 CNS neuron A00c_a3r"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100634>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047683> <http://virtualflybrain.org/reports/VFB_00100634>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100635> (L1 CNS neuron A03o_a1l)
 
@@ -1101,6 +1105,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00102103> "VFB CATMAID L1 CNS:3546835"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102103> "L1 CNS neuron A02n_a1l Pseudolooper-4"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00102103>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047701> <http://virtualflybrain.org/reports/VFB_00102103>)
 
 
 )

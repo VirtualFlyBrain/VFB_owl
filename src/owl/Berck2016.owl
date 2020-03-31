@@ -9,6 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(<http://virtualflybrain.org/owl/Berck2016>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00049120>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100418>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100419>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100420>))
@@ -660,6 +661,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00100076> "VFB CATMAID L1 CNS:4116174"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100076> "L1 CNS neuron lAL-1 (octopaminergic) right"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100076>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00049120> <http://virtualflybrain.org/reports/VFB_00100076>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100077> (L1 CNS neuron mPN iACT A1 right)
 
@@ -1347,6 +1349,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtual
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00100162> "VFB CATMAID L1 CNS:10865025"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00100162> "L1 CNS neuron lAL-1 (octopaminergic) left"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00100162>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00049120> <http://virtualflybrain.org/reports/VFB_00100162>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100163> (L1 CNS neuron mPN iACT VUM R)
 
