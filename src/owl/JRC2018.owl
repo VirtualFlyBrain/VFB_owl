@@ -1,0 +1,408 @@
+Prefix(:=<http://virtualflybrain.org/owl/JRC2018#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/JRC2018>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003624>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003668>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003679>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003680>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003681>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003682>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003748>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003852>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003885>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003982>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007385>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007401>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007453>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00013691>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00013694>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00014013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048509>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110657>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110658>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101567>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102107>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102108>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102109>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102110>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102114>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102118>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102119>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102121>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102123>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102124>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102133>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102134>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102135>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102137>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102139>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102140>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102141>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102146>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102148>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102152>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102154>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102159>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102162>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102164>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102170>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102171>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102174>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102175>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102176>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102179>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102185>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102190>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102201>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102212>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102213>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102214>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102215>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102218>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102271>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102273>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102274>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102275>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102276>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102280>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102281>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102282>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102283>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00101567> (JRC2018Unisex)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101567> "JRC2018Unisex"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003624> <http://virtualflybrain.org/reports/VFB_00101567>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102107> (ME on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102107> "medulla on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102107> "ME on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003748> <http://virtualflybrain.org/reports/VFB_00102107>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102108> (AME on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102108> "accessory medulla on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102108> "AME on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045003> <http://virtualflybrain.org/reports/VFB_00102108>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102109> (LO on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102109> "lobula on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102109> "LO on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003852> <http://virtualflybrain.org/reports/VFB_00102109>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102110> (LOP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102110> "lobula plate on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102110> "LOP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003885> <http://virtualflybrain.org/reports/VFB_00102110>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102114> (CA on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102114> "MB-CA on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102114> "calyx of adult mushroom body on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102114> "CA on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007385> <http://virtualflybrain.org/reports/VFB_00102114>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102118> (PED on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102118> "MB-PED on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102118> "pedunculus of adult mushroom body on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102118> "PED on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007453> <http://virtualflybrain.org/reports/VFB_00102118>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102119> (aL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102119> "MB-aL on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102119> "adult mushroom body alpha-lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102119> "aL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110657> <http://virtualflybrain.org/reports/VFB_00102119>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102121> (a\'L on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102121> "MB-aprimeL on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102121> "adult mushroom body alpha\\\\'-lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102121> "a\\'L on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013691> <http://virtualflybrain.org/reports/VFB_00102121>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102123> (bL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102123> "MB-bL on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102123> "adult mushroom body beta-lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102123> "bL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110658> <http://virtualflybrain.org/reports/VFB_00102123>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102124> (b\'L on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102124> "MB-bprimeL on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102124> "adult mushroom body beta\\\\'-lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102124> "b\\'L on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013694> <http://virtualflybrain.org/reports/VFB_00102124>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102133> (gL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102133> "MB-gL on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102133> "adult mushroom body gamma-lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102133> "gL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110657> <http://virtualflybrain.org/reports/VFB_00102133>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102134> (FB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102134> "fan-shaped body on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102134> "FB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003679> <http://virtualflybrain.org/reports/VFB_00102134>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102135> (EB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102135> "ellipsoid body on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102135> "EB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110205> <http://virtualflybrain.org/reports/VFB_00102135>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102137> (PB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102137> "protocerebral bridge on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102137> "PB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003668> <http://virtualflybrain.org/reports/VFB_00102137>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102139> (BU on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102139> "bulb on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102139> "BU on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003682> <http://virtualflybrain.org/reports/VFB_00102139>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102140> (LAL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102140> "lateral accessory lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102140> "LAL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003681> <http://virtualflybrain.org/reports/VFB_00102140>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102141> (AOTU on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102141> "anterior optic tubercle on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102141> "AOTU on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007059> <http://virtualflybrain.org/reports/VFB_00102141>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102146> (AVLP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102146> "anterior ventrolateral protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102146> "AVLP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040043> <http://virtualflybrain.org/reports/VFB_00102146>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102148> (PVLP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102148> "posterior ventrolateral protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102148> "PVLP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040042> <http://virtualflybrain.org/reports/VFB_00102148>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102152> (PLP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102152> "posterior lateral protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102152> "PLP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040044> <http://virtualflybrain.org/reports/VFB_00102152>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102154> (WED on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102154> "wedge on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102154> "WED on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045027> <http://virtualflybrain.org/reports/VFB_00102154>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102159> (LH on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102159> "lateral horn on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102159> "LH on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007053> <http://virtualflybrain.org/reports/VFB_00102159>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102162> (SLP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102162> "superior lateral protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102162> "SLP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007054> <http://virtualflybrain.org/reports/VFB_00102162>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102164> (SIP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102164> "superior intermediate protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102164> "SIP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045032> <http://virtualflybrain.org/reports/VFB_00102164>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102170> (SMP on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102170> "superior medial protocerebrum on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102170> "SMP on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007055> <http://virtualflybrain.org/reports/VFB_00102170>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102171> (CRE on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102171> "adult crepine on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102171> "CRE on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045037> <http://virtualflybrain.org/reports/VFB_00102171>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102174> (ROB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102174> "adult round body on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102174> "ROB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00048509> <http://virtualflybrain.org/reports/VFB_00102174>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102175> (RUB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102175> "rubus on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102175> "RUB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040038> <http://virtualflybrain.org/reports/VFB_00102175>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102176> (SCL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102176> "superior clamp on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102176> "SCL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040048> <http://virtualflybrain.org/reports/VFB_00102176>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102179> (ICL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102179> "inferior clamp on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102179> "ICL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040049> <http://virtualflybrain.org/reports/VFB_00102179>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102185> (IB on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102185> "inferior bridge on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102185> "IB on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040050> <http://virtualflybrain.org/reports/VFB_00102185>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102190> (ATL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102190> "antler on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102190> "ATL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045039> <http://virtualflybrain.org/reports/VFB_00102190>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102201> (AL on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102201> "adult antennal lobe on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102201> "AL on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007401> <http://virtualflybrain.org/reports/VFB_00102201>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102212> (VES on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102212> "vest on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102212> "VES on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040041> <http://virtualflybrain.org/reports/VFB_00102212>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102213> (EPA on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102213> "epaulette on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102213> "EPA on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040040> <http://virtualflybrain.org/reports/VFB_00102213>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102214> (GOR on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102214> "gorget on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102214> "GOR on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040039> <http://virtualflybrain.org/reports/VFB_00102214>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102215> (SPS on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102215> "superior posterior slope on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102215> "SPS on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045040> <http://virtualflybrain.org/reports/VFB_00102215>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102218> (IPS on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102218> "inferior posterior slope on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102218> "IPS on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045046> <http://virtualflybrain.org/reports/VFB_00102218>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102271> (SAD on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102271> "saddle on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102271> "SAD on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045048> <http://virtualflybrain.org/reports/VFB_00102271>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102273> (AMMC on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102273> "antennal mechanosensory and motor center on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102273> "AMMC on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003982> <http://virtualflybrain.org/reports/VFB_00102273>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102274> (FLA on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102274> "flange on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102274> "FLA on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045050> <http://virtualflybrain.org/reports/VFB_00102274>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102275> (CAN on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102275> "cantle on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102275> "CAN on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045051> <http://virtualflybrain.org/reports/VFB_00102275>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102276> (PRW on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102276> "prow on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102276> "PRW on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040051> <http://virtualflybrain.org/reports/VFB_00102276>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102280> (GNG on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102280> "adult gnathal ganglion on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102280> "GNG on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00014013> <http://virtualflybrain.org/reports/VFB_00102280>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102281> (GA on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102281> "gall on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102281> "GA on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040060> <http://virtualflybrain.org/reports/VFB_00102281>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102282> (NO on JRC2018Unisex adult brain)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102282> "nodulus on JRC2018Unisex adult brain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102282> "NO on JRC2018Unisex adult brain"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003680> <http://virtualflybrain.org/reports/VFB_00102282>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102283> (JRC2018UnisexVNC)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102283> "JRC2018UnisexVNC"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004052> <http://virtualflybrain.org/reports/VFB_00102283>)
+
+
+)
