@@ -170,6 +170,8 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101550>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101553>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101554>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101556>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102287>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102288>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -766,6 +768,18 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111054> <http://virtualfly
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101556> "L-ABon JRC_FlyEM_Hemibrain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101556> "AB(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110172> <http://virtualflybrain.org/reports/VFB_00101556>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102287> (L-EPA)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102287> "L-EPA on JRC_FlyEM_Hemibrain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102287> "L-EPA"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040040> <http://virtualflybrain.org/reports/VFB_00102287>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102288> (L-AB)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102288> "L-EPA on JRC_FlyEM_Hemibrain"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102288> "L-AB"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110172> <http://virtualflybrain.org/reports/VFB_00102288>)
 
 
 )
