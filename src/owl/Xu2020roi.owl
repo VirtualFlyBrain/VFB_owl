@@ -18,10 +18,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003675>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003676>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003677>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003678>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003679>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003680>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003681>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003682>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003695>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003748>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003852>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003885>))
@@ -65,7 +66,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048509>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100337>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110172>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110205>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110658>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111052>))
@@ -250,7 +250,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013694> <http://virtualfly
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101397> "MB-gLon JRC_FlyEM_Hemibrain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101397> "gL(R) on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110657> <http://virtualflybrain.org/reports/VFB_00101397>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003695> <http://virtualflybrain.org/reports/VFB_00101397>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101398> (FB on JRC_FlyEM_Hemibrain)
 
@@ -268,7 +268,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110172> <http://virtualfly
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101400> "EBon JRC_FlyEM_Hemibrain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101400> "EB on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110205> <http://virtualflybrain.org/reports/VFB_00101400>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003678> <http://virtualflybrain.org/reports/VFB_00101400>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101401> (PB on JRC_FlyEM_Hemibrain)
 
@@ -527,7 +527,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003671> <http://virtualfly
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101492> "PB-R4on JRC_FlyEM_Hemibrain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101492> "PB(R4) on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003680> <http://virtualflybrain.org/reports/VFB_00101492>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003672> <http://virtualflybrain.org/reports/VFB_00101492>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101493> (PB(R5) on JRC_FlyEM_Hemibrain)
 
@@ -629,7 +629,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00045032> <http://virtualfly
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101509> "L-MB-gLon JRC_FlyEM_Hemibrain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101509> "gL(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110657> <http://virtualflybrain.org/reports/VFB_00101509>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003695> <http://virtualflybrain.org/reports/VFB_00101509>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101510> (bL(L) on JRC_FlyEM_Hemibrain)
 

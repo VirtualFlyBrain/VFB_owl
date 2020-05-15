@@ -10,6 +10,7 @@ Ontology(<http://virtualflybrain.org/owl/JRC2018>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003624>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003668>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003678>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003679>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003680>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003681>))
@@ -52,7 +53,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045048>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045050>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00045051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048509>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110205>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110658>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101567>))
@@ -199,7 +199,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003679> <http://virtualfly
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102135> "ellipsoid body on JRC2018Unisex adult brain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102135> "EB on JRC2018Unisex adult brain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110205> <http://virtualflybrain.org/reports/VFB_00102135>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003678> <http://virtualflybrain.org/reports/VFB_00102135>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102137> (PB on JRC2018Unisex adult brain)
 
