@@ -29,6 +29,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007401>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007453>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00013691>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00013694>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00013695>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00014013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040039>))
@@ -187,7 +188,7 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013694> <http://virtualfly
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102133> "MB-gL on JRC2018Unisex adult brain"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102133> "adult mushroom body gamma-lobe on JRC2018Unisex adult brain"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102133> "gL on JRC2018Unisex adult brain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110657> <http://virtualflybrain.org/reports/VFB_00102133>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00013695> <http://virtualflybrain.org/reports/VFB_00102133>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102134> (FB on JRC2018Unisex adult brain)
 
