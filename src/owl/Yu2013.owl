@@ -8,8 +8,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Yu2013>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003624>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007683>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00050001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00050004>))
@@ -1071,8 +1071,9 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102293> (ALv1_P01(SEZ)_0_2018U)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00102293> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102293> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00102293>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00102293>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102294> (ALv1_P02(DA1)_0_2018U)
 
