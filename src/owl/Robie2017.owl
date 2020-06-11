@@ -84,6 +84,27 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069618>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069619>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069620>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069621>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102767>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102768>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102769>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102770>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102771>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102772>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102773>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102774>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102775>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102776>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102777>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102778>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102779>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102780>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102781>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102782>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102783>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102784>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102785>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102786>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104622>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -573,6 +594,111 @@ ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122193FBtp0118527
 
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00069621> "JRC_SS02714 in the Adult Brain"^^xsd:string)
 ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0118946> <http://virtualflybrain.org/reports/VFB_00069621>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102767> (JRC_SS02702_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102767> "JRC_SS02702_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099454FBtp0119046> <http://virtualflybrain.org/reports/VFB_00102767>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102768> (JRC_SS02703_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102768> "JRC_SS02703_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121895FBtp0119046> <http://virtualflybrain.org/reports/VFB_00102768>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102769> (JRC_SS02704_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102769> "JRC_SS02704_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0119046> <http://virtualflybrain.org/reports/VFB_00102769>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102770> (JRC_SS02705_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102770> "JRC_SS02705_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099454FBtp0118860> <http://virtualflybrain.org/reports/VFB_00102770>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102771> (JRC_SS02706_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102771> "JRC_SS02706_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0118860> <http://virtualflybrain.org/reports/VFB_00102771>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102772> (JRC_SS02707_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102772> "JRC_SS02707_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099454FBtp0118341> <http://virtualflybrain.org/reports/VFB_00102772>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102773> (JRC_SS02708_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102773> "JRC_SS02708_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121895FBtp0118341> <http://virtualflybrain.org/reports/VFB_00102773>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102774> (JRC_SS02709_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102774> "JRC_SS02709_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0118341> <http://virtualflybrain.org/reports/VFB_00102774>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102775> (JRC_SS02710_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102775> "JRC_SS02710_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0118190> <http://virtualflybrain.org/reports/VFB_00102775>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102776> (JRC_SS02711_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102776> "JRC_SS02711_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121895FBtp0118190> <http://virtualflybrain.org/reports/VFB_00102776>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102777> (JRC_SS02712_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102777> "JRC_SS02712_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099454FBtp0118946> <http://virtualflybrain.org/reports/VFB_00102777>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102778> (JRC_SS02713_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102778> "JRC_SS02713_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121895FBtp0118946> <http://virtualflybrain.org/reports/VFB_00102778>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102779> (JRC_SS02714_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102779> "JRC_SS02714_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122503FBtp0118946> <http://virtualflybrain.org/reports/VFB_00102779>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102780> (JRC_SS02763_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102780> "JRC_SS02763_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121490FBtp0119050> <http://virtualflybrain.org/reports/VFB_00102780>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102781> (JRC_SS02764_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102781> "JRC_SS02764_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122193FBtp0119050> <http://virtualflybrain.org/reports/VFB_00102781>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102782> (JRC_SS02765_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102782> "JRC_SS02765_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122127FBtp0118351> <http://virtualflybrain.org/reports/VFB_00102782>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102783> (JRC_SS02766_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102783> "JRC_SS02766_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122193FBtp0118351> <http://virtualflybrain.org/reports/VFB_00102783>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102784> (JRC_SS02767_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102784> "JRC_SS02767_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121490FBtp0118351> <http://virtualflybrain.org/reports/VFB_00102784>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102785> (JRC_SS02768_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102785> "JRC_SS02768_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122127FBtp0118527> <http://virtualflybrain.org/reports/VFB_00102785>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00102786> (JRC_SS02769_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102786> "JRC_SS02769_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0122193FBtp0118527> <http://virtualflybrain.org/reports/VFB_00102786>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104622> (JRC_SS02763_VNC_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104622> "JRC_SS02763_VNC_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0121490FBtp0119050> <http://virtualflybrain.org/reports/VFB_00104622>)
 
 
 )

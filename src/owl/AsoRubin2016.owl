@@ -55,6 +55,10 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069629>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069630>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069635>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00069636>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103201>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103202>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103203>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104282>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -342,6 +346,26 @@ ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250
 
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00069636> "JRC_MB630B in the Adult Brain"^^xsd:string)
 ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://virtualflybrain.org/reports/VFB_00069636>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103201> (JRC_MB099C_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103201> "JRC_MB099C_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103201>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103202> (JRC_MB099C_Brain_2020__2)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103202> "JRC_MB099C_Brain_2020__2"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103202>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103203> (JRC_MB320C_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103203> "JRC_MB320C_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103203>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104282> (JRC_MB630B_VNC_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104282> "JRC_MB630B_VNC_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://virtualflybrain.org/reports/VFB_00104282>)
 
 
 )

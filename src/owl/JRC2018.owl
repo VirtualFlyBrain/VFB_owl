@@ -104,6 +104,7 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102280>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102281>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102282>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102283>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00200000>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -404,6 +405,11 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003680> <http://virtualfly
 
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102283> "JRC2018UnisexVNC"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004052> <http://virtualflybrain.org/reports/VFB_00102283>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00200000> (JRC2018UnisexVNC)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00200000> "JRC2018UnisexVNC"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004052> <http://virtualflybrain.org/reports/VFB_00200000>)
 
 
 )
