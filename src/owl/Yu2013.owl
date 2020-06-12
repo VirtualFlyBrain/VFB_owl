@@ -210,6 +210,8 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102293>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102294>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102762>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102763>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103942>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103943>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -222,7 +224,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020000> (LHa2 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020000> "An example of a(n) adult LHa2 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020000> "An example of a(n) adult BLVa1 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020000> "LHa2_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020000> "LHa2 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020000>)
@@ -410,7 +412,7 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020021> (AOTUv4 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020021> "An example of a(n) adult AOTUv4 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020021> "An example of a(n) adult DALcl2 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020021> "AOTUv4_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020021> "AOTUv4 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020021>)
@@ -473,7 +475,7 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020028> (DL2 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020028> "An example of a(n) adult DL2 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020028> "An example of a(n) adult CP3 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020028> "DL2_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020028> "DL2 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020028>)
@@ -554,7 +556,7 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020037> (VESa2 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020037> "An example of a(n) adult VESa2 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020037> "An example of a(n) adult BAmv2 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020037> "VESa2_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020037> "VESa2 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020037>)
@@ -608,7 +610,7 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020043> (AOTUv3 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020043> "An example of a(n) adult AOTUv3 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020043> "An example of a(n) adult DALcl1 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020043> "AOTUv3_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020043> "AOTUv3 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020043>)
@@ -779,7 +781,7 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050>
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00020062> (DL1 clone of Yu 2013)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020062> "An example of a(n) adult DL1 lineage clone that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00020062> "An example of a(n) adult CP2 lineage clone that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00020062> "DL1_02"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00020062> "DL1 clone of Yu 2013"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007683> <http://virtualflybrain.org/reports/VFB_00020062>)
@@ -1098,6 +1100,17 @@ ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybra
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00102763> "A(n) adult antennal lobe projection neuron DA1 vPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102763> "ALv1_P02(DA1)_0_2018U"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualflybrain.org/reports/VFB_00102763>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103942> (ALv1_P01(SEZ)_0_2018U)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103942> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00103942>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103943> (ALv1_P02(DA1)_0_2018U)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00103943> "A(n) adult antennal lobe projection neuron DA1 vPN."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103943> "ALv1_P02(DA1)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualflybrain.org/reports/VFB_00103943>)
 
 
 )
