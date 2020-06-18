@@ -239,6 +239,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00050000> (L1 larval CNS ssTEM - Cardona/Janelia)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00050000> "VFB CATMAID L1 CNS:null"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00050000> "Seymour"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00050000> "L1 larval CNS ssTEM - Cardona/Janelia"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001919> <http://virtualflybrain.org/reports/VFB_00050000>)
