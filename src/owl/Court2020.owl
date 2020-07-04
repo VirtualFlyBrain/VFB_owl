@@ -1,0 +1,218 @@
+Prefix(:=<http://virtualflybrain.org/owl/Court2020#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Court2020>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00001645>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004091>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00004094>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00040007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047137>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047138>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047174>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047176>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047529>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047533>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047536>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047541>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047542>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047543>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00047544>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110173>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110174>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110175>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110176>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104633>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104634>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104635>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104636>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104637>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104638>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104639>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104640>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104641>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104642>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104643>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104644>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104645>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104646>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104647>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104648>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104649>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104650>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104651>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104652>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104653>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104633> (dorsal lateral tract on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104633> "DLT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104633> "dorsal lateral tract on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047533> <http://virtualflybrain.org/reports/VFB_00104633>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104633>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104634> (dorsal lateral tract of ventral cervical fasciculus on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104634> "DLV"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104634> "dorsal lateral tract of ventral cervical fasciculus on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047541> <http://virtualflybrain.org/reports/VFB_00104634>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104634>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104635> (dorsal median tract on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104635> "DMT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104635> "dorsal median tract on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00001645> <http://virtualflybrain.org/reports/VFB_00104635>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104635>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104636> (median dorsal abdominal tract on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104636> "MDT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104636> "median dorsal abdominal tract on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047544> <http://virtualflybrain.org/reports/VFB_00104636>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104636>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104637> (ventral lateral tract on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104637> "VLT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104637> "ventral lateral tract on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047543> <http://virtualflybrain.org/reports/VFB_00104637>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104637>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104638> (intermediate tract of dorsal cervical fasciculus on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104638> "ITD"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104638> "intermediate tract of dorsal cervical fasciculus on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047534> <http://virtualflybrain.org/reports/VFB_00104638>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104638>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104639> (commissure of Fine Fibers of the ITD on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104639> "CFF"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104639> "ITD-CFF"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104639> "commissure of Fine Fibers of the ITD on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047536> <http://virtualflybrain.org/reports/VFB_00104639>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104639>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104640> (ITD haltere chiasma on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104640> "HC"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104640> "ITD-HC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104640> "ITD haltere chiasma on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047529> <http://virtualflybrain.org/reports/VFB_00104640>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104640>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104641> (ITD haltere tract on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104641> "HT"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104641> "ITD-HT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104641> "ITD haltere tract on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004094> <http://virtualflybrain.org/reports/VFB_00104641>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104641>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104642> (ventral median tract of ventral cervical fasciculus on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104642> "VTV"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104642> "ventral median tract of ventral cervical fasciculus on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047542> <http://virtualflybrain.org/reports/VFB_00104642>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104642>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104643> (adult abdominal neuromere on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104643> "ABDNM"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104643> "adult abdominal neuromere on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110173> <http://virtualflybrain.org/reports/VFB_00104643>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104643>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104644> (adult accessory mesothoracic neuromere on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104644> "AMNP"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104644> "adult accessory mesothoracic neuromere on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00004091> <http://virtualflybrain.org/reports/VFB_00104644>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104644>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104645> (haltere tectulum on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104645> "HTct"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104645> "haltere tectulum on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047138> <http://virtualflybrain.org/reports/VFB_00104645>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104645>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104646> (intermediate tectulum on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104646> "IntTct"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104646> "intermediate tectulum on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040007> <http://virtualflybrain.org/reports/VFB_00104646>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104646>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104647> (lower tectulum on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104647> "LTct"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104647> "lower tectulum on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047174> <http://virtualflybrain.org/reports/VFB_00104647>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104647>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104648> (adult mesothoracic neuromere on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104648> "MesoNM"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104648> "T2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104648> "adult mesothoracic neuromere on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110175> <http://virtualflybrain.org/reports/VFB_00104648>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104648>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104649> (adult metathoracic neuromere on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104649> "MetaNM"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104649> "T3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104649> "adult metathoracic neuromere on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110176> <http://virtualflybrain.org/reports/VFB_00104649>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104649>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104650> (medial ventral association center on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104650> "mVAC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104650> "medial ventral association center on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047176> <http://virtualflybrain.org/reports/VFB_00104650>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104650>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104651> (neck tectulum on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104651> "NTct"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104651> "neck tectulum on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040007> <http://virtualflybrain.org/reports/VFB_00104651>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104651>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104652> (adult prothoracic neuromere on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104652> "ProNM"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104652> "T1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104652> "adult prothoracic neuromere on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110174> <http://virtualflybrain.org/reports/VFB_00104652>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104652>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104653> (wing tectulum on adult VNC, JRC2018VU)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104653> "Flight Neuropil"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00104653> "WTct"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104653> "wing tectulum on adult VNC, JRC2018VU"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00047137> <http://virtualflybrain.org/reports/VFB_00104653>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00004052>) <http://virtualflybrain.org/reports/VFB_00104653>)
+
+
+)

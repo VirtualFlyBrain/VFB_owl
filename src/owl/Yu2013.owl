@@ -212,6 +212,10 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102762>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102763>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103942>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103943>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104623>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104624>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104628>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104629>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
@@ -1111,6 +1115,36 @@ ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybra
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00103943> "A(n) adult antennal lobe projection neuron DA1 vPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103943> "ALv1_P02(DA1)_0_2018U"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualflybrain.org/reports/VFB_00103943>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104623> (ALv1_P01(SEZ)_0_2018U)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104623> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00104623>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104623>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104623>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104624> (ALv1_P02(DA1)_0_2018U)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00104624> "A(n) adult antennal lobe projection neuron DA1 vPN that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104624> "ALv1_P02(DA1)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualflybrain.org/reports/VFB_00104624>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104624>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104624>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104628> (ALv1_P01(SEZ)_0_2018U)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104628> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00104628>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104628>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104628>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104629> (ALv1_P02(DA1)_0_2018U)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00104629> "A(n) adult antennal lobe projection neuron DA1 vPN that is part of a adult brain."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104629> "ALv1_P02(DA1)_0_2018U"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualflybrain.org/reports/VFB_00104629>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104629>)
+ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104629>)
 
 
 )
