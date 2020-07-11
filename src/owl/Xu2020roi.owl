@@ -161,7 +161,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101530>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101532>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101533>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101535>))
-Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101537>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101538>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101543>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101546>))
@@ -169,7 +168,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101548>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101550>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101553>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101554>))
-Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101556>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102287>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00102288>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -715,12 +713,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101535> "VES(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040041> <http://virtualflybrain.org/reports/VFB_00101535>)
 
-# Individual: <http://virtualflybrain.org/reports/VFB_00101537> (EPA(L) on JRC_FlyEM_Hemibrain)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101537> "L-EPAon JRC_FlyEM_Hemibrain"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101537> "EPA(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040040> <http://virtualflybrain.org/reports/VFB_00101537>)
-
 # Individual: <http://virtualflybrain.org/reports/VFB_00101538> (mALT(L) on JRC_FlyEM_Hemibrain)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101538> "L-mALTon JRC_FlyEM_Hemibrain"^^xsd:string)
@@ -763,22 +755,16 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101554> "NO3(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111054> <http://virtualflybrain.org/reports/VFB_00101554>)
 
-# Individual: <http://virtualflybrain.org/reports/VFB_00101556> (AB(L) on JRC_FlyEM_Hemibrain)
-
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00101556> "L-ABon JRC_FlyEM_Hemibrain"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101556> "AB(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110172> <http://virtualflybrain.org/reports/VFB_00101556>)
-
-# Individual: <http://virtualflybrain.org/reports/VFB_00102287> (L-EPA)
+# Individual: <http://virtualflybrain.org/reports/VFB_00102287> (EPA(L) on JRC_FlyEM_Hemibrain)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102287> "L-EPA on JRC_FlyEM_Hemibrain"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102287> "L-EPA"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102287> "EPA(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040040> <http://virtualflybrain.org/reports/VFB_00102287>)
 
-# Individual: <http://virtualflybrain.org/reports/VFB_00102288> (L-AB)
+# Individual: <http://virtualflybrain.org/reports/VFB_00102288> (AB(L) on JRC_FlyEM_Hemibrain)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00102288> "L-EPA on JRC_FlyEM_Hemibrain"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102288> "L-AB"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102288> "AB(L) on JRC_FlyEM_Hemibrain"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110172> <http://virtualflybrain.org/reports/VFB_00102288>)
 
 
