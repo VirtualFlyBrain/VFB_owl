@@ -8,9 +8,11 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Dolan2019>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100226>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00100240>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003r>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101287>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101288>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101289>))
@@ -113,6 +115,11 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003r> (PV4c2#1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003r> "PV4c2#1"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003r>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101287> (AV4c2#1)
 

@@ -8,6 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Zheng2018>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003995>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007439>))
@@ -68,6 +69,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00110930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111211>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00111339>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003s>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003t>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101132>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101133>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101134>))
@@ -221,6 +224,16 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003s> (PN glomerulus VA6 017 DB)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003s> "PN glomerulus VA6 017 DB"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003s>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003t> (Multiglom and SEZ PN 57472 LK ECM)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003t> "Multiglom and SEZ PN 57472 LK ECM"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003t>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101132> (PN glomerulus V bilateral 27885 JMR)
 
