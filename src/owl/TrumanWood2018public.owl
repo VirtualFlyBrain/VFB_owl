@@ -31,7 +31,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00056507>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00056603>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -72,7 +71,6 @@ SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0106263> ObjectSomeVal
 # Individual: <http://virtualflybrain.org/reports/VFB_00056507> (VT033614 FLP 4-2)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00056507> "A(n) neuron expressing P{VT033614-GAL4} that is part of a P{VT033614-GAL4} expression pattern."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00056507> "VDRC:VT033614"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056507> "6100761_G__1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFB_00056507> "Lines/GMR_120-129/127B01/Confocal_63X_2014-09-23_Br/127B01_57C10wt_C_Br.tif"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://virtualflybrain.org/reports/VFB_00056507> "A single 127B01 expressing neuron from the flip-out collection of Jim Truman.  It is from the Green channel of a stack imaging the central brain with no signal outside the imaged ROI. The orginal filepath was Lines/GMR_120-129/127B01/Confocal_63X_2014-09-23_Br/127B01_57C10wt_C_Br.tif."^^xsd:string)

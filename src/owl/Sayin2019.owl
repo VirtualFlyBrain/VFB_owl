@@ -1,0 +1,32 @@
+Prefix(:=<http://virtualflybrain.org/owl/Sayin2019#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Sayin2019>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_001001dq>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_001001dr>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_001001dq> (OA-VPM4)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_001001dq> "OA-VPM4"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_001001dq>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_001001dr> (OA-VPM3)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_001001dr> "OA-VPM3"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_001001dr>)
+
+
+)

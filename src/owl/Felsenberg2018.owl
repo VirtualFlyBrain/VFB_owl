@@ -15,7 +15,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101381>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101382>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101383>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 
 
 
@@ -26,21 +25,18 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 # Individual: <http://virtualflybrain.org/reports/VFB_00101381> (Neuron 4291900 Putative MBON-B\'2mp)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101381> "A(n) mushroom body medial lobe arborizing neuron 4."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101381> "VFB CATMAID Adult Brain (FAFB):4291899"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101381> "Neuron 4291900 Putative MBON-B\\'2mp"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100232> <http://virtualflybrain.org/reports/VFB_00101381>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101382> (MBON-y5B\'2a 2109446 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101382> "A(n) mushroom body medial lobe arborizing neuron 6."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101382> "VFB CATMAID Adult Brain (FAFB):2109445"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101382> "MBON-y5B\\'2a 2109446 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100234> <http://virtualflybrain.org/reports/VFB_00101382>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101383> (MBON-y1pedc>a/B 298954 JSL)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101383> "A(n) mushroom body pedunculus-medial lobe and vertical lobe arborizing neuron 2."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101383> "VFB CATMAID Adult Brain (FAFB):2333007"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101383> "MBON-y1pedc>a/B 298954 JSL"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100246> <http://virtualflybrain.org/reports/VFB_00101383>)
 

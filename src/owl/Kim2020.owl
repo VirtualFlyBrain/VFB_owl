@@ -1,0 +1,590 @@
+Prefix(:=<http://virtualflybrain.org/owl/Kim2020#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/Kim2020>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000a>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000b>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000c>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000d>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000e>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000f>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000g>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000h>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000i>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000j>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000k>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000l>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000m>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000n>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000o>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000p>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000q>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000r>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000s>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000t>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000u>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000v>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000w>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000x>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000y>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010000z>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001a>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001b>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001c>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001d>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001e>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001f>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001g>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001h>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001i>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001j>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001k>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001l>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001m>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001n>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001o>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001p>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001q>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001r>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001s>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001t>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001u>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001v>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001w>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001x>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001y>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010001z>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002a>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002b>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002c>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002d>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002e>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002f>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002g>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002h>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002i>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002j>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002k>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002l>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002m>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002n>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002o>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002p>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002q>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002r>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002s>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002t>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002u>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002v>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002w>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002x>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002y>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010002z>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003a>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003b>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003c>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003d>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003e>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003f>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003g>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003h>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003i>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003j>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003k>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003l>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003m>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003n>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003o>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003p>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010003q>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000a> (JO-B-13 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000a> "JO-B-13 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000a>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000b> (JO-B-31 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000b> "JO-B-31 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000b>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000c> (JO-B-30 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000c> "JO-B-30 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000c>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000d> (JO-B-33 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000d> "JO-B-33 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000d>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000e> (JO-B-34 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000e> "JO-B-34 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000e>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000f> (JO-B-35 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000f> "JO-B-35 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000f>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000g> (JO-B-4 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000g> "JO-B-4 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000g>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000h> (JO-B-36 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000h> "JO-B-36 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000h>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000i> (JO-B-32 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000i> "JO-B-32 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000i>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000j> (JO-B-37 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000j> "JO-B-37 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000j>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000k> (JO-B-38 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000k> "JO-B-38 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000k>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000l> (JO-B-28 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000l> "JO-B-28 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000l>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000m> (JO-B-39 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000m> "JO-B-39 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000m>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000n> (JO-B-40 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000n> "JO-B-40 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000n>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000o> (JO-B-6 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000o> "JO-B-6 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000o>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000p> (JO-B-41 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000p> "JO-B-41 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000p>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000q> (JO-A-15 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000q> "JO-A-15 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000q>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000r> (JO-A-16 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000r> "JO-A-16 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000r>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000s> (JO-A-17 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000s> "JO-A-17 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000s>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000t> (JO-A-18 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000t> "JO-A-18 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000t>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000u> (JO-A-19 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000u> "JO-A-19 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000u>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000v> (AMMC-B1-1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000v> "AMMC-B1-1"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000v>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000w> (JO-A-20 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000w> "JO-A-20 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000w>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000x> (JO-A-8 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000x> "JO-A-8 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000x>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000y> (JO-A-21 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000y> "JO-A-21 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000y>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010000z> (JO-A-6 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010000z> "JO-A-6 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010000z>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001a> (JO-B-25 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001a> "JO-B-25 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001a>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001b> (JO-B-23 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001b> "JO-B-23 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001b>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001c> (JO-B-14 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001c> "JO-B-14 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001c>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001d> (JO-B-15 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001d> "JO-B-15 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001d>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001e> (JO-A-22 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001e> "JO-A-22 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001e>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001f> (JO-A-23 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001f> "JO-A-23 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001f>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001g> (JO-A-24 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001g> "JO-A-24 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001g>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001h> (JO-A-25 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001h> "JO-A-25 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001h>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001i> (JO-A-44 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001i> "JO-A-44 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001i>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001j> (JO-A-26 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001j> "JO-A-26 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001j>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001k> (JO-A-45 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001k> "JO-A-45 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001k>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001l> (JO-A-27 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001l> "JO-A-27 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001l>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001m> (JO-A-28 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001m> "JO-A-28 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001m>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001n> (JO-A-3 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001n> "JO-A-3 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001n>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001o> (JO-A-9 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001o> "JO-A-9 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001o>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001p> (JO-B-16 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001p> "JO-B-16 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001p>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001q> (JO-A-7 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001q> "JO-A-7 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001q>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001r> (JO-A-4 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001r> "JO-A-4 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001r>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001s> (JO-A-29 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001s> "JO-A-29 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001s>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001t> (JO-A-30 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001t> "JO-A-30 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001t>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001u> (JO-A-31 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001u> "JO-A-31 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001u>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001v> (JO-A-32 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001v> "JO-A-32 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001v>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001w> (JO-A-33 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001w> "JO-A-33 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001w>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001x> (JO-A-2 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001x> "JO-A-2 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001x>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001y> (JO-B-12 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001y> "JO-B-12 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001y>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010001z> (JO-A-34 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010001z> "JO-A-34 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010001z>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002a> (JO-A-35 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002a> "JO-A-35 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002a>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002b> (JO-A-36 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002b> "JO-A-36 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002b>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002c> (JO-A-1 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002c> "JO-A-1 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002c>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002d> (JO-A-37 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002d> "JO-A-37 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002d>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002e> (JO-A-38 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002e> "JO-A-38 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002e>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002f> (JO-A-39 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002f> "JO-A-39 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002f>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002g> (JO-A-11 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002g> "JO-A-11 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002g>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002h> (JO-A-13 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002h> "JO-A-13 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002h>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002i> (JO-A-5 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002i> "JO-A-5 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002i>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002j> (JO-A-10 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002j> "JO-A-10 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002j>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002k> (JO-A-40 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002k> "JO-A-40 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002k>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002l> (JO-A-41 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002l> "JO-A-41 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002l>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002m> (JO-A-14 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002m> "JO-A-14 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002m>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002n> (JO-B-17 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002n> "JO-B-17 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002n>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002o> (JO-A-42 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002o> "JO-A-42 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002o>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002p> (JO-B-18 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002p> "JO-B-18 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002p>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002q> (JO-A-43 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002q> "JO-A-43 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002q>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002r> (JO-B-27 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002r> "JO-B-27 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002r>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002s> (JO-B-8 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002s> "JO-B-8 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002s>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002t> (JO-B-9 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002t> "JO-B-9 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002t>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002u> (JO-B-24 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002u> "JO-B-24 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002u>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002v> (JO-B-29 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002v> "JO-B-29 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002v>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002w> (JO-B-42 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002w> "JO-B-42 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002w>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002x> (JO-B-21 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002x> "JO-B-21 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002x>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002y> (JO-B-19 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002y> "JO-B-19 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002y>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010002z> (JO-B-43 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010002z> "JO-B-43 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010002z>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003a> (JO-B-44 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003a> "JO-B-44 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003a>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003b> (JO-B-3 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003b> "JO-B-3 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003b>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003c> (JO-B-2 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003c> "JO-B-2 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003c>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003d> (JO-B-10 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003d> "JO-B-10 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003d>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003e> (JO-B-26 (type-3))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003e> "JO-B-26 (type-3)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003e>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003f> (JO-B-11 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003f> "JO-B-11 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003f>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003g> (JO-B-7 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003g> "JO-B-7 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003g>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003h> (JO-B-45 (type-4))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003h> "JO-B-45 (type-4)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003h>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003i> (JO-B-1 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003i> "JO-B-1 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003i>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003j> (JO-A-12 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003j> "JO-A-12 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003j>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003k> (JO-B-20 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003k> "JO-B-20 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003k>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003l> (JO-B-22 (type-2))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003l> "JO-B-22 (type-2)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003l>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003m> (JO-B-5 (type-1))
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003m> "JO-B-5 (type-1)"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003m>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003n> (AMMC-B1-4)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003n> "AMMC-B1-4"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003n>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003o> (AMMC-B1-3)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003o> "AMMC-B1-3"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003o>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003p> (AMMC-B1-2)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003p> "AMMC-B1-2"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003p>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010003q> (AMMC-B1-5)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010003q> "AMMC-B1-5"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010003q>)
+
+
+)

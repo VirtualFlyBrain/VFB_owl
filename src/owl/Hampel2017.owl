@@ -10,7 +10,6 @@ Ontology(<http://virtualflybrain.org/owl/Hampel2017>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0030002>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00063688>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 
 
 
@@ -20,7 +19,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00063688> (VT17251 LexA that targets mechanosensory eye bristles)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00063688> "VDRC:VT17251"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00063688> "VT17251 LexA that targets mechanosensory eye bristles"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/CARO_0030002> <http://virtualflybrain.org/reports/VFB_00063688>)
 

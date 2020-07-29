@@ -217,7 +217,6 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101274>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101275>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00101276>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 
 
 
@@ -238,1015 +237,870 @@ ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybra
 # Individual: <http://virtualflybrain.org/reports/VFB_00101132> (PN glomerulus V bilateral 27885 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101132> "A(n) bilateral V relay interneuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101132> "VFB CATMAID Adult Brain (FAFB):27884"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101132> "PN glomerulus V bilateral 27885 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003995> <http://virtualflybrain.org/reports/VFB_00101132>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101133> (PN glomerulus V bilateral 192548 EAM GSXEJ RJVR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101133> "A(n) bilateral V relay interneuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101133> "VFB CATMAID Adult Brain (FAFB):192547"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101133> "PN glomerulus V bilateral 192548 EAM GSXEJ RJVR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003995> <http://virtualflybrain.org/reports/VFB_00101133>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101134> (PN glomerulus VC3l 23135 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101134> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101134> "VFB CATMAID Adult Brain (FAFB):23134"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101134> "PN glomerulus VC3l 23135 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101134>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101135> (PN glomerulus VM7v 24252 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101135> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101135> "VFB CATMAID Adult Brain (FAFB):24251"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101135> "PN glomerulus VM7v 24252 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101135>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101136> (PN glomerulus DA4m 37251 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101136> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101136> "VFB CATMAID Adult Brain (FAFB):37250"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101136> "PN glomerulus DA4m 37251 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101136>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101137> (PN glomerulus VM7d 40307 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101137> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101137> "VFB CATMAID Adult Brain (FAFB):40306"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101137> "PN glomerulus VM7d 40307 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101137>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101138> (PN glomerulus VC3l 41579 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101138> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101138> "VFB CATMAID Adult Brain (FAFB):41578"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101138> "PN glomerulus VC3l 41579 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101138>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101139> (PN glomerulus VC3l 46801 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101139> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101139> "VFB CATMAID Adult Brain (FAFB):46800"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101139> "PN glomerulus VC3l 46801 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101139>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101140> (PN glomerulus lvVM4 57004 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101140> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101140> "VFB CATMAID Adult Brain (FAFB):57003"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101140> "PN glomerulus lvVM4 57004 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101140>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101141> (VP5+ and SEZ PN mALT 57472 LK ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101141> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101141> "VFB CATMAID Adult Brain (FAFB):57471"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101141> "VP5+ and SEZ PN mALT 57472 LK ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101141>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101142> (PN glomerulus VL1 57500 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101142> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101142> "VFB CATMAID Adult Brain (FAFB):57499"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101142> "PN glomerulus VL1 57500 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101142>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101143> (VP2 PN mALT 57517 LK ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101143> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101143> "VFB CATMAID Adult Brain (FAFB):57516"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101143> "VP2 PN mALT 57517 LK ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101143>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101144> (PN glomerulus VL1 73938 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101144> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101144> "VFB CATMAID Adult Brain (FAFB):73937"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101144> "PN glomerulus VL1 73938 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101144>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101145> (MB-CP2 SCL fragment 68908)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101145> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101145> "VFB CATMAID Adult Brain (FAFB):1530770"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101145> "MB-CP2 SCL fragment 68908"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101145>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101146> (contralateral MB-CP2 1549519 SAC)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101146> "A(n) neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101146> "VFB CATMAID Adult Brain (FAFB):1549518"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101146> "contralateral MB-CP2 1549519 SAC"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00101146>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101147> (VP1d + VP4 PN lALT 23006 bilateral AA ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101147> "A(n) adult antennal lobe projection neuron lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101147> "VFB CATMAID Adult Brain (FAFB):23005"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101147> "VP1d + VP4 PN lALT 23006 bilateral AA ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007439> <http://virtualflybrain.org/reports/VFB_00101147>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101148> (PN putative glomerulus VC5 39255 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101148> "A(n) adult uniglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101148> "VFB CATMAID Adult Brain (FAFB):39254"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101148> "PN putative glomerulus VC5 39255 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007440> <http://virtualflybrain.org/reports/VFB_00101148>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101149> (Bilateral VP5 + VP1m PN mALT 46106 AA ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101149> "A(n) adult uniglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101149> "VFB CATMAID Adult Brain (FAFB):46105"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101149> "Bilateral VP5 + VP1m PN mALT 46106 AA ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007440> <http://virtualflybrain.org/reports/VFB_00101149>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101150> (VP1d dlALT PN 192424 CLM -NM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101150> "A(n) adult uniglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101150> "VFB CATMAID Adult Brain (FAFB):192423"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101150> "VP1d dlALT PN 192424 CLM -NM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007440> <http://virtualflybrain.org/reports/VFB_00101150>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101151> (VP1d dlALT PN 71750 ARH-NM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101151> "A(n) adult uniglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101151> "VFB CATMAID Adult Brain (FAFB):203504"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101151> "VP1d dlALT PN 71750 ARH-NM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007440> <http://virtualflybrain.org/reports/VFB_00101151>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101152> (VP4 PN t5ALT mlALT 282136 RJVR ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101152> "A(n) adult uniglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101152> "VFB CATMAID Adult Brain (FAFB):1149173"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101152> "VP4 PN t5ALT mlALT 282136 RJVR ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007440> <http://virtualflybrain.org/reports/VFB_00101152>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101153> (Multiglomerular PN unknown 37213 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101153> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101153> "VFB CATMAID Adult Brain (FAFB):37212"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101153> "Multiglomerular PN unknown 37213 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101153>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101154> (Multiglomerular PN unknown 37236 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101154> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101154> "VFB CATMAID Adult Brain (FAFB):37235"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101154> "Multiglomerular PN unknown 37236 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101154>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101155> (adPN polyL 49027 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101155> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101155> "VFB CATMAID Adult Brain (FAFB):49026"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101155> "adPN polyL 49027 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101155>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101156> (adPN polyL 57255 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101156> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101156> "VFB CATMAID Adult Brain (FAFB):57254"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101156> "adPN polyL 57255 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101156>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101157> (adPN polyL 57267 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101157> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101157> "VFB CATMAID Adult Brain (FAFB):57266"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101157> "adPN polyL 57267 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101157>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101158> (mALT mPN putative DP1l glomerulus and glomerulus VL2p 57275 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101158> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101158> "VFB CATMAID Adult Brain (FAFB):57274"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101158> "mALT mPN putative DP1l glomerulus and glomerulus VL2p 57275 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101158>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101159> (Multiglomerular PN mALT 57427 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101159> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101159> "VFB CATMAID Adult Brain (FAFB):57426"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101159> "Multiglomerular PN mALT 57427 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101159>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101160> (Bilateral VP1m + VP5 PN mALT 57504 LK ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101160> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101160> "VFB CATMAID Adult Brain (FAFB):57503"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101160> "Bilateral VP1m + VP5 PN mALT 57504 LK ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101160>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101161> (Multiglomerular PN mALT VM5v+X 59130 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101161> "A(n) adult multiglomerular antennal lobe projection neuron."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101161> "VFB CATMAID Adult Brain (FAFB):59129"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101161> "Multiglomerular PN mALT VM5v+X 59130 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007441> <http://virtualflybrain.org/reports/VFB_00101161>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101162> (PN glomerulus VA4 23570 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101162> "A(n) adult antennal lobe projection neuron VA4 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101162> "VFB CATMAID Adult Brain (FAFB):23569"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101162> "PN glomerulus VA4 23570 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007446> <http://virtualflybrain.org/reports/VFB_00101162>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101163> (PN glomerulus VA6 017 DB)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101163> "A(n) adult antennal lobe projection neuron VA6 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101163> "VFB CATMAID Adult Brain (FAFB):33"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101163> "PN glomerulus VA6 017 DB"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007447> <http://virtualflybrain.org/reports/VFB_00101163>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101164> (PN glomerulus VA7l 57411 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101164> "A(n) adult antennal lobe projection neuron VA7l adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101164> "VFB CATMAID Adult Brain (FAFB):57410"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101164> "PN glomerulus VA7l 57411 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007448> <http://virtualflybrain.org/reports/VFB_00101164>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101165> (PN glomerulus VC2 45243 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101165> "A(n) adult antennal lobe projection neuron VC2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101165> "VFB CATMAID Adult Brain (FAFB):45242"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101165> "PN glomerulus VC2 45243 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007449> <http://virtualflybrain.org/reports/VFB_00101165>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101166> (PN glomerulus VL2p 22977 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101166> "A(n) adult antennal lobe projection neuron VL2p adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101166> "VFB CATMAID Adult Brain (FAFB):22976"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101166> "PN glomerulus VL2p 22977 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007450> <http://virtualflybrain.org/reports/VFB_00101166>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101167> (PN glomerulus VM1 24727 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101167> "A(n) adult antennal lobe projection neuron VM1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101167> "VFB CATMAID Adult Brain (FAFB):24726"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101167> "PN glomerulus VM1 24727 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007452> <http://virtualflybrain.org/reports/VFB_00101167>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101168> (PN glomerulus VM1 39831 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101168> "A(n) adult antennal lobe projection neuron VM1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101168> "VFB CATMAID Adult Brain (FAFB):775731"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101168> "PN glomerulus VM1 39831 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007452> <http://virtualflybrain.org/reports/VFB_00101168>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101169> (PN glomerulus VM7v 43540 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101169> "A(n) adult antennal lobe projection neuron VM7v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101169> "VFB CATMAID Adult Brain (FAFB):43539"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101169> "PN glomerulus VM7v 43540 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007454> <http://virtualflybrain.org/reports/VFB_00101169>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101170> (PN glomerulus DP1l 27049 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101170> "A(n) adult antennal lobe projection neuron DP1l adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101170> "VFB CATMAID Adult Brain (FAFB):27048"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101170> "PN glomerulus DP1l 27049 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007475> <http://virtualflybrain.org/reports/VFB_00101170>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101171> (PN glomerulus VC1 22133 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101171> "A(n) adult antennal lobe projection neuron VC1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101171> "VFB CATMAID Adult Brain (FAFB):22132"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101171> "PN glomerulus VC1 22133 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00007476> <http://virtualflybrain.org/reports/VFB_00101171>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101172> (PN glomerulus DC3 32400 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101172> "A(n) adult antennal lobe projection neuron DC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101172> "VFB CATMAID Adult Brain (FAFB):32399"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101172> "PN glomerulus DC3 32400 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040000> <http://virtualflybrain.org/reports/VFB_00101172>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101173> (PN glomerulus DC3 57242 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101173> "A(n) adult antennal lobe projection neuron DC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101173> "VFB CATMAID Adult Brain (FAFB):57241"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101173> "PN glomerulus DC3 57242 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040000> <http://virtualflybrain.org/reports/VFB_00101173>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101174> (PN glomerulus DC3 57415 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101174> "A(n) adult antennal lobe projection neuron DC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101174> "VFB CATMAID Adult Brain (FAFB):57414"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101174> "PN glomerulus DC3 57415 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00040000> <http://virtualflybrain.org/reports/VFB_00101174>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101175> (PN glomerulus DC1 23665 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101175> "A(n) adult antennal lobe projection neuron DC1 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101175> "VFB CATMAID Adult Brain (FAFB):771242"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101175> "PN glomerulus DC1 23665 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067014> <http://virtualflybrain.org/reports/VFB_00101175>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101176> (PN glomerulus DM3 28877 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101176> "A(n) adult antennal lobe projection neuron DM3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101176> "VFB CATMAID Adult Brain (FAFB):28876"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101176> "PN glomerulus DM3 28877 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067017> <http://virtualflybrain.org/reports/VFB_00101176>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101177> (PN glomerulus DP1m 22768 BH ASB)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101177> "A(n) adult antennal lobe projection neuron DP1m adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101177> "VFB CATMAID Adult Brain (FAFB):58686"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101177> "PN glomerulus DP1m 22768 BH ASB"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067021> <http://virtualflybrain.org/reports/VFB_00101177>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101178> (PN glomerulus DL5 39669 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101178> "A(n) adult antennal lobe projection neuron DL5 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101178> "VFB CATMAID Adult Brain (FAFB):39668"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101178> "PN glomerulus DL5 39669 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067028> <http://virtualflybrain.org/reports/VFB_00101178>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101179> (PN glomerulus VA2 23433 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101179> "A(n) adult antennal lobe projection neuron VA2 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101179> "VFB CATMAID Adult Brain (FAFB):23432"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101179> "PN glomerulus VA2 23433 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067352> <http://virtualflybrain.org/reports/VFB_00101179>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101180> (PN glomerulus DL1 22153 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101180> "A(n) adult antennal lobe projection neuron DL1 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101180> "VFB CATMAID Adult Brain (FAFB):1775706"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101180> "PN glomerulus DL1 22153 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067353> <http://virtualflybrain.org/reports/VFB_00101180>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101181> (PN glomerulus DC2 57403 SM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101181> "A(n) adult antennal lobe projection neuron DC2 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101181> "VFB CATMAID Adult Brain (FAFB):57402"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101181> "PN glomerulus DC2 57403 SM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067354> <http://virtualflybrain.org/reports/VFB_00101181>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101182> (PN glomerulus DC2 65763 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101182> "A(n) adult antennal lobe projection neuron DC2 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101182> "VFB CATMAID Adult Brain (FAFB):65762"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101182> "PN glomerulus DC2 65763 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067354> <http://virtualflybrain.org/reports/VFB_00101182>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101183> (PN glomerulus D 24623 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101183> "A(n) adult antennal lobe projection neuron D adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101183> "VFB CATMAID Adult Brain (FAFB):24622"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101183> "PN glomerulus D 24623 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067355> <http://virtualflybrain.org/reports/VFB_00101183>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101184> (PN glomerulus D 35247 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101184> "A(n) adult antennal lobe projection neuron D adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101184> "VFB CATMAID Adult Brain (FAFB):35246"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101184> "PN glomerulus D 35247 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067355> <http://virtualflybrain.org/reports/VFB_00101184>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101185> (PN glomerulus D 40638 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101185> "A(n) adult antennal lobe projection neuron D adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101185> "VFB CATMAID Adult Brain (FAFB):40637"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101185> "PN glomerulus D 40638 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067355> <http://virtualflybrain.org/reports/VFB_00101185>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101186> (PN glomerulus VA3 57320 IJA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101186> "A(n) adult antennal lobe projection neuron VA3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101186> "VFB CATMAID Adult Brain (FAFB):57319"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101186> "PN glomerulus VA3 57320 IJA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067356> <http://virtualflybrain.org/reports/VFB_00101186>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101187> (PN glomerulus VA3 34321 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101187> "A(n) adult antennal lobe projection neuron VA3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101187> "VFB CATMAID Adult Brain (FAFB):165303"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101187> "PN glomerulus VA3 34321 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067356> <http://virtualflybrain.org/reports/VFB_00101187>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101188> (PN glomerulus VA1d 36391 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101188> "A(n) adult antennal lobe projection neuron VA1d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101188> "VFB CATMAID Adult Brain (FAFB):36390"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101188> "PN glomerulus VA1d 36391 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067357> <http://virtualflybrain.org/reports/VFB_00101188>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101189> (PN glomerulus VA1d 42422 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101189> "A(n) adult antennal lobe projection neuron VA1d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101189> "VFB CATMAID Adult Brain (FAFB):42421"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101189> "PN glomerulus VA1d 42422 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067357> <http://virtualflybrain.org/reports/VFB_00101189>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101190> (PN glomerulus VM2 51887 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101190> "A(n) adult antennal lobe projection neuron VM2 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101190> "VFB CATMAID Adult Brain (FAFB):51886"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101190> "PN glomerulus VM2 51887 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067359> <http://virtualflybrain.org/reports/VFB_00101190>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101191> (PN glomerulus VM2 54073 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101191> "A(n) adult antennal lobe projection neuron VM2 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101191> "VFB CATMAID Adult Brain (FAFB):54072"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101191> "PN glomerulus VM2 54073 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067359> <http://virtualflybrain.org/reports/VFB_00101191>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101192> (PN glomerulus DM6 57308 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101192> "A(n) adult antennal lobe projection neuron DM6 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101192> "VFB CATMAID Adult Brain (FAFB):57307"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101192> "PN glomerulus DM6 57308 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067360> <http://virtualflybrain.org/reports/VFB_00101192>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101193> (PN glomerulus DM6 60800 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101193> "A(n) adult antennal lobe projection neuron DM6 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101193> "VFB CATMAID Adult Brain (FAFB):60799"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101193> "PN glomerulus DM6 60800 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067360> <http://virtualflybrain.org/reports/VFB_00101193>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101194> (PN glomerulus DM6 68698 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101194> "A(n) adult antennal lobe projection neuron DM6 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101194> "VFB CATMAID Adult Brain (FAFB):68697"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101194> "PN glomerulus DM6 68698 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067360> <http://virtualflybrain.org/reports/VFB_00101194>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101195> (PN glomerulus VA1v 57251 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101195> "A(n) adult antennal lobe projection neuron VA1v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101195> "VFB CATMAID Adult Brain (FAFB):51080"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101195> "PN glomerulus VA1v 57251 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067361> <http://virtualflybrain.org/reports/VFB_00101195>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101196> (PN glomerulus VA1v 52107 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101196> "A(n) adult antennal lobe projection neuron VA1v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101196> "VFB CATMAID Adult Brain (FAFB):52106"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101196> "PN glomerulus VA1v 52107 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067361> <http://virtualflybrain.org/reports/VFB_00101196>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101197> (PN glomerulus VA1v 55126 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101197> "A(n) adult antennal lobe projection neuron VA1v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101197> "VFB CATMAID Adult Brain (FAFB):55125"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101197> "PN glomerulus VA1v 55126 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067361> <http://virtualflybrain.org/reports/VFB_00101197>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101198> (PN glomerulus VA1v 57247 HG)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101198> "A(n) adult antennal lobe projection neuron VA1v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101198> "VFB CATMAID Adult Brain (FAFB):57246"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101198> "PN glomerulus VA1v 57247 HG"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067361> <http://virtualflybrain.org/reports/VFB_00101198>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101199> (PN glomerulus DA1 27296 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101199> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101199> "VFB CATMAID Adult Brain (FAFB):27295"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101199> "PN glomerulus DA1 27296 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101199>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101200> (PN glomerulus DA1 57312 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101200> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101200> "VFB CATMAID Adult Brain (FAFB):57311"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101200> "PN glomerulus DA1 57312 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101200>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101201> (PN glomerulus DA1 57324 LK JSL)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101201> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101201> "VFB CATMAID Adult Brain (FAFB):57323"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101201> "PN glomerulus DA1 57324 LK JSL"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101201>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101202> (PN glomerulus DA1 57354 GA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101202> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101202> "VFB CATMAID Adult Brain (FAFB):57353"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101202> "PN glomerulus DA1 57354 GA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101202>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101203> (PN glomerulus DA1 57382 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101203> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101203> "VFB CATMAID Adult Brain (FAFB):57381"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101203> "PN glomerulus DA1 57382 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101203>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101204> (PN glomerulus DA1 61222 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101204> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101204> "VFB CATMAID Adult Brain (FAFB):61221"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101204> "PN glomerulus DA1 61222 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101204>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101205> (PN glomerulus DA1 57358 IJA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101205> "A(n) adult antennal lobe projection neuron DA1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101205> "VFB CATMAID Adult Brain (FAFB):755022"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101205> "PN glomerulus DA1 57358 IJA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067363> <http://virtualflybrain.org/reports/VFB_00101205>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101206> (PN glomerulus DL3 33904 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101206> "A(n) adult antennal lobe projection neuron DL3 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101206> "VFB CATMAID Adult Brain (FAFB):33903"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101206> "PN glomerulus DL3 33904 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067364> <http://virtualflybrain.org/reports/VFB_00101206>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101207> (PN glomerulus DL3 47095 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101207> "A(n) adult antennal lobe projection neuron DL3 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101207> "VFB CATMAID Adult Brain (FAFB):581536"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101207> "PN glomerulus DL3 47095 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067364> <http://virtualflybrain.org/reports/VFB_00101207>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101208> (PN glomerulus VA7m 32215 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101208> "A(n) adult antennal lobe projection neuron VA7m lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101208> "VFB CATMAID Adult Brain (FAFB):32214"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101208> "PN glomerulus VA7m 32215 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067365> <http://virtualflybrain.org/reports/VFB_00101208>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101209> (PN glomerulus VA7m 36109 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101209> "A(n) adult antennal lobe projection neuron VA7m lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101209> "VFB CATMAID Adult Brain (FAFB):36108"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101209> "PN glomerulus VA7m 36109 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067365> <http://virtualflybrain.org/reports/VFB_00101209>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101210> (PN glomerulus VA7m 21764 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101210> "A(n) adult antennal lobe projection neuron VA7m lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101210> "VFB CATMAID Adult Brain (FAFB):186573"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101210> "PN glomerulus VA7m 21764 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067365> <http://virtualflybrain.org/reports/VFB_00101210>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101211> (PN glomerulus VA5 22907 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101211> "A(n) adult antennal lobe projection neuron VA5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101211> "VFB CATMAID Adult Brain (FAFB):22906"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101211> "PN glomerulus VA5 22907 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067366> <http://virtualflybrain.org/reports/VFB_00101211>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101212> (PN glomerulus VA5 57362 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101212> "A(n) adult antennal lobe projection neuron VA5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101212> "VFB CATMAID Adult Brain (FAFB):57361"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101212> "PN glomerulus VA5 57362 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067366> <http://virtualflybrain.org/reports/VFB_00101212>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101213> (PN glomerulus VA5 57366 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101213> "A(n) adult antennal lobe projection neuron VA5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101213> "VFB CATMAID Adult Brain (FAFB):57365"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101213> "PN glomerulus VA5 57366 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067366> <http://virtualflybrain.org/reports/VFB_00101213>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101214> (PN glomerulus DM5 22595 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101214> "A(n) adult antennal lobe projection neuron DM5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101214> "VFB CATMAID Adult Brain (FAFB):22594"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101214> "PN glomerulus DM5 22595 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067367> <http://virtualflybrain.org/reports/VFB_00101214>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101215> (PN glomerulus DM5 27612 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101215> "A(n) adult antennal lobe projection neuron DM5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101215> "VFB CATMAID Adult Brain (FAFB):27611"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101215> "PN glomerulus DM5 27612 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067367> <http://virtualflybrain.org/reports/VFB_00101215>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101216> (PN glomerulus DM5 57386 HG)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101216> "A(n) adult antennal lobe projection neuron DM5 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101216> "VFB CATMAID Adult Brain (FAFB):57385"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101216> "PN glomerulus DM5 57386 HG"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067367> <http://virtualflybrain.org/reports/VFB_00101216>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101217> (PN glomerulus DM2 56425 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101217> "A(n) adult antennal lobe projection neuron DM2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101217> "VFB CATMAID Adult Brain (FAFB):56424"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101217> "PN glomerulus DM2 56425 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067368> <http://virtualflybrain.org/reports/VFB_00101217>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101218> (PN glomerulus DM2 67409 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101218> "A(n) adult antennal lobe projection neuron DM2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101218> "VFB CATMAID Adult Brain (FAFB):67408"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101218> "PN glomerulus DM2 67409 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067368> <http://virtualflybrain.org/reports/VFB_00101218>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101219> (PN glomerulus DM1 30892 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101219> "A(n) adult antennal lobe projection neuron DM1 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101219> "VFB CATMAID Adult Brain (FAFB):30891"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101219> "PN glomerulus DM1 30892 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067369> <http://virtualflybrain.org/reports/VFB_00101219>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101220> (APL 203841 MR JSL)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101220> "A(n) adult mushroom body anterior paired lateral cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101220> "VFB CATMAID Adult Brain (FAFB):203840"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101220> "APL 203841 MR JSL"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100222> <http://virtualflybrain.org/reports/VFB_00101220>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101221> (putative MB-C1 32768 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101221> "A(n) mushroom body calyx arborizing neuron 1."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101221> "VFB CATMAID Adult Brain (FAFB):60445"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101221> "putative MB-C1 32768 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100226> <http://virtualflybrain.org/reports/VFB_00101221>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101222> (MB-C1#1)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101222> "A(n) mushroom body calyx arborizing neuron 1."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101222> "VFB CATMAID Adult Brain (FAFB):535060"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101222> "MB-C1#1"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100226> <http://virtualflybrain.org/reports/VFB_00101222>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101223> (MBON-Calyx#1)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101223> "A(n) mushroom body calyx-pedunculus arborizing neuron 1."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101223> "VFB CATMAID Adult Brain (FAFB):30591"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101223> "MBON-Calyx#1"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100240> <http://virtualflybrain.org/reports/VFB_00101223>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101224> (KCa\'B\'ap 7287 EAM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101224> "A(n) alpha'/beta' anterior-posterior Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101224> "VFB CATMAID Adult Brain (FAFB):7286"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101224> "KCa\\'B\\'ap 7287 EAM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100250> <http://virtualflybrain.org/reports/VFB_00101224>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101225> (KCa\'B\'ap 16407 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101225> "A(n) alpha'/beta' anterior-posterior Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101225> "VFB CATMAID Adult Brain (FAFB):16406"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101225> "KCa\\'B\\'ap 16407 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100250> <http://virtualflybrain.org/reports/VFB_00101225>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101226> (KCa\'B\'ap 175033 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101226> "A(n) alpha'/beta' anterior-posterior Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101226> "VFB CATMAID Adult Brain (FAFB):175032"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101226> "KCa\\'B\\'ap 175033 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100250> <http://virtualflybrain.org/reports/VFB_00101226>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101227> (KCa\'B\'m 7647 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101227> "A(n) alpha'/beta' middle Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101227> "VFB CATMAID Adult Brain (FAFB):7646"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101227> "KCa\\'B\\'m 7647 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100253> <http://virtualflybrain.org/reports/VFB_00101227>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101228> (KCa\'B\'m 11743 BAK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101228> "A(n) alpha'/beta' middle Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101228> "VFB CATMAID Adult Brain (FAFB):11742"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101228> "KCa\\'B\\'m 11743 BAK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100253> <http://virtualflybrain.org/reports/VFB_00101228>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101229> (KCa\'B\'m 12875 ARH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101229> "A(n) alpha'/beta' middle Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101229> "VFB CATMAID Adult Brain (FAFB):12874"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101229> "KCa\\'B\\'m 12875 ARH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100253> <http://virtualflybrain.org/reports/VFB_00101229>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101230> (PN glomerulus DA4l 40750 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101230> "A(n) adult antennal lobe projection neuron DA4l adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101230> "VFB CATMAID Adult Brain (FAFB):40749"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101230> "PN glomerulus DA4l 40750 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100367> <http://virtualflybrain.org/reports/VFB_00101230>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101231> (PN glomerulus DL2v 67638 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101231> "A(n) adult uniglomerular antennal lobe projection neuron adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101231> "VFB CATMAID Adult Brain (FAFB):67637"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101231> "PN glomerulus DL2v 67638 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100368> <http://virtualflybrain.org/reports/VFB_00101231>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101232> (PN glomerulus VM4 23598 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101232> "A(n) adult antennal lobe projection neuron VM4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101232> "VFB CATMAID Adult Brain (FAFB):23597"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101232> "PN glomerulus VM4 23598 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100378> <http://virtualflybrain.org/reports/VFB_00101232>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101233> (PN glomerulus VL2a 22000 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101233> "A(n) adult antennal lobe projection neuron VL2a adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101233> "VFB CATMAID Adult Brain (FAFB):21999"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101233> "PN glomerulus VL2a 22000 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100380> <http://virtualflybrain.org/reports/VFB_00101233>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101234> (PN glomerulus DM4 39683 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101234> "A(n) adult antennal lobe projection neuron DM4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101234> "VFB CATMAID Adult Brain (FAFB):39682"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101234> "PN glomerulus DM4 39683 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100381> <http://virtualflybrain.org/reports/VFB_00101234>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101235> (PN glomerulus DL4 23830 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101235> "A(n) adult antennal lobe projection neuron DL4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101235> "VFB CATMAID Adult Brain (FAFB):23829"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101235> "PN glomerulus DL4 23830 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100382> <http://virtualflybrain.org/reports/VFB_00101235>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101236> (PN glomerulus VC4 37936 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101236> "A(n) adult antennal lobe projection neuron VC4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101236> "VFB CATMAID Adult Brain (FAFB):37935"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101236> "PN glomerulus VC4 37936 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100383> <http://virtualflybrain.org/reports/VFB_00101236>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101237> (PN glomerulus VC4 42928 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101237> "A(n) adult antennal lobe projection neuron VC4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101237> "VFB CATMAID Adult Brain (FAFB):42927"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101237> "PN glomerulus VC4 42928 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100383> <http://virtualflybrain.org/reports/VFB_00101237>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101238> (PN glomerulus VC4 55086 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101238> "A(n) adult antennal lobe projection neuron VC4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101238> "VFB CATMAID Adult Brain (FAFB):55085"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101238> "PN glomerulus VC4 55086 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100383> <http://virtualflybrain.org/reports/VFB_00101238>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101239> (PN glomerulus DA3 57350 HG)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101239> "A(n) adult antennal lobe projection neuron DA3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101239> "VFB CATMAID Adult Brain (FAFB):57349"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101239> "PN glomerulus DA3 57350 HG"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100384> <http://virtualflybrain.org/reports/VFB_00101239>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101240> (PN glomerulus DA3 57407 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101240> "A(n) adult antennal lobe projection neuron DA3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101240> "VFB CATMAID Adult Brain (FAFB):65465"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101240> "PN glomerulus DA3 57407 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100384> <http://virtualflybrain.org/reports/VFB_00101240>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101241> (PN glomerulus VM5d 35448 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101241> "A(n) adult antennal lobe projection neuron VM5d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101241> "VFB CATMAID Adult Brain (FAFB):35447"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101241> "PN glomerulus VM5d 35448 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100385> <http://virtualflybrain.org/reports/VFB_00101241>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101242> (PN glomerulus VM5d 39140 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101242> "A(n) adult antennal lobe projection neuron VM5d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101242> "VFB CATMAID Adult Brain (FAFB):39139"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101242> "PN glomerulus VM5d 39140 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100385> <http://virtualflybrain.org/reports/VFB_00101242>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101243> (PN glomerulus VM5d 49866 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101243> "A(n) adult antennal lobe projection neuron VM5d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101243> "VFB CATMAID Adult Brain (FAFB):49865"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101243> "PN glomerulus VM5d 49866 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100385> <http://virtualflybrain.org/reports/VFB_00101243>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101244> (PN glomerulus VM5d 62435 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101244> "A(n) adult antennal lobe projection neuron VM5d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101244> "VFB CATMAID Adult Brain (FAFB):62434"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101244> "PN glomerulus VM5d 62435 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100385> <http://virtualflybrain.org/reports/VFB_00101244>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101245> (PN glomerulus VM5v 23513 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101245> "A(n) adult antennal lobe projection neuron VM5v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101245> "VFB CATMAID Adult Brain (FAFB):23512"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101245> "PN glomerulus VM5v 23513 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100386> <http://virtualflybrain.org/reports/VFB_00101245>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101246> (PN glomerulus VM5v 30435 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101246> "A(n) adult antennal lobe projection neuron VM5v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101246> "VFB CATMAID Adult Brain (FAFB):30434"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101246> "PN glomerulus VM5v 30435 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100386> <http://virtualflybrain.org/reports/VFB_00101246>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101247> (PN glomerulus VM5v 53672 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101247> "A(n) adult antennal lobe projection neuron VM5v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101247> "VFB CATMAID Adult Brain (FAFB):53671"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101247> "PN glomerulus VM5v 53672 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100386> <http://virtualflybrain.org/reports/VFB_00101247>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101248> (PN glomerulus VC3m 22278 AA)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101248> "A(n) adult antennal lobe projection neuron VC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101248> "VFB CATMAID Adult Brain (FAFB):22277"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101248> "A(n) adult antennal lobe projection neuron VC3l adPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101248> "PN glomerulus VC3m 22278 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100387> <http://virtualflybrain.org/reports/VFB_00101248>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101249> (PN glomerulus VC3m 22745 JMR)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101249> "A(n) adult antennal lobe projection neuron VC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101249> "VFB CATMAID Adult Brain (FAFB):22744"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101249> "A(n) adult antennal lobe projection neuron VC3l adPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101249> "PN glomerulus VC3m 22745 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100387> <http://virtualflybrain.org/reports/VFB_00101249>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101250> (PN glomerulus VC3m 24596 BH)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101250> "A(n) adult antennal lobe projection neuron VC3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101250> "VFB CATMAID Adult Brain (FAFB):400943"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101250> "A(n) adult antennal lobe projection neuron VC3l adPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101250> "PN glomerulus VC3m 24596 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100387> <http://virtualflybrain.org/reports/VFB_00101250>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101251> (PN glomerulus DL2v 22423 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101251> "A(n) adult antennal lobe projection neuron DL2v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101251> "VFB CATMAID Adult Brain (FAFB):22422"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101251> "PN glomerulus DL2v 22423 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100388> <http://virtualflybrain.org/reports/VFB_00101251>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101252> (PN glomerulus DL2v 56624 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101252> "A(n) adult antennal lobe projection neuron DL2v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101252> "VFB CATMAID Adult Brain (FAFB):56623"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101252> "PN glomerulus DL2v 56624 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100388> <http://virtualflybrain.org/reports/VFB_00101252>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101253> (PN glomerulus DL2v 61774 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101253> "A(n) adult antennal lobe projection neuron DL2v adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101253> "VFB CATMAID Adult Brain (FAFB):61773"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101253> "PN glomerulus DL2v 61774 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100388> <http://virtualflybrain.org/reports/VFB_00101253>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101254> (PN glomerulus DL2d 30792 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101254> "A(n) adult antennal lobe projection neuron DL2d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101254> "VFB CATMAID Adult Brain (FAFB):30791"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101254> "PN glomerulus DL2d 30792 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100389> <http://virtualflybrain.org/reports/VFB_00101254>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101255> (PN glomerulus DL2d 57334 IJA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101255> "A(n) adult antennal lobe projection neuron DL2d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101255> "VFB CATMAID Adult Brain (FAFB):57333"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101255> "PN glomerulus DL2d 57334 IJA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100389> <http://virtualflybrain.org/reports/VFB_00101255>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101256> (PN glomerulus DL2d 57338 IJA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101256> "A(n) adult antennal lobe projection neuron DL2d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101256> "VFB CATMAID Adult Brain (FAFB):57337"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101256> "PN glomerulus DL2d 57338 IJA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100389> <http://virtualflybrain.org/reports/VFB_00101256>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101257> (PN glomerulus DL2d 57342 ML)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101257> "A(n) adult antennal lobe projection neuron DL2d adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101257> "VFB CATMAID Adult Brain (FAFB):57341"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101257> "PN glomerulus DL2d 57342 ML"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100389> <http://virtualflybrain.org/reports/VFB_00101257>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101258> (PN glomerulus VM3 27247 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101258> "A(n) adult antennal lobe projection neuron VM3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101258> "VFB CATMAID Adult Brain (FAFB):27246"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101258> "PN glomerulus VM3 27247 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100481> <http://virtualflybrain.org/reports/VFB_00101258>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101259> (PN glomerulus VM3 41309 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101259> "A(n) adult antennal lobe projection neuron VM3 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101259> "VFB CATMAID Adult Brain (FAFB):41308"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101259> "PN glomerulus VM3 41309 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00100481> <http://virtualflybrain.org/reports/VFB_00101259>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101260> (PN glomerulus DA2 38886 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101260> "A(n) adult antennal lobe projection neuron DA2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101260> "VFB CATMAID Adult Brain (FAFB):38885"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101260> "PN glomerulus DA2 38886 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110882> <http://virtualflybrain.org/reports/VFB_00101260>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101261> (PN glomerulus DA2 53632 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101261> "A(n) adult antennal lobe projection neuron DA2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101261> "VFB CATMAID Adult Brain (FAFB):53631"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101261> "PN glomerulus DA2 53632 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110882> <http://virtualflybrain.org/reports/VFB_00101261>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101262> (PN glomerulus DA2 57419 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101262> "A(n) adult antennal lobe projection neuron DA2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101262> "VFB CATMAID Adult Brain (FAFB):57418"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101262> "PN glomerulus DA2 57419 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110882> <http://virtualflybrain.org/reports/VFB_00101262>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101263> (PN glomerulus DA2 57423 NS A)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101263> "A(n) adult antennal lobe projection neuron DA2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101263> "VFB CATMAID Adult Brain (FAFB):57422"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101263> "PN glomerulus DA2 57423 NS A"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110882> <http://virtualflybrain.org/reports/VFB_00101263>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101264> (PN glomerulus DA2 57399 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101264> "A(n) adult antennal lobe projection neuron DA2 lPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101264> "VFB CATMAID Adult Brain (FAFB):1785034"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101264> "PN glomerulus DA2 57399 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110882> <http://virtualflybrain.org/reports/VFB_00101264>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101265> (KCaBc 13019 AA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101265> "A(n) alpha/beta core Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101265> "VFB CATMAID Adult Brain (FAFB):13018"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101265> "KCaBc 13019 AA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110929> <http://virtualflybrain.org/reports/VFB_00101265>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101266> (KCaBc 424296 NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101266> "A(n) alpha/beta core Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101266> "VFB CATMAID Adult Brain (FAFB):424295"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101266> "KCaBc 424296 NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110929> <http://virtualflybrain.org/reports/VFB_00101266>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101267> (KCaBc 424308 CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101267> "A(n) alpha/beta core Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101267> "VFB CATMAID Adult Brain (FAFB):1746412"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101267> "KCaBc 424308 CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110929> <http://virtualflybrain.org/reports/VFB_00101267>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101268> (KCaBs 205948 ARH CF)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101268> "A(n) alpha/beta surface Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101268> "VFB CATMAID Adult Brain (FAFB):205947"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101268> "KCaBs 205948 ARH CF"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110930> <http://virtualflybrain.org/reports/VFB_00101268>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101269> (KCaBs 424380 LK)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101269> "A(n) alpha/beta surface Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101269> "VFB CATMAID Adult Brain (FAFB):424379"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101269> "KCaBs 424380 LK"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110930> <http://virtualflybrain.org/reports/VFB_00101269>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101270> (KCaBs 515388 IJA)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101270> "A(n) alpha/beta surface Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101270> "VFB CATMAID Adult Brain (FAFB):515387"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101270> "KCaBs 515388 IJA"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00110930> <http://virtualflybrain.org/reports/VFB_00101270>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101271> (KCy 9579 EAM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101271> "A(n) gamma main Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101271> "VFB CATMAID Adult Brain (FAFB):9578"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101271> "KCy 9579 EAM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111061> <http://virtualflybrain.org/reports/VFB_00101271>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101272> (KCy 16943 BH)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101272> "A(n) gamma main Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101272> "VFB CATMAID Adult Brain (FAFB):3104789"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101272> "KCy 16943 BH"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111061> <http://virtualflybrain.org/reports/VFB_00101272>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101273> (KCy 6487 ML-NS)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101273> "A(n) gamma main Kenyon cell."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101273> "VFB CATMAID Adult Brain (FAFB):3445525"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101273> "KCy 6487 ML-NS"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111061> <http://virtualflybrain.org/reports/VFB_00101273>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101274> (PN glomerulus DC4 46494 JMR)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101274> "A(n) adult antennal lobe projection neuron DC4 adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101274> "VFB CATMAID Adult Brain (FAFB):46493"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101274> "PN glomerulus DC4 46494 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111211> <http://virtualflybrain.org/reports/VFB_00101274>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101275> (VP3 PN mALT bilateral 37489 AJ)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101275> "A(n) adult antennal lobe projection neuron VP3 mALT adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101275> "VFB CATMAID Adult Brain (FAFB):37513"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101275> "VP3 PN mALT bilateral 37489 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111339> <http://virtualflybrain.org/reports/VFB_00101275>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101276> (VP3 PN mALT bilateral 45883 AA ECM)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101276> "A(n) adult antennal lobe projection neuron VP3 mALT adPN."^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://virtualflybrain.org/reports/VFB_00101276> "VFB CATMAID Adult Brain (FAFB):45882"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101276> "VP3 PN mALT bilateral 45883 AA ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111339> <http://virtualflybrain.org/reports/VFB_00101276>)
 
