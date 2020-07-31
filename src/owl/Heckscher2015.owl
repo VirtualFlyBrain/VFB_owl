@@ -8,6 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Heckscher2015>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00002158>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00002208>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00002217>))
@@ -57,6 +58,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00048963>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00049115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00049122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00049129>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022d>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022e>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100915>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100918>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00100922>))
@@ -199,6 +202,16 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010022d> (MN6/7 RP3_a1r 20901068)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010022d> "MN6/7 RP3_a1r 20901068"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010022d>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_0010022e> (MN6/7 RP3_a1l 20901073)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010022e> "MN6/7 RP3_a1l 20901073"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010022e>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00100915> (L1 CNS neuron Saaghi-1_a2l (AAZ1 (A06l)))
 
