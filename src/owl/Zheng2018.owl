@@ -236,13 +236,13 @@ ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybra
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101132> (PN glomerulus V bilateral 27885 JMR)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101132> "A(n) bilateral V relay interneuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101132> "A(n) adult uniglomerular antennal lobe projection neuron V ilPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101132> "PN glomerulus V bilateral 27885 JMR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003995> <http://virtualflybrain.org/reports/VFB_00101132>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101133> (PN glomerulus V bilateral 192548 EAM GSXEJ RJVR)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101133> "A(n) bilateral V relay interneuron."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101133> "A(n) adult uniglomerular antennal lobe projection neuron V ilPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101133> "PN glomerulus V bilateral 192548 EAM GSXEJ RJVR"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00003995> <http://virtualflybrain.org/reports/VFB_00101133>)
 
@@ -1094,13 +1094,13 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111211> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101275> (VP3 PN mALT bilateral 37489 AJ)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101275> "A(n) adult antennal lobe projection neuron VP3 mALT adPN."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101275> "A(n) adult bilateral antennal lobe projection neuron VP1l+VP3 ilPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101275> "VP3 PN mALT bilateral 37489 AJ"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111339> <http://virtualflybrain.org/reports/VFB_00101275>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00101276> (VP3 PN mALT bilateral 45883 AA ECM)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101276> "A(n) adult antennal lobe projection neuron VP3 mALT adPN."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00101276> "A(n) adult bilateral antennal lobe projection neuron VP1l+VP3 ilPN."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00101276> "VP3 PN mALT bilateral 45883 AA ECM"^^xsd:string)
 ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00111339> <http://virtualflybrain.org/reports/VFB_00101276>)
 
