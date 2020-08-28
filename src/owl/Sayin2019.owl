@@ -8,9 +8,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Sayin2019>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_001001dq>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_001001dr>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 
 
 
@@ -20,13 +21,15 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_001001dr>))
 
 # Individual: <http://virtualflybrain.org/reports/VFB_001001dq> (OA-VPM4)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_001001dq> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_001001dq> "OA-VPM4"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_001001dq>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_001001dq>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_001001dr> (OA-VPM3)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_001001dr> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_001001dr> "OA-VPM3"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_001001dr>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_001001dr>)
 
 
 )

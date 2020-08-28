@@ -8,7 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Yu2013>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00003624>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00007683>))
@@ -1096,8 +1095,9 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> 
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102762> (ALv1_P01(SEZ)_0_2018U)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00102762> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00102762> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00102762>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00102762>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00102763> (ALv1_P02(DA1)_0_2018U)
 
@@ -1107,8 +1107,9 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00103942> (ALv1_P01(SEZ)_0_2018U)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00103942> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103942> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00103942>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00103942>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00103943> (ALv1_P02(DA1)_0_2018U)
 
@@ -1118,8 +1119,9 @@ ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00067372> <http://virtualfly
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00104623> (ALv1_P01(SEZ)_0_2018U)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00104623> "A(n) neuron that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104623> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00104623>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00104623>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104623>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104623>)
 
@@ -1133,8 +1135,9 @@ ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> 
 
 # Individual: <http://virtualflybrain.org/reports/VFB_00104628> (ALv1_P01(SEZ)_0_2018U)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_00104628> "A(n) neuron that is part of a adult brain."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104628> "ALv1_P01(SEZ)_0_2018U"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_00104628>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_00104628>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/FBbt_00003624>) <http://virtualflybrain.org/reports/VFB_00104628>)
 ClassAssertion(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/FBbt_00067348>) <http://virtualflybrain.org/reports/VFB_00104628>)
 

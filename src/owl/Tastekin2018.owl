@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://virtualflybrain.org/owl/Tastekin2018>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000540>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FBbt_00005106>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010021t>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010021u>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010021v>))
@@ -19,6 +19,7 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010021z>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022a>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022b>))
 Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022c>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 
 
 
@@ -28,53 +29,63 @@ Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_0010022c>))
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021t> (LH bilateral axon 3_left 4680995)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021t> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021t> "LH bilateral axon 3_left 4680995"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021t>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021t>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021u> (PDM-DN_right 5462159)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021u> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021u> "PDM-DN_right 5462159"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021u>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021u>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021v> (LH-LN2_left 5769582)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021v> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021v> "LH-LN2_left 5769582"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021v>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021v>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021w> (PDM-DN_left 6446394)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021w> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021w> "PDM-DN_left 6446394"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021w>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021w>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021x> (MJ: LNM_downstream4_right 8065771)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021x> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021x> "MJ: LNM_downstream4_right 8065771"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021x>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021x>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021y> (LH-LN2_right 9753418)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021y> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021y> "LH-LN2_right 9753418"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021y>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021y>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010021z> (LH Processor_right 12813847)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010021z> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010021z> "LH Processor_right 12813847"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010021z>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010021z>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010022a> (MJ: LNM_downstream4_left 17038587)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010022a> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010022a> "MJ: LNM_downstream4_left 17038587"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010022a>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010022a>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010022b> (LH Processor_left 17361757)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010022b> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010022b> "LH Processor_left 17361757"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010022b>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010022b>)
 
 # Individual: <http://virtualflybrain.org/reports/VFB_0010022c> (LH bilateral axon 3_right 17806341)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFB_0010022c> "A(n) neuron."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_0010022c> "LH bilateral axon 3_right 17806341"^^xsd:string)
-ClassAssertion(<http://purl.obolibrary.org/obo/CL_0000540> <http://virtualflybrain.org/reports/VFB_0010022c>)
+ClassAssertion(<http://purl.obolibrary.org/obo/FBbt_00005106> <http://virtualflybrain.org/reports/VFB_0010022c>)
 
 
 )
