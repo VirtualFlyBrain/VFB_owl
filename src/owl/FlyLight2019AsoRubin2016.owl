@@ -1,0 +1,110 @@
+Prefix(:=<http://virtualflybrain.org/owl/FlyLight2019AsoRubin2016#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/FlyLight2019AsoRubin2016>
+
+Declaration(Class(<http://flybase.org/reports/FBtp0099465>))
+Declaration(Class(<http://flybase.org/reports/FBtp0099504>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117250>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117259>))
+Declaration(Class(<http://flybase.org/reports/FBtp0117260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103201>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103202>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103203>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00104282>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://flybase.org/reports/FBtp0099465> (P{R22B12-GAL4.DBD})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099465> "P{R22B12-GAL4.DBD}"^^xsd:string)
+
+# Class: <http://flybase.org/reports/FBtp0099504> (P{R72B05-GAL4.DBD})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0099504> "P{R72B05-GAL4.DBD}"^^xsd:string)
+
+# Class: <http://flybase.org/reports/FBtp0117250> (PBac{ple-p65.AD})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117250> "PBac{ple-p65.AD}"^^xsd:string)
+
+# Class: <http://flybase.org/reports/FBtp0117259> (P{R73F07-GAL4.DBD})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117259> "P{R73F07-GAL4.DBD}"^^xsd:string)
+
+# Class: <http://flybase.org/reports/FBtp0117260> (P{VT026773-p65.AD})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0117260> "P{VT026773-p65.AD}"^^xsd:string)
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> (P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "The sum of all cells at the intersection between the expression patterns of P{R22B12-GAL4.DBD} and PBac{ple-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "GMR_TH-x-GMR_22B12"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "MB320C"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> "P{R22B12-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099465>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117250>))
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> (P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "The sum of all cells at the intersection between the expression patterns of P{R72B05-GAL4.DBD} and P{VT026773-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "MB630B"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "VT026773-x-GMR_72B05"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> "P{R72B05-GAL4.DBD} ∩ P{VT026773-p65.AD} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0099504>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117260>))
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> (P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "The sum of all cells at the intersection between the expression patterns of P{R73F07-GAL4.DBD} and PBac{ple-p65.AD}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "GMR_TH-x-GMR_73F07"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "MB099C"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> "P{R73F07-GAL4.DBD} ∩ PBac{ple-p65.AD} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117250>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0117259>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103201> (JRC_MB099C_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103201> "JRC_MB099C_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103201>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103202> (JRC_MB099C_Brain_2020__2)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103202> "JRC_MB099C_Brain_2020__2"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0117259FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103202>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103203> (JRC_MB320C_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103203> "JRC_MB320C_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099465FBtp0117250> <http://virtualflybrain.org/reports/VFB_00103203>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00104282> (JRC_MB630B_VNC_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00104282> "JRC_MB630B_VNC_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0099504FBtp0117260> <http://virtualflybrain.org/reports/VFB_00104282>)
+
+
+)

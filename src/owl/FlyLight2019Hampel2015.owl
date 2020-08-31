@@ -1,0 +1,60 @@
+Prefix(:=<http://virtualflybrain.org/owl/FlyLight2019Hampel2015#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://virtualflybrain.org/owl/FlyLight2019Hampel2015>
+
+Declaration(Class(<http://flybase.org/reports/FBtp0125280>))
+Declaration(Class(<http://flybase.org/reports/FBtp0125281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>))
+Declaration(Class(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103204>))
+Declaration(NamedIndividual(<http://virtualflybrain.org/reports/VFB_00103205>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://flybase.org/reports/FBtp0125280> (P{GAL4.DBD.Uw})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0125280> "P{GAL4.DBD.Uw}"^^xsd:string)
+
+# Class: <http://flybase.org/reports/FBtp0125281> (P{p65.AD.Uw})
+
+AnnotationAssertion(rdfs:label <http://flybase.org/reports/FBtp0125281> "P{p65.AD.Uw}"^^xsd:string)
+
+# Class: <http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> (P{GAL4.DBD.Uw} ∩ P{p65.AD.Uw} expression pattern)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> "The sum of all cells at the intersection between the expression patterns of P{GAL4.DBD.Uw} and P{p65.AD.Uw}."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> "spGAL4 control"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> "P{GAL4.DBD.Uw} ∩ P{p65.AD.Uw} expression pattern"^^xsd:string)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> <http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000010>)
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0125280>))
+SubClassOf(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/fbbt/vfb/VFBext_0000008> <http://flybase.org/reports/FBtp0125281>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103204> (JRC_spGAL4 control_Brain_2020__1)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103204> "JRC_spGAL4 control_Brain_2020__1"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> <http://virtualflybrain.org/reports/VFB_00103204>)
+
+# Individual: <http://virtualflybrain.org/reports/VFB_00103205> (JRC_spGAL4 control_Brain_2020__2)
+
+AnnotationAssertion(rdfs:label <http://virtualflybrain.org/reports/VFB_00103205> "JRC_spGAL4 control_Brain_2020__2"^^xsd:string)
+ClassAssertion(<http://virtualflybrain.org/reports/VFBexp_FBtp0125280FBtp0125281> <http://virtualflybrain.org/reports/VFB_00103205>)
+
+
+)
